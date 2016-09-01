@@ -21,3 +21,6 @@ Route::any('users', 'UserController@index');//会员中心
 
 Route::any('domestic', 'DomesticController@index');//国内
 
+//后台主页
+Route::any('admins', 'AdminsController@index');
+
