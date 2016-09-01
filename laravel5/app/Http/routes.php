@@ -21,3 +21,5 @@ Route::any('users', 'UserController@index');//会员中心
 
 Route::any('domestic', 'DomesticController@index');//国内
 
+
+Route::any('admin/lo', 'admin/loginController@index');//后台登录
