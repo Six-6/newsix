@@ -27,7 +27,6 @@ Route::any('domestic', 'DomesticController@index');//国内
 
 
 
-<<<<<<< HEAD
 /**管理员添加**/
 Route::any('admin/userAdd',"admin\AdminController@add");
 /**管理员信息完善查看**/
@@ -49,7 +48,6 @@ Route::get('home/personUpd',"home\UserController@upd");//个人信息修改
 Route::get('home/personVer',"home\UserController@ver");//个人信息验证
 Route::any('home/imageAdd',"home\UserController@image");//头像上传
 Route::get('home/pswAdd',"home\UserController@psw");//密码改动
-=======
 
 
 
@@ -189,5 +187,4 @@ Route::group(['middleware' => ['common']], function () {
 
 
 
->>>>>>> 7cd4f3cc719a149c1eeeae39a48649d316270e93
 
