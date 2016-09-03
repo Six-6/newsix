@@ -4,8 +4,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
-	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/login.css" />
+	<link rel="stylesheet" href="admin/css/reset.css" />
+	<link rel="stylesheet" href="admin/css/login.css" />
 </head>
 <body>
 <div class="page">
@@ -28,7 +28,7 @@
 				<img src="images/verify.png" border="0" class="verifyimg" />
 				<div class="clearfix"></div>
 				<li class="login-sub">
-					<input type="submit" name="Submit" value="登录" />
+					<input type="submit" name="Submit" onclick="dl()" value="登录" />
 				</li>                      
            </form>
 		</div>
@@ -36,3 +36,10 @@
 </div>
 </body>
 </html>
+<script src="admin/js/jquery1.8.js"></script>
+<script>
+	function dl()
+	{
+		alert(1)
+	}
+</script>
