@@ -6,9 +6,18 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-    'CreateSessionTable' => $baseDir . '/database/migrations/2016_08_09_080726_create_session_table.php',
-    'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
+    'AddVotesToRegionTable' => $baseDir . '/database/migrations/2016_08_31_073750_add_votes_to_region_table.php',
+    'AddVotesToScenicTable' => $baseDir . '/database/migrations/2016_08_31_075753_add_votes_to_scenic_table.php',
+    'AddVotesToUsersTable' => $baseDir . '/database/migrations/2016_08_31_071742_add_votes_to_users_table.php',
+    'CreateCommentTable' => $baseDir . '/database/migrations/2016_08_31_082621_create_comment_table.php',
+    'CreateLoginsTable' => $baseDir . '/database/migrations/2016_09_02_112401_create_logins_table.php',
+    'CreateOrdersTable' => $baseDir . '/database/migrations/2016_09_02_071530_create_orders_table.php',
+    'CreateRecordTable' => $baseDir . '/database/migrations/2016_08_31_085401_create_record_table.php',
+    'CreateRegionTable' => $baseDir . '/database/migrations/2016_08_31_073807_create_region_table.php',
+    'CreateScenicTable' => $baseDir . '/database/migrations/2016_08_31_075837_create_scenic_table.php',
+    'CreateTravelsTable' => $baseDir . '/database/migrations/2016_08_31_081438_create_travels_table.php',
+    'CreateTypesTable' => $baseDir . '/database/migrations/2016_09_02_115713_create_types_table.php',
+    'CreateUsersTable' => $baseDir . '/database/migrations/2016_08_31_061750_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator/Facade.php',
