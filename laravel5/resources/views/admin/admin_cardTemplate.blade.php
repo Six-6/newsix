@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>后台欢迎页</title>
-	<link rel="stylesheet" href="../css/reset.css" />
-	<link rel="stylesheet" href="../css/content.css" />
+	<link rel="stylesheet" href="../admin/css/reset.css" />
+	<link rel="stylesheet" href="../admin/css/content.css" />
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
@@ -16,78 +16,35 @@
 			<div class="public-content-cont">
 				<table class="public-cont-table">
 					<tr>
-						<th style="width:10%">编号</th>
-						<th style="width:10%">模板名称</th>
-						<th style="width:20%">模板路径</th>
-						<th style="width:20%">样式文件路径</th>
-						<th style="width:20%">缩略图</th>
-						<th style="width:20%">操作</th>
+						<th style="width:2%">编号</th>
+						<th style="width:2%">景点</th>
+						<th style="width:5%">景点名称</th>
+						<th style="width:5%">往返交通</th>
+						<th style="width:5%">旅游价格</th>
+						<th style="width:5%">旅游天数</th>
+						<th style="width:5%">发布人</th>
+						<th style="width:5%">操作</th>
 					</tr>
-					<tr>
-						<td>1</td>
-						<td>模板一</td>
-						<td>cardmb_4.asp</td>						
-						<td>css/cardmb_4.css</td>
-						<td><img class="thumb" src="../images/thumb.jpg" /></td>
+					@foreach($arr as $v)
+					<tr id="yi{{ $v->s_id }}">
+						<td>{{$v->s_id}}</td>
+						<td><img class="thumb" src="../admin/images/{{$v->s_img}}" width="30px" height="30px" /></td>
+						<td onclick="dians({{ $v->s_id }})">              
+	                        <input type="text" id="aa{{$v->s_id}}" value="{{$v->s_name}}" style="display:none" onblur="gai({{$v->s_id}})">
+	                        <span id="s{{$v->s_id}}">{{$v->s_name}}</span>
+                        </td>
+						<td>{{$v->s_traffic}}</td>						
+						<td>{{$v->s_sprice}}</td>
+						<td>{{$v->s_day}}</td>						
+						<td></td>
 						<td>
 							<div class="table-fun">
 								<a href="">修改</a>
-								<a href="">删除</a>
+								<a href="javascript:void(0)" onclick="delway({{$v->s_id}})">删除</a>
 							</div>
 						</td>
 					</tr>
-					<tr>
-						<td>1</td>
-						<td>模板一</td>
-						<td>cardmb_4.asp</td>						
-						<td>css/cardmb_4.css</td>
-						<td><img class="thumb" src="../images/thumb.jpg" /></td>
-						<td>
-							<div class="table-fun">
-								<a href="">修改</a>
-								<a href="">删除</a>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>模板一</td>
-						<td>cardmb_4.asp</td>						
-						<td>css/cardmb_4.css</td>
-						<td><img class="thumb" src="../images/thumb.jpg" /></td>
-						<td>
-							<div class="table-fun">
-								<a href="">修改</a>
-								<a href="">删除</a>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>模板一</td>
-						<td>cardmb_4.asp</td>						
-						<td>css/cardmb_4.css</td>
-						<td><img class="thumb" src="../images/thumb.jpg" /></td>
-						<td>
-							<div class="table-fun">
-								<a href="">修改</a>
-								<a href="">删除</a>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>模板一</td>
-						<td>cardmb_4.asp</td>						
-						<td>css/cardmb_4.css</td>
-						<td><img class="thumb" src="../images/thumb.jpg" /></td>
-						<td>
-							<div class="table-fun">
-								<a href="">修改</a>
-								<a href="">删除</a>
-							</div>
-						</td>
-					</tr>
+					@endforeach
 				</table>
 				<div class="page">
 					<form action="" method="get">
@@ -106,3 +63,44 @@
 	</div>
 </body>
 </html>
+<script src="../admin/js/jquery.min.js"></script>
+<script>
+	//删除
+	function delway(sid){
+		 $.ajax({
+            type:"get",
+            url:"{{URL('admin/delway')}}",
+            data:"sid="+sid,
+            success:function(data){
+            	if (data == 1) {
+            		$("#yi"+sid).remove();
+            	}else{
+            		alert("操作失败");
+            	}
+            }
+         })
+	}
+    //即点即改
+    function dians(s_id){
+        $("#aa"+s_id).show();
+        $("#aa"+s_id).focus();
+        $("#s"+s_id).hide();
+    }
+    function gai(s_id){
+        var vals=$("#aa"+s_id).val();//span name值
+        $.ajax({
+            type:"get",
+            url:"{{URL('admin/jgaiWay')}}",
+            data:"s_id="+s_id+"&&vals="+vals,
+            success:function(data){
+                if (data == 1) {
+                    $("#s"+s_id).show();
+                    $("#aa"+s_id).hide();
+                    $("#s"+s_id).html(vals);
+                }else{
+                    alert("修改失败");
+                }
+            }
+        })
+    }
+</script>

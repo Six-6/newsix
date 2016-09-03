@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>后台欢迎页</title>
-	<link rel="stylesheet" href="../css/reset.css" />
-	<link rel="stylesheet" href="../css/content.css" />
+	<link rel="stylesheet" href="../admin/css/reset.css" />
+	<link rel="stylesheet" href="../admin/css/content.css" />
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
@@ -52,7 +52,7 @@
 					<tr>
 						<td><input type="checkbox" /></td>
 						<td>40</td>						
-						<td>【梦幻之旅】8天7夜澳大利亚巡航与陆地文化之旅<img class="state-img" src="../images/img.jpg" /></td>
+						<td>【梦幻之旅】8天7夜澳大利亚巡航与陆地文化之旅<img class="state-img" src="../admin/images/img.jpg" /></td>
 						<td><span style="color:#999">大图</span></td>
 						<td><span style="color:#6bc095">已审核</span></td>
 						<td><span style="color:#999">0</span></td>
@@ -67,7 +67,7 @@
 					<tr>
 						<td><input type="checkbox" /></td>
 						<td>40</td>						
-						<td>【梦幻之旅】8天7夜澳大利亚巡航与陆地文化之旅<img class="state-img" src="../images/img.jpg" /></td>
+						<td>【梦幻之旅】8天7夜澳大利亚巡航与陆地文化之旅<img class="state-img" src="../admin/images/img.jpg" /></td>
 						<td><span style="color:#999">大图</span></td>
 						<td><span style="color:#6bc095">已审核</span></td>
 						<td><span style="color:#999">0</span></td>
@@ -82,7 +82,7 @@
 					<tr>
 						<td><input type="checkbox" /></td>
 						<td>40</td>						
-						<td>【梦幻之旅】8天7夜澳大利亚巡航与陆地文化之旅<img class="state-img" src="../images/img.jpg" /></td>
+						<td>【梦幻之旅】8天7夜澳大利亚巡航与陆地文化之旅<img class="state-img" src="../admin/images/img.jpg" /></td>
 						<td><span style="color:#999">大图</span></td>
 						<td><span style="color:#6bc095">已审核</span></td>
 						<td><span style="color:#999">0</span></td>
@@ -97,7 +97,7 @@
 					<tr>
 						<td><input type="checkbox" /></td>
 						<td>40</td>						
-						<td>【梦幻之旅】8天7夜澳大利亚巡航与陆地文化之旅<img class="state-img" src="../images/img.jpg" /></td>
+						<td>【梦幻之旅】8天7夜澳大利亚巡航与陆地文化之旅<img class="state-img" src="../admin/images/img.jpg" /></td>
 						<td><span style="color:#999">大图</span></td>
 						<td><span style="color:#6bc095">已审核</span></td>
 						<td><span style="color:#999">0</span></td>
@@ -112,7 +112,7 @@
 					<tr>
 						<td><input type="checkbox" /></td>
 						<td>40</td>						
-						<td>【梦幻之旅】8天7夜澳大利亚巡航与陆地文化之旅<img class="state-img" src="../images/img.jpg" /></td>
+						<td>【梦幻之旅】8天7夜澳大利亚巡航与陆地文化之旅<img class="state-img" src="../admin/images/img.jpg" /></td>
 						<td><span style="color:#999">大图</span></td>
 						<td><span style="color:#6bc095">已审核</span></td>
 						<td><span style="color:#999">0</span></td>

@@ -4,8 +4,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="admin/css/reset.css">
+	<link rel="stylesheet" href="admin/css/public.css">
 </head>
 <body>
 <div class="public-header-warrp">
@@ -76,9 +76,9 @@
 					<div class="ifame-item-sub">
 						<ul>
 							<li><a href="旅游管理/lytc_manage.html" target="content">信息列表</a>|<a href="#" target="content">添加</a></li>
-							<li><a href="#" target="content">分类管理</a></li>
-							<li><a href="#" target="content">分类管理</a></li>
-							<li><a href="旅游管理/listbanner.html" target="content">列表页轮播管理</a></li>
+							<li><a href="{{URL('admin/way')}}" target="content">分类管理</a></li>
+							<li><a href="{{URL('admin/wayadd')}}" target="content">旅游景点添加</a></li>
+							<li><a href="{{URL('admin/waysel')}}" target="content">旅游景点展示</a></li>
 							<li><a href="旅游管理/listbanner.html" target="content">分类轮播管理</a></li>
 							<li><a href="旅游管理/listbanner.html" target="content">旅游预订管理</a></li>
 						</ul>
@@ -193,7 +193,7 @@
 		</div>
 	</div>
 </div>
-<script src="js/jquery.min.js"></script>
+<script src="admin/js/jquery.min.js"></script>
 <script>
 $().ready(function(){
 	var item = $(".public-ifame-item");
