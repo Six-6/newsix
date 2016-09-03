@@ -44,7 +44,7 @@ class WayController extends Controller {
 	//展示旅游方式
 	public function waysel(){
 		$tables = DB::table('scenic')->get();
-		return view('admin.admin_cardTemplate',['arr' => $tables]);
+		return view('admin.admin_cardTemplate2',['arr' => $tables]);
 	}
 	//旅游景点修改
 	public function jgaiWay(){

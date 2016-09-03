@@ -99,7 +99,7 @@ Route::any('domestic', 'DomesticController@index');//国内
 
 
 //后台主页
-Route::get('admins', 'WayController@lefts');
+Route::any('admins', 'AdminsController@index');
 Route::get('admin/way', 'WayController@index');//旅游方式
 Route::get('admin/wayadd', 'WayController@wayadd');
 Route::get('admin/addway', 'WayController@addway');//旅游方式添加
