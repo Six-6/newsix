@@ -4,8 +4,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="admin/css/reset.css">
+	<link rel="stylesheet" href="admin/css/public.css">
 </head>
 <body>
 <div class="public-header-warrp">
@@ -137,12 +137,12 @@
 					</div>
 				</li>
 				<li class="public-ifame-item">
-					<a href="javascript:;">V商城管理</a>
+					<a href="javascript:;">游记管理</a>
 					<div class="ifame-item-sub">
 						<ul>
-							<li><a href="#" target="content">V商城列表</a>|<a href="#" target="content">添加</a></li>
-							<li><a href="#" target="content">入驻V商城申请</a></li>
-							<li><a href="#" target="content">V商城订单</a></li>
+							<li><a href="{{URL('admin/travelnotes')}}" target="content">人在旅途</a></li>
+							<li><a href="{{URL('admin/classics')}}" target="content">经典回顾</a></li>
+							<li><a href="{{URL('admin/audit')}}" target="content">游记审核</a></li>
 						</ul>
 					</div>
 				</li>
@@ -193,7 +193,7 @@
 		</div>
 	</div>
 </div>
-<script src="js/jquery.min.js"></script>
+<script src="admin/js/jquery.min.js"></script>
 <script>
 $().ready(function(){
 	var item = $(".public-ifame-item");

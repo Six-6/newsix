@@ -132,7 +132,7 @@ window.onerror=function(){return true;}
             <a href="http://www.byts.com.cn/beijing/">北京游</a>
             <a href="http://www.byts.com.cn/zhoubian/">周边游</a>
             <a href="http://www.byts.com.cn/youlun/">邮轮游</a>
-            <a href="http://www.byts.com.cn/line/maerdaifu001/">马尔代夫</a>
+            <a href="{{URL('home/siterecommend')}}">风向标</a>
             <a href="http://www.byts.com.cn/jipiao/">机票</a> 
         </div>
       <div class="a3"><div style="position: absolute; left: 24px; top: 1px;"><img src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/HOT.png"></div>
