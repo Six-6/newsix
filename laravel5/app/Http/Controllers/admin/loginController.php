@@ -1,5 +1,5 @@
 <?php
-
+ 
 namespace App\Http\Controllers\admin;
 header('content-type:text/html;charset=utf-8');
 use DB;

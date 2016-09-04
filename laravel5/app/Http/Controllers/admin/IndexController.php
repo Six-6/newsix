@@ -18,6 +18,7 @@ class IndexController extends BaseController
     {
     	// $url=$request->path();
     	$u_id=Session::get('u_id');
+    	// echo $u_id;die;
     	$name=Session::get('name');
 		$res=DB::table('users')->where('u_id',$u_id)->lists('rid');
 		$arr=DB::table('r_p')
@@ -25,7 +26,7 @@ class IndexController extends BaseController
 		->where('r_p.rid',$res[0])
 		->get();
 		$ar=$this->cate($arr,0,0);
-		// print_r($ar);die;
+		
 
     	return view('admin/index/index',['ar'=>$ar,'name'=>$name]);
     }
@@ -40,8 +41,9 @@ class IndexController extends BaseController
 	                unset($info[$k]);//每次移动过去之后删除$info中当前的值  
 	            }  
 	        }  
-	    }  
-	    return $child;//返回生成的树形数组  
+	    }
+	      print_r($child);die;
+	    // return $child;//返回生成的树形数组  
 	}
 	public function i()
 	{
