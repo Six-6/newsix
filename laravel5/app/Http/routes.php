@@ -44,12 +44,12 @@ Route::get('admin/userDel',"admin\AdminController@del");
 Route::get('home/orderAdd',"home\OrderController@add");
 /**前台用户管理**/
 Route::get('home/personAdd',"home\UserController@add");//个人信息展示
-Route::get('home/personUpd',"home\UserController@upd");//个人信息修改
-Route::get('home/personVer',"home\UserController@ver");//个人信息验证
+Route::post('home/personUpd',"home\UserController@upd");//个人信息修改
+Route::post('home/personVer',"home\UserController@ver");//个人信息验证
 Route::any('home/imageAdd',"home\UserController@image");//头像上传
-Route::get('home/pswAdd',"home\UserController@psw");//密码改动
-
-
+Route::get('home/pswAdd',"home\UserController@psw");//密码查看
+Route::post('home/pswUpd',"home\UserController@ate");//密码修改
+Route::post('home/checkPwd',"home\UserController@pwd");//密码验证
 
 
 
