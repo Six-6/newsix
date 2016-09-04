@@ -72,12 +72,12 @@ Route::get('home/pswAdd',"home\UserController@psw");//密码改动
 //Route::get('admin/in', 'admin\IndexController@index');//后台主页
 
 Route::get('admins', 'admin\TravelnotesController@indexs');//游记管理
-Route::get('admin/travelnotes', 'admin\TravelnotesController@index');//游记管理
-Route::get('admin/travelsupdata', 'admin\TravelnotesController@updata');//审核
-Route::get('admin/classics', 'admin\TravelnotesController@classics');//经典回顾
+Route::get('admin/travelnotes', 'admin\TravelnotesController@index');//游记管理2
+Route::get('admin/travelsupdata', 'admin\TravelnotesController@updata');//审核2
+Route::get('admin/classics', 'admin\TravelnotesController@classics');//经典回顾2
 Route::get('admin/travelsdelete', 'admin\TravelnotesController@deletes');//游记删除
 Route::get('admin/travelsdelet', 'admin\TravelnotesController@delet');//游记删除
-Route::get('admin/audit', 'admin\TravelnotesController@audit');//展示待审核
+Route::get('admin/audit', 'admin\TravelnotesController@audit');//展示待审核2
 
 
 
@@ -202,10 +202,10 @@ Route::post('admin/uploas', 'WayController@uploas');//旅游景点添加
 Route::get('admin/lo', 'admin\loginController@index');//后台登录
 Route::post('admin/loin', 'admin\loginController@l');//后台登录
 Route::get('admin/unsession', 'admin\IndexController@unsession');//退出                                                                                                               
-
+Route::get('admin/in', 'admin\IndexController@index');//后台主页
 
 Route::group(['middleware' => ['common']], function () {
-	Route::get('admin/in', 'admin\IndexController@index');//后台主页
+	
 	Route::get('admin/userShow', 'admin\IndexController@i');//后台管理员列表
 	
 });
