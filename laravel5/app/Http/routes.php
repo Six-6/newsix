@@ -131,9 +131,7 @@ Route::get('admin/audit', 'admin\TravelnotesController@audit');//展示待审核
 
 
 //后台主页
-//Route::any('admins', 'AdminsController@index');
-Route::get('admins', 'WayController@lefts');//旅游方式
-
+Route::any('admins', 'AdminsController@index');
 Route::get('admin/way', 'WayController@index');//旅游方式
 Route::get('admin/wayadd', 'WayController@wayadd');
 Route::get('admin/addway', 'WayController@addway');//旅游方式添加
