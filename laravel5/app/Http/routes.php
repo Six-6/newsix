@@ -42,6 +42,12 @@ Route::get('admin/userDel',"admin\AdminController@del");
 
 /**订单列表**/
 Route::get('home/orderAdd',"home\OrderController@add");
+/**积分管理**/
+Route::get('home/integralAdd',"home\IntegralController@add");
+/**评论管理**/
+Route::get('home/viewAdd',"home\ViewController@add");
+
+
 /**前台用户管理**/
 Route::get('home/personAdd',"home\UserController@add");//个人信息展示
 Route::post('home/personUpd',"home\UserController@upd");//个人信息修改
