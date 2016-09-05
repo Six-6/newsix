@@ -64,6 +64,7 @@ class AdminController extends BaseController
         $path = $file->move('./admin/upload', $newName);//将图片放到storage/uploads下
         $path1 = str_replace('\\', '/', $path);
         $paths = "." . $path1;
+		
         DB::table("users")->where("u_id", $id)->update(['u_email' => $email, 'u_phone' => $phone, 'path' => $paths, "u_time" => $time]);
         return Redirect::to("userShow");
     }

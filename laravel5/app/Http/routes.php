@@ -79,6 +79,9 @@ Route::get('admin/travelsdelete', 'admin\TravelnotesController@deletes');//游�
 Route::get('admin/travelsdelet', 'admin\TravelnotesController@delet');//游记删除
 Route::get('admin/audit', 'admin\TravelnotesController@audit');//展示待审核
 
+/*****************************当季 推荐*********************************/
+Route::get('admin/inseason', 'admin\InseasonController@index');//游记管理
+Route::post('admin/seaadd', 'admin\InseasonController@seaadd');//游记管理
 
 
 
@@ -247,38 +250,6 @@ Route::group(['middleware' => ['common']], function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*****************************风 向 标*********************************/
-Route::any('home/siterecommend', 'HomeController@siterecommend');//风向标页面
+Route::any('home/siterecommend', 'IndicatorController@siterecommend');//风向标首页
 

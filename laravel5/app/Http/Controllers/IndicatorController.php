@@ -5,7 +5,7 @@ use DB,Input,Session;
 use Illuminate\Http\Request;
 
 
-class HomeController extends Controller {
+class IndicatorController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -20,7 +20,8 @@ class HomeController extends Controller {
 
 	/**
 	 * Create a new controller instance.
-	 *
+	 * 
+	 * 田浩编写
 	 * @return void
 	 */
 	public function __construct()
@@ -28,12 +29,15 @@ class HomeController extends Controller {
 		$this->middleware('guest');
 	}
 
-    //缃戠珯棣栭〉
-	public function login()
+	
+	/*******************************风 向 标**********************************/
+	/*首页*/
+	public function siterecommend()
 	{
-        return view('home.home');
+		return view('home.indicator');
 	}
 	
+	/*当季玩什么*/
 }
 
 	
