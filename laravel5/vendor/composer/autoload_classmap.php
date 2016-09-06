@@ -10,6 +10,8 @@ return array(
     'AddVotesToScenicTable' => $baseDir . '/database/migrations/2016_08_31_075753_add_votes_to_scenic_table.php',
     'AddVotesToUsersTable' => $baseDir . '/database/migrations/2016_08_31_071742_add_votes_to_users_table.php',
     'CreateCommentTable' => $baseDir . '/database/migrations/2016_08_31_082621_create_comment_table.php',
+    'CreateETypesTable' => $baseDir . '/database/migrations/2016_09_05_072058_create_e_types_table.php',
+    'CreateExchangesTable' => $baseDir . '/database/migrations/2016_09_05_075934_create_exchanges_table.php',
     'CreateIntegralsTable' => $baseDir . '/database/migrations/2016_09_05_012735_create_integrals_table.php',
     'CreateLoginsTable' => $baseDir . '/database/migrations/2016_09_02_112401_create_logins_table.php',
     'CreateOrdersTable' => $baseDir . '/database/migrations/2016_09_02_071530_create_orders_table.php',

@@ -114,9 +114,10 @@
                 <li class="" id="nav_left_2">
                     <dl class="user-sub-nav cf">
                         <dd><a href="integralAdd">我的积分</a></dd>
-
+                        <dd><a href="exchangeAdd">积分兑换</a></dd>
                     </dl>
                     <a href="#" class="mlink">我的积分</a>
+
                 </li>
                 <li class="" id="nav_left_3"><a href="viewAdd" class="mlink">我的点评</a></li>
                 <li class="" id="nav_left_4">

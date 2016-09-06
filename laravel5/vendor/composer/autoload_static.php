@@ -214,6 +214,8 @@ class ComposerStaticInit53b246cbeb772c48d2f3dbc981f4e7ee
         'AddVotesToScenicTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_31_075753_add_votes_to_scenic_table.php',
         'AddVotesToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_31_071742_add_votes_to_users_table.php',
         'CreateCommentTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_31_082621_create_comment_table.php',
+        'CreateETypesTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_05_072058_create_e_types_table.php',
+        'CreateExchangesTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_05_075934_create_exchanges_table.php',
         'CreateIntegralsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_05_012735_create_integrals_table.php',
         'CreateLoginsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_02_112401_create_logins_table.php',
         'CreateOrdersTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_02_071530_create_orders_table.php',
