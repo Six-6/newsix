@@ -1,25 +1,33 @@
 <?php
-
+ /**
+ * @后台登录
+ * @李来恩编写
+ **/
 namespace App\Http\Controllers\admin;
+
 header('content-type:text/html;charset=utf-8');
-use DB;
-use Redirect; 
-use Session;
+use DB,Redirect,Session;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-// session_start();
+
 class LoginController extends BaseController
 {
     public function index()
     {
     	return view('admin/login/login');
     }
-    public function l(Request $request)
+
+     /**
+    *用户登录
+    * @return Request $request 接收值
+    */
+    public function loin(Request $request)
     {
     	//接受登录信息
+    	// print_r($request->all());die;
     	$u_name=$request->u_name;
     	$u_pwd=$request->u_pwd;
 		if (isset($u_name) && isset($u_pwd))

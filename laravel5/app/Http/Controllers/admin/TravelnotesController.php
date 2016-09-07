@@ -53,7 +53,7 @@ class TravelnotesController extends BaseController {
 		{
 			$page = 1;
 		}
-
+	
 		//调用model层
 		$model = new Travels();
 		//调用查询方法
