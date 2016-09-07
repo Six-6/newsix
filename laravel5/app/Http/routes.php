@@ -63,6 +63,41 @@ Route::any('admin/lo', 'admin/loginController@index');//后台登录
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**后台登录 权限控制**/
 Route::get('admin/lo', 'admin\loginController@index');/**后台登录**/
 Route::post('admin/loin', 'admin\loginController@loin');/**后台登录**/
@@ -118,10 +153,8 @@ Route::group(['middleware' => ['common']], function () {
 
 	/**图片上传**/
 	Route::post('admin/uploas', 'WayController@uploas');/**旅游景点添加**/
-	
+
 });
-
-
 /**前台登录 退出 开始**/
 Route::get('blo','LoginController@index');/**前台登录**/
 Route::post('bloin','LoginController@bloin');/**前台登录**/

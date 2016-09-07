@@ -36,9 +36,10 @@ class TravelnotesController extends BaseController {
 	{
 		$this->middleware('guest');
 	}
-
-    /************************** 人在 旅途 ******************************/
-	
+	/**
+    *人在 旅途
+    * @return Request $request 接收值
+    */
 	public function indexs(){
 		return view('admin.index');
 	}
@@ -73,9 +74,10 @@ class TravelnotesController extends BaseController {
 		
 		return redirect('admin/travelnotes');
 	}
-	
-	/************************** 游记 审核 ******************************/
-	
+	/**
+    *游记 审核
+    * @return Request $request 接收值
+    */
 	public function audit()
 	{
 		//页数
@@ -104,8 +106,6 @@ class TravelnotesController extends BaseController {
 			
 		return redirect('admin/travelnotes');
 	}
-	
-	
 	/************************** 经典 回顾 ******************************/
 	
 	/**经典回顾**/

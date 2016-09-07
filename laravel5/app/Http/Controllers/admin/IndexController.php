@@ -24,7 +24,7 @@ class IndexController extends BaseController
     {
 
     	$u_id=Session::get('u_id');
-
+    	// echo $u_id;die;
     	$name=Session::get('name');
 
 		$res=DB::table('users')->where('u_id',$u_id)->lists('rid');
@@ -35,6 +35,12 @@ class IndexController extends BaseController
 		->get();
 		$arrs=$this->cate($arr,0,0); 
     	return view('admin/index/index',['ar'=>$arrs,'name'=>$name]);
+
+		$ar=$this->cate($arr,0,0);
+		
+
+    	return view('admin/index/index',['ar'=>$ar,'name'=>$name]);
+
     }
     /**
     *无限极分类
@@ -58,10 +64,12 @@ class IndexController extends BaseController
 					    unset($info[$k]);//每次移动过去之后删除$info中当前的值  
 	            }  
 	        }  
+
 	          // print_r($child);
 	        return $child;//返回生成的树形数组  
 		}
 	}      
+
 	public function unsession()
 	{
 		session_unset();

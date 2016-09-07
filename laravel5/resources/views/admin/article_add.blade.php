@@ -13,10 +13,9 @@
 		<div class="public-content">
 			<div class="public-content-header">
 				<h3>修改网站配置</h3>
-				<!-- onsubmit="return logins()" -->
 			</div>
 			<div class="public-content-cont">
-			    <form method="post" action="{{URL('admin/uploas')}}"  enctype="multipart/form-data">
+			    <form method="post" action="{{URL('admin/uploas')}}" enctype="multipart/form-data">
 				<div class="form-group">
 					<label for="">请选择分类</label>
 					<select name="types" class="form-select">
@@ -24,6 +23,15 @@
 			    		@foreach($arr as $s=>$k)
 						<option id='types' value="{{ $k->r_id }}" />&nbsp;{{ $k->r_region }}</option>
 					    @endforeach
+					</select>
+
+					<select name="classify" class="form-select">
+						<option value="">--请选择--</option>
+						<option id='types' value="1" />&nbsp;马尔代夫度假</option>
+						<option id='types' value="2" />&nbsp;欧洲文艺都市</option>
+						<option id='types' value="3" />&nbsp;热血之路</option>
+						<option id='types' value="4" />&nbsp;古寨之旅</option>
+						<option id='types' value="5" />&nbsp;文化之路</option>
 					</select>
 
 				</div>
@@ -123,16 +131,6 @@
             return true;
         }
 	}
-	// function logins()
-	// {
-	// 	if(SiteName2() && traffic2() && sprice2() && day2)
-	// 	{
-	// 		return true;
-	// 	}else
-	// 	{
-	// 		return false;
-	// 	}
-	// }
 </script>
 </body>
 </html>

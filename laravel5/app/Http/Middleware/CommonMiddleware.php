@@ -22,6 +22,7 @@ class CommonMiddleware
 		->where('r_p.rid',$res[0])
 		->get();
 		$url=$request->path();
+
 		$urls=substr($url,6);
 		// if(!in_array($urls,$arr))
 		// {
