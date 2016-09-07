@@ -12,6 +12,7 @@ return array(
     'CreateCommentTable' => $baseDir . '/database/migrations/2016_08_31_082621_create_comment_table.php',
     'CreateETypesTable' => $baseDir . '/database/migrations/2016_09_05_072058_create_e_types_table.php',
     'CreateExchangesTable' => $baseDir . '/database/migrations/2016_09_05_075934_create_exchanges_table.php',
+    'CreateIntegralordersTable' => $baseDir . '/database/migrations/2016_09_07_064744_create_integralorders_table.php',
     'CreateIntegralsTable' => $baseDir . '/database/migrations/2016_09_05_012735_create_integrals_table.php',
     'CreateLoginsTable' => $baseDir . '/database/migrations/2016_09_02_112401_create_logins_table.php',
     'CreateOrdersTable' => $baseDir . '/database/migrations/2016_09_02_071530_create_orders_table.php',

@@ -44,10 +44,10 @@ Route::get('home/viewAdd',"home\ViewController@add");/**评论管理**/
 /**积分管理**/
 Route::get('home/integralAdd',"home\IntegralController@add");//页面显示
 Route::get('home/exchangeAdd',"home\IntegralController@exchange");//积分详情页
-Route::get('home/detailsAdd',"home\IntegralController@details");//积分兑换页
-Route::get('home/detailsButton',"home\IntegralController@button");//积分兑换
-
-
+Route::post('home/detailsAdd',"home\IntegralController@details");//积分兑换页
+Route::get('home/detailsButton',"home\IntegralController@button");//积分兑换详情页
+Route::post('home/detailsShow',"home\IntegralController@detailsShow");//积分兑换详情页
+Route::post('home/address',"home\IntegralController@goodsDetails");//积分兑换收货地址
 
 
 
