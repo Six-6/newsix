@@ -9,7 +9,7 @@
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
-		<div class="public-nav">您当前的位置：<a href="">管理首页</a>></div>
+		<div class="public-nav">您当前的位置：<a href="">管理首页</a>>景点添加</div>
 		<div class="public-content">
 			<div class="public-content-header">
 				<h3>修改网站配置</h3>
@@ -18,10 +18,20 @@
 			    <form method="post" action="{{URL('admin/uploas')}}" enctype="multipart/form-data">
 				<div class="form-group">
 					<label for="">请选择分类</label>
-					<select name="" class="form-select">
+					<select name="types" class="form-select">
+						<option value="">--请选择--</option>
 			    		@foreach($arr as $s=>$k)
 						<option id='types' value="{{ $k->r_id }}" />&nbsp;{{ $k->r_region }}</option>
 					    @endforeach
+					</select>
+
+					<select name="classify" class="form-select">
+						<option value="">--请选择--</option>
+						<option id='types' value="1" />&nbsp;马尔代夫度假</option>
+						<option id='types' value="2" />&nbsp;欧洲文艺都市</option>
+						<option id='types' value="3" />&nbsp;热血之路</option>
+						<option id='types' value="4" />&nbsp;古寨之旅</option>
+						<option id='types' value="5" />&nbsp;文化之路</option>
 					</select>
 
 				</div>
@@ -33,19 +43,22 @@
 				<div class="form-group">
 					<label for="">往返交通</label>
 					<input class="form-input-txt" type="text" name="traffic" id="traffic" value="" onblur="traffic2()"/>
+					<span id="jt"></span>
 				</div>
 				<div class="form-group">
 					<label for="">旅游价格</label>
 					<input class="form-input-txt" type="text" name="sprice" id="sprice" value="" onblur="sprice2()"/>
+					<span id="jg"></span>
 				</div>
 				<div class="form-group">
 					<label for="">旅游天数</label>
 					<input class="form-input-txt" type="text" name="day" id="day" value="" onblur="day2()" />
+					<span id="ts"></span>
 				</div>
-				<div class="form-group">
-					<label for="">发布人</label>
-					<input class="form-input-txt" type="button" name="username" id="username" value="{{Session::get('username')}}" />
-				</div>
+<!-- 				<div class="form-group">
+	<label for="">发布人</label>
+	<input class="form-input-txt" type="button" name="username" id="username" value="{{Session::get('username')}}" />
+</div> -->
 				<div class="form-group">
 					<label for="">图</label>
     				<input type="hidden" name="_token" value="{{csrf_token()}}" />
@@ -73,50 +86,50 @@
 <script>
 	function SiteName2(){
 		var SiteName=$("#SiteName").val();
-		if (SiteName=='') {
-			alert("风景名不能为空");
-		}
+		var verify=/^[\u4e00-\u9fa5]{2,17}$/;
+		if (!verify.test(SiteName)) {
+			$("#fj").html("<font color='red'>由6-18位汉字组成</font>");
+			return false;
+		}else
+        {
+            $("#fj").html("<font color='group'>可用</font>");
+            return true;
+        }
 	}
 	function traffic2(){
 		var traffic=$("#traffic").val();
-		if (traffic=='') {
-			alert("往返交通不能为空");
+		if (traffic=='公交'||traffic=='火车'||traffic=='飞机'||traffic=='公交+火车'||traffic=='火车+飞机'||traffic=='公交+飞机') {
+			$("#jt").html("<font color='green'>可用</font>");
+			return false;
+		}else{
+			$("#jt").html("<font color='red'>公交、火车、飞机、公交+火车、火车+飞机、公交+飞机</font>");
+			return false;
 		}
+		
 	}
 	function sprice2(){
 		var sprice=$("#sprice").val();
-		if (sprice=='') {
-			alert("价格不能为空");
-		}
+		var verify=/^[0-9]{1,9}$/;
+		if (!verify.test(sprice)) {
+			$("#jg").html("<font color='red'>由1-9位数字组成</font>");
+			return false;
+		}else
+        {
+            $("#jg").html("<font color='green'>可用</font>");
+            return true;
+        }
 	}
 	function day2(){
 		var day=$("#day").val();
-		if (day=='') {
-			alert("旅游时间不能为空");
-		}
-	}
-	function addway(){
-	var types=$("#types").val();
-	var SiteName=$("#SiteName").val();
-	var traffic=$("#traffic").val();
-	var day=$("#day").val();
-	var files=$("#files").val();
-	if(types==''||SiteName==''||traffic==''||day==''||files==''){
-		alert("不能为空");
-	}else{
-		$.ajax({
-			type:'get',
-			url:"{{URL('admin/addway')}}",
-			data:"types="+types+"&&SiteName="+SiteName+"&&traffic="+traffic+"&&day="+day+"&&files="+files,
-			success:function(msg){
-				if (msg==1) {
-					location.href="{{URL('admin/waysel')}}"
-				}else{
-					alert("添加失败");
-				}
-			}
-		});
-	}
+		var verify=/^[0-9]{1,3}$/;
+		if (!verify.test(day)) {
+			$("#ts").html("<font color='red'>由1-3位数字组成</font>");
+			return false;
+		}else
+        {
+            $("#ts").html("<font color='green'>可用</font>");
+            return true;
+        }
 	}
 </script>
 </body>

@@ -71,26 +71,26 @@
 				<table>
 					<tr>
 						<td>
-							<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page=1">首页</a>						
+							<a href="http://lilaien.applinzi.com/Six/1409phpA-6/laravel5/public/admin/travelnotes?page=1">首页</a>						
 						</td>
 						<td>
 							@if ($T_message['page'] == 1)   
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page=1">上一页</a>
+								<a href="http://lilaien.applinzi.com/Six/1409phpA-6/laravel5/public/admin/travelnotes?page=1">上一页</a>
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['page']-1}}">上一页</a>
+								<a href="http://lilaien.applinzi.com/Six/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['page']-1}}">上一页</a>
 							@endif							
 						</td>
 						<td>
 							@if ($T_message['page'] == $T_message['mexpage']) 
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['mexpage']}}">下一页</a>
+								<a href="http://lilaien.applinzi.com/Six/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['mexpage']}}">下一页</a>
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['page']+1}}">下一页</a>
+								<a href="http://lilaien.applinzi.com/Six/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['page']+1}}">下一页</a>
 							@endif
 						</td>
 						<td>
 							@if ($T_message['page'] > $T_message['mexpage'])    
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['mexpage']}}">最后一页</a>
+								<a href="http://lilaien.applinzi.com/Six/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['mexpage']}}">最后一页</a>
 							@endif
 						</td>
 					</tr>
