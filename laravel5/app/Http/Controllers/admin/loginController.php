@@ -17,7 +17,7 @@ class LoginController extends BaseController
     {
     	return view('admin/login/login');
     }
-    public function l(Request $request)
+    public function loin(Request $request)
     {
     	//接受登录信息
     	$u_name=$request->u_name;
