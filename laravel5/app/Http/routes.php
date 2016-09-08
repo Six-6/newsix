@@ -30,12 +30,6 @@ Route::any('admin/exchangeAdd',"admin\ExchangeController@add");/**兑换添加**
 Route::post('admin/checkName',"admin\ExchangeController@check");/**兑换验证**/
 Route::get('admin/exchangeShow',"admin\ExchangeController@show");/**兑换展示**/
 
-/**前台用户管理**/
-Route::get('home/personAdd',"home\UserController@add");//个人信息展示
-Route::post('home/personUpd',"home\UserController@upd");//个人信息修改
-Route::post('home/personVer',"home\UserController@ver");//个人信息验证
-Route::any('home/imageAdd',"home\UserController@image");//头像上传
-Route::get('home/pswAdd',"home\UserController@psw");//密码改动
 
 
 
@@ -159,6 +153,7 @@ Route::get('home/recursion', 'home\RecursionController@recursion');/**首页无�
 Route::post('home/searchs', 'home\RecursionController@searchs');/**首页全文检索搜索**/
 Route::get('home/sous', 'home\RecursionController@searchDay');/**根据旅游天数搜索**/
 Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅游资金搜索**/
+Route::get('home/role',"home\RoleController@roleSel");/**个人信息展示 删 **/
 
 
 
