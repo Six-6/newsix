@@ -47,12 +47,13 @@ Route::get('home/integralAdd',"home\OrderController@integral");//积分显示
 Route::get('home/viewAdd',"home\OrderController@view");//我的评论
 Route::get('home/orderAdd',"home\OrderController@line");/**订单列表**/
 Route::get('home/viewAdd',"home\OrderController@view");/**评论管理**/
-
+Route::get('home/common',"home\OrderController@show");/**主页面显示**/
 /**兑换管理**/
-
-
-
-
+Route::get('home/exchangeShow',"home\ExchangeController@show");/**兑换页面显示**/
+Route::post('home/detailsShow',"home\ExchangeController@id");/**兑换商品详情**/
+Route::get('home/detailsSel',"home\ExchangeController@details");/**兑换商品详情**/
+Route::post('home/detailsOrder',"home\ExchangeController@order");/**兑换商品订单**/
+Route::post('home/orderAdd',"home\ExchangeController@orderAdd");/**确认兑换**/
 
 
 
