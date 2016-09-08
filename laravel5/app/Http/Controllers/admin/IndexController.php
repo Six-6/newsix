@@ -42,8 +42,8 @@ class IndexController extends BaseController
 	            }  
 	        }  
 	    }
-	      print_r($child);die;
-	    // return $child;//返回生成的树形数组  
+	    //  print_r($child);die;
+	     return $child;//返回生成的树形数组  
 	}
 	public function i()
 	{
