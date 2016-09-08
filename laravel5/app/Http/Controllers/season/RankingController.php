@@ -1,11 +1,12 @@
 <?php 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\season;
 use DB,Input,Session;
+use Request;
+use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
-
-
-class HomeController extends Controller {
+use App\Ranking;
+header("content-type:text/html;charset=utf-8");
+class RankingController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -20,20 +21,20 @@ class HomeController extends Controller {
 
 	/**
 	 * Create a new controller instance.
-	 *
+	 * 
 	 * @return void
 	 */
 	public function __construct()
 	{
 		$this->middleware('guest');
 	}
-
-    //网站首页
-	public function login()
-	{
-        return view('home.home');
-	}
-
-}
-
 	
+	public function index()
+	{
+		$model = new Ranking();					//调用model层
+		
+		$data = $model->seldata();				//调用查询方法
+		
+		return view('ranking.Rank',['data'=>$data]);
+	}
+}

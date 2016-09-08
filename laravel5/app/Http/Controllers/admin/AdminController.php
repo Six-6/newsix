@@ -26,16 +26,16 @@ class AdminController extends BaseController
     *用户添加管理员
     * @return Request $request 接收值
     */
-    public function add(Request $request){
-        if (empty($request->input('u_name'))) {
+    public function add(Request $request)
+    {
 
+        if (empty($request->input("u_name"))){
             $user = DB::table("role")->get();
             return view("admin.user.add", ['user' => $user]);
         } else {
             $rid = $request->input("rid");
             $uname = $request->input("u_name");
             $pwd = $request->input("u_pwd");
-
             DB::table("users")->insert(['u_name' => $uname, 'u_pwd' => $pwd, 'rid' => $rid]);
             return Redirect::to("admin/userShow");
             $res=DB::table("users")->insert(['u_name' => $uname, 'u_pwd' => $pwd, 'rid' => $rid]);
