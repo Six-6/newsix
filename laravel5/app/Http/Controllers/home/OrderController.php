@@ -23,6 +23,10 @@ use Input;
 session_start();
 
 class OrderController extends BaseController{
+    /**订单添加**/
+    public function add(Request $request){
+        return view("home.order.add");
+	}
     /**路线订单查看**/
     public function line(Request $request){
         $order=Order::selAll();
