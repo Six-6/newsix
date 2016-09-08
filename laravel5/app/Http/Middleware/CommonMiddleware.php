@@ -22,11 +22,11 @@ class CommonMiddleware
 		->where('r_p.rid',$res[0])
 		->get();
 		$url=$request->path();
-		if(!in_array($url,$arr))
+		/*if(!in_array($url,$arr))
 		{
 			echo "<script>alert('对不起, 您没有此权限')</script>";
 			die;
-		}
+		}*/
 		return $next($request);
 	}
 	
