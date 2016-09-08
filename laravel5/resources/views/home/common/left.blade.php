@@ -106,16 +106,16 @@
                 <li class="" id="nav_left_1">
                     <dl class="user-sub-nav cf">
                         <dd><a href="orderAdd">线路订单</a></dd>
-                        <dd><a href="">酒店订单</a></dd>
+                        <dd><a href="hotelAdd">酒店订单</a></dd>
                         <dd><a href="">门票订单</a></dd>
                     </dl>
-                    <a href="" class="mlink">我的订单</a>
+                    <a href="orderAdd" class="mlink">我的订单</a>
                 </li>
                 <li class="" id="nav_left_2">
                     <dl class="user-sub-nav cf">
                         <dd><a href="integralAdd">我的积分</a></dd>
                     </dl>
-                    <a href="#" class="mlink">我的积分</a>
+                    <a href="integralAdd" class="mlink">我的积分</a>
 
                 </li>
                 <li class="" id="nav_left_3"><a href="viewAdd" class="mlink">我的点评</a></li>
@@ -126,7 +126,7 @@
                         <dd><a href="pswAdd">修改密码</a></dd>
 
                     </dl>
-                    <a href="javascript: void(0)" class="mlink">账号管理</a>
+                    <a href="personAdd" class="mlink">账号管理</a>
                 </li>
                 <!--会员特价中心待添加 chenjinlong 2011-11-22-->
 

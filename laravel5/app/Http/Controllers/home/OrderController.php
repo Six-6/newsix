@@ -13,6 +13,9 @@ use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
 use Redirect;
 use App\Order;
+use App\Integral;
+use App\View;
+use App\Hotel;
 use Session;
 use DB;
 use Input;
@@ -20,11 +23,33 @@ use Input;
 session_start();
 
 class OrderController extends BaseController{
-    /**订单查看**/
-    public function add(Request $request){
+    /**路线订单查看**/
+    public function line(Request $request){
         $order=Order::selAll();
         //print_r($order);die;
-        return view("home.order.add",["order"=>$order]);
+        return view("home.order.line",["order"=>$order]);
+    }
+    /**
+     * 酒店订单查看
+     */
+    public function hotel(){
+        $hotel=Hotel::selAll();
+        return view("home.order.hotel",["hotel"=>$hotel]);
+    }
+    /**
+     * 积分页面显示
+     */
+    public function integral(){
+        $integral=Integral::selAll();
+        return view("home.order.integral",["integral"=>$integral]);
+    }
+    /**
+     * 我的评论
+     */
+    public function view(){
+        $view=View::selAll();
+        //print_r($view);die;
+        return view("home.content.view",["view"=>$view]);
     }
 
 }
