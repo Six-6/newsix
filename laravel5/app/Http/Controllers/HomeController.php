@@ -33,7 +33,12 @@ class HomeController extends Controller {
 	{
         return view('home.home');
 	}
-
+	
+	//风向标
+	public function siterecommend()
+	{
+		return view('home.vane');
+	}
 }
 
 	

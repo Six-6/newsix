@@ -9,7 +9,7 @@ namespace App\Http\Controllers;
 use DB,Input,Session;
 
 use Illuminate\Http\Request;
-use App\libs\sphinxapi;
+
 
 class WayController extends Controller {
 	public function __construct()
@@ -41,7 +41,6 @@ class WayController extends Controller {
 	 * 添加展示
 	 * @return
 	 */
-
 	public function wayadd(){
 		$tables = DB::table('region')->get();
 		return view('admin.article_add',['arr' => $tables]);
@@ -51,7 +50,6 @@ class WayController extends Controller {
 	 *展示旅游方式
 	 * @return
 	 */
-	//展示旅游方式
 	public function waysel(){
 		$tables = DB::table('scenic')->get();
 		return view('admin.admin_cardTemplate2',['arr' => $tables]);
@@ -149,6 +147,8 @@ class WayController extends Controller {
 			echo 1;
 		}
 	}
+
+
 	/*
 	 *添加旅游方式
 	 *@return
@@ -175,7 +175,7 @@ class WayController extends Controller {
 	 *
      * @return Response
 	 */
-   public function uploas(Request $request){
+	public function uploas(Request $request){
 		$data = $request->all();
 		$file = $request->file('file');
 		 //if($data['SiteName']==''||$data['traffic']==''||$data['day']==''||$data['file']==''||$data['types']==''||$data['classify']==''){
@@ -218,4 +218,7 @@ class WayController extends Controller {
 	}
 	}
 
+
 }
+
+	
