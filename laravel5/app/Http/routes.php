@@ -150,7 +150,17 @@ Route::group(['middleware' => ['common']], function () {
 	Route::post('admin/checkUser',"admin\AdminController@check");/**管理员验证**/
 	
 	Route::get('admin/userDel',"admin\AdminController@del");/**管理员删除**/
-
+    /**管理员管理**/
+    Route::any('admin/userAdd',"admin\AdminController@add");/**管理员添加**/
+    Route::get('admin/userInfo',"admin\AdminController@info");/**管理员信息完善查看**/
+    Route::post('admin/infoAdd',"admin\AdminController@perfect");/**管理员信息完善**/
+    Route::get('admin/userShow',"admin\AdminController@show");/**管理员查看**/
+    Route::post('admin/checkUser',"admin\AdminController@check");/**管理员验证**/
+    Route::get('admin/userDel',"admin\AdminController@del");/**管理员删除**/
+    /**兑换管理**/
+    Route::any('admin/exchangeAdd',"admin\ExchangeController@add");/**兑换添加**/
+    Route::post('admin/checkName',"admin\ExchangeController@check");/**兑换验证**/
+    Route::get('admin/exchangeShow',"admin\ExchangeController@show");/**兑换展示**/
 
 
 	/**后台 游记管理**/
