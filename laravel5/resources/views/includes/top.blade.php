@@ -14,8 +14,8 @@
 </div>
 </div>
 <div class="top2">
-  <div class="conter">
-      <div class="logo"><img src="../home/images/logo.png" width="329" height="54"><img src="../home/images/tage.png" width="116" height="50"></div>
+	<div class="conter">
+    	<div class="logo"><img src="../home/images/logo.png" width="329" height="54"><img src="../home/images/tage.png" width="116" height="50"></div>
     <div class="sourchNew"> 
     <!-- <form action="http://www.byts.com.cn/tags.php" method="post" name="indexsearchform" class="cfix" id="indexsearchform"> -->
 <input type="hidden" value="0" name="travelClassHeader" id="srhInput">
@@ -38,10 +38,10 @@
 
 
 <div class="dh">
-  <div class="conter">
-      <div class="a1"><a href="javascript:void(0)">所有目的地分类</a></div>
+	<div class="conter">
+   	  <div class="a1"><a href="javascript:void(0)">所有目的地分类</a></div>
       <div class="a2">
-          <a href="{{URL('/')}}">首页</a>
+        	<a href="{{URL('/')}}">首页</a>
             <a href="http://www.byts.com.cn/out/">出境游</a>
             <a href="http://www.byts.com.cn/china/">国内游</a>
             <a href="http://www.byts.com.cn/beijing/">北京游</a>

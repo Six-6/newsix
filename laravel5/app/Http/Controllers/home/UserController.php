@@ -24,7 +24,7 @@ class UserController extends BaseController{
     /**个人资料展示**/
     public function Add(){
         $person=Login::selAll();
-        //print_r($person);die;
+        print_r($person);die;
         $type=Type::selAll();
         return view("home.user.person",["person"=>$person,"type"=>$type]);
     }

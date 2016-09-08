@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" >
 <!-- saved from url=(0033)http://www.byts.com.cn/index.html -->
 <html xmlns="#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" charset="utf-8" async="" src="css/crmqq.php"></script>
-<script type="text/javascript" charset="utf-8" async="" src="js/contains.js"></script>
-<script type="text/javascript" charset="utf-8" async="" src="js/localStorage.js"></script>
-<script type="text/javascript" charset="utf-8" async="" src="js/Panel.js"></script>
+<script type="text/javascript" charset="utf-8" async="" src="../css/crmqq.php"></script>
+<script type="text/javascript" charset="utf-8" async="" src="../js/contains.js"></script>
+<script type="text/javascript" charset="utf-8" async="" src="../js/localStorage.js"></script>
+<script type="text/javascript" charset="utf-8" async="" src="../js/Panel.js"></script>
 
 <title>惠完</title>
 
@@ -14,17 +14,17 @@
 <meta name="copyright" content="北京青年旅行社股份有限公司">
 <meta name="description" content="北京青年旅行社股份有限公司是实力雄厚的北京旅行社，经营国内旅游、出境旅游、入境旅游等业务。北京青旅网是北青旅总社指定的专业旅游网站。">
 <meta name="keywords" content="北京青旅,北青旅,旅游网,旅行社,国内旅游,出境旅游,北京旅游,北京周边游,休闲,会议,度假,自由人,签证,机票,出差,酒店,订房,在线预定,特色旅游,专题旅游,夕阳红旅游,红色旅游,北京青年旅行社">
-<link rel="stylesheet" href="./css/indexv2.css" type="text/css">
-<link href="./css/text.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="../css/indexv2.css" type="text/css">
+<link href="../css/text.css" type="text/css" rel="stylesheet">
 <meta name="360-site-verification" content="972c799d32fc710b7946ef9b0dbdd2fc">
 <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1">
-<link href="./css/site.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="js/jquery.jslides.js"></script>
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/index.css">
-<script type="text/javascript" src="js/188_min.js"> </script>
-<script type="text/javascript" src="js/188_NewIndex.js"></script>
+<link href="../css/site.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery.jslides.js"></script>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/index.css">
+<script type="text/javascript" src="../js/188_min.js"> </script>
+<script type="text/javascript" src="../js/188_NewIndex.js"></script>
 <script type="text/javascript"> 
 var intervalId = null; 
 function slideAd(id,nStayTime,sState,nMaxHth,nMinHth){ 
@@ -96,7 +96,7 @@ $(document).ready(function(){
 });
 
 
-</script><script language="javascript" type="text/javascript" src="js/ajax188.js"></script><script language="javascript" type="text/javascript">
+</script><script language="javascript" type="text/javascript" src="../js/ajax188.js"></script><script language="javascript" type="text/javascript">
 
 function Check_head_Login(){
       
@@ -119,11 +119,11 @@ function  myAddPanel(title,url,desc) {
 <!-- 
 window.onerror=function(){return true;} 
 // --> 
-</script><link rel="stylesheet" type="text/css" id="TQCSS0.5806006020866334" href="./css/style.css"><link rel="stylesheet" type="text/css" id="TQCSS0.20915199350565672" href="./css/style(1).css">
-<script id="TQJS0.899174741236493" src="js/float.js"></script>
-<script id="TQJS0.09123087371699512" src="js/invite.js"></script>
-<script id="TQJS0.8906257988419384" src="js/minimess_core.js"></script><link rel="stylesheet" type="text/css" id="TQCSS0.6959054530598223" href="./css/style(2).css">
-<script charset="utf-8" async="" src="js/i.js" id="_da"></script><script id="TQJS0.39637403981760144" src="js/scriptonline.js"></script>
+</script><link rel="stylesheet" type="text/css" id="TQCSS0.5806006020866334" href="../css/style.css"><link rel="stylesheet" type="text/css" id="TQCSS0.20915199350565672" href="../css/style(1).css">
+<script id="TQJS0.899174741236493" src="../js/float.js"></script>
+<script id="TQJS0.09123087371699512" src="../js/invite.js"></script>
+<script id="TQJS0.8906257988419384" src="../js/minimess_core.js"></script><link rel="stylesheet" type="text/css" id="TQCSS0.6959054530598223" href="../css/style(2).css">
+<script charset="utf-8" async="" src="../js/i.js" id="_da"></script><script id="TQJS0.39637403981760144" src="../js/scriptonline.js"></script>
 <script id="TQJS0.9952801705803722" src="http://121.40.46.58:8000/sendmain.jsp?rand=31316931617776410&uin=9606641&comflag=981669443971972&nocache=0.12656454392708838&msg=APPLYFAIL_DISAGREE"></script></head>
 
 
@@ -213,15 +213,15 @@ window.onerror=function(){return true;}
     </script>-->
 @include('includes.top')
 <script type="text/javascript">
-function hover(n){
-	for(var i=1;i<10;i++){
-		$("#show"+n).css("display","none");
+	function hover(n){
+		for(var i=1;i<100;i++){
+			$("#show"+n).css("display","none");
 		}
 	
-	$("#show"+n).css("display","block");
+		$("#show"+n).css("display","block");
 	
 	}
-function mousout(n){
+	function mousout(n){
 		$("#show"+n).css("display","none");
 	}
 
@@ -229,1004 +229,46 @@ function mousout(n){
        
       <div class="dhnew">
       	<div class="dha">
+      	<!--左边-->
         	<ul>
-            	<li class="a" onmouseover="hover(1)" onmouseout="mousout(1)"><div><strong>出境旅游1</strong>
-                <div class="noe"> 
-<a href="http://www.byts.com.cn/line/haidao001">海岛w</a>
-
-<a href="http://www.byts.com.cn/line/dongnanya001">东南亚</a>
-
-<a href="http://www.byts.com.cn/line/aozhou001">澳洲</a>
-
-<a href="http://www.byts.com.cn/line/rihanchao001">日韩朝</a>
-
-<a href="http://www.byts.com.cn/line/ouzhou001">欧洲</a>
-
-<a href="http://www.byts.com.cn/line/nanya001">南亚</a>
-
-</div>
-</div></li>
-                <li onmouseover="hover(2)" onmouseout="mousout(2)" style="background-image:url(image/2.png)"><div><strong style="color:#fa8d00">国内旅游</strong> <div class="noe">
-  
-<a href="http://www.byts.com.cn/line/hainan001">海南</a>
-
-<a href="http://www.byts.com.cn/line/yunan001">云南</a>
-
-<a href="http://www.byts.com.cn/line/fujian001">福建</a>
-
-<a href="http://www.byts.com.cn/line/dongbei001">东北</a>
-
-<a href="http://www.byts.com.cn/line/guangxi001">广西</a>
-
-<a href="http://www.byts.com.cn/line/xizang001">西藏</a>
-</div></div></li>
-                <li onmouseover="hover(3)" onmouseout="mousout(3)" style="background-image:url(image/3.png)" class="a"><div><strong style="color:#3ab2e5">周边旅游</strong> <div class="noe"> 
-<a href="http://www.byts.com.cn/line/hebei001">河北</a>
-
-<a href="http://www.byts.com.cn/line/jingjiaolvyou001">京郊旅游</a>
-</div></div></li>
-                <li onmouseover="hover(4)" onmouseout="mousout(4)" style="background-image:url(image/4.png)"><div><strong style="color:#2ab98c">邮轮旅游</strong> <div class="noe"> 
-<a href="http://www.byts.com.cn/line/rihanghangxian001">日韩航线</a>
-
-<a href="http://www.byts.com.cn/line/dongnanyahangxian001">东南亚航线</a>
-
-<a href="http://www.byts.com.cn/line/ouzhouhangxian001">欧洲航线</a>
-
-<a href="http://www.byts.com.cn/line/meizhouhangxian001">美洲航线</a>
-</div></div></li>
-<!-- <li onmouseover="hover(5)" onmouseout="mousout(5)" style="background-image:url(image/5.png)" class="a"><div><strong style="color:#ab68ff">酒店预定</strong> <div class="noe">
-<a href="http://www.byts.com.cn/hotel/zjj">广州</a>
-
-<a href="http://www.byts.com.cn/hotel/beijing">北京</a>
-
-<a href="http://www.byts.com.cn/hotel/shanghaijiudian">上海</a>
-
-<a href="http://www.byts.com.cn/hotel/shenchou">深圳</a>
-
-<a href="http://www.byts.com.cn/hotel/dalian">大连</a>
-</div></div>
-</li> -->
-<li onmouseover="hover(6)" onmouseout="mousout(6)" style="background-image:url(image/6.png)"><div><strong style="color:#fa5c25">马尔代夫</strong><br>一价全包 7星岛 6星岛 5星岛</div></li>
+      			@foreach($arr1 as $v)
+            	<li class="a" onmouseover="hover({{ $v->r_id }})" onmouseout="mousout({{ $v->r_id }})"><div>
+	            	<strong id="">{{$v->r_region }}</strong>
+	                <div class="noe"> 
+						@foreach($v->child as $v=>$z)
+						<a href="http://www.byts.com.cn/line/haidao001" id="{{ $z->r_id }}">{{ $z->r_region }}</a>
+						@endforeach
+					</div>
+					</div>
+				</li>   
+          	  @endforeach
             </ul>
+            <!--左边-->
          	<div class="clear"></div>
         </div>
       </div>
       
-      <div class="nowhover" id="show1" onmouseout="mousout(1)" onmouseover="hover(1)" style="display: none;">
+      <!--右边-->
+      	@foreach($arr1 as $q)
+      <div class="nowhover" id="show{{ $q->r_id }}" onmouseout="mousout({{ $q->r_id }})" onmouseover="hover({{ $q->r_id }})" style="display: none;">
       	<ul>
-<li>
- <div class="a"> <a href="http://www.byts.com.cn/line/haidao001">海岛1</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/balidao002">巴厘岛1</a>
-
-  <a href="http://www.byts.com.cn/line/lvzhonghai002">绿中海</a>
-
-  <a href="http://www.byts.com.cn/line/mindandao002">民丹岛</a>
-
-  <a href="http://www.byts.com.cn/line/bangluodao002">邦咯岛</a>
-
-  <a href="http://www.byts.com.cn/line/zhenladingwang002">杜马盖地</a>
-
-  <a href="http://www.byts.com.cn/line/lankawei002">兰卡威</a>
-
-  <a href="http://www.byts.com.cn/line/sumeidao002">苏梅岛</a>
-
-  <a href="http://www.byts.com.cn/line/guandao002">关岛</a>
-
-  <a href="http://www.byts.com.cn/line/xiangan002">岘港</a>
-
-  <a href="http://www.byts.com.cn/line/changtandao002">长滩岛</a>
-
-  <a href="http://www.byts.com.cn/line/balawang002">巴拉望</a>
-
-  <a href="http://www.byts.com.cn/line/saibandao002">塞班岛</a>
-
-  <a href="http://www.byts.com.cn/line/maoliqiusi002">毛里求斯</a>
-
-  <a href="http://www.byts.com.cn/line/saisheer002">塞舌尔</a>
-
-  <a href="http://www.byts.com.cn/line/shaba002">沙巴</a>
-
-  <a href="http://www.byts.com.cn/line/pujidao002">普吉岛</a>
-
-  <a href="http://www.byts.com.cn/line/bincheng002">芽庄</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/dongnanya001">东南亚</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/taiguo002">泰国</a>
-
-  <a href="http://www.byts.com.cn/line/qingmai002">清迈</a>
-
-  <a href="http://www.byts.com.cn/line/manbapu002">曼芭普</a>
-
-  <a href="http://www.byts.com.cn/line/manbaqing002">曼芭清</a>
-
-  <a href="http://www.byts.com.cn/line/manqingpu002">曼清普</a>
-
-  <a href="http://www.byts.com.cn/line/taixinma002">泰新马</a>
-
-  <a href="http://www.byts.com.cn/line/xinma002">新马</a>
-
-  <a href="http://www.byts.com.cn/line/miandian002">缅甸</a>
-
-  <a href="http://www.byts.com.cn/line/yuenan002">越南</a>
-
-  <a href="http://www.byts.com.cn/line/jianpuzai002">柬埔寨</a>
-
-  <a href="http://www.byts.com.cn/line/taijian002">泰柬</a>
-
-  <a href="http://www.byts.com.cn/line/yuejian002">越柬</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/aozhou001">澳洲</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/aodaliya002">澳一地</a>
-
-  <a href="http://www.byts.com.cn/line/kaiensi002">澳凯</a>
-
-  <a href="http://www.byts.com.cn/line/aoxin002">澳新</a>
-
-  <a href="http://www.byts.com.cn/line/aoxinkai002">澳新凯</a>
-
-  <a href="http://www.byts.com.cn/line/aoxinkaimo002">澳新凯墨</a>
-
-  <a href="http://www.byts.com.cn/line/xinxilan002">新西兰</a>
-
-  <a href="http://www.byts.com.cn/line/feiji002">斐济</a>
-
-  <a href="http://www.byts.com.cn/line/aoxinfeiji002">澳新斐济</a>
-
-  <a href="http://www.byts.com.cn/line/daxidi002">大溪地</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/rihanchao001">日韩朝</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/ribenjingdiantuan002">日本经典团</a>
-
-  <a href="http://www.byts.com.cn/line/ribenhaohuatuan002">日本豪华团</a>
-
-  <a href="http://www.byts.com.cn/line/beihaidao002">北海道</a>
-
-  <a href="http://www.byts.com.cn/line/dongjingbeihaidao002">东京+北海道</a>
-
-  <a href="http://www.byts.com.cn/line/dongjingyidi002">东京一地</a>
-
-  <a href="http://www.byts.com.cn/line/rihanlianxian002">日韩连线</a>
-
-  <a href="http://www.byts.com.cn/line/chongsheng002">冲绳</a>
-
-  <a href="http://www.byts.com.cn/line/guanxiyidi002">九州一地</a>
-
-  <a href="http://www.byts.com.cn/line/shouerjizhou002/">首尔济州</a>
-
-  <a href="http://www.byts.com.cn/line/jizhou002">济州一地</a>
-
-  <a href="http://www.byts.com.cn/line/shouer002">首尔一地</a>
-
-  <a href="http://www.byts.com.cn/line/hanguoquanjing002">首济釜山</a>
-
-  <a href="http://www.byts.com.cn/line/chaoxian002">朝鲜</a>
-
-  <a href="http://www.byts.com.cn/line/rihanyoulun002">日韩游轮</a>
-
-  <a href="http://www.byts.com.cn/line/qinziyou002">亲子游</a>
-
-  <a href="http://www.byts.com.cn/line/ribenquanjing002">日本全景</a>
-
-  <a href="http://www.byts.com.cn/line/benzhouquanjing002">本州全景</a>
-
-  <a href="http://www.byts.com.cn/line/rihanqinzituan002/">日韩亲子团</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/ouzhou001">欧洲</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/yiguo002">一国</a>
-
-  <a href="http://www.byts.com.cn/line/liangguo002">两国</a>
-
-  <a href="http://www.byts.com.cn/line/sanguo002">三国</a>
-
-  <a href="http://www.byts.com.cn/line/siguo002">四国</a>
-
-  <a href="http://www.byts.com.cn/line/wugui002">五国</a>
-
-  <a href="http://www.byts.com.cn/line/liuguo002">六国</a>
-
-  <a href="http://www.byts.com.cn/line/qiguo002">七八国</a>
-
-  <a href="http://www.byts.com.cn/line/yingguo002">英国</a>
-
-  <a href="http://www.byts.com.cn/line/xila002">希腊</a>
-
-  <a href="http://www.byts.com.cn/line/xipu002">西葡</a>
-
-  <a href="http://www.byts.com.cn/line/dongou002">东欧</a>
-
-  <a href="http://www.byts.com.cn/line/beijiaerhu002/">贝加尔湖</a>
-
-  <a href="http://www.byts.com.cn/line/yijiaquanbaotuan002">一价全包3-4星</a>
-
-  <a href="http://www.byts.com.cn/line/ouzhou001/line/baguo002">一价全包4-5星</a>
-
-  <a href="http://www.byts.com.cn/line/eluosi002">俄罗斯</a>
-
-  <a href="http://www.byts.com.cn/line/eluosixxbly002">俄罗斯新西伯利亚</a>
-
-  <a href="http://www.byts.com.cn/line/beiouxiawan002">北欧峡湾</a>
-
-  <a href="http://www.byts.com.cn/line/beiouhaixiaeluosi002">北欧峡湾俄罗斯</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/nanya001">南亚</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/yindu002">印度</a>
-
-  <a href="http://www.byts.com.cn/line/sililanka002">斯里兰卡</a>
-
-  <a href="http://www.byts.com.cn/line/niboer002">尼泊尔</a>
-
-  <a href="http://www.byts.com.cn/line/budan002">不丹</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/meizhou001">美洲</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/xiaweiyi002">夏威夷一地</a>
-
-  <a href="http://www.byts.com.cn/line/meiguoxihaian002">美国西海岸</a>
-
-  <a href="http://www.byts.com.cn/line/meiguodonghaian002">美国东海岸</a>
-
-  <a href="http://www.byts.com.cn/line/moxige002">美国东西海岸+夏威夷</a>
-
-  <a href="http://www.byts.com.cn/line/huangsigongyuan002">美国东西海岸+黄石</a>
-
-  <a href="http://www.byts.com.cn/line/meiguodaquanjing002">美国东西海岸+夏威夷+黄石</a>
-
-  <a href="http://www.byts.com.cn/line/jianada002">加拿大一地</a>
-
-  <a href="http://www.byts.com.cn/line/meiguojianada002">美国加拿大</a>
-
-  <a href="http://www.byts.com.cn/line/zilimilu002">南美四国</a>
-
-  <a href="http://www.byts.com.cn/line/baxiageting002">巴西阿根廷</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/nanbeiji001">南北极</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/nanjizhou002">南极洲</a>
-
-  <a href="http://www.byts.com.cn/line/beijizhou002">北极洲</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/feizhouzhongdong001">非洲中东</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/aijiyidi002">埃及一地</a>
-
-  <a href="http://www.byts.com.cn/line/feizhouzhongdong001/line/dibaiyidi002">迪拜一地</a>
-
-  <a href="http://www.byts.com.cn/line/tuerqiyidi002">土耳其一地</a>
-
-  <a href="http://www.byts.com.cn/line/aisaierbiya002">南非一地</a>
-
-  <a href="http://www.byts.com.cn/line/aijituerqi002">埃及土耳其</a>
-
-  <a href="http://www.byts.com.cn/line/aijidibai002">埃及迪拜</a>
-
-  <a href="http://www.byts.com.cn/line/dibaituerqi002">迪拜土耳其</a>
-
-  <a href="http://www.byts.com.cn/line/nanfeidibai002">南非迪拜</a>
-
-  <a href="http://www.byts.com.cn/line/nanfeixianggang002">南非香港</a>
-
-  <a href="http://www.byts.com.cn/line/nanfeiaiji002">南非埃及</a>
-
-  <a href="http://www.byts.com.cn/line/nanfeikenniya002">肯尼亚</a>
-
-  <a href="http://www.byts.com.cn/line/feizhouzhongdong001/line/yilang002">伊朗</a>
-
-  <a href="http://www.byts.com.cn/line/yiselie002">以色列</a>
-
-  <a href="http://www.byts.com.cn/line/tansanniya002">坦桑尼亚</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/maerdaifu001">马尔代夫</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/yijiaquanbao002">一价全包岛</a>
-
-  <a href="http://www.byts.com.cn/line/7xing002">7星级岛屿</a>
-
-  <a href="http://www.byts.com.cn/line/6xing002">6星级岛屿</a>
-
-  <a href="http://www.byts.com.cn/line/5xing002">5星级岛屿</a>
-
-  <a href="http://www.byts.com.cn/line/4xing002">4星级岛屿</a>
-
-  <a href="http://www.byts.com.cn/line/zhifei002">北京直飞计划</a>
-
-  <a href="http://www.byts.com.cn/line/hangban002">航班信息</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/gangaotai001">港澳台</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/gangaochunwantuan002">港澳纯玩团</a>
-
-  <a href="http://www.byts.com.cn/line/gangaopinzhituan002">港澳品质团</a>
-
-  <a href="http://www.byts.com.cn/line/gangaotehuituan002">港澳特惠团</a>
-
-  <a href="http://www.byts.com.cn/line/xiangganyidi002">香港一地</a>
-
-  <a href="http://www.byts.com.cn/line/qinzhizhuanxiang002">亲子专享</a>
-
-  <a href="http://www.byts.com.cn/line/taiwanghuangdao002">台湾环岛</a>
-
- </div>
-  </li>
-
-           
-        </ul>
+		<li>
+			@foreach($q->child as $w)
+			 <div class="a"> 
+			 <a href="http://www.byts.com.cn/line/haidao001">{{$w->r_region }}</a>
+			 </div>
+			 <div class="b">
+			  @foreach($w->child as $t)
+			  <a href="http://www.byts.com.cn/line/bincheng002">{{$t->r_region }} &nbsp;|</a>
+			  @endforeach
+			 </div>
+			  @endforeach
+	    </li>
+		</ul>
       </div>
-      
-       <div class="nowhover" id="show2" onmouseout="mousout(2)" onmouseover="hover(2)" style="display: none;">
-      	<ul>
-<li>
- <div class="a"> <a href="http://www.byts.com.cn/line/hainan001">海南</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/haikouwangfan002">海口往返</a>
+	    @endforeach
+        <!--右边-->
 
-  <a href="http://www.byts.com.cn/line/sanyawanfang002">三亚往返</a>
-
-  <a href="http://www.byts.com.cn/line/sanyayidi002">三亚一地</a>
-
-  <a href="http://www.byts.com.cn/line/sanyaziyouren002">三亚自由人</a>
-
-  <a href="http://www.byts.com.cn/line/hainanxiyanghong002">夕阳红</a>
-
-  <a href="http://www.byts.com.cn/line/hainanmiyuetuan002">蜜月团</a>
-
-  <a href="http://www.byts.com.cn/line/tianjinwangfang002">天津往返</a>
-
-  <a href="http://www.byts.com.cn/line/xisaqundao002">西沙群岛</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/yunan001">云南</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/kundali002">昆大丽</a>
-
-  <a href="http://www.byts.com.cn/line/kudaliban002">昆大丽版</a>
-
-  <a href="http://www.byts.com.cn/line/kunban002">昆版</a>
-
-  <a href="http://www.byts.com.cn/line/zhifeilijiang002">直飞丽江</a>
-
-  <a href="http://www.byts.com.cn/line/ruilitengchong002">瑞丽腾冲</a>
-
-  <a href="http://www.byts.com.cn/line/xianggelila002">香格里拉</a>
-
-  <a href="http://www.byts.com.cn/line/yunnanquanxian002">昆大丽版香</a>
-
-  <a href="http://www.byts.com.cn/line/beijingchengtuan002">北京成团</a>
-
-  <a href="http://www.byts.com.cn/line/tesechangpin002">特色产品</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/fujian001">福建</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/wuyishan002">武厦</a>
-
-  <a href="http://www.byts.com.cn/line/wuxiatulou002">武厦土楼</a>
-
-  <a href="http://www.byts.com.cn/line/xiameng002">厦门一地</a>
-
-  <a href="http://www.byts.com.cn/line/fujianquanjing002">双卧系列</a>
-
-  <a href="http://www.byts.com.cn/line/dajinhu002">单飞系列</a>
-
-  <a href="http://www.byts.com.cn/line/fujianxiyanghong002">老年团</a>
-
-  <a href="http://www.byts.com.cn/line/fujianlianxian002">泰宁厦门</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/dongbei001">东北</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/changbaishanjingbohu002">长白山+镜泊湖</a>
-
-  <a href="http://www.byts.com.cn/line/changbaishanxibeibo002">长白山西北坡</a>
-
-  <a href="http://www.byts.com.cn/line/heiliaolianxian002">黑吉辽连线</a>
-
-  <a href="http://www.byts.com.cn/line/dongbeineimeng002">东北+内蒙</a>
-
-  <a href="http://www.byts.com.cn/line/wudalianchizhalong002">五大连池</a>
-
-  <a href="http://www.byts.com.cn/line/mohebeijicun002">漠河北极村</a>
-
-  <a href="http://www.byts.com.cn/line/zhongerbianjing002">中俄边境</a>
-
-  <a href="http://www.byts.com.cn/line/chaoxianbianjing002">朝鲜边境</a>
-
-  <a href="http://www.byts.com.cn/line/changchunshenyang002">长春沈阳</a>
-
-  <a href="http://www.byts.com.cn/line/xingkaihu002">兴凯湖</a>
-
-  <a href="http://www.byts.com.cn/line/zhiqingniandai002">知青年代</a>
-
-  <a href="http://www.byts.com.cn/line/shuqizhuanglie002">暑期专列</a>
-
-  <a href="http://www.byts.com.cn/line/sixrenxiaobaotuan002">6人小包团</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/guangxi001">广西</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/guilinchunwantuan002">桂林纯玩团</a>
-
-  <a href="http://www.byts.com.cn/line/dalijiang002">大漓江</a>
-
-  <a href="http://www.byts.com.cn/line/qinzhichunwantuan0022">亲子纯玩团</a>
-
-  <a href="http://www.byts.com.cn/line/beijingchengtuan0022">北京成团</a>
-
-  <a href="http://www.byts.com.cn/line/4-5xingchunwan002">4-5星纯玩</a>
-
-  <a href="http://www.byts.com.cn/line/detiantonglinbeihai002">德天通灵北海</a>
-
-  <a href="http://www.byts.com.cn/line/yuenanxialongwang">越南下龙湾</a>
-
-  <a href="http://www.byts.com.cn/line/xiyanghong002">夕阳红</a>
-
-  <a href="http://www.byts.com.cn/line/bama002">巴马</a>
-
-  <a href="http://www.byts.com.cn/line/guangxilianxian002">广西连线</a>
-
-  <a href="http://www.byts.com.cn/line/guangxiquanjing002">广西全景</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/xizang001">西藏</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/qingzanglianxian002">青藏连线</a>
-
-  <a href="http://www.byts.com.cn/line/rikashi002">日喀则</a>
-
-  <a href="http://www.byts.com.cn/line/zangdonglinzhi002">藏东林芝</a>
-
-  <a href="http://www.byts.com.cn/line/tiaozhanzhufeng002">挑战珠峰</a>
-
-  <a href="http://www.byts.com.cn/line/xizangquanjing002">西藏全景</a>
-
-  <a href="http://www.byts.com.cn/line/bomiranwuhu002">波密然乌湖</a>
-
-  <a href="http://www.byts.com.cn/line/xizangzijiayou002">16人小包团</a>
-
-  <a href="http://www.byts.com.cn/line/yaluzangbudaxiagu002">雅鲁藏布大峡谷</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/laonian001">老年旅游专列</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/hainan001">海南</a>
-
-  <a href="http://www.byts.com.cn/line/yunan001">云南</a>
-
-  <a href="http://www.byts.com.cn/line/fujian001">福建</a>
-
-  <a href="http://www.byts.com.cn/line/dongbei001">东北</a>
-
-  <a href="http://www.byts.com.cn/line/guangxi001">广西</a>
-
-  <a href="http://www.byts.com.cn/line/xizang001">西藏</a>
-
-  <a href="http://www.byts.com.cn/line/laonian001">老年旅游专列</a>
-
-  <a href="http://www.byts.com.cn/line/shangxi001">山西</a>
-
-  <a href="http://www.byts.com.cn/line/guizhou001">贵州</a>
-
-  <a href="http://www.byts.com.cn/line/neimeng001">内蒙</a>
-
-  <a href="http://www.byts.com.cn/line/xingjiang001">新疆</a>
-
-  <a href="http://www.byts.com.cn/line/qingganning001">青甘宁</a>
-
-  <a href="http://www.byts.com.cn/line/guangdong001">广东</a>
-
-  <a href="http://www.byts.com.cn/line/shandong001">山东</a>
-
-  <a href="http://www.byts.com.cn/line/hubei001">湖北</a>
-
-  <a href="http://www.byts.com.cn/line/anwei001">安徽</a>
-
-  <a href="http://www.byts.com.cn/line/sichun002">四川</a>
-
-  <a href="http://www.byts.com.cn/line/henan001">河南</a>
-
-  <a href="http://www.byts.com.cn/line/hunan001">湖南</a>
-
-  <a href="http://www.byts.com.cn/line/shanxi001">陕西</a>
-
-  <a href="http://www.byts.com.cn/line/jiangxi001">江西</a>
-
-  <a href="http://www.byts.com.cn/line/liaoning001">辽宁</a>
-
-  <a href="http://www.byts.com.cn/line/huadong001">华东</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/shangxi001">山西</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/qiaojiachangjia002">平遥乔家常家</a>
-
-  <a href="http://www.byts.com.cn/line/wutaishan002">五台山</a>
-
-  <a href="http://www.byts.com.cn/line/pingyaogucheng002">平遥五台山</a>
-
-  <a href="http://www.byts.com.cn/line/yungansiku002">云冈五台山</a>
-
-  <a href="http://www.byts.com.cn/line/yikoupubu002">壶口平遥</a>
-
-  <a href="http://www.byts.com.cn/line/mianshan002">平遥绵山</a>
-
-  <a href="http://www.byts.com.cn/line/wutaishanygpy002">五台云冈平遥</a>
-
-  <a href="http://www.byts.com.cn/line/sxxiyanghong002">夕阳红</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/guizhou001">贵州</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/guizhoujingdianxianlu002">经典线路</a>
-
-  <a href="http://www.byts.com.cn/line/guizhouquanxian002">贵州全线</a>
-
-  <a href="http://www.byts.com.cn/line/tongrenfanjingshan002">铜仁梵净山</a>
-
-  <a href="http://www.byts.com.cn/line/zhenyuangucheng002">镇远古城</a>
-
-  <a href="http://www.byts.com.cn/line/malinghedaxiagu002">马玲河大峡谷</a>
-
-  <a href="http://www.byts.com.cn/line/zhunyixifeng002">遵义息烽</a>
-
-  <a href="http://www.byts.com.cn/line/xijiangqianhumiaozai002">西江千户苗寨</a>
-
-  <a href="http://www.byts.com.cn/line/nanjiangxiagu002">南江峡谷</a>
-
-  <a href="http://www.byts.com.cn/line/libodaxiaoqikong002">荔波大小七孔</a>
-
-  <a href="http://www.byts.com.cn/line/chishuisidonggou002">赤水四洞沟</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/neimeng001">内蒙</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/hulunbeier002">呼伦贝尔</a>
-
-  <a href="http://www.byts.com.cn/line/aershanmanzhouli002">阿尔山满洲里</a>
-
-  <a href="http://www.byts.com.cn/line/chifengcaoyuan002">赤峰草原</a>
-
-  <a href="http://www.byts.com.cn/line/shiweigenhesidi002">室韦根河湿地</a>
-
-  <a href="http://www.byts.com.cn/line/xilamuren002">希拉穆仁</a>
-
-  <a href="http://www.byts.com.cn/line/kubuqixiangshawang002">库不齐响沙湾</a>
-
-  <a href="http://www.byts.com.cn/line/ejina002">额济纳</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/xingjiang001">新疆</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/sichouzhilu002">丝绸之路</a>
-
-  <a href="http://www.byts.com.cn/line/beijiangyili002">北疆+伊犁</a>
-
-  <a href="http://www.byts.com.cn/line/siluyili002">丝路伊犁</a>
-
-  <a href="http://www.byts.com.cn/line/beijiangsiluqinghai002">北疆+丝路+青海</a>
-
-  <a href="http://www.byts.com.cn/line/siluqinghai002">丝路青海</a>
-
-  <a href="http://www.byts.com.cn/line/beijiangsilu002">北疆+丝路</a>
-
-  <a href="http://www.byts.com.cn/line/saiwaiyili002">塞外伊犁</a>
-
-  <a href="http://www.byts.com.cn/line/beijiangnanjiang002">北疆+南疆</a>
-
-  <a href="http://www.byts.com.cn/line/nanjianghashi002">南疆喀什</a>
-
-  <a href="http://www.byts.com.cn/line/beijiangkanasi002">北疆喀纳斯</a>
-
-  <a href="http://www.byts.com.cn/line/chuanyuanxibeidahuanxian002">穿越西北大环线</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/qingganning001">青甘宁</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/qinghai002">青海</a>
-
-  <a href="http://www.byts.com.cn/line/xibeiquanxian002">西北全景</a>
-
-  <a href="http://www.byts.com.cn/line/gangnan002">甘南</a>
-
-  <a href="http://www.byts.com.cn/line/gangsuxinjiang002">甘肃+新疆</a>
-
-  <a href="http://www.byts.com.cn/line/zhangye002">张掖</a>
-
-  <a href="http://www.byts.com.cn/line/qinghaigangsu002">青海+甘肃</a>
-
-  <a href="http://www.byts.com.cn/line/gangsu002">甘肃</a>
-
-  <a href="http://www.byts.com.cn/line/ningxiaganshu002">宁夏+甘肃</a>
-
-  <a href="http://www.byts.com.cn/line/ningxia002">宁夏</a>
-
-  <a href="http://www.byts.com.cn/line/qinghainingxia002">青海+宁夏</a>
-
-  <a href="http://www.byts.com.cn/line/menyuanyoucaihua002">门源油菜花</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/guangdong001">广东</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/guangshenzhu002">广深珠</a>
-
-  <a href="http://www.byts.com.cn/line/zhaoqingshaoguankaiping002">肇庆韶关开平</a>
-
-  <a href="http://www.byts.com.cn/line/danxiashan002">丹霞山</a>
-
-  <a href="http://www.byts.com.cn/line/changlonghailingdao002">长隆海陵岛</a>
-
-  <a href="http://www.byts.com.cn/line/chaozhoushantou002">潮州汕头</a>
-
-  <a href="http://www.byts.com.cn/line/guangdonghongsezhilv002">红色之旅</a>
-
-  <a href="http://www.byts.com.cn/line/guangdonglianxian002">广东联线</a>
-
-  <a href="http://www.byts.com.cn/line/huizhoumeizhoudongwan002">惠州梅州东莞</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/shandong001">山东</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/taishanqubu002">泰山曲阜</a>
-
-  <a href="http://www.byts.com.cn/line/shandongquanxian002">山东全线</a>
-
-  <a href="http://www.byts.com.cn/line/rizhao002">日照</a>
-
-  <a href="http://www.byts.com.cn/line/qingdao002">青岛</a>
-
-  <a href="http://www.byts.com.cn/line/benglaiweihai002">蓬莱威海</a>
-
-  <a href="http://www.byts.com.cn/line/qingyan002">青烟</a>
-
-  <a href="http://www.byts.com.cn/line/changdao002">长岛</a>
-
-  <a href="http://www.byts.com.cn/line/caozhuanweishanhu002">枣庄微山湖</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/hubei001">湖北</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/changjiangsanxiaxiashui002">长江三峡下水</a>
-
-  <a href="http://www.byts.com.cn/line/shengnongjia002">神农架</a>
-
-  <a href="http://www.byts.com.cn/line/wudangshan002">武当山</a>
-
-  <a href="http://www.byts.com.cn/line/ensitujiamiaozu002">恩施土家苗族</a>
-
-  <a href="http://www.byts.com.cn/line/changjiansanxieshuishang002">长江三峡上水</a>
-
-  <a href="http://www.byts.com.cn/line/shengwuxian002">神武线</a>
-
-  <a href="http://www.byts.com.cn/line/sanxiasichun002">三峡+四川</a>
-
-  <a href="http://www.byts.com.cn/line/hubeiquanxian002">湖北全线</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/anwei001">安徽</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/huangshanrichu002">黄山日出</a>
-
-  <a href="http://www.byts.com.cn/line/huangshanqiandaohu002">黄山千岛湖</a>
-
-  <a href="http://www.byts.com.cn/line/xidihongcun002">西递宏村</a>
-
-  <a href="http://www.byts.com.cn/line/huangshanziyuan002">黄山+婺源</a>
-
-  <a href="http://www.byts.com.cn/line/huangqianhang002">黄千杭</a>
-
-  <a href="http://www.byts.com.cn/line/huangshanjiuhuashan002">黄山+九华山</a>
-
-  <a href="http://www.byts.com.cn/line/huangqianhanghu002">黄千杭沪</a>
-
-  <a href="http://www.byts.com.cn/line/huangshanhuadong002">黄山+华东</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/sichun002">四川</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/jiuzaihuanglong002">九寨黄龙</a>
-
-  <a href="http://www.byts.com.cn/line/jiuhuangerle002">九黄峨乐</a>
-
-  <a href="http://www.byts.com.cn/line/jiuhuangqingdu002">九黄青都</a>
-
-  <a href="http://www.byts.com.cn/line/zhifeijiuzai002">直飞九寨</a>
-
-  <a href="http://www.byts.com.cn/line/erleqingdu002">峨乐青都</a>
-
-  <a href="http://www.byts.com.cn/line/kuashenglianxian002">九黄峨乐青都</a>
-
-  <a href="http://www.byts.com.cn/line/daochengyading002">稻城亚丁</a>
-
-  <a href="http://www.byts.com.cn/line/hailuosigunianshan002">海螺沟四姑娘山</a>
-
-  <a href="http://www.byts.com.cn/line/nuoergaihongcaoyuan002">诺尔盖草原</a>
-
-  <a href="http://www.byts.com.cn/line/sichunquanxianshanxia002">四川+三峡</a>
-
-  <a href="http://www.byts.com.cn/line/xichunxiyanghong002">夕阳红</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/henan001">河南</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/shaolinsi002">少林寺</a>
-
-  <a href="http://www.byts.com.cn/line/hongqiqu002">红旗渠</a>
-
-  <a href="http://www.byts.com.cn/line/kaifeng002">开封</a>
-
-  <a href="http://www.byts.com.cn/line/henanlvyouzhuanlie002">旅游专列</a>
-
-  <a href="http://www.byts.com.cn/line/longmenshiku002">龙门石窟</a>
-
-  <a href="http://www.byts.com.cn/line/yuntaishan001">云台山</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/hunan001">湖南</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/zhangjiajiefenghuang002">张家界+凤凰</a>
-
-  <a href="http://www.byts.com.cn/line/tianmenshan002">张家界+凤凰+天门山</a>
-
-  <a href="http://www.byts.com.cn/line/zhangjiajieandguilin002">张家界+桂林</a>
-
-  <a href="http://www.byts.com.cn/line/zhangjiajieandguizhou002">张家界+贵州</a>
-
-  <a href="http://www.byts.com.cn/line/zhangjiajieandhubei002">张家界+湖北</a>
-
-  <a href="http://www.byts.com.cn/line/changshashaoshan002">长沙韶山</a>
-
-  <a href="http://www.byts.com.cn/line/gaoduanxiaobaotuan002">高端小包团</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/shanxi001">陕西</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/qiankongfamensi002">乾陵法门寺</a>
-
-  <a href="http://www.byts.com.cn/line/yananyikou002">延安壶口</a>
-
-  <a href="http://www.byts.com.cn/line/xianthenan002">西安+河南</a>
-
-  <a href="http://www.byts.com.cn/line/shanxiquanjing002">陕西全景</a>
-
-  <a href="http://www.byts.com.cn/line/huashan002">华山</a>
-
-  <a href="http://www.byts.com.cn/line/shanxibinmayong002">西安兵马俑</a>
-
- </div>
-  </li>
-        </ul>
-      </div>
-      
-      <div class="nowhover" id="show3" onmouseout="mousout(3)" onmouseover="hover(3)" style="display: none;">
-      	<ul>
-         <li>
- <div class="a"> <a href="http://www.byts.com.cn/line/hebei001">河北</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/chengde02">承德</a>
-
-  <a href="http://www.byts.com.cn/line/tianjin0002">天津</a>
-
-  <a href="http://www.byts.com.cn/line/beijingchengtuan022">坝上草原</a>
-
-  <a href="http://www.byts.com.cn/line/mulanweichang0002">木兰围场</a>
-
-  <a href="http://www.byts.com.cn/line/nanbeidaihe0002">南北戴河</a>
-
-  <a href="http://www.byts.com.cn/line/letingyuetuodao0002">乐亭月坨岛</a>
-
-  <a href="http://www.byts.com.cn/line/xingchenghuludao0002">兴城葫芦岛</a>
-
-  <a href="http://www.byts.com.cn/line/yeshanpo0002">野三坡</a>
-
-  <a href="http://www.byts.com.cn/line/baiyangding0002">白洋淀</a>
-
-  <a href="http://www.byts.com.cn/line/laiyuan0002">涞源</a>
-
-  <a href="http://www.byts.com.cn/line/xibaipo0002">西柏坡</a>
-
-  <a href="http://www.byts.com.cn/line/langyashan0002">狼牙山</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/line/jingjiaolvyou001">京郊旅游</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/line/huailou0002">怀柔</a>
-
-  <a href="http://www.byts.com.cn/line/miyun0002">密云</a>
-
-  <a href="http://www.byts.com.cn/line/pinggu0002">平谷</a>
-
-  <a href="http://www.byts.com.cn/line/yanqing0002">延庆</a>
-
-  <a href="http://www.byts.com.cn/line/fangshan0002">房山</a>
-
-  <a href="http://www.byts.com.cn/line/changping0002">昌平</a>
-
-  <a href="http://www.byts.com.cn/line/mentougou0002">门头沟</a>
-
-  <a href="http://www.byts.com.cn/line/panshan0002">盘山</a>
-
- </div>
-  </li>
-        </ul>
-      </div>
-      
-       <div class="nowhover" id="show4" onmouseout="mousout(4)" onmouseover="hover(4)" style="display: none;">
-      	<ul>
- 
-        </ul>
-      </div>
-      
-       <div class="nowhover" id="show5" onmouseout="mousout(5)" onmouseover="hover(5)" style="display: none;">
-      	<ul>
-        <li>
- <div class="a"> <a href="http://www.byts.com.cn/hotel/zjj">广州</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/hotel/zjj">广州</a>
-
-  <a href="http://www.byts.com.cn/hotel/beijing">北京</a>
-
-  <a href="http://www.byts.com.cn/hotel/shanghaijiudian">上海</a>
-
-  <a href="http://www.byts.com.cn/hotel/shenchou">深圳</a>
-
-  <a href="http://www.byts.com.cn/hotel/dalian">大连</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/hotel/beijing">北京</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/hotel/zjj">广州</a>
-
-  <a href="http://www.byts.com.cn/hotel/beijing">北京</a>
-
-  <a href="http://www.byts.com.cn/hotel/shanghaijiudian">上海</a>
-
-  <a href="http://www.byts.com.cn/hotel/shenchou">深圳</a>
-
-  <a href="http://www.byts.com.cn/hotel/dalian">大连</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/hotel/shanghaijiudian">上海</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/hotel/zjj">广州</a>
-
-  <a href="http://www.byts.com.cn/hotel/beijing">北京</a>
-
-  <a href="http://www.byts.com.cn/hotel/shanghaijiudian">上海</a>
-
-  <a href="http://www.byts.com.cn/hotel/shenchou">深圳</a>
-
-  <a href="http://www.byts.com.cn/hotel/dalian">大连</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/hotel/shenchou">深圳</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/hotel/zjj">广州</a>
-
-  <a href="http://www.byts.com.cn/hotel/beijing">北京</a>
-
-  <a href="http://www.byts.com.cn/hotel/shanghaijiudian">上海</a>
-
-  <a href="http://www.byts.com.cn/hotel/shenchou">深圳</a>
-
-  <a href="http://www.byts.com.cn/hotel/dalian">大连</a>
-
- </div>
-  </li><li>
- <div class="a"> <a href="http://www.byts.com.cn/hotel/dalian">大连</a></div>
-  <div class="b">
-  
-  <a href="http://www.byts.com.cn/hotel/zjj">广州</a>
-
-  <a href="http://www.byts.com.cn/hotel/beijing">北京</a>
-
-  <a href="http://www.byts.com.cn/hotel/shanghaijiudian">上海</a>
-
-  <a href="http://www.byts.com.cn/hotel/shenchou">深圳</a>
-
-  <a href="http://www.byts.com.cn/hotel/dalian">大连</a>
-
- </div>
-  </li>
-        </ul>
-      </div>
-      
-       <div class="nowhover" id="show6" onmouseout="mousout(6)" onmouseover="hover(6)" style="display: none;">
-      	<ul>
-            <li>
-            	<div class="a"><a href="javascript:void(0)">马尔代夫</a></div>
-                <div class="b"><a href="javascript:void(0)">一价全包岛</a><a href="javascript:void(0)">七星级岛</a><a href="javascript:void(0)">六星级岛</a><a href="javascript:void(0)">五星级岛</a><a href="javascript:void(0)">四星级岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a><a href="javascript:void(0)">海岛</a></div>
-               <div class="clear"></div> 
-            </li>
-        </ul>
-      </div>
-      
-      
-        
-        
         
   </div>
 </div>
@@ -1235,8 +277,8 @@ function mousout(n){
 
 <div id="full-screen-slider" style="">
 	<ul id="slides">
-		<li style="z-index: 900; display: none; background: url(image/1463390341.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/ouzhou001/" target="_blank"></a></li>
-		<li style="z-index: 900; display: none; background: url(image/1463134575.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/beijiaerhu002/" target="_blank"></a></li>
+		<li style="z-index: 900; display: none; background: url(../home/images/1463390341.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/ouzhou001/" target="_blank"></a></li>
+		<li style="z-index: 900; display: none; background: url(../home/images/1463134575.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/beijiaerhu002/" target="_blank"></a></li>
         <li style="z-index: 800; display: block; background: url(http://www.byts.com.cn/uploads/userup/0/1463390318.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/ouzhou001/" target="_blank"></a></li>
         <li style="z-index: 900; display: none; background: url(http://www.byts.com.cn/uploads/userup/0/1463134488.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/xizang001/" target="_blank"></a></li>
 	</ul><ul id="pagination" style="margin-left: 330px;"><li class=""><a>1</a></li><li class=""><a>2</a></li><li class="current"><a>3</a></li><li class=""><a>4</a></li></ul>
@@ -1266,11 +308,11 @@ function mousout(n){
              </div>
               <div class="leftBanner">
               	<a target="_blank" href="http://www.byts.com.cn/line/taiguo002/">
-              	<img alt="畅游泰国" src="image/1399530929.jpg"></a>
+              	<img alt="畅游泰国" src="../home/images/1399530929.jpg"></a>
               </div>
          	<div class="leftBanner">
          		<a target="_blank" href="http://www.byts.com.cn/line/rihanchao001/">
-         		<img alt="畅游韩国" src="image/1399530990.jpg"></a>
+         		<img alt="畅游韩国" src="../home/images/1399530990.jpg"></a>
          	</div>
           
       </div>
@@ -1299,25 +341,11 @@ function mousout(n){
                         
                         
                          <div class="newChannel-list J-newChannel-list visible">
-                     <!-- <ul class="lists">
-                     
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
-
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/tours/4376.htm" target="_blank" title="普吉岛5晚7天**当地5星酒店5晚**">
-                                            <img width="118px" height="67px" data-original="image/1410319228_2586.jpg" src="image/1410319228_2586.jpg" alt="" style="display: inline;">
+                                            <img width="118px" height="67px" data-original="../home/images/1410319228_2586.jpg" src="../home/images/1410319228_2586.jpg" alt="" style="display: inline;">
                                         </a>
                                         <div class="prd-num">产品编号：4376</div>
 						            </div>
@@ -1340,8 +368,6 @@ function mousout(n){
                                         <span class="s m-5 J_powerFloat" rel="J_popDisong" data-song="200"><em class="dsnum"></em></span>
                                     </div>
 					            </li>
- 
-                                
                          <li class="lists"><span><em>¥</em>起</span>
                            <a href="http://www.byts.com.cn/tours/5465.htm" class="title" target="_blank">5月12日新航【沙巴半自助】</a>...
                         </li>
@@ -1360,30 +386,14 @@ function mousout(n){
 <li class="lists"><span><em>¥3900</em>起</span>
                            <a href="http://www.byts.com.cn/line/changtandao002/5185.htm" class="title" target="_blank">长滩岛自由行4晚6日&lt;含领队&gt;风帆出海看日落</a> 搭乘宿雾太平洋航空公司航班，马尼拉转机，赠全亚洲最美夕阳**风帆出海看日...
                         </li>
-
-                                
                             </ul>
                         <p class="newChannel-more"><a href="http://www.byts.com.cn/line/haidao001" target="_blank" title="更多出境游">更多海岛线路&gt;&gt;</a></p>
                         </div><div class="newChannel-list J-newChannel-list ">
-                     <!-- <ul class="lists">
-                     
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
-
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/tours/1687.htm" target="_blank" title="曼谷、芭提雅(金沙岛.珊瑚岛)5晚6天~6晚7天">
-                                            <img width="118px" height="67px" data-original="image/1418016561_5569.jpg" src="image/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/1418016561_5569.jpg" src="image/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：1687</div>
 						            </div>
@@ -1431,25 +441,11 @@ function mousout(n){
                             </ul>
                         <p class="newChannel-more"><a href="http://www.byts.com.cn/line/dongnanya001" target="_blank" title="更多出境游">更多东南亚线路&gt;&gt;</a></p>
                         </div><div class="newChannel-list J-newChannel-list ">
-                     <!-- <ul class="lists">
-                     
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
-
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/kaiensi002/5003.htm" target="_blank" title="黄金海岸、凯恩斯9日**含2天自由行**【纯玩】">
-                                            <img width="118px" height="67px" data-original="image/1457001993.jpg" src="image/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/1457001993.jpg" src="image/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：5003</div>
 						            </div>
@@ -1497,20 +493,6 @@ function mousout(n){
                             </ul>
                         <p class="newChannel-more"><a href="http://www.byts.com.cn/line/aozhou001" target="_blank" title="更多出境游">更多澳洲线路&gt;&gt;</a></p>
                         </div><div class="newChannel-list J-newChannel-list ">
-                     <!-- <ul class="lists">
-                     
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
-
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
@@ -1563,25 +545,11 @@ function mousout(n){
                             </ul>
                         <p class="newChannel-more"><a href="http://www.byts.com.cn/line/rihanchao001" target="_blank" title="更多出境游">更多日韩朝线路&gt;&gt;</a></p>
                         </div><div class="newChannel-list J-newChannel-list ">
-                     <!-- <ul class="lists">
-                     
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
-
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/sanguo002/5047.htm" target="_blank" title="法意瑞11天">
-                                            <img width="118px" height="67px" data-original="image/1452064885.jpg" src="image/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/1452064885.jpg" src="image/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：5047</div>
 						            </div>
@@ -1629,25 +597,11 @@ function mousout(n){
                             </ul>
                         <p class="newChannel-more"><a href="http://www.byts.com.cn/line/ouzhou001" target="_blank" title="更多出境游">更多欧洲线路&gt;&gt;</a></p>
                         </div><div class="newChannel-list J-newChannel-list ">
-                     <!-- <ul class="lists">
-                     
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
-
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/sililanka002/4433.htm" target="_blank" title="斯里兰卡自由行8日-机票の1晚国际5星希尔顿酒店">
-                                            <img width="118px" height="67px" data-original="image/1412743364_7098.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/1412743364_7098.jpg" src="../home/images/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：4433</div>
 						            </div>
@@ -1695,25 +649,11 @@ function mousout(n){
                             </ul>
                         <p class="newChannel-more"><a href="http://www.byts.com.cn/line/nanya001" target="_blank" title="更多出境游">更多南亚线路&gt;&gt;</a></p>
                         </div><div class="newChannel-list J-newChannel-list ">
-                     <!-- <ul class="lists">
-                     
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
-
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/meiguoxihaian002/4126.htm" target="_blank" title="美国洛杉矶、拉斯维加斯、加州小镇7晚9日">
-                                            <img width="118px" height="67px" data-original="image/1454657438.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/1454657438.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：4126</div>
 						            </div>
@@ -1761,25 +701,12 @@ function mousout(n){
                             </ul>
                         <p class="newChannel-more"><a href="http://www.byts.com.cn/line/meizhou001" target="_blank" title="更多出境游">更多美洲线路&gt;&gt;</a></p>
                         </div><div class="newChannel-list J-newChannel-list ">
-                     <!-- <ul class="lists">
-                     
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
 
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/tours/1875.htm" target="_blank" title="南极 巴西 阿根廷22日">
-                                            <img width="118px" height="67px" data-original="image/1875.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/1875.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：1875</div>
 						            </div>
@@ -1812,25 +739,12 @@ function mousout(n){
                             </ul>
                         <p class="newChannel-more"><a href="http://www.byts.com.cn/line/nanbeiji001" target="_blank" title="更多出境游">更多南北极线路&gt;&gt;</a></p>
                         </div><div class="newChannel-list J-newChannel-list ">
-                     <!-- <ul class="lists">
                      
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
-
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/aijiyidi002/3904.htm" target="_blank" title="埃及8日**红海3天自由行**">
-                                            <img width="118px" height="67px" data-original="/uploads/image/hujie/zhongdongfei/aiji////1450259910.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/uploads/1450259910.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：3904</div>
 						            </div>
@@ -1878,25 +792,11 @@ function mousout(n){
                             </ul>
                         <p class="newChannel-more"><a href="http://www.byts.com.cn/line/feizhouzhongdong001" target="_blank" title="更多出境游">更多非洲中东线路&gt;&gt;</a></p>
                         </div><div class="newChannel-list J-newChannel-list ">
-                     <!-- <ul class="lists">
-                     
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
-
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/tours/2655.htm" target="_blank" title="美佳机票の酒店计划表《7月》">
-                                            <img width="118px" height="67px" data-original="/uploads/litimg/2655.jpg" src="image/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/uploads/litimg/2655.jpg" src="../home/images/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：2655</div>
 						            </div>
@@ -1944,25 +844,12 @@ function mousout(n){
                             </ul>
                         <p class="newChannel-more"><a href="http://www.byts.com.cn/line/maerdaifu001" target="_blank" title="更多出境游">更多马尔代夫线路&gt;&gt;</a></p>
                         </div><div class="newChannel-list J-newChannel-list ">
-                     <!-- <ul class="lists">
-                     
-                                <li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5047.htm" class="title" target="_blank">法意瑞11天</a> 搭乘波兰航空公司国际航班，入 住3-4星级酒店， 欧洲酒店早餐，午晚餐为中式...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/sanguo002/5046.htm" class="title" target="_blank">法意瑞10天</a>☼ 航空公司：搭乘中国国际航空公司国际航班，享受轻松舒适旅程 ☼ 住宿安排...</li>
-<li><span><em>¥6999</em>起</span><a href="/line/siguo002/5045.htm" class="title" target="_blank">德法意瑞4国12日</a> 搭乘乌克兰航空国际航班，入住意大利全程4星级+其他国家3星级酒店，欧洲酒...</li>
-<li><span><em>¥11000</em>起</span><a href="/line/siguo002/5381.htm" class="title" target="_blank">德法意瑞4国12日**含法国南</a> 搭乘中国国际航空公司航班，入住意大利4星+其他国家3星酒店，欧洲酒店早餐...</li>
-<li><span><em>¥10500</em>起</span><a href="/line/xipu002/5051.htm" class="title" target="_blank">西班牙、葡萄牙13天</a> 乌克兰国际航空公司PS客机，入住当地4星级酒店（距市中心20KM-30KM左右） 风味...</li>
-<li><span><em>¥2850</em>起</span><a href="/line/guizhou001/5041.htm" class="title" target="_blank">黄果树、天河潭、青岩古</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥2550</em>起</span><a href="/line/guizhou001/5040.htm" class="title" target="_blank">黄果树、天星桥、陡坡塘</a>尊贵之旅承诺全程不换导游、不换车， 荔波——地球腰带上的绿宝石，喀斯特...</li>
-<li><span><em>¥7999</em>起</span><a href="/line/siguo002/5031.htm" class="title" target="_blank">德法意瑞10日&lt;新天鹅堡</a> 东航转机，巴黎进意大利出，入住3-4星酒店，特别安排塞纳河畔用餐 行程特色...</li>
-
-								
-							</ul>-->
 
                       <ul class="clearfix">
                               <li class="lineitem ">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/dongbei001/5487.htm" target="_blank" title="&lt;font color=&#39;#0000FF&#39;&gt;【品质纯玩】哈尔滨太阳岛、俄罗斯风情小镇、&lt;/font&gt;">
-                                            <img width="118px" height="67px" data-original="image/1463391701.jpg" src="image/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/1463391701.jpg" src="../home/images/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：5487</div>
 						            </div>
@@ -2108,21 +995,20 @@ function mousout(n){
                                 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/sanyaziyouren002/4556.htm" target="_blank" title="2016年4-5月三亚自由行计划">
-                                            <img width="118px" height="67px" data-original="image/1433222734.jpg" src="image/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/1433222734.jpg" src="../home/images/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：4556</div>
 						            </div>
 						            <dl class="info fn-left">
 							            <dt class="t">
-                                            <a href="http://www.byts.com.cn/line/sanyaziyouren002/4556.htm" target="_blank" title="2016年4-5月三亚自由行计划">2016年4-5月三亚自由行计划</a><img src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/tuijian.gif">
+                                            <a href="http://www.byts.com.cn/line/sanyaziyouren002/4556.htm" target="_blank" title="2016年4-5月三亚自由行计划">2016年4-5月三亚自由行计划</a>
+                                            <img src="../home/images/tuijian.gif">
                                         </dt>
 							            <dd class="desc"> 三亚自由行=北京--三亚--北京5天往返机票+入住4晚 三亚酒店 +三亚机场--酒店免...</dd>
 							            <dd class="moredesc">
                                             <span>满意度：<span class="n">100%</span></span>
                                             <span class="pin"><span class="n">&nbsp;0&nbsp;</span>人点评</span>
                                             <span>最近出发班期：<span class="n">星期一,星期二,星期三</span></span>
-                                
-                                        
                                         </dd>
 						            </dl>
 						            <div class="detail fn-right">
@@ -2136,7 +1022,7 @@ function mousout(n){
 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/sanyayidi002/952.htm" target="_blank" title="蜈支洲.南山.呀诺达雨林の1天自由行双飞5日**2分">
-                                            <img width="118px" height="67px" data-original="image/1415940461_3632.jpg" src="image/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/1415940461_3632.jpg" src="../home/images/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：952</div>
 						            </div>
@@ -2192,7 +1078,7 @@ function mousout(n){
 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/sanyayidi002/1715.htm" target="_blank" title="蜈支洲.西岛.呀诺达雨林.南山.南湾猴岛双飞5日">
-                                            <img width="118px" height="67px" data-original="image/1415955620_2145.jpg" src="image/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/1415955620_2145.jpg" src="../home/images/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：1715</div>
 						            </div>
@@ -2246,7 +1132,6 @@ function mousout(n){
                                             <span class="pin"><span class="n">&nbsp;0&nbsp;</span>人点评</span>
                                             <span>最近出发班期：<span class="n">星期一,星期二,星期三</span></span>
                                 
-                                        
                                         </dd>
 						            </dl>
 						            <div class="detail fn-right">
@@ -2260,7 +1145,7 @@ function mousout(n){
 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/ruilitengchong002/1470.htm" target="_blank" title="昆明、腾冲、芒市、瑞丽三飞/四飞6日">
-                                            <img width="118px" height="67px" data-original="/uploads/image/hujie/yunnan/1446629801.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/uploads/image/hujie/yunnan/1446629801.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：1470</div>
 						            </div>
@@ -2316,7 +1201,7 @@ function mousout(n){
 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/ruilitengchong002/4564.htm" target="_blank" title="大理、腾冲、芒市双飞6日">
-                                            <img width="118px" height="67px" data-original="/uploads/image/hujie/yunnan/1447060622.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/uploads/image/hujie/yunnan/1447060622.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：4564</div>
 						            </div>
@@ -2356,7 +1241,7 @@ function mousout(n){
                                 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/fujianquanjing002/2133.htm" target="_blank" title="武夷山一地双卧4日">
-                                            <img width="118px" height="67px" data-original="/uploads/image/hujie/fujian/1409139460_10.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/uploads/image/hujie/fujian/1409139460_10.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：2133</div>
 						            </div>
@@ -2412,7 +1297,7 @@ function mousout(n){
 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/fujianquanjing002/859.htm" target="_blank" title="武夷山天游峰、九曲溪、厦门鼓浪屿、永定高北">
-                                            <img width="118px" height="67px" data-original="/uploads/image/hujie/fujian/1409139460_7578.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/uploads/image/hujie/fujian/1409139460_7578.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：859</div>
 						            </div>
@@ -2440,7 +1325,7 @@ function mousout(n){
 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/dongbei001/5634.htm" target="_blank" title="【红叶谷】哈尔滨太阳岛、牡丹江、璀璨镜泊湖">
-                                            <img width="118px" height="67px" data-original="/uploads/image/0000007/all///1463391443.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/uploads/image/0000007/all///1463391443.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：5634</div>
 						            </div>
@@ -2480,7 +1365,7 @@ function mousout(n){
                                 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/dongbei001/5634.htm" target="_blank" title="【红叶谷】哈尔滨太阳岛、牡丹江、璀璨镜泊湖">
-                                            <img width="118px" height="67px" data-original="/uploads/image/0000007/all///1463391443.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/uploads/image/0000007/all///1463391443.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：5634</div>
 						            </div>
@@ -2508,7 +1393,7 @@ function mousout(n){
 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/dongbei001/5624.htm" target="_blank" title="&lt;font color=&#39;#0000FF&#39;&gt;【豪华专列】山海关、北戴河、长白山西北连游&lt;/font&gt;">
-                                            <img width="118px" height="67px" data-original="/images/nopic.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/images/nopic.jpg" src="../home/images/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：5624</div>
 						            </div>
@@ -2536,7 +1421,7 @@ function mousout(n){
 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/neimeng001/5623.htm" target="_blank" title="&lt;font color=&#39;#0000FF&#39;&gt;【魔鬼沙漠】北京、通辽、魔鬼沙漠、大青沟、&lt;/font&gt;">
-                                            <img width="118px" height="67px" data-original="/uploads/image/0000007/all///1463535388.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/uploads/image/0000007/all///1463535388.jpg" src="../home/images/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：5623</div>
 						            </div>
@@ -2604,7 +1489,7 @@ function mousout(n){
                                 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/xiyanghong002/4210.htm" target="_blank" title="桂林漓江阳朔、大榕树月亮山、刘三姐大观园、">
-                                            <img width="118px" height="67px" data-original="/uploads/allimg/140225/1409375238_6251.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="/uploads/allimg/140225/1409375238_6251.jpg" src="../home/images/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：4210</div>
 						            </div>
@@ -2632,7 +1517,7 @@ function mousout(n){
 <li class="lineitem cfix">
                                     <div class="img fn-left">
 							            <a href="http://www.byts.com.cn/line/guilinchunwantuan002/796.htm" target="_blank" title="桂林、漓江福利段、阳朔西街、刘三姐大观园双">
-                                            <img width="118px" height="67px" data-original="/uploads/allimg/20140409/1404091A056.jpg" src="./北京青年旅行社股份有限公司官网 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="">
+                                            <img width="118px" height="67px" data-original="../home/uploads/allimg/20140409/1404091A056.jpg" src="../home/images/bg.gif" alt="">
                                         </a>
                                         <div class="prd-num">产品编号：796</div>
 						            </div>
@@ -4835,14 +3720,11 @@ function mousout(n){
                                             <span>满意度：<span class="n">100%</span></span>
                                             <span class="pin"><span class="n">&nbsp;0&nbsp;</span>人点评</span>
                                             <span>最近出发班期：<span class="n">星期一,星期二,星期三</span></span>
-                                
-                                        
                                         </dd>
 						            </dl>
 						            <div class="detail fn-right">
                                         
                                         <span class="sup">网订优惠</span>
-                                        
                                         <p class="price"><span class="u"></span><span class="n">￥168</span>起</p>
                                         <span class="s m-5 J_powerFloat" rel="J_popDisong" data-song="200"><em class="dsnum"></em></span>
                                     </div>
@@ -4884,53 +3766,8 @@ function mousout(n){
            
                     </div>
                 </div>
-                
-                
-                
          </div>
 <!--周边旅游结束-->
-
-
-
-  <div class="newAd">
-    <a href="" title="游玩在非洲" target="_blank"><img src="image/1399459980.jpg" alt="" width="980px" height="88px"></a>
-         </div>
-
- <div class="newAd">
-    <a href="" title="首页横幅02" target="_blank"><img src="image/1391831550.jpg" alt="" width="980px" height="88px"></a>
-         </div>
-
- <!--风景美图-->
-<div class="scene">
-<ul class="artist_l">
-
-  <li class="a0">景区美图</li>
-  <li class="a1"><img src="image/14020Q45026.jpg">                                                            
-  <a href="http://www.byts.com.cn/guide/domestic/hainan/658.htm" target="_blank" style="top: -155px;"><strong>印象海南岛</strong><br><span>...</span><br><i>查看详情</i></a> </li>
-<li class="a2"><img src="image/14020Q44929.jpg">                                                            
-  <a href="http://www.byts.com.cn/guide/domestic/hainan/657.htm" target="_blank" style="top: -155px;"><strong>呀诺达雨林</strong><br><span>...</span><br><i>查看详情</i></a> </li>
-<li class="a3"><img src="image/14020Q44T2.jpg">                                                            
-  <a href="http://www.byts.com.cn/guide/domestic/hainan/656.htm" target="_blank" style="top: -231px;"><strong>天涯海角</strong><br><span>...</span><br><i>查看详情</i></a> </li>
-<li class="a4"><img src="image/14020Q44633.jpg">                                                            
-  <a href="http://www.byts.com.cn/guide/domestic/bj/2014/0208/655.html" target="_blank" style="top: -115px;"><strong>南宫地热博览园</strong><br><span>...</span><br><i>查看详情</i></a> </li>
-<li class="a5"><img src="image/14020Q44531.jpg">                                                            
-  <a href="http://www.byts.com.cn/guide/domestic/bj/2014/0208/654.html" target="_blank" style="top: -115px;"><strong>郁金香摩锐水世界</strong><br><span>...</span><br><i>查看详情</i></a> </li>
-<li class="a6"><img src="image/14020Q44336.jpg">                                                            
-  <a href="http://www.byts.com.cn/guide/domestic/bj/2014/0208/653.html" target="_blank" style="top: -115px;"><strong>八达岭野生动物园</strong><br><span>...</span><br><i>查看详情</i></a> </li>
-<li class="a7"><img src="image/14020Q44220.jpg">                                                            
-  <a href="http://www.byts.com.cn/guide/domestic/bj/2014/0208/652.html" target="_blank" style="top: -115px;"><strong>北京欢乐谷</strong><br><span>...</span><br><i>查看详情</i></a> </li>
-<li class="a8"><img src="image/14020Q44033.jpg">                                                            
-  <a href="http://www.byts.com.cn/guide/domestic/bj/2014/0208/651.html" target="_blank" style="top: -115px;"><strong>北京世界花卉大观园</strong><br><span>世界花卉大观园位于北京南四环辅路北侧，京开公路东侧，地理位置优越，交通...</span><br><i>查看详情</i></a> </li>
-<li class="a9"><img src="image/14020Q55412.jpg">                                                            
-  <a href="http://www.byts.com.cn/guide/domestic/bj/2013/1209/646.html" target="_blank" style="top: -173px;"><strong>长城</strong><br><span>长城长城长城长城长城长城...</span><br><i>查看详情</i></a> </li>
-
- </ul>
-</div>
-<script type="text/javascript" src="js/indexPhoto.js"></script>
-<!--风景美图end-->
- <div class="newAd">
-    <a href="" title="首页横幅03" target="_blank"><img src="image/1399459966.jpg" alt="" width="980px" height="88px"></a>
-         </div>
 
 <!--其他模块-->
 <div class="otherMode">
@@ -5055,11 +3892,11 @@ function mousout(n){
 @include('includes.foot')
 
 <!-- WPA Button Begin -->
-<script charset="utf-8" type="text/javascript" src="css/wpa.php"></script>
+<script charset="utf-8" type="text/javascript" src="../css/wpa.php"></script>
 <!-- WPA Button End -->
 <script language="JavaScript" src="js/floatcard"></script>
-<script src="js/all_20100501.js"></script><script id="TQGetrequestUser_JS"></script>
-<script id="TQGetIsNewMsg_JS"></script><script src="js/as.js"></script><object id="tq_as" name="tq_as" style="position:absolute;left:0px;top:-5px;" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1" height="1"><param name="movie" value="http://sysimages.tq.cn/js/vip/shareObject.swf"><param name="allowScriptAccess" value="always"><object id="tq_as2" name="tq_as2" style="position:absolute;left:0px;top:-5px;" type="application/x-shockwave-flash" data="http://sysimages.tq.cn/js/vip/shareObject.swf" width="1" height="1"><param name="allowScriptAccess" value="always"></object></object>
+<script src="../js/all_20100501.js"></script><script id="TQGetrequestUser_JS"></script>
+<script id="TQGetIsNewMsg_JS"></script><script src="../js/as.js"></script><object id="tq_as" name="tq_as" style="position:absolute;left:0px;top:-5px;" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1" height="1"><param name="movie" value="http://sysimages.tq.cn/js/vip/shareObject.swf"><param name="allowScriptAccess" value="always"><object id="tq_as2" name="tq_as2" style="position:absolute;left:0px;top:-5px;" type="application/x-shockwave-flash" data="http://sysimages.tq.cn/js/vip/shareObject.swf" width="1" height="1"><param name="allowScriptAccess" value="always"></object></object>
 
 
 
@@ -5068,8 +3905,8 @@ function mousout(n){
 
 
 
-        <script src="js/jquery.lazyload.js" type="text/javascript"></script> 
-        <script type="text/javascript" src="js/ScrollText.js"></script>
+        <script src="../js/jquery.lazyload.js" type="text/javascript"></script> 
+        <script type="text/javascript" src="../js/ScrollText.js"></script>
          <script type="text/javascript">
 		 
         $(function () {
