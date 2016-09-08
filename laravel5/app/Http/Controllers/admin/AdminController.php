@@ -26,29 +26,23 @@ class AdminController extends BaseController
     *用户添加管理员
     * @return Request $request 接收值
     */
-    public function add(Request $request)
-    {
-<<<<<<< HEAD
-        if (empty($request->input("u_name"))){
-=======
+    public function add(Request $request){
         if (empty($request->input('u_name'))) {
->>>>>>> ff44589dfc581c933ab714ac8414ac8ad5021b1e
+
             $user = DB::table("role")->get();
             return view("admin.user.add", ['user' => $user]);
         } else {
             $rid = $request->input("rid");
             $uname = $request->input("u_name");
             $pwd = $request->input("u_pwd");
-<<<<<<< HEAD
+
             DB::table("users")->insert(['u_name' => $uname, 'u_pwd' => $pwd, 'rid' => $rid]);
             return Redirect::to("admin/userShow");
-=======
             $res=DB::table("users")->insert(['u_name' => $uname, 'u_pwd' => $pwd, 'rid' => $rid]);
             if($res)
             {
                 return Redirect::to("admin/userShow");
             }
->>>>>>> ff44589dfc581c933ab714ac8414ac8ad5021b1e
         }
     }
     /**
@@ -82,17 +76,13 @@ class AdminController extends BaseController
         $path = $file->move('./admin/upload', $newName);//将图片放到storage/uploads下
         $path1 = str_replace('\\', '/', $path);
         $paths = "." . $path1;
-<<<<<<< HEAD
         DB::table("users")->where("u_id", $id)->update(['u_email' => $email, 'u_phone' => $phone, 'path' => $paths, "u_time" => $time]);
         return Redirect::to("admin/userShow");
-=======
         $res=DB::table("users")->where("u_id", $id)->update(['u_email' => $email, 'u_phone' => $phone, 'path' => $paths, "u_time" => $time]);
         if($res)
         {
             return Redirect::to("admin/userShow");
         }
-        
->>>>>>> ff44589dfc581c933ab714ac8414ac8ad5021b1e
     }
 
     /**
@@ -127,10 +117,6 @@ class AdminController extends BaseController
     {
         $id = $request->input("id");
         Users::del($id);
-<<<<<<< HEAD
-=======
-
->>>>>>> ff44589dfc581c933ab714ac8414ac8ad5021b1e
         return Redirect::to("admin/userShow");
     }
 }

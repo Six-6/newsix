@@ -18,7 +18,6 @@ Route::any('users', 'UserController@index');//会员中心
 Route::any('domestic', 'DomesticController@index');//国内
 
 
-<<<<<<< HEAD
 /**管理员管理**/
 Route::any('admin/userAdd',"admin\AdminController@add");/**管理员添加**/
 Route::get('admin/userInfo',"admin\AdminController@info");/**管理员信息完善查看**/
@@ -49,108 +48,22 @@ Route::post('home/detailsAdd',"home\IntegralController@details");//积分兑换�
 Route::get('home/detailsButton',"home\IntegralController@button");//积分兑换详情页
 Route::post('home/detailsShow',"home\IntegralController@detailsShow");//积分兑换详情页
 Route::post('home/address',"home\IntegralController@goodsDetails");//积分兑换收货地址
-=======
 Route::any('admin/lo', 'admin/loginController@index');//后台登录
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> ff44589dfc581c933ab714ac8414ac8ad5021b1e
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**后台登录 权限控制**/
 Route::get('admin/lo', 'admin\loginController@index');/**后台登录**/
 Route::post('admin/loin', 'admin\loginController@loin');/**后台登录**/
-Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/                                                                                                           
+Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/
 Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
-
 Route::group(['middleware' => ['common']], function () {
-	
 	Route::get('admin/userShow', 'admin\IndexController@i');/**后台管理员列表**/
-	
 	Route::any('admin/userAdd',"admin\AdminController@add");/**管理员添加**/
-	
 	Route::get('admin/userInfo',"admin\AdminController@info");/**管理员信息完善查看**/
-	
 	Route::post('admin/infoAdd',"admin\AdminController@perfect");/**管理员信息完善**/
-	
 	Route::get('admin/userShow',"admin\AdminController@show");/**管理员查看**/
-	
 	Route::post('admin/checkUser',"admin\AdminController@check");/**管理员验证**/
-	
 	Route::get('admin/userDel',"admin\AdminController@del");/**管理员删除**/
-
 	Route::get('home/orderAdd',"home\OrderController@add");/**订单列表**/
-
 	/**前台用户管理**/
 	Route::get('home/personAdd',"home\UserController@add");/**个人信息展示**/
 	Route::get('home/personUpd',"home\UserController@upd");/**个人信息修改**/
