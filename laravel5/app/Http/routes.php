@@ -251,5 +251,7 @@ Route::group(['middleware' => ['common']], function () {
 
 
 /*****************************风 向 标*********************************/
-Route::any('home/siterecommend', 'IndicatorController@siterecommend');//风向标首页
+Route::get('home/siterecommend', 'season\IndicatorController@siterecommend');//风向标首页
+Route::get('home/month', 'season\IndicatorController@month');//季节推荐
+Route::get('home/ranking', 'season\RankingController@index');//排行榜
 

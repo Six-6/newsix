@@ -1,11 +1,12 @@
 <?php 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\season;
 use DB,Input,Session;
+use Request;
+use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
-
-
-class IndicatorController extends Controller {
+use App\Ranking;
+header("content-type:text/html;charset=utf-8");
+class RankingController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -21,23 +22,19 @@ class IndicatorController extends Controller {
 	/**
 	 * Create a new controller instance.
 	 * 
-	 * ÌïºÆ±àÐ´
 	 * @return void
 	 */
 	public function __construct()
 	{
 		$this->middleware('guest');
 	}
-
 	
-	/*******************************·ç Ïò ±ê**********************************/
-	/*Ê×Ò³*/
-	public function siterecommend()
+	public function index()
 	{
-		return view('home.indicator');
+		$model = new Ranking();					//è°ƒç”¨modelå±‚
+		
+		$data = $model->seldata();				//è°ƒç”¨æŸ¥è¯¢æ–¹æ³•
+		
+		return view('ranking.Rank',['data'=>$data]);
 	}
-	
-	/*µ±¼¾ÍæÊ²Ã´*/
 }
-
-	
