@@ -35,65 +35,23 @@ Route::get('home/personAdd',"home\UserController@add");//个人信息展示
 Route::post('home/personUpd',"home\UserController@upd");//个人信息修改
 Route::post('home/personVer',"home\UserController@ver");//个人信息验证
 Route::any('home/imageAdd',"home\UserController@image");//头像上传
-Route::get('home/pswAdd',"home\UserController@psw");//密码改动
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Route::get('home/pswAdd',"home\UserController@psw");//密码查看
 Route::post('home/pswUpd',"home\UserController@ate");//密码修改
 Route::post('home/checkPwd',"home\UserController@pwd");//密码验证
-Route::get('home/orderAdd',"home\OrderController@add");/**订单列表**/
-Route::get('home/viewAdd',"home\ViewController@add");/**评论管理**/
+Route::get('home/hotelAdd',"home\OrderController@hotel");//酒店订单显示
+Route::get('home/integralAdd',"home\OrderController@integral");//积分显示
+Route::get('home/viewAdd',"home\OrderController@view");//我的评论
+Route::get('home/ordersAdd',"home\OrderController@line");/**订单列表**/
+Route::get('home/common',"home\OrderController@show");/**主页面显示**/
+/**兑换管理**/
+Route::get('home/exchangeShow',"home\ExchangeController@show");/**兑换页面显示**/
+Route::post('home/detailsShow',"home\ExchangeController@id");/**兑换商品详情**/
+Route::get('home/detailsSel',"home\ExchangeController@details");/**兑换商品详情**/
+Route::post('home/detailsOrder',"home\ExchangeController@order");/**兑换商品订单**/
+Route::post('home/orderAdd',"home\ExchangeController@orderAdd");/**确认兑换**/
 
-/**积分管理**/
-Route::get('home/integralAdd',"home\IntegralController@add");//页面显示
-Route::get('home/exchangeAdd',"home\IntegralController@exchange");//积分详情页
-Route::post('home/detailsAdd',"home\IntegralController@details");//积分兑换页
-Route::get('home/detailsButton',"home\IntegralController@button");//积分兑换详情页
-Route::post('home/detailsShow',"home\IntegralController@detailsShow");//积分兑换详情页
-Route::post('home/address',"home\IntegralController@goodsDetails");//积分兑换收货地址
-Route::any('admin/lo', 'admin/loginController@index');//后台登录
+
+Route::any('admin/lo', 'admin/loginController@index');//后台登录*/
 
 
 
@@ -193,14 +151,7 @@ Route::group(['middleware' => ['common']], function () {
 	
 	Route::get('admin/userDel',"admin\AdminController@del");/**管理员删除**/
 
-	Route::get('home/orderAdd',"home\OrderController@add");/**订单列表**/
 
-	/**前台用户管理**/
-	Route::get('home/personAdd',"home\UserController@add");/**个人信息展示**/
-	Route::get('home/personUpd',"home\UserController@upd");/**个人信息修改**/
-	Route::get('home/personVer',"home\UserController@ver");/**个人信息验证**/
-	Route::any('home/imageAdd',"home\UserController@image");/**头像上传**/
-	Route::get('home/pswAdd',"home\UserController@psw");/**密码改动**/
 
 	/**后台 游记管理**/
 	Route::get('admins', 'admin\TravelnotesController@indexs');/**游记管理**/

@@ -55,5 +55,11 @@ class OrderController extends BaseController{
         //print_r($view);die;
         return view("home.content.view",["view"=>$view]);
     }
+    /**
+     * 主页面显示
+     */
+    public function show(){
+        return view("home/common/common");
+    }
 
 }
