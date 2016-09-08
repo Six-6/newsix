@@ -26,7 +26,7 @@ class AdminController extends BaseController
     /**用户添加管理**/
     public function add(Request $request)
     {
-        if (empty($_POST)) {
+        if (empty($request->input("u_name"))){
             $user = DB::table("role")->get();
             return view("admin.user.add", ['user' => $user]);
         } else {
@@ -34,8 +34,13 @@ class AdminController extends BaseController
             $uname = $request->input("u_name");
             $pwd = $request->input("u_pwd");
             DB::table("users")->insert(['u_name' => $uname, 'u_pwd' => $pwd, 'rid' => $rid]);
-
             return Redirect::to("userAdd");
+            return Redirect::to("admin/userShow");
+            $res=DB::table("users")->insert(['u_name' => $uname, 'u_pwd' => $pwd, 'rid' => $rid]);
+            if($res)
+            {
+                return Redirect::to("admin/userShow");
+            }
         }
     }
 
@@ -66,6 +71,12 @@ class AdminController extends BaseController
         $paths = "." . $path1;
         DB::table("users")->where("u_id", $id)->update(['u_email' => $email, 'u_phone' => $phone, 'path' => $paths, "u_time" => $time]);
         return Redirect::to("userShow");
+        return Redirect::to("admin/userShow");
+        $res=DB::table("users")->where("u_id", $id)->update(['u_email' => $email, 'u_phone' => $phone, 'path' => $paths, "u_time" => $time]);
+        if($res)
+        {
+            return Redirect::to("admin/userShow");
+        }
     }
 
     /**用户信息展示**/

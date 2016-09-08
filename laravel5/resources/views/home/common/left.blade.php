@@ -114,7 +114,17 @@
                 <li class="" id="nav_left_2">
                     <dl class="user-sub-nav cf">
                         <dd><a href="http://www.byts.com.cn/users/index.php?do=money">我的积分</a></dd>
-
+                        <dd><a href="orderAdd">线路订单</a></dd>
+                        <dd><a href="hotelAdd">酒店订单</a></dd>
+                        <dd><a href="">门票订单</a></dd>
+                    </dl>
+                    <a href="orderAdd" class="mlink">我的订单</a>
+                </li>
+                <li class="" id="nav_left_2">
+                    <dl class="user-sub-nav cf">
+                        <dd><a href="integralAdd">我的积分</a></dd>
+                    </dl>
+                    <a href="integralAdd" class="mlink">我的积分</a>
                     </dl>
                     <a href="http://www.byts.com.cn/users/index.php?do=money" class="mlink">我的积分</a>
                 </li>
@@ -126,7 +136,7 @@
                         <dd><a href="pswAdd">修改密码</a></dd>
 
                     </dl>
-                    <a href="javascript: void(0)" class="mlink">账号管理</a>
+                    <a href="personAdd" class="mlink">账号管理</a>
                 </li>
                 <!--会员特价中心待添加 chenjinlong 2011-11-22-->
 
