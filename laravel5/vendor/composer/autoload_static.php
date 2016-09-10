@@ -216,6 +216,7 @@ class ComposerStaticInit53b246cbeb772c48d2f3dbc981f4e7ee
         'CreateCommentTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_31_082621_create_comment_table.php',
         'CreateETypesTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_08_120322_create_e_types_table.php',
         'CreateExchangesTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_08_115717_create_exchanges_table.php',
+        'CreateFHotsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_09_153343_create_f_hots_table.php',
         'CreateHotelsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_08_104353_create_hotels_table.php',
         'CreateIntegralordersTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_08_162148_create_integralorders_table.php',
         'CreateIntegralsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_08_105459_create_integrals_table.php',
