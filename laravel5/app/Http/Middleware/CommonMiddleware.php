@@ -12,7 +12,7 @@ class CommonMiddleware
 	public function handle(Request $request, Closure $next)
 	{
 		return $next($request);
-		/*$u_id=Session::get('u_id');
+		$u_id=Session::get('u_id');
 		if (empty($u_id)) {
 			echo "<script>alert('请先登录');location.href='lo'</script>";
 			die;
@@ -23,11 +23,10 @@ class CommonMiddleware
 		->where('r_p.rid',$res[0])
 		->get();
 		$url=$request->path();
-		if(!in_array($url,$arr))
-		{
-			//echo "<script>alert('对不起, 您没有此权限')</script>";
-			//die;
-		}*/
+			echo "<script>alert('对不起, 您没有此权限')</script>";
+			die;
+		}
+		return $next($request);
 	}
 	
 

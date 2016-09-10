@@ -17,8 +17,6 @@ class LoginController extends Controller {
 	}
 	public function bloin(Request $request)
 	{
-        // $date=$request->all();
-        // print_R($date);die;
         $u_name=$request->username;
         $u_pwd=$request->password;
         if (isset($u_name) && isset($u_pwd))

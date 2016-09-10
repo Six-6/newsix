@@ -33,12 +33,23 @@ class UserController extends BaseController{
         return view("home.user.person",["person"=>$person,"type"=>$type]);
     }
     /**个人资料修改**/
-    public function upd(){
-
+    public function upd(Request $request)
+    {
+        $re = $request->all();
+        unset($re['_token']);
+        //print_r($re);die;
+        $res = Login::upd($re);
+        if ($res) {
+            return view("home/common/common");
+        }
     }
     /**信息用户名验证**/
-    public function ver(){
-
+    public function ver(Request $request){
+        $name = $request->input("name");
+        $res = Login::info();
+        if (in_array($name, $res)) {
+            echo "1";
+        }
     }
 
     /**修改头像**/

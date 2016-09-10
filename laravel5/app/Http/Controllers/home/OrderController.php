@@ -26,6 +26,7 @@ class OrderController extends BaseController{
     /**订单添加**/
     public function add(Request $request){
         return view("home.order.add");
+
 	}
     /**路线订单查看**/
     public function line(Request $request){
@@ -54,6 +55,13 @@ class OrderController extends BaseController{
         $view=View::selAll();
         //print_r($view);die;
         return view("home.content.view",["view"=>$view]);
+    }
+    /**
+     * 主页面显示
+     */
+    public function show(){
+        return view("home/common/common");
+
     }
 
 }

@@ -22,8 +22,8 @@ class Travels extends Model{
 	
 	//protected $dateFormat = 'U';
 	*/
-	/************************** 人在 旅途 ******************************/
-	//评论查询
+
+	/*评论查询*/
 	public function falset($page)
 	{
 		$time = date('Y-m-d H:i:s',time());
@@ -37,9 +37,16 @@ class Travels extends Model{
 		$num = 15;							 //每页条数
 		//数据
 		$arr['data']=DB::table('travels')
+
+            ->Join('login', 'travels.u_id', '=', 'login.u_id')
+            ->Join('order', 'login.u_id', '=', 'order.u_id')
+			->where('t_unwilling',1)
+			->where('t_state',1)
+
             ->Join('users', 'travels.u_id', '=', 'users.u_id')
             ->Join('order', 'users.u_id', '=', 'order.u_id')
 			->where('start_time','>' ,$time)
+
 			->skip($xia)
 			->take(15)
 			->get();
@@ -50,8 +57,8 @@ class Travels extends Model{
 	}
 	
 	
-	/************************** 游记 审核 ******************************/
-	//审核查询
+
+	/*审核查询*/
 	public function audits($page)
 	{
 		$xia=($page-1)*15;					//分页从哪个下标开始
@@ -60,7 +67,7 @@ class Travels extends Model{
 		$mexpage = ceil($num/15);			//向上取整
 		$num = 15;
 		$arr['data']=DB::table('travels')
-				->Join('users', 'travels.u_id', '=', 'users.u_id')
+				->Join('login', 'travels.u_id', '=', 'login.u_id')
 				->where('t_state',0)
 				->skip($xia)
 				->take(15)
@@ -70,8 +77,8 @@ class Travels extends Model{
 		return	$arr;
 	}
 	
-	/************************** 经典 回顾 ******************************/
-	//经典回顾查询
+
+	/*经典回顾查询*/
 	public function classic($page)
 	{
 		$xia=($page-1)*15;					//分页从哪个下标开始
@@ -80,7 +87,7 @@ class Travels extends Model{
 		$mexpage = ceil($num/15);			//向上取整
 		$num = 15;
 		$arr['data']=DB::table('travels')
-				->Join('users', 'travels.u_id', '=', 'users.u_id')
+				->Join('login', 'travels.u_id', '=', 'login.u_id')
 				->where('t_state',1)
                 ->orderBy('t_hot','desc')
 				->skip($xia)
@@ -91,7 +98,7 @@ class Travels extends Model{
 		return	$arr;
 	}
 	
-	/*************************** 共有 删除 *****************************/
+
 	
 	public function del($id)
 	{
@@ -105,6 +112,18 @@ class Travels extends Model{
 		return DB::table('travels')
             ->where('t_id',$id)
             ->update(['t_state' => 1]);
+	}
+	
+	/**
+    *游记 加精
+    * @return 
+    */
+	public function essence($id)
+	{
+		//执行修改
+		return DB::table('travels')
+            ->where('t_id',$id)
+            ->update(['t_essence' => 1]);
 	}
 }
 
