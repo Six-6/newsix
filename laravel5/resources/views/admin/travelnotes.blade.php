@@ -31,7 +31,7 @@
 				<table class="public-cont-table col-2">
 					<tr>
 						<th style="width:5%">选择</th>
-						<th style="width:5%">ID</th>
+				
 						<th style="width:35%">游记名称</th>
 						<th style="width:10%">发表人</th>
 						<th style="width:5%">审核</th>
@@ -41,9 +41,9 @@
 					@foreach ($T_message['data'] as $T_messag)
 					<tr>
 						<td><input type="checkbox" /></td>
-						<td>{{$T_messag -> t_id}}</td>						
+											
 						<td>{{$T_messag -> t_title}}</td>
-						<td>{{$T_messag -> u_name}}</td>
+						<td>{{$T_messag -> name}}</td>
 						<td>
 						@if ($T_messag -> t_state == 1 )    
 							<span><a  style="color:#6bc095" href="">已审核</a></span>
@@ -70,26 +70,26 @@
 				<table>
 					<tr>
 						<td>
-							<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page=1">首页</a>						
+							<a href="{{URL('admin/travelnotes')}}?page=1">首页</a>						
 						</td>
 						<td>
 							@if ($T_message['page'] == 1)   
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page=1">上一页</a>
+								<a href="{{URL('admin/travelnotes')}}?page=1">上一页</a>
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['page']-1}}">上一页</a>
+								<a href="{{URL('admin/travelnotes')}}?page={{$T_message['page']-1}}">上一页</a>
 							@endif							
 						</td>
 						<td>
 							@if ($T_message['page'] == $T_message['mexpage']) 
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['mexpage']}}">下一页</a>
+								<a href="{{URL('admin/travelnotes')}}?page={{$T_message['mexpage']}}">下一页</a>
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['page']+1}}">下一页</a>
+								<a href="{{URL('admin/travelnotes')}}?page={{$T_message['page']+1}}">下一页</a>
 							@endif
 						</td>
 						<td>
 							@if ($T_message['page'] > $T_message['mexpage'])    
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/travelnotes?page={{$T_message['mexpage']}}">最后一页</a>
+								<a href="{{URL('admin/travelnotes')}}?page={{$T_message['mexpage']}}">最后一页</a>
 							@endif
 						</td>
 					</tr>

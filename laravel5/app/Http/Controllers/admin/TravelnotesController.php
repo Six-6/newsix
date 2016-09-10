@@ -58,7 +58,7 @@ class TravelnotesController extends BaseController {
 		$model = new Travels();
 		//调用查询方法
 		$flights = $model->falset($page);
-	
+		//sprint_r($flights);die;
         return view('admin.travelnotes',['T_message' => $flights]);
 	}
 	

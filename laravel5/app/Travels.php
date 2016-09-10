@@ -26,27 +26,17 @@ class Travels extends Model{
 	/*评论查询*/
 	public function falset($page)
 	{
-		$time = date('Y-m-d H:i:s',time());
 		$xia=($page-1)*15;					 //分页从哪个下标开始
-		$count = DB::table('travels')
-            ->Join('users', 'travels.u_id', '=', 'users.u_id')
-            ->Join('order', 'users.u_id', '=', 'order.u_id')
-			->where('start_time','>' ,$time);//查询有多少数据
-		$num = count($count);				 
+		$count = DB::table('travels')->where('t_unwilling',1)->get();
+		$num = count($count);
 		$mexpage = ceil($num/15);			 //向上取整
 		$num = 15;							 //每页条数
 		//数据
 		$arr['data']=DB::table('travels')
-
             ->Join('login', 'travels.u_id', '=', 'login.u_id')
             ->Join('order', 'login.u_id', '=', 'order.u_id')
 			->where('t_unwilling',1)
 			->where('t_state',1)
-
-            ->Join('users', 'travels.u_id', '=', 'users.u_id')
-            ->Join('order', 'users.u_id', '=', 'order.u_id')
-			->where('start_time','>' ,$time)
-
 			->skip($xia)
 			->take(15)
 			->get();
@@ -81,6 +71,7 @@ class Travels extends Model{
 	/*经典回顾查询*/
 	public function classic($page)
 	{
+		$date = date('Y-m-d H:i:s',time());
 		$xia=($page-1)*15;					//分页从哪个下标开始
 		$count = DB::table('travels')->where('t_state',1)->get();//查询有多少数据
 		$num = count($count);			
@@ -89,6 +80,7 @@ class Travels extends Model{
 		$arr['data']=DB::table('travels')
 				->Join('login', 'travels.u_id', '=', 'login.u_id')
 				->where('t_state',1)
+				->where('t_times','<',$date)
                 ->orderBy('t_hot','desc')
 				->skip($xia)
 				->take(15)
