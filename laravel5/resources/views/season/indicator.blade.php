@@ -30,7 +30,7 @@
                 <div class="crumbs fl">
                     <a href="http://go.tuniu.com/" class="word" rel="nofollow">攻略首页</a>
 
-                    <a href="{{URL('home/note')}}" target="_blank" rel="nofollow" class="word">游记</a>
+                    <a href="note" target="_blank" rel="nofollow" class="word">游记</a>
                     <a href="http://www.tuniu.com/way/" target="_blank" rel="nofollow" class="word">达人玩法</a>
                     <a href="http://top.tuniu.com/" rel="nofollow" class="word cur">风向标</a>
                     <a href="http://www.tuniu.com/traveler" target="_blank" rel="nofollow" class="word">旅游达人</a>
@@ -46,7 +46,7 @@
 				<div class=""></div>
 				<a href="http://top.tuniu.com/" class="indsep selected" id="shouye"><div class="shouye">首页</div></a>
 
-                <a href="{{URL('home/ranking')}}" class="indsep" id="list"><div class="list">排行榜</div></a>
+                <a href="ranking" class="indsep" id="list"><div class="list">排行榜</div></a>
 				<a href="http://top.tuniu.com/topic/" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
 				<a href="http://top.tuniu.com/notes/" class="indsep" id="intour">
                     <p class="inactive"></p>
@@ -408,7 +408,7 @@ $(function(){
 
 		$.ajax
 		({
-			url:"{{URL('home/month')}}",
+			url:"month",
 			type:"get",
 			dataType:"json",
 			data:{

@@ -13,7 +13,7 @@ class LoginController extends Controller {
     //前台登录
 	public function index()
 	{
-        return view('login/login');
+        return view('home/login/login');
 	}
 	public function bloin(Request $request)
 	{

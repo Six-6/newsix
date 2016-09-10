@@ -36,10 +36,9 @@ class TravelnotesController extends BaseController {
 	{
 		$this->middleware('guest');
 	}
-	/**
-    *人在 旅途
-    * @return Request $request 接收值
-    */
+
+    /************************** 人在 旅途 ******************************/
+	
 	public function indexs(){
 		return view('admin.index');
 	}
@@ -54,12 +53,12 @@ class TravelnotesController extends BaseController {
 		{
 			$page = 1;
 		}
-	
+
 		//调用model层
 		$model = new Travels();
 		//调用查询方法
 		$flights = $model->falset($page);
-		print_r($flights);die;
+	
         return view('admin.travelnotes',['T_message' => $flights]);
 	}
 	
@@ -75,10 +74,9 @@ class TravelnotesController extends BaseController {
 		
 		return redirect('admin/travelnotes');
 	}
-	/**
-    *游记 审核
-    * @return Request $request 接收值
-    */
+	
+	/************************** 游记 审核 ******************************/
+	
 	public function audit()
 	{
 		//页数
@@ -107,6 +105,8 @@ class TravelnotesController extends BaseController {
 			
 		return redirect('admin/travelnotes');
 	}
+	
+	
 	/************************** 经典 回顾 ******************************/
 	
 	/**经典回顾**/

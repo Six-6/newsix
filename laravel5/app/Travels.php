@@ -21,39 +21,44 @@ class Travels extends Model{
 	public $timestamps = false;
 	
 	//protected $dateFormat = 'U';
-	/**
-    *人在 旅途
-    * @return 
-    */
+	*/
+
+	/*评论查询*/
 	public function falset($page)
-	{		
+	{
+		$time = date('Y-m-d H:i:s',time());
 		$xia=($page-1)*15;					 //分页从哪个下标开始
-		$count = DB::table('travels')->where('t_unwilling',1)->get();
-		$num = count($count);
+		$count = DB::table('travels')
+            ->Join('users', 'travels.u_id', '=', 'users.u_id')
+            ->Join('order', 'users.u_id', '=', 'order.u_id')
+			->where('start_time','>' ,$time);//查询有多少数据
+		$num = count($count);				 
 		$mexpage = ceil($num/15);			 //向上取整
 		$num = 15;							 //每页条数
 		//数据
 		$arr['data']=DB::table('travels')
+
             ->Join('login', 'travels.u_id', '=', 'login.u_id')
             ->Join('order', 'login.u_id', '=', 'order.u_id')
 			->where('t_unwilling',1)
 			->where('t_state',1)
+
+            ->Join('users', 'travels.u_id', '=', 'users.u_id')
+            ->Join('order', 'users.u_id', '=', 'order.u_id')
+			->where('start_time','>' ,$time)
+
 			->skip($xia)
 			->take(15)
 			->get();
-		print_r($arr['data']);die;
+		
 		$arr['page'] = $page;				 //当前页
 		$arr['mexpage'] = $mexpage;			 //总也页数
 		return	$arr;
 	}
 	
 	
-	/**
-    *待审核游记
-    * @return 
-    */
 
-	//审核查询
+	/*审核查询*/
 	public function audits($page)
 	{
 		$xia=($page-1)*15;					//分页从哪个下标开始
@@ -72,10 +77,8 @@ class Travels extends Model{
 		return	$arr;
 	}
 	
-	/**
-    *经典回顾
-    * @return 
-    */
+
+	/*经典回顾查询*/
 	public function classic($page)
 	{
 		$xia=($page-1)*15;					//分页从哪个下标开始
@@ -95,11 +98,7 @@ class Travels extends Model{
 		return	$arr;
 	}
 	
-	
-	/**
-    *游记删除
-    * @return 
-    */
+
 	
 	public function del($id)
 	{
@@ -107,29 +106,12 @@ class Travels extends Model{
 		return DB::table('travels')->where('t_id',$id)->delete();
 	}
 	
-	/**
-    *游记 审核
-    * @return 
-    */
 	public function updata($id)
-	{		
-		$auths = DB::table('travels')
-            ->where('t_id',$id)
-			->get();
-		$datas = json_decode(json_encode($auths),true);
-
-		$ubtle = DB::table('travels')->Join('order', 'travels.u_id', '=', 'order.u_id')->where('travels.u_id',$datas[0]['u_id'])->where('start_time','<',$datas[0]['t_times'])->get();
-		if(!empty($ubtle))
-		{
-			DB::table('travels')
-            ->where('t_id',$id)
-            ->update(['t_unwilling' => 1]);
-		}
-		
+	{
+		//执行修改
 		return DB::table('travels')
             ->where('t_id',$id)
             ->update(['t_state' => 1]);
-		
 	}
 	
 	/**

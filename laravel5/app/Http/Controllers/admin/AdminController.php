@@ -22,15 +22,11 @@ session_start();
 class AdminController extends BaseController
 {
     public $enableCsrfValidation = false;
-    /**
-    *用户添加管理员
-    * @return Request $request 接收值
-    */
+
+    /**用户添加管理**/
     public function add(Request $request)
     {
-
         if (empty($request->input("u_name"))){
-        if (empty($request->input('u_name'))) {
             $user = DB::table("role")->get();
             return view("admin.user.add", ['user' => $user]);
         } else {
@@ -38,19 +34,17 @@ class AdminController extends BaseController
             $uname = $request->input("u_name");
             $pwd = $request->input("u_pwd");
             DB::table("users")->insert(['u_name' => $uname, 'u_pwd' => $pwd, 'rid' => $rid]);
+            return Redirect::to("userAdd");
             return Redirect::to("admin/userShow");
             $res=DB::table("users")->insert(['u_name' => $uname, 'u_pwd' => $pwd, 'rid' => $rid]);
             if($res)
             {
                 return Redirect::to("admin/userShow");
             }
-
         }
     }
-    /**
-    *用户信息完善查看
-    * @return Request $request 接收值
-    */
+
+    /**用户信息完善查看**/
     public function info(Request $request)
     {
         $id = $request->input("id");
@@ -61,10 +55,7 @@ class AdminController extends BaseController
         return view("admin.user.info", ['user' => $user]);
     }
 
-    /**
-    *用户信息完善
-    * @return Request $request 接收值
-    */
+    /**用户信息完善**/
     public function perfect(Request $request)
     {
         $id = $request->input("id");
@@ -79,19 +70,16 @@ class AdminController extends BaseController
         $path1 = str_replace('\\', '/', $path);
         $paths = "." . $path1;
         DB::table("users")->where("u_id", $id)->update(['u_email' => $email, 'u_phone' => $phone, 'path' => $paths, "u_time" => $time]);
+        return Redirect::to("userShow");
         return Redirect::to("admin/userShow");
         $res=DB::table("users")->where("u_id", $id)->update(['u_email' => $email, 'u_phone' => $phone, 'path' => $paths, "u_time" => $time]);
         if($res)
         {
             return Redirect::to("admin/userShow");
         }
-        
     }
 
-    /**
-    *用户信息展示
-    * @return Request $request 接收值
-    */
+    /**用户信息展示**/
     public function show(){
         $user=DB::table("users")
             ->join("role","users.rid","=","role.rid")
@@ -99,10 +87,7 @@ class AdminController extends BaseController
         return view("admin.user.show",compact('user',$user));
     }
 
-    /**
-    *用户信息验证
-    * @return Request $request 接收值
-    */
+    /**用户信息验证**/
     public function check(Request $request)
     {
         $user = $request->input("user");
@@ -111,15 +96,11 @@ class AdminController extends BaseController
             echo 1;
         }
     }
-
-    /**
-    *用户删除
-    * @return Request $request 接收值
-    */
+    /**用户删除**/
     public function del(Request $request)
     {
         $id = $request->input("id");
         Users::del($id);
-        return Redirect::to("admin/userShow");
+        return Redirect::to("userShow");
     }
 }

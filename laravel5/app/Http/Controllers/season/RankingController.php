@@ -34,7 +34,7 @@ class RankingController extends Controller {
 		$model = new Ranking();					//调用model层
 		
 		$data = $model->seldata();				//调用查询方法
-		//print_r($data);die;
+	
 		return view('ranking.Rank',['data'=>$data]);
 	}
 }
