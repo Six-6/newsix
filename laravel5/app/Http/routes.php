@@ -57,9 +57,20 @@ Route::get('home/funShow',"home\FunController@show");/**志同道合页面显示
 
 
 
+Route::get('home/pswAdd',"home\UserController@psw");//密码查看
+Route::post('home/pswUpd',"home\UserController@ate");//密码修改
+Route::post('home/checkPwd',"home\UserController@pwd");//密码验证
+Route::get('home/orderAdd',"home\OrderController@add");/**订单列表**/
+Route::get('home/viewAdd',"home\ViewController@add");/**评论管理**/
 
-Route::any('admin/lo', 'admin/loginController@index');//后台登录*/
-
+/**积分管理**/
+Route::get('home/integralAdd',"home\IntegralController@add");//页面显示
+Route::get('home/exchangeAdd',"home\IntegralController@exchange");//积分详情页
+Route::post('home/detailsAdd',"home\IntegralController@details");//积分兑换页
+Route::get('home/detailsButton',"home\IntegralController@button");//积分兑换详情页
+Route::post('home/detailsShow',"home\IntegralController@detailsShow");//积分兑换详情页
+Route::post('home/address',"home\IntegralController@goodsDetails");//积分兑换收货地址
+Route::any('admin/lo', 'admin\loginController@index');//后台登录
 
 
 
@@ -178,7 +189,7 @@ Route::group(['middleware' => ['common']], function () {
 	Route::get('admin/travelsdelete', 'admin\TravelnotesController@deletes');/**游记删除**/
 	Route::get('admin/travelsdelet', 'admin\TravelnotesController@delet');/**游记删除**/
 	Route::get('admin/audit', 'admin\TravelnotesController@audit');/**展示待审核2**/
-
+	Route::get('admin/essences', 'admin\TravelnotesController@essences');/**展示待审核2**/
 	/**后台主页**/
 	Route::get('admin/way', 'WayController@index');/**旅游方式2**/
 	Route::get('admin/wayadd', 'WayController@wayadd');/**2**/
@@ -254,10 +265,12 @@ Route::post('onregister','LoginController@onregister');/**前台注册**/
 
 
 
-/*****************************风 向 标*********************************/
+/***前台 风向标***/
 Route::get('home/siterecommend', 'season\IndicatorController@siterecommend');//风向标首页
 Route::get('home/month', 'season\IndicatorController@month');//季节推荐
 Route::get('home/ranking', 'season\RankingController@index');//排行榜
+Route::get('home/note', 'season\NoteController@index');//前台游记首页
+Route::get('home/lnews', 'season\NoteController@lnews');//前台最新发布
 
 
 
@@ -724,3 +737,10 @@ Route::get('home/recursion', 'home\RecursionController@recursion');/**首页无�
 Route::post('home/searchs', 'home\RecursionController@searchs');/**首页全文检索搜索**/
 Route::get('home/sous', 'home\RecursionController@searchDay');/**根据旅游天数搜索**/
 Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅游资金搜索**/
+
+Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/
+Route::get('home/personDel', 'home\FootprintController@personDel');/**用户--退出*/
+Route::get('home/collect', 'home\FootprintController@yhCollect');/**用户--收藏*/
+
+
+
