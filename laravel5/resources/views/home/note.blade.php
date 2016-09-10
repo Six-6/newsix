@@ -21,11 +21,7 @@
     <meta name="csrf-token" content="UWRpZldlYUI9UywCLVNXDAsVGA4TEyx0OQ4zF2MAOHMDKBMTEgwLFg==">
 <link href="../css/mask.css" rel="stylesheet" type="text/css"><link id="rightCommonCss" rel="stylesheet" type="text/css" href="../css/right_common.css"></head>
 <body>
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/in-min.js"></script>
-<script type="text/javascript" src="../js/header_v2.js"></script>
-<script type="text/javascript" src="../js/getDegree.js"></script>
-<script type="text/javascript" src="../js/screen_size.js"></script>
+
 <link rel="stylesheet" href="../css/index_nav_menu.css">
 <link rel="stylesheet" type="text/css" href="../css/TN_date.css">
 <script type="text/javascript" src="../js/search_ajax.js">
@@ -104,7 +100,7 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
         <div class="yj-left-top">
             <!-- 游记tab start-->
             <ul class="yj-tab">
-                <li class="current"><a href="{{URL('home/note')}}">推荐游记</a></li>   
+                <li><a href="{{URL('home/note')}}">推荐游记</a></li>   
                 <li><a href="{{URL('home/lnews')}}">最新发布</a></li>
             </ul>
             <div class="content-title-right">
@@ -122,7 +118,9 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
         
 <!-- 游记列表 start-->
         <div class="yj-list-show">
-            <div style="display: none;" class="commen-loadding"></div>
+            <div style="display: none;" class="commen-loadding">
+				
+			</div>
             <ul style="display: block;" class="yj-list">
 				@foreach ($data['refined'] as $error4)
     			<li>
@@ -227,8 +225,7 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
 <script type="text/javascript" src="../js/jquery-1.js"></script>
 <script type="text/javascript" src="../js/template.js"></script>
 <script type="text/javascript" src="../js/slides.js"></script>
-<script type="text/javascript" src="../js/yj_2016.js"></script>
-<script type="text/javascript" src="../js/unveil.js"></script>
+
 
 
 <!--start foot-->

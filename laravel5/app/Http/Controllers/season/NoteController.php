@@ -54,7 +54,7 @@ class NoteController extends Controller {
 
 		$model = new Note();					//调用model层		
 		$data = $model->lnews($page);				//调用查询方法
-		print_r($data);die;
+		//print_r($data);die;
 		return view('home.note',['data'=>$data]);
 	}
 	
