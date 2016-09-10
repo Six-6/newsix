@@ -58,7 +58,8 @@ class TravelnotesController extends BaseController {
 		//调用model层
 		$model = new Travels();
 		//调用查询方法
-		$flights = $model->falset($page);	
+		$flights = $model->falset($page);
+		print_r($flights);die;
         return view('admin.travelnotes',['T_message' => $flights]);
 	}
 	
@@ -137,6 +138,19 @@ class TravelnotesController extends BaseController {
 		$flights = $model->del($id);
 		
 		return redirect('admin/classics');
+	}
+	
+	/**游记加精**/
+	public function essences()
+	{
+		//接取要删除id
+		$id = Request::get('id');
+		//调用model层
+		$model = new Travels();
+		//调用查询方法
+		$flights = $model->essence($id);
+
+		return redirect('admin/travelnotes');
 	}
 	
 }

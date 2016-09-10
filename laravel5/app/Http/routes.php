@@ -228,7 +228,7 @@ Route::group(['middleware' => ['common']], function () {
 	Route::get('admin/travelsdelete', 'admin\TravelnotesController@deletes');/**游记删除**/
 	Route::get('admin/travelsdelet', 'admin\TravelnotesController@delet');/**游记删除**/
 	Route::get('admin/audit', 'admin\TravelnotesController@audit');/**展示待审核2**/
-
+	Route::get('admin/essences', 'admin\TravelnotesController@essences');/**展示待审核2**/
 	/**后台主页**/
 	Route::get('admin/way', 'WayController@index');/**旅游方式2**/
 	Route::get('admin/wayadd', 'WayController@wayadd');/**2**/
@@ -304,8 +304,10 @@ Route::post('onregister','LoginController@onregister');/**前台注册**/
 
 
 
-/*****************************风 向 标*********************************/
+/***前台 风向标***/
 Route::get('home/siterecommend', 'season\IndicatorController@siterecommend');//风向标首页
 Route::get('home/month', 'season\IndicatorController@month');//季节推荐
 Route::get('home/ranking', 'season\RankingController@index');//排行榜
+Route::get('home/note', 'season\NoteController@index');//前台游记首页
+Route::get('home/lnews', 'season\NoteController@lnews');//前台最新发布
 

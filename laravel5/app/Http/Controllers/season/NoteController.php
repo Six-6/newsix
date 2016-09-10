@@ -1,12 +1,13 @@
 <?php 
 namespace App\Http\Controllers\season;
+use Illuminate\Pagination\LengthAwarePaginator;
 use DB,Input,Session;
 use Request;
 use App\Http\Controllers\Controller;
-
-use App\Ranking;
+use Illuminate\Pagination\Paginator;
+use App\Note;
 header("content-type:text/html;charset=utf-8");
-class RankingController extends Controller {
+class NoteController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -18,7 +19,7 @@ class RankingController extends Controller {
 	| controllers, you are free to modify or remove it as you desire.
 	|
 	*/
-
+	
 	/**
 	 * Create a new controller instance.
 	 * 
@@ -29,12 +30,33 @@ class RankingController extends Controller {
 		$this->middleware('guest');
 	}
 	
+	/**
+	*@ÍÆ¼öÓÎ¼Ç
+	*/
 	public function index()
-	{
-		$model = new Ranking();					//è°ƒç”¨modelå±‚
-		
-		$data = $model->seldata();				//è°ƒç”¨æŸ¥è¯¢æ–¹æ³•
+	{	
+		//Ò³Êı
+		$page=Request::get('page');
+
+		$model = new Note();					//µ÷ÓÃmodel²ã		
+		$data = $model->falset($page);				//µ÷ÓÃ²éÑ¯·½·¨
 		//print_r($data);die;
-		return view('ranking.Rank',['data'=>$data]);
+		return view('home.note',['data'=>$data]);
 	}
+	
+	/**
+	*@×îĞÂ·¢²¼
+	*/
+	public function lnews()
+	{
+		//Ò³Êı
+		$page=Request::get('page');
+
+		$model = new Note();					//µ÷ÓÃmodel²ã		
+		$data = $model->lnews($page);				//µ÷ÓÃ²éÑ¯·½·¨
+		print_r($data);die;
+		return view('home.note',['data'=>$data]);
+	}
+	
+	
 }

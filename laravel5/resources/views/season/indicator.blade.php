@@ -30,15 +30,13 @@
                 <div class="crumbs fl">
                     <a href="http://go.tuniu.com/" class="word" rel="nofollow">攻略首页</a>
 
-                    <a href="http://trips.tuniu.com/" target="_blank" rel="nofollow" class="word">游记</a>
+                    <a href="{{URL('home/note')}}" target="_blank" rel="nofollow" class="word">游记</a>
                     <a href="http://www.tuniu.com/way/" target="_blank" rel="nofollow" class="word">达人玩法</a>
                     <a href="http://top.tuniu.com/" rel="nofollow" class="word cur">风向标</a>
                     <a href="http://www.tuniu.com/traveler" target="_blank" rel="nofollow" class="word">旅游达人</a>
                     <a href="http://ask.tuniu.com/" target="_blank" rel="nofollow" class="word">攻略问答</a>
                 </div>
-                <div class="f_youji fr">
-                    <a class="report" href="http://www.tuniu.com/trips/write/">发表游记</a>
-                                    </div>
+             
             </div>
         </div>
 
@@ -49,9 +47,6 @@
 				<a href="http://top.tuniu.com/" class="indsep selected" id="shouye"><div class="shouye">首页</div></a>
 
                 <a href="{{URL('home/ranking')}}" class="indsep" id="list"><div class="list">排行榜</div></a>
-                                
-				<a href="http://top.tuniu.com/trend/" class="indsep" id="trend">
-                                    <div class="trend">出游趋势</div></a>
 				<a href="http://top.tuniu.com/topic/" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
 				<a href="http://top.tuniu.com/notes/" class="indsep" id="intour">
                     <p class="inactive"></p>
@@ -105,20 +100,27 @@
     <div class="wall-intro intro-one">当别人还在研究世界必去的100个地方时，他们会说“我去过了”</div>
 </div>
 <div class="product-one">
-        @foreach($data['authority'] as $sea1)
-        <div class="product-list">
-            <a href="http://top.tuniu.com/topic/d246" target="_blank"><img style="display: inline;"  src="{{$sea1 -> t_img}}" alt="{{$sea1 ->t_title}}" height="140" width="250"></a>
-                        <div class="product-title">
-                <a href="{{$sea1 ->t_id}}" target="_blank">{{$sea1 ->t_title}}</a>
-            </div>
-            <a class="product-title-bg" href="http://top.tuniu.com/topic/d246" target="_blank"></a>
-        </div>
-        @endforeach
-		<div class="product-list">
+		@if ($data['authority']!="")
+			@foreach($data['authority'] as $sea1)
+			<div class="product-list">
+				<a href="http://top.tuniu.com/topic/d246" target="_blank"><img style="display: inline;"  src="{{$sea1 -> t_img}}" alt="{{$sea1 ->t_title}}" height="140" width="250"></a>
+							<div class="product-title">
+					<a href="{{$sea1 ->t_id}}" target="_blank">{{$sea1 ->t_title}}</a>
+				</div>
+				<a class="product-title-bg" href="http://top.tuniu.com/topic/d246" target="_blank"></a>
+			</div>
+			@endforeach
+			<div class="product-list">
             <img style="display: inline;" data-src="http://img3.tuniucdn.com/img/201506091800/indicator/more6.jpg" src="../home/images/more1.jpg" alt="更多精彩" height="140" width="250">
             <a target="_blank" href="http://top.tuniu.com/topic/" class="product-more indexicon">更多精彩</a>
             <a class="product-bg" href="http://top.tuniu.com/topic/" target="_blank"></a>
         </div> 
+		@else
+			<center>
+			<img width="300" height="300" src="../home/images/zanwu.jpg">
+			</center>
+		@endif
+		
     </div>
     </div>
     
@@ -137,6 +139,7 @@
     <div class="wall-intro intro-two">最新的潮店最热的景点，他们永远最先到达。</div>
 </div>
 <div class="product-one">
+	@if ($data['fresh']!="")
         @foreach($data['fresh'] as $sea2)
         <div class="product-list">
             <a href="http://top.tuniu.com/topic/d92" target="_blank"><img style="display: inline;"  src="{{$sea2 -> t_img}}" alt="{{$sea2 ->t_title}}" height="140" width="250"></a>
@@ -151,6 +154,11 @@
             <a target="_blank" href="http://top.tuniu.com/topic/" class="product-more indexicon">更多精彩</a>
             <a class="product-bg" href="http://top.tuniu.com/topic/" target="_blank"></a>
         </div>
+	@else
+			<center>
+			<img width="300" height="300" src="../home/images/zanwu.jpg">
+			</center>
+	@endif
 </div>
 </div>
     
@@ -169,6 +177,7 @@
     <div class="wall-intro intro-three">远可扛单反，近可玩自拍，别人旅行靠走，他们旅行靠拍</div>
 </div>
 <div class="product-one">
+	@if($data['picture']!="")
 		@foreach($data['picture'] as $sea3)
         <div class="product-list">
             <a href="http://top.tuniu.com/topic/d512" target="_blank"><img  src="{{$sea3 -> t_img}}" alt="{{$sea3 ->t_title}}" height="140" width="250"></a>
@@ -183,6 +192,11 @@
             <a target="_blank" href="http://top.tuniu.com/topic/" class="product-more indexicon">更多精彩</a>
             <a class="product-bg" href="http://top.tuniu.com/topic/" target="_blank"></a>
         </div>
+	@else
+			<center>
+			<img width="300" height="300" src="../home/images/zanwu.jpg">
+			</center>
+	@endif
     </div>
     </div>
     
@@ -200,6 +214,7 @@
     <div class="wall-intro intro-four">吃货的世界，你们这些凡人是不会明白的。</div>
 </div>
 <div class="product-one">
+	@if($data['cate']!="")
 		@foreach($data['cate'] as $sea4)
         <div class="product-list">
             <a href="http://top.tuniu.com/topic/d1114" target="_blank"><img  src="{{$sea4 ->t_img}}" alt="{{$sea4 ->t_title}}" height="140" width="250"></a>
@@ -214,6 +229,11 @@
             <a target="_blank" href="http://top.tuniu.com/topic/" class="product-more indexicon">更多精彩</a>
             <a class="product-bg" href="http://top.tuniu.com/topic/" target="_blank"></a>
         </div>
+	@else
+			<center>
+			<img width="300" height="300" src="../home/images/zanwu.jpg">
+			</center>
+	@endif
     </div>
     </div>
     
@@ -231,6 +251,7 @@
     <div class="wall-intro intro-five">最好最实惠的东东，问他们就对啦！</div>
 </div>
 <div class="product-one">
+	@if($data['shop']!="")
 		@foreach($data['shop'] as $sea5)
         <div class="product-list">
             <a href="http://top.tuniu.com/topic/d1164" target="_blank"><img  src="{{$sea5 ->t_img}}" alt="{{$sea5 ->t_title}}" height="140" width="250"></a>
@@ -245,6 +266,11 @@
             <a target="_blank" href="http://top.tuniu.com/topic/" class="product-more indexicon">更多精彩</a>
             <a class="product-bg" href="http://top.tuniu.com/topic/" target="_blank"></a>
         </div>
+	@else
+			<center>
+			<img width="300" height="300" src="../home/images/zanwu.jpg">
+			</center>
+	@endif
     </div>
     </div>
     
@@ -261,7 +287,8 @@
     </div>
     <div class="wall-intro intro-six">小清新，小文艺，小复古，不随大流的孤独旅行家就是你你你。</div>
 </div>
-<div class="product-one">      
+<div class="product-one">
+	@if($data['literature']!="")
 		@foreach($data['literature'] as $sea6)
         <div class="product-list">
             <a href="http://top.tuniu.com/topic/d112" target="_blank"><img style="display: inline;" src="{{$sea5 ->t_img}}" alt="{{$sea5 ->t_title}}" height="140" width="250"></a>
@@ -276,6 +303,11 @@
             <a target="_blank" href="http://top.tuniu.com/topic/" class="product-more indexicon">更多精彩</a>
             <a class="product-bg" href="http://top.tuniu.com/topic/" target="_blank"></a>
         </div>
+	@else
+			<center>
+			<img width="300" height="300" src="../home/images/zanwu.jpg">
+			</center>
+	@endif
     </div>    
     </div>
     
@@ -289,20 +321,7 @@
             <div class="maintitle none">月度出游精选</div>
             <div class="notes-title">
                 <h1>月度出游精选</h1>
-                <div class="mouth-page">
-                    <a href="javascript:;" class="mouth-no" pid="01" monthid="01">1月</a>
-                    <a href="javascript:;" class="mouth-no" pid="02" monthid="02">2月</a>
-                    <a href="javascript:;" class="mouth-no" pid="03" monthid="03">3月</a>
-                    <a href="javascript:;" class="mouth-no" pid="04" monthid="04">4月</a>
-                    <a href="javascript:;" class="mouth-no" pid="05" monthid="05">5月</a>
-                    <a href="javascript:;" class="mouth-no" pid="06" monthid="06">6月</a>
-                    <a href="javascript:;" class="mouth-no" pid="07" monthid="07">7月</a>
-                    <a href="javascript:;" class="mouth-no" pid="08" monthid="08">8月</a>
-                    <a href="javascript:;" class="mouth-no mouth-select indexicon" pid="09" monthid="09">9月</a>
-                    <a href="javascript:;" class="mouth-no" pid="10" monthid="10">10月</a>
-                    <a href="javascript:;" class="mouth-no" pid="11" monthid="11">11月</a>
-                    <a href="javascript:;" class="mouth-no" pid="12" monthid="12">12月</a>
-                </div>
+                
             </div>
             <div class="mouth-list">
 	@foreach($data['month'] as $sea7)	

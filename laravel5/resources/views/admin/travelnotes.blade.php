@@ -56,11 +56,10 @@
 						<td><span style="color:#999">{{$T_messag -> t_times}}</span></td>
 						<td>
 							<div class="table-fun">
-								@if ($T_messag -> t_state == 1 )    
-									
-								@else    
-									<a href="{{URL('admin/travelsupdata')}}?id={{$T_messag -> t_id}}">审核</a>
-								@endif								
+								@if ($T_messag -> t_essence != 1 )    
+									<a href="{{URL('admin/essences')}}?id={{$T_messag -> t_id}}">加精</a>
+								@endif	
+								
 								<a href="{{URL('admin/travelsdelet')}}?id={{$T_messag -> t_id}}">删除</a>
 							</div>
 						</td>

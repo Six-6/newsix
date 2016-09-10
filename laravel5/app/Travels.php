@@ -34,14 +34,14 @@ class Travels extends Model{
 		$num = 15;							 //每页条数
 		//数据
 		$arr['data']=DB::table('travels')
-            ->Join('users', 'travels.u_id', '=', 'users.u_id')
-            ->Join('order', 'users.u_id', '=', 'order.u_id')
+            ->Join('login', 'travels.u_id', '=', 'login.u_id')
+            ->Join('order', 'login.u_id', '=', 'order.u_id')
 			->where('t_unwilling',1)
 			->where('t_state',1)
 			->skip($xia)
 			->take(15)
 			->get();
-		
+		print_r($arr['data']);die;
 		$arr['page'] = $page;				 //当前页
 		$arr['mexpage'] = $mexpage;			 //总也页数
 		return	$arr;
@@ -62,7 +62,7 @@ class Travels extends Model{
 		$mexpage = ceil($num/15);			//向上取整
 		$num = 15;
 		$arr['data']=DB::table('travels')
-				->Join('users', 'travels.u_id', '=', 'users.u_id')
+				->Join('login', 'travels.u_id', '=', 'login.u_id')
 				->where('t_state',0)
 				->skip($xia)
 				->take(15)
@@ -84,7 +84,7 @@ class Travels extends Model{
 		$mexpage = ceil($num/15);			//向上取整
 		$num = 15;
 		$arr['data']=DB::table('travels')
-				->Join('users', 'travels.u_id', '=', 'users.u_id')
+				->Join('login', 'travels.u_id', '=', 'login.u_id')
 				->where('t_state',1)
                 ->orderBy('t_hot','desc')
 				->skip($xia)
@@ -130,6 +130,18 @@ class Travels extends Model{
             ->where('t_id',$id)
             ->update(['t_state' => 1]);
 		
+	}
+	
+	/**
+    *游记 加精
+    * @return 
+    */
+	public function essence($id)
+	{
+		//执行修改
+		return DB::table('travels')
+            ->where('t_id',$id)
+            ->update(['t_essence' => 1]);
 	}
 }
 

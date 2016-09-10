@@ -1,430 +1,234 @@
-<html>
-<head>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html class="ie8"><![endif]-->
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html><!--<![endif]--><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<script src="../js/ga.js" async="" type="text/javascript"></script>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="../css/indicator.css">
-<link rel="stylesheet" type="text/css" href="../css/gonglue_channel.css">
-<link rel="stylesheet" type="text/css" href="../css/jquery.css">
-<link rel="stylesheet" type="text/css" href="../css/top.css">
-<title>排行榜</title>
-<meta content="线路排行榜,旅游排行榜, 途牛风向标, 定制排行榜" name="keywords">
-<meta content="途牛旅游排行榜撷取当季最热旅游目的地,为您推荐出境长线排行榜,出境短线排行榜,国内线路排行榜,周边排行榜;让您在准备旅行时了解旅游风向,有备而行." name="description">
-<link href="../css/reset.css" rel="stylesheet" type="text/css">
-<script src="../js/jquery-1.js" type="text/javascript"></script>
-<script src="../js/base64.js" type="text/javascript"></script>
-<script src="../js/share.js"></script><link href="../css/mask.css" rel="stylesheet" type="text/css"><link href="../css/share_style0_16.css" rel="stylesheet"><link id="rightCommonCss" rel="stylesheet" type="text/css" href="../css/right_common.css"></head>
+    <meta charset="utf-8">
+    <title>新游记</title>
+    <meta content="游记,旅游游记,游记攻略,自助游游记" name="keywords">
+    <meta content="途牛游记频道,最佳的自助游游记攻略,靠谱的旅游游记,海量的旅游行程美图,在途牛驴友中秀出你的风采,分享您在旅游过程中的点点滴滴.尽在途牛旅游网(Tuniu.com)游记频道" name="description">
+    <link rel="stylesheet" type="text/css" href="../css/foot.css">
+    <script src="../js/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+        var analyTuniuBeginTime=(new Date()).getTime();
+    </script>
+    <style type="text/css">
+        .logo span { float:left; width:163px; height:55px; margin:5px 0 0 0;}
+    </style>
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="UWRpZldlYUI9UywCLVNXDAsVGA4TEyx0OQ4zF2MAOHMDKBMTEgwLFg==">
+<link href="../css/mask.css" rel="stylesheet" type="text/css"><link id="rightCommonCss" rel="stylesheet" type="text/css" href="../css/right_common.css"></head>
 <body>
+<script type="text/javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" src="../js/in-min.js"></script>
 <script type="text/javascript" src="../js/header_v2.js"></script>
 <script type="text/javascript" src="../js/getDegree.js"></script>
 <script type="text/javascript" src="../js/screen_size.js"></script>
 <link rel="stylesheet" href="../css/index_nav_menu.css">
 <link rel="stylesheet" type="text/css" href="../css/TN_date.css">
-<script type="text/javascript" src="../js/search_ajax.js"></script>
-<link href="../css/head_nav_new.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">function selectTag(showContent,selfObj){ var tag = document.getElementById("tags").getElementsByTagName("li"); var taglength = tag.length; for(i=0; i<taglength; i++){ tag[i].className = ""; } selfObj.parentNode.className = "selectTag"; for(i=1; j=document.getElementById("tagContent"+i); i++){ j.style.display = "none"; } document.getElementById(showContent).style.display = "block";}var startCity = document.getElementById("startCity");if(startCity){ startCity.onmouseover = function(){ startCity.className = "head_start_city change_tab"; }; startCity.onmouseout = function(){ startCity.className = "head_start_city"; };}function getCookie(objName){ var arrStr = document.cookie.split("; "); for(var i = 0;i < arrStr.length;i ++){ var temp = arrStr[i].split("="); if(temp[0] == objName) return unescape(temp[1]); } return false;}var tuniuPPhoneDiv = document.getElementById("tuniu_400_num_phone");var tuniuPPhoneNumber = getCookie("p_phone_400");if (tuniuPPhoneDiv) { if (tuniuPPhoneNumber) { tuniuPPhoneDiv.innerHTML = tuniuPPhoneNumber; } else { tuniuPPhoneDiv.innerHTML = "4007-999-999"; }}$(function($) { var sub = $("#keyword-input-sub").val(); if(sub && sub != ''){ $("#keyword-input").val(sub); }});</script><!-- 页面类型 -->
+<script type="text/javascript" src="../js/search_ajax.js">
+</script><link href="../css/head_nav_new.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function selectTag(showContent,selfObj){ var tag = document.getElementById("tags").getElementsByTagName("li"); var taglength = tag.length; for(i=0; i<taglength; i++){ tag[i].className = ""; } selfObj.parentNode.className = "selectTag"; for(i=1; j=document.getElementById("tagContent"+i); i++){ j.style.display = "none"; } document.getElementById(showContent).style.display = "block";}var startCity = document.getElementById("startCity");if(startCity){ startCity.onmouseover = function(){ startCity.className = "head_start_city change_tab"; }; startCity.onmouseout = function(){ startCity.className = "head_start_city"; };}function getCookie(objName){ var arrStr = document.cookie.split("; "); for(var i = 0;i < arrStr.length;i ++){ var temp = arrStr[i].split("="); if(temp[0] == objName) return unescape(temp[1]); } return false;}var tuniuPPhoneDiv = document.getElementById("tuniu_400_num_phone");var tuniuPPhoneNumber = getCookie("p_phone_400");if (tuniuPPhoneDiv) { if (tuniuPPhoneNumber) { tuniuPPhoneDiv.innerHTML = tuniuPPhoneNumber; } else { tuniuPPhoneDiv.innerHTML = "4007-999-999"; }}$(function($) { var sub = $("#keyword-input-sub").val(); if(sub && sub != ''){ $("#keyword-input").val(sub); }});</script><!-- 页面类型 -->
 <input name="page_type" id="page_type" value="130000" type="hidden">
 
-    <!--start 面包屑和目的地导航 -->
-        <div class="top_area">
-            <div class="wrap clearfix" style="background:#fff;">
-                <div class="crumbs fl">
-                    <a href="{{URL('home/siterecommend')}}" class="word" rel="nofollow">攻略首页</a>
 
-                    <a href="{{URL('home/note')}}" target="_blank" rel="nofollow" class="word">游记</a>
-                    <a href="http://www.tuniu.com/way/" target="_blank" rel="nofollow" class="word">达人玩法</a>
-                    <a href="{{URL('home/ranking')}}" rel="nofollow" class="word cur">风向标</a>
-                    <a href="http://www.tuniu.com/traveler" target="_blank" rel="nofollow" class="word">旅游达人</a>
-                    <a href="http://ask.tuniu.com/" target="_blank" rel="nofollow" class="word">攻略问答</a>
-                </div>
-                
+<link rel="stylesheet" type="text/css" href="../css/slides.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../css/yj_2016.css">
+<link rel="stylesheet" href="../css/pub_mod.css">
+<!-- 游记新版轮播 start -->
+<div id="full-screen-slider" class="head">
+
+	    <!-- 游记banner 大图 start -->
+    <ul id="slides">
+			@foreach ($data['carousel'] as $error1)
+			<li style="background: transparent url(&quot;{{$error1['t_img']}} &quot;) no-repeat scroll center top; z-index: 900; "><a href="http://www.tuniu.com/trips/10104862" target="_blank" rel="nofollow"></a></li>
+			@endforeach	
+	</ul>
+			
+    <!-- 游记banner 大图 end -->
+    <div class="slide-center">
+        <!-- 游记banner 小图 start -->
+        <ul style="margin-left: 341px;" id="pagination">
+			@foreach ($data['carousel'] as $error2)
+        	<li class="">
+                <div style="display: block;" class="slide-bg"></div>
+                <a href="javascript:void(0)">
+				<img width="220" height="152" src="{{$error2['t_img']}}">				
+				</a>
+            </li>
+			@endforeach	
+    		        </ul>
+        <!-- 游记banner 小图 end -->
+        <!-- 游记作者描述 start -->
+        <ul id="description">
+			@foreach ($data['carousel'] as $error3)
+        	<li style="display: none; z-index: 900;">
+                <a href="http://www.tuniu.com/trips/10104862">
+                    <div class="yj-name">{{$error3['t_title']}}</div>
+                </a>
+                <a href="http://www.tuniu.com/person/BBFE770D7CB73DF7B8A28EE066FA76DA">
+                    <div class="auther-show">
+                        <img src="{{$error3['path']}}" alt="">
+                        <div class="auther-name">{{$error3['name']}}</div>
+                    </div>
+                </a>
+            </li>
+			@endforeach	
+    		        </ul>
+        <!-- 游记作者描述 end -->
+    </div>
+        <!-- 游记搜索框 start -->
+    <div class="dd_search">
+        <div class="d_search">
+            <form id="yjsearch_form" method="get" action="/search">
+                <input autocomplete="off" class="input_search J_input" name="q" placeholder="搜索游记" type="text">
+                <input class="search_btn J_sub_btn" type="button">
+            </form>
+        </div>
+    </div>
+
+    <!-- 游记搜索框 end -->
+</div><!-- 游记新版轮播 end -->
+<!-- 游记内容 start -->
+<div class="yj-content">
+    <!-- 左侧内容 start-->
+    <div class="yj-left-show">
+    	
+<!-- 广告位  -->
+    <a href="http://www.tuniu.com/trips/10104110" class="yj-left-show" target="_blank" rel="nofollow">
+        <img src="../image/Cii-TFfPij-IRbuzAAEzXSfoIwsAACJHAP60W8AATN195_w800_h0_c0_t0.jpg" alt="游记首页banner1【PC】">
+    </a>
+        <div class="yj-left-top">
+            <!-- 游记tab start-->
+            <ul class="yj-tab">
+                <li class="current"><a href="{{URL('home/note')}}">推荐游记</a></li>   
+                <li><a href="{{URL('home/lnews')}}">最新发布</a></li>
+            </ul>
+            <div class="content-title-right">
+                <a class="my-note" href="http://www.tuniu.com/person/trips/" target="_blank" rel="nofollow">
+                    <span></span>
+                    <em>我的游记</em>
+                </a>
+                <a class="write-note" href="http://www.tuniu.com/trips/write/" target="_blank" rel="nofollow">
+                    <span></span>
+                    <em>发表游记</em>
+                </a>
             </div>
         </div>
-
-<div class="wrapmain">
-		<div class="nav-ind">
-			<div class="navbar">
-				<!--<div class="indlogo"></div>-->
-				<a href="{{URL('home/siterecommend')}}" class="indsep" id="shouye"><div class="shouye">首页</div></a>
-
-                <a href="{{URL('home/ranking')}}" class="indsep selected" id="list"><div class="list">排行榜</div></a>                                				
-				<a href="http://top.tuniu.com/topic/" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
-				<a href="http://top.tuniu.com/notes/" class="indsep" id="intour">
-                    <p class="inactive"></p>
-                    <div class="intour">人在旅途</div></a>
-			</div>
+        <!-- 游记tab end-->
+        
+<!-- 游记列表 start-->
+        <div class="yj-list-show">
+            <div style="display: none;" class="commen-loadding"></div>
+            <ul style="display: block;" class="yj-list">
+				@foreach ($data['refined'] as $error4)
+    			<li>
+                    <a class="list-img" href="http://www.tuniu.com/trips/10106094" target="_blank" rel="nofollow">
+                        <img src="{{$error4->t_img}}" alt="">
+                        <div class="list-recommend gl-jh"></div>
+                    </a>
+                    <div class="list-show">
+                        <a href="http://www.tuniu.com/trips/10106094" target="_blank" rel="nofollow">
+                            <div class="list-name">{{$error4->t_title}}</div>
+                            <div class="list-des">{{$error4->s_desc}}</div>
+                        </a>
+                        <div class="list-auther">
+                            <div class="list-auther-left">
+                            <a href="http://www.tuniu.com/person/2347E11AE099EEC3A3D3014A85EC4061">
+                                <img src="{{$error4->path}}" alt="">
+                                <div class="list-auther-name">{{$error4->name}}</div>
+                            </a>
+                                <div class="list-scan"><i></i>{{$error4->t_browse}}&nbsp;</div>
+                                <div class="list-comment"><i></i>{{$error4->t_commentint}}&nbsp;</div>
+                            </div>
+                            
+                                <div class="list-auther-right ding_yes" id="dingAjax" data-id="10106094">
+                                <i></i>
+								<span>{{$error4->t_zambia}}</span>
+                                </div>
+                        </div>
+                    </div>
+                </li>
+				@endforeach
+            </ul>
+    		<ul class="yj-list"></ul>
+            <ul class="yj-list"></ul>
+            <ul class="yj-list"></ul>
+                    </div>
+        <!-- 游记列表 end-->
+        <!-- 分页 -->
+        <div data-curpage="1" data-pager-inited="true" class="pager pagination" data-init="pager" style="display: block;">
+		<div class="page-bottom">		
+		<a rel="nofollow"  href="javascript:void(0)" data-page="">共{{$data['mexpage']}}页</a>
+		<a rel="nofollow"  href="javascript:void(0)" data-page="">第{{$data['page']}}页</a>
+		<a rel="nofollow" class="page" href="{{URL('home/note')}}?page=1" pid="1" data-page="">首页</a>
+		<a rel="nofollow" class="page" href="{{URL('home/note')}}?page={{$data['page']-1}}" pid="{{$data['page']-1}}">上一页</a>		
+		<a rel="nofollow" class="page" href="{{URL('home/note')}}?page={{$data['page']+1}}" pid="{{$data['page']+1}}">下一页</a>
+		<a rel="nofollow" class="page" href="{{URL('home/note')}}?page={{$data['mexpage']}}" pid="{{$data['mexpage']}}">尾页</a>
 		</div>
-<div class="main">
-
-
-<div class="top_ad">
-    <a href="http://top.tuniu.com/list" title="排行榜首页顶部广告" target="_blank"><img src="../home/images/ad.jpg"></a>
+		</div>
+        <div class="pager pagination" data-init="pager" style="display:none"></div>
+        <div class="pager pagination" data-init="pager" style="display:none"></div>
+        <div class="pager pagination" data-init="pager" style="display:none"></div>
+		        <!-- 交互数据 -->
+    
 </div>
-
-<div class="top_tips">
-Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
+    <!-- 左侧内容 end-->
+    <!-- 右侧内容 start-->
+    <div class="yj-right-show">
+		<div class="right-traverler">
+    <div class="right-commen-tit">
+        <p class="right-tit">大玩家</p>
+        <a href="http://www.tuniu.com/traveler" class="right-more" target="_blank" rel="nofollow">更多&nbsp;&gt;</a>
+    </div>
+    <div class="traverler-auther">
+        <div class="traverler-img">
+            <div class="traverler-sex  sex-men"></div>
+            <a href="http://www.tuniu.com/person/AA9C5314291E4783C30A743717A49B4A" target="_blank" rel="nofollow"><img src="../image/Cii-T1fNC3iIda7IADShmFy-wBoAACEVgBXhkgANKGw952_w90_h90_c1_t0.jpg" alt="" class="traverler-title-img"></a>
+        </div>
+        <div class="traverler-name">贱公子</div>
+        <div class="traverler-des">大玩家，曾进义工旅行一年，爱摄影
+一流的丽江混混，半吊子户外领队，三流的摄影师还是个不入流的旅行作家。对，我的生活，我的兴趣从2010年起就如同旅行和摄影是我每天的日常生活</div>
+        <ul class="traverler-label">
+                            	                		<li>摄影</li>
+                	                            	                		<li>写攻略</li>
+                	                            	                		<li>制定线路</li>
+                	                            	                    </ul>
+        <a href="http://www.tuniu.com/traveler/recruit/" class="master-btn" target="_blank">申请大玩家</a>
+    </div>
+</div>       
+		  
+ <div class="right-commen-tit">
+        <p class="right-tit">当前活动</p>
+    </div>
+    <ul class="activity-list">
+       
+               <li>
+            <a href="http://www.tuniu.com/gt/youji/" target="_blank" rel="nofollow">
+                <div class="activity-img" style="background-image:url(http://m.tuniucdn.com/fb2/t1/G2/M00/26/06/Cii-T1e6_nCIDMvoAAAGNPLmob8AAAvHwP_-bQAAAZM836.png) "></div>
+                <div class="activity-show">
+                    <div class="activity-name">游记征文</div>
+                    <div class="activity-des">写游记，赢千元大奖！</div>
+                </div>
+            </a>
+        </li>   
+                
+            </ul>
+  				
+     
+    </div>
+    <!-- 右侧内容 end-->
 </div>
-
-
-<dl class="top_summary chuchang">
-<dt>出境长线<span class="top_res icon_top"></span>前五</dt>
-
-
-<dd>
-	<div class="top_type">
-		<div class="col1">
-                    <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" target="_blank"><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
-		</div>
-
-		<div class="col2">
-			<h5><a href="http://top.tuniu.com/line/detail-16-0-0/">马尔代夫度假榜</a></h5>                 
-		</div>
-
-                <div style="clear: both;"></div>
-	</div>
-	<ul class="top_list2">
-        @foreach($data['Maldives'] as $key => $error1) 
-			@if($key+1 < 4)
-            <li class="list_item2">				
-                <div class="item_num">{{$key+1}}</div>
-                <a href="{{$error1->s_id}}" target="_blank">&lt;{{$error1->s_name}}</a>
-                <div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-			</li>
-			@else
-				 <li class="list_item2 grey">
-					<div class="item_num">{{$key+1}}</div>
-					<a href="http://bj.tuniu.com/tours/210135324" target="_blank">&lt;{{$error1->s_name}}</a>
-					<div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-				</li>
-			@endif
-		@endforeach	
-	</ul>
-
-</dd>
-
-
-<dd>
-	<div class="top_type">
-		<div class="col1">
-                    <a href="http://top.tuniu.com/line/detail-18-0-0/" title="" target="_blank"><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
-		</div>
-
-		<div class="col2">
-			<h5><a href="http://top.tuniu.com/line/detail-18-0-0/">欧洲文艺都市榜</a></h5>
-
-			
-
-		</div>
-
-                <div style="clear: both;"></div>
-	</div>
-	<ul class="top_list2">           
-            @foreach($data['literature'] as $key => $error1) 
-			@if($key+1 < 4)
-            <li class="list_item2">				
-                <div class="item_num">{{$key+1}}</div>
-                <a href="{{$error1->s_id}}" target="_blank">&lt;{{$error1->s_name}}</a>
-                <div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-			</li>
-			@else
-				 <li class="list_item2 grey">
-					<div class="item_num">{{$key+1}}</div>
-					<a href="http://bj.tuniu.com/tours/210135324" target="_blank">&lt;{{$error1->s_name}}</a>
-					<div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-				</li>
-			@endif
-		@endforeach	
-	</ul>
-	
-</dd>
-
-
-<dd>
-	<div class="top_type">
-		<div class="col1">
-                    <a href="http://top.tuniu.com/line/detail-19-0-0/" title="" target="_blank"><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
-		</div>
-
-		<div class="col2">
-			<h5><a href="http://top.tuniu.com/line/detail-19-0-0/">复联二热血之旅榜</a></h5>
-
-                  
-
-			
-
-		</div>
-
-                <div style="clear: both;"></div>
-	</div>
-	<ul class="top_list2">
-        @foreach($data['Blood'] as $key => $error1) 
-			@if($key+1 < 4)
-            <li class="list_item2">				
-                <div class="item_num">{{$key+1}}</div>
-                <a href="{{$error1->s_id}}" target="_blank">&lt;{{$error1->s_name}}</a>
-                <div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-			</li>
-			@else
-				 <li class="list_item2 grey">
-					<div class="item_num">{{$key+1}}</div>
-					<a href="http://bj.tuniu.com/tours/210135324" target="_blank">&lt;{{$error1->s_name}}</a>
-					<div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-				</li>
-			@endif
-		@endforeach	
-	</ul>
-
-</dd>
-
-
-</dl><dl class="top_summary chuduan">
-
-
-
-<dt>国内线路<span class="top_res icon_top"></span>前五</dt>
-
-
-<dd>
-	<div class="top_type">
-		<div class="col1">
-                    <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" target="_blank"><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
-		</div>
-
-		<div class="col2">
-			<h5><a href="http://top.tuniu.com/line/detail-26-0-0/">全国最热景点榜</a></h5>
-
-                      
-			
-
-		</div>
-
-                <div style="clear: both;"></div>
-	</div>
-	<ul class="top_list2">
-        @foreach($data['nationwide'] as $key => $error1) 
-			@if($key+1 < 4)
-            <li class="list_item2">				
-                <div class="item_num">{{$key+1}}</div>
-                <a href="{{$error1['s_id']}}" target="_blank">&lt;{{$error1['s_name']}}</a>
-                <div class="item_price"><span class="sign">￥</span>{{$error1['s_sprice']}}</div>
-			</li>
-			@else
-				 <li class="list_item2 grey">
-					<div class="item_num">{{$key+1}}</div>
-					<a href="http://bj.tuniu.com/tours/210135324" target="_blank">&lt;{{$error1['s_name']}}</a>
-					<div class="item_price"><span class="sign">￥</span>{{$error1['s_sprice']}}</div>
-				</li>
-			@endif
-		@endforeach
-	</ul>
-
-</dd>
-
-
-<dd>
-	<div class="top_type">
-		<div class="col1">
-                    <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" target="_blank"><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
-		</div>
-
-		<div class="col2">
-			<h5><a href="http://top.tuniu.com/line/detail-27-0-0/">全国最美古镇榜</a></h5>
-
-
-			
-
-		</div>
-
-                <div style="clear: both;"></div>
-	</div>
-	<ul class="top_list2">
-        @foreach($data['Town'] as $key => $error1) 
-			@if($key+1 < 4)
-            <li class="list_item2">				
-                <div class="item_num">{{$key+1}}</div>
-                <a href="{{$error1['s_id']}}" target="_blank">&lt;{{$error1['s_name']}}</a>
-                <div class="item_price"><span class="sign">￥</span>{{$error1['s_sprice']}}</div>
-			</li>
-			@else
-				 <li class="list_item2 grey">
-					<div class="item_num">{{$key+1}}</div>
-					<a href="http://bj.tuniu.com/tours/210135324" target="_blank">&lt;{{$error1['s_name']}}</a>
-					<div class="item_price"><span class="sign">￥</span>{{$error1['s_sprice']}}</div>
-				</li>
-			@endif
-		@endforeach
-	</ul>
-
-</dd>
-
-
-<dd>
-	<div class="top_type">
-		<div class="col1">
-                    <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" target="_blank"><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
-		</div>
-
-		<div class="col2">
-			<h5><a href="http://top.tuniu.com/line/detail-28-0-0/">跑男文化之旅榜</a></h5>
-
-                        
-
-			
-
-		</div>
-
-                <div style="clear: both;"></div>
-	</div>
-	<ul class="top_list2">
-        @foreach($data['culture'] as $key => $error1) 
-			@if($key+1 < 4)
-            <li class="list_item2">				
-                <div class="item_num">{{$key+1}}</div>
-                <a href="{{$error1->s_id}}" target="_blank">&lt;{{$error1->s_name}}</a>
-                <div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-			</li>
-			@else
-				 <li class="list_item2 grey">
-					<div class="item_num">{{$key+1}}</div>
-					<a href="http://bj.tuniu.com/tours/210135324" target="_blank">&lt;{{$error1->s_name}}</a>
-					<div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-				</li>
-			@endif
-		@endforeach	
-	</ul>
-
-</dd>
-
-
-</dl><dl class="top_summary zhoubian">
-<dt>周边<span class="top_res icon_top"></span>前五</dt>
-
-
-<dd>
-	<div class="top_type">
-		<div class="col1">
-                    <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" target="_blank"><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
-		</div>
-		<div class="col2">
-			<h5><a href="http://top.tuniu.com/line/detail-86-0-0/">一日游榜单</a></h5>
-
-                      
-
-			
-
-		</div>
-
-                <div style="clear: both;"></div>
-	</div>
-	<ul class="top_list2">
-        @foreach($data['oneday'] as $key => $error1) 
-			@if($key+1 < 4)
-            <li class="list_item2">				
-                <div class="item_num">{{$key+1}}</div>
-                <a href="{{$error1->s_id}}" target="_blank">&lt;{{$error1->s_name}}</a>
-                <div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-			</li>
-			@else
-				 <li class="list_item2 grey">
-					<div class="item_num">{{$key+1}}</div>
-					<a href="http://bj.tuniu.com/tours/210135324" target="_blank">&lt;{{$error1->s_name}}</a>
-					<div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-				</li>
-			@endif
-		@endforeach
-
-            
-
-	</ul>
-
-</dd>
-
-
-<dd>
-	<div class="top_type">
-		<div class="col1">
-                    <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" target="_blank"><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
-		</div>
-
-		<div class="col2">
-			<h5><a href="http://top.tuniu.com/line/detail-87-0-0/">二日游榜单</a></h5>
-
-			
-
-		</div>
-
-                <div style="clear: both;"></div>
-	</div>
-	<ul class="top_list2">
-            
-        @foreach($data['twoday'] as $key => $error1) 
-			@if($key+1 < 4)
-            <li class="list_item2">				
-                <div class="item_num">{{$key+1}}</div>
-                <a href="{{$error1->s_id}}" target="_blank">&lt;{{$error1->s_name}}</a>
-                <div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-			</li>
-			@else
-				 <li class="list_item2 grey">
-					<div class="item_num">{{$key+1}}</div>
-					<a href="http://bj.tuniu.com/tours/210135324" target="_blank">&lt;{{$error1->s_name}}</a>
-					<div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-				</li>
-			@endif
-		@endforeach
-
-            
-
-	</ul>
-
-</dd>
-
-
-<dd>
-	<div class="top_type">
-		<div class="col1">
-                    <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" target="_blank"><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
-		</div>
-
-		<div class="col2">
-			<h5><a href="http://top.tuniu.com/line/detail-88-0-0/">三日游榜单</a></h5>
-
-                     
-			
-
-		</div>
-
-                <div style="clear: both;"></div>
-	</div>
-	<ul class="top_list2">
-            
-        @foreach($data['threeday'] as $key => $error1) 
-			@if($key+1 < 4)
-            <li class="list_item2">				
-                <div class="item_num">{{$key+1}}</div>
-                <a href="{{$error1->s_id}}" target="_blank">&lt;{{$error1->s_name}}</a>
-                <div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-			</li>
-			@else
-				 <li class="list_item2 grey">
-					<div class="item_num">{{$key+1}}</div>
-					<a href="http://bj.tuniu.com/tours/210135324" target="_blank">&lt;{{$error1->s_name}}</a>
-					<div class="item_price"><span class="sign">￥</span>{{$error1->s_sprice}}</div>
-				</li>
-			@endif
-		@endforeach
-            
-
-	</ul>
-
-</dd>
-
-
-</dl>
-
-</div>
-
+<!-- 游记内容 end -->
+
+<script type="text/javascript" src="../js/jquery-1.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/slides.js"></script>
+<script type="text/javascript" src="../js/yj_2016.js"></script>
+<script type="text/javascript" src="../js/unveil.js"></script>
 
 
 <!--start foot-->
@@ -437,35 +241,35 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
                     <dt class="tl_tt"><a>去旅游</a></dt>
                     <dd class="tl_w">
                         <p>
-                            <a href="http://www.tuniu.com/tours/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-1']);">跟团游</a>
-                            <a href="http://www.tuniu.com/pkg/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-2']);">自助游</a>
-                            <a href="http://www.tuniu.com/drive/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-3']);">自驾游</a>
+                            <a href="http://www.tuniu.com/tours/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-1']);">跟团游</a>
+                            <a href="http://www.tuniu.com/pkg/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-2']);">自助游</a>
+                            <a href="http://www.tuniu.com/drive/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-3']);">自驾游</a>
                             
                         </p>
                         <p>
-                            <a href="http://www.tuniu.com/theme/haidao/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-4']);">海岛游</a>
-                            <a href="http://www.tuniu.com/flight/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-5']);">机票</a>
-                            <a href="http://youlun.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-6']);">邮轮</a>
+                            <a href="http://www.tuniu.com/theme/haidao/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-4']);">海岛游</a>
+                            <a href="http://www.tuniu.com/flight/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-5']);">机票</a>
+                            <a href="http://youlun.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-6']);">邮轮</a>
                         </p>
                         <p>
-                            <a href="http://menpiao.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-7']);">门票</a>
-                            <a href="http://www.tuniu.com/theme/qinzi/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-8']);">亲子游</a>
-                            <a href="http://www.tuniu.com/visa/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-9']);">签证</a>
+                            <a href="http://menpiao.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-7']);">门票</a>
+                            <a href="http://www.tuniu.com/theme/qinzi/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-8']);">亲子游</a>
+                            <a href="http://www.tuniu.com/visa/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-9']);">签证</a>
                         </p>
                         <p>
-                            <a href="http://super.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-10']);">机票+酒店</a>
-                            <a href="http://www.tuniu.com/theme/miyue/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-11']);">蜜月游</a>
-                            <a href="http://hotel.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-12']);">酒店</a>
+                            <a href="http://super.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-10']);">机票+酒店</a>
+                            <a href="http://www.tuniu.com/theme/miyue/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-11']);">蜜月游</a>
+                            <a href="http://hotel.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-12']);">酒店</a>
                         </p>
                         <p>
-                            <a href="http://temai.tuniu.com/laoyutuijian" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-13']);">老于推荐</a>
-                            <a href="http://www.tuniu.com/gongsi/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-14']);">公司旅游</a>
-                            <a href="http://www.tuniu.com/niuren/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-15']);">牛人专线</a>
+                            <a href="http://temai.tuniu.com/laoyutuijian" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-13']);">老于推荐</a>
+                            <a href="http://www.tuniu.com/gongsi/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-14']);">公司旅游</a>
+                            <a href="http://www.tuniu.com/niuren/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-15']);">牛人专线</a>
                         </p>
                         <p>
-                            <a href="http://www.tuniu.com/zt/sfcf/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-16']);">首付出发</a>
-                            <a href="http://www.tuniu.com/local/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-17']);">当地玩乐</a>
-                            <a href="http://www.tuniu.com/zt/love/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_1','1-18']);">旅拍</a>
+                            <a href="http://www.tuniu.com/zt/sfcf/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-16']);">首付出发</a>
+                            <a href="http://www.tuniu.com/local/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-17']);">当地玩乐</a>
+                            <a href="http://www.tuniu.com/zt/love/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_1','1-18']);">旅拍</a>
                         </p>
                     </dd>
                 </dl>
@@ -475,11 +279,11 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
                 <dl class="trav_l ">
                     <dt class="tl_tt"><a>寻优惠</a></dt>
                     <dd class="tl_w">
-                        <p><a href="http://temai.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_2','2-1']);">特卖</a></p>
-                        <p><a href="http://hotel.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_2','2-2']);">订酒店 返现金</a></p>
-                        <p><a href="http://1.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_2','2-4']);">一元夺宝</a></p>
-                        <p><a href="http://www.tuniu.com/bank/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_2','2-5']);">银行特惠游</a></p>
-                        <p><a href="http://www.tuniu.com/gt/guangfacxqq" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_2','2-6']);">银行分期游</a></p>
+                        <p><a href="http://temai.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_2','2-1']);">特卖</a></p>
+                        <p><a href="http://hotel.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_2','2-2']);">订酒店 返现金</a></p>
+                        <p><a href="http://1.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_2','2-4']);">一元夺宝</a></p>
+                        <p><a href="http://www.tuniu.com/bank/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_2','2-5']);">银行特惠游</a></p>
+                        <p><a href="http://www.tuniu.com/gt/guangfacxqq" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_2','2-6']);">银行分期游</a></p>
                     </dd>
                 </dl>
             </li>
@@ -488,10 +292,10 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
                 <dl class="trav_l ">
                     <dt class="tl_tt"><a>看攻略</a></dt>
                     <dd class="tl_w">
-                        <p><a href="http://go.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_3','3-1']);">攻略</a></p>
-                        <p><a href="http://top.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_3','3-2']);">途牛风向标</a></p>
-                        <p><a href="http://trips.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_3','3-3']);">游记</a></p>
-                        <p><a href="http://www.tuniu.com/way/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_3','3-4']);">达人玩法</a></p>
+                        <p><a href="http://go.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_3','3-1']);">攻略</a></p>
+                        <p><a href="http://top.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_3','3-2']);">途牛风向标</a></p>
+                        <p><a href="http://trips.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_3','3-3']);">游记</a></p>
+                        <p><a href="http://www.tuniu.com/way/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_3','3-4']);">达人玩法</a></p>
                     </dd>
                 </dl>
             </li>
@@ -501,18 +305,18 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
                     <dt class="tl_tt"><a>查服务</a></dt>
                     <dd class="tl_w tl_cont">
                         <p>
-                            <a href="http://www.tuniu.com/help/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_4','4-1']);">帮助中心</a>
+                            <a href="http://www.tuniu.com/help/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_4','4-1']);">帮助中心</a>
                             
                         </p>
                         <p>
-                            <a href="http://www.tuniu.com/u/club" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_4','4-3']);">积分俱乐部</a>
+                            <a href="http://www.tuniu.com/u/club" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_4','4-3']);">积分俱乐部</a>
                             
                         </p>
                         <p>
-                            <a href="http://www.tuniu.com/static/sunshine_ensure/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_4','4-5']);">阳光保障</a>
+                            <a href="http://www.tuniu.com/static/sunshine_ensure/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_4','4-5']);">阳光保障</a>
                         </p>
-                        <p><a href="http://train.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_4','4-2']);">火车时刻表</a></p>
-                        <p><a href="http://metro.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','tydb_wzdt_4','4-6']);">地铁路线图</a></p>
+                        <p><a href="http://train.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_4','4-2']);">火车时刻表</a></p>
+                        <p><a href="http://metro.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','tydb_wzdt_4','4-6']);">地铁路线图</a></p>
                     </dd>
                 </dl>
             </li>
@@ -525,7 +329,7 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
                             <a>扫描下载途牛APP</a>
                         </p>
                         <p>
-                            <img src="../home/images/Cii9EFZw-n2IdcknAAAWy1znY7MAABCTQG1hlYAABbj820.jpg">
+                            <img src="../image/Cii9EFZw-n2IdcknAAAWy1znY7MAABCTQG1hlYAABbj820.jpg">
                         </p>
                     </dd>
                 </dl>
@@ -546,23 +350,23 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
     <div class="fourImgs">
         <ul class="clearfix">
                         <li>
-                <a href="http://1.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','点击','底部广告图_1_一元夺宝']);">
-                    <img src="../home/images/tn_footer_01.jpg" alt="一元夺宝" height="58" width="238">
+                <a href="http://1.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','点击','底部广告图_1_一元夺宝']);">
+                    <img src="../image/tn_footer_01.jpg" alt="一元夺宝" height="58" width="238">
                 </a>
             </li>
                         <li>
-                <a href="http://www.tuniu.com/zt/brand/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','点击','底部广告图_2_品牌合作']);">
-                    <img src="../home/images/tn_footer_042.jpg" alt="品牌合作" height="58" width="238">
+                <a href="http://www.tuniu.com/zt/brand/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','点击','底部广告图_2_品牌合作']);">
+                    <img src="../image/tn_footer_042.jpg" alt="品牌合作" height="58" width="238">
                 </a>
             </li>
                         <li>
-                <a href="http://temai.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','点击','底部广告图_3_超值特卖-底部']);">
-                    <img src="../home/images/tn_footer_06.jpg" alt="超值特卖-底部" height="58" width="238">
+                <a href="http://temai.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','点击','底部广告图_3_超值特卖-底部']);">
+                    <img src="../image/tn_footer_06.jpg" alt="超值特卖-底部" height="58" width="238">
                 </a>
             </li>
                         <li>
-                <a href="http://super.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_bj','点击','底部广告图_4_超级自由行']);">
-                    <img src="../home/images/Cii9EFaWDQ2IFdVUAAAaUoTPAnAAABcxwP_x9YAABpq60.jpg" alt="超级自由行" height="58" width="238">
+                <a href="http://super.tuniu.com/" target="_blank" onclick="_gaq.push(['_trackEvent','common_sh','点击','底部广告图_4_超级自由行']);">
+                    <img src="../image/Cii9EFaWDQ2IFdVUAAAaUoTPAnAAABcxwP_x9YAABpq60.jpg" alt="超级自由行" height="58" width="238">
                 </a>
             </li>
                     </ul>
@@ -570,8 +374,8 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
     <!-- four_ad E -->
     <!-- img_place S -->
     <div class="img_place">
-        <a href="http://www.tuniu.com/niuren/" rel="nofollow" target="_blank" style="display: block;" onclick="_gaq.push(['_trackEvent','common_bj','点击','底部广告图_5_牛人专线']);">
-            <img src="../home/images/tn_footer_05l_007.jpg" alt="牛人专线" height="58" width="988">
+        <a href="http://www.tuniu.com/niuren/" rel="nofollow" target="_blank" style="display: block;" onclick="_gaq.push(['_trackEvent','common_sh','点击','底部广告图_5_牛人专线']);">
+            <img src="../image/tn_footer_05l_007.jpg" alt="牛人专线" height="58" width="988">
         </a>
     </div>
     <!-- img_place E -->
@@ -606,26 +410,26 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
         <a target="_blank" href="http://www.tuniu.com/corp/company.shtml" rel="nofollow">营业执照</a> |
         <a target="_blank" href="http://www.miibeian.gov.cn/" rel="nofollow">ICP证：苏B2-20130006</a> |
         <a target="_blank" href="http://www.miibeian.gov.cn/" rel="nofollow">苏ICP备12009060号</a> |
-        <a target="_blank" href="http://bj.tuniu.com/">北京旅游网</a>
+        <a target="_blank" href="http://sh.tuniu.com/">上海旅游网</a>
     </p>
 
     <!-- thr_ads S -->
 <div class="thr_img">
     <ul class="clearfix">
         <li>
-            <a href="http://www.tuniu.com/tours/" target="_blank" onclick="_gaq.push(['_trackEvent','首页_bj','点击','底部广告图_6_跟团']);">
-                <img src="../home/images/footer_1.jpg" alt="跟团" height="38" width="175">
+            <a href="http://www.tuniu.com/tours/" target="_blank" onclick="_gaq.push(['_trackEvent','首页_sh','点击','底部广告图_6_跟团']);">
+                <img src="../image/footer_1.jpg" alt="跟团" height="38" width="175">
             </a>
         </li>
         <li>
-            <a href="http://www.tuniu.com/pkg/" target="_blank" onclick="_gaq.push(['_trackEvent','首页_bj','点击','底部广告图_7_自助']);">
-                <img src="../home/images/footer_2.jpg" alt="自助" height="38" width="175">
+            <a href="http://www.tuniu.com/pkg/" target="_blank" onclick="_gaq.push(['_trackEvent','首页_sh','点击','底部广告图_7_自助']);">
+                <img src="../image/footer_2.jpg" alt="自助" height="38" width="175">
             </a>
         </li>
         <li>
 
-            <a href="http://www.tuniu.com/merchants/" target="_blank" onclick="_gaq.push(['_trackEvent','首页_bj','点击','底部广告图_8_供应商合作']);">
-                <img src="../home/images/bottom.jpg" alt="供应商合作" height="38" width="175">
+            <a href="http://www.tuniu.com/merchants/" target="_blank" onclick="_gaq.push(['_trackEvent','首页_sh','点击','底部广告图_8_供应商合作']);">
+                <img src="../image/bottom.jpg" alt="供应商合作" height="38" width="175">
             </a>
         </li>
     </ul>
@@ -635,40 +439,40 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
     <div class="slide_order clearfix" id="slideOrder">
         <span class="fl">最新预订：</span>
         <div class="fl w_940">
-            <ul style="width: 3424px; left: -887px;">
-                            <li><!--[20天前]-->用户***823预订&lt;普吉岛4晚6日团队游游&gt;水清沙细PP岛，泛舟，上海直飞&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                            <li><!--[24天前]-->用户***508预订&lt;美西拉斯维加斯-洛杉矶6日游&gt;洛杉矶接机，含主题门票（当地游）&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                            <li><!--[26天前]-->用户***udu预订&lt;帕劳订机票送帛琉大饭店4晚5日自助游&gt;太平洋航空&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                            <li><!--[27天前]-->用户***977预订&lt;连云港花果山-海滨浴场3日团队游&gt;船游大海，感受碧海蓝天&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li><!--[20天前]-->用户***823预订&lt;普吉岛4晚6日团队游游&gt;水清沙细PP岛，泛舟，上海直飞&nbsp;&nbsp;&nbsp;&nbsp;</li><li><!--[24天前]-->用户***508预订&lt;美西拉斯维加斯-洛杉矶6日游&gt;洛杉矶接机，含主题门票（当地游）&nbsp;&nbsp;&nbsp;&nbsp;</li><li><!--[26天前]-->用户***udu预订&lt;帕劳订机票送帛琉大饭店4晚5日自助游&gt;太平洋航空&nbsp;&nbsp;&nbsp;&nbsp;</li><li><!--[27天前]-->用户***977预订&lt;连云港花果山-海滨浴场3日团队游&gt;船游大海，感受碧海蓝天&nbsp;&nbsp;&nbsp;&nbsp;</li></ul>
+            <ul style="width: 4482px; left: -945.327px;">
+                            <li><!--[4天前]-->用户***337预订[五一]&lt;迪拜3晚6天自助游&gt;机酒全含，Damac精品酒店套房，EK直飞&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                            <li><!--[6天前]-->用户***228预订&lt;美西拉斯维加斯-洛杉矶6日游&gt;洛杉矶接机，含主题门票（当地游）&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                            <li><!--[15天前]-->用户***细预订&lt;红海8日自助游&gt;即时确认，直飞红海，接送机，落地签，五星酒店&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                            <li><!--[16天前]-->用户***196预订&lt;西班牙葡萄牙3-7日循环游&gt;多地集散 可订接送机 西班牙皇宫 黄金塔 红宫 杜丽多古城 圣家大教堂 大石角 太阳海岸 贝伦古塔（当地游）&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li><!--[4天前]-->用户***337预订[五一]&lt;迪拜3晚6天自助游&gt;机酒全含，Damac精品酒店套房，EK直飞&nbsp;&nbsp;&nbsp;&nbsp;</li><li><!--[6天前]-->用户***228预订&lt;美西拉斯维加斯-洛杉矶6日游&gt;洛杉矶接机，含主题门票（当地游）&nbsp;&nbsp;&nbsp;&nbsp;</li><li><!--[15天前]-->用户***细预订&lt;红海8日自助游&gt;即时确认，直飞红海，接送机，落地签，五星酒店&nbsp;&nbsp;&nbsp;&nbsp;</li><li><!--[16天前]-->用户***196预订&lt;西班牙葡萄牙3-7日循环游&gt;多地集散 可订接送机 西班牙皇宫 黄金塔 红宫 杜丽多古城 圣家大教堂 大石角 太阳海岸 贝伦古塔（当地游）&nbsp;&nbsp;&nbsp;&nbsp;</li></ul>
         </div>
     </div>
     <div class="trav_corp">
         <a id="___szfw_logo___" href="https://credit.szfw.org/CX20160128013521800380.html" rel="nofollow" target="_blank">
-            <img src="../home/images/chengxinOne.png" style="height:41px;" alt="中国互联网诚信示范企业" border="0">
+            <img src="../image/chengxinOne.png" style="height:41px;" alt="中国互联网诚信示范企业" border="0">
         </a>
         <a href="http://net.china.cn/" rel="nofollow" target="_blank" onclick="tuniuRecorder.push('32_1_1_1_1_1')">
-            <img src="../home/images/buliang.png" alt="违法和不良信息举报中心" height="47" width="109">
+            <img src="../image/buliang.png" alt="违法和不良信息举报中心" height="47" width="109">
         </a>
         <a href="http://js.cyberpolice.cn/webpage/index.jsp" rel="nofollow" target="_blank" onclick="tuniuRecorder.push('32_1_1_1_1_2')">
-            <img src="../home/images/wangluo.png" alt="网络110报警服务" height="47" width="110">
+            <img src="../image/wangluo.png" alt="网络110报警服务" height="47" width="110">
         </a>
-        <img src="../home/images/cata.png" alt="cata航空资质认证" height="47" width="110">
+        <img src="../image/cata.png" alt="cata航空资质认证" height="47" width="110">
         <a target="_blank" rel="nofollow" href="http://www.isc.org.cn/" onclick="tuniuRecorder.push('32_1_1_1_1_3')">
-            <img src="../home/images/huiyuan.png" alt="中国互联网协会" height="47" width="110">
+            <img src="../image/huiyuan.png" alt="中国互联网协会" height="47" width="110">
         </a>
         <a href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1797102919" rel="nofollow" target="_blank" onclick="tuniuRecorder.push('32_1_1_1_1_4')">
-            <img src="../home/images/3acomp.png" alt="中国互联网协会信用评价中心" height="47" width="110">
+            <img src="../image/3acomp.png" alt="中国互联网协会信用评价中心" height="47" width="110">
         </a>
 
         <a title="可信网站" target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e14120832010056662smwq000000&amp;ct=df&amp;a=1&amp;pa=0.06350954016670585" rel="nofollow" onclick="tuniuRecorder.push('32_1_1_1_1_5')">
-            <img src="../home/images/chengxin.png" alt="诚信网站" height="47" width="110">
+            <img src="../image/chengxin.png" alt="诚信网站" height="47" width="110">
         </a>
         <a href="http://www.jsgsj.gov.cn:60101/keyLicense/verifKey.jsp?serial=320000163820121119100000009204&amp;signData=LvIMjwILeOCOnIt65a1kGAk+FxZKCnAoexteChdi5LEEvVGY5TUoYBJ15zmxNW1dwAE4U4mMREXkWocqMPODoh+IfB2ojCxtCvMF4gVdgsMXKTbkhemenyjWlproKM0XWYyPNEYxgn8H1kxvUgCWX35ExI1xLVWA3Zuw7ZiLdYM=" rel="nofollow" target="_blank" onclick="tuniuRecorder.push('32_1_1_1_1_6')">
-            <img src="../home/images/dianziyingye.png" alt="营业执照" height="47" width="110">
+            <img src="../image/dianziyingye.png" alt="营业执照" height="47" width="110">
         </a>
         <a target="_blank" rel="nofollow" href="http://www.patachina.org/" onclick="tuniuRecorder.push('32_1_1_1_1_7')">
-            <img src="../home/images/pata.png" alt="亚太旅游协会会员单位" height="47" width="140">
+            <img src="../image/pata.png" alt="亚太旅游协会会员单位" height="47" width="140">
         </a>
     </div>
 
@@ -689,99 +493,88 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
 </script>
 <!--end foot-->
 <script type="text/javascript">
-var catLoaded = false;
-$(document).mouseover(function() {
-if (!catLoaded) {
-    catLoaded = true;
-    $(".categorys").load('/header/null');
-}
-});
-function switch_city(code){
-    var b = new Base64();
-    code = code.toString();
-    code = b.encode(code);
-    var Days = 7;
-    var exp  = new Date();
-    exp.setTime(exp.getTime() + Days*24*60*60*1000);
-    document.cookie = 'tuniuuser_citycode' + "="+ escape (code) + ";expires=" + exp.toGMTString()+";path=/;domain=.tuniu.com";
-    window.location.reload();
-}
+    var catLoaded = false;
+    $(document).mouseover(function() {
+        if (!catLoaded) {
+            catLoaded = true;
+            $(".categorys").load('/header/null');
+        }
+    });
 </script>
 <style>
-.index_app{
-left: 50%;top: 50%;margin-left: 510px;margin-top: -100px;position: fixed;_position:absolute;z-index:10000;border:1px solid #d8d8d8;padding:0 0 5px 0;background:#fff;
-}
-.index_app a,
-.index_app img{ display: block;v}
-.index_app .index_app_top{ margin-bottom: 2px; }
+    .index_app{
+        left: 50%;top: 50%;margin-left: 510px;margin-top: -100px;position: fixed;_position:absolute;z-index:10000;border:1px solid #d8d8d8;padding:0 0 5px 0;background:#fff;
+    }
+    .index_app a,
+    .index_app img{ display: block;v}
+    .index_app .index_app_top{ margin-bottom: 2px; }
 </style>
 <script type="text/javascript" src="../js/indicator.js"></script>
 <!-- GA/TA -->
 <script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-4782081-5']);
-	_gaq.push(['_setDomainName', 'tuniu.com']);
-	_gaq.push(["_setAllowHash", false]);
-	_gaq.push(["_setAllowAnchor", true]);
-	_gaq.push(["_addOrganic", "baidu", "wd"]);
-	_gaq.push(["_addOrganic", "baidu", "word"]);
-	_gaq.push(["_addOrganic", "google", "q"]);
-	_gaq.push(["_addOrganic", "118114", "kw"]);
-	_gaq.push(["_addOrganic", "bing", "q"]);
-	_gaq.push(["_addOrganic", "soso", "w"]);
-	_gaq.push(["_addOrganic", "youdao", "q"]);
-	_gaq.push(["_addOrganic", "sogou", "query"]);
-	_gaq.push(["_addOrganic", "360", "q"]);
-	_gaq.push(["_addOrganic", "baidu", "w"]);
-	_gaq.push(["_addOrganic", "baidu", "q1"]);
-	_gaq.push(["_addOrganic", "baidu", "q2"]);
-	_gaq.push(["_addOrganic", "baidu", "q3"]);
-	_gaq.push(["_addOrganic", "baidu", "q4"]);
-	_gaq.push(["_addOrganic", "baidu", "q5"]);
-	_gaq.push(["_addOrganic", "baidu", "q6"]);
-	_gaq.push(["_addOrganic", "baidu", "q6"]);
-	_gaq.push(["_addOrganic", "www.so.com", "u"]);
-	_gaq.push(["_addOrganic", "www.so.com", "q"]);
-	_gaq.push(["_addOrganic", "360", "u"]);
-	_gaq.push(["_addOrganic", "360", "q"]);
-	_gaq.push(["_trackPageview", "/度假/风向标/排行榜/首页"]);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4782081-5']);
+    _gaq.push(['_setDomainName', 'tuniu.com']);
+    _gaq.push(["_setAllowHash", false]);
+    _gaq.push(["_setAllowAnchor", true]);
+    _gaq.push(["_addOrganic", "baidu", "wd"]);
+    _gaq.push(["_addOrganic", "baidu", "word"]);
+    _gaq.push(["_addOrganic", "google", "q"]);
+    _gaq.push(["_addOrganic", "118114", "kw"]);
+    _gaq.push(["_addOrganic", "bing", "q"]);
+    _gaq.push(["_addOrganic", "soso", "w"]);
+    _gaq.push(["_addOrganic", "youdao", "q"]);
+    _gaq.push(["_addOrganic", "sogou", "query"]);
+    _gaq.push(["_addOrganic", "360", "q"]);
+    _gaq.push(["_addOrganic", "baidu", "w"]);
+    _gaq.push(["_addOrganic", "baidu", "q1"]);
+    _gaq.push(["_addOrganic", "baidu", "q2"]);
+    _gaq.push(["_addOrganic", "baidu", "q3"]);
+    _gaq.push(["_addOrganic", "baidu", "q4"]);
+    _gaq.push(["_addOrganic", "baidu", "q5"]);
+    _gaq.push(["_addOrganic", "baidu", "q6"]);
+    _gaq.push(["_addOrganic", "baidu", "q6"]);
+    _gaq.push(["_addOrganic", "www.so.com", "u"]);
+    _gaq.push(["_addOrganic", "www.so.com", "q"]);
+    _gaq.push(["_addOrganic", "360", "u"]);
+    _gaq.push(["_addOrganic", "360", "q"]);
+    _gaq.push(["_trackPageview", ""]);
 </script>
 <script type="text/javascript"> (
-function() {
-	var ga = document.createElement('script');
-	ga.type = 'text/javascript';
-	ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(ga, s);
-})();
+        function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
 </script>
 <script type="text/javascript">
-var u = (("https:" == document.location.protocol) ? "https://analy.tuniu.cn/analysisCollect/": "http://analy.tuniu.cn/analysisCollect/");
-document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascript'%3E%3C/script%3E"));
+    var u = (("https:" == document.location.protocol) ? "https://analy.tuniu.cn/analysisCollect/": "http://analy.tuniu.cn/analysisCollect/");
+    document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascript'%3E%3C/script%3E"));
 </script><script src="../js/tac.js" type="text/javascript"></script>
 <script type="text/javascript">
-	var analyTuniuSpend = 0.013;
-	var tuniuTracker = _tat.getTracker();
-	tuniuTracker.setPageName("度假:风向标:排行榜:首页");//do not delete
-	tuniuTracker.addOrganic("baidu.com","w");
-	tuniuTracker.addOrganic("baidu.com","q1");
-	tuniuTracker.addOrganic("baidu.com","q2");
-	tuniuTracker.addOrganic("baidu.com","q3");
-	tuniuTracker.addOrganic("baidu.com","q4");
-	tuniuTracker.addOrganic("baidu.com","q5");
-	tuniuTracker.addOrganic("baidu.com","q6");
-	tuniuTracker.addOrganic("www.so.com","u");
-	tuniuTracker.addOrganic("www.so.com","q");
-	tuniuTracker.addOrganic("so.360.cn","u");
-	tuniuTracker.addOrganic("so.360.cn","q");
-	tuniuTracker.trackPageView();
-	tuniuTracker.enableLinkTracking();
-	</script>
-<script type="text/javascript" src="../js/top_summary.js"></script>
-<script type="text/javascript" src="../js/art-template.js"></script>
+    var analyTuniuSpend = 0;
+    var tuniuTracker = _tat.getTracker();
+    tuniuTracker.setPageName("");//do not delete
+    tuniuTracker.addOrganic("baidu.com","w");
+    tuniuTracker.addOrganic("baidu.com","q1");
+    tuniuTracker.addOrganic("baidu.com","q2");
+    tuniuTracker.addOrganic("baidu.com","q3");
+    tuniuTracker.addOrganic("baidu.com","q4");
+    tuniuTracker.addOrganic("baidu.com","q5");
+    tuniuTracker.addOrganic("baidu.com","q6");
+    tuniuTracker.addOrganic("www.so.com","u");
+    tuniuTracker.addOrganic("www.so.com","q");
+    tuniuTracker.addOrganic("so.360.cn","u");
+    tuniuTracker.addOrganic("so.360.cn","q");
+    tuniuTracker.trackPageView();
+    tuniuTracker.enableLinkTracking();
+</script>
 
-<div id="AutocompleteContainter_2e559" style="position: absolute; z-index: 9999; top: 93px; left: 543.5px;"><div class="autocomplete-w1"><div class="autocomplete" id="Autocomplete_2e559" style="display: none; max-height: 476px;"></div></div></div><div style="display: none;" class="search_pop_box" box="searchBox" id="searchAdvBox">
+
+<div id="AutocompleteContainter_5b693" style="position: absolute; z-index: 9999; top: 93px; left: 543.5px;"><div class="autocomplete-w1"><div class="autocomplete" id="Autocomplete_5b693" style="display: none; max-height: 476px;"></div></div></div><div style="display: none;" class="search_pop_box" box="searchBox" id="searchAdvBox">
     <div class="search_box">
         <!-- basic sel start -->
         <h4 class="sb_tt clearfix">基本条件 <span class="closeSenSearch tn_fontface"></span></h4>
@@ -945,21 +738,21 @@ document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascrip
 		    		          <a href="javascript:;" filter-value="2064"><i class="icon"></i>购物血拼</a>
 		    		          <a href="javascript:;" filter-value="2006"><i class="icon"></i>爸妈游</a>
 		    		          <a href="javascript:;" filter-value="2035"><i class="icon"></i>海滨/岛屿</a>
-		    		          <a href="javascript:;" filter-value="1812"><i class="icon"></i>无自费</a>
 		    		          <a href="javascript:;" filter-value="1779"><i class="icon"></i>中文服务</a>
+		    		          <a href="javascript:;" filter-value="1812"><i class="icon"></i>无自费</a>
 		    		          <a href="javascript:;" filter-value="2063"><i class="icon"></i>美食</a>
 		    		          <a href="javascript:;" filter-value="2125"><i class="icon"></i>公园乐园</a>
 		    		          <a href="javascript:;" filter-value="2004"><i class="icon"></i>毕业旅行</a>
 		    		          <a href="javascript:;" filter-value="2070"><i class="icon"></i>游学</a>
-		    		          <a href="javascript:;" filter-value="2040"><i class="icon"></i>踏青赏花</a>
 		    		          <a href="javascript:;" filter-value="5343"><i class="icon"></i>有自由活动时间</a>
 		    		          <a href="javascript:;" filter-value="2216"><i class="icon"></i>一岛一酒店</a>
-		    		          <a href="javascript:;" filter-value="2052"><i class="icon"></i>民俗风情</a>
+		    		          <a href="javascript:;" filter-value="2040"><i class="icon"></i>踏青赏花</a>
 		    		          <a href="javascript:;" filter-value="2076"><i class="icon"></i>温泉/Spa</a>
+		    		          <a href="javascript:;" filter-value="2052"><i class="icon"></i>民俗风情</a>
 		    		          <a href="javascript:;" filter-value="2108"><i class="icon"></i>潜水</a>
 		    		          <a href="javascript:;" filter-value="4991"><i class="icon"></i>高性价比</a>
-		    		          <a href="javascript:;" filter-value="2036"><i class="icon"></i>湖光山色</a>
 		    		          <a href="javascript:;" filter-value="1512"><i class="icon"></i>新航假期</a>
+		    		          <a href="javascript:;" filter-value="2036"><i class="icon"></i>湖光山色</a>
 		    		          <a href="javascript:;" filter-value="2054"><i class="icon"></i>宗教祈福</a>
 		    		          <a href="javascript:;" filter-value="2037"><i class="icon"></i>自然遗产/景区</a>
 		    		          <a href="javascript:;" filter-value="1805"><i class="icon"></i>机场接/送</a>
@@ -969,10 +762,10 @@ document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascrip
 		    		          <a href="javascript:;" filter-value="2127"><i class="icon"></i>农家采摘</a>
 		    		          <a href="javascript:;" filter-value="2066"><i class="icon"></i>婚纱摄影</a>
 		    		          <a href="javascript:;" filter-value="2107"><i class="icon"></i>漂流</a>
+		    		          <a href="javascript:;" filter-value="2675"><i class="icon"></i>租车自驾</a>
 		    		          <a href="javascript:;" filter-value="2039"><i class="icon"></i>草原游</a>
 		    		          <a href="javascript:;" filter-value="2101"><i class="icon"></i>滑雪</a>
 		    		          <a href="javascript:;" filter-value="2038"><i class="icon"></i>戈壁沙漠</a>
-		    		          <a href="javascript:;" filter-value="2675"><i class="icon"></i>租车自驾</a>
 		    		          <a href="javascript:;" filter-value="2053"><i class="icon"></i>古迹遗址</a>
 		    		          <a href="javascript:;" filter-value="2067"><i class="icon"></i>旅游婚礼</a>
 		    		          <a href="javascript:;" filter-value="4132"><i class="icon"></i>明星同款</a>
@@ -1054,9 +847,9 @@ document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascrip
 		    		          <a href="javascript:;" filter-value="599"><i class="icon"></i>豪生</a>
 		    		          <a href="javascript:;" filter-value="570"><i class="icon"></i>凯悦</a>
 		    		          <a href="javascript:;" filter-value="603"><i class="icon"></i>悦榕集团Banyan Tree</a>
-		    		          <a href="javascript:;" filter-value="601"><i class="icon"></i>凯宾斯基</a>
 		    		          <a href="javascript:;" filter-value="573"><i class="icon"></i>万豪</a>
 		    		          <a href="javascript:;" filter-value="2028"><i class="icon"></i>悦泰酒店</a>
+		    		          <a href="javascript:;" filter-value="601"><i class="icon"></i>凯宾斯基</a>
 		    		          <a href="javascript:;" filter-value="587"><i class="icon"></i>香格里拉酒店</a>
 		    		          <a href="javascript:;" filter-value="602"><i class="icon"></i>铂尔曼</a>
 		    		          <a href="javascript:;" filter-value="596"><i class="icon"></i>丽思卡尔顿酒店</a>
@@ -1069,39 +862,39 @@ document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascrip
 		    		          <a href="javascript:;" filter-value="605"><i class="icon"></i>花间堂</a>
 		    		          <a href="javascript:;" filter-value="586"><i class="icon"></i>四季</a>
 		    		          <a href="javascript:;" filter-value="611"><i class="icon"></i>森塔拉集团Centara</a>
+		    		          <a href="javascript:;" filter-value="615"><i class="icon"></i>假日酒店集团Holiday Inn</a>
 		    		          <a href="javascript:;" filter-value="624"><i class="icon"></i>太阳旅游集团Sun Travel</a>
 		    		          <a href="javascript:;" filter-value="576"><i class="icon"></i>华美达</a>
 		    		          <a href="javascript:;" filter-value="585"><i class="icon"></i>索菲特</a>
 		    		          <a href="javascript:;" filter-value="613"><i class="icon"></i>地中海俱乐部集团Club Med</a>
-		    		          <a href="javascript:;" filter-value="615"><i class="icon"></i>假日酒店集团Holiday Inn</a>
 		    		          <a href="javascript:;" filter-value="1021"><i class="icon"></i>喜达屋集团</a>
 		    		          <a href="javascript:;" filter-value="1851"><i class="icon"></i>BC集团</a>
 		    		          <a href="javascript:;" filter-value="575"><i class="icon"></i>Fairmont酒店</a>
 		    		          <a href="javascript:;" filter-value="608"><i class="icon"></i>艾登尼兹集团Aydeniz</a>
 		    		          <a href="javascript:;" filter-value="621"><i class="icon"></i>贝安琪集团Per Aquum</a>
 		    		          <a href="javascript:;" filter-value="2023"><i class="icon"></i>哈发黛主楼</a>
+		    		          <a href="javascript:;" filter-value="616"><i class="icon"></i>椰林精选集团Coco Collection</a>
 		    		          <a href="javascript:;" filter-value="2026"><i class="icon"></i>卡诺亚主楼</a>
 		    		          <a href="javascript:;" filter-value="571"><i class="icon"></i>戴斯</a>
 		    		          <a href="javascript:;" filter-value="574"><i class="icon"></i>迪斯尼奥兰多度假酒店</a>
-		    		          <a href="javascript:;" filter-value="616"><i class="icon"></i>椰林精选集团Coco Collection</a>
 		    		          <a href="javascript:;" filter-value="580"><i class="icon"></i>安娜塔拉集团</a>
+		    		          <a href="javascript:;" filter-value="609"><i class="icon"></i>查亚集团Chaaya</a>
 		    		          <a href="javascript:;" filter-value="1850"><i class="icon"></i>SUN集团</a>
 		    		          <a href="javascript:;" filter-value="578"><i class="icon"></i>卓美亚集团</a>
-		    		          <a href="javascript:;" filter-value="609"><i class="icon"></i>查亚集团Chaaya</a>
 		    		          <a href="javascript:;" filter-value="617"><i class="icon"></i>都喜集团Dusit</a>
 		    		          <a href="javascript:;" filter-value="2024"><i class="icon"></i>哈发黛水晶楼</a>
 		    		          <a href="javascript:;" filter-value="2027"><i class="icon"></i>卡诺亚高楼</a>
+		    		          <a href="javascript:;" filter-value="612"><i class="icon"></i>环球集团Universal</a>
 		    		          <a href="javascript:;" filter-value="1020"><i class="icon"></i>珍珠集团</a>
 		    		          <a href="javascript:;" filter-value="606"><i class="icon"></i>温德姆</a>
 		    		          <a href="javascript:;" filter-value="614"><i class="icon"></i>康斯丹集团Constance</a>
 		    		          <a href="javascript:;" filter-value="2020"><i class="icon"></i>塞班海景酒店（OV）</a>
 		    		          <a href="javascript:;" filter-value="2025"><i class="icon"></i>哈发黛塔加楼（TAGA）</a>
+		    		          <a href="javascript:;" filter-value="581"><i class="icon"></i>泰姬集团</a>
 		    		          <a href="javascript:;" filter-value="610"><i class="icon"></i>维拉集团Villa</a>
-		    		          <a href="javascript:;" filter-value="612"><i class="icon"></i>环球集团Universal</a>
+		    		          <a href="javascript:;" filter-value="669"><i class="icon"></i>瑞吉</a>
 		    		          <a href="javascript:;" filter-value="897"><i class="icon"></i>昂格利</a>
 		    		          <a href="javascript:;" filter-value="1816"><i class="icon"></i>红树林度假世界</a>
-		    		          <a href="javascript:;" filter-value="669"><i class="icon"></i>瑞吉</a>
-		    		          <a href="javascript:;" filter-value="581"><i class="icon"></i>泰姬集团</a>
 		    		          <a href="javascript:;" filter-value="1261"><i class="icon"></i>椰子黑鹦鹉酒店</a>
 		    		          <a href="javascript:;" filter-value="1387"><i class="icon"></i>LUX</a>
 		    		          <a href="javascript:;" filter-value="1388"><i class="icon"></i>英迪格</a>
@@ -1116,26 +909,20 @@ document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascrip
 		    		          <a href="javascript:;" filter-value="1227"><i class="icon"></i>柏嘉亚布法隆</a>
 		    		          <a href="javascript:;" filter-value="593"><i class="icon"></i>元明酒店</a>
 		    		          <a href="javascript:;" filter-value="619"><i class="icon"></i>力士集团Lux*</a>
-		    		          <a href="javascript:;" filter-value="1393"><i class="icon"></i>途家斯维登</a>
+		    		          <a href="javascript:;" filter-value="1236"><i class="icon"></i>悦榕庄</a>
 		    		          <a href="javascript:;" filter-value="1824"><i class="icon"></i>三亚大小洞天小月湾度假酒店</a>
 		    		          <a href="javascript:;" filter-value="5091"><i class="icon"></i>京韵</a>
 		    		          <a href="javascript:;" filter-value="595"><i class="icon"></i>丝绸麦哲伦酒店</a>
 		    		          <a href="javascript:;" filter-value="622"><i class="icon"></i>立鼎世集团</a>
-		    		          <a href="javascript:;" filter-value="1236"><i class="icon"></i>悦榕庄</a>
+		    		          <a href="javascript:;" filter-value="1393"><i class="icon"></i>途家斯维登</a>
 		    		          <a href="javascript:;" filter-value="5085"><i class="icon"></i>哈曼</a>
 		    		          <a href="javascript:;" filter-value="594"><i class="icon"></i>格兰婆罗酒店</a>
 		    		          <a href="javascript:;" filter-value="1563"><i class="icon"></i>萨沃伊水疗度假村</a>
 		    		          <a href="javascript:;" filter-value="591"><i class="icon"></i>君悦酒店</a>
 		    		          <a href="javascript:;" filter-value="744"><i class="icon"></i>乐天酒店集团</a>
-		    		          <a href="javascript:;" filter-value="833"><i class="icon"></i>万豪温泉酒店</a>
-		    		          <a href="javascript:;" filter-value="834"><i class="icon"></i>碧桂园温泉酒店</a>
-		    		          <a href="javascript:;" filter-value="835"><i class="icon"></i>三江温泉酒店</a>
-		    		          <a href="javascript:;" filter-value="836"><i class="icon"></i>碧桂园温泉别墅</a>
 		    		          <a href="javascript:;" filter-value="1180"><i class="icon"></i>Mana度假村</a>
-		    		          <a href="javascript:;" filter-value="1209"><i class="icon"></i>Namale度假村</a>
 		    		          <a href="javascript:;" filter-value="1210"><i class="icon"></i>Yasawa度假村</a>
 		    		          <a href="javascript:;" filter-value="1269"><i class="icon"></i>拉布瑞思希尔顿</a>
-		    		          <a href="javascript:;" filter-value="1394"><i class="icon"></i>银座佳驿</a>
 		    		          <a href="javascript:;" filter-value="1835"><i class="icon"></i>亚龙湾天域度假酒店</a>
 		    		          <a href="javascript:;" filter-value="1846"><i class="icon"></i>三亚阳光大酒店</a>
 		    		          <a href="javascript:;" filter-value="5083"><i class="icon"></i>大卫传奇</a>
@@ -1147,7 +934,13 @@ document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascrip
 		    		          <a href="javascript:;" filter-value="620"><i class="icon"></i>总督集团Viceroy</a>
 		    		          <a href="javascript:;" filter-value="623"><i class="icon"></i>索尼娃集团Soneva</a>
 		    		          <a href="javascript:;" filter-value="1181"><i class="icon"></i>Matamanoa度假村</a>
+		    		          <a href="javascript:;" filter-value="1209"><i class="icon"></i>Namale度假村</a>
 		    		          <a href="javascript:;" filter-value="1234"><i class="icon"></i>霍斯诺尔摩希尔顿</a>
+		    		          <a href="javascript:;" filter-value="1390"><i class="icon"></i>世纪金源</a>
+		    		          <a href="javascript:;" filter-value="1394"><i class="icon"></i>银座佳驿</a>
+		    		          <a href="javascript:;" filter-value="5086"><i class="icon"></i>君锦滨海</a>
+		    		          <a href="javascript:;" filter-value="5093"><i class="icon"></i>克拉码头</a>
+		    		          <a href="javascript:;" filter-value="833"><i class="icon"></i>万豪温泉酒店</a>
 		    		</div>
 		<div class="search_adv_more">
 			<span>更多<i class="tn_fontface"></i></span>
@@ -1340,4 +1133,6 @@ document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascrip
 
 
 <!-- search_inputBox end -->
-</div><div style="height: 631px;" id="rightCommon" class="right_common"><ul id="rightCommonUl" class="hide"><li id=""><ul id="rcTop"><li class="" style="height:148px;cursor:pointer;"></li><li style="height:42px;margin-top:20px;cursor:pointer;"><div class="rc_index"><p class="rc_app_box"><span class="rc_icon rc_app"></span></p></div><div class="rc_box rc_app_b nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_content"><a href="http://top.tuniu.com/line/%E6%97%A0" target="_blank"><img src="../home/images/head_qrcode_20160405.png" alt=""></a></div></div></li></ul></li><li><ul id="rcMid"><li class="mytuniuArea" style="padding:10px 0;cursorpointer;"><div class="rc_index"><p class=""><a href="http://www.tuniu.com/main.php?do=user_change_picture" target="_blank"><span class="rc_icon rc_tuniu"></span></a></p><p class="rc_wd" id="lessThanHide" style="padding:0;">我的途牛</p></div><div class="rc_box nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="nologin_passport rc_common_box nologin" style="width:378px;padding:0px; border:none; outline:none;"><iframe src="%E7%BA%BF%E8%B7%AF%E6%8E%92%E8%A1%8C%E6%A6%9C_%E5%AE%9A%E5%88%B6%E6%8E%92%E8%A1%8C%E6%A6%9C_%E6%97%85%E6%B8%B8%E6%8E%92%E8%A1%8C%E6%A6%9C_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/iframe.htm" frameborder="0" height="352px" width="100%"></iframe></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_collect"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的关注</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../home/images/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../home/images/identify.png" align="absmiddle" height="24" width="80"><img src="../home/images/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div> </li><li class="hoverClick" style="display:none;"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_jifen"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的积分</p></div> </div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../home/images/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../home/images/identify.png" align="absmiddle" height="24" width="80"><img src="../home/images/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_order"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的订单</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../home/images/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../home/images/identify.png" align="absmiddle" height="24" width="80"><img src="../home/images/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_quan"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的礼券</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../home/images/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../home/images/identify.png" align="absmiddle" height="24" width="80"><img src="../home/images/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_kefutips"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">消息提醒</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../home/images/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../home/images/identify.png" align="absmiddle" height="24" width="80"><img src="../home/images/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li></ul></li><li style="position:absolute;top:280px;"><ul id="rc_phone"></ul></li><li style="position:absolute;top:540px;" id="RCU_doArea"><ul id="rcLastBtm"></ul></li><li style="position:absolute;bottom:20px;"><ul id="rcBtm"><li class=""><div class="rc_index"><p class="rc_topBot_b"><a href="http://www.tuniu.com/corp/advise.shtml" target="_blank"><span class="rc_icon rc_advise"></span></a></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"> <p class="rc_des"><a href="http://www.tuniu.com/corp/advise.shtml" target="_blank" style="display:block;width:60px;height:41px;color:#f80;">意见建议</a></p></div></div></li><li class="rcBackToTopSty" id="rcBackToTop"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_backtotop" id=""></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">返回顶部</p></div></div></li></ul></li></ul></div></body></html>
+</div><div style="height: 631px;" id="rightCommon" class="right_common"><ul id="rightCommonUl" class="hide"><li id=""><ul id="rcTop"><li class="" style="height:148px;cursor:pointer;"></li><li style="height:42px;margin-top:20px;cursor:pointer;"><div class="rc_index"><p class="rc_app_box"><span class="rc_icon rc_app"></span></p></div><div class="rc_box rc_app_b nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_content"><a href="http://trips.tuniu.com/%E6%97%A0" target="_blank"><img src="../image/head_qrcode_20160405.png" alt=""></a></div></div></li></ul></li><li><ul id="rcMid"><li class="mytuniuArea" style="padding:10px 0;cursorpointer;"><div class="rc_index"><p class=""><a href="http://www.tuniu.com/main.php?do=user_change_picture" target="_blank"><span class="rc_icon rc_tuniu"></span></a></p><p class="rc_wd" id="lessThanHide" style="padding:0;">我的途牛</p></div><div class="rc_box nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../image/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../css/identify.htm" align="absmiddle" height="24" width="80"><img src="../image/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_collect"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的关注</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../image/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../css/identify.htm" align="absmiddle" height="24" width="80"><img src="../image/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div> </li><li class="hoverClick" style="display:none;"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_jifen"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的积分</p></div> </div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../image/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../css/identify.htm" align="absmiddle" height="24" width="80"><img src="../image/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_order"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的订单</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../image/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../css/identify.htm" align="absmiddle" height="24" width="80"><img src="../image/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li>
+<li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_quan"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的礼券</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../image/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../css/identify.htm" align="absmiddle" height="24" width="80"><img src="../image/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_kefutips"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">消息提醒</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../image/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password" target="_blank" class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../css/identify.htm" align="absmiddle" height="24" width="80"><img src="../image/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register" target="_blank" class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login" target="_blank" class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li></ul></li><li style="position:absolute;top:280px;"><ul id="rc_phone"></ul></li><li style="position:absolute;top:540px;" id="RCU_doArea"><ul id="rcLastBtm"></ul></li><li style="position:absolute;bottom:20px;"><ul id="rcBtm"><li class=""><div class="rc_index"><p class="rc_topBot_b"><a href="http://www.tuniu.com/corp/advise.shtml" target="_blank"><span class="rc_icon rc_advise"></span></a></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"> <p class="rc_des"><a href="http://www.tuniu.com/corp/advise.shtml" target="_blank" style="display:block;width:60px;height:41px;color:#f80;">意见建议</a></p></div></div></li><li class="rcBackToTopSty" id="rcBackToTop"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_backtotop" id=""></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content">
+<p class="rc_des">返回顶部</p></div></div></li></ul></li></ul></div></body></html>
