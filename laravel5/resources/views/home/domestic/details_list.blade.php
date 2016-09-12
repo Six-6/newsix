@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head><script src="../home/user/crmqq.php" async="" charset="utf-8" type="text/javascript"></script><script src="../js/contains.js" async="" charset="utf-8" type="text/javascript"></script><script src="../js/localStorage.js" async="" charset="utf-8" type="text/javascript"></script><script src="../js/Panel.js" async="" charset="utf-8" type="text/javascript"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>蜈支洲.西岛.呀诺达雨林.南山.南湾猴岛双飞5日**4晚海景房**_北京青年旅行社股份有限公司官网</title>
+<title>景点详情</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <link rel="stylesheet" href="../css/style.css">
@@ -1465,7 +1465,7 @@ b.身高1.5米以上儿童，按成人收费。
                     
                     <!--按钮--> 
 				<span class="bookerBtn">
-					<input class="immediateB" value="" style="cursor:pointer; border:0;" onclick="Order();" type="button">
+					<input class="immediateB" value="开始预订" type="button">
 				</span>
                    
 				   
