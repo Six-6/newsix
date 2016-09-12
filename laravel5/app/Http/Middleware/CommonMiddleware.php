@@ -9,29 +9,33 @@ use Session;
 use Route;
 use DB;
 use Illuminate\Http\Request;
-
-class CommonMiddleware 
-{
-
-	public function handle(Request $request, Closure $next)
-	{
-		return $next($request);
-		$u_id=Session::get('u_id');
-		if (empty($u_id)) {
-			echo "<script>alert('请先登录');location.href='lo'</script>";
-			die;
-		}
-		$res=DB::table('users')->where('u_id',$u_id)->lists('rid');
-		$arr=DB::table('r_p')
-		->join('power','r_p.pid','=','power.pid')
-		->where('r_p.rid',$res[0])
-		->get();
-		$url=$request->path();
-			echo "<script>alert('对不起, 您没有此权限')</script>";
-			die;
-		
-		return $next($request);
-	}
+class CommonMiddleware{
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     *
+     */
+    public function handle($request, Closure $next){
+        $u_id=Session::get('u_id');
+        $res=DB::table('users')->where('u_id',$u_id)->lists('rid');
+        $arr=DB::table('r_p')
+            ->join('power','r_p.pid','=','power.pid')
+            ->where('r_p.rid',$res[0])
+            ->lists("p_url");
+        $path=$request->path();
+        if(in_array($path,$arr)){
+            $name=Session::get("name");
+            $arr=DB::table('power')->get();
+            $ar=$this->Cate($arr,0,0);
+            view()->share("name",$name);
+            view()->share('ar',$ar);
+            return $next($request);
+        }else{
+            echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+            header("refresh:1;url=indexs");
+            die("您没有权限");
+        }
+    }
 
     /**
      * @param $info
