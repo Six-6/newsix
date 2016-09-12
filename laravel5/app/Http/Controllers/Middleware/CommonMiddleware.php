@@ -28,7 +28,7 @@ class CommonMiddleware{
             $name=Session::get("name");
             $arr=DB::table('power')->get();
             $ar=$this->Cate($arr,0,0);
-			//print_r($ar);die;
+			print_r($ar);die;
             view()->share("name",$name);
             view()->share('ar',$ar);
             return $next($request);
