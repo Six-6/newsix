@@ -117,6 +117,14 @@ class Travels extends Model{
             ->where('t_id',$id)
             ->update(['t_essence' => 1]);
 	}
+	
+	/**
+	*@µ±¼¾ÍÆ¼ö
+	*/
+	public function season()
+	{
+		return DB::table('inseason')->get();
+	}
 }
 
 
