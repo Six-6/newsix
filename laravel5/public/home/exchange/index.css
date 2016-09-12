@@ -1,0 +1,92 @@
+.addr_list li,
+.addr_list .need_add
+i{background:url(/img/20150409/jifen/select_addr.png) no-repeat 0 0}.write_addr{font-family:"Hiragino Sans GB","Tahoma,arial","宋体","sans-serif"}.wrap_box{width:1050px;margin:0
+auto}.hh_title{font:normal 700 14px/21px arial;color:#333;margin:20px
+0 0 0}.person_tt{font:normal 400 14px/21px arial;color:#666;height:38px;line-height:38px;text-indent:10px;background-color:#f8fef9;border:1px
+solid #b9d6b9;border-radius:2px;margin-top:15px}.addr_list{margin:30px
+0 0 0}.addr_list
+li{background-position:-292px 0;float:left;width:245px;height:110px;margin:0
+15px 15px 0}.addr_list
+li.current{background-position:-45px 0}.addr_list
+.addr_detail{padding:10px
+15px}.addr_list
+.addr_cont{color:#666}.addr_list .addr_cont
+.addr_rewrite{width:45px}.addr_list .addr_cont .addr_rewrite a,
+.mana
+a{color:#57a63b;cursor:pointer}.addr_list .addr_cont .addr_rewrite a:hover,
+.mana a:hover{color:#f60}.mana{text-align:right;margin:20px
+0}.addr_list .addr_cont
+dt{border-bottom:1px solid #f4f4f4}.addr_list .addr_cont dt,
+.addr_list .addr_cont
+dd{padding:5px
+0}.addr_list
+.need_add{position:relative;top:23px;left:33px;width:150px;cursor:pointer}.addr_list .need_add
+i{display:block;width:43px;height:43px;overflow:hidden;float:left}.addr_list .need_add
+span{margin:0
+0 0 10px;height:43px;line-height:43px}.confirm_tt{background:#e7f3e7;text-indent:10px;height:38px;line-height:38px;border-bottom:1px solid #b9d6b9}.confirm_list
+p{float:left;height:38px;line-height:38px;text-indent:10px}.confirm_list
+.cl_tt{background:#f8fef9}.confirm_list
+.cl_1{width:370px;padding-left:10px}.confirm_list
+.cl_2{width:260px}.confirm_list
+.cl_3{width:260px}.confirm_list
+.cl_4{width:140px}.confirm_list .prod_detail
+img{float:left}.confirm_list
+.cl_colr{color:#f60;font-weight:700}.contrl_num{display:block;width:100px;height:28px;line-height:28px;border:1px
+solid #d8d8d8}.contrl_num
+a{display:block;width:30px;height:28px;float:left;line-height:28px;font-size:16px;text-indent:0;text-align:center}.contrl_num
+a.cn_num{border-left:1px solid #d8d8d8;border-right:1px solid #d8d8d8;width:38px}.contrl_num a.cn_num
+input{display:block;width:30px;border:none;height:28px;line-height:28px;font-size:12px;text-align:center}.conf_ex{margin:30px
+0 0 0;text-align:right;height:110px;position:relative}.conf_ex
+span{color:#fff;background:#f80;font:normal 700 20px/30px arial;display:inline-block;height:40px;width:120px;line-height:40px;text-align:center;border:1px
+solid #f60;cursor:pointer}.conf_ex
+.confirm_tip{background:url(http://img1.tuniucdn.com/img/201501261427/jifen/tip_bkg.png) no-repeat;_background:url(http://img1.tuniucdn.com/img/201501261427/jifen/tip_bkg_8.png) no-repeat;position:absolute;top:0px;right:140px;width:177px;height:81px;padding:10px
+20px;text-align:left;font-size:12px;color:#666;line-height:1.7}.com_btn .com_btn_ok,
+.com_btn
+.com_btn_cancel{float:left;display:block;width:100px;height:32px;line-height:32px;text-align:center;background:#f80;color:#fff;font-size:18px}.com_btn
+.com_btn_cancel{background:#f9f9f9;color:#666;height:30px;border:1px
+solid #d8d8d8;margin:0
+0 0 20px}.no_phone{width:460px;text-align:center}.no_phone
+.np_des{color:#333;font:normal 700 14px/20px arial sans-serif;margin:40px
+0 0 0}.no_phone
+.com_btn{padding:0
+0 0 120px;margin:20px
+0 0 0}.message_check{text-align:left;width:420px;padding:20px}.message_check
+.erweima{width:80px;height:26px;vertical-align:top}.message_check
+.chang_an{color:#2d9300}.message_check .chang_an:hover{color:#f80}.message_check
+.mc_nored{color:#999;margin:0
+0 5px 0}.message_check
+.mc_send{color:#333;border:1px
+solid #d8d8d8;height:24px;line-height:24px;padding:5px
+10px;background:#f0f0f0;cursor:pointer}.mc_dl{margin-top:10px}.mc_dl dt,
+.mc_dl
+dd{float:left}.mc_dl
+dt{width:84px;text-align:left;height:26px;line-height:26px}.mc_dl
+dd{width:306px;text-align:left}.message_check
+.mc_1{font:normal 400 14px/20px arial sans-serif}.message_check .mc_1
+span{font:normal 700 16px/20px arial sans-serif}.message_check
+.mc_inp{padding:2px
+5px}.message_check
+.mc_dl.mc_5{margin:35px
+0 0 0}.mc_help{border-top:1px solid #d8d8d8;color:#666;margin:15px
+0 0 0;padding:10px
+0 0 0}.mc_help
+.mc_tt{font-weight:700}.mc_help
+p{height:24px;line-height:24px}.huo_addrs{padding:20px
+20px 20px 50px}.huo_addrs
+.nm_textar{width:200px;border:1px
+solid #d8d8d8;padding:5px}.huo_addrs
+.nm_input{padding:2px
+5px;width:200px}.huo_addrs
+.w_1{width:40px}.huo_addrs
+.w_2{width:80px}.huo_addrs
+.w_3{width:40px}.huo_addrs
+.err_tips{line-height:20px;display:block;float:left;height:32px;margin-left:20px;width:168px;margin-top:5px}.huo_addrs
+.btn_tp{margin-top:30px}.tn_icons{background:url(http://img1.tuniucdn.com/img/201501261427/jifen/tn_icons.png) no-repeat}.tn_icons_close_16{float:left;margin:4px
+5px 0 -10px;background-position:0 -308px;width:16px;height:16px}.f_grey{color:#999}.red{color:red;font-size:14px;position:relative;top:3px;margin:0
+3px 0 0}.wr_infor{margin:10px
+0 0 0}.wr_infor dt,
+.wr_infor
+dd{float:left;height:24px;line-height:24px}.wr_infor
+dt{width:50px}.wr_infor dd
+.wi_t{height:22px;line-height:22px;padding:0
+5px;width:200px}

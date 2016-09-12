@@ -117,7 +117,7 @@
                     </dl>
 
                     </dl>
-                    <a href="http://www.byts.com.cn/users/index.php?do=money" class="mlink">我的积分</a>
+                    <a href="" class="mlink">我的积分</a>
                 </li>
 
                 <li class="" id="nav_left_3">
