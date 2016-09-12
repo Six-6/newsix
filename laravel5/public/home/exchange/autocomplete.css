@@ -1,0 +1,7 @@
+.container{width:800px;margin:0
+auto}.autocomplete-suggestions{margin-left:-1px;border:1px
+solid #ddd;background:#FFF;cursor:default;overflow:auto}.autocomplete-suggestion{padding:4px
+5px;white-space:nowrap;overflow:hidden;background:#fff;color:#666;line-height:16px}.autocomplete-no-suggestion{padding:4px
+5px;background:#ffebea;color:#fb3b39}.autocomplete-selected{background:#63ca33;color:#fff}.autocomplete-group{padding:4px
+5px}.autocomplete-group
+strong{font-weight:bold;font-size:12px;color:#000;display:block;border-bottom:1px solid #000}
