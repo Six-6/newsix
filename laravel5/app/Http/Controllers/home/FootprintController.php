@@ -46,7 +46,7 @@ class FootprintController extends BaseController{
 
     /**
      * @用户收藏
-     *
+     *1
      * @return   [description]
      */
     public function yhCollect(){
