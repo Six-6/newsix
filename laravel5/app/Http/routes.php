@@ -127,11 +127,11 @@ Route::any('admin/lo', 'admin\loginController@index');//后台登录
 Route::get('admin/lo', 'admin\loginController@index');/**后台登录**/
 Route::post('admin/loin', 'admin\loginController@loin');/**后台登录**/
 Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/                                                                                                           
-Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
+
 
 Route::group(['middleware' => ['common']], function () {
 
-	
+    Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
 	Route::get('admin/userShow', 'admin\IndexController@i');/**后台管理员列表**/
 	
 	Route::any('admin/userAdd',"admin\AdminController@add");/**管理员添加**/

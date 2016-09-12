@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+@include("admin/index/index")
+<div class="public-ifame-content">
 <head>
     <meta charset="UTF-8">
     <title>后台欢迎页</title>
@@ -9,11 +9,8 @@
 </head>
 <body marginwidth="0" marginheight="0">
 <div class="container">
-    <div class="public-nav">您当前的位置：<a href="">兑换添加</a>></div>
+    <div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="">信息管理</a><a href="">会员信息</a></div>
     <div class="public-content">
-        <div class="public-content-header">
-            <h3>兑换添加</h3>
-        </div>
         <div class="public-content-cont">
             <form action="exchangeAdd" method="post" onsubmit="return check()" enctype="multipart/form-data">
                 <input type="hidden" name="_token" id="token" value="{{csrf_token()}}" />
@@ -72,6 +69,8 @@
             </form>
         </div>
     </div>
+</div>
+</body>
 </div>
 <script src="./kingediter/kindeditor-all-min.js"></script>
 <script src="./js/laydate.js"></script>

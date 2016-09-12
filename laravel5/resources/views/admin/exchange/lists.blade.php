@@ -1,3 +1,5 @@
+@include("admin/index/index")
+<div class="public-ifame-content">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +12,6 @@
 <div class="container">
     <div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="">信息管理</a><a href="">会员信息</a></div>
     <div class="public-content">
-        <div class="public-content-header">
-            <h3>管理员信息展示</h3>
-        </div>
         <div class="public-content-cont">
             <input type="hidden" name="_token" id="token" value="{{csrf_token()}}" />
             <table class="public-cont-table">
@@ -75,6 +74,7 @@
 </div>
 </body>
 </html>
+    </div>
 <script src="./jq.js"></script>
 <script>
     $(".perfect").click(function(){

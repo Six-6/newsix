@@ -13,38 +13,9 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 // session_start();
 class IndexController extends BaseController
 {
-    // public $enableCsrfValidation = false;
-    public function index(Request $request)
-    {
-    	// $url=$request->path();
-    	$u_id=Session::get('u_id');
-    	// echo $u_id;die;
-    	$name=Session::get('name');
-		$res=DB::table('users')->where('u_id',$u_id)->lists('rid');
-		$arr=DB::table('r_p')
-		->join('power','r_p.pid','=','power.pid')
-		->where('r_p.rid',$res[0])
-		->get();
-		$ar=$this->cate($arr,0,0);
-		
-
-    	return view('admin/index/index',['ar'=>$ar,'name'=>$name]);
-    }
-    public function cate(&$info, $child, $pid)  
-	{  
-	    $child = array();  
-	    if(!empty($info)){//当$info中的子类还没有被移光的时候  
-	        foreach ($info as $k => &$v) {  
-	            if($v->parent_id == $pid){//判断是否存在子类pid和返回的父类id相等的  
-	                $v->child= $this->cate($info, $child, $v->pid);//每次递归参数为当前的父类的id  
-	                $child[] = $v;//将$info中的键值移动到$child当中  
-	                unset($info[$k]);//每次移动过去之后删除$info中当前的值  
-	            }  
-	        }  
-	    }
-	    //  print_r($child);die;
-	     return $child;//返回生成的树形数组  
-	}
+   public function index(){
+       return view("admin/index/index");
+   }
 	public function i()
 	{
 		// echo '<table>';
