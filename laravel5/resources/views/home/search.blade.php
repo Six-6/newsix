@@ -373,7 +373,7 @@ window.onerror=function(){return true;}
                 <ul class="content3"> 
        <li><a class="yes" href="javascript:void(0)" id="p1_0_p2_0" onclick="ListUrl(this.id);return false;">不限</a></li>
        <li><a href="javascript:void(0)" id="p1_1_p2_100" onclick="sous2([0,100])">¥100以下</a></li>
-      <li><a href="javascript:void(0)" id="p1_101_p2_200" onclick="sous2([100,200])">¥101-200</a></li>
+      <li><a href="javascript:void(0)" id="p1_101_p2_200" onclick="sous2([101,200])">¥101-200</a></li>
       <li><a href="javascript:void(0)" id="p1_201_p2_500" onclick="sous2([201,500])">¥201-500</a></li>
       <li><a href="javascript:void(0)" id="p1_501_p2_1000" onclick="sous2([501,1000])">¥501-1000</a></li>
      <li> <a href="javascript:void(0)" id="p1_1001_p2_2000" onclick="sous2([1001,2000])">¥1001-2000</a></li>

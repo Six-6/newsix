@@ -77,7 +77,8 @@ class RecursionController extends BaseController{
         $begin = $price[0];
         $ends = $price[1];
         $sqlSel = DB::table('scenic_spot')
-            ->whereBetween('s_sprice', [$begin, $ends])
+            ->where('s_name',$traffic)
+            ->whereBetween('s_sprice', [$begin,$ends])
             ->get();
         $nums = count($sqlSel);
         echo json_encode($sqlSel);
