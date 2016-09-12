@@ -220,11 +220,11 @@ window.onerror=function(){return true;}
     @else
   <div class="conter"><span>欢迎光临 <a href="#">北京青年旅行社官网</a></span>　
   <span id="_Check_head_Login">
-        <span><a href="personAdd" target="_blank">{{Session::get('name')}}</a></span>
+        <span><a href="{{URL('home/personAdd')}}" target="_blank">{{Session::get('name')}}</a></span>
     <span>|</span>
-    <span><a href="personAdd" target="_blank" id="{{Session::get('u_id')}}">用户中心</a></span>
+    <span><a href="{{URL('home/personAdd')}}" target="_blank" id="{{Session::get('u_id')}}">用户中心</a></span>
     <span>|</span>
-    <span><a href="personDel" target="_blank" >退出</a></span>
+    <span><a href="{{URL('home/personDel')}}" target="_blank" >退出</a></span>
     @endif
 
 </span><script language="javascript">Check_head_Login();</script>
