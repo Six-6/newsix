@@ -203,8 +203,8 @@ window.onerror=function(){return true;}
 
 <div id="full-screen-slider" style="">
 	<ul id="slides">
-		<li style="z-index: 900; display: none; background: url(../home/images/1463390341.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/ouzhou001/" target="_blank"></a></li>
-		<li style="z-index: 900; display: none; background: url(../home/images/1463134575.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/beijiaerhu002/" target="_blank"></a></li>
+        <li style="z-index: 800; display: block; background: url(http://www.byts.com.cn/uploads/userup/0/1463390318.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/ouzhou001/" target="_blank"></a></li>
+        <li style="z-index: 900; display: none; background: url(http://www.byts.com.cn/uploads/userup/0/1463134488.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/xizang001/" target="_blank"></a></li>
         <li style="z-index: 800; display: block; background: url(http://www.byts.com.cn/uploads/userup/0/1463390318.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/ouzhou001/" target="_blank"></a></li>
         <li style="z-index: 900; display: none; background: url(http://www.byts.com.cn/uploads/userup/0/1463134488.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/xizang001/" target="_blank"></a></li>
 	</ul><ul id="pagination" style="margin-left: 330px;"><li class=""><a>1</a></li><li class=""><a>2</a></li><li class="current"><a>3</a></li><li class=""><a>4</a></li></ul>
