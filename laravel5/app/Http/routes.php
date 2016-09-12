@@ -254,7 +254,6 @@ Route::get('home/month', 'season\IndicatorController@month');//季节推荐
 Route::get('home/ranking', 'season\RankingController@index');//排行榜
 Route::get('home/note', 'season\NoteController@index');//前台游记首页
 Route::get('home/lnews', 'season\NoteController@lnews');//前台最新发布
-Route::get('home/theme', 'season\ThemeController@theme');//前台风向标主题
 
 
 
