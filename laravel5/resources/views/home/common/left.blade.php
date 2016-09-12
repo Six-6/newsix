@@ -119,21 +119,9 @@
                     </dl>
                     <a href="http://www.byts.com.cn/users/index.php?do=money" class="mlink">我的积分</a>
                 </li>
-                <li class="" id="nav_left_2">
-                    <dl class="user-sub-nav cf">
-                        <dd><a href="javascript:void(0)" onclick="footprint()">我的足迹</a></dd>
-                    </dl>
-                    </dl>
-                    <a href="#" class="mlink">我的足迹</a>
-                </li>
-                <li class="" id="nav_left_2">
-                    <dl class="user-sub-nav cf">
-                        <dd><a href="javascript:void(0)" onclick="collect()">我的收藏</a></dd>
-                    </dl>
-                    </dl>
-                    <a href="#" class="mlink">我的收藏</a>
-                </li>
-                <li class="" id="nav_left_3"><a href="http://www.byts.com.cn/users/order.php?po=dianping" class="mlink">我的点评</a></li>
+
+                <li class="" id="nav_left_3">
+                    <a href="viewAdd" class="mlink">我的点评</a></li>
                 <li class="" id="nav_left_4">
                     <dl class="user-sub-nav cf">
                         <dd><a href="personAdd">个人资料</a></dd>

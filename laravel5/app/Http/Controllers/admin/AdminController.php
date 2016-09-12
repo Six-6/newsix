@@ -4,7 +4,6 @@
  * @褚玉密编写
  **/
 namespace App\Http\Controllers\admin;
-
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -16,18 +15,16 @@ use App\Users;
 use Session;
 use DB;
 use Input;
-
 session_start();
-
 class AdminController extends BaseController
 {
-    public $enableCsrfValidation = false;
 
     /**用户添加管理**/
     public function add(Request $request)
     {
-        if (empty($request->input("u_name"))){
+        if (empty($_POST)) {
             $user = DB::table("role")->get();
+            //print_r($user);die;
             return view("admin.user.add", ['user' => $user]);
         } else {
             $rid = $request->input("rid");
@@ -35,15 +32,8 @@ class AdminController extends BaseController
             $pwd = $request->input("u_pwd");
             DB::table("users")->insert(['u_name' => $uname, 'u_pwd' => $pwd, 'rid' => $rid]);
             return Redirect::to("userAdd");
-            return Redirect::to("admin/userShow");
-            $res=DB::table("users")->insert(['u_name' => $uname, 'u_pwd' => $pwd, 'rid' => $rid]);
-            if($res)
-            {
-                return Redirect::to("admin/userShow");
-            }
         }
     }
-
     /**用户信息完善查看**/
     public function info(Request $request)
     {
@@ -54,7 +44,6 @@ class AdminController extends BaseController
             ->get();
         return view("admin.user.info", ['user' => $user]);
     }
-
     /**用户信息完善**/
     public function perfect(Request $request)
     {
@@ -71,14 +60,7 @@ class AdminController extends BaseController
         $paths = "." . $path1;
         DB::table("users")->where("u_id", $id)->update(['u_email' => $email, 'u_phone' => $phone, 'path' => $paths, "u_time" => $time]);
         return Redirect::to("userShow");
-        return Redirect::to("admin/userShow");
-        $res=DB::table("users")->where("u_id", $id)->update(['u_email' => $email, 'u_phone' => $phone, 'path' => $paths, "u_time" => $time]);
-        if($res)
-        {
-            return Redirect::to("admin/userShow");
-        }
     }
-
     /**用户信息展示**/
     public function show(){
         $user=DB::table("users")
@@ -86,7 +68,6 @@ class AdminController extends BaseController
             ->get();
         return view("admin.user.show",compact('user',$user));
     }
-
     /**用户信息验证**/
     public function check(Request $request)
     {
