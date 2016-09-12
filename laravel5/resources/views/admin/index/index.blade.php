@@ -39,6 +39,7 @@
             </div>
             <ul class="left-nav-list">
                 @foreach($ar as $val)
+			
                     <li class="public-ifame-item">
                         <a href="javascript:;">{{$val->pname}}</a>
                         <div class="ifame-item-sub">
