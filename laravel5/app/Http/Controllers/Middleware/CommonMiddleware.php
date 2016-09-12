@@ -8,7 +8,7 @@ use DB;
 use Illuminate\Http\Request;
 class CommonMiddleware 
 {
-
+	
 	public function handle(Request $request, Closure $next)
 	{
 		$u_id=Session::get('u_id');

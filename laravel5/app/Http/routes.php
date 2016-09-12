@@ -18,17 +18,6 @@ Route::any('domestic', 'DomesticController@index');//国内
 
 
 
-/**管理员管理**/
-Route::any('admin/userAdd',"admin\AdminController@add");/**管理员添加**/
-Route::get('admin/userInfo',"admin\AdminController@info");/**管理员信息完善查看**/
-Route::post('admin/infoAdd',"admin\AdminController@perfect");/**管理员信息完善**/
-Route::get('admin/userShow',"admin\AdminController@show");/**管理员查看**/
-Route::post('admin/checkUser',"admin\AdminController@check");/**管理员验证**/
-Route::get('admin/userDel',"admin\AdminController@del");/**管理员删除**/
-/**兑换管理**/
-Route::any('admin/exchangeAdd',"admin\ExchangeController@add");/**兑换添加**/
-Route::post('admin/checkName',"admin\ExchangeController@check");/**兑换验证**/
-Route::get('admin/exchangeShow',"admin\ExchangeController@show");/**兑换展示**/
 
 /**前台用户管理**/
 Route::get('home/personAdd',"home\UserController@add");//个人信息展示
@@ -51,7 +40,7 @@ Route::post('home/detailsOrder',"home\ExchangeController@order");/**兑换商品
 Route::post('home/orderAdd',"home\ExchangeController@orderAdd");/**确认兑换**/
 
 
-Route::any('admin/lo', 'admin/loginController@index');//后台登录*/
+
 
 
 
@@ -136,21 +125,7 @@ Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/
 Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
 
 Route::group(['middleware' => ['common']], function () {
-	
-	Route::get('admin/userShow', 'admin\IndexController@i');/**后台管理员列表**/
-	
-	Route::any('admin/userAdd',"admin\AdminController@add");/**管理员添加**/
-	
-	Route::get('admin/userInfo',"admin\AdminController@info");/**管理员信息完善查看**/
-	
-	Route::post('admin/infoAdd',"admin\AdminController@perfect");/**管理员信息完善**/
-	
-	Route::get('admin/userShow',"admin\AdminController@show");/**管理员查看**/
-	
-	Route::post('admin/checkUser',"admin\AdminController@check");/**管理员验证**/
-	
-	Route::get('admin/userDel',"admin\AdminController@del");/**管理员删除**/
-    /**管理员管理**/
+	/**管理员管理**/
     Route::any('admin/userAdd',"admin\AdminController@add");/**管理员添加**/
     Route::get('admin/userInfo',"admin\AdminController@info");/**管理员信息完善查看**/
     Route::post('admin/infoAdd',"admin\AdminController@perfect");/**管理员信息完善**/
@@ -602,9 +577,9 @@ Route::get('home/ranking', 'season\RankingController@index');//排行榜
 
 
 Route::get('home/domestic','home\DomesticController@index');/**国内游展示**/
-Route::get('home/contrast','home\DomesticController@contrast');/**经典对比**/
-
-
+Route::get('home/contrast','home\DomesticController@contrast');/**景点对比**/
+Route::get('home/contrasts','home\DomesticController@contrasts');/**景点对比**/
+Route::get('home/scenicDetails','home\DomesticController@scenicDetails');/**景点详情**/
 
 
 
