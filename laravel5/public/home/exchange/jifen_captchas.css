@@ -1,0 +1,18 @@
+.hide_layer{display:none}.code_box{background-color:#FFF;width:490px;height:325px;border:1px
+solid #D8D8D8;font-family:"microsoft yahei"}.code_box
+img{display:block;width:60px;height:60px;margin:40px
+auto 0}.code_box
+p{font-size:20px;color:#999;margin:13px
+auto 0;text-align:center}.code_box
+.code_input_bar{margin:30px
+auto 0;text-align:center}.code_box .code_input_bar
+input{border:1px
+solid #DDD;background-color:#FFF;outline-color:#DDD}.code_box .code_input_bar
+.code_input{height:30px;width:178px}.code_box .code_input_bar
+.code_btn{width:114px;height:32px;border-radius:3px;margin-left:10px;color:#999}.code_box
+.code_tips_bar{margin-top:10px;padding-left:95px;display:none}.code_box .code_tips_bar
+span{color:#f80;font-weight:600}.code_box
+.code_err_bar{margin-top:10px;padding-left:95px;display:none}.code_box .code_err_bar
+span{color:#f80;font-weight:600}.code_box
+.code_submit{width:100px;height:32px;background-color:#f80;line-height:32px;text-align:center;margin:15px
+auto 0;color:#FFF;border-radius:2px}

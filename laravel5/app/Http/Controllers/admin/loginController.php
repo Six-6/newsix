@@ -10,7 +10,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-// session_start();
+session_start();
 class LoginController extends BaseController
 {
     public function index()
@@ -33,8 +33,7 @@ class LoginController extends BaseController
 			$name= addslashes($name);
 			$pwd = addslashes($pwd);
 			$res=DB::table("users")->where(['u_name'=>$name,'u_pwd'=>$pwd])->first();
-			if($res)
-			{
+			if($res){
 				Session::put('u_id',$res->u_id);
 				Session::put('name',$name);
 				return Redirect::to('admin/in');

@@ -115,10 +115,13 @@
                     <dl class="user-sub-nav cf">
                         <dd><a href="integralAdd">我的积分</a></dd>
                     </dl>
-                    <a href="integralAdd" class="mlink">我的积分</a>
 
+                    </dl>
+                    <a href="" class="mlink">我的积分</a>
                 </li>
-                <li class="" id="nav_left_3"><a href="viewAdd" class="mlink">我的点评</a></li>
+
+                <li class="" id="nav_left_3">
+                    <a href="viewAdd" class="mlink">我的点评</a></li>
                 <li class="" id="nav_left_4">
                     <dl class="user-sub-nav cf">
                         <dd><a href="personAdd">个人资料</a></dd>
@@ -194,7 +197,79 @@
     <iframe style="display: block; position: fixed; z-index: 2147483646 ! important; left: auto; right: 8px; margin-left: 0px; top: 50%; bottom: auto; margin-top: -138px;" src="./user/a.htm" allowtransparency="true" scrolling="no" frameborder="0" height="277" width="121"></iframe><script charset="utf-8" type="text/javascript" src="./user/wpa.php"></script>
     <!-- WPA Button End -->
 
-
-
-
 </div></body></html>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script>
+    var asi='';
+    function footprint(){
+        $.get('footprint',function(msg){
+            asi+="<ul class='clearfix'>"
+            for (var i = 0; i < msg.length; i++) {
+                asi+="<li class='lineitem ' style='float:left'>"
+                asi+="<div class='img fn-left'>"
+                asi+="<a href='"+msg[i]['o_id']+"' target='_blank' title='"+msg[i]['o_name']+"'>"
+                asi+="<img width='118px' height='67px' data-original='"+msg[i]['path']+"' src='"+msg[i]['path']+"' alt='景点图' style='display: inline;'>"
+                asi+="</a>"
+                asi+="<div class='prd-num'>产品编号："+msg[i]['o_id']+"</div>"
+                asi+="</div>"
+                asi+="<dl class='info fn-left'>"
+                asi+="<dt class='t'>"
+                asi+="<a href='http://www.byts.com.cn/tours/4376.htm' target='_blank' title='"+msg[i]['o_name']+"'>"+msg[i]['o_name']+"</a><img src='image/tuijian.gif'>"
+                asi+="</dt>"
+                asi+="<dd class='desc'> 界航大型飞船 ，入住5年普吉车 当地 精选 5星 酒店 ◆ 尽享美食 金鲨酒 楼泰式 绝望深怨...</dd>"
+                asi+="<dd class='moredesc'>"
+                asi+="<span>满意度：<span class='n'>100%</span></span>"
+                asi+="<span class='pin'><span class='n'>&nbsp;0&nbsp;</span>人点评</span>"
+                asi+="<span>最近出发班期：<span class='n'>星期二,星期四,星期日</span></span>"
+                asi+="</dd>"
+                asi+="</dl>"
+                asi+="<div class='detail fn-right'>"
+                asi+="<span class='sup'>网订优惠</span>"
+                asi+="<p class='price'><span class='u'></span><span class='n'>￥"+msg[i]['c_price']+"</span>起</p>"
+                asi+="<span class='s m-5 J_powerFloat' rel='J_popDisong' data-song='200'><em class='dsnum'></em></span>"
+                asi+="</div>"
+                asi+="</li>"
+              }
+                asi+="</ul>"
+              $("#tihuan").html(asi);
+          },'json')
+    }
+
+    /*
+     * 收藏
+     */
+    function collect(){
+        var ass='';
+        $.get('collect',function(ms){
+            ass+="<ul class='clearfix'>"
+            for (var i = 0; i < ms.length; i++) {
+                ass+="<li class='lineitem ' style='float:left'>"
+                ass+="<div class='img fn-left'>"
+                ass+="<a href='"+ms[i]['s_id']+"' target='_blank' title='"+ms[i]['s_name']+"'>"
+                ass+="<img width='118px' height='67px' data-original='"+ms[i]['path']+"' src='"+ms[i]['path']+"' alt='景点图' style='display: inline;'>"
+                ass+="</a>"
+                ass+="<div class='prd-num'>产品编号："+ms[i]['s_id']+"</div>"
+                ass+="</div>"
+                ass+="<dl class='info fn-left'>"
+                ass+="<dt class='t'>"
+                ass+="<a href='http://www.byts.com.cn/tours/4376.htm' target='_blank' title='"+ms[i]['s_name']+"'>"+ms[i]['s_name']+"</a><img src='image/tuijian.gif'>"
+                ass+="</dt>"
+                ass+="<dd class='desc'> "+ms[i]['s_characteristic']+"</dd>"
+                ass+="<dd class='moredesc'>"
+                ass+="<span>满意度：<span class='n'>100%</span></span>"
+                ass+="<span class='pin'><span class='n'>&nbsp;0&nbsp;</span>人点评</span>"
+                ass+="<span>最近出发班期：<span class='n'>星期二,星期四,星期日</span></span>"
+                ass+="</dd>"
+                ass+="</dl>"
+                ass+="<div class='detail fn-right'>"
+                ass+="<span class='sup'>网订优惠</span>"
+                ass+="<p class='price'><span class='u'></span><span class='n'>￥"+ms[i]['s_price']+"</span>起</p>"
+                ass+="<span class='s m-5 J_powerFloat' rel='J_popDisong' data-song='200'><em class='dsnum'></em></span>"
+                ass+="</div>"
+                ass+="</li>"
+              }
+                ass+="</ul>"
+              $("#tihuan").html(ass);
+        },'json');
+    }
+</script>

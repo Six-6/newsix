@@ -42,7 +42,7 @@
 						<td><input type="checkbox" /></td>
 						<td>{{$T_audits -> t_id}}</td>						
 						<td>{{$T_audits-> t_title}}</td>
-						<td>{{$T_audits -> u_name}}</td>
+						<td>{{$T_audits -> name}}</td>
 					
 						<td><span style="color:#999">{{$T_audits -> t_times}}</span></td>
 						<td>
@@ -59,26 +59,26 @@
 				<table>
 					<tr>
 						<td>
-							<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/audit?page=1">首页</a>						
+							<a href="{{URL('admin/audit')}}?page=1">首页</a>						
 						</td>
 						<td>
 							@if ($T_audit['page'] == 1)   
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/audit?page=1">上一页</a>
+								<a href="{{URL('admin/audit')}}?page=1">上一页</a>
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/audit?page={{$T_audit['page']-1}}">上一页</a>
+								<a href="{{URL('admin/audit')}}?page={{$T_audit['page']-1}}">上一页</a>
 							@endif							
 						</td>
 						<td>
 							@if ($T_audit['page'] == $T_audit['mexpage']) 
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/audit?page={{$T_audit['mexpage']}}">下一页</a>
+								<a href="{{URL('admin/audit')}}?page={{$T_audit['mexpage']}}">下一页</a>
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/audit?page={{$T_audit['page']+1}}">下一页</a>
+								<a href="{{URL('admin/audit')}}?page={{$T_audit['page']+1}}">下一页</a>
 							@endif
 						</td>
 						<td>
 							@if ($T_audit['page'] > $T_audit['mexpage'])    
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/audit?page={{$T_audit['mexpage']}}">最后一页</a>
+								<a href="{{URL('admin/audit')}}?page={{$T_audit['mexpage']}}">最后一页</a>
 							@endif
 						</td>
 					</tr>

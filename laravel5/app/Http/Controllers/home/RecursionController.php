@@ -45,7 +45,7 @@ class RecursionController extends BaseController{
      */
     public function searchs(Request $request){
         $sou = $request->input('sous'); 
-        $sqlSel = DB::select("SELECT * FROM scenic WHERE match(s_name, s_traffic) against('$sou')");
+        $sqlSel = DB::select("SELECT * FROM scenic_spot WHERE match(s_name) against('$sou')");
         $nums = count($sqlSel);
         if ($sqlSel) {
             return view('home.search',['souarr'=>$sqlSel,'count'=>$nums,'sou'=>$sou]);

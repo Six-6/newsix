@@ -211,13 +211,21 @@ window.onerror=function(){return true;}
 
     </script>-->
 <div class="top1">
-  <div class="conter"><span>欢迎访问 <a href="#">北京青年旅行社官网</a></span>　请
+    @if(empty(Session::get('name')))
+    <div class="conter"><span>欢迎访问 <a href="#">北京青年旅行社官网</a></span>　请
+    <span id="_Check_head_Login">
+    <span><a href="{{URL('blo')}}" target="_blank">登录</a></span>
+    <span>|</span>
+    <span><a href="{{URL('register')}}" target="_blank" id="">注册</a></span>
+    @else
+  <div class="conter"><span>欢迎光临 <a href="#">北京青年旅行社官网</a></span>　
   <span id="_Check_head_Login">
-    <span><a href="#" target="_blank">登 录</a></span>
-<span>|</span>
-<span><a href="#" target="_blank">注 册</a></span>
-
-
+        <span><a href="personAdd" target="_blank">{{Session::get('name')}}</a></span>
+    <span>|</span>
+    <span><a href="personAdd" target="_blank" id="{{Session::get('u_id')}}">用户中心</a></span>
+    <span>|</span>
+    <span><a href="personDel" target="_blank" >退出</a></span>
+    @endif
 
 </span><script language="javascript">Check_head_Login();</script>
      <div class="hour"><img src="../home/images/pic1.jpg" width="46" height="19"></div>
@@ -238,9 +246,9 @@ window.onerror=function(){return true;}
         <li><a val="9" href="javascript:void(0)">旅游租车</a></li>
         <li><a val="10" href="javascript:void(0)">旅游门票</a></li>
   
-    </ul>
+    </ul><!-- 
     <input id="search" autocomplete="off" style="length:20px width:8px" maxlength="18" type="text" value="请输入关键字" onclick="" name="searchkey">
-    <!-- <input ="text" placeholder="你想输入的内容" id="sou" onblur="sousuo()" >  -->
+    <input ="text" placeholder="你想输入的内容" id="sou" onblur="sousuo()" >  -->
   </div>
   </div>  
   

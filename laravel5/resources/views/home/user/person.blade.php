@@ -1,3 +1,4 @@
+
 @include("home/common/left")
 <h2 class="common_h2">个人资料</h2>
 <form action="personUpd" method="post" name="add_place_form" id="user_info_edit_form" onsubmit="return check()">
@@ -6,7 +7,7 @@
     <input name="sub_tel" id="sub_tel" type="hidden">
     <input name="sub_email" id="sub_email" type="hidden">
 
-    <div class="common-w1 gstyle mb15">
+    <div class="common-w1 gstyle mb15" id="tihuan">
         <table class="form-table3" border="0" cellpadding="0" cellspacing="0" width="790">
             <input type="hidden" name="_token" value="{{csrf_token()}}" />
             <tbody>
@@ -72,15 +73,6 @@
                 <tr>
                     <td align="right">证件：</td>
                     <td>
-                        <select id="paper_type" name="pspt_type">
-                            @if(empty($v->t_id))
-                                @foreach($type as $val)
-                                    <option value="{{$val['t_id']}}">{{$val['t_name']}}</option>
-                                @endforeach
-                            @else
-                                <option value="{{$v->t_id}}">{{$v->t_name}}</option>
-                            @endif
-                        </select>
                         <input class="txt-m" onblur="return check_card()" value="{{$v->t_number}}" name="t_number" type="text">
                         <span id="number"></span>
                     </td>

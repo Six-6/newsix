@@ -1,0 +1,2 @@
+(function(){var dev_js={lazy_amd:'http://img1.tuniucdn.com/j/20150603/jifen/lazyloadnew.min.js,jifen/jf_index',jquery:'http://img1.tuniucdn.com/j/2013022202/3rd/jquery-1.7.2.min'}
+require.config({paths:{'jquery':dev_js.jquery,'com_amd/lazyloadnew.min':dev_js.lazy_amd,'jifen/JF_index':dev_js.lazy_amd}});require(['jifen/JF_index'],function(mod){mod.init();});require(['com_amd/lazyloadnew.min'],function(){$("img").lazyload();});})()
