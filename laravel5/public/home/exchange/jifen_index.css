@@ -1,0 +1,111 @@
+.user_infor{background:url(/img/2015060116/jifen/mask_bg_2.png) no-repeat 0 0;background-color:#fff}.index_icon{background-image:url("http://img1.tuniucdn.com/img/201501041115/home/index_icon.png");display:inline-block}.order_icon{background:url(/img/20150409/jifen/detail.png) no-repeat 0 0}.jifen_ad{height:409px}.jifen_items{background:#fff;padding-top:25px}.jifen_nav{width:200px}.jifen_box{width:1200px;margin:0
+auto;position:relative}.jifen_nav
+.jifen_item{z-index:10;height:48px;position:relative;cursor:pointer;border-bottom:1px dashed #d8d8d8;overflow:visible;border-top:1px solid transparent;margin-top:-2px}.jifen_nav
+.jf_item{padding:0
+0 0 10px;position:relative;z-index:9;height:46px}.jifen_nav .jifen_item .line_1,
+.jifen_nav .jifen_item
+.line_2{display:block;height:22px;line-height:20px;width:160px;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap}.jifen_nav .jifen_item
+.line_1{font:normal 700 14px/22px microsoft yahei;margin-top:2px}.jifen_nav .jifen_item .line_1
+a{color:#630;line-height:25px}.jifen_nav .jifen_item .line_2
+a{color:#666}.jifen_nav .jifen_item .line_1 a:hover, .jifen_nav .jifen_item .line_2 a:hover, .jifen_nav .jifen_list a:hover{text-decoration:none;color:#f80}.jifen_nav .jifen_item
+.arrow{position:absolute;right:10px;top:20px;z-index:9;font-size:20px;display:none}.jifen_nav
+.jifen_list{padding:40px
+10px 0;position:absolute;z-index:8;top:-50px;right:-70px;display:none;background:#fff;opacity:0.8;filter:alpha(opacity=80)}.jifen_nav .jifen_list
+a{display:block;height:36px;line-height:36px;border-bottom:1px dotted #d8d8d8;font:normal 400 14px/36px microsoft yahei;color:#666;width:100px;text-align:center;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap}.jifen_nav
+.jifen_item.hover{z-index:11;border-bottom:1px solid #d8d8d8;border-top:1px solid #d8d8d8}.jifen_nav .hover
+.jf_item{}.jifen_nav .hover
+.jifen_list{display:none;border-left:1px solid #d8d8d8;height:368px}.jifen_des{width:255px;position:absolute;top:0;right:0;background:#fff}.inner_box{}.user_infor{height:409px;position:relative}.user_infor
+.ui_des{}.user_infor
+.ui_des{padding:20px
+0 0 0}.user_infor .ui_des dt,
+.user_infor .ui_des
+dd{text-align:center}.user_infor .ui_des
+dd{margin:15px
+0 0 0}.user_infor .ui_des
+dt{margin:0px
+0 0 67px;width:120px;height:120px;border-radius:50%;background:#fff}.user_infor .ui_des dt
+img{width:110px;height:110px;border-radius:50%;margin:5px}.user_infor
+.ui_level{margin-top:10px;color:#666;margin-bottom:5px}.user_infor
+.ui_update{color:#666}.user_infor
+.ui_login{margin-top:35px}.user_infor .ui_login
+a{color:#f60}.user_infor
+.ui_jifei{position:absolute;color:#999;top:340px;left:140px;width:100%;font:normal normal 12px/16px "microsoft yahei"}.user_infor .ui_jifei
+p{font-weight:bold;font-size:18px;margin-top:5px}.user_infor .ui_jifei
+.num{font-family:"Arial";color:#f60}.user_infor .ui_jifei
+.unit{color:#f60}.user_pak{background:#fafafa;height:120px;padding:20px
+0 0 15px}.user_pak
+p{margin:0
+0 10px 0px}.user_pak .sp_1,
+.user_pak
+.sp_2{position:relative;margin:0
+15px 0 0}.user_pak .sp_1 i,
+.user_pak .sp_2
+i{display:block;position:absolute;height:36px;width:36px;left:7px;top:16px}.user_pak .sp_1
+i{background-position:0 -81px}.user_pak .sp_2
+i{background-position:0 -117px}.wrap_box{width:1200px;margin:0px
+auto 0px;padding-top:10px}.wrap_box .lef_box,
+.wrap_box
+.rig_box{float:left;position:relative}.wrap_box
+.lef_box{width:930px}.wrap_box
+.rig_box{width:255px;margin-top:20px}.rr_tl{border-bottom:3px solid #f80;position:relative;margin-top:20px}.rr_tl
+.rr_tt{font:normal 700 24px/36px "microsoft yahei";color:#f80;margin-left:20px}.rr_tl
+.rr_more{position:absolute;right:5px;top:5px;display:block;padding:0px
+10px;border-radius:10px;background-color:#eaeaea;color:#999;font-size:14px;height:24px;line-height:24px}.sb_lists
+.sb_list{margin-top:10px;width:285px;overflow:visible;padding:5px;float:left;background-color:#FFF;border:1px
+solid #d8d8d8;border-left:0px solid #d8d8d8}.sb_lists .sb_list:nth-child(3n-2){border-left:1px solid #d8d8d8}.sb_lists .sb_list
+.sb_img{display:block;height:159px;overflow:hidden}.sb_lists .sb_list .sb_img
+img{width:285px}.sb_lists .sb_list
+.sb_line{padding:8px
+0;height:44px;line-height:20px;overflow:hidden}.sb_lists .sb_list .sb_line
+strong{font:normal 14px/21px "microsoft yahei";color:#333}.sb_lists .sb_list .sb_line
+span{font:normal 400 12px/21px "microsoft yahei";color:#999}.sb_lists .sb_list .sb_line:hover strong, .sb_lists .sb_list .sb_line:hover
+span{color:#f80}.sb_lists .sb_list:nth-child(3n-2){border-left:1px solid #d8d8d8}.sb_lists
+.sb_list{margin-top:10px;width:285px;overflow:visible;padding:5px;float:left;background-color:#FFF;border:1px
+solid #d8d8d8;border-left:0px solid #d8d8d8}.sb_lists .sb_list
+.but_w{width:70px;height:26px;line-height:26px;text-align:center;margin:0;cursor:pointer}.sb_lists .sb_list .sb_btn,
+.sb_lists .sb_list
+.sb_line{padding:0
+10px;display:block}.sb_lists .sb_list
+.sb_btn{position:relative}.sb_lists .sb_list .sb_btn
+a{position:absolute;top:0;right:10px}.sb_lists .sb_list .sb_btn
+.f_18{font-family:"microsoft yahei";margin-right:2px}.best_seller_tit{font-weight:bold;font-size:14px;margin-bottom:5px;color:#333;font-family:"microsoft yahei"}.icon_top_1{background-position:0 -97px;width:24px;height:30px}.icon_top_2{background-position:-34px -97px;width:24px;height:30px}.icon_top_3{background-position:-66px -97px;width:24px;height:30px}.icon_top_4{background-position:-101px -97px;width:24px;height:30px}.icon_top_5{background-position:-137px -97px;width:24px;height:30px}.best_seller_title{font-size:14px;font-weight:bold;font-family:"microsoft yahei";line-height:34px;padding-left:15px}.best_seller{background:#fff;padding:0
+10px}.best_seller
+.tab_contents{padding:0
+15px}.best_seller .tab_contents
+.last{border-bottom:none}.best_seller
+.seller_item_list{display:none}.best_seller
+.current{display:block !important}.best_seller
+.seller_item{font-size:12px;font-family:"microsoft yahei";color:#666;padding:15px
+0px;border-bottom:1px solid #EFEFEF;position:relative;z-index:1}.best_seller
+.index_icon{position:absolute;top:12px;left:0;z-index:9}.best_seller .seller_item a:nth-child(2){display:block;height:58px;float:left;width:58px;overflow:inherit;margin-right:10px;padding:3px;position:relative;border:1px
+solid #f5f5f5}i.index_icon:after{content:"";display:block;width:3px;height:64px;background-color:#FFF;position:absolute;left:62px;top:4px}.best_seller .seller_item
+img{height:58px}.best_seller .seller_item
+h6{line-height:20px;height:20px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;_width:147px}.best_seller .seller_item h6
+a{color:#666}.best_seller .seller_item h6 a:hover{color:#f80}.best_seller .seller_item
+p{color:#999;line-height:22px;height:22px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;_width:147px}.best_seller .seller_item
+.strong{color:#F60;font-family:"microsoft yahei"}.order_icon{display:block;height:38px;width:60px;background-position:0 -154px;position:absolute;bottom:-14px;right:-7px}.last_orders{background-color:#fff8ef;border:2px
+solid #fff;padding:0
+10px;margin:20px
+0;position:relative;overflow:hidden}.last_orders dt,
+.last_orders
+dd{float:left}.last_orders
+dd{padding-left:10px;color:#666}.last_orders
+.order_item{padding:10px
+5px;border-bottom:1px dotted #d8d8d8;position:relative;z-index:2}.last_orders .order_item:last-child{border-bottom:none}.last_orders .order_item
+.order_img{border-radius:50%;height:40px;width:40px;behavior:url(/site/css/jifen/pecss3.htc);overflow:hidden}.last_orders .order_item
+.order_des{color:#999}.last_orders .order_item
+.order_name{color:#666;margin:0
+10px 0 0;display:inline-block;width:70px;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap}.last_orders .order_item
+.order_txt{width:170px}.order_box{height:194px;overflow:hidden}.rb_dps
+img{display:block}.banner_pic{width:100%;height:409px;overflow:hidden;position:absolute;left:0}.banner_pic
+.train_header{position:relative}.banner_pic .train_header
+a{display:block;width:100%;height:100%}.banner_pic .train_header
+li{height:409px;overflow:visible;width:100%;margin:0
+auto}.banner_pic
+.train_curs{position:absolute;z-index:10;bottom:40px;text-align:center;left:50%;margin-left:-20px;height:25px;background:url(http://img2.tuniucdn.com/img/20141217/train/linemask.png) repeat;border-radius:15px;padding-left:10px;padding-right:10px}.banner_pic .train_curs
+span{display:block;float:left;margin:0
+5px;width:13px;height:13px;border:2px
+solid #ddd;border-radius:50%;background-color:#fff;cursor:pointer;margin-top:4px}.banner_pic .train_curs
+span.nc_cur{position:relative;z-index:10;border-color:#f80;background:#f80}.jifen_mark_icon{height:50px;background-color:#fff}.jifen_mark_icon_block{width:1200px;margin:0
+auto;height:50px;position:relative}.jifen_mark_icon_block
+i{position:absolute;top:13px;left:1px;width:198px;height:56px;background:url(http://img1.tuniucdn.com/img/201501261427/jifen/jifen_mark_icon.jpg) no-repeat;z-index:999}
