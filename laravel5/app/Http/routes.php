@@ -179,10 +179,11 @@ Route::group(['middleware' => ['common']], function () {
     Route::any('admin/exchangeAdd',"admin\ExchangeController@add");/**兑换添加**/
     Route::post('admin/checkName',"admin\ExchangeController@check");/**兑换验证**/
     Route::get('admin/exchangeShow',"admin\ExchangeController@show");/**兑换展示**/
-
-
+	
 	/**后台 游记管理**/
 	Route::get('admins', 'admin\TravelnotesController@indexs');/**游记管理**/
+	Route::get('admin/season', 'admin\TravelnotesController@season');/**当季推荐**/
+	Route::post('admin/fileaddse', 'admin\TravelnotesController@fileadd');/**当季修改**/
 	Route::get('admin/travelnotes', 'admin\TravelnotesController@index');/**游记管理2**/
 	Route::get('admin/travelsupdata', 'admin\TravelnotesController@updata');/**审核2**/
 	Route::get('admin/classics', 'admin\TravelnotesController@classics');/**经典回顾2**/

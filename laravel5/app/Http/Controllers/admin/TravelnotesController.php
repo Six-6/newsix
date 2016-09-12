@@ -153,6 +153,53 @@ class TravelnotesController extends BaseController {
 		return redirect('admin/travelnotes');
 	}
 	
+	/**
+	*@当季推荐
+	*/
+	public function season()
+	{
+		//调用model层
+		$model = new Travels();
+		//调用查询方法
+		$flig = $model->season();
+		return view('admin.season',['T_flig' => $flig]);
+	}
+	
+	/**
+	*@当季修改
+	*/
+	public function fileadd(Request $request)
+	{
+		$data=Request::all();
+
+		$s_id = $data['s_id'];
+		$s_name = $data['s_name'];
+		$file = $data['file'];
+		
+	 	$file_name = $file->getClientOriginalName();//图片名
+		$file_ex = $file->getClientOriginalExtension();    //上传文件的后缀	
+		//判断文件格式
+		if(!in_array($file_ex, array('jpg', 'gif', 'png'))){
+			echo "<script>alert('文件格式错误,仅支持 jpg ,gif,png');location.href='admin/wayadd'</script>";
+		}
+		
+		$savepath = base_path().'/public/image/one/shopphoto/';
+		$fileadd = "../image/one/shopphoto/".$file_name;
+		$filepath = $file->move($savepath, $file_name);
+		
+		$updata = DB::table('inseason')
+            ->where('s_id', $s_id)
+            ->update(['s_name' => $s_name ,'s_image' => $fileadd]);
+       
+		if($updata)
+		{
+			return redirect('admin/season');
+		}
+		else
+		{
+			echo "<script>alert('修改失败');location.href='admin/season'</script>";
+		}
+	}
 }
 
 	
