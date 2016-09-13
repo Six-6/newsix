@@ -20,17 +20,14 @@
         <div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
                 <div class="crumbs fl">
-                    <a href="http://go.tuniu.com/" class="word" rel="nofollow">攻略首页</a>
+                    <a href="siterecommend" class="word" rel="nofollow">攻略首页</a>
 
-                    <a href="http://trips.tuniu.com/" target="_blank" rel="nofollow" class="word">游记</a>
+                    <a href="note" target="_blank" rel="nofollow" class="word">游记</a>
                     <a href="http://www.tuniu.com/way/" target="_blank" rel="nofollow" class="word">达人玩法</a>
-                    <a href="http://top.tuniu.com/" rel="nofollow" class="word cur">途牛风向标</a>
+                    <a href="ranking" rel="nofollow" class="word cur">风向标</a>
                     <a href="http://www.tuniu.com/traveler" target="_blank" rel="nofollow" class="word">旅游达人</a>
                     <a href="http://ask.tuniu.com/" target="_blank" rel="nofollow" class="word">攻略问答</a>
                 </div>
-                <div class="f_youji fr">
-                    <a class="report" href="http://www.tuniu.com/trips/write/">发表游记</a>
-                                    </div>
             </div>
         </div>
 
@@ -60,7 +57,7 @@
         <!-- 当季玩什么 -->
             <div class="galleryblock pwhat" id="p_what">
     <div class="notes-title maintitle"><h1>当季玩什么</h1></div>
-@foreach($data['carousel'] as $error1)
+@foreach($data['data'] as $error1)
 <div class="slide-card">
     <a href="http://top.tuniu.com/topic/d1277" target="_blank" rel="nofollow">
         <img style="display: inline;" data-src="http://m.tuniucdn.com/fb2/t1/G2/M00/5A/31/Cii-TFfNM8OIamBpAAFpuEtHBVgAACE0QIJAPAAAWnQ412_w800_h0_c0_t0.jpg" src="{{$error1 -> s_image}}" alt="{{$error1 -> s_name}}" height="260" width="200">

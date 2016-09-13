@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="../css/top.css">
 <link rel="stylesheet" type="text/css" href="../css/gonglue_channel.css">
 <link rel="stylesheet" type="text/css" href="../css/jquery.css">
-<title>主题旅游_旅行风向标_途牛风向标</title>
+<title>主题</title>
 <meta content="主题旅游,旅行风向标,途牛风向标" name="keywords">
 <meta content="途牛风向标提供最全面的主题旅游推荐：自驾、蜜月、亲子、踏青、赏花、漂流、温泉等各式主题旅游推荐,总有一款主题让您满意……最新最快的掌握当季旅游活动,一站式贴心旅游服务尽在途牛风向标。" name="description">
 <link href="../css/reset.css" rel="stylesheet" type="text/css">
@@ -22,17 +22,14 @@
         <div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
                 <div class="crumbs fl">
-                    <a href="http://go.tuniu.com/" class="word" rel="nofollow">攻略首页</a>
+                    <a href="siterecommend" class="word" rel="nofollow">攻略首页</a>
 
-                    <a href="http://trips.tuniu.com/" target="_blank" rel="nofollow" class="word">游记</a>
+                    <a href="note" target="_blank" rel="nofollow" class="word">游记</a>
                     <a href="http://www.tuniu.com/way/" target="_blank" rel="nofollow" class="word">达人玩法</a>
-                    <a href="http://top.tuniu.com/" rel="nofollow" class="word cur">途牛风向标</a>
+                    <a href="ranking" rel="nofollow" class="word cur">风向标</a>
                     <a href="http://www.tuniu.com/traveler" target="_blank" rel="nofollow" class="word">旅游达人</a>
                     <a href="http://ask.tuniu.com/" target="_blank" rel="nofollow" class="word">攻略问答</a>
                 </div>
-                <div class="f_youji fr">
-                    <a class="report" href="http://www.tuniu.com/trips/write/">发表游记</a>
-                                    </div>
             </div>
         </div>
 
@@ -78,35 +75,21 @@
 	                    <dt class=".pkg_filter_tit">人群</dt>
 	                    <dd class="pkg_filter_properties J_properties01">
 	                        <div class="pkg_filter_buxian all_01">
-	                            <a href="http://top.tuniu.com/topic/" rel="nofollow" class="a1 checked" data-value="">不限</a>
+	                            <a href="http://top.tuniu.com/topic/" rel="nofollow" data-value="">不限</a>
 	                        </div>
 	                        <div class="pkg_filter_others">
 	                            <div class="fenlei01 all_02">
-									<a href="http://top.tuniu.com/topic/?cate=36" rel="nofollow" class="a1 ">热门</a>     		                        
-									<a href="http://top.tuniu.com/topic/?cate=37" rel="nofollow" class="a1 ">当季</a>     		                        
-                                	<a href="http://top.tuniu.com/topic/?cate=38" rel="nofollow" class="a1 ">美食</a>     		                        
-									<a href="http://top.tuniu.com/topic/?cate=39" rel="nofollow" class="a1 ">购物</a>     		                        
-									<a href="http://top.tuniu.com/topic/?cate=40" rel="nofollow" class="a1 ">住宿</a>     		                        
-                                	<a href="http://top.tuniu.com/topic/?cate=41" rel="nofollow" class="a1 ">摄影</a>     		                        
-									<a href="http://top.tuniu.com/topic/?cate=42" rel="nofollow" class="a1 ">游玩</a>     		                        
-                                	                                </div>
+									<a href="{{URL('home/themes')}}" rel="nofollow" class="a1 ">权威</a>     		                        
+									<a href="{{URL('home/freshs')}}" rel="nofollow" class="a1 ">尝鲜</a>     		                        
+                                	<a href="" rel="nofollow" class="a1 ">快门</a>     		                        
+									<a href="" rel="nofollow" class="a1 ">美食</a>     		                        
+									<a href="" rel="nofollow" class="a1 ">购物</a>     		                        
+                                	<a href="" rel="nofollow" class="a1 ">文艺</a>     		                     			    		                                                        	                                </div>
 		                    </div>	   		                                       
 			                	
 	                    </dd>
 	                </dl>
-	                                    <dl>
-	                    <dt class=".pkg_filter_tit">类别</dt>
-	                    <dd class="pkg_filter_properties J_properties02">
-	                        <div class="pkg_filter_quanxuan">
-	                            <a href="http://top.tuniu.com/topic/" rel="nofollow" class="a2 checked">不限</a>
-	                        </div>
-	                        <div class="all_02">
-	                            <a href="http://top.tuniu.com/topic/?model=1" data-value="1" rel="nofollow" class="a2 ">主题榜单</a>
-	                            <a href="http://top.tuniu.com/topic/?model=2" data-value="2" rel="nofollow" class="a2 ">目的地榜单</a>
-	                            <a href="http://top.tuniu.com/topic/?model=3" data-value="3" rel="nofollow" class="a2 ">特别企划</a>	   
-	                        </div>
-	                    </dd>
-                    </dl>                                                      
+	                                                                            
                 </div>
             </div>
         </div>
@@ -116,20 +99,29 @@
 	<div class="thcontent clearfix">
 	
 	<div class="w1030">
-		
+		@foreach($data['data'] as $esson)
 		<div class="square themebg">	 
 			<span class="sprite sprite1"></span>
-			<a class="pic imgbox" href="http://top.tuniu.com/topic/d1284" target="_blank"> <img style="display: inline;" src="../image/Cii-T1fP3yGIaIrBABUGpco0SKYAACKEwEVqu4AFQa9762_w400_h300_c1_.jpg" data-src="http://m.tuniucdn.com/fb2/t1/G2/M00/5E/35/Cii-T1fP3yGIaIrBABUGpco0SKYAACKEwEVqu4AFQa9762_w400_h300_c1_t0.jpg">
-			</a> <a href="http://top.tuniu.com/topic/d1284" target="_blank" class="lh40" title="国内秋游最佳 这10地的秋天竟是彩色">国内秋游最佳 这10地的秋天竟是彩色</a>
+			<a class="pic imgbox" href="http://top.tuniu.com/topic/d1284" target="_blank"> 
+			<img style="display: inline;" height="200" src="{{$esson -> t_img}}" >
+			</a> <a href="http://top.tuniu.com/topic/d1284" target="_blank" class="lh40" title="{{$esson -> t_title}}">{{$esson -> t_title}}</a>
 		</div> 
-
+		@endforeach
 
     </div>
 	</div>
+	
+	
 	<!-- 分页start -->
 	<div class="pagination">
 		<div class="page-bottom">
-			<span class="page-cur">1</span><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=2/">2</a><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=3/">3</a><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=4/">4</a><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=5/">5</a><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=6/">6</a><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=7/">7</a><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=8/">8</a><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=9/">9</a><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=10/">10</a><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=2/">下一页</a><a rel="nofollow" href="http://top.tuniu.com/topic/?&amp;page=102/">末页</a>		</div>
+			<a rel="nofollow" href="">一共{{$data['mexpage']}}</a>
+			<a rel="nofollow" href="">第{{$data['page']}}</a>
+			<a rel="nofollow" href="{{URL('home/theme')}}?page=1">首页</a>
+			<a rel="nofollow" href="{{URL('home/theme')}}?page={{$data['page']-1}}">上一页</a>
+			<a rel="nofollow" href="{{URL('home/theme')}}?page={{$data['page']+1}}">下一页</a>
+			<a rel="nofollow" href="{{URL('home/theme')}}?page={{$data['mexpage']}}">末页</a>
+		</div>
 	</div>
 	<!-- 分页end -->
 </div>

@@ -127,11 +127,11 @@ Route::any('admin/lo', 'admin\loginController@index');//后台登录
 Route::get('admin/lo', 'admin\loginController@index');/**后台登录**/
 Route::post('admin/loin', 'admin\loginController@loin');/**后台登录**/
 Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/                                                                                                           
-
+Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
 
 Route::group(['middleware' => ['common']], function () {
 
-    Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
+	
 	Route::get('admin/userShow', 'admin\IndexController@i');/**后台管理员列表**/
 	
 	Route::any('admin/userAdd',"admin\AdminController@add");/**管理员添加**/
@@ -254,7 +254,9 @@ Route::get('home/month', 'season\IndicatorController@month');//季节推荐
 Route::get('home/ranking', 'season\RankingController@index');//排行榜
 Route::get('home/note', 'season\NoteController@index');//前台游记首页
 Route::get('home/lnews', 'season\NoteController@lnews');//前台最新发布
-Route::get('home/theme', 'season\ThemeController@theme');//前台风向标主题
+/***前台 主题***/
+Route::get('home/themes', 'season\ThemeController@themes');//前台风向标主题 权威
+Route::get('home/freshs', 'season\ThemeController@freshs');//前台风向标主题 尝鲜
 
 
 

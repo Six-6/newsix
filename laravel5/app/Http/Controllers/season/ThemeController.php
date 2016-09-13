@@ -3,7 +3,6 @@ namespace App\Http\Controllers\season;
 use DB,Input,Session;
 use Request;
 use App\Http\Controllers\Controller;
-
 use App\Theme;
 header("content-type:text/html;charset=utf-8");
 class ThemeController extends Controller {
@@ -29,12 +28,23 @@ class ThemeController extends Controller {
 		$this->middleware('guest');
 	}
 	
-	public function theme()
+	public function themes()
 	{
-		//$model = new Theme();		    //调用model层
+		//页数
+		$page=Request::get('page');
 		
-		//$data = $model->seldata();				//调用查询方法
+		$data = Theme::seldata($page);				//调用查询方法
 		//print_r($data);die;
-		return view('home.theme');
+		return view('home.theme',['data' => $data]);
+	}
+	
+	public function freshs()
+	{		
+		//页数
+		$page=Request::get('page');
+		
+		$data = Theme::frsh($page);				//调用查询方法
+		print_r($data);die;
+		//return view('home.theme',['data' => $data]);		
 	}
 }

@@ -29,7 +29,9 @@ class ExchangeController extends BaseController{
             $re=$request->input();
             unset($re['_token']);
             $file = $request->file("e_img");
+			print_r($file);die;
             $clientName = $file->getClientOriginalName();//获得文件名字
+			
             $entension = $file->getClientOriginalExtension(); //上传文件的后缀.
             $newName = md5(date('ymdhis') . $clientName) . "." . $entension;//改名字
             $path = $file->move('./admin/upload', $newName);//将图片放到storage/uploads下
