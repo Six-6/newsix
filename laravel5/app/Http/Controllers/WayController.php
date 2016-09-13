@@ -51,7 +51,7 @@ class WayController extends Controller {
 	 * @return
 	 */
 	public function waysel(){
-		$tables = DB::table('scenic')->get();
+		$tables = DB::table('scenic_spot')->get();
 		return view('admin.admin_cardTemplate2',['arr' => $tables]);
 	}
 	

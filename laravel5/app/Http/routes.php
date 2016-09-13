@@ -17,7 +17,9 @@ Route::any('users', 'UserController@index');//会员中心
 Route::any('domestic', 'DomesticController@index');//国内
 
 
+
 Route::get('/', 'home\RecursionController@recursion');/**前台首页**/
+
 
 
 /**前台用户管理**/
