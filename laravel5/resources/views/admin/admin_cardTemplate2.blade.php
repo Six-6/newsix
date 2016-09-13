@@ -1,3 +1,5 @@
+@include("admin/index/index")
+<div class="public-ifame-content">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
-		<div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="">名片管理</a></div>
+
 		<div class="public-content">
 			<div class="public-content-header">
 				<h3>修改网站配置</h3>
@@ -28,7 +30,7 @@
 					@foreach($arr as $v)
 					<tr id="yi{{ $v->s_id }}">
 						<td>{{$v->s_id}}</td>
-						<td><img class="thumb" src="../image/one/shopphoto/{{$v->s_img}}" width="30px" height="30px" /></td>
+						<td><img class="thumb" src="{{$v->s_img}}" width="30px" height="30px" /></td>
 						<td onclick="dians({{ $v->s_id }})">              
 	                        <input type="text" id="aa{{$v->s_id}}" value="{{$v->s_name}}" style="display:none" onblur="gai({{$v->s_id}})">
 	                        <span id="s{{$v->s_id}}">{{$v->s_name}}</span>
@@ -63,6 +65,7 @@
 	</div>
 </body>
 </html>
+</div>
 <script src="../admin/js/jquery.min.js"></script>
 <script>
 	//删除

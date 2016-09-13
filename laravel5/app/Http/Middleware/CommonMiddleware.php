@@ -22,13 +22,11 @@ class CommonMiddleware{
             ->join('power','r_p.pid','=','power.pid')
             ->where('r_p.rid',$res[0])
             ->lists("p_url");
-			//print_r($arr);die;
         $path=$request->path();
         if(in_array($path,$arr)){
             $name=Session::get("name");
             $arr=DB::table('power')->get();
             $ar=$this->Cate($arr,0,0);
-			//print_r($ar);die;
             view()->share("name",$name);
             view()->share('ar',$ar);
             return $next($request);
@@ -58,7 +56,6 @@ class CommonMiddleware{
                 }
             }
         }
-		//print_r($child);die;
         return $child;//返回生成的树形数组
     }
 }

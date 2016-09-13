@@ -11,12 +11,14 @@
 |
 */
 //Route::get('/', 'WelcomeController@index');
-Route::any('/', 'HomeController@login');//网站首页
+//Route::any('/', 'HomeController@login');//网站首页
 Route::any('abroad', 'AbroadController@index');//出境
 Route::any('users', 'UserController@index');//会员中心
 Route::any('domestic', 'DomesticController@index');//国内
 
 
+
+Route::get('/', 'home\RecursionController@recursion');/**前台首页**/
 
 
 
