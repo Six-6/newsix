@@ -18,26 +18,6 @@
 			</div>
 			<div class="clearfix"></div>
 			<div class="public-content-cont two-col">
-				<!-- <div class="public-cont-left col-1">
-					<div class="public-cont-title">
-						<h3>信息分类</h3>
-					</div>
-					<ul class="public-cate-list">
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-					</ul>
-				</div> -->
 				<table class="public-cont-table col-2">
 		<thead>
 			<tr>

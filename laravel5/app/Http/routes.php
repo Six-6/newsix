@@ -17,7 +17,6 @@ Route::any('users', 'UserController@index');//会员中心
 Route::any('domestic', 'DomesticController@index');//国内
 
 
-Route::get('/', 'home\RecursionController@recursion');/**前台首页**/
 
 
 /**前台用户管理**/
@@ -724,6 +723,10 @@ Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅�
 Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/
 Route::get('home/personDel', 'home\FootprintController@personDel');/**用户--退出*/
 Route::get('home/collect', 'home\FootprintController@yhCollect');/**用户--收藏*/
+Route::get('home/evaluate', 'home\FootprintController@evaluate');/**用户--评价*/
 
 
 
+
+Route::get('/', 'home\RecursionController@recursion');/**前台首页**/
+Route::get('home/scenic', 'home\RecursionController@scenic');/**前台地区下的景点**/

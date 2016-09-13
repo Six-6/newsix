@@ -51,7 +51,7 @@ class WayController extends Controller {
 	 * @return
 	 */
 	public function waysel(){
-		$tables = DB::table('scenic')->get();
+		$tables = DB::table('scenic_spot')->get();
 		return view('admin.admin_cardTemplate2',['arr' => $tables]);
 	}
 	
@@ -61,7 +61,7 @@ class WayController extends Controller {
 	 */
 	public function jgaiWay(){
 		$tables = Input::get();
-		$uploads = DB::table('scenic')
+		$uploads = DB::table('scenic_spot')
             ->where('s_id', $tables['s_id'])
             ->update(['s_name' => $tables['vals']]);
         if ($uploads) {
@@ -142,7 +142,7 @@ class WayController extends Controller {
 	 */
 	public function delway(){
 		$id = Input::get('sid');
-		$del = DB::table('scenic')->where('s_id', $id)->delete();
+		$del = DB::table('scenic_spot')->where('s_id', $id)->delete();
 		if ($del) {
 			echo 1;
 		}
@@ -156,7 +156,7 @@ class WayController extends Controller {
 	public function addway(){
 		$data = Input::get();
 
-		$addway = DB::table('scenic')->insert([
+		$addway = DB::table('scenic_spot')->insert([
 			'r_id' => $data['types'],
 			's_name' => $data['SiteName'],
 			's_traffic' => $data['traffic'],
@@ -179,9 +179,7 @@ class WayController extends Controller {
 		$data = $request->all();
 		$file = $request->file('file');
 		 //if($data['SiteName']==''||$data['traffic']==''||$data['day']==''||$data['file']==''||$data['types']==''||$data['classify']==''){
-		 if(empty($data['SiteName'] || $data['traffic'] || $data['day'] || $data['file'] || $data['types'] || $data['classify'])){
-			echo "<script>alert('不能有空');location.href='wayadd'</script>";
-		}else{
+
 		 	$file_name = $file->getClientOriginalName();//图片名
 			$file_ex = $file->getClientOriginalExtension();    //上传文件的后缀	
 		//判断文件格式
@@ -193,9 +191,9 @@ class WayController extends Controller {
 		$filepath = $request->file('file')->move($savepath, $file_name);
 		if ($filepath) {
 			$fileadd = "/image/one/shopphoto/".$file_name;
-			$id = DB::table('scenic')->insertGetId(['s_img' => $file_name]);
+			$id = DB::table('scenic_spot')->insertGetId(['s_img' => $fileadd]);
 			if ($id) {
-				$tuadd = DB::table('scenic')->where('s_id',$id)->update([
+				$tuadd = DB::table('scenic_spot')->where('s_id',$id)->update([
 					'r_id' => $data['types'],
 	            	's_name' => $data['SiteName'],
 	            	's_traffic' => $data['traffic'],
@@ -216,7 +214,7 @@ class WayController extends Controller {
 		}
 
 	}
-	}
+	
 
 
 }

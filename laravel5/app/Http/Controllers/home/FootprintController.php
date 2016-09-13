@@ -46,7 +46,7 @@ class FootprintController extends BaseController{
 
     /**
      * @用户收藏
-     *1
+     *
      * @return   [description]
      */
     public function yhCollect(){
@@ -55,5 +55,15 @@ class FootprintController extends BaseController{
         //调用查询方法
         $collectSql = $model->userCollect();
         return $collectSql;
+    }
+
+    /**
+     * @用户评价
+     *
+     * @return   [description]
+     */
+    public function evaluate(){
+        $data = Input::get('evaluateid');
+        
     }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head><script src="./user/crmqq.php" async="" charset="utf-8" type="text/javascript"></script><script src="./user/contains.js" async="" charset="utf-8" type="text/javascript"></script><script src="./user/localStorage.js" async="" charset="utf-8" type="text/javascript"></script><script src="./user/Panel.js" async="" charset="utf-8" type="text/javascript"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>修改资料 - 北京青年旅行社股份有限公司官网</title>
+    <title>用户中心</title>
     <link href="./user/common_wm.htm" rel="stylesheet" media="screen" type="text/css"><link href="./user/style.css" rel="stylesheet" media="screen" type="text/css">
     <link href="./user/reg-new.css" rel="stylesheet" media="screen" type="text/css">
     <link href="./user/user.css" rel="stylesheet" media="screen" type="text/css">
@@ -134,7 +134,12 @@
                     <a href="#" class="mlink">我的收藏</a>
                 </li>
                 <li class="" id="nav_left_3">
-                    <a href="viewAdd" class="mlink">我的点评</a></li>
+                    <dl class="user-sub-nav cf">
+                        <dd><a href="javascript:void(0)" onclick="evaluate()">我的点评</a></dd>
+                    </dl>
+                    </dl>
+                    <a href="viewAdd" class="mlink">我的点评</a>
+                </li>
                 <li class="" id="nav_left_4">
                     <dl class="user-sub-nav cf">
                         <dd><a href="personAdd">个人资料</a></dd>
@@ -213,8 +218,12 @@
 </div></body></html>
 <script src="assets/js/jquery-2.1.4.min.js"></script>
 <script>
-    var asi='';
+    /**
+     * 足迹
+     * @return {[type]} [description]
+     */
     function footprint(){
+        var asi='';
         $.get('footprint',function(msg){
             asi+="<ul class='clearfix'>"
             for (var i = 0; i < msg.length; i++) {
@@ -227,7 +236,7 @@
                 asi+="</div>"
                 asi+="<dl class='info fn-left'>"
                 asi+="<dt class='t'>"
-                asi+="<a href='http://www.byts.com.cn/tours/4376.htm' target='_blank' title='"+msg[i]['o_name']+"'>"+msg[i]['o_name']+"</a><img src='image/tuijian.gif'>"
+                asi+="<a href='http://www.byts.com.cn/tours/4376.htm' target='_blank' title='"+msg[i]['o_name']+"'>"+msg[i]['o_name']+"</a>"
                 asi+="</dt>"
                 asi+="<dd class='desc'> 界航大型飞船 ，入住5年普吉车 当地 精选 5星 酒店 ◆ 尽享美食 金鲨酒 楼泰式 绝望深怨...</dd>"
                 asi+="<dd class='moredesc'>"
@@ -235,11 +244,17 @@
                 asi+="<span class='pin'><span class='n'>&nbsp;0&nbsp;</span>人点评</span>"
                 asi+="<span>最近出发班期：<span class='n'>星期二,星期四,星期日</span></span>"
                 asi+="</dd>"
+                asi+="<dd id='caoz'>"
+                asi+="<textarea name='evaluatename' rows='' cols='30px'></textarea><span><input type='button' id='hidd' value='发表评价'/></span>"
+                asi+="</dd>"
                 asi+="</dl>"
                 asi+="<div class='detail fn-right'>"
                 asi+="<span class='sup'>网订优惠</span>"
                 asi+="<p class='price'><span class='u'></span><span class='n'>￥"+msg[i]['c_price']+"</span>起</p>"
                 asi+="<span class='s m-5 J_powerFloat' rel='J_popDisong' data-song='200'><em class='dsnum'></em></span>"
+                //asi+="<p class='price'><a href='evaluate?eid="+msg[i]['o_id']+"' ><input type='button' value='我要评价' /></a></p>"
+                asi+="<input type='hidden' name='_token' value='{{ csrf_token() }}'>"
+                asi+="<p class='price'><button>我要评价</button></p>"
                 asi+="</div>"
                 asi+="</li>"
               }
@@ -248,8 +263,9 @@
           },'json')
     }
 
-    /*
+    /**
      * 收藏
+     * @return {[type]} [description]
      */
     function collect(){
         var ass='';
@@ -285,4 +301,19 @@
               $("#tihuan").html(ass);
         },'json');
     }
+
+    /**
+     * 我的评价
+     * @return {[type]} [description]
+     */
+    $("#shows").click(function(){
+      $("textarea").hide();
+    });
+
+    $("button").click(function(){
+      $("textarea").hide();
+    });
+    /*function evshow(evrid){
+        $("#shows").show()
+    }*/
 </script>
