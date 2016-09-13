@@ -14,7 +14,7 @@
     <div class="public-content">
         <div class="public-content-cont">
             <input type="hidden" name="_token" id="token" value="{{csrf_token()}}" />
-            <table class="public-cont-table">
+                <table class="public-cont-table">
                 <tr>
                     <th style="width:5%">选择</th>
                     <th style="width:10%">ID</th>

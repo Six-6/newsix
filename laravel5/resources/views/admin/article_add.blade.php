@@ -1,3 +1,5 @@
+@include("admin/index/index")
+<div class="public-ifame-content">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,6 @@
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
-		<div class="public-nav">您当前的位置：<a href="">管理首页</a>>景点添加</div>
 		<div class="public-content">
 			<div class="public-content-header">
 				<h3>修改网站配置</h3>
@@ -134,3 +135,4 @@
 </script>
 </body>
 </html>
+    </div>

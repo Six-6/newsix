@@ -1,3 +1,5 @@
+@include("admin/index/index")
+<div class="public-ifame-content">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +13,7 @@
 <div class="container">
     <div class="public-nav">您当前的位置：<a href="">管理员添加</a>></div>
     <div class="public-content">
-        <div class="public-content-header">
-            <h3>管理员添加</h3>
-        </div>
+
         <div class="public-content-cont">
             <form action="userAdd" method="post" onsubmit="return check()">
                 <input type="hidden" name="_token" id="token" value="{{csrf_token()}}" />
@@ -47,6 +47,7 @@
         </div>
     </div>
 </div>
+
 <script src="./kingediter/kindeditor-all-min.js"></script>
 <script src="./js/laydate.js"></script>
 <script src="./jq.js"></script>
@@ -95,3 +96,4 @@
 </script>
 </body>
 </html>
+</div>
