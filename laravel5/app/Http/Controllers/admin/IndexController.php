@@ -16,9 +16,7 @@ class IndexController extends BaseController
    public function index(){
        return view("admin/index/index");
    }
-   public function unsession()
-   public function unsession()
-   {
+   public function unsession(){
 	session_unset();
 	echo "<script>alert('请登录');location.href='lo'</script>";
    } 

@@ -32,7 +32,7 @@ class CommonMiddleware{
             return $next($request);
         }else{
             echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
-            header("refresh:1;url=indexs");
+            header("refresh:1;url=in");
             die("您没有权限");
         }
     }
