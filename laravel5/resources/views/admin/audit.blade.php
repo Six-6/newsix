@@ -1,3 +1,5 @@
+@include("admin/index/index")
+<div class="public-ifame-content">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,6 @@
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
-		<div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="{{URL('admin/travelnotes')}}">游记审核</a></div>
 		<div class="public-content">
 			<div class="public-content-header">
 				<h3 style="display: inline-block;">游记审核</h3>
@@ -33,7 +34,7 @@
 						<th style="width:5%">选择</th>
 						<th style="width:5%">ID</th>
 						<th style="width:35%">游记名称</th>
-						<th style="width:10%">发表人</th>>
+						<th style="width:10%">发表人</th>
 						<th style="width:10%">加入时间</th>						
 						<th style="width:15%">操作</th>
 					</tr>
@@ -89,6 +90,7 @@
 	</div>
 </body>
 </html>
+    </div>
 <script src="./js/jquery.1.12.js"></script>
 <script src="./js/mytravelnotes.js"></script>
 

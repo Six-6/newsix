@@ -12,7 +12,6 @@
     <div class="public-header">
         <div class="content">
             <div class="public-header-logo"><a href=""><i>LOGO</i>
-
                     <h3>拓源网络科技</h3></a></div>
             <div class="public-header-admin fr">
                 <p class="admin-name"><?php echo $name?>管理员 您好！</p>

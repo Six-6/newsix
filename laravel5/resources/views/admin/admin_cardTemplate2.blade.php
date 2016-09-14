@@ -1,3 +1,5 @@
+@include("admin/index/index")
+<div class="public-ifame-content">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
-		<div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="">名片管理</a></div>
+
 		<div class="public-content">
 			<div class="public-content-header">
 				<h3>修改网站配置</h3>
@@ -62,6 +64,7 @@
 	</div>
 </body>
 </html>
+</div>
 <script src="../admin/js/jquery.min.js"></script>
 <script>
 	//删除
