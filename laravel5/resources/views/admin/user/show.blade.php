@@ -29,20 +29,23 @@
                     <th style="width:10%">修改时间</th>
                     <th style="width:20%">操作</th>
                 </tr>
-                @foreach($user as $v)
+                @foreach($data["data"] as $v)
                 <tr>
                     <td><input type="checkbox"></td>
                     <td>{{$v->u_id}}</td>
                     <td>{{$v->u_name}}</td>
                     <td><span style="color:#6bc095">{{$v->rname}}</span></td>
                     <td>{{$v->u_phone}}</td>
-                    <td>{{$v->u_email}}</td><td>
+                    <td>{{$v->u_email}}</td>
                     @if(empty($v->path))
+                        <td>
                         <img class="thumb" src="./images/thumb.jpg" />
+                            </td>
                     @else
+                        <td>
                        <img class="thumb" src="./upload/{{$v->path}}" />
+                        </td>
                     @endif
-                    </td>
                     <td>{{$v->u_time}}</td>
                     <td>
                         <div class="table-fun">
@@ -53,18 +56,15 @@
                 </tr>
                 @endforeach
             </table>
-
             <div class="page">
-                <form action="" method="get">
-                    共<span>42</span>个站点
-                    <a href="">首页</a>
-                    <a href="">上一页</a>
-                    <a href="">下一页</a>
-                    第<span style="color:red;font-weight:600">12</span>页
-                    共<span style="color:red;font-weight:600">120</span>页
-                    <input type="text" class="page-input">
-                    <input type="submit" class="page-btn" value="跳转">
-                </form>
+                <div class="page-bottom">
+                    <a rel="nofollow" href="">一共{{$data['mexpage']}}页</a>
+                    <a rel="nofollow" href="">第{{$data['page']}}页</a>
+                    <a rel="nofollow" href="{{$data['url']}}?page=1">首页</a>
+                    <a rel="nofollow" href="{{$data['url']}}?page={{$data['page']-1}}">上一页</a>
+                    <a rel="nofollow" href="{{$data['url']}}?page={{$data['page']+1}}">下一页</a>
+                    <a rel="nofollow" href="{{$data['url']}}?page={{$data['mexpage']}}">末页</a>
+                </div>
             </div>
         </div>
     </div>

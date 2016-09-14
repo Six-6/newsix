@@ -8,15 +8,40 @@ class Users extends Model{
     public $table = 'users';
     /**数据数量**/
     public static function selAll($page){
-        $count = count(self::all());
-        $num=2;
-        $pagecount=ceil($count/$num);
-        $start=($page-1)*$num;
-        $data['user']=self::limit($start,$num)->get();
-        $data['last']=$page<1?1:$page-1;
-        $data['next']=$page<$pagecount?$page+1:$pagecount;
-        $data['pagecount']=$pagecount;
-        return $data;
+        $data=DB::table("users")
+            ->join("role","users.rid","=","role.rid")
+            ->get();
+        $num = 10;							 //分页从哪个下标开始
+        $count = count($data);
+        $mexpage = ceil($count/$num);		 //向上取整
+        if (empty($page))
+        {
+            $page = 1;
+        }
+        if ($page<1)
+        {
+            $page = 1;
+        }
+        if ($page>$mexpage)
+        {
+            $page = $mexpage;
+        }
+        $reg="/^\d+$/";
+        if (!preg_match($reg,$page)) {
+            $page=1;
+        }
+        $xia=($page-1)*$num;
+
+        $transmit['data']= DB::table("users")
+            ->join("role","users.rid","=","role.rid")->skip($xia)
+            ->take(6)->get();
+        //最大页 当前页 下一页 上一页
+        $transmit['mexpage'] = $mexpage;
+        $transmit['page'] = $page;
+        $transmit['next'] = $page+1;
+        $transmit['last'] = $page-1;
+        $transmit['url'] = "userShow";
+        return $transmit;
     }
     /**删除数据**/
     public static function del($id){

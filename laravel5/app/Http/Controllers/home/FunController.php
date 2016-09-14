@@ -25,6 +25,8 @@ class FunController extends BaseController{
      */
     public function show(){
         $res=F_hot::selAll();
-        return view("home.fun.show",['res'=>$res]);
+        $re=F_hot::gets();
+        print_r($re);die;
+        return view("home.fun.show",['res'=>$res,"re"=>$re]);
     }
 }

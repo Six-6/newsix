@@ -54,8 +54,10 @@ class ExchangeController extends BaseController{
     /**
      *兑换展示
      */
-    public function show(){
-        $re=Exchange::show();
-        return view("admin/exchange/lists",['re'=>$re]);
+    public function show(Request $request){
+        $page=$request->input("page");
+        //echo $page;die;
+        $data=Exchange::show($page);
+        return view("admin/exchange/lists",['data'=>$data]);
     }
 }
