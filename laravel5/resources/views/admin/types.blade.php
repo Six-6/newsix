@@ -1,3 +1,5 @@
+@include("admin/index/index")
+<div class="public-ifame-content">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
-		<div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="">信息列表</a></div>
+
 		<div class="public-content">
 			<div class="public-content-header">
 				<h3 style="display: inline-block;">修改网站配置</h3>
@@ -18,26 +20,6 @@
 			</div>
 			<div class="clearfix"></div>
 			<div class="public-content-cont two-col">
-				<!-- <div class="public-cont-left col-1">
-					<div class="public-cont-title">
-						<h3>信息分类</h3>
-					</div>
-					<ul class="public-cate-list">
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-						<li class="public-cate-item"><a href="#">+轻松一刻</a></li>
-					</ul>
-				</div> -->
 				<table class="public-cont-table col-2">
 		<thead>
 			<tr>
@@ -83,6 +65,7 @@
 	</div>
 </body>
 </html>
+</div>
 <script src="../assets/js/jquery-2.1.4.min.js"></script>
 <script>
 	function types(id){

@@ -1,3 +1,5 @@
+@include("admin/index/index")
+<div class="public-ifame-content">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,6 @@
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
-		<div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="{{URL('admin/travelnotes')}}">经典回顾</a></div>
 		<div class="public-content">
 			<div class="public-content-header">
 				<h3 style="display: inline-block;">经典回顾</h3>
@@ -89,6 +90,7 @@
 	</div>
 </body>
 </html>
+</div>
 <script src="./js/jquery.1.12.js"></script>
 <script src="./js/mytravelnotes.js"></script>
 

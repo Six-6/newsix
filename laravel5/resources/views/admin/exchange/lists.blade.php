@@ -15,6 +15,7 @@
         <div class="public-content-cont">
             <input type="hidden" name="_token" id="token" value="{{csrf_token()}}" />
             <table class="public-cont-table">
+                <table class="public-cont-table">
                 <tr>
                     <th style="width:5%">选择</th>
                     <th style="width:10%">ID</th>
@@ -30,6 +31,7 @@
                     <th style="width:10%">操作</th>
                 </tr>
                 @foreach($re as $v)
+                @foreach($data['data'] as $v)
                     <tr>
                         <td><input type="checkbox"></td>
                         <td>{{$v->e_id}}</td>
@@ -68,6 +70,14 @@
                     <input type="text" class="page-input">
                     <input type="submit" class="page-btn" value="跳转">
                 </form>
+                <div class="page-bottom">
+                    <a rel="nofollow" href="">一共{{$data['mexpage']}}页</a>
+                    <a rel="nofollow" href="">第{{$data['page']}}页</a>
+                    <a rel="nofollow" href="{{$data['url']}}?page=1">首页</a>
+                    <a rel="nofollow" href="{{$data['url']}}?page={{$data['page']-1}}">上一页</a>
+                    <a rel="nofollow" href="{{$data['url']}}?page={{$data['page']+1}}">下一页</a>
+                    <a rel="nofollow" href="{{$data['url']}}?page={{$data['mexpage']}}">末页</a>
+                </div>
             </div>
         </div>
     </div>

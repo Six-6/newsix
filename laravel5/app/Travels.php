@@ -12,7 +12,6 @@ use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
 class Travels extends Model{
     /**
-     * ??È¡????????????
      */
 	/*protected $table = 'travels';
 	
@@ -23,7 +22,8 @@ class Travels extends Model{
 	//protected $dateFormat = 'U';
 	*/
 
-	/*???Û²?Ñ¯*/
+
+
 	public function falset($page)
 	{
 		$xia=($page-1)*15;					 //??Ò³???Ä¸??Â±ê¿ªÊ¼
@@ -31,7 +31,14 @@ class Travels extends Model{
 		$num = count($count);
 		$mexpage = ceil($num/15);			 //????È¡??
 		$num = 15;							 //Ã¿Ò³????
-		//????
+	public function falset($page)
+	{
+		$xia=($page-1)*15;					 //·ÖÒ³´ÓÄÄ¸öÏÂ±ê¿ªÊ¼
+		$count = DB::table('travels')->where('t_unwilling',1)->get();
+		$num = count($count);
+		$mexpage = ceil($num/15);			 //ÏòÉÏÈ¡Õû
+		$num = 15;							 //Ã¿Ò³ÌõÊý
+		//Êý¾Ý
 		$arr['data']=DB::table('travels')
             ->Join('login', 'travels.u_id', '=', 'login.u_id')
             ->Join('order', 'login.u_id', '=', 'order.u_id')
@@ -48,7 +55,11 @@ class Travels extends Model{
 	
 	
 
+
 	/*???Ë²?Ñ¯*/
+
+	/*ÉóºË²éÑ¯*/
+
 	public function audits($page)
 	{
 		$xia=($page-1)*15;					//??Ò³???Ä¸??Â±ê¿ªÊ¼
@@ -68,17 +79,26 @@ class Travels extends Model{
 	}
 	
 
+
 	/*?????Ø¹Ë²?Ñ¯*/
 	public function classic($page)
 	{
 		$date = date('Y-m-d H:i:s',time());
 		$xia=($page-1)*15;					//??Ò³???Ä¸??Â±ê¿ªÊ¼
 		$count = DB::table('travels')->where('t_state',1)->get();//??Ñ¯?Ð¶???????
+
+	/*¾­µä»Ø¹Ë²éÑ¯*/
+	public function classic($page)
+	{
+		$date = date('Y-m-d H:i:s',time());
+		$xia=($page-1)*15;					//·ÖÒ³´ÓÄÄ¸öÏÂ±ê¿ªÊ¼
+		$count = DB::table('travels')->where('t_state',1)->get();//²éÑ¯ÓÐ¶àÉÙÊý¾Ý
 		$num = count($count);			
 		$mexpage = ceil($num/15);			//????È¡??
 		$num = 15;
 		$arr['data']=DB::table('travels')
 				->join('login', 'travels.u_id', '=', 'login.u_id')
+				->Join('login', 'travels.u_id', '=', 'login.u_id')
 				->where('t_state',1)
 				->where('t_times','<',$date)
                 ->orderBy('t_hot','desc')
@@ -109,11 +129,13 @@ class Travels extends Model{
 	
 	/**
     *?Î¼? ?Ó¾?
+    *ÓÎ¼Ç ¼Ó¾«
     * @return 
     */
 	public function essence($id)
 	{
 		//Ö´???Þ¸?
+		//Ö´ÐÐÐÞ¸Ä
 		return DB::table('travels')
             ->where('t_id',$id)
             ->update(['t_essence' => 1]);
@@ -121,6 +143,7 @@ class Travels extends Model{
 	
 	/**
 	*@?????Æ¼?
+	*@µ±¼¾ÍÆ¼ö
 	*/
 	public function season()
 	{

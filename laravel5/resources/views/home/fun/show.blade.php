@@ -136,6 +136,7 @@
                     <ul style="display: block;" class="list-data">
                         <li>
                             <a href="http://www.tuniu.com/way/189358" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="playing-img">
                                     <img src=""
                                          alt="" class="playing-img-show">
@@ -178,7 +179,6 @@
                                 </a>
                             </div>
                         </li>
-
                         <li>
                             <a href="http://www.tuniu.com/way/188810" target="_blank">
                                 <div class="playing-img">
@@ -800,7 +800,6 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
                     <ul class="list-data"></ul>
                     <ul class="list-data"></ul>

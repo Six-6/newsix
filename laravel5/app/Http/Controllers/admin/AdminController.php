@@ -62,11 +62,10 @@ class AdminController extends BaseController
         return Redirect::to("userShow");
     }
     /**用户信息展示**/
-    public function show(){
-        $user=DB::table("users")
-            ->join("role","users.rid","=","role.rid")
-            ->get();
-        return view("admin.user.show",compact('user',$user));
+    public function show(Request $request){
+        $page=$request->input("page");
+        $data=Users::selAll($page);
+        return view("admin.user.show",["data"=>$data]);
     }
     /**用户信息验证**/
     public function check(Request $request)

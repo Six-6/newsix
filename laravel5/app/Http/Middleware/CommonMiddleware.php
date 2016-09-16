@@ -8,6 +8,7 @@ use Closure;
 use Session;
 use Route;
 use DB;
+use Redirect;
 use Illuminate\Http\Request;
 class CommonMiddleware{
     /**
@@ -41,6 +42,27 @@ class CommonMiddleware{
             header("refresh:1;url=indexs");
             die("您没有权限");
         }
+        if(empty($u_id)){
+            return Redirect::to("admin/lo");
+        }else{
+            $res=DB::table('users')->where('u_id',$u_id)->lists('rid');
+            $arr=DB::table('r_p')
+                ->join('power','r_p.pid','=','power.pid')
+                ->where('r_p.rid',$res[0])
+                ->lists("p_url");
+            $path=$request->path();
+            if(in_array($path,$arr)){
+                $name=Session::get("name");
+                $arr=DB::table('power')->get();
+                $ar=$this->Cate($arr,0,0);
+                view()->share("name",$name);
+                view()->share('ar',$ar);
+                return $next($request);
+            }else{
+                echo "<script>alert('您没有权限');location.href='admin/in';</script>";
+            }
+        }
+
     }
 
     /**

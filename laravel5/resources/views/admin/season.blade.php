@@ -1,3 +1,5 @@
+@include("admin/index/index")
+<div class="public-ifame-content">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,3 +49,5 @@
 	</div>
 </body>
 </html>
+</html>
+</div>
