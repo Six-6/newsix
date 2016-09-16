@@ -34,7 +34,7 @@
 				<table class="public-cont-table col-2">
 					<tr>
 						<th style="width:5%">选择</th>
-						<th style="width:5%">ID</th>
+				
 						<th style="width:35%">游记名称</th>
 						<th style="width:10%">发表人</th>
 						<th style="width:10%">加入时间</th>						
@@ -43,9 +43,9 @@
 					@foreach ($T_classics['data'] as $T_classic)
 					<tr>
 						<td><input type="checkbox" /></td>
-						<td>{{$T_classic -> t_id}}</td>						
+									
 						<td>{{$T_classic -> t_title}}</td>
-						<td>{{$T_classic -> u_name}}</td>
+						<td>{{$T_classic -> name}}</td>
 						<td><span style="color:#999">{{$T_classic -> t_times}}</span></td>
 						<td>
 							<div class="table-fun">								
@@ -59,26 +59,26 @@
 				<table>
 					<tr>
 						<td>
-							<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/classics?page=1">首页</a>						
+							<a href="{{URL('admin/classics')}}?page=1">首页</a>						
 						</td>
 						<td>
 							@if ($T_classics['page'] == 1)   
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/classics?page=1">上一页</a>
+								<a href="{{URL('admin/classics')}}?page=1">上一页</a>
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/classics?page={{$T_classics['page']-1}}">上一页</a>
+								<a href="{{URL('admin/classics')}}?page={{$T_classics['page']-1}}">上一页</a>
 							@endif							
 						</td>
 						<td>
 							@if ($T_classics['page'] == $T_classics['mexpage']) 
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/classics?page={{$T_classics['mexpage']}}">下一页</a>
+								<a href="{{URL('admin/classics')}}?page={{$T_classics['mexpage']}}">下一页</a>
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/classics?page={{$T_classics['page']+1}}">下一页</a>
+								<a href="{{URL('admin/classics')}}?page={{$T_classics['page']+1}}">下一页</a>
 							@endif
 						</td>
 						<td>
 							@if ($T_classics['page'] > $T_classics['mexpage'])    
 							@else
-								<a href="http://www.tianhao.com/1409phpA-6/laravel5/public/admin/classics?page={{$T_classics['mexpage']}}">最后一页</a>
+								<a href="{{URL('admin/classics')}}?page={{$T_classics['mexpage']}}">最后一页</a>
 							@endif
 						</td>
 					</tr>

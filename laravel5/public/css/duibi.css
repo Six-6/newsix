@@ -1,0 +1,28 @@
+.compared_prod{position:fixed;bottom:0;z-index:9999;_position:absolute;_bottom:-100px;_left:-100px;_overflow:visible}.list_view
+li.last{border-bottom:none}.top_detail_bg{width:800px}.compared_prod
+.top_detail{background:#ffa716;width:182px;height:32px;line-height:32px;text-align:center;display:block;font-size:12px;padding-left:20px;width:162px;float:left;cursor:pointer;color:#fff}.compared_prod
+.show{background:#ffa716;height:32px;line-height:32px}.top_detail_bg
+.top_notice{float:left;height:31px;line-height:31px;width:617px;border:1px
+solid #ccc;border-left:0 none;border-bottom:0 none;background:#fff;text-align:center}.top_detail_bg .top_notice
+span{color:#f00}.compared_prod
+.com_prod_lists{width:798px;height:76px;background-image:-moz-linear-gradient(top, #ffffff, #fffbe7);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #fffbe7));filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fffbe7', GradientType='0');border-left:1px solid #ffa716;border-right:1px solid #ffa716}.compared_prod .com_prod_lists
+li{float:left;width:226px;height:74px;position:relative;border:1px
+solid #ffa716;border-right:1px solid #ffd48d;border-left:0 none}.compared_prod .com_prod_lists
+li.last{width:117px;border-right:0 none}.compared_prod
+.prod_line{padding:10px
+25px 0;text-align:center;color:#1273F9}.compared_prod .prod_line
+.c_price{font-family:"微软雅黑"}.compared_prod
+.add_more{padding:28px
+25px;text-align:center;color:#666}.compared_prod .prod_line
+a{display:block;height:40px;overflow:hidden;text-overflow:ellipsis}.compared_prod .prod_line a:link,.compared_prod .prod_line a:visited{color:#1273F9}.compared_prod .prod_line a:hover, .compared_prod .prod_line a:hover
+.f_0053aa{color:#f00}.compared_prod .prod_line
+span.c_price{color:#f60}.compared_prod
+.delete{color:#404040;height:11px;width:11px;position:absolute;right:5px;top:5px;cursor:pointer}.compared_prod .delete:hover{color:#f60}.compared_prod
+.cont_part{padding:10px
+10px 15px 12px;text-align:center}.compared_prod
+.com_btn{background-color:#559b0a;width:90px;height:24px;line-height:24px;color:#fff;display:block;text-align:center;font-weight:700;cursor:pointer}.compared_prod
+.del_btn{color:#666;margin-top:10px;display:block;cursor:pointer}.compared_prod .del_btn:hover{color:#f60}.compared_prod
+.grey{background-color:#999}.comparison_btn,.add_scroll,.addbtn{display:block;width:40px;height:40px;color:#fff;font-size:12px;text-align:center;cursor:pointer;margin:0
+0 5px 0}.comparison_btn{background:url(../images/right_suspension.png) no-repeat 0 -45px }.comparison_btn:hover{background-position:-50px -45px}.compar_select{background:url(../images/right_suspension.png) no-repeat -100px -45px }.add_scroll{background:url(../images/right_suspension.png) 0 -89px no-repeat}.add_scroll:hover{background:url(../images/right_suspension.png) -50px -89px no-repeat}.addbtn{background:url(../images/right_suspension.png) -100px -89px no-repeat}
+
+.backToTop{display:block;width:40px;height:40px;background:url(../images/right_suspension.png?v=7) 0 -135px no-repeat;color:#fff;font-size:12px;text-align:center;cursor:pointer}.backToTop:hover{background-position:-50px -135px}

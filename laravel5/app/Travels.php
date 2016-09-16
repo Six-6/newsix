@@ -12,7 +12,7 @@ use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
 class Travels extends Model{
     /**
-     * »ñÈ¡±íÖĞËùÓĞÊı¾İ
+     * ??È¡????????????
      */
 	/*protected $table = 'travels';
 	
@@ -22,45 +22,42 @@ class Travels extends Model{
 	
 	//protected $dateFormat = 'U';
 	*/
-	/************************** ÈËÔÚ ÂÃÍ¾ ******************************/
-	//ÆÀÂÛ²éÑ¯
+
+	/*???Û²?Ñ¯*/
 	public function falset($page)
 	{
-		$time = date('Y-m-d H:i:s',time());
-		$xia=($page-1)*15;					 //·ÖÒ³´ÓÄÄ¸öÏÂ±ê¿ªÊ¼
-		$count = DB::table('travels')
-            ->Join('users', 'travels.u_id', '=', 'users.u_id')
-            ->Join('order', 'users.u_id', '=', 'order.u_id')
-			->where('start_time','>' ,$time);//²éÑ¯ÓĞ¶àÉÙÊı¾İ
-		$num = count($count);				 
-		$mexpage = ceil($num/15);			 //ÏòÉÏÈ¡Õû
-		$num = 15;							 //Ã¿Ò³ÌõÊı
-		//Êı¾İ
+		$xia=($page-1)*15;					 //??Ò³???Ä¸??Â±ê¿ªÊ¼
+		$count = DB::table('travels')->where('t_unwilling',1)->get();
+		$num = count($count);
+		$mexpage = ceil($num/15);			 //????È¡??
+		$num = 15;							 //Ã¿Ò³????
+		//????
 		$arr['data']=DB::table('travels')
-            ->Join('users', 'travels.u_id', '=', 'users.u_id')
-            ->Join('order', 'users.u_id', '=', 'order.u_id')
-			->where('start_time','>' ,$time)
+            ->Join('login', 'travels.u_id', '=', 'login.u_id')
+            ->Join('order', 'login.u_id', '=', 'order.u_id')
+			->where('t_unwilling',1)
+			->where('t_state',1)
 			->skip($xia)
 			->take(15)
 			->get();
 		
-		$arr['page'] = $page;				 //µ±Ç°Ò³
-		$arr['mexpage'] = $mexpage;			 //×ÜÒ²Ò³Êı
+		$arr['page'] = $page;				 //??Ç°Ò³
+		$arr['mexpage'] = $mexpage;			 //??Ò²Ò³??
 		return	$arr;
 	}
 	
 	
-	/************************** ÓÎ¼Ç ÉóºË ******************************/
-	//ÉóºË²éÑ¯
+
+	/*???Ë²?Ñ¯*/
 	public function audits($page)
 	{
-		$xia=($page-1)*15;					//·ÖÒ³´ÓÄÄ¸öÏÂ±ê¿ªÊ¼
-		$count = DB::table('travels')->where('t_state',0)->get();//²éÑ¯ÓĞ¶àÉÙÊı¾İ
+		$xia=($page-1)*15;					//??Ò³???Ä¸??Â±ê¿ªÊ¼
+		$count = DB::table('travels')->where('t_state',0)->get();//??Ñ¯?Ğ¶???????
 		$num = count($count);
-		$mexpage = ceil($num/15);			//ÏòÉÏÈ¡Õû
+		$mexpage = ceil($num/15);			//????È¡??
 		$num = 15;
 		$arr['data']=DB::table('travels')
-				->Join('users', 'travels.u_id', '=', 'users.u_id')
+				->Join('login', 'travels.u_id', '=', 'login.u_id')
 				->where('t_state',0)
 				->skip($xia)
 				->take(15)
@@ -70,41 +67,64 @@ class Travels extends Model{
 		return	$arr;
 	}
 	
-	/************************** ¾­µä »Ø¹Ë ******************************/
-	//¾­µä»Ø¹Ë²éÑ¯
+
+	/*?????Ø¹Ë²?Ñ¯*/
 	public function classic($page)
 	{
-		$xia=($page-1)*15;					//·ÖÒ³´ÓÄÄ¸öÏÂ±ê¿ªÊ¼
-		$count = DB::table('travels')->where('t_state',1)->get();//²éÑ¯ÓĞ¶àÉÙÊı¾İ
+		$date = date('Y-m-d H:i:s',time());
+		$xia=($page-1)*15;					//??Ò³???Ä¸??Â±ê¿ªÊ¼
+		$count = DB::table('travels')->where('t_state',1)->get();//??Ñ¯?Ğ¶???????
 		$num = count($count);			
-		$mexpage = ceil($num/15);			//ÏòÉÏÈ¡Õû
+		$mexpage = ceil($num/15);			//????È¡??
 		$num = 15;
 		$arr['data']=DB::table('travels')
-				->Join('users', 'travels.u_id', '=', 'users.u_id')
+				->join('login', 'travels.u_id', '=', 'login.u_id')
 				->where('t_state',1)
+				->where('t_times','<',$date)
                 ->orderBy('t_hot','desc')
 				->skip($xia)
 				->take(15)
 				->get();
+		
 		$arr['page'] = $page;
 		$arr['mexpage'] = $mexpage;
 		return	$arr;
 	}
 	
-	/*************************** ¹²ÓĞ É¾³ı *****************************/
+
 	
 	public function del($id)
 	{
-		//Ö´ĞĞÉ¾³ı
+		//Ö´??É¾??
 		return DB::table('travels')->where('t_id',$id)->delete();
 	}
 	
 	public function updata($id)
 	{
-		//Ö´ĞĞĞŞ¸Ä
+		//Ö´???Ş¸?
 		return DB::table('travels')
             ->where('t_id',$id)
             ->update(['t_state' => 1]);
+	}
+	
+	/**
+    *?Î¼? ?Ó¾?
+    * @return 
+    */
+	public function essence($id)
+	{
+		//Ö´???Ş¸?
+		return DB::table('travels')
+            ->where('t_id',$id)
+            ->update(['t_essence' => 1]);
+	}
+	
+	/**
+	*@?????Æ¼?
+	*/
+	public function season()
+	{
+		return DB::table('inseason')->get();
 	}
 }
 

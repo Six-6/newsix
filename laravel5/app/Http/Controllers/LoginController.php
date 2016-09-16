@@ -7,18 +7,16 @@ use DB,Input,Session;
 use Validator;
 use Response;
 use Illuminate\Http\Request;
-
+use Redirect;
 
 class LoginController extends Controller {
     //前台登录
 	public function index()
 	{
-        return view('home/login/login');
+        return view('login/login');
 	}
 	public function bloin(Request $request)
 	{
-        // $date=$request->all();
-        // print_R($date);die;
         $u_name=$request->username;
         $u_pwd=$request->password;
         if (isset($u_name) && isset($u_pwd))
@@ -42,7 +40,7 @@ class LoginController extends Controller {
             {
                 Session::put('u_id',$res->u_id);
                 Session::put('name',$name);
-                return Redirect::to('admin/in');
+                return Redirect::to('/');
             }else {
                 echo "<script>alert('用户名或密码错误,请从新登陆');location.href='lo'</script>";
             }   
