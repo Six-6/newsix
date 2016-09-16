@@ -18,6 +18,30 @@ class CommonMiddleware{
      */
     public function handle($request, Closure $next){
         $u_id=Session::get('u_id');
+        if ($u_id=='') {
+            echo "<script>alert('请先登录')location.href='lo'</script>"; 
+            die;
+        }
+        $res=DB::table('users')->where('u_id',$u_id)->lists('rid');
+    
+        $arr=DB::table('r_p')
+            ->join('power','r_p.pid','=','power.pid')
+            ->where('r_p.rid',$res[0])
+            ->lists("p_url");
+            // print_r($arr);die;
+        $path=$request->path();
+        if(in_array($path,$arr)){
+            $name=Session::get("name");
+            $arr=DB::table('power')->get();
+            $ar=$this->Cate($arr,0,0);
+            view()->share("name",$name);
+            view()->share('ar',$ar);
+            return $next($request);
+        }else{
+            echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+            header("refresh:1;url=indexs");
+            die("您没有权限");
+        }
         if(empty($u_id)){
             return Redirect::to("admin/lo");
         }else{

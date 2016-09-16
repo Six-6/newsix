@@ -135,6 +135,7 @@
                     <div style="display: none;" class="commen-loadding"></div>
                     <ul style="display: block;" class="list-data">
                         <li>
+                            <a href="http://www.tuniu.com/way/189358" target="_blank">
                             <a href="" target="_blank">
                                 <div class="playing-img">
                                     <img src=""
@@ -175,6 +176,627 @@
                                          alt="">
 
                                     <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.tuniu.com/way/188810" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">7</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 </p>
+
+                                            <p>D2 </p>
+
+                                            <p>D3 </p>
+
+                                            <p>D4 </p>
+
+                                            <p>D5 </p>
+
+                                            <p>D6 </p>
+
+                                            <p>D7 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="188810"><i></i>3</div>
+                                <div class="playing-comment"><i></i>0</div>
+                                <div class="playing-scan"><i></i>3650</div>
+                                <a href="http://www.tuniu.com/person/22C427593DF54F523241A24C9ACCCC9E" target="_blank">
+                                    <img src=""
+                                         alt="">
+
+                                    <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/188453" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="./fun/recbg.png" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num"></span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 </p>
+
+                                            <p>D2 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="188453"><i></i>3</div>
+                                <div class="playing-comment"><i></i>0</div>
+                                <div class="playing-scan"><i></i>1609</div>
+                                <a href="http://www.tuniu.com/person/F239DD24744253C52493602FBB57D9C1" target="_blank">
+                                    <img src="./fun/Cii9EFdP0MCIbDMdAAB_5XFD8JsAAGSiAAskq8AAH_9619_w120_h120_c1_.jpg"
+                                         alt="">
+
+                                    <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/195382" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="./fun/recbg.png" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">17</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit">俄罗斯17日自由行（3大主城、5金环小城、1银环小城）</div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 香港-莫斯科</p>
+
+                                            <p>D2 莫斯科-弗拉基米尔-博戈柳博沃-苏兹达尔</p>
+
+                                            <p>D3 苏兹达尔-弗拉基米尔-莫斯科</p>
+
+                                            <p>D4 莫斯科-大诺夫哥罗德</p>
+
+                                            <p>D5 大诺夫哥罗德-圣彼得堡</p>
+
+                                            <p>D6 圣彼得堡</p>
+
+                                            <p>D7 圣彼得堡</p>
+
+                                            <p>D8 圣彼得堡-巴甫洛夫斯克-叶卡捷琳娜宫</p>
+
+                                            <p>D9 圣彼得堡</p>
+
+                                            <p>D10 圣彼得堡-雅罗斯拉夫尔</p>
+
+                                            <p>D11 雅罗斯拉夫尔-大罗斯托夫</p>
+
+                                            <p>D12 大罗斯托夫-谢尔盖耶夫</p>
+
+                                            <p>D13 谢尔盖耶夫-莫斯科</p>
+
+                                            <p>D14 莫斯科-喀山</p>
+
+                                            <p>D15 喀山-莫斯科</p>
+
+                                            <p>D16 莫斯科-香港</p>
+
+                                            <p>D17 莫斯科-香港-深圳</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="195382"><i></i>5</div>
+                                <div class="playing-comment"><i></i>0</div>
+                                <div class="playing-scan"><i></i>3188</div>
+                                <a href="http://www.tuniu.com/person/5B81880A543BFBCEA831EBF85C76C11E" target="_blank">
+                                    <img src="./fun/Cii9EVbv-5aIDHM2ABfRuEwKIZ8AACtkAM-obsAF9HQ375_w120_h120_c1_.jpg"
+                                         alt="">
+
+                                    <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/193346" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">3</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1</p>
+
+                                            <p>D2 </p>
+
+                                            <p>D3 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="193346"><i></i>0</div>
+                                <div class="playing-comment"><i></i>0</div>
+                                <div class="playing-scan"><i></i>1890</div>
+                                <a href="http://www.tuniu.com/person/B59532BF49BE98F98BF3113D673AFA56" target="_blank">
+                                    <img src="" alt="">
+
+                                    <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/190599" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">7</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 </p>
+
+                                            <p>D2 </p>
+
+                                            <p>D3 </p>
+
+                                            <p>D4 </p>
+
+                                            <p>D5 </p>
+
+                                            <p>D6 </p>
+
+                                            <p>D7 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="190599"><i></i>8</div>
+                                <div class="playing-comment"><i></i>5</div>
+                                <div class="playing-scan"><i></i>2330</div>
+                                <a href="http://www.tuniu.com/person/AF7C03A7F65618C342755CAD54AB460C" target="_blank">
+                                    <img src="./fun/Cii-TleAmS-IPM17AAZWX2fRnpUAAAENwIOQA8ABlZ3175_w120_h120_c1_.jpg"
+                                         alt="">
+
+                                    <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/190105" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">2</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 </p>
+
+                                            <p>D2 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="190105"><i></i>1</div>
+                                <div class="playing-comment"><i></i>0</div>
+                                <div class="playing-scan"><i></i>1344</div>
+                                <a href="http://www.tuniu.com/person/B1924DDDF511020756BADF0EAD9C59F9" target="_blank">
+                                    <img src="./fun/Cii9EFdD0POIAb7nABX05pyV3wsAAGJVwN0BDcAFfT-333_w120_h120_c1_.jpg"
+                                         alt="">
+
+                                    <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/188649" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">7</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 </p>
+
+                                            <p>D2 </p>
+
+                                            <p>D3 </p>
+
+                                            <p>D4 </p>
+
+                                            <p>D5 </p>
+
+                                            <p>D6 </p>
+
+                                            <p>D7 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="188649"><i></i>16</div>
+                                <div class="playing-comment"><i></i>16</div>
+                                <div class="playing-scan"><i></i>1855</div>
+                                <a href="http://www.tuniu.com/person/338CA2AABE559A5929DAE437D0F28C36" target="_blank">
+                                    <img src="./fun/Cii9EVdTADGIamGbAA9NCDOpHSAAAGY9wPvdgsAD00g768_w120_h120_c1_.JPG"
+                                         alt="">
+
+                                    <div class="playing-auther-name">紫色飞絮</div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/188645" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">11</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 </p>
+
+                                            <p>D2 </p>
+
+                                            <p>D3 伊斯坦布尔</p>
+
+                                            <p>D4 伊斯坦布尔</p>
+
+                                            <p>D5 </p>
+
+                                            <p>D6 </p>
+
+                                            <p>D7 </p>
+
+                                            <p>D8 格雷梅热气球日出</p>
+
+                                            <p>D9 棉花堡</p>
+
+                                            <p>D10 费特希耶地中海滑翔伞</p>
+
+                                            <p>D11 费特希耶</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="188645"><i></i>2</div>
+                                <div class="playing-comment"><i></i>0</div>
+                                <div class="playing-scan"><i></i>5441</div>
+                                <a href="http://www.tuniu.com/person/C0240C0C9F4E11E28A0F62CE9C6E8A23" target="_blank">
+                                    <img src="./fun/Cii9EFdFco-IfGunAAeJ8v0QjFsAAGKwgOQi1QAB4oK598_w120_h120_c1_.jpg"
+                                         alt="">
+
+                                    <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/188530" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">4</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 </p>
+
+                                            <p>D2 </p>
+
+                                            <p>D3 </p>
+
+                                            <p>D4 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="188530"><i></i>3</div>
+                                <div class="playing-comment"><i></i>1</div>
+                                <div class="playing-scan"><i></i>3405</div>
+                                <a href="http://www.tuniu.com/person/B59532BF49BE98F98BF3113D673AFA56" target="_blank">
+                                    <img src="./fun/f5ba6e0589a7dbd1547c7cd088482f81_w120_h120_c1_t0.jpg" alt="">
+
+                                    <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/188450" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">4</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 </p>
+
+                                            <p>D2 </p>
+
+                                            <p>D3 </p>
+
+                                            <p>D4 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="188450"><i></i>5</div>
+                                <div class="playing-comment"><i></i>0</div>
+                                <div class="playing-scan"><i></i>2845</div>
+                                <a href="http://www.tuniu.com/person/B59532BF49BE98F98BF3113D673AFA56" target="_blank">
+                                    <img src="./fun/f5ba6e0589a7dbd1547c7cd088482f81_w120_h120_c1_t0.jpg" alt="">
+
+                                    <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/188435" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">4</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 </p>
+
+                                            <p>D2 </p>
+
+                                            <p>D3 </p>
+
+                                            <p>D4 伦敦</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="188435"><i></i>3</div>
+                                <div class="playing-comment"><i></i>1</div>
+                                <div class="playing-scan"><i></i>2592</div>
+                                <a href="http://www.tuniu.com/person/9BAA2BF99BD3CC88A2E100A0630C072D" target="_blank">
+                                    <img src="./fun/7bb40c694568935e86d1916d48aee37d_w120_h120_c1_t0.jpg" alt="">
+
+                                    <div class="playing-auther-name"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/188385" target="_blank">
+                                <div class="playing-img">
+                                    <img src=""
+                                         alt="" class="playing-img-show">
+                                    <img src="" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">3</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit"></div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 上海-阿布扎比-日内瓦</p>
+
+                                            <p>D2 日内瓦-蒙特勒-韦沃-洛桑-日内瓦</p>
+
+                                            <p>D3 日内瓦-因特拉肯</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="188385"><i></i>2</div>
+                                <div class="playing-comment"><i></i>1</div>
+                                <div class="playing-scan"><i></i>2842</div>
+                                <a href="http://www.tuniu.com/person/F7B314F45296EC1A42892EF072A7A6E1" target="_blank">
+                                    <img src="./fun/Cii9EVckQ7WICcttAAB_gUaqMdQAAFIbQMfoY8AAH-Z741_w120_h120_c1_.jpg"
+                                         alt="">
+
+                                    <div class="playing-auther-name">享旅</div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/188370" target="_blank">
+                                <div class="playing-img">
+                                    <img src="./fun/Cii-TlfBD5KIYA2qAAMRr6z_WEoAABxdAGd5vYAAxHH305_w300_h165_c1_.jpg"
+                                         alt="" class="playing-img-show">
+                                    <img src="./fun/recbg.png" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">4</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit">【缅甸】4天4夜曼德勒 古老国度的迷人光线</div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 昆明-曼德勒</p>
+
+                                            <p>D2 曼德勒</p>
+
+                                            <p>D3 曼德勒</p>
+
+                                            <p>D4 曼德勒-眉缪</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="188370"><i></i>4</div>
+                                <div class="playing-comment"><i></i>0</div>
+                                <div class="playing-scan"><i></i>4489</div>
+                                <a href="http://www.tuniu.com/person/1D96BB332B719375BE1E3D8645E9D029" target="_blank">
+                                    <img src="./fun/Cii-TFeqdtGIVj2OAABMYn7ocjQAABAXgNUpAEAAEx6853_w120_h120_c1_.jpg"
+                                         alt="">
+
+                                    <div class="playing-auther-name">太空精灵</div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="http://www.tuniu.com/way/188365" target="_blank">
+                                <div class="playing-img">
+                                    <img src="./fun/Cii-Tle_3AeIP87KAAUnMzn-YDYAABvYwFRN8EABSdL799_w300_h165_c1_.jpg"
+                                         alt="" class="playing-img-show">
+                                    <img src="./fun/recbg.png" alt="" class="playing-meng">
+
+                                    <div class="playing-des">
+                                        <div class="playing-top">
+                                            <div class="playing-days">
+                                                <span class="day-num">7</span>
+                                                <span class="day-day">DAYS</span>
+                                            </div>
+                                            <div class="playing-tit">吃河豚、和牛、蟹道乐、怀石料理才是游玩东京的正确打开方式</div>
+                                        </div>
+                                        <div class="playing-hover-show">
+                                            <p>D1 广州-东京</p>
+
+                                            <p>D2 涩谷</p>
+
+                                            <p>D3 东京</p>
+
+                                            <p>D4 东京</p>
+
+                                            <p>D5 东京</p>
+
+                                            <p>D6 东京</p>
+
+                                            <p>D7 东京-广州</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="playing-tit-show">
+                                <div class="playing-ding" id="dingAjax" data-id="188365"><i></i>6</div>
+                                <div class="playing-comment"><i></i>1</div>
+                                <div class="playing-scan"><i></i>2789</div>
+                                <a href="http://www.tuniu.com/person/46410F4B6E0A51086A2D45D9DCF9B202" target="_blank">
+                                    <img src="./fun/Cii9EFc0AQmIWijSAAKYY7xQOzcAAFZCgBEM7cAAph7615_w120_h120_c1_.jpg"
+                                         alt="">
+
+                                    <div class="playing-auther-name">敏华爱美丽</div>
                                 </a>
                             </div>
                         </li>

@@ -23,7 +23,13 @@ session_start();
 class UserController extends BaseController{
     /**个人资料展示**/
     public function Add(){
+
+        $uid =1;
+       /* $person=Login::selAll();
+            print_r($person);die;*/
+
         $uid =Session::get('u_id');
+
         $person=DB::table('login')
             ->where('u_id',$uid)
             ->get();

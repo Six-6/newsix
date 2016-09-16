@@ -14,6 +14,7 @@
     <div class="public-content">
         <div class="public-content-cont">
             <input type="hidden" name="_token" id="token" value="{{csrf_token()}}" />
+            <table class="public-cont-table">
                 <table class="public-cont-table">
                 <tr>
                     <th style="width:5%">选择</th>
@@ -29,6 +30,7 @@
                     <th style="width:10%">商品类型</th>
                     <th style="width:10%">操作</th>
                 </tr>
+                @foreach($re as $v)
                 @foreach($data['data'] as $v)
                     <tr>
                         <td><input type="checkbox"></td>
@@ -58,6 +60,16 @@
             </table>
 
             <div class="page">
+                <form action="" method="get">
+                    共<span>42</span>个站点
+                    <a href="">首页</a>
+                    <a href="">上一页</a>
+                    <a href="">下一页</a>
+                    第<span style="color:red;font-weight:600">12</span>页
+                    共<span style="color:red;font-weight:600">120</span>页
+                    <input type="text" class="page-input">
+                    <input type="submit" class="page-btn" value="跳转">
+                </form>
                 <div class="page-bottom">
                     <a rel="nofollow" href="">一共{{$data['mexpage']}}页</a>
                     <a rel="nofollow" href="">第{{$data['page']}}页</a>
