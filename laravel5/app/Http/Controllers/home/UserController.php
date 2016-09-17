@@ -34,7 +34,7 @@ class UserController extends BaseController{
             ->where('u_id',$uid)
             ->get();
         $type=Type::selAll();
-
+        //print_r($person);die;
         return view("home.user.person",["person"=>$person,"type"=>$type]);
     }
     /**个人资料修改**/
@@ -73,7 +73,6 @@ class UserController extends BaseController{
             DB::table("login")->where(["u_id"=> 1])->update(['path' => $paths]);
             return view("home/common/common");
         }
-
     }
     /**修改密码**/
     public function psw(){
