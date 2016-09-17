@@ -1,4 +1,3 @@
-
 @include("admin/index/index")
 <div class="public-ifame-content">
 <!DOCTYPE html>
@@ -11,6 +10,7 @@
 </head>
 <body marginwidth="0" marginheight="0">
 	<div class="container">
+		<div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="">信息列表</a></div>
 		<div class="public-content">
 			<div class="public-content-header">
 				<h3 style="display: inline-block;">修改网站配置</h3>
@@ -48,5 +48,6 @@
 		</div>
 	</div>
 </body>
+</html>
 </html>
 </div>

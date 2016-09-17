@@ -12,7 +12,6 @@
     <div class="public-header">
         <div class="content">
             <div class="public-header-logo"><a href=""><i>LOGO</i>
-
                     <h3>拓源网络科技</h3></a></div>
             <div class="public-header-admin fr">
                 <p class="admin-name"><?php echo $name?>管理员 您好！</p>
@@ -30,11 +29,14 @@
 <div class="public-ifame mt20">
     <div class="content">
         <div class="clearfix"></div>
+
+    <div class="content" style="height: 550px">
         <!-- 左侧导航栏 -->
         <div class="public-ifame-leftnav">
             <div class="public-title-warrp">
                 <div class="public-ifame-title ">
                     <a href="">首页</a>
+                    <a href="in">首页</a>
                 </div>
             </div>
             <ul class="left-nav-list">

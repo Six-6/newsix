@@ -14,15 +14,22 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
 
+use App\Recursion;
+
 session_start();//开启session
 class RecursionController extends BaseController{
     /*
      * 递归展示首页侧边栏
      */
     public function recursion(){
+        $navigation = DB::table('types')->get();
         $tables = DB::table('region')->get();
+        $data = DB::table('scenic_spot')
+            ->join('region','scenic_spot.r_id','=','region.r_id')
+            ->limit(4)
+            ->get();
         $ast = $this->Cate($tables,0,0);
-        return view('home.home',['arr1' => $ast]);
+        return view('home.home3',['arr1' => $ast,'arr2' => $navigation,'arr3' => $data]);
     }
 
     public function Cate(&$info, $child, $pid)  
@@ -82,6 +89,21 @@ class RecursionController extends BaseController{
             ->get();
         $nums = count($sqlSel);
         echo json_encode($sqlSel);
+    }
+
+    /**
+     *根据地区查询景点
+     *
+     * @return  [description]
+     */
+    public function scenic(){
+        $sid = Input::get('showsjd');
+        //调用model层
+        $model = new Recursion();
+        //调用查询方法
+        $flights = $model->getScenic($sid);
+        //展示
+        print_r( json_decode(json_encode($flights),true));
     }
 
 }

@@ -41,7 +41,6 @@
 						<td></td>
 						<td>
 							<div class="table-fun">
-								<a href="">修改</a>
 								<a href="javascript:void(0)" onclick="delway({{$v->s_id}})">删除</a>
 							</div>
 						</td>
@@ -101,7 +100,9 @@
                     $("#aa"+s_id).hide();
                     $("#s"+s_id).html(vals);
                 }else{
-                    alert("修改失败");
+                    $("#s"+s_id).show();
+                    $("#aa"+s_id).hide();
+                    $("#s"+s_id).html(vals);
                 }
             }
         })

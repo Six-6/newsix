@@ -47,5 +47,37 @@ class Exchange extends Model {
     public static function show(){
         $re=self::join("e_type","exchange.t_id","=","e_type.t_id")->get();
         return $re;
+
+    public static function show($page){
+        $data=self::join("e_type","exchange.t_id","=","e_type.t_id")->get();
+        $num = 10;							 //分页从哪个下标开始
+        $count = count($data);
+        $mexpage = ceil($count/$num);		 //向上取整
+        if (empty($page))
+        {
+            $page = 1;
+        }
+        if ($page<1)
+        {
+            $page = 1;
+        }
+        if ($page>$mexpage)
+        {
+            $page = $mexpage;
+        }
+        $reg="/^\d+$/";
+        if (!preg_match($reg,$page)) {
+            $page=1;
+        }
+        $xia=($page-1)*$num;
+        $transmit['data']= self::join("e_type","exchange.t_id","=","e_type.t_id")->skip($xia)
+            ->take(6)->get();
+        //最大页 当前页 下一页 上一页
+        $transmit['mexpage'] = $mexpage;
+        $transmit['page'] = $page;
+        $transmit['next'] = $page+1;
+        $transmit['last'] = $page-1;
+        $transmit['url'] = "exchangeShow";
+        return $transmit;
     }
 }

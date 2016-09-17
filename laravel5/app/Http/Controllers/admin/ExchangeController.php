@@ -22,16 +22,19 @@ class ExchangeController extends BaseController{
      * 兑换页面展示
      */
     public function add(Request $request){
-        if(empty($request->input("e_name"))){
+ 
+
+        $e_name=$request->input("e_name");
+        if(empty($e_name)){
+
             $type=E_type::selAll();
             return view("admin/exchange/show",['type'=>$type]);
         }else{
             $re=$request->input();
             unset($re['_token']);
             $file = $request->file("e_img");
-			print_r($file);die;
             $clientName = $file->getClientOriginalName();//获得文件名字
-			
+		
             $entension = $file->getClientOriginalExtension(); //上传文件的后缀.
             $newName = md5(date('ymdhis') . $clientName) . "." . $entension;//改名字
             $path = $file->move('./admin/upload', $newName);//将图片放到storage/uploads下
@@ -55,8 +58,11 @@ class ExchangeController extends BaseController{
     /**
      *兑换展示
      */
-    public function show(){
-        $re=Exchange::show();
-        return view("admin/exchange/lists",['re'=>$re]);
+    public function show(Request $request){
+        $page=$request->input("page");
+        //echo $page;die;
+        $data=Exchange::show($page);
+        return view("admin/exchange/lists",['data'=>$data]);
+
     }
 }
