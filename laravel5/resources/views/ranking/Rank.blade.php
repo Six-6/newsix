@@ -30,11 +30,11 @@
         <div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
                 <div class="crumbs fl">
-                    <a href="home/siterecommend" class="word" rel="nofollow">攻略首页</a>
+                    <a href="siterecommend" class="word" rel="nofollow">攻略首页</a>
 
-                    <a href="home/note" target="_blank" rel="nofollow" class="word">游记</a>
+                    <a href="note" target="_blank" rel="nofollow" class="word">游记</a>
                     <a href="http://www.tuniu.com/way/" target="_blank" rel="nofollow" class="word">达人玩法</a>
-                    <a href="home/ranking" rel="nofollow" class="word cur">风向标</a>
+                    <a href="ranking" rel="nofollow" class="word cur">风向标</a>
                     <a href="http://www.tuniu.com/traveler" target="_blank" rel="nofollow" class="word">旅游达人</a>
                     <a href="http://ask.tuniu.com/" target="_blank" rel="nofollow" class="word">攻略问答</a>
                 </div>
@@ -47,11 +47,13 @@
 <div class="wrapmain">
 		<div class="nav-ind">
 			<div class="navbar">
-				<!--<div class="indlogo"></div>-->
-				<a href="home/siterecommend" class="indsep" id="shouye"><div class="shouye">首页</div></a>
+				<div class="indlogo"></div>
+				<a href="{{URL('home/siterecommend')}}" class="indsep" id="shouye"><div class="shouye">首页</div></a>
 
-                <a href="home/ranking" class="indsep selected" id="list"><div class="list">排行榜</div></a>                                				
-				<a href="http://top.tuniu.com/topic/" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
+                <a href="{{URL('home/ranking')}}" class="indsep selected" id="list"><div class="list">排行榜</div></a>
+                                
+				
+				<a href="{{URL('home/themes')}}" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
 				<a href="http://top.tuniu.com/notes/" class="indsep" id="intour">
                     <p class="inactive"></p>
                     <div class="intour">人在旅途</div></a>

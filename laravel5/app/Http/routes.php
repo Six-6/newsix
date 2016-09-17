@@ -141,8 +141,8 @@ Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/
 
 
 Route::group(['middleware' => ['common']], function () {
+	Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
 
-    Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
 	Route::get('admin/userShow', 'admin\IndexController@i');/**后台管理员列表**/
 	
 
@@ -197,7 +197,7 @@ Route::group(['middleware' => ['common']], function () {
 	Route::get('admin/travelsdelete', 'admin\TravelnotesController@deletes');/**游记删除**/
 	Route::get('admin/travelsdelet', 'admin\TravelnotesController@delet');/**游记删除**/
 	Route::get('admin/audit', 'admin\TravelnotesController@audit');/**展示待审核2**/
-	Route::get('admin/essences', 'admin\TravelnotesController@essences');/**展示待审核2**/
+	Route::get('admin/essences', 'admin\TravelnotesController@essences');/**游记加精**/
 	/**后台主页**/
 	Route::get('admin/way', 'WayController@index');/**旅游方式2**/
 	Route::get('admin/wayadd', 'WayController@wayadd');/**2**/
@@ -278,7 +278,18 @@ Route::get('home/siterecommend', 'season\IndicatorController@siterecommend');//�
 Route::get('home/month', 'season\IndicatorController@month');//季节推荐
 Route::get('home/ranking', 'season\RankingController@index');//排行榜
 Route::get('home/note', 'season\NoteController@index');//前台游记首页
+Route::post('home/search', 'season\NoteController@search');//前台游记首页
 Route::get('home/lnews', 'season\NoteController@lnews');//前台最新发布
+/***前台 主题***/
+Route::get('home/them', 'season\ThemeController@them');//前台风向标主题 首页
+Route::get('home/themes', 'season\ThemeController@themes');//前台风向标主题 权威
+Route::get('home/freshs', 'season\ThemeController@freshs');//前台风向标主题 尝鲜
+Route::get('home/shutter', 'season\ThemeController@shutter');//前台风向标主题 快门
+Route::get('home/cate', 'season\ThemeController@cate');//前台风向标主题 美食
+Route::get('home/shopping', 'season\ThemeController@shopping');//前台风向标主题 购物
+Route::get('home/literature', 'season\ThemeController@literature');//前台风向标主题 文艺
+Route::get('home/details', 'season\ThemeController@details');//游记详情
+Route::post('home/dcomment', 'season\ThemeController@dcomment');//游记详情评论
 
 
 
@@ -755,7 +766,7 @@ Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅�
 Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/
 Route::get('home/personDel', 'home\FootprintController@personDel');/**用户--退出*/
 Route::get('home/collect', 'home\FootprintController@yhCollect');/**用户--收藏*/
-D
+
 
 
 

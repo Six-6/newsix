@@ -20,17 +20,14 @@
         <div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
                 <div class="crumbs fl">
-                    <a href="http://go.tuniu.com/" class="word" rel="nofollow">攻略首页</a>
+                    <a href="siterecommend" class="word" rel="nofollow">攻略首页</a>
 
-                    <a href="http://trips.tuniu.com/" target="_blank" rel="nofollow" class="word">游记</a>
+                    <a href="note" target="_blank" rel="nofollow" class="word">游记</a>
                     <a href="http://www.tuniu.com/way/" target="_blank" rel="nofollow" class="word">达人玩法</a>
-                    <a href="http://top.tuniu.com/" rel="nofollow" class="word cur">途牛风向标</a>
+                    <a href="ranking" rel="nofollow" class="word cur">风向标</a>
                     <a href="http://www.tuniu.com/traveler" target="_blank" rel="nofollow" class="word">旅游达人</a>
                     <a href="http://ask.tuniu.com/" target="_blank" rel="nofollow" class="word">攻略问答</a>
                 </div>
-                <div class="f_youji fr">
-                    <a class="report" href="http://www.tuniu.com/trips/write/">发表游记</a>
-                                    </div>
             </div>
         </div>
 
@@ -38,13 +35,12 @@
 		<div class="nav-ind">
 			<div class="navbar">
 				<div class="indlogo"></div>
-				<a href="http://top.tuniu.com/" class="indsep selected" id="shouye"><div class="shouye">首页</div></a>
+				<a href="{{URL('home/siterecommend')}}" class="indsep selected" id="shouye"><div class="shouye">首页</div></a>
 
-                                                                  <a href="http://top.tuniu.com/line/" class="indsep" id="list"><div class="list">排行榜</div></a>
+                <a href="{{URL('home/ranking')}}" class="indsep" id="list"><div class="list">排行榜</div></a>
                                 
-				<a href="http://top.tuniu.com/trend/" class="indsep" id="trend">
-                                    <div class="trend">出游趋势</div></a>
-				<a href="http://top.tuniu.com/topic/" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
+				
+				<a href="{{URL('home/themes')}}" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
 				<a href="http://top.tuniu.com/notes/" class="indsep" id="intour">
                     <p class="inactive"></p>
                     <div class="intour">人在旅途</div></a>
@@ -97,17 +93,17 @@
 <div class="product-one">
 		@foreach($data['authority'] as $error2)
         <div class="product-list">
-            <a href="" target="_blank"><img style="display: inline;" data-src="http://m.tuniucdn.com/fb2/t1/G2/M00/5A/22/Cii-T1fNLN6IPVK2AACmtBPUDQMAACEvgGCwaEAAKbM623_w800_h0_c0_t0.jpg" src="{{$error2 -> t_img}}" alt="{{$error2 -> t_title}}" height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?id={{$error2 -> tt_id}}"><img style="display: inline;" src="{{$error2 -> t_img}}" alt="{{$error2 -> t_title}}" height="140" width="250"></a>
                         <div class="product-title">
-                <a href="http://top.tuniu.com/topic/d106" target="_blank">{{$error2 -> t_title}}</a>
+                <a href="{{URL('home/details')}}?id={{$error2 -> tt_id}}" >{{$error2 -> t_title}}</a>
             </div>
-            <a class="product-title-bg" href="http://top.tuniu.com/topic/d106" target="_blank"></a>
+            <a class="product-title-bg" href="http://top.tuniu.com/topic/d106" ></a>
         </div>
         @endforeach      
                 <div class="product-list">
             <img style="display: inline;" data-src="http://img3.tuniucdn.com/img/201506091800/indicator/more1.jpg" src="../image/more1.jpg" alt="更多精彩" height="140" width="250">
-            <a target="_blank" href="http://top.tuniu.com/topic/" class="product-more indexicon">更多精彩</a>
-            <a style="overflow: hidden; height: 0px;" class="product-bg" href="http://top.tuniu.com/topic/" target="_blank"></a>
+            <a  href="{{URL('home/themes')}}" class="product-more indexicon">更多精彩</a>
+            <a style="overflow: hidden; height: 0px;" class="product-bg" href="http://top.tuniu.com/topic/" ></a>
         </div>
     </div>
     </div>
@@ -129,17 +125,17 @@
 <div class="product-one">
 		@foreach($data['fresh'] as $error3)
         <div class="product-list">
-            <a href="" target="_blank"><img style="display: inline;" data-src="http://m.tuniucdn.com/fb2/t1/G2/M00/5A/27/Cii-TFfNLyeIVvN1AACpgUJvo0YAACExQMevh8AAKmZ020_w800_h0_c0_t0.jpg" src="{{$error3 -> t_img}}" alt="{{$error3 -> t_title}} " height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?id={{$error3 -> tt_id}}" ><img style="display: inline;"  src="{{$error3 -> t_img}}" alt="{{$error3 -> t_title}} " height="140" width="250"></a>
                         <div class="product-title">
-                <a href="http://top.tuniu.com/topic/d323" target="_blank">{{$error3 -> t_title}} </a>
+                <a href="{{URL('home/details')}}?id={{$error3 -> tt_id}}" >{{$error3 -> t_title}} </a>
             </div>
-            <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" target="_blank"></a>
+            <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" ></a>
         </div>
         @endforeach
                 <div class="product-list">
             <img data-src="http://img3.tuniucdn.com/img/201506091800/indicator/more2.jpg" src="../image/more2.jpg" alt="更多精彩" height="140" width="250">
-            <a target="_blank" href="http://top.tuniu.com/topic/?cate=36" class="product-more indexicon">更多精彩</a>
-            <a class="product-bg" href="http://top.tuniu.com/topic/?cate=36" target="_blank"></a>
+            <a  href="{{URL('home/freshs')}}" class="product-more indexicon">更多精彩</a>
+            <a class="product-bg" href="http://top.tuniu.com/topic/?cate=36" ></a>
         </div>
     </div>
     </div>
@@ -161,18 +157,18 @@
 <div class="product-one">
         @foreach($data['shutter'] as $error4)
         <div class="product-list">
-            <a href="" target="_blank"><img style="display: inline;" data-src="http://m.tuniucdn.com/fb2/t1/G2/M00/5A/27/Cii-TFfNLyeIVvN1AACpgUJvo0YAACExQMevh8AAKmZ020_w800_h0_c0_t0.jpg" src="{{$error4 -> t_img}}" alt="{{$error4 -> t_title}} " height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?id={{$error4 -> tt_id}}" ><img style="display: inline;"  src="{{$error4 -> t_img}}" alt="{{$error4 -> t_title}} " height="140" width="250"></a>
                         <div class="product-title">
-                <a href="http://top.tuniu.com/topic/d323" target="_blank">{{$error4 -> t_title}} </a>
+                <a href="{{URL('home/details')}}?id={{$error4 -> tt_id}}" >{{$error4 -> t_title}} </a>
             </div>
-            <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" target="_blank"></a>
+            <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" ></a>
         </div>
         @endforeach
                 
                 <div class="product-list">
             <img data-src="http://img3.tuniucdn.com/img/201506091800/indicator/more3.jpg" src="../image/more3.jpg" alt="更多精彩" height="140" width="250">
-            <a target="_blank" href="http://top.tuniu.com/topic/?cate=41" class="product-more indexicon">更多精彩</a>
-            <a class="product-bg" href="http://top.tuniu.com/topic/?cate=41" target="_blank"></a>
+            <a  href="{{URL('home/shutter')}}" class="product-more indexicon">更多精彩</a>
+            <a class="product-bg" href="http://top.tuniu.com/topic/?cate=41" ></a>
         </div>
     </div>
     </div>
@@ -194,18 +190,18 @@
 <div class="product-one">
         @foreach($data['cate'] as $error5)
         <div class="product-list">
-            <a href="" target="_blank"><img style="display: inline;" data-src="http://m.tuniucdn.com/fb2/t1/G2/M00/5A/27/Cii-TFfNLyeIVvN1AACpgUJvo0YAACExQMevh8AAKmZ020_w800_h0_c0_t0.jpg" src="{{$error5 -> t_img}}" alt="{{$error5 -> t_title}} " height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?id={{$error5 -> tt_id}}" ><img style="display: inline;"  src="{{$error5 -> t_img}}" alt="{{$error5 -> t_title}} " height="140" width="250"></a>
                         <div class="product-title">
-                <a href="http://top.tuniu.com/topic/d323" target="_blank">{{$error5 -> t_title}} </a>
+                <a href="{{URL('home/details')}}?id={{$error5 -> tt_id}}" >{{$error5 -> t_title}} </a>
             </div>
-            <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" target="_blank"></a>
+            <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" ></a>
         </div>
         @endforeach
                 
                 <div class="product-list">
             <img data-src="http://img3.tuniucdn.com/img/201506091800/indicator/more4.jpg" src="../image/more4.jpg" alt="更多精彩" height="140" width="250">
-            <a target="_blank" href="http://top.tuniu.com/topic/?cate=38" class="product-more indexicon">更多精彩</a>
-            <a class="product-bg" href="http://top.tuniu.com/topic/?cate=38" target="_blank"></a>
+            <a  href="{{URL('home/cate')}}" class="product-more indexicon">更多精彩</a>
+            <a class="product-bg" href="http://top.tuniu.com/topic/?cate=38" ></a>
         </div>
     </div>
     </div>
@@ -227,18 +223,18 @@
 <div class="product-one">
         @foreach($data['shopping'] as $error6)
         <div class="product-list">
-            <a href="" target="_blank"><img style="display: inline;" data-src="http://m.tuniucdn.com/fb2/t1/G2/M00/5A/27/Cii-TFfNLyeIVvN1AACpgUJvo0YAACExQMevh8AAKmZ020_w800_h0_c0_t0.jpg" src="{{$error6 -> t_img}}" alt="{{$error6 -> t_title}} " height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?id={{$error6 -> tt_id}}" ><img style="display: inline;"  src="{{$error6 -> t_img}}" alt="{{$error6 -> t_title}} " height="140" width="250"></a>
                         <div class="product-title">
-                <a href="http://top.tuniu.com/topic/d323" target="_blank">{{$error6 -> t_title}} </a>
+                <a href="{{URL('home/details')}}?id={{$error6 -> tt_id}}" >{{$error6 -> t_title}} </a>
             </div>
-            <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" target="_blank"></a>
+            <a class="product-title-bg" href="{{URL('home/details')}}?id={{$error6 -> tt_id}}" ></a>
         </div>
         @endforeach
                 
                 <div class="product-list">
             <img data-src="http://img3.tuniucdn.com/img/201506091800/indicator/more5.jpg" src="../image/more5.jpg" alt="更多精彩" height="140" width="250">
-            <a target="_blank" href="http://top.tuniu.com/topic/?cate=39" class="product-more indexicon">更多精彩</a>
-            <a class="product-bg" href="http://top.tuniu.com/topic/?cate=39" target="_blank"></a>
+            <a  href="{{URL('home/shopping')}}" class="product-more indexicon">更多精彩</a>
+            <a class="product-bg" href="http://top.tuniu.com/topic/?cate=39" ></a>
         </div>
     </div>
     </div>
@@ -260,18 +256,18 @@
 <div class="product-one">
         @foreach($data['literature'] as $error7)
         <div class="product-list">
-            <a href="" target="_blank"><img style="display: inline;" data-src="http://m.tuniucdn.com/fb2/t1/G2/M00/5A/27/Cii-TFfNLyeIVvN1AACpgUJvo0YAACExQMevh8AAKmZ020_w800_h0_c0_t0.jpg" src="{{$error7 -> t_img}}" alt="{{$error7 -> t_title}} " height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?id={{$error7 -> tt_id}}" ><img style="display: inline;"  src="{{$error7 -> t_img}}" alt="{{$error7 -> t_title}} " height="140" width="250"></a>
                         <div class="product-title">
-                <a href="http://top.tuniu.com/topic/d323" target="_blank">{{$error7 -> t_title}} </a>
+                <a href="{{URL('home/details')}}?id={{$error7 -> tt_id}}" >{{$error7 -> t_title}} </a>
             </div>
-            <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" target="_blank"></a>
+            <a class="product-title-bg" href="{{URL('home/details')}}?id={{$error7 -> tt_id}}" ></a>
         </div>
         @endforeach
                 
                 <div class="product-list">
             <img data-src="http://img3.tuniucdn.com/img/201506091800/indicator/more6.jpg" src="../image/more6.jpg" alt="更多精彩" height="140" width="250">
-            <a target="_blank" href="http://top.tuniu.com/topic/" class="product-more indexicon">更多精彩</a>
-            <a class="product-bg" href="http://top.tuniu.com/topic/" target="_blank"></a>
+            <a href="{{URL('home/literature')}}" class="product-more indexicon">更多精彩</a>
+            <a class="product-bg" href="http://top.tuniu.com/topic/" ></a>
         </div>
     </div>
     </div>

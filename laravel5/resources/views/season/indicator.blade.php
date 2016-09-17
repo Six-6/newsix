@@ -31,11 +31,11 @@
         <div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
                 <div class="crumbs fl">
-                    <a href="http://go.tuniu.com/" class="word" rel="nofollow">攻略首页</a>
+                    <a href="siterecommend" class="word" rel="nofollow">攻略首页</a>
 
                     <a href="note" target="_blank" rel="nofollow" class="word">游记</a>
                     <a href="http://www.tuniu.com/way/" target="_blank" rel="nofollow" class="word">达人玩法</a>
-                    <a href="http://top.tuniu.com/" rel="nofollow" class="word cur">风向标</a>
+                    <a href="ranking" rel="nofollow" class="word cur">风向标</a>
                     <a href="http://www.tuniu.com/traveler" target="_blank" rel="nofollow" class="word">旅游达人</a>
                     <a href="http://ask.tuniu.com/" target="_blank" rel="nofollow" class="word">攻略问答</a>
                 </div>
