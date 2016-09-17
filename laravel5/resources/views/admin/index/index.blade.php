@@ -27,13 +27,15 @@
 <div class="clearfix"></div>
 <!-- 内容展示 -->
 <div class="public-ifame mt20">
+    <div class="content">
+        <div class="clearfix"></div>
 
     <div class="content" style="height: 550px">
-
         <!-- 左侧导航栏 -->
         <div class="public-ifame-leftnav">
             <div class="public-title-warrp">
                 <div class="public-ifame-title ">
+                    <a href="">首页</a>
                     <a href="in">首页</a>
                 </div>
             </div>

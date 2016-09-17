@@ -44,13 +44,13 @@
 					@foreach ($T_classics['data'] as $T_classic)
 					<tr>
 						<td><input type="checkbox" /></td>
-						<td>{{$T_classic -> t_id}}</td>						
+						<td>{{$T_classic -> tt_id}}</td>						
 						<td>{{$T_classic -> t_title}}</td>
 						<td>{{$T_classic -> name}}</td>
 						<td><span style="color:#999">{{$T_classic -> t_times}}</span></td>
 						<td>
 							<div class="table-fun">								
-								<a href="{{URL('admin/travelsdelete')}}?id={{$T_classic -> t_id}}">删除</a>
+								<a href="{{URL('admin/travelsdelete')}}?id={{$T_classic -> tt_id}}">删除</a>
 							</div>
 						</td>
 					</tr>

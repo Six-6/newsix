@@ -124,7 +124,17 @@
                         <dd><a href="javascript:void(0)" onclick="footprint()">我的足迹</a></dd>
                     </dl>
                     </dl>
-                    <a href="#" class="mlink">我的足迹</a>
+                 <a href="#" class="mlink">我的足迹</a>
+                </li>
+                <li class="" id="nav_left_2">
+                    <dl class="user-sub-nav cf">
+                        <dd><a href="javascript:void(0)" onclick="collect()">我的收藏</a></dd>
+                    </dl>
+                    </dl>
+                    <a href="#" class="mlink">我的收藏</a>
+                </li>
+                <li class="" id="nav_left_3">
+                    <a href="viewAdd" class="mlink">我的点评</a></li>
                 </li>
                 <li class="" id="nav_left_2">
                     <dl class="user-sub-nav cf">
@@ -218,6 +228,8 @@
 </div></body></html>
 <script src="assets/js/jquery-2.1.4.min.js"></script>
 <script>
+    var asi='';
+    function footprint(){
     /**
      * 足迹
      * @return {[type]} [description]
@@ -236,6 +248,7 @@
                 asi+="</div>"
                 asi+="<dl class='info fn-left'>"
                 asi+="<dt class='t'>"
+                asi+="<a href='http://www.byts.com.cn/tours/4376.htm' target='_blank' title='"+msg[i]['o_name']+"'>"+msg[i]['o_name']+"</a><img src='image/tuijian.gif'>"
                 asi+="<a href='http://www.byts.com.cn/tours/4376.htm' target='_blank' title='"+msg[i]['o_name']+"'>"+msg[i]['o_name']+"</a>"
                 asi+="</dt>"
                 asi+="<dd class='desc'> 界航大型飞船 ，入住5年普吉车 当地 精选 5星 酒店 ◆ 尽享美食 金鲨酒 楼泰式 绝望深怨...</dd>"
@@ -244,17 +257,22 @@
                 asi+="<span class='pin'><span class='n'>&nbsp;0&nbsp;</span>人点评</span>"
                 asi+="<span>最近出发班期：<span class='n'>星期二,星期四,星期日</span></span>"
                 asi+="</dd>"
+
+
                 asi+="<dd id='caoz'>"
                 asi+="<textarea name='evaluatename' rows='' cols='30px'></textarea><span><input type='button' id='hidd' value='发表评价'/></span>"
                 asi+="</dd>"
+
                 asi+="</dl>"
                 asi+="<div class='detail fn-right'>"
                 asi+="<span class='sup'>网订优惠</span>"
                 asi+="<p class='price'><span class='u'></span><span class='n'>￥"+msg[i]['c_price']+"</span>起</p>"
                 asi+="<span class='s m-5 J_powerFloat' rel='J_popDisong' data-song='200'><em class='dsnum'></em></span>"
+
                 //asi+="<p class='price'><a href='evaluate?eid="+msg[i]['o_id']+"' ><input type='button' value='我要评价' /></a></p>"
                 asi+="<input type='hidden' name='_token' value='{{ csrf_token() }}'>"
                 asi+="<p class='price'><button>我要评价</button></p>"
+
                 asi+="</div>"
                 asi+="</li>"
               }
@@ -263,6 +281,8 @@
           },'json')
     }
 
+    /*
+     * 收藏
     /**
      * 收藏
      * @return {[type]} [description]

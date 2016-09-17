@@ -5,19 +5,19 @@
 <title>国内旅游 北京青旅_北青旅总社官网北京旅行社</title>
 <meta name="keywords" content="国内旅游,中国旅游,华夏旅游">
 <meta name="description" content="北青旅国内部专业提供各种国内自由行，包团，跟团旅游">
-<link rel="stylesheet" href="http://www.byts.com.cn/ORG7188_templets/002/style/style.css">
-<link rel="stylesheet" href="http://www.byts.com.cn/ORG7188_templets/002/style/duibi.css">
-<link rel="stylesheet" href="http://www.byts.com.cn/ORG7188_templets/002/style/linelist.css">
-<link rel="stylesheet" href="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/a_rili.css" type="text/css" media="screen" charset="utf-8">
-<script type="text/javascript" src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/jquery.js"></script>
-<script type="text/javascript" src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/duibi.js"></script>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/duibi.css">
+<link rel="stylesheet" href="../css/linelist.css">
+<link rel="stylesheet" href="../css/a_rili.css" type="text/css" media="screen" charset="utf-8">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/duibi.js"></script>
 
-<script type="text/javascript" src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/duibi1.js"></script>
-<script src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/a_list.js" type="text/javascript"></script>
-<script src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/bsStatic.js" type="text/javascript" charset="utf-8"></script></head>
+<script type="text/javascript" src="../js/duibi1.js"></script>
+<script src="../js/a_list.js" type="text/javascript"></script>
+<script src="../js/bsStatic.js" type="text/javascript" charset="utf-8"></script></head>
 
 <body>
-<link href="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/site.css" rel="stylesheet" type="text/css">
+<link href="./css/site.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 $(document).ready(function(){
 	$(".select_box input").click(function(){
@@ -63,7 +63,7 @@ $(document).ready(function(){
 </script>
 
 <!--TOP部分-->
-<script language="javascript" type="text/javascript" src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/ajax188.js"></script>
+<script language="javascript" type="text/javascript" src="../js/ajax188.js"></script>
 <script language="javascript" type="text/javascript">
 
 function Check_head_Login(){
@@ -154,7 +154,7 @@ window.onerror=function(){return true;}
     
     
      <!-- Button BEGIN -->
-    <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/buttonLite.js"></script><script type="text/javascript" charset="utf-8" src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/bshareC0.js"></script>
+    <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="../js/buttonLite.js"></script><script type="text/javascript" charset="utf-8" src="../js/bshareC0.js"></script>
     
 	<!-- Button END -->
 </div>

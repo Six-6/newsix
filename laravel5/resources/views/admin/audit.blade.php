@@ -41,7 +41,7 @@
 					@foreach ($T_audit['data'] as $T_audits)
 					<tr>
 						<td><input type="checkbox" /></td>
-						<td>{{$T_audits -> t_id}}</td>						
+						<td>{{$T_audits -> tt_id}}</td>						
 						<td>{{$T_audits-> t_title}}</td>
 						<td>{{$T_audits -> name}}</td>
 					
@@ -49,8 +49,8 @@
 						<td>
 							<div class="table-fun">
    
-								<a href="{{URL('admin/travelsupdata')}}?id={{$T_audits -> t_id}}">审核</a>								
-								<a href="{{URL('admin/travelsdelete')}}?id={{$T_audits -> t_id}}">删除</a>
+								<a href="{{URL('admin/travelsupdata')}}?id={{$T_audits -> tt_id}}">审核</a>								
+								<a href="{{URL('admin/travelsdelete')}}?id={{$T_audits -> tt_id}}">删除</a>
 							</div>
 						</td>
 					</tr>

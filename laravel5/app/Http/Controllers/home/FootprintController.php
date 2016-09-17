@@ -40,13 +40,16 @@ class FootprintController extends BaseController{
         if ($flush) {
             echo "<script>alert('退出失败');location.href='personAdd'</script>";
         }else{
+
+            echo "<script>location.href='".{{URL('/')}}."'</script>";
+
             return redirect('blo');
+
         }
     }
 
     /**
      * @用户收藏
-     *
      * @return   [description]
      */
     public function yhCollect(){
@@ -66,4 +69,5 @@ class FootprintController extends BaseController{
         $data = Input::get('evaluateid');
         
     }
+
 }

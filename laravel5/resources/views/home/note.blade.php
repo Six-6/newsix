@@ -40,7 +40,7 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
 	    <!-- 游记banner 大图 start -->
     <ul id="slides">
 			@foreach ($data['carousel'] as $error1)
-			<li style="background: transparent url(&quot;{{$error1['t_img']}} &quot;) no-repeat scroll center top; z-index: 900; "><a href="http://www.tuniu.com/trips/10104862" target="_blank" rel="nofollow"></a></li>
+			<li style="background: transparent url(&quot;{{$error1['t_img']}} &quot;) no-repeat scroll center top; z-index: 900; "><a href="{{URL('home/details')}}?id={{$error1['tt_id']}}"  rel="nofollow"></a></li>
 			@endforeach	
 	</ul>
 			
@@ -62,10 +62,10 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
         <ul id="description">
 			@foreach ($data['carousel'] as $error3)
         	<li style="display: none; z-index: 900;">
-                <a href="http://www.tuniu.com/trips/10104862">
+                <a href="{{URL('home/details')}}?id={{$error3['tt_id']}}">
                     <div class="yj-name">{{$error3['t_title']}}</div>
                 </a>
-                <a href="http://www.tuniu.com/person/BBFE770D7CB73DF7B8A28EE066FA76DA">
+                <a href="{{URL('home/details')}}?id={{$error3['tt_id']}}">
                     <div class="auther-show">
                         <img src="{{$error3['path']}}" alt="">
                         <div class="auther-name">{{$error3['name']}}</div>
@@ -79,13 +79,31 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
         <!-- 游记搜索框 start -->
     <div class="dd_search">
         <div class="d_search">
-            <form id="yjsearch_form" method="get" action="/search">
-                <input autocomplete="off" class="input_search J_input" name="q" placeholder="搜索游记" type="text">
-                <input class="search_btn J_sub_btn" type="button">
+            <form id="yjsearch_form" method="post" action="search">
+                <input type="hidden" id="token" name="_token" value="{{csrf_token()}}">
+                <input autocomplete="off" id="search" class="input_search J_input" name="search" placeholder="搜索游记" type="text">
+                <input id="search_btn" class="search_btn J_sub_btn" type="button">
             </form>
         </div>
     </div>
-
+    <script src="../js/jquery.1.12.js"></script>
+    <script>
+        $(function(){
+            $('#search_btn').click(function(){
+                var token = $('#token').val();
+                var search = $('#search').val();
+            
+               $.ajax({
+                    url:"{{URL('home/search')}}",
+                    type:"POST",
+                    data:{
+                        token:token,
+                        search:search
+                    },
+               })
+            })
+        })
+    </script>
     <!-- 游记搜索框 end -->
 </div><!-- 游记新版轮播 end -->
 <!-- 游记内容 start -->
@@ -124,18 +142,18 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
             <ul style="display: block;" class="yj-list">
 				@foreach ($data['refined'] as $error4)
     			<li>
-                    <a class="list-img" href="http://www.tuniu.com/trips/10106094" target="_blank" rel="nofollow">
+                    <a class="list-img" href="{{URL('home/details')}}?id={{$error4 ->tt_id}}" target="_blank" rel="nofollow">
                         <img src="{{$error4->t_img}}" alt="">
                         <div class="list-recommend gl-jh"></div>
                     </a>
                     <div class="list-show">
-                        <a href="http://www.tuniu.com/trips/10106094" target="_blank" rel="nofollow">
+                        <a href="{{URL('home/details')}}?id={{$error4 ->tt_id}}" target="_blank" rel="nofollow">
                             <div class="list-name">{{$error4->t_title}}</div>
                             <div class="list-des">{{$error4->s_desc}}</div>
                         </a>
                         <div class="list-auther">
                             <div class="list-auther-left">
-                            <a href="http://www.tuniu.com/person/2347E11AE099EEC3A3D3014A85EC4061">
+                            <a href="{{URL('home/details')}}?id={{$error4 ->tt_id}}">
                                 <img src="{{$error4->path}}" alt="">
                                 <div class="list-auther-name">{{$error4->name}}</div>
                             </a>

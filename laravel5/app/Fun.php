@@ -6,9 +6,9 @@
  */
 use Illuminate\Database\Eloquent\Model;
 
-class Fun extends Model
 {
-    public $table = "fun";
+    public $table = "f_hot";
+
 
     /**
      * @页面展示

@@ -180,6 +180,9 @@ window.onerror=function(){return true;}
             	
             </li>
         	
+        	<li class="last">{{$arr->s_name}}</li>
+        </ul>
+        <span class="pro_number">产品编号:<strong>{{$arr->s_id}}</strong></span>
         	<li class="last">蜈支洲.西岛.呀诺达雨林.南山.南湾猴岛双飞5日**4晚海景房**</li>
         </ul>
         <span class="pro_number">产品编号:<strong>1715</strong></span>
@@ -194,6 +197,7 @@ window.onerror=function(){return true;}
 
                     <div class="dtl_tit">
                    
+                         <h1 class="dtl_tit_txt">{{$arr->s_name}}
                          <h1 class="dtl_tit_txt">蜈支洲.西岛.呀诺达雨林.南山.南湾猴岛双飞5日**4晚海景房**
 						 <span class="icon-tag"></span>
                          </h1>
@@ -1118,6 +1122,7 @@ window.onerror=function(){return true;}
                           <div class="dtl_boxr_txt1">
                              <p>
 	                            
+	                             优惠价：     <strong>¥<em> {{$arr->s_sprice}}</em></strong>起 &nbsp;<em class="qijiashuoming">起价说明</em> 
 	                             优惠价：     <strong>¥<em> 2880</em></strong>起 &nbsp;<em class="qijiashuoming">起价说明</em> 
                              </p> 
                              
@@ -1183,6 +1188,8 @@ window.onerror=function(){return true;}
         </option> <option value="2016-09-20"> 
                     2016-09-20（星期二）  
                        成人：￥2880 儿童：￥ 
+        </option>
+    </select>
         </option> <option value="2016-09-21"> 
                     2016-09-21（星期三）  
                        成人：￥2880 儿童：￥ 
@@ -1438,6 +1445,12 @@ window.onerror=function(){return true;}
                                  
         			             </td>
         			             <td>
+                                    <!-- <span class="minus" value="-" onclick="updateOperator('61423','miuns')"></span>
+                                    <input seq="1" name="buyInfo.buyNum.product_61423" id="param61423" size="2" class="number prod-num" value="1" ordnum="ordNum" onchange="updateOperator('61423','input')" minamt="1" maxamt="100" textnum="textNum61423" people="2" branchid="61423" type="text">
+                                    <span class="plus" value="+" onclick="updateOperator('61423','add')"></span> -->
+                                    <input type="button" value="-" onclick="updateOperator('61423','miuns')" />
+                                    <input seq="1" name="buyInfo.buyNum.product_61423" id="param61423" size="2" class="number prod-num" value="1" ordnum="ordNum" onchange="updateOperator('61423','input')" minamt="1" maxamt="100" textnum="textNum61423" people="2" branchid="61423" type="text">
+        			            	<input type="button" value="+" onclick="updateOperator('61423','add')" />
                                     <span class="minus" onclick="updateOperator('61423','miuns')"></span>
                                     <input seq="1" name="buyInfo.buyNum.product_61423" id="param61423" size="2" class="number prod-num" value="1" ordnum="ordNum" onchange="updateOperator('61423','input')" minamt="1" maxamt="100" textnum="textNum61423" people="2" branchid="61423" type="text">
                                     <span class="plus" onclick="updateOperator('61423','add')"></span>
@@ -1455,6 +1468,13 @@ b.身高1.5米以上儿童，按成人收费。
         			               
                                  </td>
         			             <td>
+        			               <!--  <span class="minus" onclick="updateOperator('87148','miuns')"></span>
+                                    <input seq="1" name="buyInfo.buyNum.product_87148" id="param87148" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator('87148','input')" minamt="0" maxamt="100" textnum="textNum87148" people="1" branchid="87148" type="text">
+                                    <span class="plus" onclick="updateOperator('87148','add')"></span> -->
+
+                                     <input type="button" value="-" onclick="updateOperator('87148','miuns')" />
+                                    <input seq="1" name="buyInfo.buyNum.product_87148" id="param87148" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator('87148','input')" minamt="0" maxamt="100" textnum="textNum87148" people="1" branchid="87148" type="text">
+        			            	<input type="button" value="+" onclick="updateOperator('87148','add')" />
         			                <span class="minus" onclick="updateOperator('87148','miuns')"></span>
                                     <input seq="1" name="buyInfo.buyNum.product_87148" id="param87148" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator('87148','input')" minamt="0" maxamt="100" textnum="textNum87148" people="1" branchid="87148" type="text">
                                     <span class="plus" onclick="updateOperator('87148','add')"></span>
@@ -1465,6 +1485,7 @@ b.身高1.5米以上儿童，按成人收费。
                     
                     <!--按钮--> 
 				<span class="bookerBtn">
+					<input class="immediateB" onclick="but()" id="but" value="开始预订" type="button">
 					<input class="immediateB" value="开始预订" type="button">
 				</span>
                    
@@ -1498,9 +1519,36 @@ b.身高1.5米以上儿童，按成人收费。
   
       </div>    
       
+
+	  <script src="../js/jquery1.8.js"></script>
+	  <script>
+	  // $("#but").click(function(){
+	  // 	var Adult=$("#param61423").val();
+	  // 	var children=$("#param87148").val();
+	  // 	var s_id={{$arr->s_id}};
+	  // 	$.get('fill_in_order',{'adult':Adult,'children':children,'sid':s_id},function(msg){
+	  // 			alert(msg)
+	  // 		})
+	  // 	$.get('fill_in_order',{'adult':Adult,'childern':childern,'sid':s_id},function(msg){
+	  // 		alert(msg)
+	  // 		})
+	  // 	})
+	  function but()
+	  {
+		  	var adult=$("#param61423").val();
+		  	var children=$("#param87148").val();
+		  	var sid={{$arr->s_id}};
+		  	// $.get('fill',{'adult':adult,'children':children,'sid':sid},function(){})
+		  	location.href='fill?adult='+adult+'&children='+children+'&sid='+sid;
+	  }
+	  </script>
+	   <div class="recomment_wra">
+            <i class="arrow-bg"></i> 
+
 	  
 	   <div class="recomment_wra">
             <i class="arrow-bg"></i>
+
             <div class="recomment_wra_mid">
                 <h3 class="recomment_tit"><i class="close" data-hide="recomment_wra"></i>发送行程到手机</h3>
                 <ul class="recomment_input">
@@ -2094,7 +2142,6 @@ b.身高1.5米以上儿童，按成人收费。
 
 
 <div class="right_scroll" style="right:178px; bottom: 221.5px; "><a class="add_scroll"></a><a class="comparison_btn compar_select" onclick="com_pro_click();" style=""></a><a class="backToTop"></a></div>
-
 <div class="compared_prod hide" style="left: 459.5px; display: none;">
 <div class="top_detail_bg clearfix">
 <a id="slideDown" class="top_detail" href="javascript:void(0);">

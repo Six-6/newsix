@@ -26,6 +26,7 @@ class FunController extends BaseController{
      * 志同道合页面显示
      */
     public function show(){
+      
         $res=Fun::selAll();
         $ar=F_type::sel();
         foreach($ar as $v){
