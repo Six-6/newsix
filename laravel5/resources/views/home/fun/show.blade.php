@@ -114,37 +114,42 @@
         </div>
         <!-- 玩法推荐 end-->
         <!-- 游玩内容 start-->
+
         <div class="playing-content">
+
             <!-- 左侧内容 游玩列表 start-->
             <div class="content-left">
-
                 <!-- 广告位  -->
-                <a href="http://www.tuniu.com/trips/10099021" class="ad" target="_blank" rel="nofollow">
+                <a href="" target="_blank" rel="nofollow">
                     <img src="./fun/Cii-TFfE8umIJBlLAAF8zvL72aIAAB27AIKknMAAXzm79_w800_h0_c0_t0.jpg" alt="玩法头条">
                 </a>
-
+                <input type="hidden" name="_token" value="{{csrf_token()}}" />
                 <div class="left-top">
                     <!-- 游记tab start-->
                     <ul class="playing-tab">
-                        <li class="current">境外热门</li>
-                        <li>境内热门</li>
-                        <li>最新发布</li>
+                        @foreach($ar as $v)
+                        @endforeach
+                            <li class="current">境外热门</li>
+                            <li>境内热门</li>
+                            <li>最新发布</li>
                     </ul>
                 </div>
+
                 <div class="list-show">
                     <div style="display: none;" class="commen-loadding"></div>
                     <ul style="display: block;" class="list-data">
+                        @foreach($v['selAll'] as $val)
                         <li>
                             <a href="" target="_blank">
                                 <div class="playing-img">
-                                    <img src=""
+                                    <img src="{{$val['f_img']}}"
                                          alt="" class="playing-img-show">
                                     <img src="" alt="" class="playing-meng">
 
                                     <div class="playing-des">
                                         <div class="playing-top">
                                             <div class="playing-days">
-                                                <span class="day-num"></span>
+                                                <span class="day-num">{{$val['f_day']}}</span>
                                                 <span class="day-day">DAYS</span>
                                             </div>
                                             <div class="playing-tit"></div>
@@ -170,7 +175,7 @@
                                 <div class="playing-ding" id="dingAjax" data-id="189358"><i></i>4</div>
                                 <div class="playing-comment"><i></i>5</div>
                                 <div class="playing-scan"><i></i></div>
-                                <a href="http://www.tuniu.com/person/379DD834FF8D5BA4D903AC55D9525352" target="_blank">
+                                <a href="" target="_blank">
                                     <img src="./fun/Cii9EVdiC6WIXTkhAAAUT2FlVgYAAGkbwP_xCAAABRn641_w120_h120_c1_.jpg"
                                          alt="">
 
@@ -178,6 +183,7 @@
                                 </a>
                             </div>
                         </li>
+                        @endforeach
                     </ul>
                     <ul class="list-data"></ul>
                     <ul class="list-data"></ul>
@@ -185,25 +191,23 @@
                     <!-- 分页 -->
                     <div class="pager pagination" data-init="pager" style="display:none"></div>
                     <div data-curpage="1" data-pager-inited="true" class="pager pagination" data-init="pager" style="">
-                        <div class="page-bottom"><a class="page-prev" href="javascript:void(0)" data-page="0">上一页</a><a
-                                    class="page-first" href="javascript:void(0)" data-page="1"
-                                    style="display: none;">1</a><span class="page-break"
-                                                                      style="display: none;">...</span><a
-                                    class="pager-item page-cur firstshowing" href="javascript:void(0);"
-                                    data-page="1">1</a><a class="pager-item " href="javascript:void(0);"
-                                                          data-page="2">2</a><a class="pager-item "
-                                                                                href="javascript:void(0);"
-                                                                                data-page="3">3</a><a
-                                    class="pager-item " href="javascript:void(0);" data-page="4">4</a><a
-                                    class="pager-item lastshowing" href="javascript:void(0);" data-page="5">5</a><span
-                                    class="page-break">...</span><a class="page-last" href="javascript:void(0)"
-                                                                    data-page="9">9</a><a class="page-next"
-                                                                                          href="javascript:void(0)"
-                                                                                          data-page="2">下一页</a></div>
+                        <div class="page-bottom">
+                            <a href="javascript:void(0)" >上一页</a>
+                            <a href="javascript:void(0)"  style="display: none;">1</a>
+                            <a href="javascript:void(0);">1</a>
+                            <a href="javascript:void(0);">2</a>
+                            <a href="javascript:void(0);">3</a>
+                            <a href="javascript:void(0);">4</a>
+                            <a href="javascript:void(0);">5</a>
+                            <a href="javascript:void(0)">9</a>
+                            <a href="javascript:void(0)">下一页</a>
+                        </div>
                     </div>
                     <div class="pager pagination" data-init="pager" style="display:none"></div>
                 </div>
+
             </div>
+
             <!-- 交互数据 -->
             <script>
                 window.$render_data = {
@@ -216,12 +220,12 @@
                 <div class="right-traverler">
                     <div class="right-commen-tit">
                         <p class="right-tit">大玩家</p>
-                        <a href="http://www.tuniu.com/traveler" class="right-more" target="_blank" rel="nofollow">更多&nbsp;&gt;</a>
+                        <a href="" class="right-more" target="_blank" rel="nofollow">更多&nbsp;&gt;</a>
                     </div>
                     <div class="traverler-auther">
                         <div class="traverler-img">
                             <div class="traverler-sex  sex-women"></div>
-                            <a href="http://www.tuniu.com/person/4F8F9694E6F3FD3EFE97289DF24BBE70" target="_blank"
+                            <a href="" target="_blank"
                                rel="nofollow"><img
                                         src="./fun/Cii-TlfRwXeIJ5y0AAbidFjkLeEAACMygNQFYsABuKM545_w90_h90_c1_t0.jpg"
                                         alt="" class="traverler-title-img"></a>
@@ -236,7 +240,7 @@
                             <li>写攻略</li>
                             <li>美食</li>
                         </ul>
-                        <a href="http://www.tuniu.com/traveler/recruit/" class="master-btn" target="_blank">申请大玩家</a>
+                        <a href="" class="master-btn" target="_blank">申请大玩家</a>
                     </div>
                 </div>
                 <div class="mater-show">
@@ -246,7 +250,7 @@
                     <!--周排行-->
                     <ul class="maseter-list">
                         <li>
-                            <a href="http://www.tuniu.com/person/B1EBC030012D2FA54D3B813D3726B919" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="master-img">
                                     <img src="./fun/Cii9EFdzuv6IWd9ZAAB6ZQCxKl4AAG0BgC58YEAAHp964_w120_h120_c1_t.jpg"
                                          alt="" class="master-titimg">
@@ -265,7 +269,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="http://www.tuniu.com/person/9BC66B8E019C67DBB272B5103F68E734" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="master-img">
                                     <img src="./fun/Cii9EVc7RJSIPJSnAArJSvi9vkAAAF4RAEKY4cACsli433_w120_h120_c1_.jpg"
                                          alt="" class="master-titimg">
@@ -284,7 +288,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="http://www.tuniu.com/person/0F3CF946908678A81AFC35B326C5C64A" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="master-img">
                                     <img src="./fun/6c84d91a557cace0295020b23c073514_w120_h120_c1_t0.jpg" alt=""
                                          class="master-titimg">
@@ -303,7 +307,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="http://www.tuniu.com/person/E40C00D0568435BA3F9897F76B65EAF2" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="master-img">
                                     <img src="./fun/Cii9EVdztKeIBBE6AAKqrokOQTgAAG0AAI8VVgAAqrG730_w120_h120_c1_.jpg"
                                          alt="" class="master-titimg">
@@ -322,7 +326,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="http://www.tuniu.com/person/1D96BB332B719375BE1E3D8645E9D029" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="master-img">
                                     <img src="./fun/Cii-TFeqdtGIVj2OAABMYn7ocjQAABAXgNUpAEAAEx6853_w120_h120_c1_.jpg"
                                          alt="" class="master-titimg">
@@ -348,9 +352,9 @@
                         <a href="http://temai.tuniu.com/" class="right-more">更多&nbsp;&gt;<i></i></a>
                     </div>
                     <ul class="bk-list">
-                        <li><a href="http://temai.tuniu.com/tours/212081739/" target="_blank"> <img
+                        <li><a href="" target="_blank"> <img
                                         src="./fun/39e7ea198c053f2bf5ff85c34e055a34_w180_h180_c1_t0.jpg"
-                                        data-src="http://m.tuniucdn.com/filebroker/cdn/vnd/39/e7/39e7ea198c053f2bf5ff85c34e055a34_w180_h180_c1_t0.jpg"
+                                        data-src=""
                                         alt="" class="bk-img">
 
                                 <div class="bk-des-show"><p class="bk-name">[含签]&lt;普吉岛-皮皮岛5晚6日或7日游&gt;畅玩珍珠岛十合一娱乐项目，升级国五酒店</p>
@@ -363,9 +367,9 @@
                                     </div>
                                 </div>
                             </a></li>
-                        <li><a href="http://temai.tuniu.com/tours/212079959/" target="_blank"> <img
+                        <li><a href="" target="_blank"> <img
                                         src="./fun/Cii9EVcHYJGIZd-vAAizmDtsNDQAADCtQIadHIACLOw820_w180_h180_c1_.jpg"
-                                        data-src="http://m.tuniucdn.com/fb2/t1/G1/M00/62/9A/Cii9EVcHYJGIZd-vAAizmDtsNDQAADCtQIadHIACLOw820_w180_h180_c1_t0.jpg"
+                                        data-src=""
                                         alt="" class="bk-img">
 
                                 <div class="bk-des-show"><p class="bk-name">丽江-香格里拉-玉龙雪山双飞5日游</p>
@@ -378,9 +382,9 @@
                                     </div>
                                 </div>
                             </a></li>
-                        <li><a href="http://temai.tuniu.com/tours/212081749/" target="_blank"> <img
+                        <li><a href="" target="_blank"> <img
                                         src="./fun/Cii-TFfIHruILG6IAAcoHLt2zpgAAB8wgPAGlcAByg0604_w180_h180_c1_.jpg"
-                                        data-src="http://m.tuniucdn.com/fb2/t1/G2/M00/54/9D/Cii-TFfIHruILG6IAAcoHLt2zpgAAB8wgPAGlcAByg0604_w180_h180_c1_t0.jpg"
+                                        data-src=""
                                         alt="" class="bk-img">
 
                                 <div class="bk-des-show"><p class="bk-name">长滩岛4晚5日半自助游</p>
@@ -410,5 +414,12 @@
 <script type="text/javascript" src="./fun/pager.js"></script>
 <script type="text/javascript" src="./fun/layer.js"></script>
 
-<!--start foot-->
-<!-- siteMap S -->
+<script>
+  $(".huan").click(function(){
+      var tok=$("input[name=_token]").val();
+      var id=$(this).attr("id");
+      $.post("funExchange",{id:id,_token:tok},function(msg){
+
+      });
+  });
+</script>

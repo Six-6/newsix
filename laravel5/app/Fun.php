@@ -6,9 +6,9 @@
  */
 use Illuminate\Database\Eloquent\Model;
 
-class F_hot extends Model
+class Fun extends Model
 {
-    public $table = "f_hot";
+    public $table = "fun";
 
     /**
      * @页面展示
@@ -18,12 +18,4 @@ class F_hot extends Model
         return $re;
     }
 
-    /**
-     * 数据展示
-     */
-    public static function gets(){
-        $re = self::get();
-        return $re;
-
-    }
 }

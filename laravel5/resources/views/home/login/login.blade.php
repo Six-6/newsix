@@ -1,4 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <!-- saved from url=(0038)http://www.byts.com.cn/users/index.php -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" charset="utf-8" async="" src="css/crmqq.php"></script><script type="text/javascript" charset="utf-8" async="" src="js/contains.js"></script><script type="text/javascript" charset="utf-8" async="" src="js/localStorage.js"></script><script type="text/javascript" charset="utf-8" async="" src="js/Panel.js"></script>
 <title>登录-北京青年旅行社股份有限公司官网</title>

@@ -49,6 +49,9 @@ Route::post('home/detailsOrder',"home\ExchangeController@order");/**兑换商品
 Route::post('home/orderAdd',"home\ExchangeController@orderAdd");/**确认兑换**/
 /**前台志同道合**/
 Route::get('home/funShow',"home\FunController@show");/**志同道合页面显示**/
+Route::post('home/funExchange',"home\FunController@exchange");/**更换页面**/
+
+
 
 /***前台 风向标***/
 Route::get('home/siterecommend', 'season\IndicatorController@siterecommend');//风向标首页

@@ -17,6 +17,7 @@ class LoginController extends Controller {
 	}
 	public function bloin(Request $request)
 	{
+        $Token=$request->input("_token");
         $u_name=$request->username;
         $u_pwd=$request->password;
         if (isset($u_name) && isset($u_pwd))
@@ -51,8 +52,7 @@ class LoginController extends Controller {
 	{
 		return view('login/register');
 	}
-    public function onregister(Request $request)
-    {
+    public function onregister(Request $request){
         $name=$request->name;
         $pwd=MD5($request->pwd);
         $email=$request->email;

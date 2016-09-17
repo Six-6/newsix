@@ -18,6 +18,7 @@ class Exchange extends Model {
                 ->get()
                 ->toArray();
         };
+        print_r($re);die;
         return $re;
     }
     /**
