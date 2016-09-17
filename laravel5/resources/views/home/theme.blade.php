@@ -42,7 +42,7 @@
                 <a href="{{URL('home/ranking')}}" class="indsep" id="list"><div class="list">排行榜</div></a>
                                 
 				
-				<a href="{{URL('home/theme')}}" class="indsep selected" id="theme"><div class="theme">主题推荐</div></a>
+				<a href="{{URL('home/themes')}}" class="indsep selected" id="theme"><div class="theme">主题推荐</div></a>
 				<a href="http://top.tuniu.com/notes/" class="indsep" id="intour">
                     <p class="inactive"></p>
                     <div class="intour">人在旅途</div></a>
@@ -75,16 +75,16 @@
 	                    <dt class=".pkg_filter_tit">人群</dt>
 	                    <dd class="pkg_filter_properties J_properties01">
 	                        <div class="pkg_filter_buxian all_01">
-	                            <a href="http://top.tuniu.com/topic/" rel="nofollow" data-value="">不限</a>
+	                            <a href="{{URL('home/themes')}}" rel="nofollow" >不限</a>
 	                        </div>
 	                        <div class="pkg_filter_others">
 	                            <div class="fenlei01 all_02">
 									<a href="{{URL('home/themes')}}" rel="nofollow" class="a1 ">权威</a>     		                        
 									<a href="{{URL('home/freshs')}}" rel="nofollow" class="a1 ">尝鲜</a>     		                        
-                                	<a href="" rel="nofollow" class="a1 ">快门</a>     		                        
-									<a href="" rel="nofollow" class="a1 ">美食</a>     		                        
-									<a href="" rel="nofollow" class="a1 ">购物</a>     		                        
-                                	<a href="" rel="nofollow" class="a1 ">文艺</a>     		                     			    		                                                        	                                </div>
+                                	<a href="{{URL('home/shutter')}}" rel="nofollow" class="a1 ">快门</a>     		                        
+									<a href="{{URL('home/cate')}}" rel="nofollow" class="a1 ">美食</a>     		                        
+									<a href="{{URL('home/shopping')}}" rel="nofollow" class="a1 ">购物</a>     		                        
+                                	<a href="{{URL('home/literature')}}" rel="nofollow" class="a1 ">文艺</a>     		                     			    		                                                        	                                </div>
 		                    </div>	   		                                       
 			                	
 	                    </dd>
@@ -102,9 +102,9 @@
 		@foreach($data['data'] as $esson)
 		<div class="square themebg">	 
 			<span class="sprite sprite1"></span>
-			<a class="pic imgbox" href="http://top.tuniu.com/topic/d1284" target="_blank"> 
-			<img style="display: inline;" height="200" src="{{$esson -> t_img}}" >
-			</a> <a href="http://top.tuniu.com/topic/d1284" target="_blank" class="lh40" title="{{$esson -> t_title}}">{{$esson -> t_title}}</a>
+			<a class="pic imgbox" href="{{URL('home/details')}}?id={{$esson->tt_id}}" > 
+			<img style="display: inline;" height="200" src="{{$esson -> t_img}}" />
+			</a> <a href="{{URL('home/details')}}?id={{$esson->tt_id}}"  class="lh40" title="{{$esson -> t_title}}">{{$esson -> t_title}}</a>
 		</div> 
 		@endforeach
 
@@ -117,10 +117,10 @@
 		<div class="page-bottom">
 			<a rel="nofollow" href="">一共{{$data['mexpage']}}</a>
 			<a rel="nofollow" href="">第{{$data['page']}}</a>
-			<a rel="nofollow" href="{{URL('home/theme')}}?page=1">首页</a>
-			<a rel="nofollow" href="{{URL('home/theme')}}?page={{$data['page']-1}}">上一页</a>
-			<a rel="nofollow" href="{{URL('home/theme')}}?page={{$data['page']+1}}">下一页</a>
-			<a rel="nofollow" href="{{URL('home/theme')}}?page={{$data['mexpage']}}">末页</a>
+			<a rel="nofollow" href="{{$data['url']}}?page=1">首页</a>
+			<a rel="nofollow" href="{{$data['url']}}?page={{$data['page']-1}}">上一页</a>
+			<a rel="nofollow" href="{{$data['url']}}?page={{$data['page']+1}}">下一页</a>
+			<a rel="nofollow" href="{{$data['url']}}?page={{$data['mexpage']}}">末页</a>
 		</div>
 	</div>
 	<!-- 分页end -->

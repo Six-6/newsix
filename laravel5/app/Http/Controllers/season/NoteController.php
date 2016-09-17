@@ -58,5 +58,11 @@ class NoteController extends Controller {
 		return view('home.note',['data'=>$data]);
 	}
 	
-	
+	/**
+	*@ÓÎ¼ÇËÑË÷
+	*/
+	public function search()
+	{
+		echo 1;
+	}
 }

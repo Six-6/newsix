@@ -53,7 +53,7 @@
                 <a href="{{URL('home/ranking')}}" class="indsep selected" id="list"><div class="list">排行榜</div></a>
                                 
 				
-				<a href="{{URL('home/theme')}}" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
+				<a href="{{URL('home/themes')}}" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
 				<a href="http://top.tuniu.com/notes/" class="indsep" id="intour">
                     <p class="inactive"></p>
                     <div class="intour">人在旅途</div></a>

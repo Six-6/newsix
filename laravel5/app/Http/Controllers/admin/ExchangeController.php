@@ -22,7 +22,7 @@ class ExchangeController extends BaseController{
      * 兑换页面展示
      */
     public function add(Request $request){
-        if(empty($_REQUEST)){
+        if(empty($request->input("e_name"))){
             $type=E_type::selAll();
             return view("admin/exchange/show",['type'=>$type]);
         }else{

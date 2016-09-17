@@ -32,7 +32,7 @@
 				<table class="public-cont-table col-2">
 					<tr>
 						<th style="width:5%">选择</th>
-				
+						<th style="width:5%">ID</th>
 						<th style="width:35%">游记名称</th>
 						<th style="width:10%">发表人</th>
 						<th style="width:5%">审核</th>
@@ -43,6 +43,7 @@
 					<tr>
 						<td><input type="checkbox" /></td>
 											
+						<td>{{$T_messag -> tt_id}}</td>
 						<td>{{$T_messag -> t_title}}</td>
 						<td>{{$T_messag -> name}}</td>
 						<td>
@@ -58,10 +59,10 @@
 						<td>
 							<div class="table-fun">
 								@if ($T_messag -> t_essence != 1 )    
-									<a href="{{URL('admin/essences')}}?id={{$T_messag -> t_id}}">加精</a>
+									<a href="{{URL('admin/essences')}}?id={{$T_messag -> tt_id}}">加精</a>
 								@endif	
 								
-								<a href="{{URL('admin/travelsdelet')}}?id={{$T_messag -> t_id}}">删除</a>
+								<a href="{{URL('admin/travelsdelet')}}?id={{$T_messag -> tt_id}}">删除</a>
 							</div>
 						</td>
 					</tr>
