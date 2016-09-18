@@ -1,15 +1,12 @@
-<?php namespace App;
-
+<?php
+namespace App;
 /**
  * 志同道合
  * @褚玉密
  */
 use Illuminate\Database\Eloquent\Model;
-
-{
-    public $table = "f_hot";
-
-
+class Fun extends Model {
+    public $table = "fun";
     /**
      * @页面展示
      */
