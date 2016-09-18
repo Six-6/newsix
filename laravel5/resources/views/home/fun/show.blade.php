@@ -63,7 +63,7 @@
             </div>
             <div class="description-btn">
                 <a href="javascript:;" class="write-playing">我要写玩法</a>
-                <a href="" class="my-playing" target="_blank">我的玩法</a>
+                <a href="funWrite" class="my-playing">我的玩法</a>
             </div>
         </div>
         <!-- 玩法描述 按钮 end-->
@@ -128,78 +128,64 @@
                     <!-- 游记tab start-->
                     <ul class="playing-tab">
                         @foreach($ar as $v)
+                            <li class="current"><a href="javascript: void(0)" class="huan" id="{{$v['f_tid']}}">{{$v['t_name']}}</a></li>
                         @endforeach
-                            <li class="current">境外热门</li>
-                            <li>境内热门</li>
-                            <li>最新发布</li>
                     </ul>
                 </div>
 
-                <div class="list-show">
-                    <div style="display: none;" class="commen-loadding"></div>
+                <div id="list-show">
                     <ul style="display: block;" class="list-data">
                         @foreach($v['selAll'] as $val)
-                        <li>
-                            <a href="" target="_blank">
-                                <div class="playing-img">
-                                    <img src="{{$val['f_img']}}"
-                                         alt="" class="playing-img-show">
-                                    <img src="" alt="" class="playing-meng">
+                            <li>
+                                <a href="" target="_blank">
+                                    <div class="playing-img">
+                                        <img src="{{$val['f_img']}}"
+                                             alt="" class="playing-img-show">
+                                        <img src="" alt="" class="playing-meng">
 
-                                    <div class="playing-des">
-                                        <div class="playing-top">
-                                            <div class="playing-days">
-                                                <span class="day-num">{{$val['f_day']}}</span>
-                                                <span class="day-day">DAYS</span>
+                                        <div class="playing-des">
+                                            <div class="playing-top">
+                                                <div class="playing-days">
+                                                    <span class="day-num">{{$val['f_day']}}</span>
+                                                    <span class="day-day">DAYS</span>
+                                                </div>
+                                                <div class="playing-tit"></div>
                                             </div>
-                                            <div class="playing-tit"></div>
-                                        </div>
-                                        <div class="playing-hover-show">
-                                            <p>D1 </p>
+                                            <div class="playing-hover-show">
+                                                <p>D1 </p>
 
-                                            <p>D2 </p>
+                                                <p>D2 </p>
 
-                                            <p>D3 </p>
+                                                <p>D3 </p>
 
-                                            <p>D4 </p>
+                                                <p>D4 </p>
 
-                                            <p>D5 </p>
+                                                <p>D5 </p>
 
-                                            <p>D6 </p>
+                                                <p>D6 </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-
-                            <div class="playing-tit-show">
-                                <div class="playing-ding" id="dingAjax" data-id="189358"><i></i>4</div>
-                                <div class="playing-comment"><i></i>5</div>
-                                <div class="playing-scan"><i></i></div>
-                                <a href="" target="_blank">
-                                    <img src="./fun/Cii9EVdiC6WIXTkhAAAUT2FlVgYAAGkbwP_xCAAABRn641_w120_h120_c1_.jpg"
-                                         alt="">
-
-                                    <div class="playing-auther-name"></div>
                                 </a>
-                            </div>
-                        </li>
+
+                                <div class="playing-tit-show">
+                                    <div class="playing-ding" id="dingAjax" data-id="189358"><i></i>4</div>
+                                    <div class="playing-comment"><i></i>5</div>
+                                    <div class="playing-scan"><i></i></div>
+                                    <a href="" target="_blank">
+                                        <img src="./fun/Cii9EVdiC6WIXTkhAAAUT2FlVgYAAGkbwP_xCAAABRn641_w120_h120_c1_.jpg"
+                                             alt="">
+
+                                        <div class="playing-auther-name"></div>
+                                    </a>
+                                </div>
+                            </li>
                         @endforeach
                     </ul>
-                    <ul class="list-data"></ul>
-                    <ul class="list-data"></ul>
-                    <!-- 游记列表 end-->
-                    <!-- 分页 -->
                     <div class="pager pagination" data-init="pager" style="display:none"></div>
                     <div data-curpage="1" data-pager-inited="true" class="pager pagination" data-init="pager" style="">
                         <div class="page-bottom">
                             <a href="javascript:void(0)" >上一页</a>
-                            <a href="javascript:void(0)"  style="display: none;">1</a>
-                            <a href="javascript:void(0);">1</a>
-                            <a href="javascript:void(0);">2</a>
-                            <a href="javascript:void(0);">3</a>
-                            <a href="javascript:void(0);">4</a>
-                            <a href="javascript:void(0);">5</a>
-                            <a href="javascript:void(0)">9</a>
                             <a href="javascript:void(0)">下一页</a>
                         </div>
                     </div>
@@ -207,13 +193,6 @@
                 </div>
 
             </div>
-
-            <!-- 交互数据 -->
-            <script>
-                window.$render_data = {
-                    count: 9
-                }
-            </script>
             <!-- 左侧内容 游玩列表end-->
             <!-- 右侧内容 start-->
             <div class="content-right">
@@ -419,7 +398,7 @@
       var tok=$("input[name=_token]").val();
       var id=$(this).attr("id");
       $.post("funExchange",{id:id,_token:tok},function(msg){
-
+            $("#list-show").html(msg);
       });
   });
 </script>

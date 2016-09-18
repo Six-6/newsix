@@ -26,13 +26,12 @@ class FunController extends BaseController{
      * 志同道合页面显示
      */
     public function show(){
-      
         $res=Fun::selAll();
         $ar=F_type::sel();
         foreach($ar as $v){
             $v->selAll;
         }
-       // print_r($ar->toArray());die;
+        //print_r($ar->toArray());die;
         return view("home.fun.show",['res'=>$res,"ar"=>$ar]);
     }
     /**
@@ -41,6 +40,12 @@ class FunController extends BaseController{
     public function exchange(Request $request){
         $id=$request->input("id");
         $res=F_show::exchange($id);
-        print_r($res);die;
+        return view("home.fun.list-show",['res'=>$res]);
+    }
+    /**
+     * 志同道合发起
+     */
+    public function write(){
+        return view("home.fun.add");
     }
 }
