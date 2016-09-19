@@ -11,7 +11,7 @@
 |
 */
 //Route::get('/', 'WelcomeController@index');
-//Route::any('/', 'HomeController@login');//网站首页
+Route::get('/', 'home\RecursionController@recursion');/**前台首页**/
 Route::any('abroad', 'AbroadController@index');//出境
 Route::any('users', 'UserController@index');//会员中心
 Route::any('domestic', 'DomesticController@index');//国内
@@ -24,7 +24,7 @@ Route::get('home/sous', 'home\RecursionController@searchDay');/**根据旅游天
 Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅游资金搜索**/
 Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/
 Route::get('home/personDel', 'home\FootprintController@personDel');/**用户--退出*/
-Route::get('home/collect', 'home\FootprintController@yhCollect');/**用户--收藏*/
+
 
 /**前台用户管理**/
 Route::get('home/personAdd',"home\UserController@add");//个人信息展示
@@ -38,7 +38,7 @@ Route::get('home/integralAdd',"home\OrderController@integral");//积分显示
 Route::get('home/viewAdd',"home\OrderController@view");//我的评论
 Route::get('home/common',"home\OrderController@show");/**主页面显示**/
 Route::get('home/pswAdd',"home\UserController@psw");//密码查看
-Route::post('home/pswUpd',"home\UserController@ate");//密码修改
+
 Route::post('home/checkPwd',"home\UserController@pwd");//密码验证
 Route::get('home/orderAdd',"home\OrderController@add");/**订单列表**/
 /**前台兑换管理**/
@@ -632,14 +632,20 @@ Route::get('home/recursion', 'home\RecursionController@recursion');/**首页无�
 Route::post('home/searchs', 'home\RecursionController@searchs');/**首页全文检索搜索**/
 Route::get('home/sous', 'home\RecursionController@searchDay');/**根据旅游天数搜索**/
 Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅游资金搜索**/
-
+Route::get('home/destination', 'home\RecursionController@destination');/**根据旅游目的地搜索**/
 Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/
 Route::get('home/personDel', 'home\FootprintController@personDel');/**用户--退出*/
 Route::get('home/collect', 'home\FootprintController@yhCollect');/**用户--收藏*/
+Route::get('home/cancel', 'home\FootprintController@cancel');/**用户--取消收藏*/
 Route::get('home/evaluate', 'home\FootprintController@evaluate');/**用户--评价*/
+Route::get('home/record', 'home\FootprintController@record');/**用户--评价记录*/
+Route::get('home/integralDetails', 'home\FootprintController@integralDetails');/**用户--积分详情*/
 
 
 
-
-Route::get('/', 'home\RecursionController@recursion');/**前台首页**/
 Route::get('home/scenic', 'home\RecursionController@scenic');/**前台地区下的景点**/
+
+Route::get('home/pages', 'home\FootprintController@pages');/**用户--收藏分页*/
+Route::get('home/userhome', 'home\FootprintController@userhome');/**用户--收藏分页*/
+Route::get('home/regionid', 'home\RecursionController@regionid');/**首页--根据地区查景点*/
+

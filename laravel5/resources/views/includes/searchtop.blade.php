@@ -15,13 +15,13 @@
     <span><a href="{{URL('home/personDel')}}" target="_blank" >退出</a></span>
     @endif
 </span><script language="javascript">Check_head_Login();</script>
-     <div class="hour"><img src="home/homepage/pic1.jpg" height="19" width="46"></div>
+     <div class="hour"><img src="../home/homepage/pic1.jpg" height="19" width="46"></div>
      <div class="iph">旅游预订电话 <strong>18513975642</strong></div>
 </div>
 </div>
 <div class="top2">
 	<div class="conter">
-    <div class="logo"><img src="home/homepage/logo.png" height="54" width="329"><img src="home/homepage/tage.png" height="50" width="116"></div>
+    <div class="logo"><img src="../home/homepage/logo.png" height="54" width="329"><img src="../home/homepage/tage.png" height="50" width="116"></div>
     <div class="sourchNew" style="float:right"> 
       <form method="POST" action="{{URL('home/searchs')}}">
         <div class="select_text" style="background-color:greep;">

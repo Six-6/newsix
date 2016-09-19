@@ -139,16 +139,10 @@ window.onerror=function(){return true;}
 	<div class="conter">
    	  <div class="a1"><a href="javascript:void(0)">所有目的地分类</a></div>
       <div class="a2">
+    	<a href="{{URL('/')}}">首页</a>
 		@foreach($arr2 as $arr2=>$navigation)
     	<a href="{{$navigation->l_url}}">{{ $navigation->l_types }}</a>
     	@endforeach
-      </div>
-      <div class="a3"><div style="position: absolute; left: 24px; top: 1px;"><img src="home/homepage/HOT.png"></div>
-        <a href="http://www.byts.com.cn/add/tejia.php">特价</a>
-        <a href="http://www.byts.com.cn/visa/">签证</a>   
-        <a href="http://www.byts.com.cn/zuche/bj/">租车</a>
-        <a href="http://www.byts.com.cn/add/dingzhi.php">定制</a> 
-        
       </div>
         <div class="clear"></div>
 
@@ -175,10 +169,10 @@ function mousout(n){
         		@foreach($arr1 as $region)
             	<li class="a" onmouseover="hover({{ $region->r_id }})" onmouseout="mousout({{ $region->r_id }})"><div>
             		<div>
-	            		<strong>{{ $region->r_region }}</strong>
+	            		<strong id="classId" value="{{ $region->r_id }}">{{ $region->r_region }}</strong>
 		                <div class="noe"> 
 		                @foreach($region->child as $reg)
-						<a href="http://www.byts.com.cn/line/haidao001">{{ $reg->r_region }}</a>
+						<a href="javascript:void(0)" id="inClassId" onclick="inClassId({{ $reg->r_id }})" value="{{ $reg->r_id }}">{{ $reg->r_region }}</a>
 						@endforeach
 						</div>
 					</div>
@@ -197,11 +191,11 @@ function mousout(n){
 		<li>
 			@foreach($q->child as $w)
 			 <div class="a"> 
-			 <a href="http://www.byts.com.cn/line/haidao001">{{$w->r_region }}</a>
+			 <a href="javascript:void(0)" id="inClassId2" onclick="inClassId2({{ $w->r_id }})" value="{{ $w->r_id }}">{{$w->r_region }}</a>
 			 </div>
 			 <div class="b">
 			  @foreach($w->child as $t)
-			  <a href="http://www.byts.com.cn/line/bincheng002">{{$t->r_region }} &nbsp;|</a>
+			  <a href="javascript:void(0)" id="smallClassId" onclick="smallClassId({{ $t->r_id }})" value="{{ $t->r_id }}">{{$t->r_region }} &nbsp;|</a>
 			  @endforeach
 			 </div>
 			  @endforeach
@@ -215,17 +209,16 @@ function mousout(n){
   </div>
 </div>
 
-
-
+<!-- 首页轮播图始 -->
 <div id="full-screen-slider" style="">
 	<ul id="slides">
-		<li style="background: transparent url(&quot;/uploads/userup/0/1463390341.jpg&quot;) no-repeat scroll center top; z-index: 900; display: block; opacity: 1;"><a href="http://www.byts.com.cn/line/ouzhou001/" target="_blank"></a></li>
-		<li style="background: transparent url(&quot;/uploads/userup/0/1463134575.jpg&quot;) no-repeat scroll center top; z-index: 800; display: block;"><a href="http://www.byts.com.cn/line/beijiaerhu002/" target="_blank"></a></li>
-        <li style="background: transparent url(&quot;/uploads/userup/0/1463390318.jpg&quot;) no-repeat scroll center top; z-index: 900; display: none;"><a href="http://www.byts.com.cn/line/ouzhou001/" target="_blank"></a></li>
-        <li style="background: transparent url(&quot;/uploads/userup/0/1463134488.jpg&quot;) no-repeat scroll center top; z-index: 900; display: none;"><a href="http://www.byts.com.cn/line/xizang001/" target="_blank"></a></li>
-	</ul><ul style="margin-left: 330px;" id="pagination"><li class=""><a>1</a></li><li class="current"><a>2</a></li><li class=""><a>3</a></li><li class=""><a>4</a></li></ul>
+        <li style="z-index: 800; display: block; background: url(http://www.byts.com.cn/uploads/userup/0/1463390341.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/ouzhou001/" target="_blank"></a></li>
+        <li style="z-index: 900; display: none; background: url(http://www.byts.com.cn/uploads/userup/0/1463134575.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/xizang001/" target="_blank"></a></li>
+        <li style="z-index: 800; display: block; background: url(http://www.byts.com.cn/uploads/userup/0/1463390318.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/ouzhou001/" target="_blank"></a></li>
+        <li style="z-index: 900; display: none; background: url(http://www.byts.com.cn/uploads/userup/0/1463134488.jpg) 50% 0% no-repeat;"><a href="http://www.byts.com.cn/line/xizang001/" target="_blank"></a></li>
+	</ul><ul id="pagination" style="margin-left: 330px;"><li class=""><a>1</a></li><li class=""><a>2</a></li><li class="current"><a>3</a></li><li class=""><a>4</a></li></ul>
 </div>
-
+<!-- 首页轮播图终 -->
 
 </div>
 <!--第一部分END-->
@@ -246,11 +239,11 @@ function mousout(n){
                 <dl>
                     @foreach($xc->child as $zx)
                     <dt>
-                    	<a href="http://www.byts.com.cn/line/hainan001" target="_blank" id="{{ $zx->r_id }}">{{$zx->r_region }}</a>
+                    	<a href="javascript:void(0)" target="_blank" id="{{ $zx->r_id }}" onclick="inClassId3({{ $zx->r_id }})">{{$zx->r_region }}</a>
                     </dt>
                     <dd class="cfix">
 						@foreach($zx->child as $asds)
-                    	<a href="http://www.byts.com.cn/line/haikouwangfan002" id="{{ $asds->r_id }}">{{$asds->r_region }}</a>
+                    	<a href="javascript:void(0)" id="{{ $asds->r_id }}" onclick="smallClassId3({{ $asds->r_id }})">{{$asds->r_region }}</a>
                     	@endforeach
                     @endforeach
                    </dd>
@@ -270,19 +263,19 @@ function mousout(n){
             	<!-- 景点上边地区分类 -->
                  <div class="newChannel-list J-newChannel-list visible">
 
-                    <ul class="clearfix">
+                    <ul class="clearfix" id="tihuan">
                         <!-- 景点展示开始 -->
                         @foreach($arr3 as $a=>$scenic)
                         <li class="lineitem cfix">
                             <div class="img fn-left">
-					            <a href="http://www.byts.com.cn/line/sanyaziyouren002/4556.htm" target="_blank" title="{{ $scenic->s_name }}">
-                                    <img style="display: inline;" data-original="{{ $scenic->s_img }}" src="{{ $scenic->s_img }}" alt="" height="67px" width="118px">
+					            <a href="javascript:void(0)" target="_blank" title="{{ $scenic->s_name }}">
+                                    <img style="display: inline;" data-original="home/images/{{ $scenic->s_img }}" src="home/images/{{ $scenic->s_img }}" alt="" height="67px" width="118px">
                                 </a>
                                 <div class="prd-num">产品编号：{{ $scenic->s_id }}</div>
 				            </div>
 				            <dl class="info fn-left">
 					            <dt class="t">
-                                    <a href="http://www.byts.com.cn/line/sanyaziyouren002/4556.htm" target="_blank" title="{{ $scenic->s_name }}">{{ $scenic->s_name }}</a><img src="home/homepage/tuijian.gif">
+                                    <a href="javascript:void(0)" target="_blank" title="{{ $scenic->s_name }}">{{ $scenic->s_name }}</a><img src="home/homepage/tuijian.gif">
                                 </dt>
 					            <dd class="desc"> {{ $scenic->s_name }}</dd>
 					            <dd class="moredesc">
@@ -316,152 +309,77 @@ function mousout(n){
 
 <script src="assets/js/jquery-2.1.4.min.js"></script>
 <script>
+	/**
+	 * @查询替换
+	 * @param  {[type]} showsjd [根据showsjd查询出当前地区下的景点]
+	 * @return {[type]}         [description]
+	 */
 	function showsjd(showsjd){
 		var ass='';
 		$.ajax({
 		   type: "get",
 		   url: "{{URL('home/scenic')}}",
 		   data: "showsjd="+showsjd,
-		   success: function(msg){
-		      alert(msg);
+		   success: function(ms){
+		          ass+="<ul class='clearfix'>"
+	             for (var i = 0; i < ms.length; i++) {
+	                ass+="<li class='lineitem cfix'>"
+	                ass+="<div class='img fn-left'>"
+	                ass+="<a href='"+ms[i]['s_id']+"' target='_blank' title='"+ms[i]['s_name']+"'>"
+	                ass+="<img width='118px' height='67px' data-original='home/images/"+ms[i]['s_img']+"' src='home/images/"+ms[i]['s_img']+"' alt='景点图' style='display: inline;'>"
+	                ass+="</a>"
+	                ass+="<div class='prd-num'>产品编号："+ms[i]['s_id']+"</div>"
+	                ass+="</div>"
+	                ass+="<dl class='info fn-left'>"
+	                ass+="<dt class='t'>"
+	                ass+="<a href='http://www.byts.com.cn/tours/4376.htm' target='_blank' title='"+ms[i]['s_name']+"'>"+ms[i]['s_name']+"</a><img src='home/homepage/tuijian.gif'>"
+	                ass+="</dt>"
+	                ass+="<dd class='desc'> "+ms[i]['s_characteristic']+"</dd>"
+	                ass+="<dd class='moredesc'>"
+	                ass+="<span>满意度：<span class='n'>100%</span></span>"
+	                ass+="<span class='pin'><span class='n'>&nbsp;0&nbsp;</span>人点评</span>"
+	                ass+="<span>最近出发班期：<span class='n'>星期二,星期四,星期日</span></span>"
+	                ass+="</dd>"
+	                ass+="</dl>"
+	                ass+="<div class='detail fn-right'>"
+	                ass+="<span class='sup'>网订优惠</span>"
+	                ass+="<p class='price'><span class='u'></span><span class='n'>￥"+ms[i]['s_price']+"</span>起</p>"
+	                ass+="<span class='s m-5 J_powerFloat' rel='J_popDisong' data-song='200'><em class='dsnum'></em></span>"
+	                ass+="</div>"
+	                ass+="</li>"
+	              }
+	                ass+="</ul>"
+	              //alert(ass);
+              $("#tihuan").html(ass);
 		   }
-		});
+		},'json');
 
-
-		/*var ass='';
-        $.get('scenic',{'showsjd':showsjd},function(ms){
-            ass+="<ul class='clearfix'>"
-            for (var i = 0; i < ms.length; i++) {
-                ass+="<li class='lineitem cfix'>"
-                ass+="<div class='img fn-left'>"
-                ass+="<a href='"+ms[i]['s_id']+"' target='_blank' title='"+ms[i]['s_name']+"'>"
-                ass+="<img width='118px' height='67px' data-original='"+ms[i]['s_img']+"' src='"+ms[i]['s_img']+"' alt='景点图' style='display: inline;'>"
-                ass+="</a>"
-                ass+="<div class='prd-num'>产品编号："+ms[i]['s_id']+"</div>"
-                ass+="</div>"
-                ass+="<dl class='info fn-left'>"
-                ass+="<dt class='t'>"
-                ass+="<a href='http://www.byts.com.cn/tours/4376.htm' target='_blank' title='"+ms[i]['s_name']+"'>"+ms[i]['s_name']+"</a><img src='image/tuijian.gif'>"
-                ass+="</dt>"
-                ass+="<dd class='desc'> "+ms[i]['s_characteristic']+"</dd>"
-                ass+="<dd class='moredesc'>"
-                ass+="<span>满意度：<span class='n'>100%</span></span>"
-                ass+="<span class='pin'><span class='n'>&nbsp;0&nbsp;</span>人点评</span>"
-                ass+="<span>最近出发班期：<span class='n'>星期二,星期四,星期日</span></span>"
-                ass+="</dd>"
-                ass+="</dl>"
-                ass+="<div class='detail fn-right'>"
-                ass+="<span class='sup'>网订优惠</span>"
-                ass+="<p class='price'><span class='u'></span><span class='n'>￥"+ms[i]['s_price']+"</span>起</p>"
-                ass+="<span class='s m-5 J_powerFloat' rel='J_popDisong' data-song='200'><em class='dsnum'></em></span>"
-                ass+="</div>"
-                ass+="</li>"
-              }
-                ass+="</ul>"
-             alert(ass);
-             // $("#tihuan").html(ass);
-        },'json');*/
 	}
+	
+	/**
+	 * @根据地区查询景点
+	 * @param  {[type]} rid []
+	 */
+	function inClassId(rid){
+    	location.href="home/regionid?rid="+rid;
+	}
+	function inClassId2(rid){
+    	location.href="home/regionid?rid="+rid;
+	}
+	function smallClassId(rid){
+    	location.href="home/regionid?rid="+rid;
+	}
+	function inClassId3(rid){
+    	location.href="home/regionid?rid="+rid;
+	}
+	function smallClassId3(rid){
+    	location.href="home/regionid?rid="+rid;
+	}
+
 </script>
 
 <div style="clear:both;"></div>
 <div class="ufooter">
-    <div class="footer01">
-        <div class="newWarp">
-            <div class="foot_faq">
-            
-            <div class="faq_container01">
-                    <span class="faq_class"><strong>预订常见问题</strong></span>
-                    <ul>
-                    
-                    
- <li><a href="http://www.byts.com.cn/help/1/chunwan.htm" title="纯玩是什么意思？" target="_blank">纯玩是什么意思？</a></li>
-<li><a href="http://www.byts.com.cn/help/1/help538.html" title="单房差是什么？" target="_blank">单房差是什么？</a></li>
-<li><a href="http://www.byts.com.cn/help/1/help537.html" title="双飞、双卧都是什么意思？" target="_blank">双飞、双卧都是什么意思？</a></li>
-<li><a href="http://www.byts.com.cn/help/1/help536.html" title="满意度是怎么计算的？" target="_blank">满意度是怎么计算的？</a></li>
- 
-                       
-                       
-                    </ul>
-                </div><div class="faq_container01">
-                    <span class="faq_class"><strong>付款和发票</strong></span>
-                    <ul>
-                    
-                    
- <li><a href="http://www.byts.com.cn/help/2/help543.html" title="签约可以刷卡吗？" target="_blank">签约可以刷卡吗？</a></li>
-<li><a href="http://www.byts.com.cn/help/2/help542.html" title="付款方式有哪些？" target="_blank">付款方式有哪些？</a></li>
-<li><a href="http://www.byts.com.cn/help/2/help541.html" title="怎么网上支付？" target="_blank">怎么网上支付？</a></li>
-<li><a href="http://www.byts.com.cn/help/2/help540.html" title="如何获取发票？" target="_blank">如何获取发票？</a></li>
- 
-                       
-                       
-                    </ul>
-                </div><div class="faq_container01">
-                    <span class="faq_class"><strong>签署旅游合同</strong></span>
-                    <ul>
-                    
-                    
- <li><a href="http://www.byts.com.cn/help/3/help547.html" title="有旅游合同范本下载吗？" target="_blank">有旅游合同范本下载吗？</a></li>
-<li><a href="http://www.byts.com.cn/help/3/help546.html" title="门市地址在哪里？" target="_blank">门市地址在哪里？</a></li>
-<li><a href="http://www.byts.com.cn/help/3/help545.html" title="能传真签合同吗？" target="_blank">能传真签合同吗？</a></li>
-<li><a href="http://www.byts.com.cn/help/3/help544.html" title="可以不签合同吗？" target="_blank">可以不签合同吗？</a></li>
- 
-                       
-                       
-                    </ul>
-                </div><div class="faq_container01">
-                    <span class="faq_class"><strong>旅游预订优惠政策</strong></span>
-                    <ul>
-                    
-                    
- <li><a href="http://www.byts.com.cn/help/4/help551.html" title="如何查看我的金币信息？" target="_blank">如何查看我的金币信息？</a></li>
-<li><a href="http://www.byts.com.cn/help/4/help550.html" title="如何使用金币？" target="_blank">如何使用金币？</a></li>
-<li><a href="http://www.byts.com.cn/help/4/help549.html" title="如何得到金币" target="_blank">如何得到金币</a></li>
-<li><a href="http://www.byts.com.cn/help/4/help548.html" title="什么是金币？" target="_blank">什么是金币？</a></li>
- 
-                       
-                       
-                    </ul>
-                </div><div class="faq_container01">
-                    <span class="faq_class"><strong>其他事项</strong></span>
-                    <ul>
-                    
-                    
- <li><a href="http://www.byts.com.cn/help/5/2016/0304/5402.html" title="&lt;font color='#FF6633'&gt;关于游客购物的重要提示&lt;/font&gt;" target="_blank"><font color="#FF6633">关于游客购物的重要提示</font></a></li>
-<li><a href="http://www.byts.com.cn/help/5/2012/0524/555.html" title="退款问题解答" target="_blank">退款问题解答</a></li>
-<li><a href="http://www.byts.com.cn/help/5/2012/0524/554.html" title="有旅游保险吗？保额多少？" target="_blank">有旅游保险吗？保额多少？</a></li>
-<li><a href="http://www.byts.com.cn/help/5/2012/0524/553.html" title="签证相关问题解答" target="_blank">签证相关问题解答</a></li>
- 
-                       
-                       
-                    </ul>
-                </div>
-
-          
-          
-                <div class="faq_container06">
-                    <span class="faq_class"><strong>关注我们的微博</strong></span>
-                  <div class="interact_us">
-                  
-                    <ul class="interact_us clearfix">
-                        <li><span class="tn_weibo"><a target="_blank" href="http://www.weibo.com/"></a></span>
-                            <p><a target="_blank" rel="nofollow" href="http://www.weibo.com/">新浪微博</a></p>
-                        </li>
-                        <li><span class="tn_tencent"><a target="_blank" href="http://t.qq.com/ccsz8"></a></span>
-                            <p><a target="_blank" rel="nofollow" href="http://t.qq.com/ccsz8">腾讯微博</a></p>
-                        </li>
-                        <li id="wxpop"><span class="tn_weixin"><a href="javascript:void(0);"></a></span>
-                            <p><a href="javascript:void(0);" rel="nofollow">微信</a></p>
-                        </li>
-                    </ul>
-                </div>
-
-                </div>
-                <div class="clear">
-                </div>
-            </div>
-        </div>
-    </div>
     
 <div class="foot-webtrust">
     <a href="http://www.byts.com.cn/news/lvyouxinwen/2183.htm" rel="nofollow" target="_blank" title="国家4A级旅行社" class="trust1"></a>
@@ -474,25 +392,23 @@ function mousout(n){
 </div>
 
         <div class="foot-copyright">
-            <span>Copyright 1984-2014 http://www.byts.com.cn</span>
+            <span>Copyright 1984-2016 http://www.huiwan.com</span>
             <span>京ICP证041363号</span>
-            <span>联系电话：<font class="red">400-926-5166</font></span>
+            <span>联系电话：<font class="red">18513975642</font></span>
 <span>优质带宽由<a href="http://www.62idc.com/">中睿科技</a>提供 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5896591'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D5896591' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_5896591"><a href="http://www.cnzz.com/stat/website.php?web_id=5896591" target="_blank" title="站长统计">站长统计</a></span><script src="home/homepage/stat.php" type="text/javascript"></script><script src="home/homepage/core.php" charset="utf-8" type="text/javascript"></script></span>
         </div>
 
 
         <div class="foot-aboutlink">
-            <span><a href="http://www.byts.com.cn/">网站首页</a></span>
-            
-             <span><a target="_blank" href="http://www.byts.com.cn/about/3236.html">关于网上有许多自称北青旅官网的说明</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/562.html">商务合作</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/561.html">发展历程</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/560.html">网站招聘</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/559.html">用户协议</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/558.html">免责声明</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/557.html">联系我们</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/556.html">关于我们</a></span>
- 
+            <span><a href="{{URL('/')}}">网站首页</a></span>
+            <span><a target="_blank" href="">关于网上有许多自称惠玩官网的说明</a></span>
+			<span><a target="_blank" href="">商务合作</a></span>
+			<span><a target="_blank" href="">发展历程</a></span>
+			<span><a target="_blank" href="">用户协议</a></span>
+			<span><a target="_blank" href="">免责声明</a></span>
+			<span><a target="_blank" href="">联系我们</a></span>
+			<span><a target="_blank" href="">关于我们</a></span>
+			 
 
         </div>
 

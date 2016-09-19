@@ -3,7 +3,7 @@
 </script><script src="../aaa/local
 Storage.js" async="" charset="utf-8" type="text/javascript"></script><script src="../aaa/Panel.js" async="" charset="utf-8" type="text/javascript"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>北戴河搜索结果_北京青年旅行社股份有限公司官网</title>
+<title>北京青年旅行社股份有限公司官网</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <link href="../aaa/style.css" rel="stylesheet" media="screen" type="text/css">
@@ -156,14 +156,14 @@ $(document).ready(function(){
 <!--TOP部分-->
 <script language="javascript" type="text/javascript" src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/ajax188.js"></script>
 <script language="javascript" type="text/javascript">
-
+/*
 function Check_head_Login(){
       
     var taget_obj = document.getElementById('_Check_head_Login');   
     myajax = new ajaxx188(taget_obj,false,false,'','','');
     myajax.SendGet2("http://www.byts.com.cn/users/ajax_head.php");
     A188XHTTP = null;
-}
+}*/
 
 function  myAddPanel(title,url,desc) {
     if((typeof   window.sidebar   ==   'object')   &&   (typeof   window.sidebar.addPanel   ==   'function')) {
@@ -181,57 +181,17 @@ window.onerror=function(){return true;}
 // --> 
 </script> 
 
-<div class="top1">
-  <div class="conter"><span>欢迎访问 <a href="http://www.byts.com.cn/">北京青年旅行社官网</a></span>　请
-  <span id="_Check_head_Login"><a href="http://www.byts.com.cn/users/">欢迎您，13021082314</a> <a href="http://www.byts.com.cn/users/order.php?po=all"> [订单]</a> <a href="http://www.byts.com.cn/users/index.php?do=edt"> [资料]</a><a href="http://www.byts.com.cn/users/index.php?do=money"> [积分]</a> <a href="http://www.byts.com.cn/users/index_do.php?fmdo=login&amp;dopost=exit"> [退出]</a>
-</span><script language="javascript">Check_head_Login();</script>
-     <div class="hour"><img src="../aaa/pic1.jpg" height="19" width="46"></div>
-     <div class="iph">旅游预订电话 <strong>400-926-5166</strong></div>
-  </div>
-</div>
-<div class="top2">
-  <div class="conter">
-      <div class="logo"><img src="../aaa/logo.png" height="54" width="329"><img src="../aaa/tage.png" height="50" width="116"></div>
-    <div class="sourchNew"> 
-    <form action="http://www.byts.com.cn/tags.php" method="post" name="indexsearchform" class="cfix" id="indexsearchform">
-    <input value="0" name="travelClassHeader" id="srhInput" type="hidden">
-        <div class="select_box"><input id="myselect" value="全部" readonly="readonly" type="text">
-        <ul class="select_ul" tyle="z-index: 10000; display: none;">
-        <li> <a href="javascript:void(0)">全部</a></li>
-            <li><a val="4" href="javascript:void(0)">旅游线路</a></li>
-            <li><a val="5" href="javascript:void(0)">酒店预定</a></li>
-            <li> <a val="8" href="javascript:void(0)">签证办理</a></li>
-            <li><a val="9" href="javascript:void(0)">旅游租车</a></li>
-            <li><a val="10" href="javascript:void(0)">旅游门票</a></li>
-      
-    </ul>
-   <div class="select_text"><input id="search" autocomplete="off" maxlength="18" value="请输入关键字" onclick="javascript:document.getElementById('search').value='';" name="searchkey" type="text"></div>
-   <input class="select_seach" name="" type="submit"> 
-  </div>
-  </form>
-  </div>  
-  
-    </div>
-</div>
+@include('includes.searchtop')
+
 <div class="dh">
   <div class="conter">
       <div class="a1"><a href="#">所有目的地分类</a></div>
       <div class="a2">
-          <a href="http://www.byts.com.cn/index.html">首页</a>
-            <a href="http://www.byts.com.cn/out/">出境游</a>
-            <a href="http://www.byts.com.cn/china/">国内游</a>
-            <a href="http://www.byts.com.cn/beijing/">北京游</a>
-            <a href="http://www.byts.com.cn/zhoubian/">周边游</a>
-            <a href="http://www.byts.com.cn/youlun/">邮轮游</a>
-            <a href="http://www.byts.com.cn/line/maerdaifu001/">马尔代夫</a>
-            <a href="http://www.byts.com.cn/jipiao/">机票</a> 
+            <a href="{{URL('/')}}">首页</a>
+            <a href="{{URL('home/beijing')}}">北京游</a>
+            <a href="{{URL('home/domestic')}}">国内游</a>
+            <a href="{{URL('home/exit')}}">出境游</a>
         </div>
-      <div class="a3"><div style="position: absolute; left: 24px; top: 1px;"><img src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/HOT.png"></div>
-       <a href="http://www.byts.com.cn/add/tejia.php">特价</a>
-        <a href="http://www.byts.com.cn/visa/">签证</a>   
-        <a href="http://www.byts.com.cn/zuche/bj/">租车</a>
-        <a href="http://www.byts.com.cn/add/dingzhi.php">定制</a> 
-      </div>
         <div class="clear"></div>
         
   </div>
@@ -309,10 +269,13 @@ window.onerror=function(){return true;}
      
     </div>
     <div class="Ny_Mainconbox_fr">
+    @foreach($sous as $sous)
     <div class="Ny_searchtop_bt">搜索到
-    <span class="ls_color">{{$sou}}</span>
-    相关产品共有<span class="cs_color">{{$count}}</span>条</div>
-    <input type="hidden" id="zxc" value="{{$sou}}"  />
+    <span class="ls_color">{{$sous}}</span>
+    相关产品共有<span class="cs_color">{{$count}}</span>条
+    </div>
+    <input type="hidden" id="zxc" value="{{$sous}}"  />
+    @endforeach
     <div class="Ny_search">
     <div class="Ny_search_bt">
    
@@ -344,9 +307,23 @@ window.onerror=function(){return true;}
               </dd>
             </dl>
             </div>
+
+          <div class="prop_item">
+            <dl>
+              <dt>目的地：</dt>
+              <dd>
+                <ul class="content2">                 
+                  <li> <a class="yes" href="javascript:void(0)" id="day_0" onclick="days(0)">不限</a> </li>
+                  @foreach($splic as $splic)
+                  <li><a href="javascript:void(0)" id="splic" onclick="splic({{$splic->r_id}})">{{$splic->r_region}}</a> </li>
+                  @endforeach
+                </ul>
+              </dd>
+            </dl>
+          </div>
                      
                            
-                    <div class="prop_item">
+          <div class="prop_item">
             <dl>
               <dt>行程天数：</dt>
               <dd>
@@ -409,14 +386,14 @@ window.onerror=function(){return true;}
           <div class="Ny_search_showcon_middlist">
               <div class="Ny_search_showcon_midd_fl">
                 <a href="http://www.byts.com.cn/travel/12030.html" target="_blank">
-                  <img src="{{$souz->s_img}}" height="100px" width="125px">
+                  <img src="../home/images/{{$souz['s_img']}}" height="100px" width="125px" alt="景点图">
                 </a>
               </div> 
             <div class="Ny_search_showcon_midd_fr">
                 <dl>
-                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank">{{$souz->s_name}}</a></dt>
-                    <dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥{{$souz->s_sprice}}元</span></span><span style="margin-left:20px;">旅游方式：<span class="cs_color">{{$souz->s_traffic}}</span></span></dd>
+                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank">{{$souz['s_name']}}</a></dt>
+                    <dd>{{$souz['s_characteristic']}}</dd>
+                    <dd><span>优惠价：<span class="cs_color">￥{{$souz['s_sprice']}}元</span></span><span style="margin-left:20px;">旅游方式：<span class="cs_color">{{$souz['s_traffic']}}</span></span></dd>
                 </dl>
             </div> 
             <div class="clear"></div>
@@ -532,7 +509,7 @@ function days(dayid){
         sr+="<div class='Ny_search_showcon_middlist'>"
         sr+="<div class='Ny_search_showcon_midd_fl'>"
         sr+="<a href='#'>"
-        sr+="<img src='"+msg[s]['s_img']+"' height='100px' width='125px'>"
+        sr+="<img src='../home/images/"+msg[s]['s_img']+"' height='100px' width='125px'>"
         sr+="</a>"
         sr+="</div>" 
         sr+="<div class='Ny_search_showcon_midd_fr'>"
@@ -557,7 +534,7 @@ function sous2(price){
         sr+="<div class='Ny_search_showcon_middlist'>"
         sr+="<div class='Ny_search_showcon_midd_fl'>"
         sr+="<a href='#'>"
-        sr+="<img src='"+msg[f]['s_img']+"' height='100px' width='125px'>"
+        sr+="<img src='../home/images/"+msg[f]['s_img']+"' height='100px' width='125px'>"
         sr+="</a>"
         sr+="</div>" 
         sr+="<div class='Ny_search_showcon_midd_fr'>"
@@ -573,6 +550,34 @@ function sous2(price){
       $("#replaces").html(sr)
     },'json')
 }
+
+  /**
+   * 地区
+   */
+  function splic(rid){
+    var sr='';
+    $.get('destination',{"ss":ss,"rid":rid},function(msg){
+        for(var f=0;f<msg.length;f++){
+          sr+="<div class='Ny_search_showcon_middlist'>"
+          sr+="<div class='Ny_search_showcon_midd_fl'>"
+          sr+="<a href='#'>"
+          sr+="<img src='../home/images/"+msg[f]['s_img']+"' height='100px' width='125px'>"
+          sr+="</a>"
+          sr+="</div>" 
+          sr+="<div class='Ny_search_showcon_midd_fr'>"
+          sr+="<dl>"
+          sr+="<dt><a href='#' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
+          sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
+          sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[f]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[f]['s_traffic']+"</span></span></dd>"
+          sr+="</dl>"
+          sr+="</div>" 
+          sr+="<div class='clear'></div>"
+          sr+="</div>"
+        }
+        $("#replaces").html(sr)
+      })
+    /*location.href="home/regionid?rid="+rid;*/
+  }
 </script>
 
 </body></html>

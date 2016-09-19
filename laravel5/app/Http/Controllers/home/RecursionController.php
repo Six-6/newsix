@@ -19,17 +19,25 @@ use App\Recursion;
 session_start();//开启session
 class RecursionController extends BaseController{
     /*
-     * 递归展示首页侧边栏
+     * @递归展示首页侧边栏
+     *
+     * @return  [description]
      */
     public function recursion(){
-        $navigation = DB::table('types')->get();
-        $tables = DB::table('region')->get();
-        $data = DB::table('scenic_spot')
-            ->join('region','scenic_spot.r_id','=','region.r_id')
-            ->limit(4)
-            ->get();
-        $ast = $this->Cate($tables,0,0);
-        return view('home.home3',['arr1' => $ast,'arr2' => $navigation,'arr3' => $data]);
+
+        $model = new Recursion();//调用model层
+        
+        $navigation = $model->navigation();//调用地区
+
+        $gittable = $model->gittable();//调用查询方法
+
+        $data = $model->data();//调用某个地区下的景点
+
+        $ast = $this->Cate($gittable,0,0);
+
+        //print_r($ast);die;
+
+        return view('home.home3',['arr1' => $ast,'arr2' => $navigation,'arr3' => $data]);//展示给用户
     }
 
     public function Cate(&$info, $child, $pid)  
@@ -48,11 +56,17 @@ class RecursionController extends BaseController{
     }
 
     /*
-     *首页全文检索
+     *@首页全文检索
+     *
+     * @return  [description]
      */
     public function searchs(Request $request){
         $sou = $request->input('sous'); 
-        $sqlSel = DB::select("SELECT * FROM scenic_spot WHERE match(s_name,s_traffic) against('$sou')");
+
+        $model = new Recursion();//调用model层
+
+        $sqlSel = $model->fulltextRetrieval($sou);//调用某个地区下的景点
+        
         $nums = count($sqlSel);
         if ($sqlSel) {
             return view('home.search',['souarr'=>$sqlSel,'count'=>$nums,'sou'=>$sou]);
@@ -62,7 +76,9 @@ class RecursionController extends BaseController{
     }
 
     /*
-     *行程天数
+     *@行程天数
+     *
+     * @return  [description]
      */
     public function searchDay(){
         $traffic = Input::get('ss'); 
@@ -76,7 +92,9 @@ class RecursionController extends BaseController{
     }
 
     /*
-     *行程资金
+     *@行程资金
+     *
+     * @return 
      */
     public function searchMoney(){
         $traffic = Input::get('ss'); 
@@ -92,7 +110,7 @@ class RecursionController extends BaseController{
     }
 
     /**
-     *根据地区查询景点
+     *@根据地区查询景点[国内游、出境游、北京游。。。]
      *
      * @return  [description]
      */
@@ -103,7 +121,43 @@ class RecursionController extends BaseController{
         //调用查询方法
         $flights = $model->getScenic($sid);
         //展示
-        print_r( json_decode(json_encode($flights),true));
+        return $flights;
+    }
+
+    /**
+     *@根据地区查询景点[首页无限极]
+     *
+     * @return  [description]
+     */
+    public function regionid(){
+        $rid = Input::get('rid');
+        //调用model层
+        $model = new Recursion();
+        //调用查询方法
+        $region = $model->regionid($rid);
+        $regionName = $model->regionName($rid);
+        $splic = $model->splic($rid);
+
+        //print_r($splic);die;
+        
+        $nums = count($region);
+        return view('home.search',['souarr'=>$region,'count'=>$nums,'sous'=>$regionName,'splic'=>$splic]);
+    }
+
+    /**
+     * @根据旅游景点的目的地查询
+     *
+     * @return [description]
+     */
+    function destination(){
+        $data = Input::get();
+        //调用model层
+        $model = new Recursion();
+        //调用查询方法
+        $region = $model->gitDestination($data);
+
+        //print_r($region);
+        return $region;
     }
 
 }
