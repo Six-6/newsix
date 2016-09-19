@@ -1,3 +1,4 @@
+@include('includes.hemotop')
 @include("home/common/left")
 <h2 class="common_h2">修改密码</h2>
 <form action="pswUpd" method="post" onsubmit="return check()">

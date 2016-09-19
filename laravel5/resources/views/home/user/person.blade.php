@@ -1,4 +1,4 @@
-
+@include('includes.hemotop')
 @include("home/common/left")
 <h2 class="common_h2">个人资料</h2>
 <form action="personUpd" method="post" name="add_place_form" id="user_info_edit_form" onsubmit="return check()">

@@ -60,34 +60,33 @@ class Siterecommend extends Model{
 		}
 		
 		//查询对应的id 发表的评论
-		$data['authority'] = DB::table('travels')->whereIn('u_id',$new_id)->orderBy('t_times','desc')->limit(5)->get();
+		$data['authority'] = DB::table('travels')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->whereIn('u_id',$new_id)->orderBy('t_times','desc')->limit(5)->get();
 		
-		
-		
+	
 		/**
 		*@尝鲜人 
 		*/
-		$data['fresh'] = DB::table('login')->join('travels', 'login.u_id', '=', 'travels.u_id')->where('rank','>',5)->where('t_unwilling',1)->limit(5)->get();
+		$data['fresh'] = DB::table('travels')->join('login', 'travels.u_id', '=', 'login.u_id')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->where('rank','>',5)->where('t_state',1)->limit(5)->get();
 
 		/**
 		*@快门控
 		*/
-		$data['shutter'] = DB::table('login')->join('travels', 'login.u_id', '=', 'travels.u_id')->where('rank','>',5)->where('t_unwilling',1)->limit(5)->get();
+		$data['shutter'] = DB::table('travels')->join('login', 'travels.u_id', '=', 'login.u_id')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->where('t_type',1)->where('t_state',1)->limit(5)->get();
 		
 		/**
 		*@美食家
 		*/
-		$data['cate'] = DB::table('login')->join('travels', 'login.u_id', '=', 'travels.u_id')->where('rank','>',5)->where('t_unwilling',1)->limit(5)->get();
+		$data['cate'] = DB::table('travels')->join('login', 'travels.u_id', '=', 'login.u_id')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->where('t_type',2)->where('t_state',1)->limit(5)->get();
 				
 		/**
 		*@购物狂
 		*/
-		$data['shopping'] = DB::table('login')->join('travels', 'login.u_id', '=', 'travels.u_id')->where('rank','>',5)->where('t_unwilling',1)->limit(5)->get();
+		$data['shopping'] = DB::table('travels')->join('login', 'travels.u_id', '=', 'login.u_id')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->where('t_type',3)->where('t_state',1)->limit(5)->get();
 		
 		/**
 		*@文艺咖
 		*/
-		$data['literature'] = DB::table('login')->join('travels', 'login.u_id', '=', 'travels.u_id')->where('rank','>',5)->where('t_unwilling',1)->limit(5)->get();
+		$data['literature'] = DB::table('travels')->join('login', 'travels.u_id', '=', 'login.u_id')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->where('t_type',4)->where('t_state',1)->limit(5)->get();
 		
 		
 		/**

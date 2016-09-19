@@ -1,4 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <!-- saved from url=(0038)http://www.byts.com.cn/users/index.php -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" charset="utf-8" async="" src="css/crmqq.php"></script><script type="text/javascript" charset="utf-8" async="" src="js/contains.js"></script><script type="text/javascript" charset="utf-8" async="" src="js/localStorage.js"></script><script type="text/javascript" charset="utf-8" async="" src="js/Panel.js"></script>
 <title>登录-北京青年旅行社股份有限公司官网</title>
@@ -316,23 +315,19 @@ window.onerror=function(){return true;}
         </script>
 
         <script type="text/javascript">
-            //============================================
             //方法：paus_slide(),cont_slide()
             //登录页背景图片的暂停和恢复
             //etc.当激活文本框时激活暂停,当不激活文本框时恢复图片切换显示
             //chenjinlong 2011-11-29
-            //============================================
             function pause_slide(){
                 $('#showIMG').cycle('pause');
             }
             function resume_slide(){
                 $("#showIMG").cycle('resume');
             }
-            //============================================
             //方法：change_card_tpl(sel_opt)
             //合作卡激活-图片的版权控制 
             //chenjinlong 2011-11-23
-            //============================================
      
 	 
             

@@ -95,14 +95,14 @@ class Travels extends Model{
 	public function del($id)
 	{
 		//执行删除
-		return DB::table('travels')->where('t_id',$id)->delete();
+		return DB::table('travels')->where('tt_id',$id)->delete();
 	}
 	
 	public function updata($id)
 	{
 		//执行修改
 		return DB::table('travels')
-            ->where('t_id',$id)
+            ->where('tt_id',$id)
             ->update(['t_state' => 1]);
 	}
 	
@@ -114,7 +114,7 @@ class Travels extends Model{
 	{
 		//执行修改
 		return DB::table('travels')
-            ->where('t_id',$id)
+            ->where('tt_id',$id)
             ->update(['t_essence' => 1]);
 	}
 	

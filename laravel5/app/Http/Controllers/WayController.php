@@ -31,26 +31,6 @@ class WayController extends Controller
 	}
 
     /*
-     * 添加展示
-     * @return
-     */
-    public function wayadd()
-    {
-        $tables = DB::table('region')->get();
-        return view('admin.article_add', ['arr' => $tables]);
-    }
-
-    /*
-     *展示旅游方式
-     * @return
-     */
-    public function waysel()
-    {
-        $tables = DB::table('scenic_spot')->get();
-        return view('admin.admin_cardTemplate2', ['arr' => $tables]);
-    }
-
-    /*
      *旅游景点修改
      * @return
      */

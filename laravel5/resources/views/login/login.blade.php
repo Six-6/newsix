@@ -238,6 +238,7 @@ window.onerror=function(){return true;}
 				var name=$("#username").val();
 				if(name=='')
 				{
+					$("#name_sp").html('<style color:red>不能为空</style>');
 					$("#name_sp").html('用户名不能为空');
 					return false;
 				}
@@ -316,23 +317,19 @@ window.onerror=function(){return true;}
         </script>
 
         <script type="text/javascript">
-            //============================================
             //方法：paus_slide(),cont_slide()
             //登录页背景图片的暂停和恢复
             //etc.当激活文本框时激活暂停,当不激活文本框时恢复图片切换显示
             //chenjinlong 2011-11-29
-            //============================================
             function pause_slide(){
                 $('#showIMG').cycle('pause');
             }
             function resume_slide(){
                 $("#showIMG").cycle('resume');
             }
-            //============================================
             //方法：change_card_tpl(sel_opt)
             //合作卡激活-图片的版权控制 
             //chenjinlong 2011-11-23
-            //============================================
      
 	 
             

@@ -1,3 +1,4 @@
+@include('includes.hemotop')
 @include("home/common/left")
 <div id="pictable">
     <div id='uploadwait' class='uploadwait'></div>
