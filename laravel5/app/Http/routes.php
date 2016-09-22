@@ -47,9 +47,12 @@ Route::get('home/detailsSel',"home\ExchangeController@details");/**兑换商品�
 Route::post('home/detailsOrder',"home\ExchangeController@order");/**兑换商品订单**/
 Route::post('home/orderAdd',"home\ExchangeController@orderAdd");/**确认兑换**/
 /**前台志同道合**/
-Route::get('home/funShow',"home\FunController@show");/**志同道合页面显示**/
-Route::post('home/funExchange',"home\FunController@exchange");/**更换页面**/
-Route::get('home/funWrite',"home\FunController@write");/**志同道合发起**/
+Route::get('home/funShow',"home\FunController@show");/**志同道合显示**/
+Route::get('home/funWrite',"home\FunController@lists");/**志同道合详细页面展示**/
+Route::get('home/funReplay',"home\FunController@replay");/**志同道合列表展示**/
+Route::get('home/funPost',"home\FunController@post");/**志同道合发起页面**/
+Route::post('home/funAdd',"home\FunController@adds");/**志同道合添加页面**/
+Route::post('home/funUser',"home\FunController@user");/**志同道合关联好友**/
 /**后台登录 权限控制**/
 Route::get('admin/lo', 'admin\loginController@index');/**后台登录**/
 Route::get('admin/loin', 'admin\loginController@loin');/**后台登录**/

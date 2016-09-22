@@ -48,4 +48,12 @@ class Users extends Model{
         self::where("u_id",$id)->delete();
     }
 
+    /**
+     * 获取用户积分
+     */
+    public static function finds($u_id){
+        $re=self::where(["u_id"=>$u_id])->lists("i_id");
+        return $re;
+    }
+
 }
