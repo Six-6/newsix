@@ -13,8 +13,8 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
-
 use App\Recursion;
+use App\Recursions;
 
 session_start();//开启session
 class RecursionController extends BaseController{
@@ -69,7 +69,7 @@ class RecursionController extends BaseController{
         
         $nums = count($sqlSel);
         if ($sqlSel) {
-            return view('home.search',['souarr'=>$sqlSel,'count'=>$nums,'sou'=>$sou]);
+            return view('home.searchs',['souarr'=>$sqlSel,'count'=>$nums,'sous'=>$sou]);
         }else{
             echo "<script>alert('抱歉，没有您输入的信息，请联系网站管理员');location.href='recursion'</script>";
         }
@@ -81,14 +81,13 @@ class RecursionController extends BaseController{
      * @return  [description]
      */
     public function searchDay(){
-        $traffic = Input::get('ss'); 
-        $days = Input::get('dayid'); 
-        $sqlSel = DB::table('scenic_spot')
-            ->where(['s_day'=>$days,'s_name'=>$traffic])
-            ->orwhere(['s_day'=>$days,'s_traffic'=>$traffic])
-            ->get();
-        $nums = count($sqlSel);
-        echo json_encode($sqlSel);
+        $data = Input::get();
+
+        $model = new Recursions();
+
+        $numDays = $model->numberDay($data);
+
+        return $numDays;
     }
 
     /*
@@ -97,16 +96,13 @@ class RecursionController extends BaseController{
      * @return 
      */
     public function searchMoney(){
-        $traffic = Input::get('ss'); 
-        $price = Input::get('price'); 
-        $begin = $price[0];
-        $ends = $price[1];
-        $sqlSel = DB::table('scenic_spot')
-            ->where('s_name',$traffic)
-            ->whereBetween('s_sprice', [$begin,$ends])
-            ->get();
-        $nums = count($sqlSel);
-        echo json_encode($sqlSel);
+        $data = Input::get();
+
+        $model = new Recursions();
+
+        $numDays = $model->numberDay($data);
+
+        return $numDays;
     }
 
     /**
@@ -127,21 +123,30 @@ class RecursionController extends BaseController{
     /**
      *@根据地区查询景点[首页无限极]
      *
-     * @return  [description]
+     * @return [type] $regionName [根据$regionName查询]
+     * @return [type] $region [查询的景点]
+     * @return [type] $pushDown [根据地区ＩＤ递归展示]
+     * @return [type] $splic [查询地区名]
+     * @return [type] $nums [景点总数]
      */
     public function regionid(){
         $rid = Input::get('rid');
-        //调用model层
+
         $model = new Recursion();
-        //调用查询方法
+        
         $region = $model->regionid($rid);
         $regionName = $model->regionName($rid);
         $splic = $model->splic($rid);
+        $pushDown = $model->pushDown($rid);
 
-        //print_r($splic);die;
-        
         $nums = count($region);
-        return view('home.search',['souarr'=>$region,'count'=>$nums,'sous'=>$regionName,'splic'=>$splic]);
+        return view('home.search',[
+            'souarr'=>$region,
+            'count'=>$nums,
+            'sous'=>$regionName,
+            'splic'=>$splic,
+            'pushDown'=>$pushDown
+        ]);
     }
 
     /**
@@ -151,13 +156,52 @@ class RecursionController extends BaseController{
      */
     function destination(){
         $data = Input::get();
-        //调用model层
+
         $model = new Recursion();
-        //调用查询方法
+
         $region = $model->gitDestination($data);
 
-        //print_r($region);
         return $region;
+    }
+
+    /**
+     * 多项搜索页面操作
+     * @return [type] $pushInClass [查询景点]
+     * @return [type] $pushSmailClass [查询子地区]
+     * @return [type] $regionName [地名]
+     * @return [type] $nums [景点总数]
+     */
+    function pushClass(){
+        $rid = Input::get('jid');
+
+        $model = new Recursion();
+
+        $pushInClass = $model->regionid($rid);
+
+        $pushSmailClass = $model->pushSmailClass($rid);
+
+        $regionName = $model->regionName($rid);
+        $pushDown = $model->pushDown($rid);
+
+        $nums = count($pushInClass);
+        //print_r($pushDown);die;
+        return view('home.search',[
+            'souarr'=>$pushInClass,
+            'count'=>$nums,
+            'sous'=>$regionName,
+            'splic'=>$pushSmailClass,
+            'pushDown'=>$pushDown
+        ]);
+    }
+
+    function contentChange(){
+        $content = Input::get();
+
+        $model = new Recursion();
+
+        $change = $model->contentChange($content);
+
+        return $change;
     }
 
 }

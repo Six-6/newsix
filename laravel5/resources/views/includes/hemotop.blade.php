@@ -19,18 +19,39 @@
      <div class="iph">旅游预订电话 <strong>18513975642</strong></div>
 </div>
 </div>
+<style type="text/css">
+  .sourcw{float:right; background-color:; margin-top: 10px}
+  .textSubmit{
+    height:35px; 
+    background-color:group;
+    border: 1px solid #FE6840;
+    width: 240px
+  }
+  .selSubmit{width:45px; height:35px; background-color:White;}
+  .icon_next{
+    width:45px;
+    height: 35px;
+    font-size: 15px;
+    border:1px solid #FE6840;
+    background: #FE6840;
+    cursor: hand;/* 鼠标移上去时，变成手形。 */
+    color:black
+  }
+</style>
 <div class="top2">
 	<div class="conter">
     <div class="logo"><img src="home/homepage/logo.png" height="54" width="329"><img src="home/homepage/tage.png" height="50" width="116"></div>
-    <div class="sourchNew" style="float:right"> 
-      <form method="POST" action="{{URL('home/searchs')}}">
-        <div class="select_text" style="background-color:greep;">
-        <input placeholder="请输入关键字！" name="sous" style="height:35px;background-color:White;" type="text">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-        <input type="submit" style="height:35px;background-color:greep;" value="查询">
-        </div>
-        </form>
-  </div>
+      <div class="sourcw">
+        <div class="sourchNew"> 
+          <form method="POST" action="{{URL('home/searchs')}}">
+            <div class="select_text" style="background-color:White;">
+            <input placeholder="请输入关键字！" class="textSubmit" name="sous" type="text">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <input type="submit" class="icon_next" value="搜索">
+            </div>
+          </form>
+      </div>
+    </div>
   </div>  
   
     </div>

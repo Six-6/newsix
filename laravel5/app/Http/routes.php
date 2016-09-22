@@ -21,7 +21,7 @@ Route::any('domestic', 'DomesticController@index');//国内
 Route::get('home/recursion', 'home\RecursionController@recursion');/**首页无限极**/
 Route::post('home/searchs', 'home\RecursionController@searchs');/**首页全文检索搜索**/
 Route::get('home/sous', 'home\RecursionController@searchDay');/**根据旅游天数搜索**/
-Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅游资金搜索**/
+
 Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/
 Route::get('home/personDel', 'home\FootprintController@personDel');/**用户--退出*/
 
@@ -58,7 +58,7 @@ Route::get('home/lnews', 'season\NoteController@lnews');//前台最新发布
 
 /**后台登录 权限控制**/
 Route::get('admin/lo', 'admin\loginController@index');/**后台登录**/
-Route::post('admin/loin', 'admin\loginController@loin');/**后台登录**/
+Route::get('admin/loin', 'admin\loginController@loin');/**后台登录**/
 Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/
 Route::group(['middleware' => ['common']], function () {
     Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
@@ -630,7 +630,7 @@ Route::get('home/contrast','home\DomesticController@contrast');/**经典对比**
 /**前台**/
 Route::get('home/recursion', 'home\RecursionController@recursion');/**首页无限极**/
 Route::post('home/searchs', 'home\RecursionController@searchs');/**首页全文检索搜索**/
-Route::get('home/sous', 'home\RecursionController@searchDay');/**根据旅游天数搜索**/
+
 Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅游资金搜索**/
 Route::get('home/destination', 'home\RecursionController@destination');/**根据旅游目的地搜索**/
 Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/
@@ -648,4 +648,12 @@ Route::get('home/scenic', 'home\RecursionController@scenic');/**前台地区下�
 Route::get('home/pages', 'home\FootprintController@pages');/**用户--收藏分页*/
 Route::get('home/userhome', 'home\FootprintController@userhome');/**用户--收藏分页*/
 Route::get('home/regionid', 'home\RecursionController@regionid');/**首页--根据地区查景点*/
+Route::get('home/pushClass', 'home\RecursionController@pushClass');/**多项搜索--根据地区查景点*/
+Route::get('home/contentChange', 'home\RecursionController@contentChange');/**多项搜索--根据地区查景点*/
 
+
+
+Route::get('admin/useradmin', 'WayController@useradmin');/**后台用户管理**/
+Route::get('admin/toExamine', 'WayController@toExamine');/**后台用户评论审核**/
+Route::get('admin/examine', 'WayController@examine');/**后台用户管理**/
+Route::get('admin/jgaiExamine', 'WayController@jgaiExamine');/**后台用户管理**/

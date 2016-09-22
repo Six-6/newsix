@@ -8,9 +8,9 @@
 namespace App\Http\Controllers;
 
 use DB, Input, Session;
-
 use Illuminate\Http\Request;
 
+use App\Way;
 
 class WayController extends Controller
 {
@@ -189,8 +189,52 @@ class WayController extends Controller
 		}else{
 			echo "<script>alert('上传失败');location.href='{{URL('admin/wayadd')}}'</script>";
 		}
-
 	}
-	
-    }
+
+	/**
+	 * 展示旅游方式
+	 * @return [type] $tables [旅游方式]
+	 */
+	public function waysel(){
+		$tables = DB::table('scenic')->get();
+		return view('admin.admin_cardTemplate2',['arr' => $tables]);
+	}
+
+	/**
+	 * 后台用户管理--用户评价审核
+	 * @return [type] $data [用户的所有评论]
+	 */
+	function toExamine(){
+
+		$Model = new Way();
+
+		$data = $Model->toExamine();
+
+		return view('admin.toExamine',['examine' => $data]);
+	}
+
+	/**
+	 * 审核用户的评论
+	 * @return [type] $data [审核后的评论]
+	 */
+	function examine(){
+		$exaId = Input::get('examineId');
+
+		$Model = new Way();
+
+		$data = $Model->examine($exaId);
+
+		return $data;
+	}
+
+	function jgaiExamine(){
+		$gid = Input::get();
+
+		$Model = new Way();
+
+		$data = $Model->jgaiExamine($gid);
+
+		return $data;
+	}
+}
 	

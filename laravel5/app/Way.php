@@ -75,6 +75,54 @@ class Way extends Model{
 
         return $dataArray;
     }
+
+    /**
+     * 用户评论
+     * @return [type] $data [评论]
+     */
+    function toExamine(){
+        $jid='';
+        $data = DB::table('travel_reviews')
+            //->select("")
+            ->join('scenic_spot','travel_reviews.s_id','=','scenic_spot.s_id')
+            ->join('login','travel_reviews.u_id','=','login.u_id')
+            ->get();
+
+        //$data = json_decode(json_encode($data),true);
+
+        return $data;
+    }
+
+    /**
+     * 后台管理员审核用户的评论
+     * @param  [type] $gid [要审核的评论]
+     * @return [type] $update [审核后的结果]
+     */
+    function examine($gid){
+
+        $update = DB::table('travel_reviews')
+            ->where('tr_id',$gid)
+            ->update(['to_examine'=>1]);
+
+        return $update;
+    }
+
+    /**
+     * 修改用户评论所得分值
+     * @param  [type] $data [修改条件]
+     * @return [type] $uploads [修改后的数据]
+     */
+    function jgaiExamine($data){
+
+        $uploads = DB::table('travel_reviews')
+            ->where('tr_id', $data['s_id'])
+            ->update(['comment_integral' => $data['vals']]);
+        if ($uploads) {
+            return 1;
+        }else{
+            return 0;
+        }
+    }
 }
 
 
