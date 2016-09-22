@@ -16,6 +16,7 @@ return array(
     'CreateFHotsTable' => $baseDir . '/database/migrations/2016_09_09_153343_create_f_hots_table.php',
     'CreateFShowsTable' => $baseDir . '/database/migrations/2016_09_17_082415_create_f_shows_table.php',
     'CreateFTypesTable' => $baseDir . '/database/migrations/2016_09_17_082346_create_f_types_table.php',
+    'CreateFunUsersTable' => $baseDir . '/database/migrations/2016_09_20_191515_create_fun_users_table.php',
     'CreateHotelsTable' => $baseDir . '/database/migrations/2016_09_08_104353_create_hotels_table.php',
     'CreateIntegralordersTable' => $baseDir . '/database/migrations/2016_09_08_162148_create_integralorders_table.php',
     'CreateIntegralsTable' => $baseDir . '/database/migrations/2016_09_08_105459_create_integrals_table.php',

@@ -1,30 +1,19 @@
-<?php namespace App;
+<?php
 /**
- * @数据类型
+ * 志同道合类型表
  */
+namespace App;
+
 use Illuminate\Database\Eloquent\Model;
 
 class F_type extends Model {
-	protected $table="f_type";
-    protected $PRIMARY_KEY="f_tid";
+    public $table="f_type";
     /**
-     * 查询数据
+     * 类型展示
      */
-    public static function sel(){
-        $re=self::get();
+    public static function selAll(){
+        $re=self::get()->toArray();
         return $re;
-    }
-    /**
-     *类型数据显示
-     */
-    public function selAll(){
-        return $this->hasMany("App\F_show","f_tid","f_tid");
-    }
-    /**
-     * 地址查询
-     */
-    public function typeAll(){
-        return $this->hasOne("");
     }
 
 }

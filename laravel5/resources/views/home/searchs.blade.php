@@ -1,77 +1,168 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0031)http://www.byts.com.cn/tags.php -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="../home/searchs_files/hm.js"></script><script type="text/javascript" charset="utf-8" async="" src="../home/searchs_files/crmqq.php"></script><script type="text/javascript" charset="utf-8" async="" src="../home/searchs_files/contains.js"></script><script type="text/javascript" charset="utf-8" async="" src="../home/searchs_files/localStorage.js"></script><script type="text/javascript" charset="utf-8" async="" src="../home/searchs_files/Panel.js"></script>
-
-<title>北戴河搜索结果_北京青年旅行社股份有限公司官网</title>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script src="../aaa/crmqq.php" async="" charset="utf-8" type="text/javascript"></script><script src="../aaa/contains.js" async="" charset="utf-8" type="text/javascript">
+</script><script src="../aaa/local
+Storage.js" async="" charset="utf-8" type="text/javascript"></script><script src="../aaa/Panel.js" async="" charset="utf-8" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>北京青年旅行社股份有限公司官网</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
-<link href="../home/searchs_files/style.css" rel="stylesheet" media="screen" type="text/css">
-<link href="../home/searchs_files/tags.css" rel="stylesheet" media="screen" type="text/css">
+<link href="../aaa/style.css" rel="stylesheet" media="screen" type="text/css">
+<link href="../aaa/tags.css" rel="stylesheet" media="screen" type="text/css">
 
 
- <script type="text/javascript" src="../home/searchs_files/jquery.js"></script>
 
-<script charset="utf-8" async="" src="../home/searchs_files/i.js" id="_da"></script><link rel="stylesheet" type="text/css" id="TQCSS0.13159079034812748" href="../home/searchs_files/style(1).css"><link rel="stylesheet" type="text/css" id="TQCSS0.4250597965437919" href="../home/searchs_files/style(2).css"><script id="TQJS0.9539309104438871" src="../home/searchs_files/float.js"></script><script id="TQJS0.07047330331988633" src="../home/searchs_files/invite.js"></script><script id="TQJS0.4052784920204431" src="../home/searchs_files/minimess_core.js"></script><link rel="stylesheet" type="text/css" id="TQCSS0.6172068770974874" href="../home/searchs_files/style(3).css"><script id="TQJS0.257202863227576" src="../home/searchs_files/scriptonline.js"></script><script id="TQJS0.5178763405419886" src="http://121.40.46.58:8000/sendmain.jsp?rand=47787117879611232&uin=9606641&comflag=87453925111356916&nocache=0.9578982514794916&msg=APPLYFAIL_DISAGREE"></script></head>
 
-<link href="../home/searchs_files/site.css" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="../aaa/jquery.js"></script>
+
+
+<link href="../aa/style_004.css" id="TQCSS0.22319316852766125" 
+type="text/css" rel="stylesheet"><link href="../aaa/style_003.css"
+ id="TQCSS0.736189246433871" type="text/css" rel="stylesheet"><script src="../aaa/float.js" id="TQJS0.30728415587563107"></script><script
+  src="../aaa/invite.js" id="TQJS0.35023182608720205"></script><script src="../aaa/minimess_core.js" id="TQJS0.7920065871857865"></script>
+  <script id="_da" src="../aaa/i.js" async="" charset="utf-8"></script><link href="../aaa/style_002.css" id="TQCSS0.564900371012689"
+   type="text/css" rel="stylesheet"><script src="../aaa/scriptonline.js" id="TQJS0.4812520883639324"></script><script src="../aaa/sendmain"
+    id="TQJS0.9927488961306115"></script></head>
+<body><div style="visibility: visible; left: 0px; bottom: 0px; position: fixed;" id="TQMiniMessWrap" class="TQMiniMess_common">
+  <div style="display: none;" id="TQMiniMessSendInfoBG" class="TQMiniMess_common"></div><div style="display: none;"
+   id="TQMiniMessSendInfoCtner" class="TQMiniMess_common"><table style="margin:0; width:100%;height:100%;border-style: solid;
+    border-width: 0px; padding: 0; text-align:center; text-indent:0; word-spacing:0; line-height:100%" class="TQMiniMess_common" 
+    cellpadding="0" cellspacing="0"><tbody><tr><td align="center"><div id="TQMiniMessSendInfoDIV" class="TQMiniMess_common"
+     onclick="TQKF.mess.DOM.hideTip()"><table class="TQMiniMess_common" style="margin:0; width:100%;height:100%;border-style: solid;
+      border-width: 0px; padding: 5px; text-align:center; text-indent:0; word-spacing:0; line-height:100%" cellpadding="0"
+       cellspacing="0"><tbody><tr><td><img id="TQMiniMessSendImg"
+        src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%
+        8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/ajax-loader.gif" border="0">
+        </td><td id="TQMiniMessSendWord"></td></tr></tbody></table></div></td></tr></tbody></table></div><div id="TQMiniMessHead"
+         class="TQMiniMess_common"><div id="TQMiniMessTitle" class="TQMiniMess_common">欢迎联系我们</div>
+         <div class="TQMiniMessIconOpen TQMiniMess_common" id="TQMiniMessHeadIcon"></div></div><div
+          style="overflow: hidden; height: 13px; display: none;" id="TQMiniMessBody" class="TQMiniMess_common">
+          <div id="TQMiniMessBodyTop" class="TQMiniMess_common"></div><div id="TQMiniMessBodyMid" class="TQMiniMess_common">
+          <div class="TQMiniMessTip">留言内容</div><div class="TQMiniMessMessage"><textarea id="TQMiniMess_message"
+           name="TQMiniMess_message">请在此留言，我们会及时联系您，谢谢！</textarea></div><div class="TQMiniMessTip">姓名</div>
+           <div class="TQMiniMessName"><input value="请填写姓名" id="TQMiniMess_name" name="TQMiniMess_name" type="text"></div>
+           <div class="TQMiniMessTip">手机</div><div class="TQMiniMessMobile"><input value="请填写手机" id="TQMiniMess_mobile"
+            name="TQMiniMess_mobile" type="text"></div><div class="TQMiniMessTip">QQ号</div><div class="TQMiniMessQQ">
+            <input value="请填写QQ号" id="TQMiniMess_qq" name="TQMiniMess_qq" type="text"></div><div class="TQMiniMessName"
+             style="display: none;" id="TQMiniMess_verifycodeDIV"><img title="看不清?点击换一张 " id="TQMiniMess_verifycodeimg" 
+             name="TQMiniMess_verifycodeimg" style="height: 20px; cursor: pointer; vertical-align: middle;"><input
+              value="请填写验证码" id="TQMiniMess_verifycode" name="TQMiniMess_verifycode" style="width: 80px; margin-left: 5px;"
+               type="text"></div></div><div id="TQMiniMessBodyBottom" class="TQMiniMess_common"><input id="TQMiniMessCall"
+                style="display:none" value="" onclick="TQKF.mess.submittype='call';TQKF.mess.validate.init();" type="button">
+                <input id="TQMiniMessSubmit" value="" onclick="TQKF.mess.submittype='message';TQKF.mess.validate.init();" type="button">
+                <a href="http://weibo.com/tqcn?m=tqpf_9606641" target="_blank"><div id="TQMiniMessCopy" class="TQMiniMess_common"></div></a>
+                </div><div id="TQMiniMessBodyFoot" class="TQMiniMess_common"></div></div></div><iframe style="position: absolute; width: 0px;
+                 height: 0px; border: 0px none;" tabindex="-1" title="" src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5
+                 %8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%B
+                 D%91_files/id.htm" frameborder="0"></iframe><div style="visibility: hidden; border: 0px ridge rgb(234, 234, 234); position: fixe
+                 d; z-index: 9999; width: 402px; height: 144px; top: 267px; left: 558px;" class="tracq_fix_div" id="tq_invit_container"><div styl
+                 e="width: 402px; height: 144px;" id="tq_invit_bg"><img id="tq_invit_bg_img" src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E
+                 7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5
+                 %8F%B8%E5%AE%98%E7%BD%91_files/bg_c1.png"><div id="tq_invit_title" style="position: absolute; font-weight: bold; width: 345px; he
+                 ight: 17px; left: 31px; top: 7px;">网站管理员请求和您通话（本系统由TQ提供）</div><div id="tq_invit_head" style="overflow: hidden;
+                 position: absolute;BACKGROUND-COLOR: #FFFFFF; FILTER: Alpha(opacity=0); opacity: 0;"></div><div id="tq_invit_close" style="positi
+                 on: absolute; background-color: rgb(255, 255, 255); opacity: 0; width: 19px; height: 19px; left: 378px; top: 4px;" onclick="TQKF
+                 .inviter.Refuse()"></div><div id="tq_invit_words" style="overflow-x: hidden; overflow-y: auto; width: 280px; height: 65px; left
+                 : 118px; top: 35px;"><div id="tq_invit_parse_ip"></div>您好！能为您做些什么吗？</div><div style="position: absolute; width: 81px; 
+                 height: 25px; left: 238px; top: 110px; display: none;" id="tq_invit_accept"><img src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4
+                 %A2%E7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC
+                 %E5%8F%B8%E5%AE%98%E7%BD%91_files/accept_c1.png" onclick="TQKF.inviter.Accept()"></div><div style="position: absolute; width: 81p
+                 x; height: 25px; left: 238px; top: 110px;" id="tq_invit_message"><img src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%
+                 E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE
+                 %98%E7%BD%91_files/message_c1.png" onclick="TQKF.inviter.Accept()"></div><div id="tq_invit_call" style="position: absolute; displa
+                 y: none; width: 81px; height: 25px; left: 158px; top: 110px;"></div><div style="position: absolute; width: 81px; height: 25px; left: 
+                 318px; top: 110px;" id="tq_invit_refuse"><img style="width:auto;height:auto" src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%
+                 93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%A
+                 E%98%E7%BD%91_files/refuse_c1.png" onclick="TQKF.inviter.Refuse()" width="auto"></div></div></div><div style="border: 0px ridge rgb(
+                  234, 234, 234); position: absolute; top: 100px; z-index: 9998; left: 10px; visibility: hidden;" class="tq_div_main" id="
+tq_float_container"><div id="tq_float_head" style="cursor:move;text-align:left;width:118px;height:35px;background-image:url(http://sysimag
+  es.tq.cn/images/vip/float/100501/t1/s1/c1/head.gif);"><div style="float:left;width:96px; height:16px; margin-left:2px; margin-top:6px"
+   id="tq_float_title">青旅在线咨询</div><div style="float:right; width:15px; height:16px; margin-right:1px; margin-top:3px;cursor:point
+   er;BACKGROUND-COLOR: #FFFFFF; FILTER: Alpha(opacity=0); opacity: 0;" id="tq_float_close" onclick="TQKF.floater.Close()"></div></div>
+   <div id="tq_float_body" style="height:auto;padding-left:6px;padding-right:6px;background-position: left top; background-image:url(ht
+    tp://sysimages.tq.cn/images/vip/float/100501/t1/s1/c1/body.gif); background-repeat:repeat-y"><div id="tq_float_m_content" styl
+e="height:auto;padding-bottom:3px;width:106px"><div id="tq_member_div" style="overflow: visible;cursor:pointer;height:14px;margin-to
+p:8px;margin-bottom:5px;width: 100%" onclick="TQKF.floater.OpenChatWin(9606641,0)" title="小洁"><div id="tq_member_div_ico" style="h
+eight:auto;float:left;OVERFLOW: visible;"><img id="tq_float_icooff" src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9
+E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%
+E7%BD%91_files/icooff.gif" align="absmiddle"></div><div id="tq_member_div_kefuName" style="height:auto;OVERFLOW: visible;float:left;
+">小洁</div><div id="tq_member_div_onlineIco" style="height:auto;float:right;text-align:center;OVERFLOW: visible;"><span style="wid
+th:auto;" id="tq_float_off" class="tq_float_off"><img src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5%8C%9
+7%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_fi
+les/off.gif" align="absmiddle"></span></div></div><div id="tq_member_div" style="overflow: visible;cursor:pointer;height:14px;marg
+in-top:8px;margin-bottom:5px;width: 100%" onclick="TQKF.floater.OpenChatWin(9690947,0)" title="小王"><div id="tq_member_div_ico" s
+tyle="height:auto;float:left;OVERFLOW: visible;"><img id="tq_float_icooff" src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%B
+B%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B
+8%E5%AE%98%E7%BD%91_files/icooff.gif" align="absmiddle"></div><div id="tq_member_div_kefuName" style="height:auto;OVERFLOW: visible
+;float:left;">小王</div><div id="tq_member_div_onlineIco" style="height:auto;float:right;text-align:center;OVERFLOW: visible;"><s
+pan style="width:auto;" id="tq_float_off" class="tq_float_off"><img src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E
+6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%
+AE%98%E7%BD%91_files/off.gif" align="absmiddle"></span></div></div><div id="tq_member_div" style="overflow: visible;cursor:pointe
+r;height:14px;margin-top:8px;margin-bottom:5px;width: 100%" onclick="TQKF.floater.OpenChatWin(9701381,0)" title="小晴"><div id="t
+q_member_div_ico" style="height:auto;float:left;OVERFLOW: visible;"><img id="tq_float_icooff" src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%
+90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99
+%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/icooff.gif" align="absmiddle"></div><div id="tq_member_div_kefuName" style="height:
+auto;OVERFLOW: visible;float:left;">小晴</div><div id="tq_member_div_onlineIco" style="height:auto;float:right;text-align:center;O
+VERFLOW: visible;"><span style="width:auto;" id="tq_float_off" class="tq_float_off"><img src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C
+%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5
+%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/off.gif" align="absmiddle"></span></div></div></div></div><div id="tq_float_foot" style="h
+eight:auto;line-height:12px;cursor:pointer"><div style="height:auto;line-height:12px;cursor:pointer" title=""><img onclick="TQKF
+.floater.OpenAgentSite()" id="tq_float_btm" src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA
+%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/btm.gif" border="0"></div></div></div><iframe style="display: none;"></iframe><style type="text/css">.WPA3-SELECT-PANEL { z-index:2147483647; width:463px; height:292px; margin:0; padding:0; border:1px solid #d4d4d4; background-color:#fff; border-radius:5px; box-shadow:0 0 15px #d4d4d4;}.WPA3-SELECT-PANEL * { position:static; z-index:auto; top:auto; left:auto; right:auto; bottom:auto; width:auto; height:auto; max-height:auto; max-width:auto; min-height:0; min-width:0; margin:0; padding:0; border:0; clear:none; clip:auto; background:transparent; color:#333; cursor:auto; direction:ltr; filter:; float:none; font:normal normal normal 12px "Helvetica Neue", Arial, sans-serif; line-height:16px; letter-spacing:normal; list-style:none; marks:none; overflow:visible; page:auto; quotes:none; -o-set-link-source:none; size:auto; text-align:left; text-decoration:none; text-indent:0; text-overflow:clip; text-shadow:none; text-transform:none; vertical-align:baseline; visibility:visible; white-space:normal; word-spacing:normal; word-wrap:normal; -webkit-box-shadow:none; -moz-box-shadow:none; -ms-box-shadow:none; -o-box-shadow:none; box-shadow:none; -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-opacity:1; -moz-opacity:1; -ms-opacity:1; -o-opacity:1; opacity:1; -webkit-outline:0; -moz-outline:0; -ms-outline:0; -o-outline:0; outline:0; -webkit-text-size-adjust:none; font-family:Microsoft YaHei,Simsun;}.WPA3-SELECT-PANEL a { cursor:auto;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-TOP { height:25px;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-CLOSE { float:right; display:block; width:47px; height:25px; background:url(http://combo.b.qq.com/crm/wpa/release/3.3/wpa/views/SelectPanel-sprites.png) no-repeat;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-CLOSE:hover { background-position:0 -25px;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-MAIN { padding:23px 20px 45px;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-GUIDE { margin-bottom:42px; font-family:"Microsoft Yahei"; font-size:16px;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-SELECTS { width:246px; height:111px; margin:0 auto;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-CHAT { float:right; display:block; width:88px; height:111px; background:url(http://combo.b.qq.com/crm/wpa/release/3.3/wpa/views/SelectPanel-sprites.png) no-repeat 0 -80px;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-CHAT:hover { background-position:-88px -80px;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-AIO-CHAT { float:left;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-QQ { display:block; width:76px; height:76px; margin:6px; background:url(http://combo.b.qq.com/crm/wpa/release/3.3/wpa/views/SelectPanel-sprites.png) no-repeat -50px 0;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-QQ-ANONY { background-position:-130px 0;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-LABEL { display:block; padding-top:10px; color:#00a2e6; text-align:center;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-BOTTOM { padding:0 20px; text-align:right;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-INSTALL { color:#8e8e8e;}</style><style type="text/css">.WPA3-CONFIRM { z-index:2147483647; width:285px; height:141px; margin:0; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR0AAACNCAMAAAC9pV6+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU5QUIyQzVCNUIwQTExRTJCM0FFRDNCMTc1RTI3Nzg4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjU5QUIyQzVDNUIwQTExRTJCM0FFRDNCMTc1RTI3Nzg4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTlBQjJDNTk1QjBBMTFFMkIzQUVEM0IxNzVFMjc3ODgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTlBQjJDNUE1QjBBMTFFMkIzQUVEM0IxNzVFMjc3ODgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6QoyAtAAADAFBMVEW5xdCkvtNjJhzf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) no-repeat;}.WPA3-CONFIRM { *background-image:url(http://combo.b.qq.com/crm/wpa/release/3.3/wpa/views/panel.png);}.WPA3-CONFIRM * { position:static; z-index:auto; top:auto; left:auto; right:auto; bottom:auto; width:auto; height:auto; max-height:auto; max-width:auto; min-height:0; min-width:0; margin:0; padding:0; border:0; clear:none; clip:auto; background:transparent; color:#333; cursor:auto; direction:ltr; filter:; float:none; font:normal normal normal 12px "Helvetica Neue", Arial, sans-serif; line-height:16px; letter-spacing:normal; list-style:none; marks:none; overflow:visible; page:auto; quotes:none; -o-set-link-source:none; size:auto; text-align:left; text-decoration:none; text-indent:0; text-overflow:clip; text-shadow:none; text-transform:none; vertical-align:baseline; visibility:visible; white-space:normal; word-spacing:normal; word-wrap:normal; -webkit-box-shadow:none; -moz-box-shadow:none; -ms-box-shadow:none; -o-box-shadow:none; box-shadow:none; -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-opacity:1; -moz-opacity:1; -ms-opacity:1; -o-opacity:1; opacity:1; -webkit-outline:0; -moz-outline:0; -ms-outline:0; -o-outline:0; outline:0; -webkit-text-size-adjust:none;}.WPA3-CONFIRM * { font-family:Microsoft YaHei,Simsun;}.WPA3-CONFIRM .WPA3-CONFIRM-TITLE { height:40px; margin:0; padding:0; line-height:40px; color:#2b6089; font-weight:normal; font-size:14px; text-indent:80px;}.WPA3-CONFIRM .WPA3-CONFIRM-CONTENT { height:55px; margin:0; line-height:55px; color:#353535; font-size:14px; text-indent:29px;}.WPA3-CONFIRM .WPA3-CONFIRM-PANEL { height:30px; margin:0; padding-right:16px; text-align:right;}.WPA3-CONFIRM .WPA3-CONFIRM-BUTTON { position:relative; display:inline-block!important; display:inline; zoom:1; width:99px; height:30px; margin-left:10px; line-height:30px; color:#000; text-decoration:none; font-size:12px; text-align:center;}.WPA3-CONFIRM .WPA3-CONFIRM-BUTTON-FOCUS { width:78px;}.WPA3-CONFIRM .WPA3-CONFIRM-BUTTON .WPA3-CONFIRM-BUTTON-TEXT { line-height:30px; text-align:center; cursor:pointer;}.WPA3-CONFIRM-CLOSE { position:absolute; top:7px; right:7px; width:10px; height:10px; cursor:pointer;}</style>
+<link href="../aaa/site.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 $(document).ready(function(){
-	$(".select_box input").click(function(){
-		var thisinput=$(this);
-		var thisul=$(this).parent().find("ul");
-		if(thisul.css("display")=="none"){
-			if(thisul.height()>200){thisul.css({height:"200"+"px","overflow-y":"scroll" })};
-			thisul.fadeIn("100");
-			thisul.hover(function(){},function(){thisul.fadeOut("100");})
-			thisul.find("li a").click(function(){
-				thisinput.val($(this).text());thisul.fadeOut("100");
-			
-			}).hover(function(){$(this).addClass("curr");},function(){$(this).removeClass("curr");
-			
-			});
-			}
-		else{
-			thisul.fadeOut("fast");
-			}
-	})
-	$("#submit").click(function(){
-		var endinfo="";
-		$(".select_box input:text").each(function(i){
-			endinfo=endinfo+(i+1)+":"+$(this).val()+";\n";							 
-		})							
-		alert(endinfo);						
-	})
-	
-	$(function(){
-	$("#SouDesignContent").keyup(function() {
+  $(".select_box input").click(function(){
+    var thisinput=$(this);
+    var thisul=$(this).parent().find("ul");
+    if(thisul.css("display")=="none"){
+      if(thisul.height()>200){thisul.css({height:"200"+"px","overflow-y":"scroll" })};
+      thisul.fadeIn("100");
+      thisul.hover(function(){},function(){thisul.fadeOut("100");})
+      thisul.find("li a").click(function(){
+        thisinput.val($(this).text());thisul.fadeOut("100");
+      
+      }).hover(function(){$(this).addClass("curr");},function(){$(this).removeClass("curr");
+      
+      });
+      }
+    else{
+      thisul.fadeOut("fast");
+      }
+  })
+  $("#submit").click(function(){
+    var endinfo="";
+    $(".select_box input:text").each(function(i){
+      endinfo=endinfo+(i+1)+":"+$(this).val()+";\n";               
+    })              
+    alert(endinfo);           
+  })
+  
+  $(function(){
+  $("#SouDesignContent").keyup(function() {
         var valB=$("#SouDesignContent").val();
-	
+  if(valB==""){
+    $(".select_empty").css("background-color","#FFF")}
+  else{
+    $(".select_empty").css("background-color","transparent")
+  }
     });
-	
-	})
+  
+  })
 });
 
 
 </script>
 
 <!--TOP部分-->
-<script language="javascript" type="text/javascript" src="../home/searchs_files/ajax188.js"></script>
+<script language="javascript" type="text/javascript" src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/ajax188.js"></script>
 <script language="javascript" type="text/javascript">
 
-function Check_head_Login(){
-      
-	  var taget_obj = document.getElementById('_Check_head_Login');	  
-	  myajax = new ajaxx188(taget_obj,false,false,'','','');
-	  myajax.SendGet2("http://www.byts.com.cn/users/ajax_head.php");
-	  A188XHTTP = null;
-}
-
 function  myAddPanel(title,url,desc) {
-  	if((typeof   window.sidebar   ==   'object')   &&   (typeof   window.sidebar.addPanel   ==   'function')) {
-  		window.sidebar.addPanel(title,url,desc);  
-	}else  {
-  		window.external.AddFavorite(url,title);  
-	}  
+    if((typeof   window.sidebar   ==   'object')   &&   (typeof   window.sidebar.addPanel   ==   'function')) {
+      window.sidebar.addPanel(title,url,desc);  
+  }else  {
+      window.external.AddFavorite(url,title);  
+  }  
 }
 
 
@@ -81,70 +172,23 @@ function  myAddPanel(title,url,desc) {
 window.onerror=function(){return true;} 
 // --> 
 </script> 
-@include('includes.top')
-<!-- 
-<div class="top1">
-  <div class="conter"><span>欢迎访问 <a href="http://www.byts.com.cn/">北京青年旅行社官网</a></span>　请
-  <span id="_Check_head_Login">
-    <span><a href="http://www.byts.com.cn/users/" target="_blank">登 录</a></span>
-<span>|</span>
-<span><a href="http://www.byts.com.cn/users/reg.php" target="_blank">注 册</a></span>
 
+@include('includes.searchtop')
 
-
-</span><script language="javascript">Check_head_Login();</script>
-     <div class="hour"><img src="./searchs_files/pic1.jpg" width="46" height="19"></div>
-     <div class="iph">旅游预订电话 <strong>400-926-5166</strong></div>
-  </div>
-</div>
-<div class="top2">
-	<div class="conter">
-    	<div class="logo"><img src="./searchs_files/logo.png" width="329" height="54"><img src="./searchs_files/tage.png" width="116" height="50"></div>
-    <div class="sourchNew"> 
-    <form action="./searchs_files/searchs.html" method="post" name="indexsearchform" class="cfix" id="indexsearchform">
-    <input type="hidden" value="0" name="travelClassHeader" id="srhInput">
-        <div class="select_box"><input id="myselect" type="text" value="全部" readonly="readonly">
-        <ul class="select_ul" tyle="z-index: 10000; display: none;">
-        <li> <a href="javascript:void(0)">全部</a></li>
-            <li><a val="4" href="javascript:void(0)">旅游线路</a></li>
-            <li><a val="5" href="javascript:void(0)">酒店预定</a></li>
-            <li> <a val="8" href="javascript:void(0)">签证办理</a></li>
-            <li><a val="9" href="javascript:void(0)">旅游租车</a></li>
-            <li><a val="10" href="javascript:void(0)">旅游门票</a></li>
-      
-		</ul>
-   <div class="select_text"><input id="search" autocomplete="off" maxlength="18" type="text" value="请输入关键字" onclick="javascript:document.getElementById(&#39;search&#39;).value=&#39;&#39;;" name="searchkey"></div>
-   <input type="submit" class="select_seach" name=""> 
-  </div>
-  </form>
-  </div>  
-  
-    </div>
-</div>
 <div class="dh">
-	<div class="conter">
-   	  <div class="a1"><a href="http://www.byts.com.cn/tags.php#">所有目的地分类</a></div>
+  <div class="conter">
+      <div class="a1"><a href="#">所有目的地分类</a></div>
       <div class="a2">
-        	<a href="http://www.byts.com.cn/index.html">首页</a>
-            <a href="http://www.byts.com.cn/out/">出境游</a>
-            <a href="http://www.byts.com.cn/china/">国内游</a>
-            <a href="http://www.byts.com.cn/beijing/">北京游</a>
-            <a href="http://www.byts.com.cn/zhoubian/">周边游</a>
-            <a href="http://www.byts.com.cn/youlun/">邮轮游</a>
-            <a href="http://www.byts.com.cn/line/maerdaifu001/">马尔代夫</a>
-            <a href="http://www.byts.com.cn/jipiao/">机票</a> 
+            <a href="{{URL('/')}}">首页</a>
+            <a href="{{URL('home/beijing')}}">本地游</a>
+            <a href="{{URL('home/domestic')}}">国内游</a>
+            <a href="{{URL('home/exit')}}">出境游</a>
         </div>
-      <div class="a3"><div style="position: absolute; left: 24px; top: 1px;"><img src="./searchs_files/HOT.png"></div>
-       <a href="http://www.byts.com.cn/add/tejia.php">特价</a>
-        <a href="http://www.byts.com.cn/visa/">签证</a>   
-        <a href="http://www.byts.com.cn/zuche/bj/">租车</a>
-        <a href="http://www.byts.com.cn/add/dingzhi.php">定制</a> 
-      </div>
         <div class="clear"></div>
         
   </div>
 </div>
--->
+
 
 
 <div class="Ny_Mainconbox">
@@ -157,7 +201,7 @@ window.onerror=function(){return true;}
 
 
 
-	<dl><dt><a href="http://www.byts.com.cn/out/">出境旅游 </a></dt>
+  <dl><dt><a href="http://www.byts.com.cn/out/">出境旅游 </a></dt>
 
  <dd><a href="http://www.byts.com.cn/line/haidao001">海岛</a></dd><dd><a href="http://www.byts.com.cn/line/dongnanya001">东南亚</a></dd><dd><a href="http://www.byts.com.cn/line/aozhou001">澳洲</a></dd><dd><a href="http://www.byts.com.cn/line/rihanchao001">日韩朝</a></dd><dd><a href="http://www.byts.com.cn/line/ouzhou001">欧洲</a></dd><dd><a href="http://www.byts.com.cn/line/nanya001">南亚</a></dd><dd><a href="http://www.byts.com.cn/line/gangaotai001">港澳台</a></dd><dd><a href="http://www.byts.com.cn/line/feizhouzhongdong001">非洲中东</a></dd><dd><a href="http://www.byts.com.cn/line/meizhou001">美洲</a></dd><dd><a href="http://www.byts.com.cn/line/nanbeiji001">南北极</a></dd><dd><a href="http://www.byts.com.cn/line/maerdaifu001">马尔代夫</a></dd>
 
@@ -217,55 +261,40 @@ window.onerror=function(){return true;}
      
     </div>
     <div class="Ny_Mainconbox_fr">
-    <div class="Ny_searchtop_bt">搜索到<span class="ls_color"> 北戴河 </span>相关产品共有<span class="cs_color">17</span>条</div>
+    <div class="Ny_searchtop_bt">搜索到
+    <span class="ls_color">{{$sous}}</span>
+    相关产品共有<span class="cs_color">{{$count}}</span>条.
+    </div>
+    <input type="hidden" id="zxc" value="{{$sous}}"  />
     <div class="Ny_search">
-    <div class="Ny_search_bt">
    
-    <div class="Ny_search_fbt">
-    <ul>
-    <li class="Ny_search_znbt ">线路（17）</li>
-    <li><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&channel=5">酒店( 0 )</a></li>
-    <li><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&channel=8">签证( 0 )</a></li>
-    <li><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&channel=9">租车(  0 )</a></li>
-    <li><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&channel=10">景点门票( 0 )</a></li>
-    <li><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&channel=1_2">攻略资讯( 0 )</a></li>
-    <div class="clear"></div>
-    </ul>
-    </div>
-    <div class="clear"></div>
-    </div>
-    
-    
-    
-    
      <div class="prop_list">
             <div class="prop_item">
             <dl>
               <dt>出发地：</dt>
               <dd>
-                <ul class="content0"><li>    <a href="javascript:void(0)" onclick="ListUrl(this.id);return false;" id="id_0" class="yes">不限</a>
-	<a href="javascript:void(0)" onclick="ListUrl(this.id);return false;" id="id_1000">北京</a>
-		  </li>                </ul>
+                <ul class="content0"><li>    <a class="yes" href="javascript:void(0)" onclick="ListUrl(this.id);return false;" id="id_0">不限</a>
+  <a href="javascript:void(0)" onclick="ListUrl(this.id);return false;" id="id_1000">北京</a>
+      </li>                </ul>
               </dd>
             </dl>
-            </div>
-                     
+            </div> 
                            
-                    <div class="prop_item">
+          <div class="prop_item">
             <dl>
               <dt>行程天数：</dt>
               <dd>
-                <ul class="content2">                 <li> <a href="javascript:void(0)" id="day_0" onclick="ListUrl(this.id);return false;" class="yes">不限</a> </li>
-      <li><a href="javascript:void(0)" id="day_1" onclick="ListUrl(this.id);return false;">1天</a> </li>
-      <li> <a href="javascript:void(0)" id="day_2" onclick="ListUrl(this.id);return false;">2天</a> </li>
-      <li>   <a href="javascript:void(0)" id="day_3" onclick="ListUrl(this.id);return false;">3天</a> </li>
-       <li>   <a href="javascript:void(0)" id="day_4" onclick="ListUrl(this.id);return false;">4天</a> </li>
-         <li> <a href="javascript:void(0)" id="day_5" onclick="ListUrl(this.id);return false;">5天</a></li>
-         <li> <a href="javascript:void(0)" id="day_6" onclick="ListUrl(this.id);return false;">6天</a></li>
-         <li> <a href="javascript:void(0)" id="day_7" onclick="ListUrl(this.id);return false;">7天</a></li>
-         <li> <a href="javascript:void(0)" id="day_8" onclick="ListUrl(this.id);return false;">8天</a></li>
-          <li><a href="javascript:void(0)" id="day_9" onclick="ListUrl(this.id);return false;">9天</a></li>
-       <li>   <a href="javascript:void(0)" id="day_10" onclick="ListUrl(this.id);return false;">10天以上</a></li>
+                <ul class="content2">                 <li> <a class="yes" href="javascript:void(0)" id="day_0" onclick="days(0)">不限</a> </li>
+      <li><a href="javascript:void(0)" id="day_1" onclick="days(1)">1天</a> </li>
+      <li> <a href="javascript:void(0)" id="day_2" onclick="days(2)">2天</a> </li>
+      <li>   <a href="javascript:void(0)" id="day_3" onclick="days(3)">3天</a> </li>
+       <li>   <a href="javascript:void(0)" id="day_4" onclick="days(4)">4天</a> </li>
+         <li> <a href="javascript:void(0)" id="day_5" onclick="days(5)">5天</a></li>
+         <li> <a href="javascript:void(0)" id="day_6" onclick="days(6)">6天</a></li>
+         <li> <a href="javascript:void(0)" id="day_7" onclick="days(7)">7天</a></li>
+         <li> <a href="javascript:void(0)" id="day_8" onclick="days(8)">8天</a></li>
+          <li><a href="javascript:void(0)" id="day_9" onclick="days(9)">9天</a></li>
+       <li>   <a href="javascript:void(0)" id="day_10" onclick="days(10)">10天以上</a></li>
                                     </ul>
               </dd>
             </dl>
@@ -275,14 +304,14 @@ window.onerror=function(){return true;}
             <dl>
               <dt>出现预算：</dt>
               <dd>
-                <ul class="content3">           	  <li><a href="javascript:void(0)" id="p1_0_p2_0" onclick="ListUrl(this.id);return false;" class="yes">不限</a></li>
-                
-       <li><a href="javascript:void(0)" id="p1_1_p2_100" onclick="ListUrl(this.id);return false;">¥100以下</a></li>
-      <li><a href="javascript:void(0)" id="p1_101_p2_200" onclick="ListUrl(this.id);return false;">¥101-200</a></li>
-      <li><a href="javascript:void(0)" id="p1_201_p2_500" onclick="ListUrl(this.id);return false;">¥201-500</a></li>
-      <li><a href="javascript:void(0)" id="p1_501_p2_1000" onclick="ListUrl(this.id);return false;">¥501-1000</a></li>
-     <li> <a href="javascript:void(0)" id="p1_1001_p2_2000" onclick="ListUrl(this.id);return false;">¥1001-2000</a></li>
-     <li> <a href="javascript:void(0)" id="p1_2001_p2_20000" onclick="ListUrl(this.id);return false;">¥2000以上</a></li>
+                <ul class="content3"> 
+       <li><a class="yes" href="javascript:void(0)" id="p1_0_p2_0" onclick="ListUrl(this.id);return false;">不限</a></li>
+       <li><a href="javascript:void(0)" id="p1_1_p2_100" onclick="sous2([0,100])">¥100以下</a></li>
+      <li><a href="javascript:void(0)" id="p1_101_p2_200" onclick="sous2([101,200])">¥101-200</a></li>
+      <li><a href="javascript:void(0)" id="p1_201_p2_500" onclick="sous2([201,500])">¥201-500</a></li>
+      <li><a href="javascript:void(0)" id="p1_501_p2_1000" onclick="sous2([501,1000])">¥501-1000</a></li>
+     <li> <a href="javascript:void(0)" id="p1_1001_p2_2000" onclick="sous2([1001,2000])">¥1001-2000</a></li>
+     <li> <a href="javascript:void(0)" id="p1_2001_p2_20000" onclick="sous2([2001,9999999999])">¥2000以上</a></li>
                                     </ul>
               </dd>
             </dl>
@@ -298,130 +327,43 @@ window.onerror=function(){return true;}
       <div class="Ny_search_showcon_top_fr"><div id="ctl00_content_AspNetPager1">
 <span class="pageinfo">共2页/17条</span>
    <a class="thisclass">1</a>
-<a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&PageNo=2">2</a>
- <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&PageNo=2">下一页</a>
- <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&PageNo=2">末页</a>
+<a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">2</a>
+ <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">下一页</a>
+ <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">末页</a>
  
 </div>
 
 </div>
       <div class="clear"></div>
      </div>
-     <div class="Ny_search_showcon_midd">
+
+     <div id="replaces" class="Ny_search_showcon_midd">
         
-        
+        @foreach($souarr as $souz)
           <div class="Ny_search_showcon_middlist">
-                              <div class="Ny_search_showcon_midd_fl"><a href="http://www.byts.com.cn/travel/12030.html" target="_blank"><img src="../home/searchs_files/1404388605_2391.jpg" width="125px" height="100px"></a></div> 
+              <div class="Ny_search_showcon_midd_fl">
+                <a href="http://www.byts.com.cn/travel/12030.html" target="_blank">
+                  <img src="../home/images/{{$souz->s_img}}" height="100px" width="125px" alt="景点图">
+                </a>
+              </div> 
             <div class="Ny_search_showcon_midd_fr">
                 <dl>
-                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank">南<font>北戴河</font>、山海关老龙头、出海游船双汽2日</a></dt>
-                    <dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥300元</span></span><span style="margin-left:20px;">满意度：<span class="cs_color">100%</span></span></dd>
+                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank">{{$souz->s_name}}</a></dt>
+                    <dd>{{$souz->s_characteristic}}</dd>
+                    <dd><span>优惠价：<span class="cs_color">￥{{$souz->s_sprice}}元</span></span><span style="margin-left:20px;">旅游方式：<span class="cs_color">{{$souz->s_traffic}}</span></span></dd>
                 </dl>
             </div> 
             <div class="clear"></div>
-        </div><div class="Ny_search_showcon_middlist">
-                              <div class="Ny_search_showcon_midd_fl"><a href="http://www.byts.com.cn/travel/12030.html" target="_blank"><img src="../home/searchs_files/1432897402.jpg" width="125px" height="100px"></a></div> 
-            <div class="Ny_search_showcon_midd_fr">
-                <dl>
-                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/959.htm" target="_blank">南<font>北戴河</font>、沙雕大世界、出海游船双汽2日</a></dt>
-                    <dd> 天天发团，入住准3星酒店，包含金沙湾沙雕大世界门票，如需接站五环以内+30元/人、五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人，无强制消费 ...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥400元</span></span><span style="margin-left:20px;">满意度：<span class="cs_color">100%</span></span></dd>
-                </dl>
-            </div> 
-            <div class="clear"></div>
-        </div><div class="Ny_search_showcon_middlist">
-                              <div class="Ny_search_showcon_midd_fl"><a href="http://www.byts.com.cn/travel/12030.html" target="_blank"><img src="../home/searchs_files/1404390633_3110.jpg" width="125px" height="100px"></a></div> 
-            <div class="Ny_search_showcon_midd_fr">
-                <dl>
-                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1132.htm" target="_blank">【纯玩无自费】南<font>北戴河</font>、沙雕大世界双汽2日《近海3星酒店》</a></dt>
-                    <dd> 天天发团，入住近海准3星酒店 ，无自费无购物 ，赠 每人 1只螃蟹，包含 黄金海岸金沙湾沙雕大世界 ，如需接站五环以内+30元/人、五环以外另议 ...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥400元</span></span><span style="margin-left:20px;">满意度：<span class="cs_color">100%</span></span></dd>
-                </dl>
-            </div> 
-            <div class="clear"></div>
-        </div><div class="Ny_search_showcon_middlist">
-                              <div class="Ny_search_showcon_midd_fl"><a href="http://www.byts.com.cn/travel/12030.html" target="_blank"><img src="../home/searchs_files/1404392968_4671.jpg" width="125px" height="100px"></a></div> 
-            <div class="Ny_search_showcon_midd_fr">
-                <dl>
-                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/3249.htm" target="_blank"><font>北戴河</font>鸽子窝、山海关双座2日</a></dt>
-                    <dd> 天天发团，包含山海关天下第一关， ★自愿参加 公主号豪华游轮+车费65元/人、秦皇求仙入海+车费60元/人，无强制消费 ...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥480元</span></span><span style="margin-left:20px;">满意度：<span class="cs_color">100%</span></span></dd>
-                </dl>
-            </div> 
-            <div class="clear"></div>
-        </div><div class="Ny_search_showcon_middlist">
-                              <div class="Ny_search_showcon_midd_fl"><a href="http://www.byts.com.cn/travel/12030.html" target="_blank"><img src="../home/searchs_files/1404392968_4671.jpg" width="125px" height="100px"></a></div> 
-            <div class="Ny_search_showcon_midd_fr">
-                <dl>
-                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/3757.htm" target="_blank"><font>北戴河</font>鸽子窝、山海关、南戴河双座3日</a></dt>
-                    <dd> 天天发团，包含山海关天下第一关，★自愿参加 公主号豪华游轮+车费65元/人、秦皇求仙入海+车费60元/人、南戴河国际娱乐中心120元/人，无强制消费 ...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥580元</span></span><span style="margin-left:20px;">满意度：<span class="cs_color">100%</span></span></dd>
-                </dl>
-            </div> 
-            <div class="clear"></div>
-        </div><div class="Ny_search_showcon_middlist">
-                              <div class="Ny_search_showcon_midd_fl"><a href="http://www.byts.com.cn/travel/12030.html" target="_blank"><img src="../home/searchs_files/140611192I1.jpg" width="125px" height="100px"></a></div> 
-            <div class="Ny_search_showcon_midd_fr">
-                <dl>
-                    <dt><a href="http://www.byts.com.cn/line/beijingbeidaihe002/2364.htm" target="_blank">北京の<font>北戴河</font>5~6~7日★进4个店★推荐自费</a></dt>
-                    <dd> 十大赠送 ★升旗仪式 ★北海公园 ★军事博物馆 ★老北胡同烟袋斜街 ★鸟巢水立方外景 ★清华/北大门口拍照 ★女士价值380元纯手工打造景泰蓝手镯1只 ★天安门家庭集体照 ★每人每天1支价...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥880元</span></span><span style="margin-left:20px;">满意度：<span class="cs_color">100%</span></span></dd>
-                </dl>
-            </div> 
-            <div class="clear"></div>
-        </div><div class="Ny_search_showcon_middlist">
-                              <div class="Ny_search_showcon_midd_fl"><a href="http://www.byts.com.cn/travel/12030.html" target="_blank"><img src="../home/searchs_files/140611194Z9.jpg" width="125px" height="100px"></a></div> 
-            <div class="Ny_search_showcon_midd_fr">
-                <dl>
-                    <dt><a href="http://www.byts.com.cn/line/beijingbeidaihe002/2415.htm" target="_blank">北京の<font>北戴河</font>5~6~7日★纯玩不进店★推荐自费</a></dt>
-                    <dd> 十大赠送 ★升旗仪式 ★北海公园 ★军事博物馆 ★老北胡同烟袋斜街 ★鸟巢水立方外景 ★清华/北大门口拍照 ★女士价值380元纯手工打造景泰蓝手镯1只 ★天安门家庭集体照 ★每人每天1支价...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥980元</span></span><span style="margin-left:20px;">满意度：<span class="cs_color">100%</span></span></dd>
-                </dl>
-            </div> 
-            <div class="clear"></div>
-        </div><div class="Ny_search_showcon_middlist">
-                              <div class="Ny_search_showcon_midd_fl"><a href="http://www.byts.com.cn/travel/12030.html" target="_blank"><img src="../home/searchs_files/140611201Z5.jpg" width="125px" height="100px"></a></div> 
-            <div class="Ny_search_showcon_midd_fr">
-                <dl>
-                    <dt><a href="http://www.byts.com.cn/line/beijingbeidaihe002/2910.htm" target="_blank">北京の<font>北戴河</font>5~6~7日★纯玩不进店★无自费</a></dt>
-                    <dd> 十三大赠送 ★升旗仪式 ★嘻哈包袱铺相声 ★老北京胡同烟袋斜街 ★什刹海 ★北京最早的报时中心钟鼓楼博物馆 ★外观鸟巢水立方 ★清华/北京大学门口拍照 ★奥运地铁八号线 ★圆明园 ★奥...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥1100元</span></span><span style="margin-left:20px;">满意度：<span class="cs_color">100%</span></span></dd>
-                </dl>
-            </div> 
-            <div class="clear"></div>
-        </div><div class="Ny_search_showcon_middlist">
-                              <div class="Ny_search_showcon_midd_fl"><a href="http://www.byts.com.cn/travel/12030.html" target="_blank"><img src="../home/searchs_files/140611202929.jpg" width="125px" height="100px"></a></div> 
-            <div class="Ny_search_showcon_midd_fr">
-                <dl>
-                    <dt><a href="http://www.byts.com.cn/line/beijingbeidaihe002/2937.htm" target="_blank">北京の<font>北戴河</font>5~6~7日★纯玩不进店★无自费★百搭游★</a></dt>
-                    <dd> 十大赠送 ★升旗仪式 ★北海公园 ★军事博物馆 ★老北胡同烟袋斜街 ★鸟巢水立方外景 ★清华/北大门口拍照 ★女士价值380元纯手工打造景泰蓝手镯1只 ★天安门家庭集体照 ★每人每天1支价...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥1200元</span></span><span style="margin-left:20px;">满意度：<span class="cs_color">100%</span></span></dd>
-                </dl>
-            </div> 
-            <div class="clear"></div>
-        </div><div class="Ny_search_showcon_middlist">
-                              <div class="Ny_search_showcon_midd_fl"><a href="http://www.byts.com.cn/travel/12030.html" target="_blank"><img src="../home/searchs_files/140611204245.jpg" width="125px" height="100px"></a></div> 
-            <div class="Ny_search_showcon_midd_fr">
-                <dl>
-                    <dt><a href="http://www.byts.com.cn/line/beijingbeidaihe002/2996.htm" target="_blank">北京の<font>北戴河</font>5~6~7日★纯玩不进店★无自费★玩透北京★</a></dt>
-                    <dd> ★升旗 ★黄包车游胡同 ★慈禧水道 ★明皇蜡像宫 ★定陵地宫 ★堂会表演 ★天安门家庭集体照 ★红色演义特色餐 ★品尝北京烤鸭餐 ★每人每天1支《百合源蜂蜜饮品》 酒店升级 豪华标准间...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥1380元</span></span><span style="margin-left:20px;">满意度：<span class="cs_color">100%</span></span></dd>
-                </dl>
-            </div> 
-            <div class="clear"></div>
-        </div>         
-                       
-        
-        
-     
+        </div>
+        @endforeach
+
      </div>
      <div class="Ny_search_showcon_bottom"><div id="ctl00_content_AspNetPager">
 <span class="pageinfo">共2页/17条</span>
    <a class="thisclass">1</a>
-<a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&PageNo=2">2</a>
- <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&PageNo=2">下一页</a>
- <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&PageNo=2">末页</a>
+<a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">2</a>
+ <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">下一页</a>
+ <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">末页</a>
  
 </div>
 
@@ -432,84 +374,13 @@ window.onerror=function(){return true;}
     <div class="clear"></div>
   </div>
   
-  
-   
-  
- 
+
 <div style="clear:both;"></div>
 <div class="ufooter">
     <div class="footer01">
         <div class="newWarp">
             <div class="foot_faq">
             
-            <div class="faq_container01">
-                    <span class="faq_class"><strong>预订常见问题</strong></span>
-                    <ul>
-                    
-                    
- <li><a href="http://www.byts.com.cn/help/1/chunwan.htm" title="纯玩是什么意思？" target="_blank">纯玩是什么意思？</a></li>
-<li><a href="http://www.byts.com.cn/help/1/help538.html" title="单房差是什么？" target="_blank">单房差是什么？</a></li>
-<li><a href="http://www.byts.com.cn/help/1/help537.html" title="双飞、双卧都是什么意思？" target="_blank">双飞、双卧都是什么意思？</a></li>
-<li><a href="http://www.byts.com.cn/help/1/help536.html" title="满意度是怎么计算的？" target="_blank">满意度是怎么计算的？</a></li>
- 
-                       
-                       
-                    </ul>
-                </div><div class="faq_container01">
-                    <span class="faq_class"><strong>付款和发票</strong></span>
-                    <ul>
-                    
-                    
- <li><a href="http://www.byts.com.cn/help/2/help543.html" title="签约可以刷卡吗？" target="_blank">签约可以刷卡吗？</a></li>
-<li><a href="http://www.byts.com.cn/help/2/help542.html" title="付款方式有哪些？" target="_blank">付款方式有哪些？</a></li>
-<li><a href="http://www.byts.com.cn/help/2/help541.html" title="怎么网上支付？" target="_blank">怎么网上支付？</a></li>
-<li><a href="http://www.byts.com.cn/help/2/help540.html" title="如何获取发票？" target="_blank">如何获取发票？</a></li>
- 
-                       
-                       
-                    </ul>
-                </div><div class="faq_container01">
-                    <span class="faq_class"><strong>签署旅游合同</strong></span>
-                    <ul>
-                    
-                    
- <li><a href="http://www.byts.com.cn/help/3/help547.html" title="有旅游合同范本下载吗？" target="_blank">有旅游合同范本下载吗？</a></li>
-<li><a href="http://www.byts.com.cn/help/3/help546.html" title="门市地址在哪里？" target="_blank">门市地址在哪里？</a></li>
-<li><a href="http://www.byts.com.cn/help/3/help545.html" title="能传真签合同吗？" target="_blank">能传真签合同吗？</a></li>
-<li><a href="http://www.byts.com.cn/help/3/help544.html" title="可以不签合同吗？" target="_blank">可以不签合同吗？</a></li>
- 
-                       
-                       
-                    </ul>
-                </div><div class="faq_container01">
-                    <span class="faq_class"><strong>旅游预订优惠政策</strong></span>
-                    <ul>
-                    
-                    
- <li><a href="http://www.byts.com.cn/help/4/help551.html" title="如何查看我的金币信息？" target="_blank">如何查看我的金币信息？</a></li>
-<li><a href="http://www.byts.com.cn/help/4/help550.html" title="如何使用金币？" target="_blank">如何使用金币？</a></li>
-<li><a href="http://www.byts.com.cn/help/4/help549.html" title="如何得到金币" target="_blank">如何得到金币</a></li>
-<li><a href="http://www.byts.com.cn/help/4/help548.html" title="什么是金币？" target="_blank">什么是金币？</a></li>
- 
-                       
-                       
-                    </ul>
-                </div><div class="faq_container01">
-                    <span class="faq_class"><strong>其他事项</strong></span>
-                    <ul>
-                    
-                    
- <li><a href="http://www.byts.com.cn/help/5/2016/0304/5402.html" title="&lt;font color=&#39;#FF6633&#39;&gt;关于游客购物的重要提示&lt;/font&gt;" target="_blank"><font color="#FF6633">关于游客购物的重要提示</font></a></li>
-<li><a href="http://www.byts.com.cn/help/5/2012/0524/555.html" title="退款问题解答" target="_blank">退款问题解答</a></li>
-<li><a href="http://www.byts.com.cn/help/5/2012/0524/554.html" title="有旅游保险吗？保额多少？" target="_blank">有旅游保险吗？保额多少？</a></li>
-<li><a href="http://www.byts.com.cn/help/5/2012/0524/553.html" title="签证相关问题解答" target="_blank">签证相关问题解答</a></li>
- 
-                       
-                       
-                    </ul>
-                </div>
-
-          
           
                 <div class="faq_container06">
                     <span class="faq_class"><strong>关注我们的微博</strong></span>
@@ -538,18 +409,18 @@ window.onerror=function(){return true;}
 <div class="foot-webtrust">
     <a href="http://www.byts.com.cn/news/lvyouxinwen/2183.htm" rel="nofollow" target="_blank" title="国家4A级旅行社" class="trust1"></a>
     <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202005060700533" rel="nofollow" target="_blank" title="经营性ICP备案" class="trust2"></a>
-    <a href="https://ss.knet.cn/verifyseal.dll?sn=e14022111010546749hh13000000&comefrom=trust&trustKey=dn&trustValue=www.byts.com.cn" target="_blank" rel="nofollow" title="可信网站认证" class="trust3"></a>
+    <a href="https://ss.knet.cn/verifyseal.dll?sn=e14022111010546749hh13000000&amp;comefrom=trust&amp;trustKey=dn&amp;trustValue=www.byts.com.cn" target="_blank" rel="nofollow" title="可信网站认证" class="trust3"></a>
     <a href="http://si.trustutn.org/info?sn=354140414002398002760" target="_blank" rel="nofollow" title="认证联盟实名认证" class="trust4"></a>
     <a href="http://cats.org.cn/pinzhi/renzheng/1178" target="_blank" rel="nofollow" title="中国旅行社协会常务理事单位" class="trust5"></a>
     <a href="http://www.byts.com.cn/byts2015.jpg" target="_blank" rel="nofollow" title="北京工商行政管理" class="trust6"></a>
-    <a href="http://www.anquan.org/authenticate/cert/?site=www.byts.com.cn&at=realname" target="_blank" rel="nofollow" title="安全联盟实名认证" class="trust7"></a>
+    <a href="http://www.anquan.org/authenticate/cert/?site=www.byts.com.cn&amp;at=realname" target="_blank" rel="nofollow" title="安全联盟实名认证" class="trust7"></a>
 </div>
 
         <div class="foot-copyright">
             <span>Copyright 1984-2014 http://www.byts.com.cn</span>
             <span>京ICP证041363号</span>
             <span>联系电话：<font class="red">400-926-5166</font></span>
-<span>优质带宽由<a href="http://www.62idc.com/">中睿科技</a>提供 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5896591'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D5896591' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_5896591"><a href="http://www.cnzz.com/stat/website.php?web_id=5896591" target="_blank" title="站长统计">站长统计</a></span><script src="../home/searchs_files/stat.php" type="text/javascript"></script><script src="../home/searchs_files/core.php" charset="utf-8" type="text/javascript"></script></span>
+<span>优质带宽由<a href="http://www.62idc.com/">中睿科技</a>提供 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5896591'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D5896591' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_5896591"><a href="http://www.cnzz.com/stat/website.php?web_id=5896591" target="_blank" title="站长统计">站长统计</a></span><script src="../aaa/stat.php" type="text/javascript"></script><script src="../aaa/core.php" charset="utf-8" type="text/javascript"></script></span>
         </div>
 
 
@@ -580,112 +451,63 @@ window.onerror=function(){return true;}
 
 
 <!-- WPA Button Begin -->
-<script charset="utf-8" type="text/javascript" src="../home/searchs_files/wpa.php"></script>
+<iframe style="display: none; position: absolute; z-index: 2147483646 ! important;" src="../aaa/a.htm" allowtransparency="true" scrolling="no" frameborder="0" height="277" width="121"></iframe><script charset="utf-8" type="text/javascript" src="../aaa/wpa.php"></script>
 <!-- WPA Button End -->
-<script language="JavaScript" src="../home/searchs_files/floatcard"></script><script src="../home/searchs_files/all_20100501.js"></script><script id="TQGetrequestUser_JS"></script>
-<script id="TQGetIsNewMsg_JS"></script><script src="../home/searchs_files/as.js"></script><object id="tq_as" name="tq_as" style="position:absolute;left:0px;top:-5px;" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1" height="1"><param name="movie" value="http://sysimages.tq.cn/js/vip/shareObject.swf"><param name="allowScriptAccess" value="always"><object id="tq_as2" name="tq_as2" style="position:absolute;left:0px;top:-5px;" type="application/x-shockwave-flash" data="http://sysimages.tq.cn/js/vip/shareObject.swf" width="1" height="1"><param name="allowScriptAccess" value="always"></object></object>
-
-
-
-
-
-
-
+<script language="JavaScript" src="../aaa/floatcard.js"></script><script src="../aaa/all_20100501.js"></script><script id="TQGetrequestUser_JS"></script>
+<script id="TQGetIsNewMsg_JS"></script><script src="../aaa/as.js"></script><object id="tq_as" name="tq_as" style="position:absolute;left:0px;top:-5px;" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" height="1" width="1"><param name="movie" value="http://sysimages.tq.cn/js/vip/shareObject.swf"><param name="allowScriptAccess" value="always"><object id="tq_as2" name="tq_as2" style="position:absolute;left:0px;top:-5px;" type="application/x-shockwave-flash" data="../aaa/shareObject.swf" height="1" width="1"><param name="allowScriptAccess" value="always"></object></object>
+<script src="../assets/js/jquery-2.1.4.min.js"></script>
 <script>
-
-
-/** 筛选JS开始  **/	
-function ListUrl(id)
-{
-var url=location.href;
-var tt=url.split('?');
-if(typeof(tt[1])=='undefined')
-{
-url='http://www.byts.com.cn/add/l.php?tid=';
-}
-else
-{
-url=location.href;
-}
-var a=id.split('_');
-
-var tmp;
-
-
-
-var s=url.indexOf("?");
-var Par=s==-1?'&':'&'+url.substring(s+1)+'&';
-
-for(var i=0;i<a.length;i+=2)
-{
-tmp=Par.match(new RegExp("\&"+a[i]+"\=-?(\\d+)?",'i'));
-if(!tmp)
-{
-Par+=a[i]+'='+a[i+1]+'&'
-}
-else
-{
-Par=Par.replace(tmp[0]+'&','&'+a[i]+'='+a[i+1]+'&');
-}
+var ss=$("#zxc").val();
+function days(dayid){
+   var sr='';
+   $.get('sous',{"ss":ss,"dayid":dayid},function(msg){
+      sr+="<div class='Ny_search_showcon_midd'>"
+      for(var s=0;s<msg.length;s++){
+        sr+="<div class='Ny_search_showcon_middlist'>"
+        sr+="<div class='Ny_search_showcon_midd_fl'>"
+        sr+="<a href='#'>"
+        sr+="<img src='../home/images/"+msg[s]['s_img']+"' height='100px' width='125px'>"
+        sr+="</a>"
+        sr+="</div>" 
+        sr+="<div class='Ny_search_showcon_midd_fr'>"
+        sr+="<dl>"
+        sr+="<dt><a href='#' target='_blank'>"+msg[s]['s_name']+"</a></dt>"
+        sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
+        sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[s]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[s]['s_traffic']+"</span></span></dd>"
+        sr+="</dl>"
+        sr+="</div>" 
+        sr+="<div class='clear'></div>"
+        sr+="</div>"
+      }
+      sr+="</div>"
+      $("#replaces").html(sr)
+    },'json')
 }
 
-Par=Par.substring(1,Par.length-1);
-
-if(s==-1)
-{
-url+='?'+Par;
+function sous2(price){
+  var sr='';
+  $.get('moneys',{"ss":ss,"price":price},function(msg){
+      for(var f=0;f<msg.length;f++){
+        sr+="<div class='Ny_search_showcon_middlist'>"
+        sr+="<div class='Ny_search_showcon_midd_fl'>"
+        sr+="<a href='#'>"
+        sr+="<img src='../home/images/"+msg[f]['s_img']+"' height='100px' width='125px'>"
+        sr+="</a>"
+        sr+="</div>" 
+        sr+="<div class='Ny_search_showcon_midd_fr'>"
+        sr+="<dl>"
+        sr+="<dt><a href='#' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
+        sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
+        sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[f]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[f]['s_traffic']+"</span></span></dd>"
+        sr+="</dl>"
+        sr+="</div>" 
+        sr+="<div class='clear'></div>"
+        sr+="</div>"
+      }
+      $("#replaces").html(sr)
+    },'json')
 }
-else
-{
-url=url.substring(0,s+1)+Par;
-}
-
-location=url;
-
-}
-
-String.prototype.Trim=function()
-{
-
-return this.replace(/^\s+/g,"").replace(/\s+$/g,"");
-}
-
-if(getQueryString('id')=='0' || getQueryString('id')==null)
-{
-$('#id_0').addClass('yes');
-}
-else
-{
-$('.content0 a').removeClass('yes');
-$('#id_'+getQueryString('id')).addClass('yes');
-}
-
-
-
-
-if(getQueryString('day')=='0' || getQueryString('day')==null)
-{
-$('#day_0').addClass('yes');
-}
-else
-{
-
-$('.content2 a').removeClass('yes');
-$('#day_'+getQueryString('day')).addClass('yes');
-}
-
-
-if( (getQueryString('p1')=='0' && getQueryString('p2')=='0') || (getQueryString('p1')==null && getQueryString('p2')==null))
-{
-$('#p1_0_p2_0').addClass('yes');
-}
-else
-{
-$('.content3 a').removeClass('yes');
-$('#p1_'+getQueryString('p1')+'_p2_'+getQueryString('p2')).addClass('yes');
-}
-function getQueryString(name) {var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");    var r = window.location.search.substr(1).match(reg);    if (r != null) return unescape(r[2]); return null;}
-/** 筛选JS结束  **/
 
 </script>
+
 </body></html>

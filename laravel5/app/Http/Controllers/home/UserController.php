@@ -71,7 +71,8 @@ class UserController extends BaseController{
             $path1 = str_replace('\\', '/', $path);
             $paths = "." . $path1;
             DB::table("login")->where(["u_id"=> 1])->update(['path' => $paths]);
-            return view("home/common/common");
+            Session::put('userimg',$paths);
+            return redirect()->action('home\FootprintController@userhome');
         }
     }
     /**修改密码**/

@@ -14,7 +14,7 @@
             @foreach($person as $v)
                 <tr>
                     <td align="right"><span>用户名：</span></td>
-                    <td><span id="tel_old">{{$v->user}}</span> (ID:3851)</td>
+                    <td><span id="tel_old">{{$v->user}}</span> (ID:201609{{Session::get('u_id')}})</td>
                 </tr>
 
                 <tr>

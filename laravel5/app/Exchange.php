@@ -18,7 +18,6 @@ class Exchange extends Model {
                 ->get()
                 ->toArray();
         };
-        print_r($re);die;
         return $re;
     }
     /**
@@ -45,11 +44,7 @@ class Exchange extends Model {
     /**
      * 后台兑换商品展示
      */
-    public static function show(){
-        $re=self::join("e_type","exchange.t_id","=","e_type.t_id")->get();
-        return $re;
-
-    public static function show($page){
+      public static function show($page){
         $data=self::join("e_type","exchange.t_id","=","e_type.t_id")->get();
         $num = 10;							 //分页从哪个下标开始
         $count = count($data);

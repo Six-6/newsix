@@ -220,6 +220,7 @@ class ComposerStaticInit53b246cbeb772c48d2f3dbc981f4e7ee
         'CreateFHotsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_09_153343_create_f_hots_table.php',
         'CreateFShowsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_17_082415_create_f_shows_table.php',
         'CreateFTypesTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_17_082346_create_f_types_table.php',
+        'CreateFunUsersTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_20_191515_create_fun_users_table.php',
         'CreateHotelsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_08_104353_create_hotels_table.php',
         'CreateIntegralordersTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_08_162148_create_integralorders_table.php',
         'CreateIntegralsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_08_105459_create_integrals_table.php',
