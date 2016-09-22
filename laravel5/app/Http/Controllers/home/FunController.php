@@ -44,18 +44,19 @@ class FunController extends BaseController
      */
     public function lists(Request $request)
     {
-        $uid = 1;
-        //$uid=Session::get("u_id");
-        $name = "23454";
-        //$name=Session::get("name");
-        $u_id = 10;
+        //$uid = 1;
+        $u_id=Session::get("u_id");
+       // $name = "23454";
+        $name=Session::get("name");
+        //$u_id = 10;
         $id = $request->input("f_id");
         $re = Fun::gets($id);
+        //print_r($re);die;
         $surplus = $re[0]['f_num'] - $re[0]['p_num'];
         $i_id = Users::finds($u_id);
         $res = Integral::gets($i_id);
         $user = Fun_user::personS($id);
-        return view("home/fun/add", ["re" => $re, "user" => $user, "name" => $name, "uid" => $uid, "surplus" => $surplus, "res" => $res]);
+        return view("home/fun/add", ["re" => $re, "user" => $user, "name" => $name, "uid" => $u_id, "surplus" => $surplus, "res" => $res]);
     }
 
     /**
@@ -63,8 +64,8 @@ class FunController extends BaseController
      */
     public function replay()
     {
-        //$name=Session::get("name");
-        $name = "summer";
+        $name=Session::get("name");
+        //$name = "summer";
         $re = Fun::lists();
         return view("home/fun/replay", ['re' => $re, "name" => $name]);
     }
@@ -129,6 +130,5 @@ class FunController extends BaseController
                 echo 0;
             }
         }
-
     }
 }

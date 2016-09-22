@@ -62,7 +62,7 @@
     </script>
     <script src="./fun/forum_post.js" type="text/javascript"></script>
     <div id="pt" class="bm cl">
-        <div class="z"><a href="http://www.lvy8.net/" class="nvhm" title="首页">遇途网</a>
+        <div class="z"><a href="http://www.lvy8.net/" class="nvhm" title="首页"></a>
             <em>&#8250;</em> <a href="http://www.lvy8.net/forum-47-1.html">活动召集</a>
             <em>&#8250;</em>发起活动
         </div>

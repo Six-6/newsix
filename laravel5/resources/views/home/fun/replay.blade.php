@@ -3,7 +3,7 @@
 <html class=" widthauto" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gbk">
-    <title>活动召集 遇途网</title>
+    <title></title>
 
     <meta name="keywords" content="活动召集">
     <meta name="description" content="活动召集 ,遇途网">
@@ -104,7 +104,7 @@
             </div>
             <div id="pgt" class="bm bw0 pgs cl">
                 <span id="fd_page_top"></span>
-                <span class="y pgb"><a href="funPost">返回列表</a></span>
+                <span class="y pgb"><a href="funShow">返回列表</a></span>
                 <a href="funPost" title="发新帖"><img src="./fun/pn_post.png" alt="发新帖"></a></div>
             <div id="threadlist" class="tl bm bmw">
                 <div class="th">

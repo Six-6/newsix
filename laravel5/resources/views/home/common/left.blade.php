@@ -118,40 +118,36 @@
                         <dd><a href="integralAdd">我的积分</a></dd>
                         <dd><a href="integralDetails">积分详情</a></dd>
                     </dl>
-
-                    </dl>
-                    <a href="" class="mlink">我的积分</a>
+                    <a href="integralAdd" class="mlink">我的积分</a>
                 </li>
                 <li class="" id="nav_left_2">
                     <dl class="user-sub-nav cf">
                         <!-- <dd><a href="javascript:void(0)" onclick="footprint()">我的足迹</a></dd> -->
                         <dd><a href="footprint">我的足迹</a></dd>
+                        <dd><a href="funReplay">志同道合</a></dd>
                     </dl>
-                    </dl>
-                    <a href="#" class="mlink">我的足迹</a>
+                    <a href="footprint" class="mlink">我的足迹</a>
                 </li>
                 <li class="" id="nav_left_2">
                     <dl class="user-sub-nav cf">
                         <!-- <dd><a href="javascript:void(0)" onclick="collect()">我的收藏</a></dd> -->
                         <dd><a href="collect">我的收藏</a></dd>
+
                     </dl>
-                    </dl>
-                    <a href="" class="mlink">我的收藏</a>
+                    <a href="collect" class="mlink">我的收藏</a>
                 </li>
                 <li class="" id="nav_left_3">
                     <dl class="user-sub-nav cf">
                         <dd><a href="record">景点点评</a></dd>
                         <dd><a href="viewAdd">我的点评</a></dd>
                     </dl>
-                    </dl>
-                    <a href="#" class="mlink">我的点评</a>
+                    <a href="viewAdd" class="mlink">我的点评</a>
                 </li>
                 <li class="" id="nav_left_4">
                     <dl class="user-sub-nav cf">
                         <dd><a href="personAdd">个人资料</a></dd>
                         <dd><a href="imageAdd">修改头像</a></dd>
                         <dd><a href="pswAdd">修改密码</a></dd>
-
                     </dl>
                     <a href="personAdd" class="mlink">账号管理</a>
                 </li>

@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="./add/style_4_forum_viewthread.css">
 <link href="./add/share_style0_32.css" rel="stylesheet">
 <link href="./add/share_popup.css" rel="stylesheet">
-<link href="./add/select_share.css" rel="stylesheet"></head>
+<link href="./add/select_share.css" rel="stylesheet">
 <div id="wp" class="wp">
        <div id="ct" class="wp cl">
         <div id="pgt" class="pgs mbm cl ">

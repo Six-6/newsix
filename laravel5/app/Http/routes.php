@@ -21,10 +21,21 @@ Route::any('domestic', 'DomesticController@index');//国内
 Route::get('home/recursion', 'home\RecursionController@recursion');/**首页无限极**/
 Route::post('home/searchs', 'home\RecursionController@searchs');/**首页全文检索搜索**/
 Route::get('home/sous', 'home\RecursionController@searchDay');/**根据旅游天数搜索**/
-
 Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/
 Route::get('home/personDel', 'home\FootprintController@personDel');/**用户--退出*/
 
+/**
+ * 前台国内游
+ */
+Route::get('home/domestic','home\DomesticController@index');/**国内游展示**/
+Route::get('home/contrast','home\DomesticController@contrast');/**经典对比**/
+Route::get('home/contrasts','home\DomesticController@contrasts');/**景点对比**/
+Route::get('home/scenicDetails','home\DomesticController@scenicDetails');/**景点详情**/
+Route::get('home/fill','home\DomesticController@fill');/**填写订单**/
+Route::get('home/write_information','home\DomesticController@write_information');/**填写游客信息**/
+Route::post('home/tourist','home\DomesticController@tourist_information');/**填写游客信息**/
+Route::get('home/check','home\DomesticController@check_order');/**核对订单**/
+Route::get('home/payment','home\DomesticController@payment');/**下单付款**/
 
 /**前台用户管理**/
 Route::get('home/personAdd',"home\UserController@add");//个人信息展示
