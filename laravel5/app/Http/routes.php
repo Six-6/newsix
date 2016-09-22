@@ -60,6 +60,7 @@ Route::post('home/detailsOrder',"home\ExchangeController@order");/**兑换商品
 Route::post('home/orderAdd',"home\ExchangeController@orderAdd");/**确认兑换**/
 
 /**前台志同道合**/
+Route::post('home/funExchange',"home\FunController@exchange");/**更换页面**/
 Route::get('home/funShow',"home\FunController@show");/**志同道合显示**/
 Route::get('home/funWrite',"home\FunController@lists");/**志同道合详细页面展示**/
 Route::get('home/funReplay',"home\FunController@replay");/**志同道合列表展示**/
@@ -75,6 +76,7 @@ Route::get('home/lnews', 'season\NoteController@lnews');//前台最新发布
 
 /**后台登录 权限控制**/
 Route::get('admin/lo', 'admin\loginController@index');/**后台登录**/
+
 
 Route::get('admin/loin', 'admin\loginController@loin');/**后台登录**/
 Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/
@@ -202,6 +204,30 @@ Route::post('home/dcomment', 'season\ThemeController@dcomment');//游记详情�
 
 
 
+
+/***前台 风向标***/
+Route::get('home/siterecommend', 'season\IndicatorController@siterecommend');//风向标首页
+Route::get('home/month', 'season\IndicatorController@month');//季节推荐
+Route::get('home/ranking', 'season\RankingController@index');//排行榜
+Route::get('home/note', 'season\NoteController@index');//前台游记首页
+Route::post('home/search', 'season\NoteController@search');//前台游记首页
+Route::get('home/lnews', 'season\NoteController@lnews');//前台最新发布
+
+/***前台 主题***/
+Route::get('home/them', 'season\ThemeController@them');//前台风向标主题 首页
+Route::get('home/themes', 'season\ThemeController@themes');//前台风向标主题 权威
+Route::get('home/freshs', 'season\ThemeController@freshs');//前台风向标主题 尝鲜
+Route::get('home/shutter', 'season\ThemeController@shutter');//前台风向标主题 快门
+Route::get('home/cate', 'season\ThemeController@cate');//前台风向标主题 美食
+Route::get('home/shopping', 'season\ThemeController@shopping');//前台风向标主题 购物
+Route::get('home/literature', 'season\ThemeController@literature');//前台风向标主题 文艺
+Route::get('home/details', 'season\ThemeController@details');//游记详情
+Route::post('home/dcomment', 'season\ThemeController@dcomment');//游记详情评论
+Route::get('home/praise', 'season\ThemeController@praise');//游记点赞
+Route::get('home/publishs', 'season\PublishController@publish');//写游记
+Route::any('home/yfile', 'season\PublishController@yfile');//图片上传
+Route::post('home/collect', 'season\PublishController@collect');//图片上传
+Route::get('home/mysit', 'season\PublishController@mysit');//我的游记
 
 
 
@@ -558,7 +584,7 @@ Route::get('home/contrast','home\DomesticController@contrast');/**经典对比**
 Route::get('home/contrasts','home\DomesticController@contrasts');/**景点对比**/
 Route::get('home/scenicDetails','home\DomesticController@scenicDetails');/**景点详情**/
 Route::get('home/fill','home\DomesticController@fill');/**填写订单**/ 
-// Route::get('home/fill_in_order','home\DomesticController@fill_in_order');/**展示填写订单表格**/
+
 
 
 
@@ -672,7 +698,6 @@ Route::get('home/fill','home\DomesticController@fill');/**填写订单**/
 /**前台**/
 Route::get('home/recursion', 'home\RecursionController@recursion');/**首页无限极**/
 Route::post('home/searchs', 'home\RecursionController@searchs');/**首页全文检索搜索**/
-
 Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅游资金搜索**/
 Route::get('home/destination', 'home\RecursionController@destination');/**根据旅游目的地搜索**/
 Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/

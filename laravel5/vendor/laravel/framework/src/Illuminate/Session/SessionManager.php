@@ -105,6 +105,10 @@ class SessionManager extends Manager {
 	{
 		return $this->createCacheBased('memcached');
 	}
+	protected function createMemcacheDriver()
+  {
+    return $this->createCacheBased('memcache');
+  }
 
 	/**
 	 * Create an instance of the Wincache session driver.

@@ -49,13 +49,9 @@ class FootprintController extends BaseController{
      * @return [type] [description]
      */
     public function personDel(Request $request){
-
         $flush = $request->session()->flush();
-
         if ($flush) {
-
             echo "<script>alert('退出失败');location.href='personAdd'</script>";
-
         }else{
 
             return redirect('blo');
@@ -96,6 +92,7 @@ class FootprintController extends BaseController{
         //调用model
         $model = new Footprint();
         //调用查询方法
+
         $cancel = $model->cancel($sid);
 
         return $cancel;

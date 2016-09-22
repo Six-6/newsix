@@ -21,17 +21,8 @@
     <!--start 面包屑和目的地导航 -->
         <div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
-                <div class="crumbs fl">
-                    <a href="http://go.tuniu.com/" class="word" rel="nofollow">攻略首页</a>
-
-                    <a href="http://trips.tuniu.com/" target="_blank" rel="nofollow" class="word">游记</a>
-                    <a href="http://www.tuniu.com/way/" target="_blank" rel="nofollow" class="word">达人玩法</a>
-                    <a href="http://top.tuniu.com/" rel="nofollow" class="word cur">风向标</a>
-                    <a href="http://www.tuniu.com/traveler" target="_blank" rel="nofollow" class="word">旅游达人</a>
-                    <a href="http://ask.tuniu.com/" target="_blank" rel="nofollow" class="word">攻略问答</a>
-                </div>
                 <div class="f_youji fr">
-                    <a class="report" href="http://www.tuniu.com/trips/write/">发表游记</a>
+                    <a class="report" href="{{URL('home/publishs')}}">发表游记</a>
                                     </div>
             </div>
         </div>
@@ -76,7 +67,37 @@
         <script type="text/javascript" src="../js/jquery-powerFloat-min.js"></script>
         <script type="text/javascript" src="../js/jquery.js"></script>  
     
-    
+		<script type="text/javascript">
+			$(function(){
+				$("#lick").click(function(){
+					var num = $('.likeNum').html()
+					var tt_id = $('#tt_id').val()
+					$.ajax({
+						url:"{{URL('home/praise')}}",
+						type:"get",
+						dataType:"json",
+						data:{
+							num:num,
+							tt_id:tt_id
+						},
+						success:function(jpg){
+							if(jpg == 1)
+							{
+								location.href="{{URL('blo')}}"
+							}
+							else if(jpg == 2)
+							{
+								alert("已经赞过")
+							}
+							else
+							{
+								$("#sib").html(jpg);
+							}							
+						}
+					})
+				})
+			})
+		</script>
     
         <input name="page_type" id="page_type" value="140000" type="hidden">
 
@@ -86,16 +107,18 @@
                 <div class="listtit clearfix">
                     <div class="fl" id="J_listtit_fl">
                         
-                        {{$error -> t_title}}                                                <h6> 清迈景点推荐</h6>
-                                                <a href="javascript:;" class="share ashare">
-                        </a>
+                        {{$error -> t_title}}                                               
+                                                
                     </div>
                     <div class="fr">
                         <div class="blog-control01">
                             <div class="readers item">
-                                <a rel="nofollow" href="javascript:;" class="spe-like J_addlike" title="赞一个" data-likeid="106" data-likecategory="0">&nbsp;&nbsp;
-                                    喜欢 <span><label class="likeNum">{{$error -> t_zambia}}</label></span>
+							
+                                <a rel="nofollow" href="javascript:;" id="lick" title="赞一个" >&nbsp;&nbsp;
+								<img width="13" height="13" src="../image/zan.jpg">
+                                    喜欢 <span id="sib"><label  class="likeNum">{{$error -> t_zambia}}</label></span>
                                 </a> 
+								
                                 <a style="left: 316px;" rel="nofollow" href="javascript:;" class="link_share_new link_share" data-share-title="" data-share-url="" data-sharecategory="0" data-shareid="10024515" data-share-pic="http://m.tuniucdn.com/filebroker/cdn/snc/c6/38/c6380aaeaa65b26f2cc79483e7a33eb9_w240_h135_c1_t0.jpeg">
                                     <span class="share share-pos"></span>
                                 </a> 
@@ -165,19 +188,23 @@
 						<div class="ask-reply" id="commentPos">
 						<div class="commentary clearfix" id="pinglun">
 							<h2>发表评论</h2>
-							<form name="review" action="{{URL('home/dcomment')}}" method="post">
+							
+							<form action="{{URL('home/dcomment')}}" method="post">
 								<div class="commentary-co clearfix">
 									<div class="commentary-auth auth-pho">
 										<a class="author-pic" href="javascript:void(0);"><img style="" height="63" width="63"></a>
-										<input type="hidden" name="_token" value="{{ csrf_token() }}">
-										<input name="idf" value="{{Request::get('id')}}" type="hidden">
+										<input type="hidden" name="_token" value="{{csrf_token()}}">
+										<input name="idf" id="tt_id" value="{{Request::get('id')}}" type="hidden">
+										@foreach($data['host'] as $error)
+										<input name="t_comment" value="{{$error -> t_commentint}}" type="hidden">
+										@endforeach
 											
 									</div>
 			
 									<div class="commentary-main clearfix">
 										<textarea name="content" maxlength="1000" id="r_comment" placeholder="评论一下"></textarea>
 										<p>
-											<input value="提交" class="submit" type="submit"> 
+											<input value="提交"   type="submit"> 
 											<span>
 											你还可以输入
 											<i id="r_limitNum">1000</i>个字符												
@@ -193,43 +220,54 @@
 							<h2>网友评论</h2>
 					<!-- new style -->
 							<div class="commentary-co clearfix">
+							@if($data['commect'] == "")
+							@else
+							@foreach($data['commect'] as $key => $val)
 								<div class="commentary-con clearfix">
 									<div class="commentary-auth">
-										<a class="author-pic" href="http://www.tuniu.com/person/6674561" target="_blank"> <img src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/default_head.png" height="63" width="63">
-										</a>
+										 <img src="{{$val['path']}}" height="63" width="63">
 									</div>
 									<div class="commentary-center clearfix">
 										<p class="author-name">
-											<a href="http://www.tuniu.com/person/6674561" target="_blank" rel="nofollow">memecha11</a>
+											<a href="http://www.tuniu.com/person/6674561"  rel="nofollow">{{$val['name']}}</a>
 										</p>
 										<p>
-											<em>发表于</em> <em>2016-09-07 14:01:33</em>
+											<em>发表于</em> <em>{{$val['c_time']}}</em>
 										</p>
 										<p class="author-op" style="word-wrap: break-word;">
-											回复 <em>memecha11<br>
-												好喜欢这些小清新！											</em>
+											回复 作者<em><br>
+												{{$val['c_base']}}											</em>
 										</p>
-										<p class="commentary-txt" style="word-wrap: break-word;">对对</p>
+										@if($val['reply'] === "")
+										
+										@else
+											游客回复：
+											@foreach($val['reply'] as $keys => $value)
+											<p class="commentary-txt" style="word-wrap: break-word;">										
+											<em>
+											&nbsp{{$value['c_base']}}
+											</em>
+											<em>
+											&nbsp于{{$value['c_time']}}
+											</em>
+											</p>
+											@endforeach
+										@endif
 									</div>
 									<div class="commentary-level">
-										<span>3</span> #
+										<span>{{$key+1}}</span> #
 									</div>
 								</div>
+							
 								<div class="author-opert clearfix"> 
-									<a class="author-operation" href="javascript:void(0);" rel="nofollow" fid="1534">回复</a>										
+									<a class="author-operation" href="javascript:void(0);" rel="nofollow" fid="{{$val['comment_id']}}">回复</a>										
 								</div>
+							@endforeach
+							@endif
 							</div>
 							<!-- new style -->
 																												
-				<!-- 分页start -->
-				<div class="pagination cj_pro_page">
-				<div class="page-bottom" style="margin-right:250px;">
-					<!-- 上一页start -->
-							<a class="page_num" href="#" >上一页</a>
-							<!-- 上一页end -->
-						<a  href="#">下一页</a>
-					</div>
-				</div>					                <!-- 分页end -->
+				
 		</div>
 				</div>                                                      
                                                                         
@@ -238,25 +276,7 @@
                     
                                     
                     <div class="col2-side">
-    <div class="block mt15">
-        <h3 class="f16 ff-mic">泰国旅游攻略</h3>
-        <div class="repair-c">
-            <dl class="download clearfix">
-                <dt>
-                <a href="http://m.tuniucdn.com/filebroker/cdn/olb/a8/85/a88512ac1125a10012c259ab5d16af39.pdf?alias=%E6%B3%B0%E5%9B%BD%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5.pdf" onclick="try{_gaq.push(['_trackEvent', '[旅游攻略][PDF下载]','[PDF下载][POI页]',' [清迈][784710]']);}catch(e){}">
-                    <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/2c7e8fcc57057469dd41faf503e19147_w120_h170_c1_t0.png" data-src="http://m.tuniucdn.com/filebroker/cdn/olb/2c/7e/2c7e8fcc57057469dd41faf503e19147_w120_h170_c1_t0.png">
-                </a>
-                </dt>
-                <dd>
-                    <p>2016最新泰国旅游攻略下载</p>
-                    <em>格式：PDF</em> 
-                    <a class="sbtn sbtn-20 sbtn-green downloadbtn" href="http://m.tuniucdn.com/filebroker/cdn/olb/a8/85/a88512ac1125a10012c259ab5d16af39.pdf?alias=%E6%B3%B0%E5%9B%BD%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5.pdf" onclick="try{_gaq.push(['_trackEvent', '[旅游攻略][PDF下载]','[PDF下载][POI页]',' [清迈][784710]']);}catch(e){}">
-                    	<span><i></i>立即下载</span>
-                    </a>
-                </dd>
-            </dl>
-        </div>
-    </div>
+
     
  <!-- 专题推荐start --> 
       <div class="block mt20">
@@ -264,21 +284,21 @@
                             相关榜单推荐
         </h3>
                  <div class="c ">
-            <a class="pic imgbox" href="http://top.tuniu.com/topic/d19" target="_blank"> 
+            <a class="pic imgbox" href="http://top.tuniu.com/topic/d19" > 
             <img src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/ef8bba3089369dc4e01d799e5d49efcf_w180_h100_c1_t0.jpg">
             <p>
                 湿身这片海 蜜月海岛推荐            </p>
             </a>
         </div>
                 <div class="c ">
-            <a class="pic imgbox" href="http://top.tuniu.com/topic/d56" target="_blank"> 
+            <a class="pic imgbox" href="http://top.tuniu.com/topic/d56" > 
             <img src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/59ac34f57b81d939a46971b6ad724904_w180_h100_c1_t0.jpg">
             <p>
                 喵星人统治世界 十大猫奴必去地            </p>
             </a>
         </div>
                 <div class="c ">
-            <a class="pic imgbox" href="http://top.tuniu.com/topic/d85" target="_blank"> 
+            <a class="pic imgbox" href="http://top.tuniu.com/topic/d85" > 
             <img src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/bb64d4a4ff9cc775e88dc2161f3712e7_w180_h100_c1_t0.jpg">
             <p>
                 台湾超小众文艺书店            </p>
@@ -298,12 +318,12 @@
 	        <ul>
 	        	           	            <li class="clearfix">
 	            	                <div class="pic">
-	                    <a href="http://www.tuniu.com/tours/210244901" target="_blank" rel="nofollow"> 
+	                    <a href="http://www.tuniu.com/tours/210244901"  rel="nofollow"> 
 	               <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/32065791755673c74afaa63980c3b041_w320_h240_c1_t0.jpg" data-src="http://m.tuniucdn.com/filebroker/cdn/olb/32/06/32065791755673c74afaa63980c3b041_w320_h240_c1_t0.jpg">
 	                    </a>
 	                </div>
 	                <div class="des">
-	                    <p class="name"><a href="http://www.tuniu.com/tours/210244901" target="_blank" rel="nofollow">[国庆]&lt;清迈4晚5或6日自助游&gt;人气热卖酒店集锦，选择更丰富，多城市出发</a></p>
+	                    <p class="name"><a href="http://www.tuniu.com/tours/210244901"  rel="nofollow">[国庆]&lt;清迈4晚5或6日自助游&gt;人气热卖酒店集锦，选择更丰富，多城市出发</a></p>
 	                    <p class="price"><em>¥999</em>起</p>
 	                </div>
 <!--	                <div class="hot_num " >1</div>-->
@@ -311,12 +331,12 @@
 	            
 	          	           	            <li class="clearfix">
 	            	                <div class="pic">
-	                    <a href="http://www.tuniu.com/tours/210239938" target="_blank" rel="nofollow"> 
+	                    <a href="http://www.tuniu.com/tours/210239938"  rel="nofollow"> 
 	               <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/3bb50e52013d93ec45b0ab0f501bf459_w320_h240_c1_t0.jpg" data-src="http://m.tuniucdn.com/filebroker/cdn/prd/3b/b5/3bb50e52013d93ec45b0ab0f501bf459_w320_h240_c1_t0.jpg">
 	                    </a>
 	                </div>
 	                <div class="des">
-	                    <p class="name"><a href="http://www.tuniu.com/tours/210239938" target="_blank" rel="nofollow">&lt;清迈4晚5日自助游&gt;全程入住热门酒店，泰北玫瑰，悠久历史，灿烂文明</a></p>
+	                    <p class="name"><a href="http://www.tuniu.com/tours/210239938"  rel="nofollow">&lt;清迈4晚5日自助游&gt;全程入住热门酒店，泰北玫瑰，悠久历史，灿烂文明</a></p>
 	                    <p class="price"><em>¥2009</em>起</p>
 	                </div>
 <!--	                <div class="hot_num " >2</div>-->
@@ -324,12 +344,12 @@
 	            
 	          	           	            <li class="clearfix">
 	            	                <div class="pic">
-	                    <a href="http://bj.tuniu.com/tours/210337963" target="_blank" rel="nofollow"> 
+	                    <a href="http://bj.tuniu.com/tours/210337963"  rel="nofollow"> 
 	               <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/Cii9EFd2DrWIb67kACYGyS9VPBcAAG2sQONmSIAJgbh603_w450_h300_c1_.jpg" data-src="http://m.tuniucdn.com/fb2/t1/G1/M00/3C/6E/Cii9EFd2DrWIb67kACYGyS9VPBcAAG2sQONmSIAJgbh603_w450_h300_c1_t0_w320_h240_c1_t0.jpg">
 	                    </a>
 	                </div>
 	                <div class="des">
-	                    <p class="name"><a href="http://bj.tuniu.com/tours/210337963" target="_blank" rel="nofollow">&lt;清迈-清莱双飞5晚6日游&gt;清迈漫生活，小城故事，给心放个假，含签证费，含一晚回程机场附近酒店住宿</a></p>
+	                    <p class="name"><a href="http://bj.tuniu.com/tours/210337963"  rel="nofollow">&lt;清迈-清莱双飞5晚6日游&gt;清迈漫生活，小城故事，给心放个假，含签证费，含一晚回程机场附近酒店住宿</a></p>
 	                    <p class="price"><em>¥2617</em>起</p>
 	                </div>
 <!--	                <div class="hot_num hot_num_grey" >3</div>-->
@@ -337,12 +357,12 @@
 	            
 	          	           	            <li class="clearfix">
 	            	                <div class="pic">
-	                    <a href="http://bj.tuniu.com/tours/210124517" target="_blank" rel="nofollow"> 
+	                    <a href="http://bj.tuniu.com/tours/210124517"  rel="nofollow"> 
 	               <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/Cii9EFZ7sSuIKV4AACYmc1urx_4AABJJwGKAUsAJiaL808_w450_h300_c1_.jpg" data-src="http://m.tuniucdn.com/fb2/t1/G1/M00/7F/38/Cii9EFZ7sSuIKV4AACYmc1urx_4AABJJwGKAUsAJiaL808_w450_h300_c1_t0_w320_h240_c1_t0.jpg">
 	                    </a>
 	                </div>
 	                <div class="des">
-	                    <p class="name"><a href="http://bj.tuniu.com/tours/210124517" target="_blank" rel="nofollow">[国庆]&lt;清迈-清莱4晚5日游&gt;东航白天正班机直飞 看萌萌哒大象  黑白庙 嘟嘟车游览古城 清莱艾美自助餐 报名9月赠送夜间动物园</a></p>
+	                    <p class="name"><a href="http://bj.tuniu.com/tours/210124517"  rel="nofollow">[国庆]&lt;清迈-清莱4晚5日游&gt;东航白天正班机直飞 看萌萌哒大象  黑白庙 嘟嘟车游览古城 清莱艾美自助餐 报名9月赠送夜间动物园</a></p>
 	                    <p class="price"><em>¥3501</em>起</p>
 	                </div>
 <!--	                <div class="hot_num hot_num_grey" >4</div>-->
@@ -350,12 +370,12 @@
 	            
 	          	           	            <li class="clearfix last">
 	           	                <div class="pic">
-	                    <a href="http://www.tuniu.com/tours/210239935" target="_blank" rel="nofollow"> 
+	                    <a href="http://www.tuniu.com/tours/210239935"  rel="nofollow"> 
 	               <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/3bb50e52013d93ec45b0ab0f501bf459_w320_h240_c1_t0.jpg" data-src="http://m.tuniucdn.com/filebroker/cdn/prd/3b/b5/3bb50e52013d93ec45b0ab0f501bf459_w320_h240_c1_t0.jpg">
 	                    </a>
 	                </div>
 	                <div class="des">
-	                    <p class="name"><a href="http://www.tuniu.com/tours/210239935" target="_blank" rel="nofollow">&lt;清迈4晚5日自助游&gt;人气热卖产品，多酒店可选</a></p>
+	                    <p class="name"><a href="http://www.tuniu.com/tours/210239935"  rel="nofollow">&lt;清迈4晚5日自助游&gt;人气热卖产品，多酒店可选</a></p>
 	                    <p class="price"><em>¥2291</em>起</p>
 	                </div>
 <!--	                <div class="hot_num hot_num_grey" >5</div>-->
@@ -380,7 +400,7 @@
 
 <script type="text/javascript">
     $(".author-operation").click(function(){
-        $("#replyBox").find("#fid").val($(this).attr('fid'));
+        $("#replyBox").find("#fid").val($(this).attr('fid'));        
     });
 </script>   
 <!--弹框新增 start-->
@@ -408,18 +428,15 @@
 
 	<!--回复-->
 	<div id="replyBox" class="pop_box reply_box hide">
-		<form action="http://top.tuniu.com/api/comment/" method="post" onsubmit="return validate2();">
+		<form action="{{URL('home/dcomment')}}" method="post" >
 			<div>
 				<a href="javascript:void(0);" class="close"></a>
 				<div class=""></div>
 				<h3>发表回复</h3>
 				<div class="comment_box">
-					<input name="type" value="2" type="hidden"> 
 					<input id="fid" name="fid" value="0" type="hidden">
-					<input name="tripid" value="106" type="hidden">
-					
-					<input name="diff" value="2" type="hidden">		
-								
+					<input name="idf" value="{{Request::get('id')}}" type="hidden">					
+					<input type="hidden" name="_token" value="{{csrf_token()}}">										
 					<textarea name="content" id="reply_w_comment" class="w_comment" maxlength="990"></textarea>						
 				</div>
 				<div class="msg">
@@ -475,7 +492,7 @@
 <!-- three sun S -->
 <div class="three_trav">
     <div class="thr_trav">
-        <a href="http://www.tuniu.com/static/sunshine_ensure/" target="_blank" style="display:block;width:100%;height:100%;">
+        <a href="http://www.tuniu.com/static/sunshine_ensure/"  style="display:block;width:100%;height:100%;">
             <em class="tn_text" id="service_phone_head_text">客户服务电话（免长途费）</em>
             <em class="tn_phone" id="service_phone_head_phone">4007-999-999</em>
         </a>
