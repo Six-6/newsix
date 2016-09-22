@@ -1,0 +1,56 @@
+.nav_right
+.travelnote_tab{height:34px;margin-bottom:17px}.nav_right .travelnote_tab
+a.tab{font-size:14px;line-height:34px;color:#390;display:block;float:left}.nav_right .travelnote_tab
+a.mynote{color:#390;margin-right:30px;width:64px;text-align:center}.nav_right .travelnote_tab
+a.collectnote{color:#390;margin-right:15px;width:76px;text-align:center}.nav_right .travelnote_tab
+a.message{color:#390;margin-right:30px;width:65px;text-align:center}.nav_right .travelnote_tab
+a.tab.cur{color:#333;font-weight:bold;border-bottom:2px solid #F80}.nav_right .travelnote_tab
+a.publish{width:100px;height:34px;background:url("/site/images/user_center/publish.gif") no-repeat center;display:block;float:left;margin-left:30px}.nav_right
+.datatable{width:100%;color:#333}.nav_right .datatable tr
+th{background-color:#f5f5f5;padding:5px
+0px}.nav_right .datatable tr
+td{height:34px;line-height:34px;border-bottom:1px dashed #ccc}.nav_right .datatable tr td
+a{color:#690}.nav_right .datatable tr td a:visited{color:#690}.nav_right .datatable tr td a:hover{color:#f60}.nav_right .datatable tr td
+a.edit{margin-right:20px}.nav_right .datatable tr td
+.note_name{overflow:hidden;width:340px;height:34px;display:block}.nav_right .datatable tr td .note_name
+span{color:#f60}.nav_right .datatable tr
+td.page_ctrl{border-bottom:none;text-align:right}.nav_right .datatable tr td.page_ctrl
+.next_page{margin-left:40px}.nav_right
+.datatable.datatbl_1{display:none}.nav_right
+.datatable_msg{width:100%;color:#333;display:none}.nav_right .datatable_msg
+.title{background-color:#f5f5f5;padding:2px
+0px}.nav_right .datatable_msg .title
+div{float:left;padding-left:12px}.nav_right .datatable_msg .title
+.del{width:53px}.nav_right .datatable_msg
+.list{height:87px;border-bottom:1px dashed #ccc;margin-top:3px}.nav_right .datatable_msg
+.list.no_read{background-color:#ffffd0;border-bottom:1px dashed #fc0}.nav_right .datatable_msg .list
+.cbx{width:65px;height:87px;float:left}.nav_right .datatable_msg .list .cbx
+input{margin-left:16px;margin-top:35px}.nav_right .datatable_msg .list
+.cont{height:82px;float:left;padding-left:12px;line-height:24px;padding-top:5px}.nav_right .datatable_msg .list .cont .line1
+span{margin-right:5px}.nav_right .datatable_msg .list .cont .line1
+span.time{color:#999}.nav_right .datatable_msg .list .cont
+a.travelname{color:#666;text-decoration:underline;padding:0px
+5px}.nav_right .datatable_msg .list .cont
+a.detail{color:#693;font-family:"SimSun"}.nav_right .datatable_msg
+.list.last{border-bottom:none;margin-top:35px}.nav_right .datatable_msg .list
+.btn_box{float:left;width:200px;padding-left:12px;height:30px}.nav_right .datatable_msg .list .btn_box
+.btn{width:43px;height:20px;border:1px
+solid #a0a0a0;color:#333;line-height:20px;background-color:#f2f0f0;border-radius:2px;margin-right:10px;cursor:pointer}.nav_right .datatable_msg .list
+.page_box{text-align:right;height:30px}.nav_right .datatable_msg .list .page_box
+.next_page{margin-left:40px}.nav_right .datatable_msg .list .page_box
+a{color:#690}.nav_right .datatable_msg .list .page_box a:visited{color:#690}.nav_right .datatable tr
+th.pl_10{padding-left:10px}.nav_right .datatable tr
+td.pl_10{padding-left:10px}.replytit{padding:0
+15px}.nav_right
+.datatable.datatbl_2{display:none}.nav_right .datatbl_2 tr
+td{line-height:22px}.nav_right .datatbl_2 tr td
+.youji_reply{padding:10px
+0}.youji_reply .reply_time
+.reply_time_des{color:#989898}.datatbl_2 tr td .youji_reply p.reply_name
+a{color:#666668;padding:0
+15px;text-decoration:underline}.reply_name
+.c_yellow{color:#f60}.datatbl_2
+.page_ctrl{padding-top:20px}.reply_del_btn{float:left}.reply_del_btn
+a{display:inline-block;width:41px;height:20px;background:#f2f0f1;border:1px
+solid #a0a0a0;color:#343233!important;text-align:center;line-height:20px;margin-right:15px;box-radius:1px}.datatbl_2 tr.on
+td{background:#ffffd1;border-bottom:1px dashed #ffca01}

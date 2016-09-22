@@ -159,6 +159,12 @@
                     </dl>
                     <a href="personAdd" class="mlink">账号管理</a>
                 </li>
+                <li class="" id="nav_left_4">
+                    <dl class="user-sub-nav cf">
+                        <dd><a href="mysit">个人游记</a></dd>
+                    </dl>
+                    <a href="mysit" class="mlink">我的游记</a>
+                </li>
                 <!--会员特价中心待添加 chenjinlong 2011-11-22-->
 
             </ul>

@@ -23,6 +23,7 @@ return false;}
 function changeAllPagePhone(){var headPhoneBox=$(".header_search .site_contact");var footPhoneBox=$(".three_trav .thr_trav");var tuniuHeaderPhoneText=headPhoneBox.find(".text");var tuniuHeaderPhoneTel=headPhoneBox.find(".tel")
 var tuniuFootPhoneText=footPhoneBox.find(".tn_text");var tuniuFootPhoneTel=footPhoneBox.find(".tn_phone");var tuniuPPhoneNumber=getPhoneCookie("p_phone_400");if(tuniuFootPhoneText.length>0){}
 else{footPhoneBox.find("a").prepend("<em class='tn_text'></em>");var tuniuFootPhoneText=footPhoneBox.find(".tn_text");}
-if(tuniuHeaderPhoneTel){if(tuniuPPhoneNumber&&tuniuPPhoneNumber=="4007-979797"){tuniuHeaderPhoneText.text("途致贵宾专线");tuniuHeaderPhoneTel.text(tuniuPPhoneNumber);}else{tuniuHeaderPhoneText.text("客户服务电话");tuniuHeaderPhoneTel.text("4007-999-999");}}
+if(tuniuHeaderPhoneTel){if(tuniuPPhoneNumber&&tuniuPPhoneNumber=="4007-979797"){tuniuHeaderPhoneText.text("24h途致贵宾专线");tuniuHeaderPhoneTel.text(tuniuPPhoneNumber);}else{tuniuHeaderPhoneText.text("24h客户服务电话");tuniuHeaderPhoneTel.text("4007-999-999");}}
 if(tuniuFootPhoneTel){if(tuniuPPhoneNumber&&tuniuPPhoneNumber=="4007-979797"){tuniuFootPhoneText.text("途致贵宾专线（免长途费）");tuniuFootPhoneTel.text(tuniuPPhoneNumber);}else{tuniuFootPhoneText.text("客户服务电话（免长途费）");tuniuFootPhoneTel.text("4007-999-999");}}}
-$(function($){var sub=$("#keyword-input-sub").val();if(sub&&sub!=''){$("#keyword-input").val(sub);}});
+function showHeadTuniuChat(data){$('.site_contact').prepend('<a class="headTuniuKefu" href="javascript:;" onclick="javascript:window.open(\''+data.url+'\', \''+data.label+'\', \''+data.winConfig+'\');">'+'<img src="//ssl1.tuniucdn.com/img/20160919/header/head_tel.png" /><span>欢迎使用<i>在线客服</i></span>'+'</a>');}
+window.showHeadTuniuChat=showHeadTuniuChat;$(function($){var sub=$("#keyword-input-sub").val();if(sub&&sub!=''){$("#keyword-input").val(sub);}});

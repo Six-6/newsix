@@ -143,10 +143,7 @@ Route::get('admin/loin', 'admin\loginController@loin');/**后台登录**/
 Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/                                                                                                           
 
 
-Route::group(['middleware' => ['common']], function () {
-	Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
 
-	Route::get('admin/userShow', 'admin\IndexController@i');/**后台管理员列表**/
 	
 
 /***前台 风向标***/
@@ -283,6 +280,7 @@ Route::get('home/ranking', 'season\RankingController@index');//排行榜
 Route::get('home/note', 'season\NoteController@index');//前台游记首页
 Route::post('home/search', 'season\NoteController@search');//前台游记首页
 Route::get('home/lnews', 'season\NoteController@lnews');//前台最新发布
+
 /***前台 主题***/
 Route::get('home/them', 'season\ThemeController@them');//前台风向标主题 首页
 Route::get('home/themes', 'season\ThemeController@themes');//前台风向标主题 权威
@@ -293,6 +291,12 @@ Route::get('home/shopping', 'season\ThemeController@shopping');//前台风向标
 Route::get('home/literature', 'season\ThemeController@literature');//前台风向标主题 文艺
 Route::get('home/details', 'season\ThemeController@details');//游记详情
 Route::post('home/dcomment', 'season\ThemeController@dcomment');//游记详情评论
+Route::get('home/praise', 'season\ThemeController@praise');//游记点赞
+Route::get('home/publishs', 'season\PublishController@publish');//写游记
+Route::any('home/yfile', 'season\PublishController@yfile');//图片上传
+Route::post('home/collect', 'season\PublishController@collect');//图片上传
+Route::get('home/mysit', 'season\PublishController@mysit');//我的游记
+
 
 
 

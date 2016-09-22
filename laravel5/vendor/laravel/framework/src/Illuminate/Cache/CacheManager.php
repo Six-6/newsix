@@ -158,6 +158,15 @@ class CacheManager implements FactoryContract {
 
 		return $this->repository(new MemcachedStore($memcached, $prefix));
 	}
+	
+	protected function createMemcacheDriver()
+    {
+    $servers = $this->app['config']['cache.memcached'];
+
+    $memcache = $this->app['memcache.connector']->connect($servers);
+
+    return $this->repository(new MemcacheStore($memcache, $this->getPrefix()));
+  }
 
 	/**
 	 * Create an instance of the Null cache driver.

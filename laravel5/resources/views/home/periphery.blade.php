@@ -5,19 +5,19 @@
 <title>周边旅游 北京青旅_北青旅总社官网北京旅行社</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
-<link rel="stylesheet" href="http://www.byts.com.cn/ORG7188_templets/002/style/style.css">
-<link rel="stylesheet" href="http://www.byts.com.cn/ORG7188_templets/002/style/duibi.css">
-<link rel="stylesheet" href="http://www.byts.com.cn/ORG7188_templets/002/style/linelist.css">
-<link rel="stylesheet" href="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/a_rili.css" type="text/css" media="screen" charset="utf-8">
-<script type="text/javascript" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/jquery.js"></script>
-<script type="text/javascript" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/duibi.js"></script>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/duibi.css">
+<link rel="stylesheet" href="../css/linelist.css">
+<link rel="stylesheet" href="../css/a_rili.css" type="text/css" media="screen" charset="utf-8">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/duibi.js"></script>
 
-<script type="text/javascript" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/duibi1.js"></script>
-<script src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/a_list.js" type="text/javascript"></script>
-<script src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bsStatic.js" type="text/javascript" charset="utf-8"></script></head>
+<script type="text/javascript" src="../js/duibi1.js"></script>
+<script src="../js/a_list.js" type="text/javascript"></script>
+<script src="../js/bsStatic.js" type="text/javascript" charset="utf-8"></script></head>
 
 <body>
-<link href="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/site.css" rel="stylesheet" type="text/css">
+<link href="../css/site.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 $(document).ready(function(){
 	$(".select_box input").click(function(){
@@ -63,7 +63,7 @@ $(document).ready(function(){
 </script>
 
 <!--TOP部分-->
-<script language="javascript" type="text/javascript" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/ajax188.js"></script>
+<script language="javascript" type="text/javascript" src="../js/ajax188.js"></script>
 <script language="javascript" type="text/javascript">
 
 function Check_head_Login(){
@@ -94,13 +94,13 @@ window.onerror=function(){return true;}
   <div class="conter"><span>欢迎访问 <a href="http://www.byts.com.cn/">北京青年旅行社官网</a></span>　请
   <span id="_Check_head_Login"><a href="http://www.byts.com.cn/users/">欢迎您，weisen</a> <a href="http://www.byts.com.cn/users/order.php?po=all"> [订单]</a> <a href="http://www.byts.com.cn/users/index.php?do=edt"> [资料]</a><a href="http://www.byts.com.cn/users/index.php?do=money"> [积分]</a> <a href="http://www.byts.com.cn/users/index_do.php?fmdo=login&dopost=exit"> [退出]</a>
 </span><script language="javascript">Check_head_Login();</script>
-     <div class="hour"><img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/pic1.jpg" width="46" height="19"></div>
+     <div class="hour"><img src="../image/pic1.jpg" width="46" height="19"></div>
      <div class="iph">旅游预订电话 <strong>400-926-5166</strong></div>
   </div>
 </div>
 <div class="top2">
 	<div class="conter">
-    	<div class="logo"><img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/logo.png" width="329" height="54"><img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/tage.png" width="116" height="50"></div>
+    	<div class="logo"><img src="../image/logo.png" width="329" height="54"><img src="../image/tage.png" width="116" height="50"></div>
     <div class="sourchNew"> 
     <form action="http://www.byts.com.cn/tags.php" method="post" name="indexsearchform" class="cfix" id="indexsearchform">
     <input type="hidden" value="0" name="travelClassHeader" id="srhInput">
@@ -130,12 +130,12 @@ window.onerror=function(){return true;}
             <a href="http://www.byts.com.cn/out/">出境游</a>
             <a href="http://www.byts.com.cn/china/">国内游</a>
             <a href="http://www.byts.com.cn/beijing/">北京游</a>
-            <a href="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/周边旅游 北京青旅_北青旅总社官网北京旅行社.htm">周边游</a>
+            <a href="../image/周边旅游 北京青旅_北青旅总社官网北京旅行社.htm">周边游</a>
             <a href="http://www.byts.com.cn/youlun/">邮轮游</a>
             <a href="http://www.byts.com.cn/line/maerdaifu001/">马尔代夫</a>
             <a href="http://www.byts.com.cn/jipiao/">机票</a> 
         </div>
-      <div class="a3"><div style="position: absolute; left: 24px; top: 1px;"><img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/HOT.png"></div>
+      <div class="a3"><div style="position: absolute; left: 24px; top: 1px;"><img src="../image/HOT.png"></div>
        <a href="http://www.byts.com.cn/add/tejia.php">特价</a>
         <a href="http://www.byts.com.cn/visa/">签证</a>   
         <a href="http://www.byts.com.cn/zuche/bj/">租车</a>
@@ -154,7 +154,7 @@ window.onerror=function(){return true;}
     
     
      <!-- Button BEGIN -->
-    <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/buttonLite.js"></script><script type="text/javascript" charset="utf-8" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bshareC0.js"></script>
+    <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="../js/buttonLite.js"></script><script type="text/javascript" charset="utf-8" src="../js/bshareC0.js"></script>
     
 	<!-- Button END -->
 </div>
@@ -312,7 +312,7 @@ window.onerror=function(){return true;}
                                               <li>
                                 <div class="rout_wrap">
                                     <a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank" title="南北戴河、山海关老龙头、出海游船双汽2日">
-                                        <img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/1404388605_2391.jpg" alt="南北戴河、山海关老龙头、出海游船双汽2日">
+                                        <img src="../image/1404388605_2391.jpg" alt="南北戴河、山海关老龙头、出海游船双汽2日">
                                     </a>
                                 </div>
                                 <p class="rout_title">
@@ -324,7 +324,7 @@ window.onerror=function(){return true;}
 <li>
                                 <div class="rout_wrap">
                                     <a href="http://www.byts.com.cn/line/mulanweichang0002/3835.htm" target="_blank" title="木兰围场、内蒙古乌兰布通草原2日">
-                                        <img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/1404643089_7531.jpg" alt="木兰围场、内蒙古乌兰布通草原2日">
+                                        <img src="../image/1404643089_7531.jpg" alt="木兰围场、内蒙古乌兰布通草原2日">
                                     </a>
                                 </div>
                                 <p class="rout_title">
@@ -336,7 +336,7 @@ window.onerror=function(){return true;}
 <li>
                                 <div class="rout_wrap">
                                     <a href="http://www.byts.com.cn/line/chengde02/3756.htm" target="_blank" title="避暑山庄、普宁寺、普佑寺双座2日">
-                                        <img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/1404383744_6802.jpg" alt="避暑山庄、普宁寺、普佑寺双座2日">
+                                        <img src="../image/1404383744_6802.jpg" alt="避暑山庄、普宁寺、普佑寺双座2日">
                                     </a>
                                 </div>
                                 <p class="rout_title">
@@ -348,7 +348,7 @@ window.onerror=function(){return true;}
 <li>
                                 <div class="rout_wrap">
                                     <a href="http://www.byts.com.cn/line/mulanweichang0002/3827.htm" target="_blank" title="木兰围场、内蒙古乌兰布通草原、蛤蟆坝3日">
-                                        <img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/1404618395_9762.jpg" alt="木兰围场、内蒙古乌兰布通草原、蛤蟆坝3日">
+                                        <img src="../image/1404618395_9762.jpg" alt="木兰围场、内蒙古乌兰布通草原、蛤蟆坝3日">
                                     </a>
                                 </div>
                                 <p class="rout_title">
@@ -382,7 +382,7 @@ window.onerror=function(){return true;}
                         <li class="t_item">
                   <div class="t_wrap">
                     <span class="cu_icon">强烈推荐</span>
-                    <a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank"><img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/1404388605_2391.jpg" width="178" height="134" alt="南北戴河、山海关老龙头、出海游船双汽2日"></a>
+                    <a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank"><img src="../image/1404388605_2391.jpg" width="178" height="134" alt="南北戴河、山海关老龙头、出海游船双汽2日"></a>
                   </div>
                   <p class="t_title"><a class="f_4e9700" href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank"><span class="f_0053aa">&lt;南北戴河&gt;</span>南北戴河、山海关老龙头、出海游船双汽2日</a></p>
                   <div class="t_price">
@@ -393,7 +393,7 @@ window.onerror=function(){return true;}
 <li class="t_item">
                   <div class="t_wrap">
                     <span class="cu_icon">强烈推荐</span>
-                    <a href="http://www.byts.com.cn/line/mulanweichang0002/3835.htm" target="_blank"><img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/1404643089_7531.jpg" width="178" height="134" alt="木兰围场、内蒙古乌兰布通草原2日"></a>
+                    <a href="http://www.byts.com.cn/line/mulanweichang0002/3835.htm" target="_blank"><img src="../image/1404643089_7531.jpg" width="178" height="134" alt="木兰围场、内蒙古乌兰布通草原2日"></a>
                   </div>
                   <p class="t_title"><a class="f_4e9700" href="http://www.byts.com.cn/line/mulanweichang0002/3835.htm" target="_blank"><span class="f_0053aa">&lt;木兰围场&gt;</span>木兰围场、内蒙古乌兰布通草原2日</a></p>
                   <div class="t_price">
@@ -404,7 +404,7 @@ window.onerror=function(){return true;}
 <li class="t_item">
                   <div class="t_wrap">
                     <span class="cu_icon">强烈推荐</span>
-                    <a href="http://www.byts.com.cn/line/chengde02/3756.htm" target="_blank"><img src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/1404383744_6802.jpg" width="178" height="134" alt="避暑山庄、普宁寺、普佑寺双座2日"></a>
+                    <a href="http://www.byts.com.cn/line/chengde02/3756.htm" target="_blank"><img src="../image/1404383744_6802.jpg" width="178" height="134" alt="避暑山庄、普宁寺、普佑寺双座2日"></a>
                   </div>
                   <p class="t_title"><a class="f_4e9700" href="http://www.byts.com.cn/line/chengde02/3756.htm" target="_blank"><span class="f_0053aa">&lt;承德&gt;</span>避暑山庄、普宁寺、普佑寺双座2日</a></p>
                   <div class="t_price">
@@ -555,7 +555,7 @@ window.onerror=function(){return true;}
 				  <li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404388605_2391.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="南北戴河、山海关老龙头、出海游船双汽2日">
+                  <img data-original="/uploads/image/hujie/1404388605_2391.jpg" src="../image/bg.gif" alt="南北戴河、山海关老龙头、出海游船双汽2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank" title="南北戴河、山海关老龙头、出海游船双汽2日"><span class="f_f00">[南北戴河]</span>南北戴河、山海关老龙头、出海游船双汽2日</a></h3>
@@ -586,7 +586,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/mulanweichang0002/3835.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404643089_7531.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="木兰围场、内蒙古乌兰布通草原2日">
+                  <img data-original="/uploads/image/hujie/1404643089_7531.jpg" src="../image/bg.gif" alt="木兰围场、内蒙古乌兰布通草原2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/mulanweichang0002/3835.htm" target="_blank" title="木兰围场、内蒙古乌兰布通草原2日"><span class="f_f00">[木兰围场]</span>木兰围场、内蒙古乌兰布通草原2日</a></h3>
@@ -617,7 +617,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/chengde02/3756.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404383744_6802.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="避暑山庄、普宁寺、普佑寺双座2日">
+                  <img data-original="/uploads/image/hujie/1404383744_6802.jpg" src="../image/bg.gif" alt="避暑山庄、普宁寺、普佑寺双座2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/chengde02/3756.htm" target="_blank" title="避暑山庄、普宁寺、普佑寺双座2日"><span class="f_f00">[承德]</span>避暑山庄、普宁寺、普佑寺双座2日</a></h3>
@@ -648,7 +648,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/mulanweichang0002/3827.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404618395_9762.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="木兰围场、内蒙古乌兰布通草原、蛤蟆坝3日">
+                  <img data-original="/uploads/image/hujie/1404618395_9762.jpg" src="../image/bg.gif" alt="木兰围场、内蒙古乌兰布通草原、蛤蟆坝3日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/mulanweichang0002/3827.htm" target="_blank" title="木兰围场、内蒙古乌兰布通草原、蛤蟆坝3日"><span class="f_f00">[木兰围场]</span>木兰围场、内蒙古乌兰布通草原、蛤蟆坝3日</a></h3>
@@ -679,7 +679,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/beijingchengtuan022/3056.htm" target="_blank">
-                  <img data-original="/uploads/allimg/20140604/140604115240.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="丰宁坝上草原、草原娱乐嘉年华双汽2日">
+                  <img data-original="/uploads/allimg/20140604/140604115240.jpg" src="../image/bg.gif" alt="丰宁坝上草原、草原娱乐嘉年华双汽2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/beijingchengtuan022/3056.htm" target="_blank" title="丰宁坝上草原、草原娱乐嘉年华双汽2日"><span class="f_f00">[坝上草原]</span>丰宁坝上草原、草原娱乐嘉年华双汽2日</a></h3>
@@ -710,7 +710,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/chengde02/1621.htm" target="_blank">
-                  <img data-original="/uploads/allimg/20140414/140414202632.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="避暑山庄、普宁寺、棒槌山双汽2日">
+                  <img data-original="/uploads/allimg/20140414/140414202632.jpg" src="../image/bg.gif" alt="避暑山庄、普宁寺、棒槌山双汽2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/chengde02/1621.htm" target="_blank" title="避暑山庄、普宁寺、棒槌山双汽2日"><span class="f_f00">[承德]</span>避暑山庄、普宁寺、棒槌山双汽2日</a></h3>
@@ -741,7 +741,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/nanbeidaihe0002/959.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1432897402.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="南北戴河、沙雕大世界、出海游船双汽2日">
+                  <img data-original="/uploads/image/hujie/1432897402.jpg" src="../image/bg.gif" alt="南北戴河、沙雕大世界、出海游船双汽2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/nanbeidaihe0002/959.htm" target="_blank" title="南北戴河、沙雕大世界、出海游船双汽2日"><span class="f_f00">[南北戴河]</span>南北戴河、沙雕大世界、出海游船双汽2日</a></h3>
@@ -772,7 +772,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/mulanweichang0002/3760.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404618377_1897.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="木兰围场、内蒙古乌兰布通草原、塞罕坝森林公园3日">
+                  <img data-original="/uploads/image/hujie/1404618377_1897.jpg" src="../image/bg.gif" alt="木兰围场、内蒙古乌兰布通草原、塞罕坝森林公园3日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/mulanweichang0002/3760.htm" target="_blank" title="木兰围场、内蒙古乌兰布通草原、塞罕坝森林公园3日"><span class="f_f00">[木兰围场]</span>木兰围场、内蒙古乌兰布通草原、塞罕坝森林公园3日</a></h3>
@@ -803,7 +803,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/beijingchengtuan022/3758.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404621644_4034.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="丰宁坝上草原、草原娱乐嘉年华双汽3日">
+                  <img data-original="/uploads/image/hujie/1404621644_4034.jpg" src="../image/bg.gif" alt="丰宁坝上草原、草原娱乐嘉年华双汽3日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/beijingchengtuan022/3758.htm" target="_blank" title="丰宁坝上草原、草原娱乐嘉年华双汽3日"><span class="f_f00">[坝上草原]</span>丰宁坝上草原、草原娱乐嘉年华双汽3日</a></h3>
@@ -834,7 +834,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/chengde02/1578.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1432106100.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="避暑山庄、普宁寺、小布达拉宫双座2日">
+                  <img data-original="/uploads/image/hujie/1432106100.jpg" src="../image/bg.gif" alt="避暑山庄、普宁寺、小布达拉宫双座2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/chengde02/1578.htm" target="_blank" title="避暑山庄、普宁寺、小布达拉宫双座2日"><span class="f_f00">[承德]</span>避暑山庄、普宁寺、小布达拉宫双座2日</a></h3>
@@ -865,7 +865,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/beijingchengtuan022/3055.htm" target="_blank">
-                  <img data-original="/uploads/allimg/20140605/1406051ZF3.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="丰宁坝上草原、大汉行宫娱乐场双汽2日">
+                  <img data-original="/uploads/allimg/20140605/1406051ZF3.jpg" src="../image/bg.gif" alt="丰宁坝上草原、大汉行宫娱乐场双汽2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/beijingchengtuan022/3055.htm" target="_blank" title="丰宁坝上草原、大汉行宫娱乐场双汽2日"><span class="f_f00">[坝上草原]</span>丰宁坝上草原、大汉行宫娱乐场双汽2日</a></h3>
@@ -896,7 +896,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/nanbeidaihe0002/1132.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404390633_3110.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="【纯玩无自费】南北戴河、沙雕大世界双汽2日《近海3星酒店》">
+                  <img data-original="/uploads/image/hujie/1404390633_3110.jpg" src="../image/bg.gif" alt="【纯玩无自费】南北戴河、沙雕大世界双汽2日《近海3星酒店》">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1132.htm" target="_blank" title="【纯玩无自费】南北戴河、沙雕大世界双汽2日《近海3星酒店》"><span class="f_f00">[南北戴河]</span>【纯玩无自费】南北戴河、沙雕大世界双汽2日《近海3星酒店》</a></h3>
@@ -927,7 +927,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/chengde02/3759.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404382459_7478.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="避暑山庄、普宁寺、小布达拉宫双汽2日">
+                  <img data-original="/uploads/image/hujie/1404382459_7478.jpg" src="../image/bg.gif" alt="避暑山庄、普宁寺、小布达拉宫双汽2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/chengde02/3759.htm" target="_blank" title="避暑山庄、普宁寺、小布达拉宫双汽2日"><span class="f_f00">[承德]</span>避暑山庄、普宁寺、小布达拉宫双汽2日</a></h3>
@@ -958,7 +958,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/nanbeidaihe0002/3249.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404392968_4671.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="北戴河鸽子窝、山海关双座2日">
+                  <img data-original="/uploads/image/hujie/1404392968_4671.jpg" src="../image/bg.gif" alt="北戴河鸽子窝、山海关双座2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/nanbeidaihe0002/3249.htm" target="_blank" title="北戴河鸽子窝、山海关双座2日"><span class="f_f00">[南北戴河]</span>北戴河鸽子窝、山海关双座2日</a></h3>
@@ -989,7 +989,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/beijingchengtuan022/3242.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404621644_4034.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="丰宁坝上草原、洒然嘉年华娱乐套票双汽2日">
+                  <img data-original="/uploads/image/hujie/1404621644_4034.jpg" src="../image/bg.gif" alt="丰宁坝上草原、洒然嘉年华娱乐套票双汽2日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/beijingchengtuan022/3242.htm" target="_blank" title="丰宁坝上草原、洒然嘉年华娱乐套票双汽2日"><span class="f_f00">[坝上草原]</span>丰宁坝上草原、洒然嘉年华娱乐套票双汽2日</a></h3>
@@ -1020,7 +1020,7 @@ window.onerror=function(){return true;}
              </li><li class="list_item">
               <div class="photo">
                 <a href="http://www.byts.com.cn/line/nanbeidaihe0002/3757.htm" target="_blank">
-                  <img data-original="/uploads/image/hujie/1404392968_4671.jpg" src="./周边旅游 北京青旅_北青旅总社官网北京旅行社_files/bg.gif" alt="北戴河鸽子窝、山海关、南戴河双座3日">
+                  <img data-original="/uploads/image/hujie/1404392968_4671.jpg" src="../image/bg.gif" alt="北戴河鸽子窝、山海关、南戴河双座3日">
                 </a>
               </div>
               <h3><a href="http://www.byts.com.cn/line/nanbeidaihe0002/3757.htm" target="_blank" title="北戴河鸽子窝、山海关、南戴河双座3日"><span class="f_f00">[南北戴河]</span>北戴河鸽子窝、山海关、南戴河双座3日</a></h3>

@@ -12,7 +12,7 @@ use Redirect;
 class LoginController extends Controller {
     //前台登录
 	public function index()
-	{
+	{			
         return view('login/login');
 	}
 	public function bloin(Request $request)
@@ -39,11 +39,20 @@ class LoginController extends Controller {
             ->first();
             if($res)
             {
+				$url = Session::get('url');
                 Session::put('u_id',$res->u_id);
-                Session::put('name',$name);
-                return Redirect::to('/');
+                Session::put('name',$name); 
+                if (empty($url)) 
+                {
+                    return Redirect::to($url);
+                }
+                else
+                {
+                    return Redirect::to();
+                }               			
+                
             }else {
-                echo "<script>alert('用户名或密码错误,请从新登陆');location.href='lo'</script>";
+                echo "<script>alert('用户名或密码错误,请从新登陆');location.href='blo'</script>";
             }   
         }
 	}

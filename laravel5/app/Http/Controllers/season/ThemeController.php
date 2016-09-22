@@ -4,6 +4,7 @@ use DB,Input,Session;
 use Request;
 use App\Http\Controllers\Controller;
 use App\Theme;
+use Memcache;
 header("content-type:text/html;charset=utf-8");
 class ThemeController extends Controller {
 
@@ -98,9 +99,9 @@ class ThemeController extends Controller {
 	public function details()
 	{
 		$id=Request::get('id');
-		
+	
 		$data = Theme::details($id);		//调用查询方法
-		//print_r($data);die;
+
 		return view('home.details',['data' => $data]);
 	}
 	
@@ -109,17 +110,49 @@ class ThemeController extends Controller {
 	{	
 		$u_id = Session::get('u_id');
 		$data=Request::all();
+		
 		if(empty($u_id))
 		{
-			return redirect('home/bloin');
-		
+			return redirect('blo');		
 		}
 		
-		$data = Theme::dsession($u_id);
+		$url = $_SERVER['HTTP_REFERER'];
+		Theme::dsession($u_id,$data);
 		
-		return redirect('home/details',['id' => $data['idf']]);
-
-		
-				
+						
+		return redirect($url);				
 	}
+	
+	//点赞
+	public function praise()
+	{
+		//是否在线
+		$u_id = Session::get('u_id');
+		if(empty($u_id))
+		{
+			echo 1;die;
+		}
+		$data=Request::all();
+		
+		//实例化Memcache
+		$mem = new Memcache();
+		//连接memcache服务器 第一个参数是memcached服务器的地址，第二个是端口号，端口号默认是11211
+		$mem -> connect("127.0.0.1",11211);
+		//查询缓存中是否有$region的剑.
+		if($mem -> get($u_id.$data['tt_id']))
+		{
+			echo 2;die;
+		}
+		else
+		{
+			$a = $mem -> set($u_id.$data['tt_id'],$data['tt_id'],0,64800);
+			$user = DB::table('travels')->where('tt_id',$data['tt_id'])->update(['t_zambia' => $data['num']+1]);		
+			$pei=DB::table('travels')->where('tt_id',$data['tt_id'])->lists('t_zambia');
+			$isu="<label  class='likeNum'>".$pei[0]."</label>";
+			echo json_encode($isu);
+		}		
+	}
+	
+	
+	
 }
