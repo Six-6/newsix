@@ -47,7 +47,14 @@ Route::post('home/detailsShow',"home\ExchangeController@id");/**兑换商品详�
 Route::get('home/detailsSel',"home\ExchangeController@details");/**兑换商品详情**/
 Route::post('home/detailsOrder',"home\ExchangeController@order");/**兑换商品订单**/
 Route::post('home/orderAdd',"home\ExchangeController@orderAdd");/**确认兑换**/
+
 /**前台志同道合**/
+Route::get('home/funShow',"home\FunController@show");/**志同道合显示**/
+Route::get('home/funWrite',"home\FunController@lists");/**志同道合详细页面展示**/
+Route::get('home/funReplay',"home\FunController@replay");/**志同道合列表展示**/
+Route::get('home/funPost',"home\FunController@post");/**志同道合发起页面**/
+Route::post('home/funAdd',"home\FunController@adds");/**志同道合添加页面**/
+Route::post('home/funUser',"home\FunController@user");/**志同道合关联好友**/
 /***前台 风向标***/
 Route::get('home/siterecommend', 'season\IndicatorController@siterecommend');//风向标首页
 Route::get('home/month', 'season\IndicatorController@month');//季节推荐
