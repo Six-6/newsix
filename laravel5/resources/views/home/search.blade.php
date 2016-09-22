@@ -3,7 +3,7 @@
 </script><script src="../aaa/local
 Storage.js" async="" charset="utf-8" type="text/javascript"></script><script src="../aaa/Panel.js" async="" charset="utf-8" type="text/javascript"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>北戴河搜索结果_北京青年旅行社股份有限公司官网</title>
+<title>惠玩官网</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <link href="../aaa/style.css" rel="stylesheet" media="screen" type="text/css">
@@ -156,14 +156,14 @@ $(document).ready(function(){
 <!--TOP部分-->
 <script language="javascript" type="text/javascript" src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/ajax188.js"></script>
 <script language="javascript" type="text/javascript">
-
+/*
 function Check_head_Login(){
       
     var taget_obj = document.getElementById('_Check_head_Login');   
     myajax = new ajaxx188(taget_obj,false,false,'','','');
     myajax.SendGet2("http://www.byts.com.cn/users/ajax_head.php");
     A188XHTTP = null;
-}
+}*/
 
 function  myAddPanel(title,url,desc) {
     if((typeof   window.sidebar   ==   'object')   &&   (typeof   window.sidebar.addPanel   ==   'function')) {
@@ -181,57 +181,17 @@ window.onerror=function(){return true;}
 // --> 
 </script> 
 
-<div class="top1">
-  <div class="conter"><span>欢迎访问 <a href="http://www.byts.com.cn/">北京青年旅行社官网</a></span>　请
-  <span id="_Check_head_Login"><a href="http://www.byts.com.cn/users/">欢迎您，13021082314</a> <a href="http://www.byts.com.cn/users/order.php?po=all"> [订单]</a> <a href="http://www.byts.com.cn/users/index.php?do=edt"> [资料]</a><a href="http://www.byts.com.cn/users/index.php?do=money"> [积分]</a> <a href="http://www.byts.com.cn/users/index_do.php?fmdo=login&amp;dopost=exit"> [退出]</a>
-</span><script language="javascript">Check_head_Login();</script>
-     <div class="hour"><img src="../aaa/pic1.jpg" height="19" width="46"></div>
-     <div class="iph">旅游预订电话 <strong>400-926-5166</strong></div>
-  </div>
-</div>
-<div class="top2">
-  <div class="conter">
-      <div class="logo"><img src="../aaa/logo.png" height="54" width="329"><img src="../aaa/tage.png" height="50" width="116"></div>
-    <div class="sourchNew"> 
-    <form action="http://www.byts.com.cn/tags.php" method="post" name="indexsearchform" class="cfix" id="indexsearchform">
-    <input value="0" name="travelClassHeader" id="srhInput" type="hidden">
-        <div class="select_box"><input id="myselect" value="全部" readonly="readonly" type="text">
-        <ul class="select_ul" tyle="z-index: 10000; display: none;">
-        <li> <a href="javascript:void(0)">全部</a></li>
-            <li><a val="4" href="javascript:void(0)">旅游线路</a></li>
-            <li><a val="5" href="javascript:void(0)">酒店预定</a></li>
-            <li> <a val="8" href="javascript:void(0)">签证办理</a></li>
-            <li><a val="9" href="javascript:void(0)">旅游租车</a></li>
-            <li><a val="10" href="javascript:void(0)">旅游门票</a></li>
-      
-    </ul>
-   <div class="select_text"><input id="search" autocomplete="off" maxlength="18" value="请输入关键字" onclick="javascript:document.getElementById('search').value='';" name="searchkey" type="text"></div>
-   <input class="select_seach" name="" type="submit"> 
-  </div>
-  </form>
-  </div>  
-  
-    </div>
-</div>
+@include('includes.searchtop')
+
 <div class="dh">
   <div class="conter">
       <div class="a1"><a href="#">所有目的地分类</a></div>
       <div class="a2">
-          <a href="http://www.byts.com.cn/index.html">首页</a>
-            <a href="http://www.byts.com.cn/out/">出境游</a>
-            <a href="http://www.byts.com.cn/china/">国内游</a>
-            <a href="http://www.byts.com.cn/beijing/">北京游</a>
-            <a href="http://www.byts.com.cn/zhoubian/">周边游</a>
-            <a href="http://www.byts.com.cn/youlun/">邮轮游</a>
-            <a href="http://www.byts.com.cn/line/maerdaifu001/">马尔代夫</a>
-            <a href="http://www.byts.com.cn/jipiao/">机票</a> 
+            <a href="{{URL('/')}}">首页</a>
+            <a href="{{URL('home/beijing')}}">本地游</a>
+            <a href="{{URL('home/domestic')}}">国内游</a>
+            <a href="{{URL('home/exit')}}">出境游</a>
         </div>
-      <div class="a3"><div style="position: absolute; left: 24px; top: 1px;"><img src="%E5%8C%97%E6%88%B4%E6%B2%B3%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/HOT.png"></div>
-       <a href="http://www.byts.com.cn/add/tejia.php">特价</a>
-        <a href="http://www.byts.com.cn/visa/">签证</a>   
-        <a href="http://www.byts.com.cn/zuche/bj/">租车</a>
-        <a href="http://www.byts.com.cn/add/dingzhi.php">定制</a> 
-      </div>
         <div class="clear"></div>
         
   </div>
@@ -242,126 +202,105 @@ window.onerror=function(){return true;}
 <div class="Ny_Mainconbox">
      <div class="Ny_Mainconbox_fl">
       <div class="Ny_hotnav">
-<div class="Ny_hotnav_bt">旅游线路</div>
+
 <div class="Ny_hotnav_con">
 
-
-
-
-
-  <dl><dt><a href="http://www.byts.com.cn/out/">出境旅游 </a></dt>
-
- <dd><a href="http://www.byts.com.cn/line/haidao001">海岛</a></dd><dd><a href="http://www.byts.com.cn/line/dongnanya001">东南亚</a></dd><dd><a href="http://www.byts.com.cn/line/aozhou001">澳洲</a></dd><dd><a href="http://www.byts.com.cn/line/rihanchao001">日韩朝</a></dd><dd><a href="http://www.byts.com.cn/line/ouzhou001">欧洲</a></dd><dd><a href="http://www.byts.com.cn/line/nanya001">南亚</a></dd><dd><a href="http://www.byts.com.cn/line/gangaotai001">港澳台</a></dd><dd><a href="http://www.byts.com.cn/line/feizhouzhongdong001">非洲中东</a></dd><dd><a href="http://www.byts.com.cn/line/meizhou001">美洲</a></dd><dd><a href="http://www.byts.com.cn/line/nanbeiji001">南北极</a></dd><dd><a href="http://www.byts.com.cn/line/maerdaifu001">马尔代夫</a></dd>
-
-</dl><div class="clear"></div><dl><dt><a href="http://www.byts.com.cn/china">国内旅游 </a></dt>
-
- <dd><a href="http://www.byts.com.cn/line/hainan001">海南</a></dd><dd><a href="http://www.byts.com.cn/line/yunan001">云南</a></dd><dd><a href="http://www.byts.com.cn/line/fujian001">福建</a></dd><dd><a href="http://www.byts.com.cn/line/dongbei001">东北</a></dd><dd><a href="http://www.byts.com.cn/line/guangxi001">广西</a></dd><dd><a href="http://www.byts.com.cn/line/xizang001">西藏</a></dd><dd><a href="http://www.byts.com.cn/line/laonian001">老年旅游专列</a></dd><dd><a href="http://www.byts.com.cn/line/liaoning001">辽宁</a></dd><dd><a href="http://www.byts.com.cn/line/jiangxi001">江西</a></dd><dd><a href="http://www.byts.com.cn/line/shanxi001">陕西</a></dd><dd><a href="http://www.byts.com.cn/line/hunan001">湖南</a></dd><dd><a href="http://www.byts.com.cn/line/henan001">河南</a></dd><dd><a href="http://www.byts.com.cn/line/sichun002">四川</a></dd><dd><a href="http://www.byts.com.cn/line/hubei001">湖北</a></dd><dd><a href="http://www.byts.com.cn/line/anwei001">安徽</a></dd><dd><a href="http://www.byts.com.cn/line/shandong001">山东</a></dd><dd><a href="http://www.byts.com.cn/line/shangxi001">山西</a></dd><dd><a href="http://www.byts.com.cn/line/guizhou001">贵州</a></dd><dd><a href="http://www.byts.com.cn/line/neimeng001">内蒙</a></dd><dd><a href="http://www.byts.com.cn/line/xingjiang001">新疆</a></dd>
-
-</dl><div class="clear"></div><dl><dt><a href="http://www.byts.com.cn/zhoubian">周边旅游 </a></dt>
-
- <dd><a href="http://www.byts.com.cn/line/hebei001">河北</a></dd><dd><a href="http://www.byts.com.cn/line/jingjiaolvyou001">京郊旅游</a></dd>
-
-</dl><div class="clear"></div><dl><dt><a href="http://www.byts.com.cn/youlun">邮轮旅游 </a></dt>
-
- <dd><a href="http://www.byts.com.cn/line/rihanghangxian001">日韩航线</a></dd><dd><a href="http://www.byts.com.cn/line/dongnanyahangxian001">东南亚航线</a></dd><dd><a href="http://www.byts.com.cn/line/ouzhouhangxian001">欧洲航线</a></dd><dd><a href="http://www.byts.com.cn/line/meizhouhangxian001">美洲航线</a></dd>
-
-</dl><div class="clear"></div><dl><dt><a href="http://www.byts.com.cn/beijing">北京旅游 </a></dt>
-
- <dd><a href="http://www.byts.com.cn/line/beijingmingshenyou002">北京名胜游</a></dd><dd><a href="http://www.byts.com.cn/line/beijingchunwantuan002">北京纯玩团</a></dd><dd><a href="http://www.byts.com.cn/line/beijingchunwanwuzifei002">纯玩无自费</a></dd><dd><a href="http://www.byts.com.cn/line/beijingshenduchunwantuan002">深度纯玩团</a></dd><dd><a href="http://www.byts.com.cn/line/beijingxiyanghong002">北京夕阳红</a></dd><dd><a href="http://www.byts.com.cn/line/beijingchengde002">北京+承德</a></dd><dd><a href="http://www.byts.com.cn/line/beijingtianjin002">北京+天津</a></dd><dd><a href="http://www.byts.com.cn/line/beijingbeidaihe002">北京+北戴河</a></dd><dd><a href="http://www.byts.com.cn/line/beijingyiriyou002">北京一日游</a></dd><dd><a href="http://www.byts.com.cn/line/beijingerriyou002">北京二日游</a></dd><dd><a href="http://www.byts.com.cn/line/qinzhichunwantuan002">亲子纯玩团</a></dd>
-
-</dl><div class="clear"></div>  
-
-
-</div>
+  @foreach($pushDown as $k=>$push)
+  <dl>
+    <dt><a href="javascript:void(0)" onclick="inClass({{$push['r_id']}})" >{{$push['r_region']}} </a></dt>
+    @foreach($push['child'] as $v=>$child)
+    <dd><a href="javascript:void(0)" onclick="smailClass({{$child['r_id']}})">{{$child['r_region']}}</a></dd>
+    @endforeach
+  </dl>
+  @endforeach
+  <div class="clear"></div>  
 </div>
 
+</div>
 
-      
-     
      <div class="Ny_hotxl">    <div class="Ny_hotxl_bt"><h2>热门景点</h2></div>    <div class="Ny_hotxl_con"><ul>
      
+     <li><span class="Ny_hotxl_span2  fl"><a href="">北京</a></span><div class="clear"></div></li>
       
-     <li><span class="Ny_hotxl_span2  fl"><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E4%BA%AC">北京</a></span><div class="clear"></div></li>
+     <li><span class="Ny_hotxl_span2  fl"><a href="">九寨沟</a></span><div class="clear"></div></li>
       
-     <li><span class="Ny_hotxl_span2  fl"><a href="http://www.byts.com.cn/tags.php?tag=%E4%B9%9D%E5%AF%A8%E6%B2%9F">九寨沟</a></span><div class="clear"></div></li>
+     <li><span class="Ny_hotxl_span2  fl"><a href="">济州</a></span><div class="clear"></div></li>
       
-     <li><span class="Ny_hotxl_span2  fl"><a href="http://www.byts.com.cn/tags.php?tag=%E6%B5%8E%E5%B7%9E">济州</a></span><div class="clear"></div></li>
+     <li><span class="Ny_hotxl_span2  fl"><a href="">长白山</a></span><div class="clear"></div></li>
       
-     <li><span class="Ny_hotxl_span2  fl"><a href="http://www.byts.com.cn/tags.php?tag=%E6%97%A0">无</a></span><div class="clear"></div></li>
+     <li><span class="Ny_hotxl_span2  fl"><a href="">镜泊湖</a></span><div class="clear"></div></li>
       
-     <li><span class="Ny_hotxl_span2  fl"><a href="http://www.byts.com.cn/tags.php?tag=%E9%95%BF%E7%99%BD%E5%B1%B1">长白山</a></span><div class="clear"></div></li>
+     <li><span class="Ny_hotxl_span2  fl"><a href="">桂林</a></span><div class="clear"></div></li>
       
-     <li><span class="Ny_hotxl_span2  fl"><a href="http://www.byts.com.cn/tags.php?tag=%E9%95%9C%E6%B3%8A%E6%B9%96">镜泊湖</a></span><div class="clear"></div></li>
+     <li><span class="Ny_hotxl_span2  fl"><a href="">上海</a></span><div class="clear"></div></li>
       
-     <li><span class="Ny_hotxl_span2  fl"><a href="http://www.byts.com.cn/tags.php?tag=%E6%A1%82%E6%9E%97">桂林</a></span><div class="clear"></div></li>
+     <li><span class="Ny_hotxl_span2  fl"><a href="">丽江</a></span><div class="clear"></div></li>
       
-     <li><span class="Ny_hotxl_span2  fl"><a href="http://www.byts.com.cn/tags.php?tag=%E4%B8%8A%E6%B5%B7">上海</a></span><div class="clear"></div></li>
+     <li><span class="Ny_hotxl_span2  fl"><a href="">张家界</a></span><div class="clear"></div></li>
       
-     <li><span class="Ny_hotxl_span2  fl"><a href="http://www.byts.com.cn/tags.php?tag=%E4%B8%BD%E6%B1%9F">丽江</a></span><div class="clear"></div></li>
-      
-     <li><span class="Ny_hotxl_span2  fl"><a href="http://www.byts.com.cn/tags.php?tag=%E5%BC%A0%E5%AE%B6%E7%95%8C">张家界</a></span><div class="clear"></div></li>
-      
-     
-     
       </ul></div></div>
       
      
      
     </div>
     <div class="Ny_Mainconbox_fr">
+    @foreach($sous as $sous)
     <div class="Ny_searchtop_bt">搜索到
-    <span class="ls_color">{{$sou}}</span>
-    相关产品共有<span class="cs_color">{{$count}}</span>条</div>
-    <input type="hidden" id="zxc" value="{{$sou}}"  />
+    <span class="ls_color">{{$sous}}</span>
+    相关产品共有<span class="cs_color">{{$count}}</span>条
+    </div>
+    <input type="hidden" id="zxc" value="{{$sous}}"  />
+    @endforeach
     <div class="Ny_search">
-    <div class="Ny_search_bt">
    
-    <div class="Ny_search_fbt">
-    <ul>
-    <li class="Ny_search_znbt ">线路（17）</li>
-    <li><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;channel=5">酒店( 0 )</a></li>
-    <li><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;channel=8">签证( 0 )</a></li>
-    <li><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;channel=9">租车(  0 )</a></li>
-    <li><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;channel=10">景点门票( 0 )</a></li>
-    <li><a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;channel=1_2">攻略资讯( 0 )</a></li>
-    <div class="clear"></div>
-    </ul>
-    </div>
-    <div class="clear"></div>
-    </div>
-    
-    
-    
     
      <div class="prop_list">
             <div class="prop_item">
             <dl>
               <dt>出发地：</dt>
               <dd>
-                <ul class="content0"><li>    <a class="yes" href="javascript:void(0)" onclick="ListUrl(this.id);return false;" id="id_0">不限</a>
-  <a href="javascript:void(0)" onclick="ListUrl(this.id);return false;" id="id_1000">北京</a>
-      </li>                </ul>
+                <ul class="content0">
+                  <li class="starts" value="0"><a href="javascript:void(0)" onclick="ListUrl(this.id);return false;" id="id_0">不限</a></li>
+                  <li class="starts"value="5"><a href="javascript:void(0)" onclick="ListUrl(this.id);return false;" id="id_1000">北京</a></li>    
+                 </ul>
               </dd>
             </dl>
             </div>
-                     
+
+          <div class="prop_item">
+            <dl>
+              <dt>目的地：</dt>
+              <dd>
+                <ul class="content2">                 
+                  <li class="destination" value="0"><a href="javascript:void(0)" id="day_00" onclick="days(0)">不限</a> </li>
+                  @foreach($splic as $splic)
+                  <li class="destination" value="{{$splic['r_id']}}"><a href="javascript:void(0)" id="splic{{$splic['r_id']}}" onclick="splic({{$splic['r_id']}})">{{$splic['r_region']}}</a> </li>
+                  @endforeach
+                </ul>
+              </dd>
+            </dl>
+          </div>
+
+
+   
                            
-                    <div class="prop_item">
+          <div class="prop_item">
             <dl>
               <dt>行程天数：</dt>
               <dd>
-                <ul class="content2">                 <li> <a class="yes" href="javascript:void(0)" id="day_0" onclick="days(0)">不限</a> </li>
-      <li><a href="javascript:void(0)" id="day_1" onclick="days(1)">1天</a> </li>
-      <li> <a href="javascript:void(0)" id="day_2" onclick="days(2)">2天</a> </li>
-      <li>   <a href="javascript:void(0)" id="day_3" onclick="days(3)">3天</a> </li>
-       <li>   <a href="javascript:void(0)" id="day_4" onclick="days(4)">4天</a> </li>
-         <li> <a href="javascript:void(0)" id="day_5" onclick="days(5)">5天</a></li>
-         <li> <a href="javascript:void(0)" id="day_6" onclick="days(6)">6天</a></li>
-         <li> <a href="javascript:void(0)" id="day_7" onclick="days(7)">7天</a></li>
-         <li> <a href="javascript:void(0)" id="day_8" onclick="days(8)">8天</a></li>
-          <li><a href="javascript:void(0)" id="day_9" onclick="days(9)">9天</a></li>
-       <li>   <a href="javascript:void(0)" id="day_10" onclick="days(10)">10天以上</a></li>
-                                    </ul>
+                <ul class="content2">                 
+                  <li class="number" value="0"><a href="javascript:void(0)" id="day_0" onclick="days(0)">不限</a></li>
+                  <li class="number" value="1"><a href="javascript:void(0)" id="day_1" onclick="days(1)">1天</a></li>
+                  <li class="number" value="2"><a href="javascript:void(0)" id="day_2" onclick="days(2)">2天</a></li>
+                  <li class="number" value="3"><a href="javascript:void(0)" id="day_3" onclick="days(3)">3天</a></li>
+                  <li class="number" value="4"><a href="javascript:void(0)" id="day_4" onclick="days(4)">4天</a></li>
+                  <li class="number" value="5"><a href="javascript:void(0)" id="day_5" onclick="days(5)">5天</a></li>
+                  <li class="number" value="6"><a href="javascript:void(0)" id="day_6" onclick="days(6)">6天</a></li>
+                  <li class="number" value="7"><a href="javascript:void(0)" id="day_7" onclick="days(7)">7天</a></li>
+                  <li class="number" value="8"><a href="javascript:void(0)" id="day_8" onclick="days(8)">8天</a></li>
+                  <li class="number" value="9"><a href="javascript:void(0)" id="day_9" onclick="days(9)">9天</a></li>
+                  <li class="number" value="10"><a href="javascript:void(0)" id="day_10" onclick="days(10)">10天以上</a></li>
+                </ul>
               </dd>
             </dl>
           </div>
@@ -371,14 +310,14 @@ window.onerror=function(){return true;}
               <dt>出现预算：</dt>
               <dd>
                 <ul class="content3"> 
-       <li><a class="yes" href="javascript:void(0)" id="p1_0_p2_0" onclick="ListUrl(this.id);return false;">不限</a></li>
-       <li><a href="javascript:void(0)" id="p1_1_p2_100" onclick="sous2([0,100])">¥100以下</a></li>
-      <li><a href="javascript:void(0)" id="p1_101_p2_200" onclick="sous2([101,200])">¥101-200</a></li>
-      <li><a href="javascript:void(0)" id="p1_201_p2_500" onclick="sous2([201,500])">¥201-500</a></li>
-      <li><a href="javascript:void(0)" id="p1_501_p2_1000" onclick="sous2([501,1000])">¥501-1000</a></li>
-     <li> <a href="javascript:void(0)" id="p1_1001_p2_2000" onclick="sous2([1001,2000])">¥1001-2000</a></li>
-     <li> <a href="javascript:void(0)" id="p1_2001_p2_20000" onclick="sous2([2001,9999999999])">¥2000以上</a></li>
-                                    </ul>
+                  <li class="capital" value="0"><a href="javascript:void(0)" id="p1_0_p2_0" onclick="sous2">不限</a></li>
+                  <li class="capital" value="13100"><a href="javascript:void(0)" id="p1_1_p2_100" onclick="sous2([0,100])">¥100以下</a></li>
+                  <li class="capital" value="1013200"><a href="javascript:void(0)" id="p1_101_p2_200" onclick="sous2([101,200])">¥101-200</a></li>
+                  <li class="capital" value="2013500"><a href="javascript:void(0)" id="p1_201_p2_500" onclick="sous2([201,500])">¥201-500</a></li>
+                  <li class="capital" value="50131000"><a href="javascript:void(0)" id="p1_501_p2_1000" onclick="sous2([501,1000])">¥501-1000</a></li>
+                  <li class="capital" value="100132000"> <a href="javascript:void(0)" id="p1_1001_p2_2000" onclick="sous2([1001,2000])">¥1001-2000</a></li>
+                  <li class="capital" value="2001399999999"> <a href="javascript:void(0)" id="p1_2001_p2_20000" onclick="sous2([2001,9999999999])">¥2000以上</a></li>
+                </ul>
               </dd>
             </dl>
           </div>
@@ -386,10 +325,17 @@ window.onerror=function(){return true;}
     
      <div class="Ny_search_showcon">
      <div class="Ny_search_showcon_top">
-      <div class="Ny_search_showcon_top_fl"><b>排序方式：</b><select onchange="document.location=this.options[this.selectedIndex].value">
-      
-      <option value="/tags.php" selected="selected">默认排序</option>
-      <option value="/tags.php&amp;order=0">价格从低到高</option><option value="/tags.php&amp;order=1">价格从高到低</option></select></div>
+      <div class="Ny_search_showcon_top_fl"><b>排序方式：</b>
+
+      <select onchange="contentChange()" id="contentChange">
+        <option value="1" selected="selected">默认排序</option>
+        <option value="2">天数从低到高</option>
+        <option value="3" >天数从高到低</option>
+        <option value="4" >价格从低到高</option>
+        <option value="5" >价格从高到低</option>
+      </select>
+
+      </div>
       <div class="Ny_search_showcon_top_fr"><div id="ctl00_content_AspNetPager1">
 <span class="pageinfo">共2页/17条</span>
    <a class="thisclass">1</a>
@@ -409,14 +355,14 @@ window.onerror=function(){return true;}
           <div class="Ny_search_showcon_middlist">
               <div class="Ny_search_showcon_midd_fl">
                 <a href="http://www.byts.com.cn/travel/12030.html" target="_blank">
-                  <img src="{{$souz->s_img}}" height="100px" width="125px">
+                  <img src="../home/images/{{$souz['s_img']}}" height="100px" width="125px" alt="景点图">
                 </a>
               </div> 
             <div class="Ny_search_showcon_midd_fr">
                 <dl>
-                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank">{{$souz->s_name}}</a></dt>
-                    <dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>
-                    <dd><span>优惠价：<span class="cs_color">￥{{$souz->s_sprice}}元</span></span><span style="margin-left:20px;">旅游方式：<span class="cs_color">{{$souz->s_traffic}}</span></span></dd>
+                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank">{{$souz['s_name']}}</a></dt>
+                    <dd>{{$souz['s_characteristic']}}</dd>
+                    <dd><span>优惠价：<span class="cs_color">￥{{$souz['s_sprice']}}元</span></span><span style="margin-left:20px;">旅游方式：<span class="cs_color">{{$souz['s_traffic']}}</span></span></dd>
                 </dl>
             </div> 
             <div class="clear"></div>
@@ -493,14 +439,14 @@ window.onerror=function(){return true;}
         <div class="foot-aboutlink">
             <span><a href="http://www.byts.com.cn/">网站首页</a></span>
             
-             <span><a target="_blank" href="http://www.byts.com.cn/about/3236.html">关于网上有许多自称北青旅官网的说明</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/562.html">商务合作</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/561.html">发展历程</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/560.html">网站招聘</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/559.html">用户协议</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/558.html">免责声明</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/557.html">联系我们</a></span>
-<span><a target="_blank" href="http://www.byts.com.cn/about/556.html">关于我们</a></span>
+             <span><a target="_blank" href="">关于网上有许多自称北青旅官网的说明</a></span>
+              <span><a target="_blank" href="">商务合作</a></span>
+              <span><a target="_blank" href="">发展历程</a></span>
+              <span><a target="_blank" href="">网站招聘</a></span>
+              <span><a target="_blank" href="">用户协议</a></span>
+              <span><a target="_blank" href="">免责声明</a></span>
+              <span><a target="_blank" href="">联系我们</a></span>
+              <span><a target="_blank" href="">关于我们</a></span>
  
 
         </div>
@@ -519,60 +465,179 @@ window.onerror=function(){return true;}
 <!-- WPA Button Begin -->
 <iframe style="display: none; position: absolute; z-index: 2147483646 ! important;" src="../aaa/a.htm" allowtransparency="true" scrolling="no" frameborder="0" height="277" width="121"></iframe><script charset="utf-8" type="text/javascript" src="../aaa/wpa.php"></script>
 <!-- WPA Button End -->
+<style>
+  .destinationCss{background: #43A313;font-color: #FFFFFF;color: #FFFFFF}
+  .numberCss{background: #43A313;font-color: #FFFFFF;color: #FFFFFF}
+  .capitalCss{background: #43A313;font-color: #FFFFFF;color: #FFFFFF}
+  .startCss{background: #43A313;font-color: #FFFFFF;color: #FFFFFF}
+</style>
 <script language="JavaScript" src="../aaa/floatcard.js"></script><script src="../aaa/all_20100501.js"></script><script id="TQGetrequestUser_JS"></script>
 <script id="TQGetIsNewMsg_JS"></script><script src="../aaa/as.js"></script><object id="tq_as" name="tq_as" style="position:absolute;left:0px;top:-5px;" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" height="1" width="1"><param name="movie" value="http://sysimages.tq.cn/js/vip/shareObject.swf"><param name="allowScriptAccess" value="always"><object id="tq_as2" name="tq_as2" style="position:absolute;left:0px;top:-5px;" type="application/x-shockwave-flash" data="../aaa/shareObject.swf" height="1" width="1"><param name="allowScriptAccess" value="always"></object></object>
 <script src="../assets/js/jquery-2.1.4.min.js"></script>
 <script>
-var ss=$("#zxc").val();
-function days(dayid){
-   var sr='';
-   $.get('sous',{"ss":ss,"dayid":dayid},function(msg){
-      sr+="<div class='Ny_search_showcon_midd'>"
-      for(var s=0;s<msg.length;s++){
-        sr+="<div class='Ny_search_showcon_middlist'>"
-        sr+="<div class='Ny_search_showcon_midd_fl'>"
-        sr+="<a href='#'>"
-        sr+="<img src='"+msg[s]['s_img']+"' height='100px' width='125px'>"
-        sr+="</a>"
-        sr+="</div>" 
-        sr+="<div class='Ny_search_showcon_midd_fr'>"
-        sr+="<dl>"
-        sr+="<dt><a href='#' target='_blank'>"+msg[s]['s_name']+"</a></dt>"
-        sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
-        sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[s]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[s]['s_traffic']+"</span></span></dd>"
-        sr+="</dl>"
-        sr+="</div>" 
-        sr+="<div class='clear'></div>"
+  var ss=$("#zxc").val();
+  /**
+   * 旅游天数
+   * @param  {[type]} dayid [description]
+   * @return {[type]}       [description]
+   */
+  function days(dayid){
+     var capital = $(".capitalCss").val();//资金按照 3 截取（0全部）
+     var destination = $(".destinationCss").val();//目的地(o全部)
+     var number = $(".numberCss").val();//旅游天数（0全部）
+     var start = $(".startCss").val();//出发地（0全部）
+     var sr='';
+     $.get('sous',{"ss":ss,"dayid":dayid,"capital":capital,"destination":destination,"start":start},function(msg){
+        sr+="<div class='Ny_search_showcon_midd'>"
+        for(var s=0;s<msg.length;s++){
+          sr+="<div class='Ny_search_showcon_middlist'>"
+          sr+="<div class='Ny_search_showcon_midd_fl'>"
+          sr+="<a href='#'>"
+          sr+="<img src='../home/images/"+msg[s]['s_img']+"' height='100px' width='125px'>"
+          sr+="</a>"
+          sr+="</div>" 
+          sr+="<div class='Ny_search_showcon_midd_fr'>"
+          sr+="<dl>"
+          sr+="<dt><a href='#' target='_blank'>"+msg[s]['s_name']+"</a></dt>"
+          sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
+          sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[s]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[s]['s_traffic']+"</span></span></dd>"
+          sr+="</dl>"
+          sr+="</div>" 
+          sr+="<div class='clear'></div>"
+          sr+="</div>"
+        }
         sr+="</div>"
-      }
-      sr+="</div>"
-      $("#replaces").html(sr)
-    },'json')
-}
+        $("#replaces").html(sr)
+        //alert(msg);
+      },'json')
+  }
 
-function sous2(price){
-  var sr='';
-  $.get('moneys',{"ss":ss,"price":price},function(msg){
+  /**
+   * 旅游资金
+   * @param  {[type]} price [description]
+   * @return {[type]}       [description]
+   */
+  function sous2(price){
+    var capital = $(".capitalCss").val();//资金按照 3 截取（0全部）
+    var destination = $(".destinationCss").val();//目的地(o全部)
+    var number = $(".numberCss").val();//旅游天数（0全部）
+    var start = $(".startCss").val();//出发地（0全部）
+    var sr='';
+    $.get('moneys',{"ss":ss,"dayid":number,"capital":capital,"destination":destination,"start":start},function(msg){
+        for(var f=0;f<msg.length;f++){
+          sr+="<div class='Ny_search_showcon_middlist'>"
+          sr+="<div class='Ny_search_showcon_midd_fl'>"
+          sr+="<a href='#'>"
+          sr+="<img src='../home/images/"+msg[f]['s_img']+"' height='100px' width='125px'>"
+          sr+="</a>"
+          sr+="</div>" 
+          sr+="<div class='Ny_search_showcon_midd_fr'>"
+          sr+="<dl>"
+          sr+="<dt><a href='#' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
+          sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
+          sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[f]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[f]['s_traffic']+"</span></span></dd>"
+          sr+="</dl>"
+          sr+="</div>" 
+          sr+="<div class='clear'></div>"
+          sr+="</div>"
+        }
+        $("#replaces").html(sr)
+      },'json')
+  }
+
+  /**
+   * 旅游地区
+   * @param  {[type]} rid [description]
+   * @return {[type]}     [description]
+   */
+  function splic(rid){
+    var sr='';
+    $.get('destination',{"ss":ss,"rid":rid},function(msg){
+        for(var f=0;f<msg.length;f++){
+          sr+="<div class='Ny_search_showcon_middlist'>"
+          sr+="<div class='Ny_search_showcon_midd_fl'>"
+          sr+="<a href='#'>"
+          sr+="<img src='../home/images/"+msg[f]['s_img']+"' height='100px' width='125px'>"
+          sr+="</a>"
+          sr+="</div>" 
+          sr+="<div class='Ny_search_showcon_midd_fr'>"
+          sr+="<dl>"
+          sr+="<dt><a href='#' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
+          sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
+          sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[f]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[f]['s_traffic']+"</span></span></dd>"
+          sr+="</dl>"
+          sr+="</div>" 
+          sr+="<div class='clear'></div>"
+          sr+="</div>"
+        }
+        $("#replaces").html(sr)
+      })
+    /*location.href="home/regionid?rid="+rid;*/
+  }
+
+
+  /**
+   * 点击li添加样式，然后再点击同级的li再移除样式
+   * starts   出发地
+   * destination  目的地
+   * number  天数
+   * capital 资金
+   */
+  $('.destination').click(function(){
+      $(this).addClass('destinationCss').siblings().removeClass('destinationCss');
+  })
+  $('.number').click(function(){
+      $(this).addClass('numberCss').siblings().removeClass('numberCss');
+  })
+  $('.capital').click(function(){
+      $(this).addClass('capitalCss').siblings().removeClass('capitalCss');
+  })
+  $('.starts').click(function(){
+      $(this).addClass('startCss').siblings().removeClass('startCss');
+  })
+
+  /**
+   * 传地区的id
+   * @param  {[type]} jid [地区id]
+   */
+  function inClass(jid){
+      location.href="pushClass?jid="+jid;
+  }
+  function smailClass(jid){
+      location.href="pushClass?jid="+jid;
+  }
+
+  /**
+   * 排序方式
+   * @return {[type]} [description]
+   */
+  function contentChange(){
+    var sr='';
+    var emails=$("#zxc").val();
+    var content = $("#contentChange").val();
+    $.get('contentChange',{'content':content,"emails":emails},function(msg){
       for(var f=0;f<msg.length;f++){
-        sr+="<div class='Ny_search_showcon_middlist'>"
-        sr+="<div class='Ny_search_showcon_midd_fl'>"
-        sr+="<a href='#'>"
-        sr+="<img src='"+msg[f]['s_img']+"' height='100px' width='125px'>"
-        sr+="</a>"
-        sr+="</div>" 
-        sr+="<div class='Ny_search_showcon_midd_fr'>"
-        sr+="<dl>"
-        sr+="<dt><a href='#' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
-        sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
-        sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[f]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[f]['s_traffic']+"</span></span></dd>"
-        sr+="</dl>"
-        sr+="</div>" 
-        sr+="<div class='clear'></div>"
-        sr+="</div>"
-      }
-      $("#replaces").html(sr)
-    },'json')
-}
+          sr+="<div class='Ny_search_showcon_middlist'>"
+          sr+="<div class='Ny_search_showcon_midd_fl'>"
+          sr+="<a href='#'>"
+          sr+="<img src='../home/images/"+msg[f]['s_img']+"' height='100px' width='125px'>"
+          sr+="</a>"
+          sr+="</div>"                                   
+          sr+="<div class='Ny_search_showcon_midd_fr'>"
+          sr+="<dl>"
+          sr+="<dt><a href='#' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
+          sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
+          sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[f]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[f]['s_traffic']+"</span></span></dd>"
+          sr+="</dl>"
+          sr+="</div>" 
+          sr+="<div class='clear'></div>"
+          sr+="</div>"
+        }
+        //alert(sr)
+        $("#replaces").html(sr)
+      },'json')
+  }
+
 </script>
 
 </body></html>

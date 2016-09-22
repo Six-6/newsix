@@ -63,6 +63,8 @@
 </script>
 
 <!--TOP部分-->
+@include('includes.usertop')
+
 <script language="javascript" type="text/javascript" src="./user/ajax188.js"></script>
 <script language="javascript" type="text/javascript">
 
@@ -96,12 +98,12 @@
     <div class="top10">
 
         <div id="col">
-            <div class="avatar-120"><a href="http://www.byts.com.cn/users"><img src="./user/noface.jpg" height="75" width="75"></a></div>
+            <div class="avatar-120"><a href="http://www.byts.com.cn/users"><img src="{{Session::get('userimg')}}" height="75" width="75"></a></div>
             <div class="avatar-username">
 
                 普通会员
 
-                3851</div>
+                201609{{Session::get('u_id')}}</div>
             <ul id="user-nav">
                 <li class="" id="nav_left_1">
                     <dl class="user-sub-nav cf">
@@ -114,6 +116,7 @@
                 <li class="" id="nav_left_2">
                     <dl class="user-sub-nav cf">
                         <dd><a href="integralAdd">我的积分</a></dd>
+                        <dd><a href="integralDetails">积分详情</a></dd>
                     </dl>
 
                     </dl>
@@ -121,34 +124,27 @@
                 </li>
                 <li class="" id="nav_left_2">
                     <dl class="user-sub-nav cf">
-                        <dd><a href="javascript:void(0)" onclick="footprint()">我的足迹</a></dd>
+                        <!-- <dd><a href="javascript:void(0)" onclick="footprint()">我的足迹</a></dd> -->
+                        <dd><a href="footprint">我的足迹</a></dd>
                     </dl>
                     </dl>
-                 <a href="#" class="mlink">我的足迹</a>
+                    <a href="#" class="mlink">我的足迹</a>
                 </li>
                 <li class="" id="nav_left_2">
                     <dl class="user-sub-nav cf">
-                        <dd><a href="javascript:void(0)" onclick="collect()">我的收藏</a></dd>
+                        <!-- <dd><a href="javascript:void(0)" onclick="collect()">我的收藏</a></dd> -->
+                        <dd><a href="collect">我的收藏</a></dd>
                     </dl>
                     </dl>
-                    <a href="#" class="mlink">我的收藏</a>
-                </li>
-                <li class="" id="nav_left_3">
-                    <a href="viewAdd" class="mlink">我的点评</a></li>
-                </li>
-                <li class="" id="nav_left_2">
-                    <dl class="user-sub-nav cf">
-                        <dd><a href="javascript:void(0)" onclick="collect()">我的收藏</a></dd>
-                    </dl>
-                    </dl>
-                    <a href="#" class="mlink">我的收藏</a>
+                    <a href="" class="mlink">我的收藏</a>
                 </li>
                 <li class="" id="nav_left_3">
                     <dl class="user-sub-nav cf">
-                        <dd><a href="javascript:void(0)" onclick="evaluate()">我的点评</a></dd>
+                        <dd><a href="record">景点点评</a></dd>
+                        <dd><a href="viewAdd">我的点评</a></dd>
                     </dl>
                     </dl>
-                    <a href="viewAdd" class="mlink">我的点评</a>
+                    <a href="#" class="mlink">我的点评</a>
                 </li>
                 <li class="" id="nav_left_4">
                     <dl class="user-sub-nav cf">
@@ -228,15 +224,13 @@
 </div></body></html>
 <script src="assets/js/jquery-2.1.4.min.js"></script>
 <script>
-    var asi='';
-    function footprint(){
     /**
      * 足迹
      * @return {[type]} [description]
      */
     function footprint(){
         var asi='';
-        $.get('footprint',function(msg){
+        $.get("{{URL('home/footprint')}}",function(msg){
             asi+="<ul class='clearfix'>"
             for (var i = 0; i < msg.length; i++) {
                 asi+="<li class='lineitem ' style='float:left'>"
@@ -245,10 +239,12 @@
                 asi+="<img width='118px' height='67px' data-original='"+msg[i]['path']+"' src='"+msg[i]['path']+"' alt='景点图' style='display: inline;'>"
                 asi+="</a>"
                 asi+="<div class='prd-num'>产品编号："+msg[i]['o_id']+"</div>"
+                asi+="<input type='hidden' id='sid' value='"+msg[i]['o_id']+"' />"
+                asi+="<input type='hidden' id='sid' value='"+msg[i]['o_id']+"' />"
+                asi+="<input type='hidden' id='sid' value='"+msg[i]['o_id']+"' />"
                 asi+="</div>"
                 asi+="<dl class='info fn-left'>"
                 asi+="<dt class='t'>"
-                asi+="<a href='http://www.byts.com.cn/tours/4376.htm' target='_blank' title='"+msg[i]['o_name']+"'>"+msg[i]['o_name']+"</a><img src='image/tuijian.gif'>"
                 asi+="<a href='http://www.byts.com.cn/tours/4376.htm' target='_blank' title='"+msg[i]['o_name']+"'>"+msg[i]['o_name']+"</a>"
                 asi+="</dt>"
                 asi+="<dd class='desc'> 界航大型飞船 ，入住5年普吉车 当地 精选 5星 酒店 ◆ 尽享美食 金鲨酒 楼泰式 绝望深怨...</dd>"
@@ -257,22 +253,17 @@
                 asi+="<span class='pin'><span class='n'>&nbsp;0&nbsp;</span>人点评</span>"
                 asi+="<span>最近出发班期：<span class='n'>星期二,星期四,星期日</span></span>"
                 asi+="</dd>"
-
-
-                asi+="<dd id='caoz'>"
-                asi+="<textarea name='evaluatename' rows='' cols='30px'></textarea><span><input type='button' id='hidd' value='发表评价'/></span>"
+                asi+="<dd id='caoz"+msg[i]['o_id']+"' style='display:none'>"
+                asi+="<textarea name='evaluatename' id='evaluatename' rows='' cols='30px'></textarea><span><input type='button' onclick='hidd("+msg[i]['o_id']+")' value='发表评价'/></span>"
                 asi+="</dd>"
-
                 asi+="</dl>"
                 asi+="<div class='detail fn-right'>"
                 asi+="<span class='sup'>网订优惠</span>"
                 asi+="<p class='price'><span class='u'></span><span class='n'>￥"+msg[i]['c_price']+"</span>起</p>"
                 asi+="<span class='s m-5 J_powerFloat' rel='J_popDisong' data-song='200'><em class='dsnum'></em></span>"
-
                 //asi+="<p class='price'><a href='evaluate?eid="+msg[i]['o_id']+"' ><input type='button' value='我要评价' /></a></p>"
                 asi+="<input type='hidden' name='_token' value='{{ csrf_token() }}'>"
-                asi+="<p class='price'><button>我要评价</button></p>"
-
+                asi+="<p class='price'><input type='button' onclick='shows("+msg[i]['o_id']+")' value='我要评价'/></p>"
                 asi+="</div>"
                 asi+="</li>"
               }
@@ -281,15 +272,13 @@
           },'json')
     }
 
-    /*
-     * 收藏
     /**
      * 收藏
      * @return {[type]} [description]
      */
     function collect(){
         var ass='';
-        $.get('collect',function(ms){
+        $.get("{{URL('home/collect')}}",function(ms){
             ass+="<ul class='clearfix'>"
             for (var i = 0; i < ms.length; i++) {
                 ass+="<li class='lineitem ' style='float:left'>"
@@ -314,6 +303,7 @@
                 ass+="<span class='sup'>网订优惠</span>"
                 ass+="<p class='price'><span class='u'></span><span class='n'>￥"+ms[i]['s_price']+"</span>起</p>"
                 ass+="<span class='s m-5 J_powerFloat' rel='J_popDisong' data-song='200'><em class='dsnum'></em></span>"
+                ass+="<span class='s m-5 J_powerFloat' rel='J_popDisong' data-song='200'><em class='dsnum'></em></span>"
                 ass+="</div>"
                 ass+="</li>"
               }
@@ -326,14 +316,32 @@
      * 我的评价
      * @return {[type]} [description]
      */
-    $("#shows").click(function(){
-      $("textarea").hide();
-    });
+    function shows(sid){
+        $("#caoz"+sid).show();
+    }
+    function hidd(sid){
+        var evaluatename=$("#evaluatename").val();
+        var sid = $("#sid").val();
+        $.get('evaluate',{'evaluatename':evaluatename,'sid':sid},function(msg){
+            if ( msg == '-1' ) {
+                alert("评论失败");
+            }else
+            if ( msg == '-2' ) {
+                alert("您输入的内容有广告存在");
+            }else
+            if ( msg == '-3' ) {
+                alert("您是路过还是想坐沙发");
+            }else
+            if ( msg == '0' ) {
+                alert("服务器请求失败");
+            }else
+            if ( msg == '-4' ) {
+                alert("评论失败");
+            }else
+            if ( msg == '4' ) {
+                $("#caoz"+sid).hide();
+            }
+        })
+    }
 
-    $("button").click(function(){
-      $("textarea").hide();
-    });
-    /*function evshow(evrid){
-        $("#shows").show()
-    }*/
 </script>

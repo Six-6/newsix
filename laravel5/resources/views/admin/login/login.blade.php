@@ -54,6 +54,7 @@
             }
             else
             {
+                $("#sp").html(" ");
                 return true;
             }
             
@@ -76,6 +77,7 @@
             }
             else
             {
+                 $("#sppwd").html(" ");
                 return true;
             }
             
@@ -83,10 +85,10 @@
     }
     function dl( )
     {
-        if(names()&&pwds())
+        if(names() && pwds())
         {
             var name=$("#na").val();
-            var pwd=$("#pwd").val();
+            var pwd=$("#pwd").val()
             $.get('loin',{'name':name,'pwd':pwd},function(msg){
                 if(msg==1)
                 {

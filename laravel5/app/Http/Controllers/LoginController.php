@@ -40,6 +40,7 @@ class LoginController extends Controller {
             if($res)
             {
                 Session::put('u_id',$res->u_id);
+                Session::put('userimg',$res->path);
                 Session::put('name',$name);
                 return Redirect::to('/');
             }else {

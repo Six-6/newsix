@@ -11,19 +11,20 @@
 |
 */
 //Route::get('/', 'WelcomeController@index');
-//Route::any('/', 'HomeController@login');//网站首页
+Route::get('/', 'home\RecursionController@recursion');/**前台首页**/
 Route::any('abroad', 'AbroadController@index');//出境
 Route::any('users', 'UserController@index');//会员中心
 Route::any('domestic', 'DomesticController@index');//国内
-Route::get('/', 'home\RecursionController@recursion');/**前台首页**/
+
+
 /**前台**/
 Route::get('home/recursion', 'home\RecursionController@recursion');/**首页无限极**/
 Route::post('home/searchs', 'home\RecursionController@searchs');/**首页全文检索搜索**/
 Route::get('home/sous', 'home\RecursionController@searchDay');/**根据旅游天数搜索**/
-Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅游资金搜索**/
+
 Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/
 Route::get('home/personDel', 'home\FootprintController@personDel');/**用户--退出*/
-Route::get('home/collect', 'home\FootprintController@yhCollect');/**用户--收藏*/
+
 
 /**前台用户管理**/
 Route::get('home/personAdd',"home\UserController@add");//个人信息展示
@@ -37,7 +38,7 @@ Route::get('home/integralAdd',"home\OrderController@integral");//积分显示
 Route::get('home/viewAdd',"home\OrderController@view");//我的评论
 Route::get('home/common',"home\OrderController@show");/**主页面显示**/
 Route::get('home/pswAdd',"home\UserController@psw");//密码查看
-Route::post('home/pswUpd',"home\UserController@ate");//密码修改
+
 Route::post('home/checkPwd',"home\UserController@pwd");//密码验证
 Route::get('home/orderAdd',"home\OrderController@add");/**订单列表**/
 /**前台兑换管理**/
@@ -47,17 +48,6 @@ Route::get('home/detailsSel',"home\ExchangeController@details");/**兑换商品�
 Route::post('home/detailsOrder',"home\ExchangeController@order");/**兑换商品订单**/
 Route::post('home/orderAdd',"home\ExchangeController@orderAdd");/**确认兑换**/
 /**前台志同道合**/
-Route::get('home/funShow',"home\FunController@show");/**志同道合显示**/
-Route::get('home/funWrite',"home\FunController@lists");/**志同道合详细页面展示**/
-Route::get('home/funReplay',"home\FunController@replay");/**志同道合列表展示**/
-Route::get('home/funPost',"home\FunController@post");/**志同道合发起页面**/
-Route::post('home/funAdd',"home\FunController@adds");/**志同道合添加页面**/
-Route::post('home/funUser',"home\FunController@user");/**志同道合关联好友**/
-/**后台登录 权限控制**/
-Route::get('admin/lo', 'admin\loginController@index');/**后台登录**/
-Route::get('admin/loin', 'admin\loginController@loin');/**后台登录**/
-Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/
-
 /***前台 风向标***/
 Route::get('home/siterecommend', 'season\IndicatorController@siterecommend');//风向标首页
 Route::get('home/month', 'season\IndicatorController@month');//季节推荐
@@ -67,7 +57,8 @@ Route::get('home/lnews', 'season\NoteController@lnews');//前台最新发布
 
 /**后台登录 权限控制**/
 Route::get('admin/lo', 'admin\loginController@index');/**后台登录**/
-Route::post('admin/loin', 'admin\loginController@loin');/**后台登录**/
+
+Route::get('admin/loin', 'admin\loginController@loin');/**后台登录**/
 Route::get('admin/unsession', 'admin\IndexController@unsession');/**退出**/
 Route::group(['middleware' => ['common']], function () {
     Route::get('admin/in', 'admin\IndexController@index');/**后台主页**/
@@ -142,30 +133,554 @@ Route::get('home/literature', 'season\ThemeController@literature');//前台风�
 Route::get('home/details', 'season\ThemeController@details');//游记详情
 Route::post('home/dcomment', 'season\ThemeController@dcomment');//游记详情评论
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::get('home/domestic','home\DomesticController@index');/**国内游展示**/
 Route::get('home/contrast','home\DomesticController@contrast');/**经典对比**/
 Route::get('home/contrasts','home\DomesticController@contrasts');/**景点对比**/
 Route::get('home/scenicDetails','home\DomesticController@scenicDetails');/**景点详情**/
 Route::get('home/fill','home\DomesticController@fill');/**填写订单**/ 
 // Route::get('home/fill_in_order','home\DomesticController@fill_in_order');/**展示填写订单表格**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**前台**/
 Route::get('home/recursion', 'home\RecursionController@recursion');/**首页无限极**/
 Route::post('home/searchs', 'home\RecursionController@searchs');/**首页全文检索搜索**/
-Route::get('home/sous', 'home\RecursionController@searchDay');/**根据旅游天数搜索**/
-Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅游资金搜索**/
 
+Route::get('home/moneys', 'home\RecursionController@searchMoney');/**根据旅游资金搜索**/
+Route::get('home/destination', 'home\RecursionController@destination');/**根据旅游目的地搜索**/
 Route::get('home/footprint', 'home\FootprintController@footprint');/**用户--我的足迹**/
 Route::get('home/personDel', 'home\FootprintController@personDel');/**用户--退出*/
 Route::get('home/collect', 'home\FootprintController@yhCollect');/**用户--收藏*/
-
-
-
-
+Route::get('home/cancel', 'home\FootprintController@cancel');/**用户--取消收藏*/
 Route::get('home/evaluate', 'home\FootprintController@evaluate');/**用户--评价*/
+Route::get('home/record', 'home\FootprintController@record');/**用户--评价记录*/
+Route::get('home/integralDetails', 'home\FootprintController@integralDetails');/**用户--积分详情*/
 
+
+
+Route::get('home/scenic', 'home\RecursionController@scenic');/**前台地区下的景点**/
+
+Route::get('home/pages', 'home\FootprintController@pages');/**用户--收藏分页*/
+Route::get('home/userhome', 'home\FootprintController@userhome');/**用户--收藏分页*/
+Route::get('home/regionid', 'home\RecursionController@regionid');/**首页--根据地区查景点*/
+Route::get('home/pushClass', 'home\RecursionController@pushClass');/**多项搜索--根据地区查景点*/
+Route::get('home/contentChange', 'home\RecursionController@contentChange');/**多项搜索--根据地区查景点*/
 
 
 
 Route::get('/', 'home\RecursionController@recursion');/**前台首页**/
 Route::get('home/scenic', 'home\RecursionController@scenic');/**前台地区下的景点**/
 
+Route::get('admin/useradmin', 'WayController@useradmin');/**后台用户管理**/
+Route::get('admin/toExamine', 'WayController@toExamine');/**后台用户评论审核**/
+Route::get('admin/examine', 'WayController@examine');/**后台用户管理**/
+Route::get('admin/jgaiExamine', 'WayController@jgaiExamine');/**后台用户管理**/

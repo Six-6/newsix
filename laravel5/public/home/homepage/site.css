@@ -50,8 +50,8 @@ li{ list-style-type:none}
 	position: relative;
 	color: #666666
 }
-.select_box #myselect{
-	border: none;
+ .select_box #myselect{
+	/* border:none; */
 	background-color: transparent;
 	width: 80px;
 	margin: 10px 20px 0 9px;
@@ -72,7 +72,7 @@ li{ list-style-type:none}
 	width: 160px;
 	line-height: 21px;
 	font-size: 14px;
-	color: #666666;  background-color:transparent;  border:none
+	color: #666666;  background-color:transparent/*;  border:none*/
 }
 .select_box .select_empty{
 	display: block;
@@ -97,8 +97,8 @@ li{ list-style-type:none}
 	height: 22px;
 	left: 251px;
 	top: 7px;
-	background:url(../images/se.png) no-repeat; border:0px; text-indent:-9999px;
-}
+	background:url(../images/se.png) no-repeat; /* border:0px;  */text-indent:-9999px;
+} 
 .sourchNew{
 	position: absolute;
 	left: 467px;
