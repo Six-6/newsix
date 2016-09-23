@@ -183,6 +183,9 @@ window.onerror=function(){return true;}
             <a href="{{URL('home/beijing')}}">本地游</a>
             <a href="{{URL('home/domestic')}}">国内游</a>
             <a href="{{URL('home/exit')}}">出境游</a>
+            <a href="{{URL('home/siterecommend')}}">风向标</a>
+            <a href="{{URL('home/note')}}">游记</a>
+            <a href="{{URL('home/funWrite')}}">志同道合</a>
         </div>
         <div class="clear"></div>
         
@@ -320,18 +323,13 @@ window.onerror=function(){return true;}
     
      <div class="Ny_search_showcon">
      <div class="Ny_search_showcon_top">
-      <div class="Ny_search_showcon_top_fl"><b>排序方式：</b><select onchange="document.location=this.options[this.selectedIndex].value">
-      
-      <option value="/tags.php" selected="selected">默认排序</option>
-      <option value="/tags.php&amp;order=0">价格从低到高</option><option value="/tags.php&amp;order=1">价格从高到低</option></select></div>
-      <div class="Ny_search_showcon_top_fr"><div id="ctl00_content_AspNetPager1">
-<span class="pageinfo">共2页/17条</span>
-   <a class="thisclass">1</a>
-<a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">2</a>
- <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">下一页</a>
- <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">末页</a>
- 
-</div>
+<!--       <div class="Ny_search_showcon_top_fl"><b>排序方式：</b><select onchange="document.location=this.options[this.selectedIndex].value">
+
+<option value="/tags.php" selected="selected">默认排序</option>
+<option value="/tags.php&amp;order=0">价格从低到高</option><option value="/tags.php&amp;order=1">价格从高到低</option></select>
+</div> -->
+      <div class="Ny_search_showcon_top_fr">
+
 
 </div>
       <div class="clear"></div>
@@ -342,13 +340,13 @@ window.onerror=function(){return true;}
         @foreach($souarr as $souz)
           <div class="Ny_search_showcon_middlist">
               <div class="Ny_search_showcon_midd_fl">
-                <a href="http://www.byts.com.cn/travel/12030.html" target="_blank">
+                <a href="" target="_blank">
                   <img src="../home/images/{{$souz->s_img}}" height="100px" width="125px" alt="景点图">
                 </a>
               </div> 
             <div class="Ny_search_showcon_midd_fr">
                 <dl>
-                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank">{{$souz->s_name}}</a></dt>
+                    <dt><a href="{{URL('home/scenicDetails')}}?sid={{ $souz['s_id'] }}" target="_blank">{{$souz->s_name}}</a></dt>
                     <dd>{{$souz->s_characteristic}}</dd>
                     <dd><span>优惠价：<span class="cs_color">￥{{$souz->s_sprice}}元</span></span><span style="margin-left:20px;">旅游方式：<span class="cs_color">{{$souz->s_traffic}}</span></span></dd>
                 </dl>
@@ -358,7 +356,7 @@ window.onerror=function(){return true;}
         @endforeach
 
      </div>
-     <div class="Ny_search_showcon_bottom"><div id="ctl00_content_AspNetPager">
+<!--      <div class="Ny_search_showcon_bottom"><div id="ctl00_content_AspNetPager">
 <span class="pageinfo">共2页/17条</span>
    <a class="thisclass">1</a>
 <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">2</a>
@@ -367,7 +365,7 @@ window.onerror=function(){return true;}
  
 </div>
 
-</div>
+</div> -->
      </div>
     </div>
     </div>

@@ -42,18 +42,14 @@
   <div class="conter">
       <div class="a1"><a href="javascript:void(0)">所有目的地分类</a></div>
       <div class="a2">
-      <a href="{{URL('/')}}">首页</a>
-      <a href="">北京游</a>
-      <a href="">出境游</a>
-      <a href="">国内游</a>
-      </div>
-      <div class="a3"><div style="position: absolute; left: 24px; top: 1px;"><img src="../home/homepage/HOT.png"></div>
-        <a href="http://www.byts.com.cn/add/tejia.php">特价</a>
-        <a href="http://www.byts.com.cn/visa/">签证</a>   
-        <a href="http://www.byts.com.cn/zuche/bj/">租车</a>
-        <a href="http://www.byts.com.cn/add/dingzhi.php">定制</a> 
-        
-      </div>
+            <a href="{{URL('/')}}">首页</a>
+            <a href="{{URL('home/beijing')}}">本地游</a>
+            <a href="{{URL('home/domestic')}}">国内游</a>
+            <a href="{{URL('home/exit')}}">出境游</a>
+            <a href="{{URL('home/siterecommend')}}">风向标</a>
+            <a href="{{URL('home/note')}}">游记</a>
+            <a href="{{URL('home/funWrite')}}">志同道合</a>
+        </div>
         <div class="clear"></div>
 
 

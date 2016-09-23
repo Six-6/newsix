@@ -1,6 +1,6 @@
 <?php
 /*
-*@旅游方式管理
+*@旅游管理
 *
 *@韦森编写 
 * 
@@ -203,14 +203,18 @@ class WayController extends Controller
 	/**
 	 * 后台用户管理--用户评价审核
 	 * @return [type] $data [用户的所有评论]
+	 * @return [type] $lefts [递归左侧]
 	 */
 	function toExamine(){
+		$name=Session::get("name");
 
 		$Model = new Way();
 
 		$data = $Model->toExamine();
 
-		return view('admin.toExamine',['examine' => $data]);
+		$lefts = $Model->lefts();
+
+		return view('admin.toExamine',['examine' => $data,'ar'=>$lefts,'name'=>$name]);
 	}
 
 	/**

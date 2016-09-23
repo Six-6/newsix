@@ -286,7 +286,7 @@ function mousout(n){
 			                	</div>
 			                	<dl class='info fn-left'>
 			                	<dt class='t'>
-			               		<a href='javascript:void(0)' target='_blank' title='{{ $scenic->s_name }}'>{{ $scenic->s_name }}</a><img src='home/homepage/tuijian.gif'>
+			               		<a href="{{URL('home/scenicDetails')}}?sid={{ $scenic->s_id }}" target='_blank' title='{{ $scenic->s_name }}'>{{ $scenic->s_name }}</a><img src='home/homepage/tuijian.gif'>
 			                	</dt>
 			                	<dd class='desc'> {{ $scenic->s_characteristic }}</dd>
 			                	<dd class='moredesc'>
