@@ -316,15 +316,68 @@ class Theme extends Model
 		$datas = json_decode(json_encode($data),true);
 		$bination['form']= DB::table('travels')->join('login', 'travels.u_id', '=', 'login.u_id')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',$datas[0]['b_id'])->get();
 		
+		//评论内容
+		$commect = DB::table('comments')->join('login', 'comments.u_id', '=', 'login.u_id')->where('tt_id',$id)->where('f_id',0)->orderBy('c_time','desc')->get();
+		if(!empty($commect))
+		{
+			$commect1 = json_decode(json_encode($commect),true);
+			foreach($commect1 as $key => $value)
+			{
+				$bination['commect'][$key] = $value;
+				$commec = DB::table('comments')->where('tt_id',$id)->where('f_id',$value['comment_id'])->orderBy('c_time','desc')->get();
+				$commect2 = json_decode(json_encode($commec),true);
+				if(empty($commect2))
+				{
+					$bination['commect'][$key] = $value;
+					$bination['commect'][$key]['reply'] = "";
+				}
+				else
+				{
+					foreach($commect2 as $keys => $val)
+					{
+						$bination['commect'][$key]['reply'][] = $val;
+					}
+				}			
+			}
+		}
+		else
+		{
+			$bination['commect'] = "";
+		}
+		
+		
 		return $bination;
 		
 	}
 	
 	//游记详情评论
-	public static function dsession()
-	{
+	public static function dsession($u_id,$data)
+	{	
+		$tt_id = $data['idf'];
+		$c_base = $data['content'];
+		$time = date('Y-m-d H:i:s',time());
+		
+		if(isset($data['fid']))
+		{
+			$f_id = $data['fid'];
+		}
+		else
+		{
+			$f_id = 0;
+		}
+	
+		$fadd = DB::table('comments')->insert(['u_id' => $u_id, 'c_base' => $c_base , 'tt_id' => $tt_id ,'f_id' => $f_id, 'c_time'=> $time]); 
+		if($fadd)
+		{
+			DB::table('travels')->where('tt_id',$tt_id)->update(['t_commentint' => $data['t_comment']+1]);
+		}
+		else
+		{
+			return false;
+		}
 		
 	}
+	
 	
 }
 

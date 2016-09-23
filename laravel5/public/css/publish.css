@@ -1,0 +1,167 @@
+i{font-style:normal}textarea{resize:none;border:1px
+solid #e7e7e7}.bodybg-gray{background:#f8f8f8}.wrap{width:1000px;margin:0
+auto}.clearfix{zoom:1}.link-hover, .crumbs a, .publish-bottom .draft-preview a, .publish-photo .p-label a, .publish-order .p-label
+a{color:#2e9900}.link-hover:hover, .crumbs a:hover, .publish-bottom .draft-preview a:hover, .publish-photo .p-label a:hover, .publish-order .p-label a:hover{color:#f90}.no-border{border:none !important}.hide{display:none}.placeholder{color:#999 !important}.blog-icon, .publish-content .trip-day .trip-nav .arrow-right, .publish-content .trip-control, .publish-content .addr-item .addr-control, .publish-content .trip-control ul li .icon-calendar, .publish-content .addr-item .addr-control ul li .icon-calendar, .publish-content .trip-control ul li .icon-del, .publish-content .addr-item .addr-control ul li .icon-del, .publish-content .trip-control ul li .icon-more, .publish-content .addr-item .addr-control ul li .icon-more, .publish-content .addr-item .addr-control .icon-addr, .publish-content .type-icon, .publish-content .more-btn-list .add-before i, .publish-content .more-btn-list .add-after i, .publish-content .more-btn-list .move-before i, .publish-content .more-btn-list .move-after i, .popup-box .close, .addr-select-popbox .poi-popup .close, .delete-confirm .delete-popup .close, .order-select-confirm .order-popup .close, .photo-m-popbox .upload-default .photo_list
+.delete{background:url(http://img1.tuniucdn.com/img/20141108/blogs/blogs_icon.png) no-repeat}.blog-guide-icon, .publish-content .trip-day-next, .publish-guide, .photo-m-popbox .upload-default .local_pic .upload-btn-bg,.photo-tip{background:url(http://img1.tuniucdn.com/img/2014111513/blogs/publish_guide.png) no-repeat}.nav-bar{padding-top:10px;margin-bottom:5px;height:25px;line-height:25px;vertical-align:middle;color:#999}.crumbs{float:left}.crumbs
+a{padding:0
+5px}.crumbs
+span{display:inline-block}.publish-left{position:relative;float:left;width:800px;margin-right:10px}.edui-btn-toolbar .edui-btn .edui-icon-ohaddpic{background-position:-380px 0}.publish-right{float:right;width:190px;display:inline-block;z-index:1}.p-fix{position:fixed !important;top:0 !important}.p-textarea, .publish-title
+textarea{border:none;color:#666;font:14px/18px "microsoft yahei";overflow:auto}.default-txt{position:absolute;z-index:2;margin:15px
+20px;color:#999;font:14px "microsoft yahei"}.publish-title{position:relative;background:#fff;border:1px
+solid #e7e7e7;padding:15px
+20px;margin-bottom:10px;height:18px;color:#bbb;font:14px/20px "microsoft yahei"}.publish-title
+textarea{width:720px;height:20px;overflow:hidden !important}.publish-title .input-limit{position:absolute;right:10px;vertical-align:top}.publish-main{position:relative;min-height:320px;border:1px
+solid #e7e7e7;background:#fff;z-index:1001}.publish-main .edui-image-dragTip{text-shadow:none !important}.publish-main
+.p_main{display:none}.publish-main .p_main .edui-default{margin:0
+!important}.publish-content{position:relative;background:#fff;border:1px
+solid #e7e7e7;padding:0;margin-bottom:10px;border-top:none;margin-bottom:0}.publish-content .trip-show .trip-content{display:block !important}.publish-content .trip-show .trip-unfold, .publish-content .trip-show .trip-day .trip-fold, .publish-content .trip-day .trip-show .trip-fold{display:none !important}.publish-content .trip-show .trip-fold{display:inline-block !important}.publish-content .trip-day{position:relative;padding:60px
+30px 10px;border-bottom:1px dotted #e7e7e7}.publish-content .trip-day .trip-content{display:none}.publish-content .trip-day .trip-content .addr-list .edui-container{width:720px !important}.publish-content .trip-day .trip-content .addr-list .edui-body-container{width:680px !important}.publish-content .trip-day .trip-nav{display:inline-block;cursor:pointer}.publish-content .trip-day .trip-nav .trip-date{float:left;height:40px;padding:0
+10px;background:#68cc3d;text-align:center}.publish-content .trip-day .trip-nav .trip-date
+p{color:#a9f96d;font:14px "Arial"}.publish-content .trip-day .trip-nav .trip-date
+em{color:#fff;font:16px "Arial"}.publish-content .trip-day .trip-nav .arrow-right{position:relative;float:left;width:5px;height:8px;margin-top:16px;background-position:0 -63px}.publish-content .trip-day .trip-nav .trip-nav-list{float:left;padding-right:20px;margin-left:-5px;width:668px;min-height:40px;color:#999;background:#f6f8fa;font-size:14px;line-height:40px;overflow:hidden}.publish-content .trip-day .trip-nav .trip-nav-list
+span{margin:0
+10px;font-size:12px}.publish-content .trip-day .trip-nav .trip-nav-list span
+img{margin-left:20px}.publish-content .trip-day .trip-nav .trip-nav-list span
+a{color:#999}.publish-content .trip-day .trip-nav .trip-nav-list .trip-time{float:right;font:12px/40px "Arial";color:#bbb}.publish-content .trip-day .trip-unfold, .publish-content .trip-day .trip-fold{display:inline-block;position:absolute;font-family:"tn_fontface";color:#999;font-size:25px}.publish-content .trip-day .trip-fold{display:none}.publish-content .trip-control, .publish-content .addr-item .addr-control{position:absolute;z-index:1;right:0;top:10px;width:182px;height:29px;background-position:0 -160px}.publish-content .trip-control ul li, .publish-content .addr-item .addr-control ul
+li{float:left;width:50px;height:29px;margin-left:10px;line-height:29px}.publish-content .trip-control ul li a, .publish-content .addr-item .addr-control ul li
+a{color:#fff}.publish-content .trip-control ul li a span, .publish-content .addr-item .addr-control ul li a
+span{width:13px;height:13px;margin-right:3px;vertical-align:middle;display:inline-block}.publish-content .trip-control ul li .icon-calendar, .publish-content .addr-item .addr-control ul li .icon-calendar{background-position:-30px -130px}.publish-content .trip-control ul li .icon-del, .publish-content .addr-item .addr-control ul li .icon-del{background-position:-45px -130px}.publish-content .trip-control ul li .icon-more, .publish-content .addr-item .addr-control ul li .icon-more{background-position:-60px -130px}.publish-content .trip-control .control-pop, .publish-content .addr-item .addr-control .control-pop{position:absolute;left:85px;z-index:2;background:#fff;border:1px
+solid #68cc3d}.publish-content .trip-control .control-pop li, .publish-content .addr-item .addr-control .control-pop
+li{width:85px;cursor:pointer}.publish-content .trip-control .control-pop li:hover, .publish-content .addr-item .addr-control .control-pop li:hover{color:#f90}.publish-content .addr-list{margin-top:10px}.publish-content .addr-item{position:relative;padding:30px
+0;margin-bottom:10px;background:#f6f8fa;border:2px
+dashed #d9dde3;text-align:center}.publish-content .addr-item .addr-add, .publish-content .addr-item .addr-title{margin-bottom:10px}.publish-content .addr-item .addr-add i, .publish-content .addr-item .addr-title
+i{font-family:"tn_fontface";color:#99a3b1;font-size:20px}.publish-content .addr-item .addr-add em, .publish-content .addr-item .addr-title
+em{font:16px/30px "microsoft yahei";color:#99acbf;vertical-align:top}.publish-content .addr-item .addr-title
+em{vertical-align:middle}.publish-content .addr-item .addr-record{font:14px "microsoft yahei";color:#bbb}.publish-content .addr-item .addr-control .icon-addr{background-position:-75px -130px}.publish-content .addr-add-more{height:45px;text-align:center;font:16px/45px "microsoft yahei";background:#f6f8fa;border:2px
+dashed #d9dde3}.publish-content .addr-add-more
+a{color:#99acbf}.publish-content .trip-des, .publish-content .trip-end{margin-top:15px;min-height:200px;position:relative}.publish-content .trip-day-next{margin-top:20px;background-position:0 -320px}.publish-content .trip-day-next
+a{width:213px;height:40px;display:block}.publish-content .p-end{padding-left:30px}.publish-content .type-icon{display:inline-block;width:24px;height:24px;margin-right:6px;vertical-align:middle}.publish-content .type-diqu{background-position:0 -75px}.publish-content .type-jingdian{background-position:-25px -75px}.publish-content .more-btn-list{display:none;position:absolute;width:100px;z-index:2;right:0;background:#fff;border:1px
+solid #68cc3d}.publish-content .more-btn-list
+li{width:100px !important;cursor:pointer;text-align:center}.publish-content .more-btn-list li:hover{color:#2e9900}.publish-content .more-btn-list .add-before i, .publish-content .more-btn-list .add-after
+i{float:left;display:block;margin-top:11px;width:8px;height:8px;background-position:0 -190px}.publish-content .more-btn-list .move-before i, .publish-content .more-btn-list .move-after
+i{float:left;display:block;margin-top:11px;width:8px;height:5px;background-position:-10px -190px}.publish-content .more-btn-list .move-after
+i{background-position:-20px -190px}.schedule-addr-add{position:relative;padding:30px
+0;margin-bottom:10px;background:#f6f8fa;border:2px
+dashed #d9dde3;text-align:center}.schedule-addr-add
+i{font-family:"tn_fontface";color:#99a3b1;font-size:20px}.schedule-addr-add
+em{font:16px/30px "microsoft yahei";color:#99acbf;vertical-align:top}.schedule-addr-add .addr-tip{color:#999;font:14px/25px "microsoft yahei"}.publish-end{margin-top:15px}.publish-bottom{background:#fff;border:1px
+solid #e7e7e7;padding:25px
+20px;margin-bottom:10px;position:relative;border-top:none;margin-bottom:0;height:35px;background:#f6f8fa}.publish-bottom .draft-save, .publish-bottom .draft-preview, .publish-bottom
+.p_identify{position:absolute;margin-top:10px;left:20px;font:14px "microsoft yahei";color:#bbb}.publish-bottom .draft-preview
+a{margin-left:30px}.publish-bottom
+.p_identify{margin-top:5px;left:330px}.publish-bottom .p_identify
+input{border:1px
+solid #ccc;padding:5px;width:50px}.publish-bottom .p_identify
+.test_code{display:inline-block;height:28px;line-height:28px;margin:0
+0 0 10px;vertical-align:middle}.publish-bottom .p_identify
+.error{color:red}.publish-bottom .submit-btn{position:absolute;right:20px;width:130px;height:40px;text-align:center;background:#ff9219;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px}.publish-bottom .submit-btn
+a{width:130px;height:40px;font:18px/40px "microsoft yahei";color:#fff;display:block}.publish-bottom .save-btn{position:absolute;right:175px;margin-top:10px;font:14px "microsoft yahei";color:#2e9900}.publish-bottom .save-btn:hover{color:#f90}.publish-btn{background:#fff;border:1px
+solid #e7e7e7;padding:20px
+5px;margin-bottom:10px;height:48px}.publish-btn ul
+li{float:left;width:48px;height:48px;padding:0
+5px;text-align:center;border-right:1px dotted #ddd}.publish-btn ul li .icon-trip-add{font-family:"tn_fontface";color:#51a7db;font-size:20px}.publish-btn ul li .icon-addr-add{font-family:"tn_fontface";color:#5dbb85;font-size:20px}.publish-btn ul li .icon-photo-upload{font-family:"tn_fontface";color:#f26622;font-size:20px}.publish-btn ul li
+a{color:#999}.publish-btn ul li a:hover{color:#f90}.publish-photo{background:#fff;border:1px
+solid #e7e7e7;padding:11px;margin-bottom:10px}.publish-photo .p-label{margin:0
+-10px;border-bottom:1px solid #ddd;padding:0
+0 10px 15px;font:16px "microsoft yahei"}.publish-photo .p-label
+a{margin-left:50px;font-size:14px}.publish-photo .photo-uploaded-list{margin-top:10px;color:#999}.publish-photo .photo-uploaded-list .photo-list-item{display:inline-block}.publish-photo .photo-uploaded-list .photo-list-item
+a{width:75px;height:75px;float:left;margin:0px
+4px 10px 4px}.publish-photo .photo-uploaded-list .photo-list-item a
+img{width:75px;height:75px}.publish-photo .photo-uploaded-list
+#pagination{float:right;height:30px;margin-top:-15px}.publish-photo .photo-uploaded-list #pagination .pre-btn, .publish-photo .photo-uploaded-list #pagination .next-btn{width:30px;height:30px;display:inline-block;font-family:"tn_fontface";color:#ddd;font-size:30px}.publish-photo .photo-uploaded-list #pagination .pre-btn:hover, .publish-photo .photo-uploaded-list #pagination .next-btn:hover{color:#f90}.publish-wyjbtn{margin-bottom:10px;height:163px;border:1px
+solid #e7e7e7;background-image:url(http://img4.tuniucdn.com/img/2015112620/guide/gonglue/wyouji_btnbg.png)}.publish-wyjbtn
+.d_wyj_btn{position:relative;top:32px;display:block;margin:0
+auto;margin-top:90px;width:148px;height:30px;border:1px
+#FFF solid;border-radius:2px;background-color:#000;-webkit-opacity:0.3;-moz-opacity:0.3;-khtml-opacity:0.3;opacity:0.3;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=30);-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=30)';z-index:1}.publish-wyjbtn
+.a_wyj_btn{position:relative;top:0;display:block;margin:0
+auto;width:148px;height:32px;line-height:32px;font-size:14px;text-align:center;text-indent:20px;font-family:'Microsoft Yahei';background-image:url(http://img4.tuniucdn.com/img/2015112620/guide/gonglue/wyouji_icon.png);background-repeat:no-repeat;background-position:22px 7px;color:#FFF;cursor:pointer;z-index:2}.publish-draft{padding:11px;margin-bottom:10px;border:1px
+solid #e7e7e7;background:#fff}.publish-draft .p-label{margin:0
+-10px;padding:0
+0 10px 15px;font:14px "microsoft yahei";font-weight:bold;border-bottom:1px solid #ddd}.publish-draft .p-label
+a{margin-left:60px;font-size:12px;font-weight:normal;color:#979797}.publish-draft
+.ul_draft{padding:2px
+0;font-family:'Microsoft Yahei'}.publish-draft .ul_draft
+li{padding:4px
+0;font-size:12px;border-bottom:1px #EFEFEF solid;color:#666}.publish-draft .ul_draft li
+h5{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px
+0}.publish-draft .ul_draft li
+h6{height:18px}.publish-draft .ul_draft li h6
+span{float:left;color:#999}.publish-draft .ul_draft li h6
+span.span_btn{margin-left:10px;float:right}.publish-draft .ul_draft li h6 span.span_btn
+a{color:#666}.publish-draft .ul_draft li h6 span.span_btn a:hover{color:#56A727}.publish-order{padding:15px;border:2px
+solid #ffdbb2;background:#fffceb}.publish-order .p-label{padding-bottom:10px;border-bottom:1px dotted #ffdbb2;font:16px "microsoft yahei";color:#333}.publish-order .p-label
+a{margin-left:40px;font-size:14px}.publish-order
+.order_name{margin:10px
+0;display:block;color:#333}.publish-order .order_name:hover{color:#f90}.publish-order .order-time
+dd{width:74px;word-wrap:break-word}.publish-order
+dt{margin-right:5px;color:#999;float:left}.publish-order
+dd{color:#999;width:90px;display:inline-block}.publish-guide{position:absolute;width:250px;height:300px;top:0;left:-135px;background-position:0 0}.publish-guide
+a{width:55px;height:170px;display:inline-block;margin-left:80px;margin-top:75px}.pop-mask{position:fixed;left:0;top:0;width:100%;height:100%;background-color:#000;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity:0.5;z-index:10001}.popup-box, .addr-select-popbox .poi-popup, .delete-confirm .delete-popup, .order-select-confirm .order-popup{position:fixed;left:50%;top:50%;background:#fff;border:1px
+solid #d0d0d0;box-shadow:0 0 3px 0 #ccc;z-index:10002}.popup-box .close, .addr-select-popbox .poi-popup .close, .delete-confirm .delete-popup .close, .order-select-confirm .order-popup
+.close{display:inline-block;width:24px;height:24px;position:absolute;right:-12px;top:-12px;background-position:0 -130px}.photo-m-popbox{visibility:hidden}.photo-m-popbox .pop-box{position:fixed;top:50%;left:50%;margin-left:-360px;margin-top:-255px;width:720px;height:510px;background-color:#fff;overflow:hidden;z-index:10002}.photo-m-popbox .pop-box .box-title{height:40px;padding:0
+20px;background-color:#f4f4f4;color:#666;font:bold 16px/40px "microsoft yahei"}.photo-m-popbox .pop-box .box-close{position:absolute;right:15px;top:16px;height:10px;width:11px;cursor:pointer;background:url(http://img1.tuniucdn.com/img/20140114/usercenter_lxl/slidy.png) no-repeat 0 -235px}.photo-m-popbox .upload-default{position:relative;padding:90px
+0}.photo-m-popbox .upload-default
+.btn_upload_swf{display:inline-block;width:117px;height:30px;position:absolute;left:301px;top:235px}.photo-m-popbox .upload-default
+.procdcessed_tit_swfupload{height:30px;left:0;top:0px;padding:15px
+0;width:660px;margin-left:30px;background:#f7f8fa;margin-top:30px}.photo-m-popbox .upload-default .procdcessed_tit_swfupload
+.swfupload{margin-left:50px}.photo-m-popbox .upload-default .procdcessed_tit_swfupload
+.proccess_num{vertical-align:middle;position:absolute;top:20px;left:190px;font:14px "microsoft yahei";color:#bbb}.photo-m-popbox .upload-default .procdcessed_tit_swfupload
+.photo_submit{position:absolute;right:30px;font:bold 16px/30px "microsoft yahei";color:#fff;width:100px;height:30px;background:#43b313;text-align:center;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px}.photo-m-popbox .upload-default
+.local_pic{width:290px;text-align:center;margin:0
+auto}.photo-m-popbox .upload-default .local_pic .upload-btn-bg{width:175px;height:201px;background-position:-260px 0;margin:0
+auto}.photo-m-popbox .upload-default .local_pic
+p{margin-top:25px;font:14px "microsoft yahei";color:#bbb}.photo-m-popbox .upload-default .local_pic
+.img{margin:0
+auto}.photo-m-popbox .upload-default
+.photo_list{padding-left:40px;margin:15px
+0;overflow:auto;height:340px}.photo-m-popbox .upload-default .photo_list
+li{position:relative;width:130px;height:130px;border:1px
+solid #e4e4e4;float:left;margin:15px
+28px 15px 0;overflow:visible}.photo-m-popbox .upload-default .photo_list li:hover
+.delete{display:block}.photo-m-popbox .upload-default .photo_list li
+i{width:33px;height:33px;background-position:-10px 0;position:absolute;bottom:0;right:0}.photo-m-popbox .upload-default .photo_list
+.delete{display:none;position:absolute;right:-12px;top:-12px;width:24px;height:24px;cursor:pointer;background-position:0 -130px}.photo-m-popbox .upload-default .photo_list .uploadify-progress{position:absolute;left:0;top:50%;margin-top:-5px;height:10px;width:100%}.photo-m-popbox .upload-default .photo_list .uploadify-progress-bar{background:#f80;height:10px}.photo-m-popbox .upload-default .photo_list
+.processing{position:absolute;top:10px;left:10px}.photo-m-popbox .upload-proccess-swfupload{padding:90px
+0 0}.addr-select-popbox .poi-popup{padding:25px
+30px;width:340px;height:285px;margin-left:-201px;margin-top:-167px}.addr-select-popbox .poi-popup
+h3{font:16px "microsoft yahei";margin-bottom:10px}.addr-select-popbox .poi-select{width:100%;position:relative;padding-top:3px}.addr-select-popbox
+.poi_address{padding:10px
+0 0 10px;border:1px
+solid #cfcfcf;overflow-y:scroll;max-height:90px}.addr-select-popbox .poi_address
+.poi{float:left;background:#f80;color:#fff;height:24px;line-height:24px;padding:0px
+25px 0px 8px;margin:0
+10px 10px 0;position:relative;white-space:nowrap}.addr-select-popbox .poi_address .poi
+a{width:10px;height:14px;position:absolute;top:2px;right:2px;display:block;font-family:"tn_fontface";color:#fff;font-size:12px}.addr-select-popbox
+.select_address{border:1px
+solid #cfcfcf;margin-top:-1px;height:150px;overflow-x:hidden;overflow-y:scroll}.addr-select-popbox .select_address
+a{display:block;cursor:pointer;line-height:30px;padding:0
+6px;color:#333;text-decoration:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.addr-select-popbox .select_address a:hover{background:#d4eaf6}.addr-select-popbox .poi-add{position:relative;float:left;height:24px;margin-bottom:10px;z-index:1}.addr-select-popbox .poi-add
+input{padding:5px;border:0;background:0;outline:0;width:130px}.addr-select-popbox .poi-add
+span{position:absolute;display:block;padding:6px
+8px;color:#999;top:-4px;left:0;z-index:-1}.addr-select-popbox .confirm-btn{position:absolute;right:40px;bottom:20px}.addr-select-popbox .confirm-btn
+input{width:60px;height:30px;line-height:30px;font:14px "microsoft yahei";background:#f60;border:0
+none;color:#fff;cursor:pointer}.delete-confirm .delete-popup{width:340px;height:90px;padding:40px;margin-left:-211px;margin-top:-86px;font:14px "microsoft yahei";text-align:center}.delete-confirm .delete-popup
+h3{color:#f60;margin-bottom:10px}.delete-confirm .delete-popup
+.del_btn{margin-top:20px}.delete-confirm .delete-popup .del_btn
+input{display:inline-block;width:55px;height:25px;line-height:25px;text-align:center;cursor:pointer;border:0
+none}.delete-confirm .delete-popup .del_btn
+.del_cancle{background:#ccc;color:#333;margin-right:10px}.delete-confirm .delete-popup .del_btn
+.del_sure{background:#f60;color:#fff}.order-select-confirm .order-popup{width:690px;height:440px;padding:30px;margin-left:-345px;margin-top:-220px;text-align:center}.order-select-confirm .order-popup
+h3{font:20px "microsoft yahei";color:#000;margin-bottom:10px}.order-select-confirm .order-popup .bind-tip{margin-bottom:20px;font:14px "microsoft yahei";color:#f80}.order-select-confirm .order-popup .order-th{height:35px;line-height:35px;font-size:14px;color:#666;background:#f2fded}.order-select-confirm .order-popup .o-td{float:left}.order-select-confirm .order-popup
+.td1{padding-left:20px;width:440px;text-align:left}.order-select-confirm .order-popup
+.td2{width:130px}.order-select-confirm .order-popup
+.td3{width:50px}.order-select-confirm .order-popup .order-box{height:260px;overflow:auto}.order-select-confirm .order-popup .order-list{padding:10px
+0;border-bottom:1px dotted #e8e8e8}.order-select-confirm .order-popup .order-list .order-name{font-size:14px;font-weight:bold;color:#2e9900}.order-select-confirm .order-popup .order-list .order-name
+em{font-weight:bold;color:#06c}.order-select-confirm .order-popup .order-list .order-name:hover{color:#f90;text-decoration:underline}.order-select-confirm .order-popup .order-list .order-name:hover
+em{color:#f90}.order-select-confirm .order-popup .order-list .order-time{margin-top:5px;color:#999}.order-select-confirm .order-popup .order-list .order-time .o-time{margin-right:30px}.order-select-confirm .order-popup .order-list .order-state{display:inline-block;margin-left:5px;width:18px;height:18px;background:url(http://img1.tuniucdn.com/img/2014041014/travels/icon.png) no-repeat -48px -88px;cursor:pointer}.order-select-confirm .order-popup .order-list .o-selected{background-position:-27px -88px !important}.order-select-confirm .order-popup .order-confirm-btn{display:inline-block;padding:0
+30px;margin-top:15px;height:30px;font:16px/30px "microsoft yahei";color:#fff;background:#fd9319;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px}.photo-tip{display:block;float:right;width:182px;height:25px;background-position:0 -370px}.publish-main .edui-toolbar{width:798px !important}.publish-end .edui-toolbar{width:798px !important}.trip-des .edui-toolbar, .publish-content .trip-end .edui-toolbar, .trip-end .edui-toolbar{width:738px !important}.addr-list-outer .edui-toolbar{width:720px !important}.addr-list-outer .edui-toolbar{width:770px !important}.addr-list-inner .edui-toolbar{width:720px !important}.ydmask{width:100%;height:100%;background:#000;opacity:0.6;position:fixed;top:0px;left:0px;z-index:99999}.ydmain{width:1000px;height:500px;position:absolute;z-index:100000;top:200px;left:50%;margin-left:-500px}.ydfirst{background:url(http://img1.tuniucdn.com/u/guide/ydfirst.png?v=20141117) no-repeat;width:1000px;height:307px;position:absolute;top:-240px;left:0px}.ydsecond{background:url(http://img1.tuniucdn.com/u/guide/ydsecond.png?v=20141117) no-repeat;width:1000px;height:507px;position:absolute;top:-114px;left:0px}.ydthird{background:url(http://img1.tuniucdn.com/u/guide/ydthird.png) no-repeat;width:1000px;height:923px;position:absolute;top:-91px;left:0px}.ydforth{background:url(http://img1.tuniucdn.com/u/guide/ydforth.png?v=20121125) no-repeat;width:1000px;height:504px;position:absolute;top:-10px;left:0px}.ydmain
+.next{display:block;width:100px;height:40px}.ydmain
+.next1{margin-top:205px;margin-left:415px}.ydmain
+.next2{margin-top:139px;margin-left:700px}.ydmain
+.next3{margin-top:123px;margin-left:860px}.ydmain
+.finish{display:block;width:100px;height:40px;margin-top:280px;margin-left:645px}.ydmain
+.close{width:40px;height:40px;position:absolute}.ydmain
+.close1{top:88px;left:475px}.ydmain
+.close2{top:60px;left:700px}.ydmain
+.close3{top:45px;right:45px}.ydmain
+.close4{top:180px;right:223px}.guide-popup{display:none}

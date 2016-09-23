@@ -55,7 +55,16 @@ return [
 				],
 			],
 		],
-
+		
+		'memcache' => [
+			'driver'  => 'memcache',
+			'servers' => [
+				[
+					'host' => '127.0.0.1', 'port' => 11211, 'weight' => 100
+				],
+			],
+		],
+		
 		'redis' => [
 			'driver' => 'redis',
 			'connection' => 'default',

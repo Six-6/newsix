@@ -57,6 +57,10 @@ class Siterecommend extends Model{
 			{
 				$new_id[]=$key;
 			}
+			else
+			{
+				$data['authority'] = "";
+			}
 		}
 		
 		//查询对应的id 发表的评论
