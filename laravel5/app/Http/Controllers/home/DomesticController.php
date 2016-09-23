@@ -10,9 +10,6 @@ header('content-type:text/html;charset=utf-8');
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 use App\Domestic;
-use App\Integral;
-use Session, DB, Input, Redirect;
-
 class DomesticController extends BaseController
 {
     /**
@@ -26,13 +23,14 @@ class DomesticController extends BaseController
 
         //调用model层
 
-        $model = new Domestic();
 
+		$model = new Domestic();
+        $Model = new Recursion();
         $regionArr = $model->regionSelect(1);
-
         $scenicArr = $model->scenicSelect($regionArr);
+        $domestic = $Model->domestic();
+        return view('home/domestic/domestic_list',['arr'=>$regionArr,'scenicArrs'=>$scenicArr,'domestic'=>$domestic]);
 
-        return view('home/domestic/domestic_list', ['arr' => $regionArr, 'scenicArrs' => $scenicArr]);
     }
 
     /**

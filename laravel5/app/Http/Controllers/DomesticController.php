@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 use DB,Input,Session;
 
 use Illuminate\Http\Request;
-
+use App\Recursion;
 
 class DomesticController extends Controller {
 
@@ -30,7 +30,7 @@ class DomesticController extends Controller {
 
 	public function index()
 	{
-        return view('home.domestic');
+		return view('home.domestic');
 	}
 }
 
