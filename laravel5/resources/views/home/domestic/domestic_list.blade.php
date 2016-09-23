@@ -125,23 +125,16 @@ window.onerror=function(){return true;}
 </div>
 <div class="dh">
     <div class="conter">
-      <div class="a1"><a href="http://www.byts.com.cn/china/#">所有目的地分类</a></div>
+      <div class="a1"><a href="">所有目的地分类</a></div>
       <div class="a2">
-            <a href="http://www.byts.com.cn/index.html">首页</a>
-            <a href="http://www.byts.com.cn/out/">出境游</a>
-            <a href="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/国内旅游 北京青旅_北青旅总社官网北京旅行社.htm">国内游</a>
-            <a href="http://www.byts.com.cn/beijing/">北京游</a>
-            <a href="http://www.byts.com.cn/zhoubian/">周边游</a>
-            <a href="http://www.byts.com.cn/youlun/">邮轮游</a>
+            <a href="{{URL('/')}}">首页</a>
+            <a href="{{URL('home/beijing')}}">本地游</a>
+            <a href="{{URL('home/domestic')}}">国内游</a>
+            <a href="{{URL('home/exit')}}">出境游</a>
             <a href="{{URL('home/siterecommend')}}">风向标</a>
-            <a href="http://www.byts.com.cn/jipiao/">机票</a> 
+            <a href="{{URL('home/note')}}">游记</a>
+            <a href="{{URL('home/funWrite')}}">志同道合</a>
         </div>
-      <div class="a3"><div style="position: absolute; left: 24px; top: 1px;"><img src="../home/user/HOT.png"></div>
-       <a href="http://www.byts.com.cn/add/tejia.php">特价</a>
-        <a href="http://www.byts.com.cn/visa/">签证</a>   
-        <a href="http://www.byts.com.cn/zuche/bj/">租车</a>
-        <a href="http://www.byts.com.cn/add/dingzhi.php">定制</a> 
-      </div>
         <div class="clear"></div>
         
   </div>
@@ -150,7 +143,7 @@ window.onerror=function(){return true;}
 
 
 <div class="search_nav">
-    <p class="crumbs"><a href="http://www.byts.com.cn/">网站首页   &gt; </a><a href="http://www.byts.com.cn/line">旅游线路  &gt; </a><a href="http://www.byts.com.cn/china">国内旅游  &gt; </a> </p>
+    <p class="crumbs"><a href="{{URL('/')}}">网站首页   &gt; </a><a href="{{URL('home/domestic')}}}">国内旅游  &gt; </a> </p>
     
     
     
@@ -175,11 +168,11 @@ window.onerror=function(){return true;}
             
     <dt>
         @foreach ($arr as $val)
-        <a class="sub_h f_4e9700 fb" href="http://www.byts.com.cn/line/hainan001">{{ $val->r_region }}</a></dt>
+        <a class="sub_h f_4e9700 fb" href="javascript:void(0)"  id="{{ $val->r_id }}">{{ $val->r_region }}</a></dt>
                 <dd>
                 @foreach($val->child as $va)
                     <span>
-                        <a href="http://www.byts.com.cn/line/haikouwangfan002" target="_blank" title="海口往返">{{ $va->r_region }}</a>
+                        <a href="javascript:void(0)" target="_blank" id="{{ $val->r_id }}" title="{{ $va->r_region }}">{{ $va->r_region }}</a>
                     </span>  
                 @endforeach
                 </dd>
@@ -286,48 +279,28 @@ window.onerror=function(){return true;}
       <!--start top_tour-->
       <div class="top_tour mb_20 clearfix">
                 <div class="top_pro">
-
-       
-                        <ul class="clearfix">
-                        
-                        <li class="t_item">
-                  <div class="t_wrap">
-                    <span class="cu_icon">强烈推荐</span>
-                    <a href="http://www.byts.com.cn/line/sanyaziyouren002/4556.htm" target="_blank"><img src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/1433222734.jpg" width="178" height="134" alt="2016年4-5月三亚自由行计划"></a>
-                  </div>
-                  <p class="t_title"><a class="f_4e9700" href="http://www.byts.com.cn/line/sanyaziyouren002/4556.htm" target="_blank"><span class="f_0053aa">&lt;机票の酒店&gt;</span>2016年4-5月三亚自由行计划</a></p>
-                  <div class="t_price">
-                    <span class="fl"><em class="f18">2950</em>元起</span>
-                    <div class="tour_sale pt_8"><span class="dm"><em></em></span><span class="dj"><em></em></span></div>
-                  </div>
-                </li>
-<li class="t_item">
-                  <div class="t_wrap">
-                    <span class="cu_icon">强烈推荐</span>
-                    <a href="http://www.byts.com.cn/line/xiyanghong002/4210.htm" target="_blank"><img src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/1409375238_6251.jpg" width="178" height="134" alt="桂林漓江阳朔、大榕树月亮山、刘三姐大观园、"></a>
-                  </div>
-                  <p class="t_title"><a class="f_4e9700" href="http://www.byts.com.cn/line/xiyanghong002/4210.htm" target="_blank"><span class="f_0053aa">&lt;夕阳红&gt;</span>桂林漓江阳朔、大榕树月亮山、刘三姐大观园、</a></p>
-                  <div class="t_price">
-                    <span class="fl"><em class="f18">2680</em>元起</span>
-                    <div class="tour_sale pt_8"><span class="dm"><em></em></span><span class="dj"><em></em></span></div>
-                  </div>
-                </li>
-<li class="t_item">
-                  <div class="t_wrap">
-                    <span class="cu_icon">强烈推荐</span>
-                    <a href="http://www.byts.com.cn/line/libodaxiaoqikong002/2755.htm" target="_blank"><img src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/1-140404100416221.jpg" width="178" height="134" alt="【挂3星】黄果树大瀑布、西江千户苗寨、荔波大"></a>
-                  </div>
-                  <p class="t_title"><a class="f_4e9700" href="http://www.byts.com.cn/line/libodaxiaoqikong002/2755.htm" target="_blank"><span class="f_0053aa">&lt;荔波大小七孔&gt;</span>【挂3星】黄果树大瀑布、西江千户苗寨、荔波大</a></p>
-                  <div class="t_price">
-                    <span class="fl"><em class="f18">3150</em>元起</span>
-                    <div class="tour_sale pt_8"><span class="dm"><em></em></span><span class="dj"><em></em></span></div>
-                  </div>
-                </li>
-
-                
-                
-                                </ul>
-                  </div>        <!--start nr_special-->
+                  <ul class="clearfix">
+                    @foreach($domestic as $k=>$v)
+                    <li class="t_item">
+                      <div class="t_wrap">
+                        <span class="cu_icon">强烈推荐</span>
+                        <a href="{{URL('home/scenicDetails')}}?sid={{ $v->s_id }}" target="_blank">
+                          <img src="../home/images/{{ $v->s_img }}" width="178" height="134" alt="{{ $v->s_name }}">
+                        </a>
+                      </div>
+                      <p class="t_title">
+                        <a class="f_4e9700" href="{{URL('home/scenicDetails')}}?sid={{ $v->s_id }}" target="_blank">
+                          <span class="f_0053aa"></span>{{ $v->s_name }}
+                        </a>
+                      </p>
+                      <div class="t_price">
+                        <span class="fl"><em class="f18">{{ $v->s_sprice }}</em>元起</span>
+                        <div class="tour_sale pt_8"><span class="dm"><em></em></span><span class="dj"><em></em></span></div>
+                      </div>
+                    </li>
+                    @endforeach
+                  </ul>
+                </div>        <!--start nr_special-->
         <div class="nr_special">
           <div class="satisf">
             <dl>

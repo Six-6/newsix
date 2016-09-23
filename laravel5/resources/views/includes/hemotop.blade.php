@@ -46,6 +46,8 @@ $u_id=Session::get("u_id");
     cursor: hand;/* 鼠标移上去时，变成手形。 */
     color:black
   }
+  .aaa{border:1px solid #FE6840;width: 240px}
+  .bbb{border:1px solid #FE6840;background: #F85F0C;width: 50px}
 </style>
 <div class="top2">
 	<div class="conter">
@@ -53,9 +55,9 @@ $u_id=Session::get("u_id");
     <div class="sourchNew" style="float:right"> 
       <form method="POST" action="{{URL('home/searchs')}}">
         <div class="select_text" style="background-color:greep;">
-        <input placeholder="请输入关键字！" name="sous" style="height:35px;background-color:White;" type="text">
+        <input class="aaa" placeholder="请输入关键字！" name="sous" style="height:35px;background-color:White;" type="text">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-        <input type="submit" style="height:35px;background-color:greep;" value="查询">
+        <input type="submit" class="bbb" style="height:35px;background-color:greep;" value="查询">
         </div>
         </form>
   </div>
