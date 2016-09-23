@@ -193,6 +193,7 @@ window.onerror=function(){return true;}
             <a href="{{URL('home/exit')}}">出境游</a>
             <a href="{{URL('home/siterecommend')}}">风向标</a>
             <a href="{{URL('home/note')}}">游记</a>
+            <a href="{{URL('home/funWrite')}}">志同道合</a>
         </div>
         <div class="clear"></div>
         
@@ -356,13 +357,13 @@ window.onerror=function(){return true;}
         @foreach($souarr as $souz)
           <div class="Ny_search_showcon_middlist">
               <div class="Ny_search_showcon_midd_fl">
-                <a href="http://www.byts.com.cn/travel/12030.html" target="_blank">
+                <a href="" target="_blank">
                   <img src="../home/images/{{$souz['s_img']}}" height="100px" width="125px" alt="景点图">
                 </a>
               </div> 
             <div class="Ny_search_showcon_midd_fr">
                 <dl>
-                    <dt><a href="http://www.byts.com.cn/line/nanbeidaihe0002/1136.htm" target="_blank">{{$souz['s_name']}}</a></dt>
+                    <dt><a href="{{URL('home/scenicDetails')}}?sid={{ $souz['s_id'] }}" target="_blank">{{$souz['s_name']}}</a></dt>
                     <dd>{{$souz['s_characteristic']}}</dd>
                     <dd><span>优惠价：<span class="cs_color">￥{{$souz['s_sprice']}}元</span></span><span style="margin-left:20px;">旅游方式：<span class="cs_color">{{$souz['s_traffic']}}</span></span></dd>
                 </dl>
@@ -372,14 +373,14 @@ window.onerror=function(){return true;}
         @endforeach
 
      </div>
-     <div class="Ny_search_showcon_bottom"><div id="ctl00_content_AspNetPager">
-<span class="pageinfo">共2页/17条</span>
-   <a class="thisclass">1</a>
-<a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">2</a>
- <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">下一页</a>
- <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">末页</a>
- 
-</div>
+     <div class="Ny_search_showcon_bottom"><!-- <div id="ctl00_content_AspNetPager">
+     <span class="pageinfo">共2页/17条</span>
+        <a class="thisclass">1</a>
+     <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">2</a>
+      <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">下一页</a>
+      <a href="http://www.byts.com.cn/tags.php?tag=%E5%8C%97%E6%88%B4%E6%B2%B3&amp;PageNo=2">末页</a>
+      
+     </div> -->
 
 </div>
      </div>
@@ -421,7 +422,7 @@ window.onerror=function(){return true;}
     </div>
     
 <div class="foot-webtrust">
-    <a href="http://www.byts.com.cn/news/lvyouxinwen/2183.htm" rel="nofollow" target="_blank" title="国家4A级旅行社" class="trust1"></a>
+    <a href="" rel="nofollow" target="_blank" title="国家4A级旅行社" class="trust1"></a>
     <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202005060700533" rel="nofollow" target="_blank" title="经营性ICP备案" class="trust2"></a>
     <a href="https://ss.knet.cn/verifyseal.dll?sn=e14022111010546749hh13000000&amp;comefrom=trust&amp;trustKey=dn&amp;trustValue=www.byts.com.cn" target="_blank" rel="nofollow" title="可信网站认证" class="trust3"></a>
     <a href="http://si.trustutn.org/info?sn=354140414002398002760" target="_blank" rel="nofollow" title="认证联盟实名认证" class="trust4"></a>
@@ -439,7 +440,7 @@ window.onerror=function(){return true;}
 
 
         <div class="foot-aboutlink">
-            <span><a href="http://www.byts.com.cn/">网站首页</a></span>
+            <span><a href="{{URL('/')}}">网站首页</a></span>
             
              <span><a target="_blank" href="">关于网上有许多自称北青旅官网的说明</a></span>
               <span><a target="_blank" href="">商务合作</a></span>
