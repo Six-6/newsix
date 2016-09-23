@@ -183,6 +183,8 @@ window.onerror=function(){return true;}
             <a href="{{URL('home/beijing')}}">本地游</a>
             <a href="{{URL('home/domestic')}}">国内游</a>
             <a href="{{URL('home/exit')}}">出境游</a>
+            <a href="{{URL('home/siterecommend')}}">风向标</a>
+            <a href="{{URL('home/note')}}">游记</a>
         </div>
         <div class="clear"></div>
         
