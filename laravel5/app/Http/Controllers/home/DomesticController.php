@@ -11,6 +11,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 use App\Domestic;
 use Session,DB,Input,Redirect;
+use App\Recursion;
 
 class DomesticController extends BaseController{
 	/**
@@ -24,12 +25,16 @@ class DomesticController extends BaseController{
     	//调用model层
 
 		$model = new Domestic();
+        $Model = new Recursion();
+
 
     	$regionArr=$model->regionSelect(1);
 
         $scenicArr=$model->scenicSelect($regionArr);
 
-        return view('home/domestic/domestic_list',['arr'=>$regionArr,'scenicArrs'=>$scenicArr]);
+        $domestic = $Model->domestic();
+
+        return view('home/domestic/domestic_list',['arr'=>$regionArr,'scenicArrs'=>$scenicArr,'domestic'=>$domestic]);
     }
     /**
     * @景点对比

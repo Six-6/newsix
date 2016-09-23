@@ -346,7 +346,7 @@ window.onerror=function(){return true;}
               </div> 
             <div class="Ny_search_showcon_midd_fr">
                 <dl>
-                    <dt><a href="{{URL('home/scenicDetails')}}?sid={{ $souz['s_id'] }}" target="_blank">{{$souz->s_name}}</a></dt>
+                    <dt><a href="{{URL('home/scenicDetails')}}?sid={{ $souz->s_id }}" target="_blank">{{$souz->s_name}}</a></dt>
                     <dd>{{$souz->s_characteristic}}</dd>
                     <dd><span>优惠价：<span class="cs_color">￥{{$souz->s_sprice}}元</span></span><span style="margin-left:20px;">旅游方式：<span class="cs_color">{{$souz->s_traffic}}</span></span></dd>
                 </dl>

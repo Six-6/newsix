@@ -303,6 +303,15 @@ class Recursion extends Model{
         return $content;
     }
 
+    function domestic(){
+        $data = DB::table('scenic_spot')
+            ->orderBy('s_sign_number','desc')
+            ->limit(3)
+            ->get();
+            
+        return $data;
+    }
+
 }
 
 
