@@ -1,10 +1,11 @@
 @include("home/common/left")
 <div id="main">
     <h2 class="common_h2">我的积分</h2>
+    @foreach($integral as $v)
     <div class="common-w2">
         <table cellpadding="0" cellspacing="0" border="0">
             <tr>
-                <td><strong>积分总余额：</strong><strong class="cdyellow"><span class="f18">0</span> </strong></td>
+                <td><strong>积分总余额：</strong><strong class="cdyellow"><span class="f18">{{$v['i_num']}}</span> </strong></td>
             </tr>
         </table>
     </div>
@@ -23,7 +24,7 @@
                     <th align="center" width="220">使用时间</th>
                     <th align="center" width="240">兑换方式</th>
                 </tr>
-                @foreach($integral as $v)
+
                 <tr>
                     <td>{{$v['i_id']}}</td>
                     <td>{{$v['i_num']}}</td>
@@ -31,9 +32,10 @@
                     <td>{{$v['start_time']}}</td>
                     <td><a href="exchangeShow?id={{$v['i_id']}}">兑换</a></td>
                 </tr>
-                @endforeach
+
             </table>
         </div>
     </div>
+    @endforeach
 </div>
 

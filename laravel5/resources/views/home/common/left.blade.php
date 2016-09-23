@@ -108,8 +108,6 @@
                 <li class="" id="nav_left_1">
                     <dl class="user-sub-nav cf">
                         <dd><a href="ordersAdd">线路订单</a></dd>
-                        <dd><a href="hotelAdd">酒店订单</a></dd>
-                        <dd><a href="">门票订单</a></dd>
                     </dl>
                     <a href="orderAdd" class="mlink">我的订单</a>
                 </li>

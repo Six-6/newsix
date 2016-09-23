@@ -44,7 +44,6 @@ Route::post('home/personVer',"home\UserController@ver");//个人信息验证
 Route::any('home/imageAdd',"home\UserController@image");//头像上传
 Route::post('home/pswUpd',"home\UserController@ate");//密码修改
 Route::get('home/ordersAdd',"home\OrderController@line");//线路订单
-Route::get('home/hotelAdd',"home\OrderController@hotel");//酒店订单显示
 Route::get('home/integralAdd',"home\OrderController@integral");//积分显示
 Route::get('home/viewAdd',"home\OrderController@view");//我的评论
 Route::get('home/common',"home\OrderController@show");/**主页面显示**/

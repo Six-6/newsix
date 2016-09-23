@@ -30,22 +30,18 @@ class OrderController extends BaseController{
 	}
     /**路线订单查看**/
     public function line(Request $request){
-        $order=Order::selAll();
-        //print_r($order);die;
+        $u_id=Session::get("u_id");
+        $order=Order::selAll($u_id);
+       // print_r($order);die;
         return view("home.order.line",["order"=>$order]);
-    }
-    /**
-     * 酒店订单查看
-     */
-    public function hotel(){
-        $hotel=Hotel::selAll();
-        return view("home.order.hotel",["hotel"=>$hotel]);
     }
     /**
      * 积分页面显示
      */
     public function integral(){
-        $integral=Integral::selAll();
+        $u_id=Session::get("u_id");
+        $integral=Integral::selAll($u_id);
+        //print_r($integral);die;
         return view("home.order.integral",["integral"=>$integral]);
     }
     /**
