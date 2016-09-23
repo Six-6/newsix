@@ -12,8 +12,8 @@ class Integral extends Model {
     /**
      * @积分查询
      */
-    public static function selAll(){
-        $re=self::get();
+    public static function selAll($u_id){
+        $re=self::where(["u_id"=>$u_id])->get();
         return $re;
     }
     /**
@@ -35,5 +35,28 @@ class Integral extends Model {
         $re=self::where(["i_id"=>$i_id])->lists("i_num");
         return $re;
     }
+    /**
+     * 添加用户积分
+     */
 
+    public static function adds($re){
+        $res=self::insert($re);
+        return $res;
+    }
+
+    /**
+     * 查询用户积分
+     */
+    public static function sel($u_id){
+        $row=self::where('u_id',$u_id)->lists('i_num');
+        return $row;
+    }
+
+    /**
+     * 查询用户积分
+     */
+    public static function upds($re,$u_id){
+        $row=self::where('u_id',$u_id)->update($re);
+        return $row;
+    }
 }

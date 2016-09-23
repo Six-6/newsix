@@ -1,3 +1,6 @@
+<?php
+$u_id=Session::get("u_id");
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <!-- base href="http://www.lvy8.net/" --><link rel="stylesheet" type="text/css" href="./fun/style_4_common.css"><link rel="stylesheet" type="text/css" href="./fun/style_4_forum_post.css"><script type="text/javascript">var STYLEID = '4', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'SHh', charset = 'gbk', discuz_uid = '1908', cookiepre = 'TNDS_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|威望|,2|金钱|,3|贡献|', defaultstyle = '', REPORTURL = 'aHR0cDovL3d3dy5sdnk4Lm5ldC9mb3J1bS5waHA/bW9kPXBvc3QmYWN0aW9uPW5ld3RocmVhZCZmaWQ9NDc=', SITEURL = 'http://www.lvy8.net/', JSPATH = 'data/cache/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
     <script src="./fun/common.js" type="text/javascript"></script>
@@ -63,11 +66,12 @@
     <script src="./fun/forum_post.js" type="text/javascript"></script>
     <div id="pt" class="bm cl">
         <div class="z"><a href="http://www.lvy8.net/" class="nvhm" title="首页"></a>
-            <em>&#8250;</em> <a href="http://www.lvy8.net/forum-47-1.html">活动召集</a>
+            <em>&#8250;</em> <a href="funReplay">活动召集</a>
             <em>&#8250;</em>发起活动
         </div>
     </div>
     <form method="post" action="funAdd" onsubmit="return validate(this)" enctype="multipart/form-data">
+        <input type="hidden" name="u_id" value="{{$u_id}}"/>
         <div id="ct" class="ct2_a ct2_a_r wp cl">
             <div class="bm bw0 cl">
                 <ul class="tb cl mbw">

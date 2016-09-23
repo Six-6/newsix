@@ -199,7 +199,9 @@ window.onerror=function(){return true;}
                         <center>
                             @if($phone)
                              <b style="color:#F60">
-                           您的会员账户：{{$phone}}<br>您的会员密码：{{$pwd}}<br><a href="http://www.byts.com.cn/users">请牢记，您可以点此登录进入用户中心</a>                        </b>
+                           您的会员账户：{{$phone}}<br>您的会员密码：{{$pwd}}<br><a href="blo">请牢记，您可以点此登录进入用户中心</a>                        </b>
+                            @else
+                                <span></span>
                             @endif
                        
                     </center>

@@ -84,6 +84,7 @@ class FunController extends BaseController
     public function adds(Request $request)
     {
         $re = $request->input();
+       // print_r($re);die;
         unset($re['_token']);
         $file = $request->file("f_img");
         $clientName = $file->getClientOriginalName();//获得文件名字
