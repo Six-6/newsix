@@ -1,0 +1,18 @@
+;(function(){var render=template.compile($('#T_QAList').html());var renderNoneList=template.compile($('#T_QANoneList').html());function Qalist(){this.init();}
+$.extend(Qalist.prototype,{init:function(){var self=this;var hotList=$('.J-QAList');var loadList=$('.J-Loading');var loadMore=$('.J-LoadMore');var qaTab=$('.J-QaTab');var stautsOne=$('.J-QAStautsOne');var stautsTwo=$('.J-QAStautsTwo');var page_uid=$('.page_uid').val();var sendData={type:'ask',myId:'',page:0,solve:2,page_uid:page_uid}
+var getPoi=self.getPoid();if(getPoi['myId']){sendData.myId=getPoi['myId'];}
+self.hotList=hotList;self.loadList=loadList;self.loadMore=loadMore;self.getIndexList(sendData);qaTab.find('a').click(function(){if($(this).hasClass('qa-tab')){hotList.find('.J-MoudleList').remove();loadMore.hide();loadList.show();qaTab.find('a').removeClass('tab-select');$(this).addClass('tab-select');qaTab.find('.qa-secant').show();$(this).prev('a.qa-secant').hide();$(this).next('a.qa-secant').hide();if(stautsOne.hasClass('status-true')){stautsOne.removeClass('status-true');}
+if(stautsTwo.hasClass('status-false')){stautsTwo.removeClass('status-false');}
+sendData={type:$(this).attr('data-code'),myId:getPoi['myId'],page:0,solve:2,page_uid:page_uid}
+self.getIndexList(sendData);}});stautsOne.on('click',function(){var tab=loadMore.attr('data-code');var page_uid=$('.page_uid').val();var $this=$(this);var sendData={type:tab,myId:getPoi['myId'],page:0,solve:1,page_uid:page_uid}
+if(!$this.hasClass('status-true')){$this.addClass('status-true');hotList.find('.J-MoudleList').remove();loadMore.hide();loadList.show();if(stautsTwo.hasClass('status-false')){stautsTwo.removeClass('status-false');}
+self.getIndexList(sendData);}});stautsTwo.on('click',function(){var tab=loadMore.attr('data-code');var page_uid=$('.page_uid').val();var $this=$(this);var sendData={type:tab,myId:getPoi['myId'],page:0,solve:0,page_uid:page_uid}
+if(!$this.hasClass('status-false')){$this.addClass('status-false');hotList.find('.J-MoudleList').remove();loadMore.hide();loadList.show();if(stautsOne.hasClass('status-true')){stautsOne.removeClass('status-true');}
+self.getIndexList(sendData);}});loadMore.on('click',function(){var _this=$(this);if(!_this.hasClass('J_Able'))return;var tab=$(this).attr('data-code');var page_uid=$('.page_uid').val();var solve=2;if(stautsOne.hasClass('status-true')){solve=1;}
+if(stautsTwo.hasClass('status-false')){solve=0;}
+var sendData={type:tab,myId:getPoi['myId'],page:hotList.attr('data-page'),solve:solve,page_uid:page_uid}
+loadMore.hide();loadList.show();self.getIndexList(sendData);})},getPoid:function(){var url=location.search;var theRequest=new Object();if(url.indexOf("?")!=-1){var str=url.substr(1);var strs=str.split("&");for(var i=0;i<strs.length;i++){theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);}}
+return theRequest;},getIndexList:function(sendData){var self=this;var hotList=self.hotList;var loadList=self.loadList;var loadMore=self.loadMore;communication.ucenterXList(sendData,function(data){if(data.list&&data.list.length>0){loadList.hide();hotList.find('.J-NoList').remove();hotList.attr('data-page',data.page)
+if(data.lastNum>0){loadMore.show().attr('data-code',data.type).html('点击加载更多~').removeClass('qa-icon').addClass('J_Able');}else{loadMore.show().html('没有更多了~').removeClass('qa-icon').removeClass('J_Able');}
+$.each(data.list,function(item){var ele=$(render(data.list[item]));hotList.append(ele);});}else{var ele=$(renderNoneList(data));hotList.find('.J-NoList').remove();hotList.append(ele);loadList.hide();loadMore.hide();}});}})
+window.Qalist=Qalist;})()
