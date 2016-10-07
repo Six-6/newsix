@@ -10,7 +10,7 @@
   <span id="_Check_head_Login">
         <span><a href="{{URL('home/personAdd')}}" target="_blank">{{Session::get('name')}}</a></span>
     <span>|</span>
-    <span><a href="{{URL('home/userhome')}}" target="_blank" id="{{Session::get('u_id')}}">用户中心</a></span>
+    <span><a href="{{URL('home/uhome')}}" target="_blank" id="{{Session::get('u_id')}}">用户中心</a></span>
     <span>|</span>
     <span><a href="{{URL('home/personDel')}}" target="_blank" >退出</a></span>
     @endif

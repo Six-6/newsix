@@ -120,6 +120,7 @@ window.onerror=function(){return true;}
 
  
 <body>
+
 <div id="MyMoveAd" style="height: 0px; width: 1366px; margin: 0px auto; overflow: hidden; display: none;">
         <img src="home/homepage/new.jpg">
     </div>
@@ -508,6 +509,7 @@ function setxlTab(name,cursel,n,cbs,cbsnums){
         
         
         <script type="text/javascript">
+			
 		    $(document).ready(function () {
 		        $('img[data-original]').lazyload({ threshold: 100 });
 		        

@@ -22,9 +22,9 @@ $u_id=Session::get("u_id");
             <div class="conter"><span>欢迎光临 <a href="#">惠玩旅行社官网</a></span>　
   <span id="_Check_head_Login">
 
-        <span><a href="{{URL('home/userhome')}}" >{{$name}}</a></span>
+        <span><a href="{{URL('uhome')}}" >{{$name}}</a></span>
     <span>|</span>
-    <span><a href="{{URL('home/userhome')}}" target="_blank" id="{{Session::get('u_id')}}">用户中心</a></span>
+    <span><a href="{{URL('uhome')}}" target="_blank" id="{{Session::get('u_id')}}">用户中心</a></span>
     <span>|</span>
 
     <span><a href="{{URL('home/personDel')}}" >退出</a></span>

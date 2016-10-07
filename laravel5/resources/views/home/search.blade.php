@@ -207,7 +207,7 @@ window.onerror=function(){return true;}
     <dd><a href="javascript:void(0)" onclick="smailClass({{$child['r_id']}})">{{$child['r_region']}}</a></dd>
     @endforeach
   </dl>
-  @endforeach
+  @endforeach    
   <div class="clear"></div>  
 </div>
 
@@ -256,7 +256,13 @@ window.onerror=function(){return true;}
               <dd>
                 <ul class="content0">
                   <li class="starts" value="0"><a href="javascript:void(0)" onclick="ListUrl(this.id);return false;" id="id_0">不限</a></li>
-                  <li class="starts"value="5"><a href="javascript:void(0)" onclick="ListUrl(this.id);return false;" id="id_1000">北京</a></li>    
+				  @foreach($pushDown as $k=>$push)
+					@foreach($push['child'] as $v=>$child)
+					<li class="starts"value="5">
+						<a href="javascript:void(0)" onclick="" id="{{$child['r_id']}}">{{$child['r_region']}}</a>
+					</li>
+					@endforeach
+				  @endforeach    
                  </ul>
               </dd>
             </dl>
@@ -267,7 +273,7 @@ window.onerror=function(){return true;}
               <dt>目的地：</dt>
               <dd>
                 <ul class="content2">                 
-                  <li class="destination" value="0"><a href="javascript:void(0)" id="day_00" onclick="days(0)">不限</a> </li>
+                  <li class="destination" value="0"><a href="javascript:void(0)" id="day_00" onclick="splic(0)">不限</a> </li>
                   @foreach($splic as $splic)
                   <li class="destination" value="{{$splic['r_id']}}"><a href="javascript:void(0)" id="splic{{$splic['r_id']}}" onclick="splic({{$splic['r_id']}})">{{$splic['r_region']}}</a> </li>
                   @endforeach
@@ -275,10 +281,7 @@ window.onerror=function(){return true;}
               </dd>
             </dl>
           </div>
-
-
-   
-                           
+		  
           <div class="prop_item">
             <dl>
               <dt>行程天数：</dt>
@@ -300,18 +303,18 @@ window.onerror=function(){return true;}
             </dl>
           </div>
                    
-                      <div class="prop_item">
+          <div class="prop_item">
             <dl>
-              <dt>出现预算：</dt>
+              <dt>出行预算：</dt>
               <dd>
                 <ul class="content3"> 
-                  <li class="capital" value="0"><a href="javascript:void(0)" id="p1_0_p2_0" onclick="sous2">不限</a></li>
-                  <li class="capital" value="13100"><a href="javascript:void(0)" id="p1_1_p2_100" onclick="sous2([0,100])">¥100以下</a></li>
-                  <li class="capital" value="1013200"><a href="javascript:void(0)" id="p1_101_p2_200" onclick="sous2([101,200])">¥101-200</a></li>
-                  <li class="capital" value="2013500"><a href="javascript:void(0)" id="p1_201_p2_500" onclick="sous2([201,500])">¥201-500</a></li>
-                  <li class="capital" value="50131000"><a href="javascript:void(0)" id="p1_501_p2_1000" onclick="sous2([501,1000])">¥501-1000</a></li>
-                  <li class="capital" value="100132000"> <a href="javascript:void(0)" id="p1_1001_p2_2000" onclick="sous2([1001,2000])">¥1001-2000</a></li>
-                  <li class="capital" value="2001399999999"> <a href="javascript:void(0)" id="p1_2001_p2_20000" onclick="sous2([2001,9999999999])">¥2000以上</a></li>
+                  <li class="capital" value="0"><a href="javascript:void(0)" id="p1_0_p2_0" onclick="sous2(0)">不限</a></li>
+                  <li class="capital" value="13100"><a href="javascript:void(0)" id="p1_1_p2_100" onclick="sous2(13100)">¥100以下</a></li>
+                  <li class="capital" value="1013200"><a href="javascript:void(0)" id="p1_101_p2_200" onclick="sous2(1013200)">¥101-200</a></li>
+                  <li class="capital" value="2013500"><a href="javascript:void(0)" id="p1_201_p2_500" onclick="sous2(2013500)">¥201-500</a></li>
+                  <li class="capital" value="50131000"><a href="javascript:void(0)" id="p1_501_p2_1000" onclick="sous2(50131000)">¥501-1000</a></li>
+                  <li class="capital" value="100132000"> <a href="javascript:void(0)" id="p1_1001_p2_2000" onclick="sous2(100132000)">¥1001-2000</a></li>
+                  <li class="capital" value="2001399999999"> <a href="javascript:void(0)" id="p1_2001_p2_20000" onclick="sous2(2001399999999)">¥2000以上</a></li>
                 </ul>
               </dd>
             </dl>
@@ -461,10 +464,10 @@ window.onerror=function(){return true;}
 <iframe style="display: none; position: absolute; z-index: 2147483646 ! important;" src="../aaa/a.htm" allowtransparency="true" scrolling="no" frameborder="0" height="277" width="121"></iframe><script charset="utf-8" type="text/javascript" src="../aaa/wpa.php"></script>
 <!-- WPA Button End -->
 <style>
-  .destinationCss{background: #43A313;font-color: #FFFFFF;color: #FFFFFF}
-  .numberCss{background: #43A313;font-color: #FFFFFF;color: #FFFFFF}
-  .capitalCss{background: #43A313;font-color: #FFFFFF;color: #FFFFFF}
-  .startCss{background: #43A313;font-color: #FFFFFF;color: #FFFFFF}
+  .destinationCss{background: #F0F0AB;font-color: #FFFFFF;color: #FFFFFF}
+  .numberCss{background: #F0F0AB;font-color: #FFFFFF;color: #FFFFFF}
+  .capitalCss{background: #F0F0AB;font-color: #FFFFFF;color: #FFFFFF}
+  .startCss{background: #F0F0AB	;font-color: #FFFFFF;color: #FFFFFF}
 </style>
 <script language="JavaScript" src="../aaa/floatcard.js"></script><script src="../aaa/all_20100501.js"></script><script id="TQGetrequestUser_JS"></script>
 <script id="TQGetIsNewMsg_JS"></script><script src="../aaa/as.js"></script><object id="tq_as" name="tq_as" style="position:absolute;left:0px;top:-5px;" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" height="1" width="1"><param name="movie" value="http://sysimages.tq.cn/js/vip/shareObject.swf"><param name="allowScriptAccess" value="always"><object id="tq_as2" name="tq_as2" style="position:absolute;left:0px;top:-5px;" type="application/x-shockwave-flash" data="../aaa/shareObject.swf" height="1" width="1"><param name="allowScriptAccess" value="always"></object></object>
@@ -479,7 +482,7 @@ window.onerror=function(){return true;}
   function days(dayid){
      var capital = $(".capitalCss").val();//资金按照 3 截取（0全部）
      var destination = $(".destinationCss").val();//目的地(o全部)
-     var number = $(".numberCss").val();//旅游天数（0全部）
+     //var number = $(".numberCss").val();//旅游天数（0全部）
      var start = $(".startCss").val();//出发地（0全部）
      var sr='';
      $.get('sous',{"ss":ss,"dayid":dayid,"capital":capital,"destination":destination,"start":start},function(msg){
@@ -493,7 +496,7 @@ window.onerror=function(){return true;}
           sr+="</div>" 
           sr+="<div class='Ny_search_showcon_midd_fr'>"
           sr+="<dl>"
-          sr+="<dt><a href='#' target='_blank'>"+msg[s]['s_name']+"</a></dt>"
+          sr+="<dt><a href='{{URL("home/scenicDetails")}}?sid="+msg[s]['s_id']+"' target='_blank'>"+msg[s]['s_name']+"</a></dt>"
           sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
           sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[s]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[s]['s_traffic']+"</span></span></dd>"
           sr+="</dl>"
@@ -503,7 +506,6 @@ window.onerror=function(){return true;}
         }
         sr+="</div>"
         $("#replaces").html(sr)
-        //alert(msg);
       },'json')
   }
 
@@ -513,29 +515,31 @@ window.onerror=function(){return true;}
    * @return {[type]}       [description]
    */
   function sous2(price){
-    var capital = $(".capitalCss").val();//资金按照 3 截取（0全部）
+    //var capital = $(".capitalCss").val();//资金按照 3 截取（0全部）
     var destination = $(".destinationCss").val();//目的地(o全部)
     var number = $(".numberCss").val();//旅游天数（0全部）
     var start = $(".startCss").val();//出发地（0全部）
     var sr='';
-    $.get('moneys',{"ss":ss,"dayid":number,"capital":capital,"destination":destination,"start":start},function(msg){
-        for(var f=0;f<msg.length;f++){
+    $.get('moneys',{"ss":ss,"dayid":number,"capital":price,"destination":destination,"start":start},function(msg){
+        sr+="<div class='Ny_search_showcon_midd'>"
+        for(var s=0;s<msg.length;s++){
           sr+="<div class='Ny_search_showcon_middlist'>"
           sr+="<div class='Ny_search_showcon_midd_fl'>"
           sr+="<a href='#'>"
-          sr+="<img src='../home/images/"+msg[f]['s_img']+"' height='100px' width='125px'>"
+          sr+="<img src='../home/images/"+msg[s]['s_img']+"' height='100px' width='125px'>"
           sr+="</a>"
           sr+="</div>" 
           sr+="<div class='Ny_search_showcon_midd_fr'>"
           sr+="<dl>"
-          sr+="<dt><a href='#' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
+          sr+="<dt><a href='{{URL("home/scenicDetails")}}?sid="+msg[s]['s_id']+"' target='_blank'>"+msg[s]['s_name']+"</a></dt>"
           sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
-          sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[f]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[f]['s_traffic']+"</span></span></dd>"
+          sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[s]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[s]['s_traffic']+"</span></span></dd>"
           sr+="</dl>"
           sr+="</div>" 
           sr+="<div class='clear'></div>"
           sr+="</div>"
         }
+        sr+="</div>"
         $("#replaces").html(sr)
       },'json')
   }
@@ -546,8 +550,12 @@ window.onerror=function(){return true;}
    * @return {[type]}     [description]
    */
   function splic(rid){
+    var capital = $(".capitalCss").val();//资金按照 3 截取（0全部）
+    //var destination = $(".destinationCss").val();//目的地(o全部)
+    var number = $(".numberCss").val();//旅游天数（0全部）
+    var start = $(".startCss").val();//出发地（0全部）
     var sr='';
-    $.get('destination',{"ss":ss,"rid":rid},function(msg){
+    $.get('destination',{"ss":ss,"destination":rid,"capital":capital,"start":start,"dayid":number},function(msg){
         for(var f=0;f<msg.length;f++){
           sr+="<div class='Ny_search_showcon_middlist'>"
           sr+="<div class='Ny_search_showcon_midd_fl'>"
@@ -557,7 +565,7 @@ window.onerror=function(){return true;}
           sr+="</div>" 
           sr+="<div class='Ny_search_showcon_midd_fr'>"
           sr+="<dl>"
-          sr+="<dt><a href='#' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
+          sr+="<dt><a href='{{URL("home/scenicDetails")}}?sid="+msg[f]['s_id']+"' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
           sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
           sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[f]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[f]['s_traffic']+"</span></span></dd>"
           sr+="</dl>"
@@ -565,8 +573,9 @@ window.onerror=function(){return true;}
           sr+="<div class='clear'></div>"
           sr+="</div>"
         }
+        sr+="</div>"
         $("#replaces").html(sr)
-      })
+      },'json')
     /*location.href="home/regionid?rid="+rid;*/
   }
 
@@ -620,7 +629,7 @@ window.onerror=function(){return true;}
           sr+="</div>"                                   
           sr+="<div class='Ny_search_showcon_midd_fr'>"
           sr+="<dl>"
-          sr+="<dt><a href='#' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
+          sr+="<dt><a href='{{URL("home/scenicDetails")}}?sid="+msg[f]['s_id']+"' target='_blank'>"+msg[f]['s_name']+"</a></dt>"
           sr+="<dd> 天天发团，入住准3星酒店，包含老龙头门票，如需 接站 五环以内 +30元/人 、 五环以外另议 ★自愿参加 公主号豪华游轮+车费65元/人、昌黎国际滑沙滑草中心+车费135元/人，无强制消费 ...</dd>"
           sr+="<dd><span>优惠价：<span class='cs_color'>￥"+msg[f]['s_sprice']+"元</span></span><span style='margin-left:20px;'>旅游方式：<span class='cs_color'>"+msg[f]['s_traffic']+"</span></span></dd>"
           sr+="</dl>"

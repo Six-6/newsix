@@ -23,12 +23,11 @@ class FootprintController extends BaseController{
      * @用户中心
      * @return [type] [description]
      */
-    public function userhome(){
-        
-        $model = new Footprint();//调用model层
-        
+    public function userhome()
+	{        
+        $model = new Footprint();//调用model层        
         $userhome = $model->userhome();//调用查询方法
-        
+		//print_r($userhome);die;
         return view('home.content.userhome',['userhome'=>$userhome]);//展示给用户
     }
 
@@ -168,18 +167,19 @@ class FootprintController extends BaseController{
         $model = new Footprint();
         //调用查询方法
         $integralDetails = $model->integralDetails();
-        $num ='';
-        $ok ='';
-        for ($i=0; $i < count($integralDetails) ; $i++) { 
-            $num = $num.$integralDetails[$i]['lo_integral'];
-            //echo "\$num=''".$integralDetails[$i]['lo_integral'];
-        }
+		//print_r($integralDetails);die;
+        return view('home.content.reads',['recorddata' => $integralDetails]);
+    }
 
-        $num = substr($num, 1);
-
-        print_r($num);die;
-
-        //return view('home.content.record',['recorddata' => $record]);
+    /**
+     * 详情页收藏景点
+     * @return [type] $exits [返回1/0]
+     */
+    function exits(){
+        $sid = Input::get('sid');
+        $model = new Footprint();
+        $exits = $model->exits($sid);
+        return $exits;
     }
 
 }

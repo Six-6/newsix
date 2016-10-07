@@ -724,3 +724,24 @@ Route::get('admin/useradmin', 'WayController@useradmin');/**后台用户管理**
 Route::get('admin/toExamine', 'WayController@toExamine');/**后台用户评论审核**/
 Route::get('admin/examine', 'WayController@examine');/**后台用户管理**/
 Route::get('admin/jgaiExamine', 'WayController@jgaiExamine');/**后台用户管理**/
+Route::get('home/exits', 'home\FootprintController@exits');/**后台用户管理**/
+
+
+
+
+Route::get('home/uhome', 'home\FootprintController2@uhome');/**马蜂窝前台用户管理**/
+Route::get('home/userContent', 'home\FootprintController2@userContent');/**马蜂窝前台用户管理**/
+Route::get('home/userHeadPortrait', 'home\FootprintController2@userHeadPortrait');/**马蜂窝前台用户管理--用户头像**/
+Route::get('home/userInformation', 'home\FootprintController2@userInformation');/**马蜂窝前台用户管理--用户信息**/
+Route::post('home/userInformationUpdate', 'home\FootprintController2@userInformationUpdate');/**马蜂窝前台用户管理--用户信息修改**/
+Route::get('home/userComment', 'home\FootprintController2@userComment');/**马蜂窝前台用户管理--用户点评**/
+Route::get('home/userCommentAll', 'home\FootprintController2@userCommentAll');/**马蜂窝前台用户管理--用户点评**/
+Route::get('home/userChoice', 'home\FootprintController2@userChoice');/**马蜂窝前台用户管理--选择要点评的**/
+Route::get('home/userDetails', 'home\FootprintController2@userDetails');/**马蜂窝前台用户管理--用户点评详情页**/
+Route::get('home/userCollection', 'home\FootprintController2@userCollection');/**马蜂窝前台用户管理--用户点收藏**/
+Route::get('home/userCollectionDetails', 'home\FootprintController2@userCollectionDetails');/**马蜂窝前台用户管理--用户收藏详情页**/
+
+Route::get('home/userCollectionDetailsDelete', 'home\FootprintController2@userCollectionDetailsDelete');/**马蜂窝前台用户管理--用户收藏删除**/
+Route::get('home/userOrderDetails', 'home\FootprintController2@userOrderDetails');/**马蜂窝前台用户管理--用户订单详情**/
+Route::get('home/userOrderDetailsDelete', 'home\FootprintController2@userOrderDetailsDelete');/**马蜂窝前台用户管理--用户订单详情删除**/
+

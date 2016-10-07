@@ -115,7 +115,35 @@ window.onerror=function(){return true;}
   </div>
 </div>
 
-
+<style>
+	.souc{font-size: 13px;color: red}
+	.quxiao{font-size: 13px;color: green}
+</style>
+<script>
+	function quxiao(sid)
+	{
+		$.ajax({
+			type:'get',
+			url:"{{URL('home/exits')}}",
+			data:"sid="+sid,
+		   success: function(msg){
+		      if ( msg == 0 ) {
+		      	alert("请先登录");
+		      	location.href="{{URL('blo')}}";
+		      }else
+		      if ( msg == 1 ) {
+		      	alert("您已经收藏过了")
+		      }else
+		      if ( msg == 3 ) {
+		      	alert("收藏失败")
+		      }else
+		      if ( msg == 2 ) {
+		      	$("#quxiaoasd").html("<span class='souc'>已收藏</sp");
+		      }
+		   }
+		})
+	}
+</script>
 <div id="warp">            
 	    <div class="main">
 	        <!--上部(产品经理推荐以上部分)-->
@@ -142,10 +170,14 @@ window.onerror=function(){return true;}
 
                     <div class="dtl_tit">
                    
-                         <h1 class="dtl_tit_txt">{{$arr->s_name}}
+                         <h1 class="dtl_tit_txt">{{$arr->s_name}} 
 						 <span class="icon-tag"></span>
                          </h1>
-                         
+                         @if($sous)
+                         <span id="sous"><span class="souc">已收藏</span></span>
+                         @else
+                         <div id="quxiaoasd"><span class="quxiao"><a href="javascript:void(0)" onclick="quxiao({{$arr->s_id}})" >收藏</a></span></div>
+                         @endif
                     </div> 
                     <div class="dtl_boxinner">
                     <div class="dtl_box_left">
@@ -1687,9 +1719,6 @@ b.身高1.5米以上儿童，按成人收费。
 	    
 <div class="clear"></div>
 
-<!-- WPA Button Begin -->
-<iframe style="display: block; position: fixed; z-index: 2147483646 ! important; left: auto; right: 8px; margin-left: 0px; top: 50%; bottom: auto; margin-top: -138px;" src="%E8%9C%88%E6%94%AF%E6%B4%B2.%E8%A5%BF%E5%B2%9B.%E5%91%80%E8%AF%BA%E8%BE%BE%E9%9B%A8%E6%9E%97.%E5%8D%97%E5%B1%B1.%E5%8D%97%E6%B9%BE%E7%8C%B4%E5%B2%9B%E5%8F%8C%E9%A3%9E5%E6%97%A5%204%E6%99%9A%E6%B5%B7%E6%99%AF%E6%88%BF%20_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/a.html" allowtransparency="true" scrolling="no" frameborder="0" height="277" width="121"></iframe><script charset="utf-8" type="text/javascript" src="%E8%9C%88%E6%94%AF%E6%B4%B2.%E8%A5%BF%E5%B2%9B.%E5%91%80%E8%AF%BA%E8%BE%BE%E9%9B%A8%E6%9E%97.%E5%8D%97%E5%B1%B1.%E5%8D%97%E6%B9%BE%E7%8C%B4%E5%B2%9B%E5%8F%8C%E9%A3%9E5%E6%97%A5%204%E6%99%9A%E6%B5%B7%E6%99%AF%E6%88%BF%20_%E5%8C%97%E4%BA%AC%E9%9D%92%E5%B9%B4%E6%97%85%E8%A1%8C%E7%A4%BE%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E7%BD%91_files/wpa.php"></script>
-<!-- WPA Button End -->
 
 
 

@@ -1,6 +1,6 @@
 <!-- saved from url=(0038)http://www.byts.com.cn/users/index.php -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" charset="utf-8" async="" src="css/crmqq.php"></script><script type="text/javascript" charset="utf-8" async="" src="js/contains.js"></script><script type="text/javascript" charset="utf-8" async="" src="js/localStorage.js"></script><script type="text/javascript" charset="utf-8" async="" src="js/Panel.js"></script>
-<title>登录-北京青年旅行社股份有限公司官网</title>
+<title>惠玩旅行社官网--登录</title>
 
 <link href="css/common_wm.css" rel="stylesheet" media="screen" type="text/css">
 <link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
@@ -83,7 +83,7 @@ window.onerror=function(){return true;}
 </script> 
 
 <div class="top1">
-  <div class="conter"><span>欢迎访问 <a href="http://www.byts.com.cn/">北京青年旅行社官网</a></span>　请
+  <div class="conter"><span>欢迎访问 <a href="http://www.byts.com.cn/">惠玩旅行社官网</a></span>　请
   <span id="_Check_head_Login">
     <span><a href="http://www.byts.com.cn/users/" target="_blank">登 录</a></span>
 <span>|</span>

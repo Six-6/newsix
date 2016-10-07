@@ -62,8 +62,8 @@ class DomesticController extends BaseController
         $model = new Domestic();
 
         $scenicArr = $model->scenicSels($sid);
-
-        return view('home/domestic/details_list', ['arr' => $scenicArr]);
+        $sous = $model->sous($sid);
+        return view('home/domestic/details_list', ['arr' => $scenicArr,'sous' => $sous]);
     }
 
     /**

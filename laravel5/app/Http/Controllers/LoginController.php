@@ -38,9 +38,11 @@ class LoginController extends Controller
                 ->orWhere('phone', $name)
                 ->first();
             if ($res) {
+				$datetime = date('Y-m-d H:i:s', time());
                 $url = Session::get('url');
                 Session::put('u_id', $res->u_id);
                 Session::put('name', $name);
+                Session::put('datetime', $datetime);
                 if (!empty($url)) {
                     return Redirect::to($url);
                 } else {

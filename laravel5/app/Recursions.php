@@ -3,7 +3,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Request,DB,Input,Session;
-
+header('content-type:text/html;charset=utf-8');
 class Recursions extends Model{
 	/**
 	 *
@@ -13,7 +13,46 @@ class Recursions extends Model{
 	 *
      * @return [type] 返回搜索的数据
      */
-    function numberDay($data){
+	 function numberDay($data)
+	 {
+		$dayid = $data['dayid'];
+		$capital = $data['capital'];
+		$destination = $data['destination'];
+		$start = $data['start'];
+		/*旅游天数*/
+		if($dayid){
+			 $days = "s_day = '$dayid'";
+		 }else{
+			 $days = "1 = 1";
+		 }
+		 /*旅游资金*/
+		 if($capital){
+			 $moneys1 = explode(3,$capital);
+             $moneySmail1 = $moneys1[0];
+             $moneyLarge1 = $moneys1[1];
+			 $moneys = "s_sprice between $moneySmail1 AND $moneyLarge1";
+		 }else{
+			 $moneys = "1 = 1";
+		 }
+		 /*旅游目的地*/
+		 if($destination){
+			 $destination2 = "destination_id = '$destination'";
+		 }else{
+			 $destination2 = "1 = 1";
+		 }
+		 /*旅游出发地*/
+		 if($start){
+			 $start2 = "r_id = '$start'";
+		 }else{
+			 $start2 = "1 = 1";
+		 }
+		$data = DB::select("select * from scenic_spot where $days and $destination2 and $start2 and $moneys");
+		$data = json_decode(json_encode($data),true);
+		//$ccc = "select * from scenic_spot where $days and $destination2 and $start2 and $moneys";
+		return $data; 
+	 }
+	 
+    /* function numberDay2($data){
         if (($data['dayid'] != 0) or ($data['capital'] != 0) or ($data['destination'] != 0) or ($data['start'] != 0)) {
             $moneys1 = $data['capital'];
             $moneys1 = explode(3,$moneys1);
@@ -84,7 +123,7 @@ class Recursions extends Model{
                 ->get();
             return $dataArray;
         }
-    }
+    } */
 
 }
 

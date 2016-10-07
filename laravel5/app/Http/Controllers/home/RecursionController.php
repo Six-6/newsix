@@ -82,12 +82,13 @@ class RecursionController extends BaseController{
      */
     public function searchDay(){
         $data = Input::get();
-
+		
         $model = new Recursions();
 
         $numDays = $model->numberDay($data);
 
-        return $numDays;
+        //return $numDays;
+		print_r($numDays);
     }
 
     /*
@@ -203,5 +204,5 @@ class RecursionController extends BaseController{
 
         return $change;
     }
-
+	
 }

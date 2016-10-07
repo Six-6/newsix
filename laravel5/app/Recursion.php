@@ -144,7 +144,7 @@ class Recursion extends Model{
      */
     function gitDestination($data){
         $beginning = $data['ss'];
-        $destination = $data['rid'];
+        $destination = $data['destination'];
         $begin = DB::table('region')
            ->where('r_region',$beginning)
            ->get();

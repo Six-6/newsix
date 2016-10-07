@@ -16,13 +16,16 @@ $u_id=Session::get("u_id");
   <div class="conter"><span>欢迎光临 <a href="#">惠玩旅行社官网</a></span>　
   <span id="_Check_head_Login">
        
-        <span><a href="{{URL('home/userhome')}}" >{{$name}}</a></span>
+        <span><a href="{{URL('home/uhome')}}" >{{$name}}</a></span>
     <span>|</span>
-    <span><a href="{{URL('home/userhome')}}" target="_blank" id="{{Session::get('u_id')}}">用户中心</a></span>
+    <span><a href="{{URL('home/uhome')}}" target="_blank" id="{{Session::get('u_id')}}">用户中心</a></span>
     <span>|</span>
 
     <span><a href="{{URL('home/personDel')}}" >退出</a></span>
     @endif
+    <span class="weather">
+      <img src="home/images/worldWeather.jpg" alt="惠玩全球天气" width="80px" height="30px">
+    </span>
 </span><script language="javascript">Check_head_Login();</script>
      <div class="hour"><img src="home/homepage/pic1.jpg" height="19" width="46"></div>
      <div class="iph">旅游预订电话 <strong>18513975642</strong></div>
@@ -48,6 +51,8 @@ $u_id=Session::get("u_id");
   }
   .aaa{border:1px solid #FE6840;width: 240px}
   .bbb{border:1px solid #FE6840;background: #F85F0C;width: 50px}
+  .weather{float:right; margin-right: 450px; z-index: 2}
+  .asd{float:right; margin-right: 450px; z-index: 12}
 </style>
 <div class="top2">
 	<div class="conter">
@@ -60,7 +65,7 @@ $u_id=Session::get("u_id");
         <input type="submit" class="bbb" style="height:35px;background-color:greep;" value="查询">
         </div>
         </form>
-  </div>
+    </div>
 
   </div>  
   

@@ -51,4 +51,19 @@ public function scenicSels($sid)
 		return $scenicArr;
 	}
 
+	/**
+	 * 查询景点收藏
+	 * @param  [type] $id [description]
+	 * @return [type]     [description]
+	 */
+	function sous($id)
+	{
+		$data = DB::table('scenic_spot')
+			->join('collect','scenic_spot.s_id','=','collect.s_id')
+			->join('login','collect.u_id','=','login.u_id')
+			->where('scenic_spot.s_id',$id)
+		    ->get();
+		return $data;
+	}
+
 }

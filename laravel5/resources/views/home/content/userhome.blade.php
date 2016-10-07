@@ -8,19 +8,25 @@
                     <div class="dj-w">
                         <div class="head-pic">
                             <div class="avatar-75">
-                                <img src="{{Session::get('userimg')}}" alt="用户头像">
+							@foreach($userhome as $k=>$v)
+                                <img src="images/{{ $v['path'] }}" style="width:50px;height:50px" alt="用户头像">
+							@endforeach
                             </div>
                             
                         </div>
 
                         <ul class="record-txt">
-                            <li style="padding-bottom:10px;"><strong class="mcgreen f14">欢迎您！<b style="color: #FF6600">{{Session::get('name')}}</b></strong> 上一次登录时间：<span class="mcblue">2016-09-14 11:00:24</span></li>
-                            <li>会员卡号：<strong class="mcblue f14">201609{{Session::get('u_id')}}</strong></li>
+							@foreach($userhome as $k=>$v)
+                            <li style="padding-bottom:10px;">
+								<strong class="mcgreen f14">欢迎您！<b style="color: #FF6600">{{ $v['phone'] }}</b></strong> 
+								上一次登录时间：<span class="mcblue">{{Session::get('datetime')}}</span>
+							</li>
+                            <li>会员卡号：<strong class="mcblue f14">201609{{ $v['u_id'] }}</strong></li>
                             
-                            <li>账户余额：<strong class="mcblue f14">¥ 0</strong> &nbsp;&nbsp;<a href="http://www.byts.com.cn/users/index.php?do=pay">在线充值</a></li>
+                            <li>账户余额：<strong class="mcblue f14">¥ {{ $v['u_money'] }}</strong> &nbsp;&nbsp;<a href="http://www.byts.com.cn/users/index.php?do=pay">在线充值</a></li>
 							
-							<li>我的积分：<strong class="mcblue f14"> 0</strong> &nbsp;&nbsp;<a href="http://www.byts.com.cn/users/index.php?do=money">消费记录</a></li>
-						   
+							<li>我的积分：<strong class="mcblue f14"> {{ $v['rank'] }}</strong> &nbsp;&nbsp;<a href="http://www.byts.com.cn/users/index.php?do=money">消费记录</a></li>
+						   @endforeach
                         </ul>
                         <div class="clr"></div>
                     </div>

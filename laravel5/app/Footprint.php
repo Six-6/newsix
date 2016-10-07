@@ -14,8 +14,9 @@ class Footprint extends Model{
     function userhome(){  
         $uid = session('u_id');
         $userFootprint = DB::table('login')
-            ->where('login.u_id',$uid)
+            ->where('u_id',$uid)
             ->get();
+		$userFootprint = json_decode(json_encode($userFootprint),true);
         return $userFootprint;
     }  
 
@@ -39,44 +40,6 @@ class Footprint extends Model{
 
         return $userFootprint;
     }  
-
-    /**
-     * @用户收藏
-     *
-     * @return   [description]
-     */
-    function userCollect(){
-        $uid = session('u_id');
-        $collect = DB::table('scenic_spot')
-            ->join('collect','scenic_spot.s_id','=','collect.s_id')
-            ->join('login','collect.u_id','=','login.u_id')
-            ->where('login.u_id','=',$uid)
-            ->get();
-
-        $dataArray = json_decode(json_encode($collect),true);//转换为数组
-
-        return $dataArray;
-    }
-
-    /**
-     * @用户取消收藏
-     *
-     * @return   [description]
-     */
-    function cancel($sid){
-        $uid = session('u_id');
-        
-        $collect = DB::table('collect')
-            ->where(['s_id'=>$sid,'u_id'=>$uid])
-            ->delete();
-
-        if ($collect) {
-            return 1;
-        }else{
-            return 0;
-        }
-        
-    }
 
     /**
      * @用户评价
@@ -131,9 +94,8 @@ class Footprint extends Model{
      */
     function integralDetails(){
         $uid = Session::get('u_id');
-        $data = DB::table('login_integral')
+        $data = DB::table('integral')
             ->where('u_id',$uid)
-            ->select('lo_integral')
             ->get();
 
         $dataArray = json_decode(json_encode($data),true);//转换为数组
@@ -162,6 +124,80 @@ class Footprint extends Model{
         $dataArray = json_decode(json_encode($collect),true);//转换为数组
 
         return $dataArray;
+    }
+
+    /**
+     * @用户收藏
+     *
+     * @return   [description]
+     */
+    function userCollect(){
+        $uid = session('u_id');
+        $collect = DB::table('scenic_spot')
+            ->join('collect','scenic_spot.s_id','=','collect.s_id')
+            ->join('login','collect.u_id','=','login.u_id')
+            ->where('login.u_id','=',$uid)
+            ->get();
+
+        $dataArray = json_decode(json_encode($collect),true);//转换为数组
+
+        return $dataArray;
+    }
+
+    /**
+     * @用户取消收藏
+     *
+     * @return   [description]
+     */
+    function cancel($sid){
+        $uid = session('u_id');
+        
+        $collect = DB::table('collect')
+            ->where(['s_id'=>$sid,'u_id'=>$uid])
+            ->delete();
+
+        if ($collect) {
+            return 1;
+        }else{
+            return 0;
+        }
+        
+    }
+
+    /**
+     * 详情页添加收藏
+     * @param  [type] $sid [景点ID]
+     * @return [type] 1 [景点已收藏]
+     * @return [type] $data [景点收藏]
+     * @return [type] 0 [用户未登录]
+     * @return [type] 2 [收藏成功]
+     * @return [type] 3 [收藏失败]
+     */
+    function exits($sid)
+    {
+        $uid = session::get('u_id');
+        if ($uid) {
+            $selSel = DB::table('collect')
+                ->where('s_id', $sid)
+                ->where('u_id', $uid)
+                ->get();
+            if ($selSel) {
+                return 1;
+            }else{
+                $data = DB::table('collect')->insert([
+                    's_id' => $sid, 
+                    'u_id' => $uid
+                ]);
+                if($data){
+					return 2;
+				}else{
+					return 3;
+				}
+            }
+        }else{
+            return 0;
+        }
+        
     }
 }
 
