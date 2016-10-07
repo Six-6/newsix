@@ -1,0 +1,54 @@
+.deanbox{}
+.deanbleft{float:left;width:660px;}
+.deanblt{color:#000;font-family:Microsoft Yahei;font-size:20px;width:100%;}.deanblt a:hover{color:#FF8000;}.deanblb{margin-top:15px;position:relative;width:660px;height:390px;overflow:hidden;}.deanblb img{width:660px;height:390px;}.deanblbt{position:absolute;width:660px;height:62px;background:#000;left:0px;top:390px;padding-top:18px;opacity:0.8;color:#FFF;}.deanblbt span{font-size:20px;display:block;padding-left:20px;font-size:20px;}.deanblbt span.deantitle{padding-left:20px;display:block;font-size:30px;}
+.deanbright{float:right;width:310px;}
+.deanpics{}.deanpics ul li{height:197px;}.deanphoto{margin-top:15px;position:relative;width:310px;height:177px;z-index:0;overflow:hidden;}.deanphoto img{width:310px;height:177px;}.deanphl{position:absolute;top:177px;left:10px;font-size:20px;font-family:Microsoft Yahei;color:#FFF;z-index:0;}.deanphl a{color:#FFF;}.deanph2{position:absolute;top:267px;right:20px;width:50px;height:50px;background:#000;font-size:14px;font-family:Microsoft Yahei;color:#FFF;border-radius:4px;text-align:center;line-height:25px;opacity:0.8;}.deanyj{color:#000;font-family:Microsoft Yahei;font-size:20px;}.deanyj{width:1000px;}.deanyjl{float:left;width:660px;}.deanyjrt{width:310px;}.deanyjlist{width:660px;z-index:0;}.deanyjlist a:hover{opacity:0.9;}.deanyjlist img{}.deanyjlist ul li{width:660px;height:175px;position:relative;margin-top:20px;border-bottom:1px solid #ebebeb;}.deanyjpic{width:212px;height:145px;float:left;border:1px solid #e5e5e5;box-shadow:0 0 3px #ddd;}.deanyjpic img{width:200px;height:133px;padding-left:6px;padding-top:6px;}.deanyjc{width:430px;float:left;margin-left:15px;}.deanyjcup{width:430px;}.deanyjcul{float:left;width:48px;}.deanyjcul img{width:48px;height:48px;border-radius:5px;}.deanyjcur{float:left;width:375px;}.deanyjcurt{width:375px;padding-left:7px;}.deanyjcurt a{font-size:14px;color:#000;display:block;width:375px;overflow:hidden;}.deanyjcurt a:hover{color:#FF8000;}.deanyjcurb{padding-left:10px;padding-top:5px;width:375px;}.deanyjcurbl{font-size:14px;color:#000;float:left;width:180px;}
+
+.deanyjcurbl span{display:block;width:50px;height:20px;overflow:hidden;float:left;}
+.deanyjcurbl a{font-size:14px;color:#FF8000;}
+.deanyjcurbr{float:right;}
+.deanyjcurbr dl dd{float:left;font-size:14px;padding-left:3px;padding-right:3px;}
+.deanjycm{font-size:14px;margin-top:15px;width:430px;height:72px;overflow:hidden;}
+.deanyjcb{font-size:14px;margin-top:5px;}
+.deanyjcb a{color:#FF8000;}
+.deanyjr{float:right;width:310px;}
+.deanyjxx{width:310px;margin-top:40px;}
+
+.deanplace{margin-top:22px;width:310px;height:260px;border-bottom:1px solid #ebebeb;}
+.deanpl{background:url(../../template/dean_chanyouji_140508/deancss/li1234.png) 0 0 no-repeat;width:40px;float:left;height:240px;margin-top:4px;}
+.deanplr{float:left;padding-left:10px;width:240px;}
+
+.deanplace2{margin-top:22px;width:310px;height:510px;border-bottom:1px solid #ebebeb;}
+.deanpl2{background:url(../../template/dean_chanyouji_140508/deancss/li1234.png) 0 0 no-repeat;width:40px;float:left;height:510px;margin-top:4px;}
+.deanplr2{float:left;padding-left:10px;width:240px;}
+.deanplace2 ul{float:left;}
+.deanplace2 ul li{width:285px;height:50px;}
+.deanplace2 ul li a{font-size:14px;color:#000;display:block;overflow:hidden;}
+.deanplace2 ul li a:hover{color:#FF8000;}
+
+
+.deanplace ul{float:left;}
+.deanplace ul li{width:285px;height:50px;}
+.deanplace ul li a{font-size:14px;color:#000;display:block;overflow:hidden;}
+.deanplace ul li a:hover{color:#FF8000;}
+.ul{width:260px;}.deanyjrtbox{width:310px;margin-top:15px;}
+.deanyjrtbox ul li{width:310px;background:#eee;margin-top:14px;}
+.deanyjrtbox img{width:80px;height:80px;display:block;}
+.deanyjrtbox ul li a{display:block;color:#464646;width:310px;height:100px;}
+.deanyjrtbox ul li a:hover{background:#000;color:#FFF;}
+.deanyjads{margin-top:20px;}.deanyjads img{width:310px;}
+.deannum{float:left;width:20px;height:50px;color:#FFF;padding-left:6px;font-size:42px;line-height:50px;margin-top:24px;}
+.deannumc{float:left;width:250px;height:50px;padding-left:15px;margin-top:10px;}.deanly{width:50px;float:left;}
+.deanlyr{width:150px;float:left;font-size:16px;padding-left:42px;height:27px;line-height:27px;}
+.deanjx{margin-top:20px; margin-left:auto; margin-right:auto;}
+.deanjxbox{width:1020px;background:#FFF;margin-top:15px;margin-left:auto; margin-right:auto; margin-left:0px;}
+.deanjxbox ul li{float:left;padding-right:10px;padding-top:15px; padding-left:10px;}
+.deanjxb{width:235px;height:175px;position:relative;overflow:hidden;}
+.deanjxb img{width:235px;height:175px;transition:all 1.2s;-moz-transition:all 1.2s;-webkit-transition:all 1.2s;-o-transition:all 1.2s;}
+.deanjxb img:hover{transition:all .3s ease;-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);}
+.deanjxbc{position:absolute;bottom:10px;left:10px;font-size:20px;font-family:Microsoft Yahei;color:#FFF;z-index:1;}
+.deanjxbc img{width:30px;height:30px;border-radius:4px;}
+.deanjxbb{position:absolute;top:10px;left:10px;font-size:12px;font-family:Microsoft Yahei;color:#FFF;z-index:2;}
+.deanads{margin-top:18px;width:310px;height:214px;}
+.deanads img{width:310px;height:214px;}
+.dean1{overflow:hidden;width:150px;height:27px;}.deancenter{width:1000px;margin:0 auto;}.deanboxl{width:340px;height:360px;float:left;overflow:hidden;}.deancnew{}.deancnew ul{}.deancnew ul li{height:30px;line-height:30px;background:url(../../template/dean_chanyouji_140508/deancss/blue.png) 0 15px no-repeat;text-indent:12px;}.ie6 .deancnew ul li,.ie7 .deancnew ul li{height:25px;line-height:25px;margin-left:-15px;background:url(../../template/dean_chanyouji_140508/deancss/blue.png) 0 12px no-repeat;}.deancnew ul li a{font-size:14px;color:#333;float:left;}.deancnew ul li.deanblue a{color:#FF8000;}.deancnew ul li a:hover{color:#FF8000;text-decoration:none;}.deancnew ul li span{float:right;color:#999;}.deanboxr{width:630px;height:360px;float:right;overflow:hidden;}.deaniconsl{width:330px;float:left;}.deaniconsr{width:290px;float:right;}.deancontact{width:330px;height:70px;}.deancontact a{display:block;width:330px;height:70px;background:#F7B13F url(../../template/dean_chanyouji_140508/deancss/about.png) 10px 5px no-repeat;text-indent:90px;color:#fff;font-size:24px;line-height:70px;text-decoration:none;}.deancontact a:hover{text-decoration:none;background-color:#FF8000;}.deanservice{width:330px;height:270px;background:#00877F;position:relative;}.deanservice b{display:block;width:100px;height:30px;line-height:30px;text-align:center;color:#00877F;font-size:16px;position:absolute;left:0;bottom:20px;font-weight:bold;}.deanservice b a{display:block;background:#fff;color:#00877F;}.deanservice b a:hover{background:#00877F;color:#fff;text-decoration:none;}.deanservice ul{padding:10px;}.deanservice ul li{line-height:30px;font-size:14px;color:#fff;}.deanicont{width:290px;height:240px;color:#fff;overflow:hidden;background:#3EA4E0 url(../../template/dean_chanyouji_140508/deancss/contact.png) right top no-repeat;}.deanicontc{padding:10px;}.deantel{height:50px;margin-top:20px;background:url(../../template/dean_chanyouji_140508/deancss/phone.png) 0 0 no-repeat;font-size:14px;color:#fff;}.deantel li{text-indent:60px;line-height:25px;}.deanlocal{margin-top:20px;background:url(../../template/dean_chanyouji_140508/deancss/local.png) 0 0 no-repeat;height:36px;line-height:36px;font-size:14px;text-indent:50px;}.deanqq{margin-top:20px;}.deanqq ul{}.deanqq ul li{height:30px;line-height:30px;clear:both;margin-left:5px;margin-bottom:10px;}.deanqq ul li a{color:#fff;font-size:14px;}.deanqq ul li img{float:left;}.deanqq ul li span{float:left;padding-left:10px;}.deaniconb a{display:block;width:140px;float:left;height:100px;line-height:100px;text-align:center;color:#fff;font-size:24px;}.deaniconb a.deanabout{float:left;width:100px;}.deaniconb a.deanabout img{transition:All 0.4s ease-in-out;-webkit-transition:All 0.4s ease-in-out;-moz-transition:All 0.4s ease-in-out;-o-transition:All 0.4s ease-in-out;}.deaniconb a.deanabout:hover img{transform:rotate(360deg);-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);}.deaniconb a.deanprod{float:right;width:180px;background:#899D00;}.deaniconb a.deanabout:hover,.deaniconb a.deanprod:hover{text-decoration:none;background-color:#FF8000;}.deanlink{}.deantitlenew{background:none;position:relative;border-bottom:2px solid #eee;color:#FF8000;text-indent:0;height:40px;line-height:40px;}.deantitlenew span{display:block;position:absolute;border-bottom:2px solid #FF8000;bottom:-2px;left:0;font-size:20px;float:left;}.deanlink ul{white-space:nowrap;}.deanlink ul li{float:left;height:40px;line-height:40px;margin-right:20px;white-space:nowrap;}.deanlink ul li a{font-size:14px;color:#333;}.deanlink ul li a:hover{text-decoration:none;color:#FF8000;}
