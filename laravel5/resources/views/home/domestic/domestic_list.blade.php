@@ -91,7 +91,7 @@ window.onerror=function(){return true;}
 // --> 
 </script>
 @include("home/common/top")
-<div class="body1">
+<div class="body1" style="margin-top:10px">
 
 <!--end crumb-->
 <!--start left-->
