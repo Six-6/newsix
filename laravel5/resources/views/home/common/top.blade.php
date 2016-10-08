@@ -29,6 +29,15 @@
                 <li data-cs-p="mall">
                     <strong class="t"><a href="exchangeShow">惠玩兑换</a></strong>
                 </li>
+                  <li data-cs-p="mall">
+                    <strong class="t"><a href="{{URL('home/siterecommend')}}">风向标</a></strong>
+                </li>  
+                <li data-cs-p="mall">
+                    <strong class="t"><a href="{{URL('home/ranking')}}">排行榜</a></strong>
+                </li>  
+                <li data-cs-p="mall">
+                    <strong class="t"><a href="{{URL('home/themes')}}">主题推荐</a></strong>
+                </li>   
             </ul>
         </div>
 

@@ -26,18 +26,7 @@
 
 
 <div class="wrapmain">
-		<div class="nav-ind">
-			<div class="navbar">
-				<div class="indlogo"></div>
-				<a href="{{URL('home/siterecommend')}}" class="indsep" id="shouye"><div class="shouye">首页</div></a>
-
-                <a href="{{URL('home/ranking')}}" class="indsep" id="list"><div class="list">排行榜</div></a>
-                                
-				
-				<a href="{{URL('home/themes')}}" class="indsep selected" id="theme"><div class="theme">主题推荐</div></a>
-
-			</div>
-		</div>
+		
 
 
 	
@@ -87,6 +76,7 @@
 	<div class="thcontent clearfix">
 	
 	<div class="w1030">
+		@if(!empty($data['data']))	
 		@foreach($data['data'] as $esson)
 		<div class="square themebg">	 
 			<span class="sprite sprite1"></span>
@@ -95,7 +85,13 @@
 			</a> <a href="{{URL('home/details')}}?id={{$esson->tt_id}}"  class="lh40" title="{{$esson -> t_title}}">{{$esson -> t_title}}</a>
 		</div> 
 		@endforeach
-
+		@else
+			  <center>
+                <img src="../image/zuiqiang.jpg"></br>
+                <p style="font-size:20px;color:#87cefa">此地暂无权威 是否要<a id="zhanling" href="{{URL('home/publishs')}}">占领</a>他</p></br>
+                <p style="font-size:15px;color:#87cefa">写游记赢大奖，大量<a href="{{URL('home/exchangeShow')}}">积分</a>等你拿</p>
+            </center>
+		@endif
     </div>
 	</div>
 	
@@ -122,12 +118,7 @@
     </div><!-- siteMap E -->
 <!-- three sun S -->
 <div class="three_trav">
-    <div class="thr_trav">
-        <a href="http://www.tuniu.com/static/sunshine_ensure/" target="_blank" style="display:block;width:100%;height:100%;">
-            <em class="tn_text" id="service_phone_head_text">客户服务电话（免长途费）</em>
-            <em class="tn_phone" id="service_phone_head_phone">4007-999-999</em>
-        </a>
-    </div>
+
 </div>
 <!-- three sun E -->
 

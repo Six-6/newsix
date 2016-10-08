@@ -97,7 +97,7 @@ class ThemeController extends Controller {
 	
 	//详情
 	public function details(){
-		$id=Request::get('id');
+		$id=Request::get('sid');
         $re=DB::table('travels')->where("tt_id",$id)->get();
         if(empty($re)) {
             return view('home.404error');
@@ -110,19 +110,16 @@ class ThemeController extends Controller {
 	//详情评论
 	public function dcomment()
 	{	
+		
 		$u_id = Session::get('u_id');
 		$data=Request::all();
-		
+
 		if(empty($u_id))
 		{
-            $url = $_SERVER['HTTP_REFERER'];
-            Session::put('url',$url);
-			return redirect('blo');		
+			return redirect('blo?url=home/details&sid=11');		
 		}
-		
-		$url = $_SERVER['HTTP_REFERER'];
 		Theme::dsession($u_id,$data);
-		
+		$url = $_SERVER['HTTP_REFERER'];
 						
 		return redirect($url);				
 	}

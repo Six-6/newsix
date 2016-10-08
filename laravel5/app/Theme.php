@@ -78,42 +78,54 @@ class Theme extends Model
 			{
 				$new_id[]=$key;
 			}
+			else
+			{
+				$new_id[]="";
+			}
+		}
+		if(!empty($new_id))
+		{
+			//查询对应的id 发表的评论
+			$data= DB::table('travels')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->whereIn('u_id',$new_id)->where('t_state',1)->orderBy('t_times','desc')->get();
+			
+			$num = 10;							 //分页从哪个下标开始
+			$count = count($data);
+			$mexpage = ceil($count/$num);		 //向上取整
+			if (empty($page))
+			{
+				$page = 1;
+			}
+			if ($page<1) 
+			{
+				$page = 1;
+			}
+			if ($page>$mexpage) 
+			{
+				$page = $mexpage;
+			}
+			$reg="/^\d+$/";
+			if (!preg_match($reg,$page)) {
+				$page=1;
+			}
+			$xia=($page-1)*$num;
+
+			$transmit['data']= DB::table('travels')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->whereIn('u_id',$new_id)->where('t_state',1)->skip($xia)
+				->take(12)->orderBy('t_times','desc')->get();
+			//最大页 当前页 下一页 上一页	
+			$transmit['mexpage'] = $mexpage;
+			$transmit['page'] = $page;
+			$transmit['next'] = $page+1;
+			$transmit['last'] = $page-1;
+			$transmit['url'] = "themes";
+
+			return $transmit;
+		}
+		else
+		{
+			$transmit = "";
+			return $transmit;
 		}
 		
-		//查询对应的id 发表的评论
-		$data= DB::table('travels')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->whereIn('u_id',$new_id)->where('t_state',1)->orderBy('t_times','desc')->get();
-		
-		$num = 10;							 //分页从哪个下标开始
-		$count = count($data);
-		$mexpage = ceil($count/$num);		 //向上取整
-		if (empty($page))
-		{
-			$page = 1;
-		}
-		if ($page<1) 
-		{
-			$page = 1;
-		}
-		if ($page>$mexpage) 
-		{
-			$page = $mexpage;
-		}
-		$reg="/^\d+$/";
-		if (!preg_match($reg,$page)) {
-			$page=1;
-		}
-		$xia=($page-1)*$num;
-
-		$transmit['data']= DB::table('travels')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->whereIn('u_id',$new_id)->where('t_state',1)->skip($xia)
-			->take(12)->orderBy('t_times','desc')->get();
-		//最大页 当前页 下一页 上一页	
-		$transmit['mexpage'] = $mexpage;
-		$transmit['page'] = $page;
-		$transmit['next'] = $page+1;
-		$transmit['last'] = $page-1;
-		$transmit['url'] = "themes";
-
-		return $transmit;
 	}
 	
 	
@@ -308,8 +320,10 @@ class Theme extends Model
 	//游记详情
 	public static function details($id)
 	{
-		//当前游记
 		$bination['host'] = DB::table('travels')->join('login', 'travels.u_id', '=', 'login.u_id')->where('tt_id',$id)->get();
+		$dat = json_decode(json_encode($bination['host']),true);
+
+		$region_id = $dat[0]['t_region'];
 		
 		//每天的游记
 		$data = DB::table('bination')->where('tt_id',$id)->get();
@@ -345,7 +359,12 @@ class Theme extends Model
 			$bination['commect'] = "";
 		}
 		
+		$bination['region_name'] = DB::table('region')->where('r_id',$region_id)->select('r_region')->first();
+
+		$bination['correlation'] = DB::table('region')->join('scenic_spot', 'region.r_id', '=', 'scenic_spot.r_id')->where('p_id',$region_id) ->orderBy('s_degree', 'desc')->limit(5)->get();
 		
+		//推送
+		$bination['meme'] = DB::table('scenic_spot')->select('s_id','s_name','s_img','s_sprice')->orderBy('s_degree', 'asc')->where('s_degree','<',50)->limit(5)->get();
 		return $bination;
 		
 	}
@@ -369,7 +388,9 @@ class Theme extends Model
 		$fadd = DB::table('comments')->insert(['u_id' => $u_id, 'c_base' => $c_base , 'tt_id' => $tt_id ,'f_id' => $f_id, 'c_time'=> $time]); 
 		if($fadd)
 		{
-			DB::table('travels')->where('tt_id',$tt_id)->update(['t_commentint' => $data['t_comment']+1]);
+			$ci= DB::table('travels')->select('t_commentint')->where('tt_id',$tt_id)->first();
+		
+			DB::table('travels')->where('tt_id',$tt_id)->update(['t_commentint' => $ci->t_commentint+1]);
 		}
 		else
 		{

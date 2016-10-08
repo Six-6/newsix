@@ -26,7 +26,7 @@
             @foreach($data['myyou'] as $v)
             <tr>                      
                 <td>{{$v['t_times']}}</td>
-                <td><a style="text-decoration:none" href="{{URL('home/details')}}?id={{$v['tt_id']}}">{{$v['t_title']}}</a></td>
+                <td><a style="text-decoration:none" href="{{URL('home/details')}}?sid={{$v['tt_id']}}">{{$v['t_title']}}</a></td>
                 <td>{{$v['t_zambia']}}</td>
                 <td>{{$v['t_commentint']}}</td>
                 <td >

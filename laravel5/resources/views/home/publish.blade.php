@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+@include('home/common/top')<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6"><![endif]-->
 <!--[if IE 7 ]><html class="ie ie7"><![endif]-->
 <!--[if IE 8 ]><html class="ie8"><![endif]-->
@@ -41,11 +41,7 @@
 <link rel="stylesheet" type="text/css" href="../css/umeditor-ex.css">
 <link rel="stylesheet" type="text/css" href="../css/travelnotes.css">
 <link rel="stylesheet" type="text/css" href="../css/common_foot_v3_002.css">
-  <div class="top_area">
-            <div class="wrap clearfix" style="background:#fff;">
-                 @include('home/common/top')
-            </div>
-        </div> 
+
 <!--main content START-->
 <div class="bodybg-gray">
 	<div class="wrap clearfix">
@@ -258,7 +254,7 @@
         </div>
         <!-- 意见反馈 end -->
 
-		<div style="height: 210px;" class="pin-wrapper"><div style="width: 190px; left: 984.5px; top: 0px; position: fixed;" class="publish-right clearfix p-fix">
+		<div style="height: 210px;" class="pin-wrapper"><div style="width: 190px; left: 984.5px; top: 0px; position: fixed;margin-top:50px" class="publish-right clearfix p-fix">
 			<!-- 添加行程/添加地点/上传照片按钮 start -->
 			<div class="publish-btn" id='add'>
 				<ul>
