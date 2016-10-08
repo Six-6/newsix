@@ -1,19 +1,13 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-
-=======
 use DB;
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 class Order extends Model {
     public $table="order";
     public static function selAll($u_id){
         $re=self::where(["u_id"=>$u_id])->get();
         return $re;
     }
-<<<<<<< HEAD
-=======
     public static function countSelete()
     {
     	$count=count(self::get());
@@ -58,5 +52,4 @@ class Order extends Model {
        }
        
     }
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 }

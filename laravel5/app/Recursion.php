@@ -1,11 +1,8 @@
 <?php
-<<<<<<< HEAD
-=======
 /**
  * @前项目优化
  * @褚玉密
  */
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;

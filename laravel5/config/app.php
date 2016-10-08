@@ -144,7 +144,7 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
-
+       // 'Mews Captcha CaptchaServiceProvider class'
 	],
 
 	/*
@@ -192,7 +192,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-
+        //'Captcha'  => 'Mews\Captcha\Facades\Captcha::class',
 	],
 
 ];

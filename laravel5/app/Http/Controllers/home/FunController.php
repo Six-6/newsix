@@ -79,6 +79,7 @@ class FunController extends BaseController
         $re = Fun::lists();
         return view("home/fun/replay", ['re' => $re, "name" => $name]);
     }
+
     /**
      * 志同道合发起页面
      */
@@ -101,6 +102,7 @@ class FunController extends BaseController
      */
     public function adds(Request $request)
     {
+
         $re = $request->input();
         //print_r($re);die;
         unset($re['_token']);
@@ -113,6 +115,7 @@ class FunController extends BaseController
         $re['f_img'] = "." . $path1;
         Fun::add($re);
         return Redirect::to("home/funShow");
+
     }
 
     /**
@@ -147,6 +150,7 @@ class FunController extends BaseController
                 $person = Fun::person($f_id);
                 $persons = $person['p_num'] + 1;
                 Fun::upd($f_id, $persons);
+
                 echo 0;
             }
         }

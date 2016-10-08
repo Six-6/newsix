@@ -10,15 +10,12 @@ header('content-type:text/html;charset=utf-8');
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 use App\Domestic;
-
-use Session,DB,Input,Redirect;
-
+use Session, DB, Input, Redirect;
 use App\Integral;
 use App\Evaluate;
 use App\Order;
 use App\Login;
 use App\Attace_order;
-
 
 class DomesticController extends BaseController
 {

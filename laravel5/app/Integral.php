@@ -47,25 +47,12 @@ class Integral extends Model {
     /**
      * 查询用户积分
      */
-<<<<<<< HEAD
-    public static function sel($u_id){
-        $row=self::where('u_id',$u_id)->lists('i_num');
-=======
     public static function sel($uid){
         $row=self::where('u_id',$uid)->lists('i_num');
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
         return $row;
     }
 
     /**
-<<<<<<< HEAD
-     * 查询用户积分
-     */
-    public static function upds($re,$u_id){
-        $row=self::where('u_id',$u_id)->update($re);
-        return $row;
-    }
-=======
      * 修改用户积分
      */
     public static function upds($re,$uid){
@@ -73,5 +60,4 @@ class Integral extends Model {
         return $row;
     }
 
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 }

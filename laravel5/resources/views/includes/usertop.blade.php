@@ -2,19 +2,6 @@
   @if(empty(Session::get('name')))
     <div class="conter"><span>欢迎访问 <a href="{{URL('/')}}">惠玩旅行社官网</a></span>　请
     <span id="_Check_head_Login">
-<<<<<<< HEAD
-    <span><a href="{{URL('blo')}}" target="_blank">登录</a></span>
-    <span>|</span>
-    <span><a href="{{URL('register')}}" target="_blank" id="">注册</a></span>
-    @else
-  <div class="conter"><span>欢迎光临 <a href="{{URL('/')}}">惠玩旅行社官网</a></span>　
-  <span id="_Check_head_Login">
-        <span><a href="{{URL('home/personAdd')}}" target="_blank">{{Session::get('name')}}</a></span>
-    <span>|</span>
-    <span><a href="{{URL('home/userhome')}}" target="_blank" id="{{Session::get('u_id')}}">用户中心</a></span>
-    <span>|</span>
-    <span><a href="{{URL('home/personDel')}}" target="_blank" >退出</a></span>
-=======
     <span><a href="{{URL('blo')}}" >登录</a></span>
     <span>|</span>
     <span><a href="{{URL('register')}}"  id="">注册</a></span>
@@ -26,7 +13,6 @@
     <span><a href="{{URL('home/userhome')}}"  id="{{Session::get('u_id')}}">用户中心</a></span>
     <span>|</span>
     <span><a href="{{URL('home/personDel')}}"  >退出</a></span>
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
     @endif
 </span><script language="javascript">Check_head_Login();</script>
      <div class="hour"><img src="../home/homepage/pic1.jpg" height="19" width="46"></div>

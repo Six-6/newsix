@@ -11,9 +11,6 @@ class Integralorder extends Model {
         $ar=self::insert($re);
         return $ar;
     }
-<<<<<<< HEAD
-
-=======
     /**
      * 订单查询
      */
@@ -21,5 +18,4 @@ class Integralorder extends Model {
         $re=self::orderBy('a_id', 'desc')->limit(1)->get()->toArray();
         return $re;
     }
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 }

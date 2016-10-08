@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 @include("home/common/top")
 
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <link rel="stylesheet" type="text/css" href="./exchange/layout.css">
 <link rel="stylesheet" type="text/css" href="./exchange/gallery.css">
 <link rel="stylesheet" type="text/css" href="./exchange/jifen_common.css">
@@ -11,15 +8,10 @@
 
 <div class="wrap_box clearfix">
     <!-- wrap_top S -->
-<<<<<<< HEAD
-    <div class="wrap_top clearfix">
-        <div class="lef_box wrap_w">
-=======
     <div class="wrap_top clearfix" >
 
         <div class="lef_box wrap_w" style="margin-left: 160px; margin-top: 5px">
             <h1 style="color: white;font-size: 18px; font-weight:bo;width: 100px; margin-bottom: 5px; height: 30px; line-height: 30px; background-color: #ff9d00" >道具商店</h1>
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
             <form action="detailsOrder" method="post">
                 @foreach($re as $v)
                     <input type="hidden" name="e_price" value="{{$v['e_price']}}"/>
@@ -35,20 +27,7 @@
                                          class="gy-image-wrapper num-image-wrapper1">
                                         <div style="width: 405px; height: 225.99px; top: 0.505px; left: 0px;"
                                              class="gy-image">
-<<<<<<< HEAD
-                                            <img src="./exchange/Cii-T1e9Mo-IOYlJAABZ0fjuR1MAABqBwEh5GYAAFnp632_w500_h280_c1_.jpg"
-                                                 height="225.98999999999998" width="405">
-                                        </div>
-                                        <img style="display: none;" class="gy-loader" src="./exchange/loader.gif">
-
-                                        <div style="height: 227px;" class="gy-next">
-                                            <div style="opacity: 0.7; display: none;" class="gy-next-image"></div>
-                                        </div>
-                                        <div style="height: 227px;" class="gy-prev">
-                                            <div style="opacity: 0.7; display: none;" class="gy-prev-image"></div>
-=======
                                             <img src="{{$v['e_img']}}" width="500px" height="255px">
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
                                         </div>
                                     </div>
                                 </div>
@@ -104,11 +83,7 @@
     <!-- wrap_top E -->
     <!-- list_box S -->
     <div class="list_box">
-<<<<<<< HEAD
-        <div class="lef_box mr15">
-=======
         <div class="lef_box mr15" style="margin-left: 160px; margin-top: 5px">
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
             <!-- l_innner_box S -->
             <div class="l_innner_box">
                 <div id="lib_tt_box" class="lib_tt_box">
@@ -141,11 +116,7 @@
                         <span style="font-size:16px;color:rgb(255,0,0);font-family:'微软雅黑', 'Microsoft YaHei';">&nbsp; 绑定至账户；<br> &nbsp; 查看：在【优惠券】内可查看到已绑定优惠券及其具体使用规则。</span>
                     </p>
 
-<<<<<<< HEAD
-                    <p><img src="./exchange/Cii-TFfGbpCIOAjTAASZ40JruSEAAB5igHOuAgABJn7831_w800_h0_c0_t0.jpg"
-=======
                     <p><img src="{{$v['e_img']}}"
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
                             alt="Cii-TFfGbpCIOAjTAASZ40JruSEAAB5igHOuAgAB"></p></div>
                 <!-- lib_cont E -->
             </div>
@@ -205,9 +176,5 @@
         }
     });
 
-<<<<<<< HEAD
-</script>
-=======
 </script>
 @include("home/common/footer")
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
