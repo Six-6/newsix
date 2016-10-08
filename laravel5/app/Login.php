@@ -32,15 +32,23 @@ class Login extends Model {
     /**
      * 用户名唯一验证
      */
-    public static function names($name){
-        $re=self::where(["name"=>$name])->get();
+    public static function names($re){
+        $re=self::where(["name"=>$re])->lists("name");
         return $re;
     }
     /**
      * 手机号唯一验证
      */
-    public static function checkPhone($phone){
-        $re=self::where(["phone"=>$phone])->get();
+    public static function checkPhone($re){
+        $re=self::where(["phone"=>$re])->lists("phone");
         return $re;
+    }
+    /*
+   *查询登录人信息
+   **/
+    public static function rowSelect($uid)
+    {
+        $arr=DB::table('login')->where('u_id',$uid)->first();
+        return $arr;
     }
 }

@@ -90,29 +90,9 @@ function  myAddPanel(title,url,desc) {
 window.onerror=function(){return true;} 
 // --> 
 </script>
-
-@include('includes.searchtop')
-<div class="dh">
-    <div class="conter">
-      <div class="a1"><a href="">所有目的地分类</a></div>
-        @include('includes.dao')
-        <div class="clear"></div>
-        
-  </div>
-</div>
+@include("home/common/top")
 <div class="body1">
 
-
-<div class="search_nav">
-    <p class="crumbs"><a href="{{URL('/')}}">网站首页   &gt; </a><a href="{{URL('home/domestic')}}}">国内旅游  &gt; </a> </p>
-    
-    
-    
-     <!-- Button BEGIN -->
-    <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="./国内旅游 北京青旅_北青旅总社官网北京旅行社_files/buttonLite.js"></script><script type="text/javascript" charset="utf-8" src="../js/bshareC0.js"></script>
-    
-    <!-- Button END -->
-</div>
 <!--end crumb-->
 <!--start left-->
     <div class="w190 fl">
@@ -238,35 +218,35 @@ window.onerror=function(){return true;}
 <!--start right-->
     <div class="w800 fr" id="niuren_list">
       <!--start top_tour-->
-      <div class="top_tour mb_20 clearfix">
-                <div class="top_pro">
-                  <ul class="clearfix">
-                    @foreach($domestic as $k=>$v)
-                    <li class="t_item">
-                      <div class="t_wrap">
-                        <span class="cu_icon">强烈推荐</span>
-                        <a href="{{URL('home/scenicDetails')}}?sid={{ $v->s_id }}">
-                          <img src="../home/images/{{ $v->s_img }}" width="178" height="134" alt="{{ $v->s_name }}">
-                        </a>
-                      </div>
-                      <p class="t_title">
-                        <a class="f_4e9700" href="{{URL('home/scenicDetails')}}?sid={{ $v->s_id }}">
-                          <span class="f_0053aa"></span>{{ $v->s_name }}
-                        </a>
-                      </p>
-                      <div class="t_price">
-                        <span class="fl"><em class="f18">{{ $v->s_sprice }}</em>元起</span>
-                        <div class="tour_sale pt_8"><span class="dm"><em></em></span><span class="dj"><em></em></span></div>
-                      </div>
-                    </li>
-                    @endforeach
-                  </ul>
-                </div>        <!--start nr_special-->
+      {{--<div class="top_tour mb_20 clearfix">--}}
+                {{--<div class="top_pro">--}}
+                  {{--<ul class="clearfix">--}}
+                    {{--@foreach($domestic as $k=>$v)--}}
+                    {{--<li class="t_item">--}}
+                      {{--<div class="t_wrap">--}}
+                        {{--<span class="cu_icon">强烈推荐</span>--}}
+                        {{--<a href="{{URL('home/scenicDetails')}}?sid={{ $v->s_id }}" target="_blank">--}}
+                          {{--<img src="../home/images/{{ $v->s_img }}" width="178" height="134" alt="{{ $v->s_name }}">--}}
+                        {{--</a>--}}
+                      {{--</div>--}}
+                      {{--<p class="t_title">--}}
+                        {{--<a class="f_4e9700" href="{{URL('home/scenicDetails')}}?sid={{ $v->s_id }}" target="_blank">--}}
+                          {{--<span class="f_0053aa"></span>{{ $v->s_name }}--}}
+                        {{--</a>--}}
+                      {{--</p>--}}
+                      {{--<div class="t_price">--}}
+                        {{--<span class="fl"><em class="f18">{{ $v->s_sprice }}</em>元起</span>--}}
+                        {{--<div class="tour_sale pt_8"><span class="dm"><em></em></span><span class="dj"><em></em></span></div>--}}
+                      {{--</div>--}}
+                    {{--</li>--}}
+                    {{--@endforeach--}}
+                  {{--</ul>--}}
+                {{--</div>        <!--start nr_special-->--}}
         <div class="nr_special">
           <div class="satisf">
             <dl>
               <dt>综合满意度：<a class="f_4e9700" href="http://www.byts.com.cn/china/#" rel="nofollow" target="_blank">[?]</a></dt>
-              <dd>98%</dd>
+              <dd>{{$rate[1]}}</dd>
             </dl>
           </div>
           <div class="tour_stat_infor">
@@ -274,11 +254,11 @@ window.onerror=function(){return true;}
               <tbody>
                 <tr>
                   <td align="right" width="90px">已服务出游：</td>
-                  <td><em class="f_f60">&nbsp;2767&nbsp;</em>人次</td>
+                  <td><em class="f_f60">&nbsp;{{$count}}&nbsp;</em>人次</td>
                 </tr>
                 <tr>
                   <td align="right" width="90px">已有点评数：</td>
-                  <td><em class="f_f60">98</em> 条</td>
+                  <td><em class="f_f60">{{$rate[0]}}</em> 条</td>
                 </tr>
               </tbody>
             </table>

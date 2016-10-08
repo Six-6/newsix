@@ -6,6 +6,8 @@
 </head>
 <body style="background: url('./home/login/30.jpg')">
 <form action="{{URL("bloin")}}" method="post" onsubmit="return check_all()">
+    <input name="url" type="hidden" value="{{ $url }}"/>
+    <input name="sid" type="hidden" value="{{ $sid }}"/>
     <div class="login-popup-box">
         <div class="login-box">
             <div class="errer-info hide"></div>

@@ -128,7 +128,7 @@
                 </li>
                 <li class="head-nav-place" data-cs-p="mdd"><a href="" title="周边游">周边游</a>
                 </li>
-                <li class="head-nav-gonglve" data-cs-p="gonglve"><a href="" title="国内游">国内游</a>
+                <li class="head-nav-gonglve" data-cs-p="gonglve"><a href="domestic" title="国内游">国内游</a>
                 </li>
                 <li class="head-nav-sales head-nav-dropdown _j_sales_nav_show" id="_j_nav_sales" data-cs-p="sales">
                     <a class="drop-toggle"

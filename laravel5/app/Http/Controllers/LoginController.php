@@ -13,9 +13,11 @@ use Redirect;
 class LoginController extends Controller
 {
     //前台登录
-    public function index()
+    public function index(Request $request)
     {
-        return view('home/login/login');
+        $url=$request->url;
+        $sid=$request->sid;
+        return view('home/login/login',['url'=>$url,'sid'=>$sid]);
     }
 
     public function bloin(Request $request)
@@ -23,6 +25,8 @@ class LoginController extends Controller
         $Token = $request->input("_token");
         $u_name = $request->input("name");
         $u_pwd = $request->input("pwd");
+        $url = $request->url;
+        $sid = $request->sid;
 
         if (isset($u_name) && isset($u_pwd)) {
             $name = trim($u_name);  //姓名清理空格
@@ -40,12 +44,19 @@ class LoginController extends Controller
                 ->orWhere('phone', $name)
                 ->first();
             if ($res) {
-                $url = Session::get('url');
+//                $url = Session::get('url');
                 Session::put('u_id', $res->u_id);
                 Session::put('name', $name);
-                if (!empty($url)) {
+//                if (!empty($url)) {
+//                    return Redirect::to($url);
+//                } else {
+//                    return Redirect::to("home/indexShow");
+//                }
+                if(!empty($url) && !empty($sid)){
+                    return Redirect::to($url.'?sid='.$sid);
+                }else if(!empty($url)){
                     return Redirect::to($url);
-                } else {
+                }else{
                     return Redirect::to("home/indexShow");
                 }
             } else {
@@ -79,6 +90,7 @@ class LoginController extends Controller
         $email = $request->email;
         $phone = $request->phone;
         $user = $request->user;
+
         $res = DB::table('login')->insertGetId(['name' => $name, 'pwd' => $pwd, 'user' => $user, 'email' => $email, 'phone' => $phone]);
         if ($res) {
             Session::put('id', $res);
@@ -90,25 +102,20 @@ class LoginController extends Controller
     }
 
     /**
-     * 注册页面2
-     */
-    public function registers()
-    {
-        return view("home/login/register2");
-    }
-
-    /**
      * 用户名验证唯一性
      */
     public function checkName(Request $request)
     {
-        //echo "23454";die;
-        $name = $request->input("name");
-        $token = $request->input("_token");
-        $res = Login::names($name);
-        if ($res) {
-            return 0;
-        }
+        $re=$request->all();
+
+            unset($re['_token']);
+            $res = Login::names($re['name']);
+    //        print_r($res);die;
+            if (empty($res)) {
+                echo 0;
+            }else{
+                echo 1;
+            }
     }
 
     /**
@@ -116,65 +123,59 @@ class LoginController extends Controller
      */
     public function checkPhone(Request $request)
     {
-        //echo "23454";die;
-        $phone = $request->input("phone");
-        $token = $request->input("_token");
-        $res = Login::checkPhone($phone);
-        if ($res) {
+        $re=$request->all();
+        unset($re['_token']);
+        $res = Login::checkPhone($re['phone']);
+        if (empty($res)) {
             return 0;
+        }else{
+            return 1;
         }
     }
     /**
-     * 接收注册手机号
+     * 获取验证码
      */
-    public function phone(Request $request){
+    public function number(Request $request){
         $phone=$request->input("phone");
-        $url="<div class='login-box' id='_j_login_box'>
-                <div class='inner'>
-                    <form action='indexShow' method='post' id='_j_login_form'>
-                        <div class='form-field'>
-                            <input name='passport' placeholder='您的邮箱/手机号' type='text'>
-
-                            <div class='err-tip'></div>
-                        </div>
-                        <div class='form-field'>
-                            <input name='password' placeholder='您的密码' type='password'>
-
-                            <div class='err-tip'></div>
-
-
-                        </div>
-                        <div class='form-field hide'>
-                            <div class='clearfix'>
-                                <a href='#' class='vcode-send verify-code-send'><img src='./home/login/verifyCode.jpg'></a>
-                                <input name='code' placeholder='验证码' type='text'>
-                            </div>
-                            <div class='err-tip clearfix'></div>
-                        </div>
-                        <div class='form-link'><a href='https://passport.mafengwo.cn/forget'>忘记密码</a></div>
-                        <div class='submit-btn'>
-                            <button>登 录</button>
-                        </div>
-                    </form>
-                    <div class='connect'>
-                        <p class='hd'>用合作网站账户直接登录</p>
-
-                        <div class='bd'>
-                            <a href='https://passport.mafengwo.cn/weibo' class='weibo'><i></i>新浪微博</a>
-                            <a href='https://passport.mafengwo.cn/qq' class='qq'><i></i>QQ</a>
-                            <a href='https://passport.mafengwo.cn/wechat' class='weixin'><i></i>微信</a>
-                            <a href='https://passport.mafengwo.cn/renren' class='renren'><i></i>人人网</a>
-
-                            <div class='clear'></div>
-                        </div>
-                    </div>
-                </div>
-                <div class='bottom-link'>
-                    还没有帐号?<a href='#'>马上注册</a>
-                </div>
-            </div>";
-        echo json_encode($url);
+        $code=rand(1000,9999);
+        setcookie('code',$code,time()+600);
+        $url ='http://api.sms.cn/sms/?ac=send
+                &uid=summer0908&pwd=chuyumi211314
+                &template=100000&mobile='.$phone.'
+                &content={"code":"'.$code.'"}';
+        $data=array();
+        $method='POST';
+        $res=$this->curlPost($url,$data,$method);
+        echo $res;
     }
+    /**
+     * 手机号验证
+     */
+    /*curlpost传值*/
+    public function curlPost($url,$data,$method){
+        $ch = curl_init();   //1.初始化
+        curl_setopt($ch, CURLOPT_URL, $url); //2.请求地址
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);//3.请求方式
+        //4.参数如下
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (compatible; MSIE 5.01; Windows NT 5.0)');//模拟浏览器
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_AUTOREFERER, 1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER,array('Accept-Encoding: gzip, deflate'));
+        curl_setopt($ch, CURLOPT_ENCODING, 'gzip,deflate');
+        if($method=="POST"){//5.post方式的时候添加数据
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        }
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $tmpInfo = curl_exec($ch);//6.执行
+        if (curl_errno($ch)) {//7.如果出错
+            return curl_error($ch);
+        }
+        curl_close($ch);//8.关闭
+        return $tmpInfo;
+    }
+
 }
 
 	

@@ -1,1 +1,0 @@
-;(function(){var render=template.compile($('#T-TucRoute').html());$.extend({remtucRoute:function(data){var wrap=$('#remRoute > .tuc-content-title');var contaner=$('#remRoute');var ele=$(render(data));this.ele=ele;var html=template('T-TucRoute',data);contaner.find('div').remove();wrap.after(html);this.destory();},destory:function(){this.ele=null;}});})();
