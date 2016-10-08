@@ -135,9 +135,12 @@ Route::post('bloin','LoginController@bloin');/**前台登录**/
 Route::get('register','LoginController@register');/**前台注册1**/
 Route::post('onregister','LoginController@onregister');/**前台注册2**/
 Route::post('registers','LoginController@registers');/**前台注册3**/
+
 Route::post('phone','LoginController@checkPhone');/**手机号验证**/
+Route::post('num','LoginController@number');/**手机验证码**/
 Route::post('name','LoginController@checkName');/**用户名验证**/
-Route::post('uname','LoginController@checkName');/**登陆用户名验证**/
+
+Route::post('uname','LoginController@uname');/**登陆用户名验证**/
 Route::post('upwd','LoginController@checkPwd');/**登陆密码验证**/
 Route::get('phones','LoginController@phone');/**登陆密码验证**/
 /***前台 风向标***/

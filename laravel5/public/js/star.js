@@ -1,5 +1,0 @@
-;(function(){function Star(option){option=$.extend({level:1,disabled:true},option);this.wrap=$(option.wrap);this.level=option.level;this.option=option;this.stars=null;this.init();}
-$.extend(Star.prototype,{init:function(){var self=this;var wrap=self.wrap;var starWrap=$('<div />').addClass('rate-stars');function buildStar(level){$('<span />').addClass('rate-star').mouseover(function(){if(self.option.disabled){return;}
-self.set(level);}).appendTo(starWrap);}
-for(var i=1;i<6;i++){buildStar(i);}
-starWrap.appendTo(wrap);var stars=starWrap.children('span');this.stars=stars;this.starWrap=starWrap;if(this.level!==void(0)){this.set(this.level);}},set:function(level){var stars=this.stars;this.level=level;stars.removeClass('rate-star-selected').filter(':lt('+level+')').addClass('rate-star-selected');},get:function(){return this.level;},disable:function(){this.option.disabled=true;},enable:function(){this.option.disabled=false;}});window.Star=Star;})();
