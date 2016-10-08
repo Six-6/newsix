@@ -24,17 +24,9 @@ class PublishController extends Controller
 	*/
 	public function publish()
 	{
-		$model = new Publish();					//调用model层
-		
-		$region = $model->area();			//调用查询方法
-
-		return view('home/publish',['region' => $region]);
+		return view('home/publish');
 	}
 	
-	/**
-	 * 图片上传
-	 * @return [type] [description]
-	 */
 	public function yfile()
 	{
 		//获取数据
@@ -47,20 +39,19 @@ class PublishController extends Controller
 		echo json_encode($data);
 	}
 
-	/**
-	 * 填写游记
-	 * @return [type] [description]
-	 */
+
 	public function collect()
-	{		
+	{
 		$u_id = Session::get('u_id');
 		if(empty($u_id))
-		{	
-			return redirect('blo?url = home/publishs');			
+		{
+			$url = $_SERVER['HTTP_REFERER'];		
+			Session::put('url',$url);
+			return redirect('blo');			
 		}
 
 		$data=Request::all();
-		
+
 		$model = new Publish();					//调用model层
 		
 		$data = $model->addday($data,$u_id);	//调用查询方法
@@ -76,16 +67,14 @@ class PublishController extends Controller
 
 	}
 
-	/**
-	 * 我的游记 
-	 * @return [type] [description]
-	 */
 	public function mysit()
 	{
 		$u_id = Session::get('u_id');
 		if(empty($u_id))
 		{
-			return redirect('blo?url = home/mysit');			
+			$url = $_SERVER['HTTP_REFERER'];		
+			Session::put('url',$url);
+			return redirect('blo');			
 		}
 
 		$data=Request::all();

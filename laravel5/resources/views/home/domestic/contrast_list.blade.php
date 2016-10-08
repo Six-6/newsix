@@ -1,7 +1,8 @@
+@include("home/common/left")
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head><script src="../home/user/crmqq.php" async="" charset="utf-8" type="text/javascript"></script><script src="../js/contains.js" async="" charset="utf-8" type="text/javascript"></script><script src="../js/localStorage.js" async="" charset="utf-8" type="text/javascript"></script><script src="../js/Panel.js" async="" charset="utf-8" type="text/javascript"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title> 惠玩旅行社官网</title>
+<title> 惠玩国际官网</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <link rel="stylesheet" href="../css/style.css">
@@ -86,19 +87,7 @@ window.onerror=function(){return true;}
 // --> 
 </script>
 
-<<<<<<< HEAD
-@include('includes.searchtop')
-<div class="dh">
-	<div class="conter">
-   	  <div class="a1"><a href="#">所有目的地分类</a></div>
-        @include('includes.dao')
-        <div class="clear"></div>
-        
-  </div>
-</div>
-=======
 
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <div class="body1">
 <div id="phpurl" pid="http://www.byts.com.cn">
 

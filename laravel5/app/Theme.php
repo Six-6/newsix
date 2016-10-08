@@ -74,11 +74,7 @@ class Theme extends Model
 		//查询下单数超过五个的用户
 		foreach($num as $key => $value)
 		{
-<<<<<<< HEAD
-			if($value > 5)
-=======
 			if($value > 4)
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 			{
 				$new_id[]=$key;
 			}
@@ -312,16 +308,8 @@ class Theme extends Model
 	//游记详情
 	public static function details($id)
 	{
-<<<<<<< HEAD
-		$bination['host'] = DB::table('travels')->join('login', 'travels.u_id', '=', 'login.u_id')->where('tt_id',$id)->get();
-		$dat = json_decode(json_encode($bination['host']),true);
-
-		$region_id = $dat[0]['t_region'];
-		
-=======
 		//当前游记
 		$bination['host'] = DB::table('travels')->join('login', 'travels.u_id', '=', 'login.u_id')->where('tt_id',$id)->get();
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		
 		//每天的游记
 		$data = DB::table('bination')->where('tt_id',$id)->get();
@@ -357,17 +345,7 @@ class Theme extends Model
 			$bination['commect'] = "";
 		}
 		
-<<<<<<< HEAD
-		$bination['region_name'] = DB::table('region')->where('r_id',$region_id)->select('r_region')->first();
-
-		$bination['correlation'] = DB::table('region')->join('scenic_spot', 'region.r_id', '=', 'scenic_spot.r_id')->where('p_id',$region_id) ->orderBy('s_degree', 'desc')->limit(5)->get();
 		
-		//推送
-		$bination['meme'] = DB::table('scenic_spot')->select('s_id','s_name','s_img','s_sprice')->orderBy('s_degree', 'asc')->where('s_degree','<',50)->limit(5)->get();
-	
-=======
-		
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		return $bination;
 		
 	}

@@ -2,11 +2,7 @@
 <link rel="stylesheet" type="text/css" href="./exchange/index.css">
 <link rel="stylesheet" type="text/css" href="./exchange/autocomplete.css">
 <link rel="stylesheet" type="text/css" href="./exchange/jifen_captchas.css">
-<<<<<<< HEAD
-
-=======
 @include("home/common/top")
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <form action="orderAdd" method="post" onsubmit="return check()" >
     <div class="write_addr wrap_box">
         <h4 class="hh_title">填写并核对订单信息</h4>
@@ -26,17 +22,10 @@
                 <span id="phones" class="f_grey">电子券将以短信的形式发放，请正确填写手机</span>
             </dd>
         </dl>
-<<<<<<< HEAD
-        <input type="hidden" name="e_name" value="{{$re['e_name']}}"/>
-        <input type="hidden" name="e_price" value="{{$re['e_price']}}"/>
-        <input type="hidden" name="num" value="{{$re['num']}}"/>
-        <input type="hidden" name="e_img" value="{{$re['e_img']}}"/>
-=======
       {{--  <input type="hidden" name="e_name" value="{{$re['e_name']}}"/>
         <input type="hidden" name="e_price" value="{{$re['e_price']}}"/>
         <input type="hidden" name="num" value="{{$re['num']}}"/>
         <input type="hidden" name="e_img" value="{{$re['e_img']}}"/>--}}
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
         <input type="hidden" name="_token" value="{{csrf_token()}}" />
         <p class="mana"><a href="javascript:void(0)">&nbsp;</a></p>
         <p class="confirm_tt">确认订单信息</p>
@@ -51,22 +40,6 @@
                 <p class="cl_1">
                     <input name="productIds[0]" value="90000402" type="hidden">
                     <a href="" target="_blank" class="prod_detail">
-<<<<<<< HEAD
-                        <img src="./exchange/Cii-Tle9M_uIfDtIAACSS_HIQJUAABqCwP82JcAAJJj875_w500_h280_c1_.jpg" height="50" width="70">
-                        <span title="{{$re['e_name']}}">{{$re['e_name']}}</span>
-                    </a>
-                </p>
-                <p class="cl_2" data-jifen="100">
-                    {{$re['e_price']}}牛大头
-                </p>
-                <p class="cl_3">
-				<span class="contrl_num clearfix" id="contrlNum" data="363">
-					{{$re['num']}}
-				</span>
-                </p>
-                <p class="cl_4">
-                    <span class="cl_colr">{{$re['e_price']}}牛大头</span>
-=======
                         <img src="<?php echo Session::get('re')['e_img']?>" height="50" width="70">
                         <span title="<?php echo Session::get('re')['e_name']?>"><?php echo Session::get('re')['e_name']?></span>
                     </a>
@@ -81,7 +54,6 @@
                 </p>
                 <p class="cl_4">
                     <span class="cl_colr"><?php echo Session::get('re')['e_price']?>牛大头</span>
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
                 </p>
             </li>
         </ul>
@@ -126,9 +98,5 @@
         phones.innerHTML="<font style='color: green'>ok！</font>";
         return true;
     }
-<<<<<<< HEAD
-</script>
-=======
 </script>
 @include("home/common/footer")
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99

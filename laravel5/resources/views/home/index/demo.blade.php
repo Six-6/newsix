@@ -608,7 +608,6 @@
     @endforeach
     <!--旅游结束-->
 
-</div>
 <link href="./index/mfw-footer.css" rel="stylesheet" type="text/css">
 
 <div id="footer">
