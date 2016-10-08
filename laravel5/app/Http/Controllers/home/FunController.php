@@ -46,25 +46,27 @@ class FunController extends BaseController
     public function lists(Request $request)
     {
         $u_id = Session::get('u_id');
-        if(empty($u_id))
-        {
+        //echo $u_id;die;
+        if (empty($u_id)) {
             $url = $_SERVER['HTTP_REFERER'];
-            Session::put('url',$url);
+            Session::put('url', $url);
             return redirect('blo');
+        } else {
+            $u_id = Session::get("u_id");
+            // $name = "23454";
+            $name = Session::get("name");
+            //$u_id = 10;
+            $id = $request->input("f_id");
+            $re = Fun::gets($id);
+            //print_r($re);die;
+            $surplus = $re[0]['f_num'] - $re[0]['p_num'];
+            $i_id = Users::finds($u_id);
+            $i_img = Users::img($u_id);
+            //print_r($i_img);die;
+            $res = Integral::gets($i_id);
+            $user = Fun_user::personS($id);
+            return view("home/fun/add", ["re" => $re, "user" => $user, "i_img" => $i_img, "name" => $name, "uid" => $u_id, "surplus" => $surplus, "res" => $res]);
         }
-        //$uid = 1;
-        $u_id=Session::get("u_id");
-       // $name = "23454";
-        $name=Session::get("name");
-        //$u_id = 10;
-        $id = $request->input("f_id");
-        $re = Fun::gets($id);
-        //print_r($re);die;
-        $surplus = $re[0]['f_num'] - $re[0]['p_num'];
-        $i_id = Users::finds($u_id);
-        $res = Integral::gets($i_id);
-        $user = Fun_user::personS($id);
-        return view("home/fun/add", ["re" => $re, "user" => $user, "name" => $name, "uid" => $u_id, "surplus" => $surplus, "res" => $res]);
     }
 
     /**
@@ -72,7 +74,7 @@ class FunController extends BaseController
      */
     public function replay()
     {
-        $name=Session::get("name");
+        $name = Session::get("name");
         //$name = "summer";
         $re = Fun::lists();
         return view("home/fun/replay", ['re' => $re, "name" => $name]);
@@ -82,9 +84,17 @@ class FunController extends BaseController
      */
     public function post()
     {
-        $type = F_type::selAll();
-        // print_r($type);die;
-        return view("home/fun/post", ["type" => $type]);
+        $u_id = Session::get('u_id');
+        //echo $u_id;die;
+        if (empty($u_id)) {
+            $url = $_SERVER['HTTP_REFERER'];
+            Session::put('url', $url);
+            return redirect('blo');
+        } else {
+            $type = F_type::selAll();
+            // print_r($type);die;
+            return view("home/fun/post", ["type" => $type]);
+        }
     }
     /**
      * 志同道合添加
@@ -92,7 +102,7 @@ class FunController extends BaseController
     public function adds(Request $request)
     {
         $re = $request->input();
-       // print_r($re);die;
+        //print_r($re);die;
         unset($re['_token']);
         $file = $request->file("f_img");
         $clientName = $file->getClientOriginalName();//获得文件名字
@@ -102,8 +112,9 @@ class FunController extends BaseController
         $path1 = str_replace('\\', '/', $path);
         $re['f_img'] = "." . $path1;
         Fun::add($re);
-        return Redirect::to("home/funReplay");
+        return Redirect::to("home/funShow");
     }
+
     /**
      * 志同道合关联好友
      */

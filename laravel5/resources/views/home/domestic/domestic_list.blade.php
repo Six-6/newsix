@@ -90,6 +90,7 @@ function  myAddPanel(title,url,desc) {
 window.onerror=function(){return true;} 
 // --> 
 </script>
+<<<<<<< HEAD
 
 @include('includes.searchtop')
 <div class="dh">
@@ -113,6 +114,11 @@ window.onerror=function(){return true;}
     
     <!-- Button END -->
 </div>
+=======
+@include("home/common/top")
+<div class="body1" style="margin-top:10px">
+
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <!--end crumb-->
 <!--start left-->
     <div class="w190 fl">
@@ -266,7 +272,11 @@ window.onerror=function(){return true;}
           <div class="satisf">
             <dl>
               <dt>综合满意度：<a class="f_4e9700" href="http://www.byts.com.cn/china/#" rel="nofollow" target="_blank">[?]</a></dt>
+<<<<<<< HEAD
               <dd>98%</dd>
+=======
+              <dd>{{$rate[1]}}</dd>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
             </dl>
           </div>
           <div class="tour_stat_infor">
@@ -274,11 +284,19 @@ window.onerror=function(){return true;}
               <tbody>
                 <tr>
                   <td align="right" width="90px">已服务出游：</td>
+<<<<<<< HEAD
                   <td><em class="f_f60">&nbsp;2767&nbsp;</em>人次</td>
                 </tr>
                 <tr>
                   <td align="right" width="90px">已有点评数：</td>
                   <td><em class="f_f60">98</em> 条</td>
+=======
+                  <td><em class="f_f60">&nbsp;{{$count}}&nbsp;</em>人次</td>
+                </tr>
+                <tr>
+                  <td align="right" width="90px">已有点评数：</td>
+                  <td><em class="f_f60">{{$rate[0]}}</em> 条</td>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
                 </tr>
               </tbody>
             </table>

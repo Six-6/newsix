@@ -12,9 +12,50 @@ class Login extends Model {
             ->get();
         return $re;
     }
+<<<<<<< HEAD
     /****/
     /**图片上传**/
     public static function image(){
 
+=======
+    /**
+     * 用户名验证
+     */
+    public static function name($u_name){
+        $re=self::Where('user', $u_name)
+            ->orWhere('email', $u_name)
+            ->orWhere('phone', $u_name)
+            ->first();
+        return $re;
+    }
+    /**
+     * 密码验证
+     */
+    public static function pwds($u_pwd){
+        $re=self::where(["pwd"=>$u_pwd])->get();
+        return $re;
+    }
+    /**
+     * 用户名唯一验证
+     */
+    public static function names($re){
+        $re=self::where(["name"=>$re])->lists("name");
+        return $re;
+    }
+    /**
+     * 手机号唯一验证
+     */
+    public static function checkPhone($re){
+        $re=self::where(["phone"=>$re])->lists("phone");
+        return $re;
+    }
+    /*
+   *查询登录人信息
+   **/
+    public static function rowSelect($uid)
+    {
+        $arr=DB::table('login')->where('u_id',$uid)->first();
+        return $arr;
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
     }
 }

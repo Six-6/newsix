@@ -17,12 +17,21 @@
 <body>
 <script type="text/javascript" src="../js/in-min.js"></script><script type="text/javascript" src="../js/header_v2.js"></script><script type="text/javascript" src="../js/getDegree.js"></script><script type="text/javascript" src="../js/screen_size.js"></script><link rel="stylesheet" href="../css/index_nav_menu.css"><link rel="stylesheet" type="text/css" href="../css/TN_date.css"><script type="text/javascript" src="../js/search_ajax.js"></script><link href="./css/head_nav_new.css" rel="stylesheet" type="text/css"><script type="text/javascript">function selectTag(showContent,selfObj){ var tag = document.getElementById("tags").getElementsByTagName("li"); var taglength = tag.length; for(i=0; i<taglength; i++){ tag[i].className = ""; } selfObj.parentNode.className = "selectTag"; for(i=1; j=document.getElementById("tagContent"+i); i++){ j.style.display = "none"; } document.getElementById(showContent).style.display = "block";}var startCity = document.getElementById("startCity");if(startCity){ startCity.onmouseover = function(){ startCity.className = "head_start_city change_tab"; }; startCity.onmouseout = function(){ startCity.className = "head_start_city"; };}function getCookie(objName){ var arrStr = document.cookie.split("; "); for(var i = 0;i < arrStr.length;i ++){ var temp = arrStr[i].split("="); if(temp[0] == objName) return unescape(temp[1]); } return false;}var tuniuPPhoneDiv = document.getElementById("tuniu_400_num_phone");var tuniuPPhoneNumber = getCookie("p_phone_400");if (tuniuPPhoneDiv) { if (tuniuPPhoneNumber) { tuniuPPhoneDiv.innerHTML = tuniuPPhoneNumber; } else { tuniuPPhoneDiv.innerHTML = "4007-999-999"; }}$(function($) { var sub = $("#keyword-input-sub").val(); if(sub && sub != ''){ $("#keyword-input").val(sub); }});</script><!-- 页面类型 -->
 <input name="page_type" id="page_type" value="130000" type="hidden">
+<<<<<<< HEAD
 
 <div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
                 @include('includes.rankLogin')
             </div>
         </div> 
+=======
+     <div class="top_area">
+            <div class="wrap clearfix" style="background:#fff;">
+                @include('includes.rankLogin')
+            </div>
+        </div>
+    <!--start 面包屑和目的地导航 -->
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
 
 <div class="wrapmain">
@@ -123,7 +132,11 @@
 <!-- three sun S -->
 <div class="three_trav">
     <div class="thr_trav">
+<<<<<<< HEAD
         <a href="http://www.tuniu.com/static/sunshine_ensure/" target="_blank" style="display:block;width:100%;height:100%;">
+=======
+        <a href="" target="_blank" style="display:block;width:100%;height:100%;">
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
             <em class="tn_text" id="service_phone_head_text">客户服务电话（免长途费）</em>
             <em class="tn_phone" id="service_phone_head_phone">4007-999-999</em>
         </a>
@@ -132,6 +145,7 @@
 <!-- three sun E -->
 <!-- four_ad S -->
 <!-- four_ad S -->
+<<<<<<< HEAD
     <div class="fourImgs">
         <ul class="clearfix">
                         <li>
@@ -373,3 +387,6 @@ document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascrip
 
 <!-- search_inputBox end -->
 </div></body></html>
+=======
+ </body>@include('includes.foot')</html>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99

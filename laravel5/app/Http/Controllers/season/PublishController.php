@@ -52,13 +52,11 @@ class PublishController extends Controller
 	 * @return [type] [description]
 	 */
 	public function collect()
-	{
+	{		
 		$u_id = Session::get('u_id');
 		if(empty($u_id))
-		{
-			$url = $_SERVER['HTTP_REFERER'];		
-			Session::put('url',$url);
-			return redirect('blo');			
+		{	
+			return redirect('blo?url = home/publishs');			
 		}
 
 		$data=Request::all();
@@ -87,9 +85,7 @@ class PublishController extends Controller
 		$u_id = Session::get('u_id');
 		if(empty($u_id))
 		{
-			$url = $_SERVER['HTTP_REFERER'];		
-			Session::put('url',$url);
-			return redirect('blo');			
+			return redirect('blo?url = home/mysit');			
 		}
 
 		$data=Request::all();

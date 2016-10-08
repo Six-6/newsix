@@ -11,6 +11,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
+use Mail;
 use Redirect;
 use App\Integralorder;
 use App\Integral;
@@ -26,11 +27,21 @@ class ExchangeController extends BaseController{
      * @兑换详情页展示
      */
     public function show(Request $request){
-        $id=$request->input("id");
-        $re=Integral::details($id);
-        $res=Exchange::selAll();
-        //print_r($res);die;
-        return view("home/exchange/all",["re"=>$re,"res"=>$res]);
+        $u_id = Session::get('u_id');
+        //echo $u_id;die;
+        if(empty($u_id))
+        {
+            $url = $_SERVER['HTTP_REFERER'];
+            Session::put('url',$url);
+            return redirect('blo');
+        }else {
+            $uid = Session::get("u_id");
+            $re = Integral::sel($uid);
+            Session::put("i_num", $re);
+            $res = Exchange::selAll();
+            //print_r($res);die;
+            return view("home/exchange/all", ["re" => $re, "res" => $res]);
+        }
     }
     /**
      * @获取兑换商品的id
@@ -47,9 +58,18 @@ class ExchangeController extends BaseController{
      *
      */
     public function details(){
-        $id=Session::get("e_id");
-        $re=Exchange::shows($id);
-        return view("home/exchange/details",['re'=>$re]);
+        $u_id = Session::get('u_id');
+        //echo $u_id;die;
+        if(empty($u_id))
+        {
+            $url = $_SERVER['HTTP_REFERER'];
+            Session::put('url',$url);
+            return redirect('blo');
+        }else {
+            $id = Session::get("e_id");
+            $re = Exchange::shows($id);
+            return view("home/exchange/details", ['re' => $re]);
+        }
     }
     /**
      * @兑换商品订单
@@ -57,21 +77,43 @@ class ExchangeController extends BaseController{
     public function order(Request $request){
         $re=$request->input();
         unset($re['_token'],$re['e_num']);
-        return view("home/exchange/order",['re'=>$re]);
+        if(!empty($re)){
+            Session::put("re",$re);
+        }
+        return view("home/exchange/order");
     }
     /**
      * @确认兑换
      */
     public function orderAdd(Request $request){
-        $re=$request->input();
-        unset($re['_token'],$re['productIds']);
-        $re['sum']=$re['num']*$re['e_price'];
+        $re=Session::get("re");
+        $re['a_name']=$request->input("a_name");
+        $re['a_phone']=$request->input("a_phone");
+        $re['sum']=Session::get("re")['num']*Session::get("re")['e_price'];
+        $re['u_id']=Session::get("u_id");
+        $res=Session::put("res",$re);
         Integralorder::order($re);
         $i_num=Session::get("i_num");
         $num=$i_num-$re['sum'];
-        $id=1;
-        //$id=Session::get("u_id");
+        $id=$re['u_id'];
         Integral::upd($num,$id);
-        echo"<script>alert('兑换成功');location.href='integralAdd';</script>";
+        $email=Session::get('u_email');
+        Mail::send("home/exchange/mails", ['res' => $res], function($message) use ($email){
+            $message->to($email)->subject('welcome to 惠玩！' );
+        });
+        echo"<script>alert('兑换成功');location.href='indexShow';</script>";
     }
+    /**
+     * 发送邮件给用户
+     *
+     */
+    /*public function sendEmail(){
+        $re=Integralorder::selAll();
+        //print_r($re);die;
+        $email="13041203572@sina.cn";
+        Mail::send("home/exchange/mails",function ( $message ) use ($email ) {
+            $message->to($email)->subject('welcome!' );
+        } );
+        return view("home/exchange/mails", ['re' => $re]);
+    }*/
 }

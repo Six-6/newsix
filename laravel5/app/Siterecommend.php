@@ -16,7 +16,11 @@ class Siterecommend extends Model{
 	{
 		//当季玩什么
 		$data['carousel'] = DB::table('inseason')->get();
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		//权威控
 		$user = DB::table('login')->get();
 		
@@ -28,14 +32,22 @@ class Siterecommend extends Model{
 		{
 			$u_id[]=$datas[$key]['u_id'];
 		}
+<<<<<<< HEAD
 		
+=======
+		//print_r($u_id);die;
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		//查询出用户下过的订单个数
 		foreach($u_id as $key =>$value)
 		{
 			$delsr = DB::table('order')->where('u_id',$value)->get();
 			$num[$value] = count($delsr);
 		}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		//查询下单数超过五个的用户
 		foreach($num as $key => $value)
 		{
@@ -45,6 +57,7 @@ class Siterecommend extends Model{
 			}
 			else
 			{
+<<<<<<< HEAD
 				$new_id[]="";
 			}
 		}
@@ -52,6 +65,15 @@ class Siterecommend extends Model{
 		//查询对应的id 发表的评论
 		$data['authority'] = DB::table('travels')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->whereIn('u_id',$new_id)->orderBy('t_browse','desc')->limit(5)->get();
 		///print_r($data);die;
+=======
+				$data['authority'] = "";
+			}
+		}
+		
+		//查询对应的id 发表的评论
+		$data['authority'] = DB::table('travels')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->whereIn('u_id',$new_id)->orderBy('t_times','desc')->limit(5)->get();
+		
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 	
 		/**
 		*@尝鲜人 

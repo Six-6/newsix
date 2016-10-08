@@ -64,11 +64,19 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
 <dd>
 	<div class="top_type">
 		<div class="col1">
+<<<<<<< HEAD
                     <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
 		</div>
 
 		<div class="col2">
 			<h5><a href="http://top.tuniu.com/line/detail-16-0-0/">马尔代夫度假榜</a></h5>                 
+=======
+                    <a href="" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
+		</div>
+
+		<div class="col2">
+			<h5><a href="">马尔代夫度假榜</a></h5>                 
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		</div>
 
                 <div style="clear: both;"></div>
@@ -97,11 +105,19 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
 <dd>
 	<div class="top_type">
 		<div class="col1">
+<<<<<<< HEAD
                     <a href="http://top.tuniu.com/line/detail-18-0-0/" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
 		</div>
 
 		<div class="col2">
 			<h5><a href="http://top.tuniu.com/line/detail-18-0-0/">欧洲文艺都市榜</a></h5>
+=======
+                    <a href="" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
+		</div>
+
+		<div class="col2">
+			<h5><a href="">欧洲文艺都市榜</a></h5>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
 			
 
@@ -133,11 +149,19 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
 <dd>
 	<div class="top_type">
 		<div class="col1">
+<<<<<<< HEAD
                     <a href="http://top.tuniu.com/line/detail-19-0-0/" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
 		</div>
 
 		<div class="col2">
 			<h5><a href="http://top.tuniu.com/line/detail-19-0-0/">复联二热血之旅榜</a></h5>
+=======
+                    <a href="" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
+		</div>
+
+		<div class="col2">
+			<h5><a href="">复联二热血之旅榜</a></h5>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
                   
 
@@ -178,11 +202,19 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
 <dd>
 	<div class="top_type">
 		<div class="col1">
+<<<<<<< HEAD
                     <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
 		</div>
 
 		<div class="col2">
 			<h5><a href="http://top.tuniu.com/line/detail-26-0-0/">全国最热景点榜</a></h5>
+=======
+                    <a href="" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
+		</div>
+
+		<div class="col2">
+			<h5><a href="">全国最热景点榜</a></h5>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
                       
 			
@@ -215,11 +247,19 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
 <dd>
 	<div class="top_type">
 		<div class="col1">
+<<<<<<< HEAD
                     <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
 		</div>
 
 		<div class="col2">
 			<h5><a href="http://top.tuniu.com/line/detail-27-0-0/">全国最美古镇榜</a></h5>
+=======
+                    <a href="" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
+		</div>
+
+		<div class="col2">
+			<h5><a href="">全国最美古镇榜</a></h5>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
 
 			
@@ -252,7 +292,11 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
 <dd>
 	<div class="top_type">
 		<div class="col1">
+<<<<<<< HEAD
                     <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
+=======
+                    <a href="" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		</div>
 
 		<div class="col2">
@@ -294,7 +338,11 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
 <dd>
 	<div class="top_type">
 		<div class="col1">
+<<<<<<< HEAD
                     <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
+=======
+                    <a href="" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		</div>
 		<div class="col2">
 			<h5><a href="http://top.tuniu.com/line/detail-86-0-0/">一日游榜单</a></h5>
@@ -334,11 +382,19 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
 <dd>
 	<div class="top_type">
 		<div class="col1">
+<<<<<<< HEAD
                     <a href="http://top.tuniu.com/line/detail-16-0-0/" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
 		</div>
 
 		<div class="col2">
 			<h5><a href="http://top.tuniu.com/line/detail-87-0-0/">二日游榜单</a></h5>
+=======
+                    <a href="" title="" ><img style="display: block;" src="../home/images/top_default_1.jpg" data-src="http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg" onerror="this.src='http://img.tuniucdn.com/img/20150518/indicator/top_default_1.jpg'"></a>
+		</div>
+
+		<div class="col2">
+			<h5><a href="">二日游榜单</a></h5>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
 			
 
@@ -420,6 +476,7 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
 <!--start foot-->
 <!-- siteMap S -->
 <link rel="stylesheet" type="text/css" href="../css/common_foot_v3.css"> <div class="trav_sev">
+<<<<<<< HEAD
         <ul class="ts_box clearfix">
             <li class="trav_l_first">
                 <i class="ts_1"></i>
@@ -522,6 +579,9 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
         </li></ul>
     </div><!-- siteMap E -->
 <!-- three sun S -->
+=======
+ 
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <div class="three_trav">
     <div class="thr_trav">
         <a href="http://www.tuniu.com/static/sunshine_ensure/"  style="display:block;width:100%;height:100%;">
@@ -530,6 +590,7 @@ Tips: 以下线路，均根据销量进行排名，相信大家的眼光吧！
         </a>
     </div>
 </div>
+<<<<<<< HEAD
 <!-- three sun E -->
 <!-- four_ad S -->
 <!-- four_ad S -->
@@ -1331,3 +1392,6 @@ document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascrip
 
 <!-- search_inputBox end -->
 </div><div style="height: 631px;" id="rightCommon" class="right_common"><ul id="rightCommonUl" class="hide"><li id=""><ul id="rcTop"><li class="" style="height:148px;cursor:pointer;"></li><li style="height:42px;margin-top:20px;cursor:pointer;"><div class="rc_index"><p class="rc_app_box"><span class="rc_icon rc_app"></span></p></div><div class="rc_box rc_app_b nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_content"><a href="http://top.tuniu.com/line/%E6%97%A0" ><img src="../home/images/head_qrcode_20160405.png" alt=""></a></div></div></li></ul></li><li><ul id="rcMid"><li class="mytuniuArea" style="padding:10px 0;cursorpointer;"><div class="rc_index"><p class=""><a href="http://www.tuniu.com/main.php?do=user_change_picture" ><span class="rc_icon rc_tuniu"></span></a></p><p class="rc_wd" id="lessThanHide" style="padding:0;">我的途牛</p></div><div class="rc_box nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="nologin_passport rc_common_box nologin" style="width:378px;padding:0px; border:none; outline:none;"><iframe src="%E7%BA%BF%E8%B7%AF%E6%8E%92%E8%A1%8C%E6%A6%9C_%E5%AE%9A%E5%88%B6%E6%8E%92%E8%A1%8C%E6%A6%9C_%E6%97%85%E6%B8%B8%E6%8E%92%E8%A1%8C%E6%A6%9C_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/iframe.htm" frameborder="0" height="352px" width="100%"></iframe></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_collect"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的关注</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../home/images/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password"  class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../home/images/identify.png" align="absmiddle" height="24" width="80"><img src="../home/images/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register"  class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login"  class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div> </li><li class="hoverClick" style="display:none;"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_jifen"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的积分</p></div> </div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../home/images/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password"  class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../home/images/identify.png" align="absmiddle" height="24" width="80"><img src="../home/images/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register"  class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login"  class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_order"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的订单</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../home/images/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password"  class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../home/images/identify.png" align="absmiddle" height="24" width="80"><img src="../home/images/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register"  class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login"  class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_quan"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">我的礼券</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../home/images/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password"  class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../home/images/identify.png" align="absmiddle" height="24" width="80"><img src="../home/images/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register"  class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login"  class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li><li class="hoverClick"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_kefutips"></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">消息提醒</p></div></div><div class="rc_box rc_click_event nopad"><span class="rc_arrow"><i class="triangle_border"><em></em></i></span><div class="rc_common_box nologin"><div style="background-color:#fff;opacity:0.5;filter:alpha(opacity=50);width:236px;height:372px;position: absolute;top: 0;left: 0;display:none;" class="rcLoadingImg"></div><img src="../home/images/loading-72x72.gif" class="rcLoadingImg" style="position:absolute;top:150px;left:82px;display:none;"><p class="show_error" id=""></p><dl class="rc_double_col rc_w_s clearfix"><dt>账号：</dt><dd></dd></dl><p class="account hide"><input class="rc_common_input" type="text"><span class="lenovo"><span class="nickName"></span><br>来自.tuniu.com的密码</span></p><p><input tabindex="1" class="rc_common_input rcUserName" type="text"></p><dl class="rc_double_col rc_w_s clearfix"><dt>密码：</dt><dd><a href="http://www.tuniu.com/u/get_password"  class="rc_g_color">找回密码</a></dd></dl><p><input tabindex="2" class="rc_common_input rcPassWord" type="password"></p><dl class="rc_double_col rc_w_s clearfix"><dt>验证码：</dt><dd></dd></dl><dl class="rc_double_col clearfix"><dt><input tabindex="3" class="rc_common_input rc_small rcVerCode" type="text"></dt><dd class="rc_pad_top"><img class="identify_img" alt="如验证码无法辨别，点击即可刷新。" onclick="" onload="" style="display: inline;" src="../home/images/identify.png" align="absmiddle" height="24" width="80"><img src="../home/images/refresh.jpg" alt="" class="change_img" style="display: inline;" align="absmiddle" height="24" width="24"></dd></dl><input class="rc_ableBtn" value="登录" type="button"><dl class="rc_double_col rc_reg clearfix"><dt>首次登录，请先<a href="http://www.tuniu.com/u/register"  class="rc_g_color"> 注册</a></dt><dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他<a href="http://www.tuniu.com/u/login"  class="rc_g_color"> 登录&gt;&gt;</a></dd></dl></div></div></li></ul></li><li style="position:absolute;top:280px;"><ul id="rc_phone"></ul></li><li style="position:absolute;top:540px;" id="RCU_doArea"><ul id="rcLastBtm"></ul></li><li style="position:absolute;bottom:20px;"><ul id="rcBtm"><li class=""><div class="rc_index"><p class="rc_topBot_b"><a href="http://www.tuniu.com/corp/advise.shtml" ><span class="rc_icon rc_advise"></span></a></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"> <p class="rc_des"><a href="http://www.tuniu.com/corp/advise.shtml"  style="display:block;width:60px;height:41px;color:#f80;">意见建议</a></p></div></div></li><li class="rcBackToTopSty" id="rcBackToTop"><div class="rc_index"><p class="rc_topBot_b"><span class="rc_icon rc_backtotop" id=""></span></p></div><div class="rc_box nopad nobord rc_hover_event"><div class="rc_content"><p class="rc_des">返回顶部</p></div></div></li></ul></li></ul></div></body></html>
+=======
+</body>@include('includes.foot')</html>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99

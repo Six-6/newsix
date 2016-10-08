@@ -13,6 +13,7 @@ use Illuminate\Pagination\Paginator;
 
 class Publish extends Model{
 
+<<<<<<< HEAD
 	public function area()
 	{
 		$region = DB::table('region')->select('r_region','r_id')->whereIn('p_id',[1,2])->get();
@@ -20,6 +21,8 @@ class Publish extends Model{
 		return $region;
 	}
 
+=======
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 	public function lish($data)
 	{
 		//取出第几个上传的图片
@@ -47,7 +50,10 @@ class Publish extends Model{
 		$s_desc = $data['II'];
 		$t_img = $data['path'];
 		$t_type = $data['t_type'];
+<<<<<<< HEAD
 		$region = $data['region'];
+=======
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		$t_times = date('Y-m-d H:i:s',time());
 
 		foreach ($s_desc as $key => $value) {
@@ -55,7 +61,10 @@ class Publish extends Model{
 			$datas[$key]['t_title'] = strip_tags($title);
 			$datas[$key]['t_times'] = $t_times;
 			$datas[$key]['t_type'] = $t_type;
+<<<<<<< HEAD
 			$datas[$key]['t_region'] = $region;
+=======
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 			$datas[$key]['u_id'] = $u_id;
 			foreach ($t_img as $k => $v) {
 				$datas[$k]['t_img'] = $v;
@@ -66,7 +75,11 @@ class Publish extends Model{
 			$ids = DB::table('travels')->insertGetId($v);
 			$tt_id[]['tt_id']= $ids; 
 		}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		$b_id = DB::table('bination')->insertGetId($tt_id[0]);
 
 		unset($tt_id[0]);

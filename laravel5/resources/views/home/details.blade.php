@@ -18,12 +18,20 @@
 <script type="text/javascript" src="../js/in-min.js"></script><script type="text/javascript" src="../js/header_v2.js"></script><script type="text/javascript" src="../js/getDegree.js"></script><script type="text/javascript" src="../js/screen_size.js"></script><link rel="stylesheet" href="../css/index_nav_menu.css"><link rel="stylesheet" type="text/css" href="../css/TN_date.css"><script type="text/javascript" src="../js/search_ajax.js"></script><link href="../css/head_nav_new.css" rel="stylesheet" type="text/css"><script type="text/javascript">function selectTag(showContent,selfObj){ var tag = document.getElementById("tags").getElementsByTagName("li"); var taglength = tag.length; for(i=0; i<taglength; i++){ tag[i].className = ""; } selfObj.parentNode.className = "selectTag"; for(i=1; j=document.getElementById("tagContent"+i); i++){ j.style.display = "none"; } document.getElementById(showContent).style.display = "block";}var startCity = document.getElementById("startCity");if(startCity){ startCity.onmouseover = function(){ startCity.className = "head_start_city change_tab"; }; startCity.onmouseout = function(){ startCity.className = "head_start_city"; };}function getCookie(objName){ var arrStr = document.cookie.split("; "); for(var i = 0;i < arrStr.length;i ++){ var temp = arrStr[i].split("="); if(temp[0] == objName) return unescape(temp[1]); } return false;}var tuniuPPhoneDiv = document.getElementById("tuniu_400_num_phone");var tuniuPPhoneNumber = getCookie("p_phone_400");if (tuniuPPhoneDiv) { if (tuniuPPhoneNumber) { tuniuPPhoneDiv.innerHTML = tuniuPPhoneNumber; } else { tuniuPPhoneDiv.innerHTML = "4007-999-999"; }}$(function($) { var sub = $("#keyword-input-sub").val(); if(sub && sub != ''){ $("#keyword-input").val(sub); }});</script><!-- 页面类型 -->
 <input name="page_type" id="page_type" value="130000" type="hidden">
 
+<<<<<<< HEAD
 <div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
                 @include('includes.rankLogin')
             </div>
         </div> 
 
+=======
+
+    <!--start 面包屑和目的地导航 -->
+        <div class="top_area">
+            @include('includes.rankLogin')
+        </div>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
 <div class="wrapmain">
 		<div class="nav-ind">
@@ -277,6 +285,7 @@
  <!-- 专题推荐start --> 
       <div class="block mt20">
       	<h3 class="f16 ff-mic fb">
+<<<<<<< HEAD
                             相关榜单推荐({{$data['region_name'] -> r_region}})
         </h3>
         @if($data['correlation'] != null)
@@ -292,10 +301,37 @@
 			<span style="font-family: sans-serif;margin-left:10px;">暂无相似景点</span>
         @endif
        </div>
+=======
+                            相关榜单推荐
+        </h3>
+                 <div class="c ">
+            <a class="pic imgbox" href="http://top.tuniu.com/topic/d19" > 
+            <img src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/ef8bba3089369dc4e01d799e5d49efcf_w180_h100_c1_t0.jpg">
+            <p>
+                湿身这片海 蜜月海岛推荐            </p>
+            </a>
+        </div>
+                <div class="c ">
+            <a class="pic imgbox" href="http://top.tuniu.com/topic/d56" > 
+            <img src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/59ac34f57b81d939a46971b6ad724904_w180_h100_c1_t0.jpg">
+            <p>
+                喵星人统治世界 十大猫奴必去地            </p>
+            </a>
+        </div>
+                <div class="c ">
+            <a class="pic imgbox" href="http://top.tuniu.com/topic/d85" > 
+            <img src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/bb64d4a4ff9cc775e88dc2161f3712e7_w180_h100_c1_t0.jpg">
+            <p>
+                台湾超小众文艺书店            </p>
+            </a>
+        </div>
+              </div>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <!-- 专题推荐end -->    
 
 
 
+<<<<<<< HEAD
 
 	<div class="block hot_line mt20">
 	    <h3 class="f16 fb ff-mic">
@@ -321,6 +357,85 @@
 	    </div>
 	</div>
 
+=======
+<!-- 热卖线路排行start -->
+	<div class="block hot_line mt20">
+	    <h3 class="f16 fb ff-mic">
+	    		    		清迈，	    		    	立刻出发
+	    </h3>
+	    <div class="repair-c">
+	        <ul>
+	        	           	            <li class="clearfix">
+	            	                <div class="pic">
+	                    <a href="http://www.tuniu.com/tours/210244901"  rel="nofollow"> 
+	               <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/32065791755673c74afaa63980c3b041_w320_h240_c1_t0.jpg" data-src="http://m.tuniucdn.com/filebroker/cdn/olb/32/06/32065791755673c74afaa63980c3b041_w320_h240_c1_t0.jpg">
+	                    </a>
+	                </div>
+	                <div class="des">
+	                    <p class="name"><a href="http://www.tuniu.com/tours/210244901"  rel="nofollow">[国庆]&lt;清迈4晚5或6日自助游&gt;人气热卖酒店集锦，选择更丰富，多城市出发</a></p>
+	                    <p class="price"><em>¥999</em>起</p>
+	                </div>
+<!--	                <div class="hot_num " >1</div>-->
+	            </li>
+	            
+	          	           	            <li class="clearfix">
+	            	                <div class="pic">
+	                    <a href="http://www.tuniu.com/tours/210239938"  rel="nofollow"> 
+	               <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/3bb50e52013d93ec45b0ab0f501bf459_w320_h240_c1_t0.jpg" data-src="http://m.tuniucdn.com/filebroker/cdn/prd/3b/b5/3bb50e52013d93ec45b0ab0f501bf459_w320_h240_c1_t0.jpg">
+	                    </a>
+	                </div>
+	                <div class="des">
+	                    <p class="name"><a href="http://www.tuniu.com/tours/210239938"  rel="nofollow">&lt;清迈4晚5日自助游&gt;全程入住热门酒店，泰北玫瑰，悠久历史，灿烂文明</a></p>
+	                    <p class="price"><em>¥2009</em>起</p>
+	                </div>
+<!--	                <div class="hot_num " >2</div>-->
+	            </li>
+	            
+	          	           	            <li class="clearfix">
+	            	                <div class="pic">
+	                    <a href="http://bj.tuniu.com/tours/210337963"  rel="nofollow"> 
+	               <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/Cii9EFd2DrWIb67kACYGyS9VPBcAAG2sQONmSIAJgbh603_w450_h300_c1_.jpg" data-src="http://m.tuniucdn.com/fb2/t1/G1/M00/3C/6E/Cii9EFd2DrWIb67kACYGyS9VPBcAAG2sQONmSIAJgbh603_w450_h300_c1_t0_w320_h240_c1_t0.jpg">
+	                    </a>
+	                </div>
+	                <div class="des">
+	                    <p class="name"><a href="http://bj.tuniu.com/tours/210337963"  rel="nofollow">&lt;清迈-清莱双飞5晚6日游&gt;清迈漫生活，小城故事，给心放个假，含签证费，含一晚回程机场附近酒店住宿</a></p>
+	                    <p class="price"><em>¥2617</em>起</p>
+	                </div>
+<!--	                <div class="hot_num hot_num_grey" >3</div>-->
+	            </li>
+	            
+	          	           	            <li class="clearfix">
+	            	                <div class="pic">
+	                    <a href="http://bj.tuniu.com/tours/210124517"  rel="nofollow"> 
+	               <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/Cii9EFZ7sSuIKV4AACYmc1urx_4AABJJwGKAUsAJiaL808_w450_h300_c1_.jpg" data-src="http://m.tuniucdn.com/fb2/t1/G1/M00/7F/38/Cii9EFZ7sSuIKV4AACYmc1urx_4AABJJwGKAUsAJiaL808_w450_h300_c1_t0_w320_h240_c1_t0.jpg">
+	                    </a>
+	                </div>
+	                <div class="des">
+	                    <p class="name"><a href="http://bj.tuniu.com/tours/210124517"  rel="nofollow">[国庆]&lt;清迈-清莱4晚5日游&gt;东航白天正班机直飞 看萌萌哒大象  黑白庙 嘟嘟车游览古城 清莱艾美自助餐 报名9月赠送夜间动物园</a></p>
+	                    <p class="price"><em>¥3501</em>起</p>
+	                </div>
+<!--	                <div class="hot_num hot_num_grey" >4</div>-->
+	            </li>
+	            
+	          	           	            <li class="clearfix last">
+	           	                <div class="pic">
+	                    <a href="http://www.tuniu.com/tours/210239935"  rel="nofollow"> 
+	               <img style="display: inline;" src="%E6%B8%85%E8%BF%88%E5%B0%8F%E6%B8%85%E6%96%B0%E4%BA%BA%E6%B0%94%E5%8F%96%E6%99%AF%E5%9C%B0_2016%E6%B8%85%E8%BF%88%E6%99%AF%E7%82%B9%E6%8E%A8%E8%8D%90_%E9%80%94%E7%89%9B%E9%A3%8E%E5%90%91%E6%A0%87_files/3bb50e52013d93ec45b0ab0f501bf459_w320_h240_c1_t0.jpg" data-src="http://m.tuniucdn.com/filebroker/cdn/prd/3b/b5/3bb50e52013d93ec45b0ab0f501bf459_w320_h240_c1_t0.jpg">
+	                    </a>
+	                </div>
+	                <div class="des">
+	                    <p class="name"><a href="http://www.tuniu.com/tours/210239935"  rel="nofollow">&lt;清迈4晚5日自助游&gt;人气热卖产品，多酒店可选</a></p>
+	                    <p class="price"><em>¥2291</em>起</p>
+	                </div>
+<!--	                <div class="hot_num hot_num_grey" >5</div>-->
+	            </li>
+	            
+	          	        </ul>
+	        <script type="text/javascript" src="../js/ranklist.js"></script>
+	    </div>
+	</div>
+ <!-- 热卖线路排行end -->  
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
         
 </div>
 
