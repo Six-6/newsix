@@ -26,16 +26,11 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
 </script><!-- 页面类型 -->
 <body>
 <input type="hidden" name="page_type" id="page_type" value="130000">
-
-    <!--start 面包屑和目的地导航 -->
-        <div class="top_area">
+<div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
-                
-                <div class="f_youji fr">
-                    <a class="report" href="{{URL('home/publish')}}">发表游记</a>
-                                    </div>
+                 @include('home/common/top')
             </div>
-        </div>
+        </div> 
 
 <div class="wrapmain">
 		<div class="nav-ind">
@@ -45,12 +40,9 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
 
                                                                   <a href="http://top.tuniu.com/line/" class="indsep" id="list"><div class="list">排行榜</div></a>
                                 
-				<a href="http://top.tuniu.com/trend/" class="indsep" id="trend">
-                                    <div class="trend">出游趋势</div></a>
 				<a href="http://top.tuniu.com/topic/" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
-				<a href="./人在旅途_途牛风向标_files/人在旅途_途牛风向标.htm" class="indsep selected" id="intour">
-                    <p></p>
-                    <div class="intour">人在旅途</div></a>
+     
+                   
 			</div>
 		</div>
 <link rel="stylesheet" type="text/css" href="../css/gonglue_channel.css">
@@ -7667,4 +7659,4 @@ document.write(unescape("%3Cscript src='"+ u+ "tac.mini.js' type='text/javascrip
 
 
 <!-- search_inputBox end -->
-</div></body></html>
+</div>@include('home/common/footer')</body></html>

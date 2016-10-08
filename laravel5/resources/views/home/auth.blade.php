@@ -7,27 +7,37 @@
 <meta content="2016旅游风向标,途牛风向标,途牛旅游网" name="keywords">
 <meta content="途牛旅游网提供当季玩什么?国外旅游景点介绍,中国国内及国外旅游景点大全、旅游景点指南、景点图片,热门旅游景点排行榜等信息;哪好玩？哪便宜？尽在途牛风向标top.tuniu.com" name="description">
 <link href="../css/reset.css" rel="stylesheet" type="text/css">
-<script src="../js/ga.js" async="" type="text/javascript"></script><script src="../js/jquery-1.js" type="text/javascript"></script>
+<script src="../js/ga.js" async="" type="text/javascript"></script>
+<script src="../js/jquery-1.js" type="text/javascript"></script>
 <script src="../js/base64.js" type="text/javascript"></script>
-<link href="../css/mask.css" rel="stylesheet" type="text/css"><link id="rightCommonCss" rel="stylesheet" type="text/css" href="../css/right_common.css"></head>
+<link href="../css/mask.css" rel="stylesheet" type="text/css">
+<link id="rightCommonCss" rel="stylesheet" type="text/css" href="../css/right_common.css">
+</head>
 <body>
 <script type="text/javascript" src="../js/in-min.js"></script>
-<script type="text/javascript" src="../js/header_v2.js"></script><script type="text/javascript" src="../js/getDegree.js"></script><script type="text/javascript" src="../js/screen_size.js"></script><link rel="stylesheet" href="../css/index_nav_menu.css"><link rel="stylesheet" type="text/css" href="../css/TN_date.css"><script type="text/javascript" src="../js/search_ajax.js"></script><link href="../css/head_nav_new.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">function selectTag(showContent,selfObj){ var tag = document.getElementById("tags").getElementsByTagName("li"); var taglength = tag.length; for(i=0; i<taglength; i++){ tag[i].className = ""; } selfObj.parentNode.className = "selectTag"; for(i=1; j=document.getElementById("tagContent"+i); i++){ j.style.display = "none"; } document.getElementById(showContent).style.display = "block";}var startCity = document.getElementById("startCity");if(startCity){ startCity.onmouseover = function(){ startCity.className = "head_start_city change_tab"; }; startCity.onmouseout = function(){ startCity.className = "head_start_city"; };}function getCookie(objName){ var arrStr = document.cookie.split("; "); for(var i = 0;i < arrStr.length;i ++){ var temp = arrStr[i].split("="); if(temp[0] == objName) return unescape(temp[1]); } return false;}var tuniuPPhoneDiv = document.getElementById("tuniu_400_num_phone");var tuniuPPhoneNumber = getCookie("p_phone_400");if (tuniuPPhoneDiv) { if (tuniuPPhoneNumber) { tuniuPPhoneDiv.innerHTML = tuniuPPhoneNumber; } else { tuniuPPhoneDiv.innerHTML = "4007-999-999"; }}$(function($) { var sub = $("#keyword-input-sub").val(); if(sub && sub != ''){ $("#keyword-input").val(sub); }});</script><!-- 页面类型 -->
+<script type="text/javascript" src="../js/header_v2.js"></script>
+<script type="text/javascript" src="../js/getDegree.js"></script>
+<script type="text/javascript" src="../js/screen_size.js"></script>
+<link rel="stylesheet" href="../css/index_nav_menu.css">
+<link rel="stylesheet" type="text/css" href="../css/TN_date.css">
+<script type="text/javascript" src="../js/search_ajax.js"></script>
+<link href="../css/head_nav_new.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function selectTag(showContent,selfObj){ 
+    var tag = document.getElementById("tags").getElementsByTagName("li"); 
+    var taglength = tag.length; 
+    for(i=0; i<taglength; i++){ 
+        tag[i].className = ""; 
+    } selfObj.parentNode.className = "selectTag"; for(i=1; j=document.getElementById("tagContent"+i); i++){ j.style.display = "none"; } document.getElementById(showContent).style.display = "block";}var startCity = document.getElementById("startCity");if(startCity){ startCity.onmouseover = function(){ startCity.className = "head_start_city change_tab"; }; startCity.onmouseout = function(){ startCity.className = "head_start_city"; };}function getCookie(objName){ var arrStr = document.cookie.split("; "); for(var i = 0;i < arrStr.length;i ++){ var temp = arrStr[i].split("="); if(temp[0] == objName) return unescape(temp[1]); } return false;}var tuniuPPhoneDiv = document.getElementById("tuniu_400_num_phone");var tuniuPPhoneNumber = getCookie("p_phone_400");if (tuniuPPhoneDiv) { if (tuniuPPhoneNumber) { tuniuPPhoneDiv.innerHTML = tuniuPPhoneNumber; } else { tuniuPPhoneDiv.innerHTML = "4007-999-999"; }}$(function($) { var sub = $("#keyword-input-sub").val(); if(sub && sub != ''){ $("#keyword-input").val(sub); }});
+    </script><!-- 页面类型 -->
 <input name="page_type" id="page_type" value="130000" type="hidden">
-<<<<<<< HEAD
 
-=======
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
-                @include('includes.rankLogin')
+                 @include('home/common/top')
+				
             </div>
-<<<<<<< HEAD
         </div> <!--start 面包屑和目的地导航 -->
-=======
-        </div>
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
 
 <div class="wrapmain">
@@ -56,13 +66,8 @@
     <div class="notes-title maintitle"><h1>当季玩什么</h1></div>
 @foreach($data['carousel'] as $error1)
 <div class="slide-card">
-<<<<<<< HEAD
-    <a href="{{URL('home/scenicDetails')}}?sid={{$error1 -> s_id}}"  rel="nofollow">
+    <a href="{{URL('home/scenicDetails')}}?ssid={{$error1 -> s_id}}"  rel="nofollow">
         <img style="display: inline;"  src="{{$error1 -> s_image}}" alt="{{$error1 -> s_name}}" height="260" width="200">
-=======
-    <a href=""  rel="nofollow">
-        <img style="display: inline;" data-src="http://m.tuniucdn.com/fb2/t1/G2/M00/5A/31/Cii-TFfNM8OIamBpAAFpuEtHBVgAACE0QIJAPAAAWnQ412_w800_h0_c0_t0.jpg" src="{{$error1 -> s_image}}" alt="{{$error1 -> s_name}}" height="260" width="200">
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
         <div class="pwhat-bg"></div>
         <div class="pwhat-detail">
             <p class="pwhat-title">{{$error1 -> s_name}}</p>
@@ -92,14 +97,13 @@
     </div>
     <div class="wall-intro intro-one">当别人还在研究世界必去的100个地方时，他们会说“我去过了”</div>
 </div>
-<<<<<<< HEAD
 <div class="product-one" >
         @if(!empty($data['authority']))
     		@foreach($data['authority'] as $error2)
             <div class="product-list">
-                <a href="{{URL('home/details')}}?id={{$error2 -> tt_id}}"><img style="display: inline;" src="{{$error2 -> t_img}}" alt="{{$error2 -> t_title}}" height="140" width="250"></a>
+                <a href="{{URL('home/details')}}?sid={{$error2 -> tt_id}}"><img style="display: inline;" src="{{$error2 -> t_img}}" alt="{{$error2 -> t_title}}" height="140" width="250"></a>
                             <div class="product-title">
-                    <a href="{{URL('home/details')}}?id={{$error2 -> tt_id}}" >{{$error2 -> t_title}}</a>
+                    <a href="{{URL('home/details')}}?sid={{$error2 -> tt_id}}" >{{$error2 -> t_title}}</a>
                 </div>
                 <a class="product-title-bg" href="http://top.tuniu.com/topic/d106" ></a>
             </div>
@@ -120,26 +124,6 @@
         @endif
     </div>
     </div>
-=======
-<div class="product-one">
-		@foreach($data['authority'] as $error2)
-        <div class="product-list">
-            <a href="{{URL('home/details')}}?id={{$error2 -> tt_id}}"><img style="display: inline;" src="{{$error2 -> t_img}}" alt="{{$error2 -> t_title}}" height="140" width="250"></a>
-                        <div class="product-title">
-                <a href="{{URL('home/details')}}?id={{$error2 -> tt_id}}" >{{$error2 -> t_title}}</a>
-            </div>
-            <a class="product-title-bg" href="http://top.tuniu.com/topic/d106" ></a>
-        </div>
-        @endforeach      
-                <div class="product-list">
-            <img style="display: inline;" data-src="http://img3.tuniucdn.com/img/201506091800/indicator/more1.jpg" src="../image/more1.jpg" alt="更多精彩" height="140" width="250">
-            <a  href="{{URL('home/themes')}}" class="product-more indexicon">更多精彩</a>
-            <a style="overflow: hidden; height: 0px;" class="product-bg" href="http://top.tuniu.com/topic/" ></a>
-        </div>
-    </div>
-    </div>
-    
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
 
 
@@ -157,9 +141,9 @@
 <div class="product-one">
 		@foreach($data['fresh'] as $error3)
         <div class="product-list">
-            <a href="{{URL('home/details')}}?id={{$error3 -> tt_id}}" ><img style="display: inline;"  src="{{$error3 -> t_img}}" alt="{{$error3 -> t_title}} " height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?sid={{$error3 -> tt_id}}" ><img style="display: inline;"  src="{{$error3 -> t_img}}" alt="{{$error3 -> t_title}} " height="140" width="250"></a>
                         <div class="product-title">
-                <a href="{{URL('home/details')}}?id={{$error3 -> tt_id}}" >{{$error3 -> t_title}} </a>
+                <a href="{{URL('home/details')}}?sid={{$error3 -> tt_id}}" >{{$error3 -> t_title}} </a>
             </div>
             <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" ></a>
         </div>
@@ -189,9 +173,9 @@
 <div class="product-one">
         @foreach($data['shutter'] as $error4)
         <div class="product-list">
-            <a href="{{URL('home/details')}}?id={{$error4 -> tt_id}}" ><img style="display: inline;"  src="{{$error4 -> t_img}}" alt="{{$error4 -> t_title}} " height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?sid={{$error4 -> tt_id}}" ><img style="display: inline;"  src="{{$error4 -> t_img}}" alt="{{$error4 -> t_title}} " height="140" width="250"></a>
                         <div class="product-title">
-                <a href="{{URL('home/details')}}?id={{$error4 -> tt_id}}" >{{$error4 -> t_title}} </a>
+                <a href="{{URL('home/details')}}?sid={{$error4 -> tt_id}}" >{{$error4 -> t_title}} </a>
             </div>
             <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" ></a>
         </div>
@@ -222,9 +206,9 @@
 <div class="product-one">
         @foreach($data['cate'] as $error5)
         <div class="product-list">
-            <a href="{{URL('home/details')}}?id={{$error5 -> tt_id}}" ><img style="display: inline;"  src="{{$error5 -> t_img}}" alt="{{$error5 -> t_title}} " height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?sid={{$error5 -> tt_id}}" ><img style="display: inline;"  src="{{$error5 -> t_img}}" alt="{{$error5 -> t_title}} " height="140" width="250"></a>
                         <div class="product-title">
-                <a href="{{URL('home/details')}}?id={{$error5 -> tt_id}}" >{{$error5 -> t_title}} </a>
+                <a href="{{URL('home/details')}}?sid={{$error5 -> tt_id}}" >{{$error5 -> t_title}} </a>
             </div>
             <a class="product-title-bg" href="http://top.tuniu.com/topic/d323" ></a>
         </div>
@@ -255,11 +239,11 @@
 <div class="product-one">
         @foreach($data['shopping'] as $error6)
         <div class="product-list">
-            <a href="{{URL('home/details')}}?id={{$error6 -> tt_id}}" ><img style="display: inline;"  src="{{$error6 -> t_img}}" alt="{{$error6 -> t_title}} " height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?sid={{$error6 -> tt_id}}" ><img style="display: inline;"  src="{{$error6 -> t_img}}" alt="{{$error6 -> t_title}} " height="140" width="250"></a>
                         <div class="product-title">
-                <a href="{{URL('home/details')}}?id={{$error6 -> tt_id}}" >{{$error6 -> t_title}} </a>
+                <a href="{{URL('home/details')}}?sid={{$error6 -> tt_id}}" >{{$error6 -> t_title}} </a>
             </div>
-            <a class="product-title-bg" href="{{URL('home/details')}}?id={{$error6 -> tt_id}}" ></a>
+            <a class="product-title-bg" href="{{URL('home/details')}}?sid={{$error6 -> tt_id}}" ></a>
         </div>
         @endforeach
                 
@@ -288,11 +272,11 @@
 <div class="product-one">
         @foreach($data['literature'] as $error7)
         <div class="product-list">
-            <a href="{{URL('home/details')}}?id={{$error7 -> tt_id}}" ><img style="display: inline;"  src="{{$error7 -> t_img}}" alt="{{$error7 -> t_title}} " height="140" width="250"></a>
+            <a href="{{URL('home/details')}}?sid={{$error7 -> tt_id}}" ><img style="display: inline;"  src="{{$error7 -> t_img}}" alt="{{$error7 -> t_title}} " height="140" width="250"></a>
                         <div class="product-title">
-                <a href="{{URL('home/details')}}?id={{$error7 -> tt_id}}" >{{$error7 -> t_title}} </a>
+                <a href="{{URL('home/details')}}?sid={{$error7 -> tt_id}}" >{{$error7 -> t_title}} </a>
             </div>
-            <a class="product-title-bg" href="{{URL('home/details')}}?id={{$error7 -> tt_id}}" ></a>
+            <a class="product-title-bg" href="{{URL('home/details')}}?sid={{$error7 -> tt_id}}" ></a>
         </div>
         @endforeach
                 
@@ -319,21 +303,12 @@
             <div class="mouth-list">
 @foreach ($data['month'] as $error8)			
 <div class="mouth-card" name="301">
-<<<<<<< HEAD
-    <a href="{{URL('home/pushClass')}}?jid={{$error8 -> r_id}}"><img src="{{$error8 -> m_img}}" alt="" height="216" width="192"></a>
-    <a class="mouth-bag indexicon" href="{{URL('home/pushClass')}}?jid={{$error8 -> r_id}}" >
+    <a href="{{URL('home/pushClass')}}?jsid={{$error8 -> r_id}}"><img src="{{$error8 -> m_img}}" alt="" height="216" width="192"></a>
+    <a class="mouth-bag indexicon" href="{{URL('home/pushClass')}}?jsid={{$error8 -> r_id}}" >
 	{{$error8 -> m_name}}    <div class="mouth-detail">
                 </div>
     </a>
-    <a class="mouth-bg" href="{{URL('home/pushClass')}}?jid={{$error8 -> r_id}}" ></a>
-=======
-    <img data-src="http://m.tuniucdn.com/filebroker/cdn/snc/9e/24/9e2493c550f94737126e23e01b64c7ac_w800_h0_c0_t0.jpg" src="{{$error8 -> m_img}}" alt="" height="216" width="192">
-    <a class="mouth-bag indexicon" href="http://www.tuniu.com/g900/guide-0-0/" >
-	{{$error8 -> m_name}}    <div class="mouth-detail">
-                </div>
-    </a>
-    <a class="mouth-bg" href="http://www.tuniu.com/g900/guide-0-0/" ></a>
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
+    <a class="mouth-bg" href="{{URL('home/pushClass')}}?jsid={{$error8 -> r_id}}" ></a>
 </div>
 @endforeach
     </div>
@@ -400,55 +375,11 @@
 </ul>
     
 </div>
-<script type="text/tmpl" id="floatnav-list-tmpl">
-    <%_.each(nav_items, function(nav_item) {%>
-       <div class="floatnav-list-item">
-       <a href="#<%=nav_item.anchor%>" class="floatnavlink<%=nav_item.bLongTitle ? ' longtitle' : ''%>"><%=nav_item.title%></a>
-       <div class="floatnav-sublist none">
-       <%_.each(nav_item.children, function(child) {%>
-           <div class="floatnav-sublist-item"><a href="#<%=child.anchor%>" class="floatnavlink"><%=child.title%></a></div>
-           <%});%>
-       </div>
-       </div>
-       <%});%>
-    <div class="floatnav-list-totopitem">
-    <a href="#" class="floatnavtotoplink"><span class="floatnavicon ibk"></span>返回顶部</a>
-    </div>
-</script>
-<script type="text/javascript" charset="utf-8" src="../js/underscore-min.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/jquery_002.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/floatnav.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/floatnav-init.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/noteIndex.js"></script>
-<script type="text/javascript">
-$().ready(function(){
-	var obj = ["301","302","303","304","305","306","307","308","309","310","311","312"];
-	$.each(obj,function(i,value){
-		$("div[name='"+value+"']").hide();
-	});
-	var monthNow = $("#monthNow").attr('value');
-  	$("div[name='"+"3"+monthNow+"']").show();
-  	var mon = monthNow-1;
-  	$(".mouth-page a:eq("+mon+")").addClass('mouth-select indexicon');
-  	$(".mouth-no").click(function(){
-  		$.each(obj,function(i,value){
-  			$("div[name='"+value+"']").hide();
-  		});
-  	 	$("div[name='"+"3"+$(this).attr('monthId')+"']").show();
-  		$(".mouth-page a").removeClass('mouth-select indexicon');
-  		$(this).addClass('mouth-select indexicon');
-  	});
-})
-</script></div>
+</div>
 <!--start foot-->
 <!-- siteMap S -->
 <link rel="stylesheet" type="text/css" href="../css/common_foot_v3.css"> <div class="trav_sev">
-<<<<<<< HEAD
        
-=======
- 
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <div class="three_trav">
     <div class="thr_trav">
         <a href="http://www.tuniu.com/static/sunshine_ensure/"  style="display:block;width:100%;height:100%;">
@@ -457,8 +388,5 @@ $().ready(function(){
         </a>
     </div>
 </div>
-<<<<<<< HEAD
+@include('home/common/footer')
 </body></html>
-=======
-</body>@include('includes.foot')</html>
->>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
