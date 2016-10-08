@@ -27,7 +27,6 @@ class LoginController extends Controller
         $u_pwd = $request->input("pwd");
         $url = $request->url;
         $sid = $request->sid;
-
         if (isset($u_name) && isset($u_pwd)) {
             $name = trim($u_name);  //姓名清理空格
             $pwd = trim($u_pwd);  //密码清理空格
@@ -44,14 +43,8 @@ class LoginController extends Controller
                 ->orWhere('phone', $name)
                 ->first();
             if ($res) {
-//                $url = Session::get('url');
                 Session::put('u_id', $res->u_id);
                 Session::put('name', $name);
-//                if (!empty($url)) {
-//                    return Redirect::to($url);
-//                } else {
-//                    return Redirect::to("home/indexShow");
-//                }
                 if(!empty($url) && !empty($sid)){
                     return Redirect::to($url.'?sid='.$sid);
                 }else if(!empty($url)){
@@ -90,7 +83,6 @@ class LoginController extends Controller
         $email = $request->email;
         $phone = $request->phone;
         $user = $request->user;
-
         $res = DB::table('login')->insertGetId(['name' => $name, 'pwd' => $pwd, 'user' => $user, 'email' => $email, 'phone' => $phone]);
         if ($res) {
             Session::put('id', $res);
@@ -100,7 +92,6 @@ class LoginController extends Controller
             echo "失败";
         }
     }
-
     /**
      * 用户名验证唯一性
      */
@@ -175,7 +166,6 @@ class LoginController extends Controller
         curl_close($ch);//8.关闭
         return $tmpInfo;
     }
-
 }
 
 	

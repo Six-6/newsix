@@ -55,6 +55,8 @@ class Users extends Model{
         $re=self::where(["u_id"=>$u_id])->lists("i_id");
         return $re;
     }
+<<<<<<< HEAD
+=======
     /**
      * 查询头像
      */
@@ -62,5 +64,6 @@ class Users extends Model{
         $re=self::where(['u_id'=>$u_id])->lists("path");
         return $re;
     }
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
 }

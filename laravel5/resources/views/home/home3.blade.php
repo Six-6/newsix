@@ -1,8 +1,12 @@
+<<<<<<< HEAD
+<head><script src="home/homepage/crmqq.php" async="" charset="utf-8" type="text/javascript"></script><script src="home/homepage/contains.js" async="" charset="utf-8" type="text/javascript"></script><script src="home/homepage/localStorage.js" async="" charset="utf-8" type="text/javascript"></script><script src="home/homepage/Panel.js" async="" charset="utf-8" type="text/javascript"></script>
+=======
 <head><script src="home/homepage/crmqq.php" async="" charset="utf-8" type="text/javascript"></script>
     <script src="home/homepage/contains.js" async="" charset="utf-8" type="text/javascript"></script>
     <script src="home/homepage/localStorage.js" async="" charset="utf-8" type="text/javascript">
 
     </script><script src="home/homepage/Panel.js" async="" charset="utf-8" type="text/javascript"></script>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>惠玩旅行社官网</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -262,10 +266,17 @@ function mousout(n){
                     @endforeach
                    </dd>
                 </dl>
+<<<<<<< HEAD
+				
+            </div>
+            <!-- 景点左侧地区分类结束 -->
+            
+=======
 
             </div>
             <!-- 景点左侧地区分类结束 -->
 
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
             <div class="newChannel-right J-newChannel-right">
             	<!-- 景点上边地区分类 -->
                 <ul class="newChannel-tab J-newChannel-tab">
@@ -278,7 +289,11 @@ function mousout(n){
                 </ul>
             	<!-- 景点上边地区分类 -->
                  <div class="newChannel-list J-newChannel-list visible">
+<<<<<<< HEAD
+					
+=======
 
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
                     <ul class="clearfix" id="tihuan{{$xc->r_id}}">
                         <!-- 景点展示开始 -->
                         @foreach($arr3 as $a=>$scenic)
@@ -301,9 +316,15 @@ function mousout(n){
 			                	</dd>
 				            </dl>
 				            <div class="detail fn-right">
+<<<<<<< HEAD
+                                
+                                <span class="sup">网订优惠</span>
+                                
+=======
 
                                 <span class="sup">网订优惠</span>
 
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
                                 <p class="price"><span class="u"></span><span class="n">￥{{ $scenic->s_sprice }}</span>起</p>
                                 <span class="s m-5 J_powerFloat" rel="J_popDisong" data-song="200"><em class="dsnum"></em></span>
                             </div>
@@ -314,14 +335,22 @@ function mousout(n){
                 	<p class="newChannel-more"><a href="" target="_blank" title="更多出境游">更多海南线路&gt;&gt;</a></p>
 
                 </div>
+<<<<<<< HEAD
+                
+=======
 
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
             </div>
         </div>
 	 	</div>
 	@endforeach
 <!--旅游结束-->
 
+<<<<<<< HEAD
+</div>      
+=======
 </div>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
 <script src="assets/js/jquery-2.1.4.min.js"></script>
 <script>

@@ -18,11 +18,20 @@
 <script type="text/javascript" src="../js/in-min.js"></script><script type="text/javascript" src="../js/header_v2.js"></script><script type="text/javascript" src="../js/getDegree.js"></script><script type="text/javascript" src="../js/screen_size.js"></script><link rel="stylesheet" href="../css/index_nav_menu.css"><link rel="stylesheet" type="text/css" href="../css/TN_date.css"><script type="text/javascript" src="../js/search_ajax.js"></script><link href="../css/head_nav_new.css" rel="stylesheet" type="text/css"><script type="text/javascript">function selectTag(showContent,selfObj){ var tag = document.getElementById("tags").getElementsByTagName("li"); var taglength = tag.length; for(i=0; i<taglength; i++){ tag[i].className = ""; } selfObj.parentNode.className = "selectTag"; for(i=1; j=document.getElementById("tagContent"+i); i++){ j.style.display = "none"; } document.getElementById(showContent).style.display = "block";}var startCity = document.getElementById("startCity");if(startCity){ startCity.onmouseover = function(){ startCity.className = "head_start_city change_tab"; }; startCity.onmouseout = function(){ startCity.className = "head_start_city"; };}function getCookie(objName){ var arrStr = document.cookie.split("; "); for(var i = 0;i < arrStr.length;i ++){ var temp = arrStr[i].split("="); if(temp[0] == objName) return unescape(temp[1]); } return false;}var tuniuPPhoneDiv = document.getElementById("tuniu_400_num_phone");var tuniuPPhoneNumber = getCookie("p_phone_400");if (tuniuPPhoneDiv) { if (tuniuPPhoneNumber) { tuniuPPhoneDiv.innerHTML = tuniuPPhoneNumber; } else { tuniuPPhoneDiv.innerHTML = "4007-999-999"; }}$(function($) { var sub = $("#keyword-input-sub").val(); if(sub && sub != ''){ $("#keyword-input").val(sub); }});</script><!-- 页面类型 -->
 <input name="page_type" id="page_type" value="130000" type="hidden">
 
+<<<<<<< HEAD
+<div class="top_area">
+            <div class="wrap clearfix" style="background:#fff;">
+                @include('includes.rankLogin')
+            </div>
+        </div> 
+
+=======
 
     <!--start 面包屑和目的地导航 -->
         <div class="top_area">
             @include('includes.rankLogin')
         </div>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 
 <div class="wrapmain">
 		<div class="nav-ind">
@@ -276,6 +285,23 @@
  <!-- 专题推荐start --> 
       <div class="block mt20">
       	<h3 class="f16 ff-mic fb">
+<<<<<<< HEAD
+                            相关榜单推荐({{$data['region_name'] -> r_region}})
+        </h3>
+        @if($data['correlation'] != null)
+			@foreach($data['correlation'] as $key => $val)
+			<div class="c ">
+				<a class="pic imgbox" href="{{URL('home/scenicDetails')}}?sid = {{$val -> s_id}}" > 
+				<img src="../home/images/{{$val -> s_img}}">
+				<p>{{$val -> s_name}}</p>
+				</a>
+			</div>
+			@endforeach
+        @else
+			<span style="font-family: sans-serif;margin-left:10px;">暂无相似景点</span>
+        @endif
+       </div>
+=======
                             相关榜单推荐
         </h3>
                  <div class="c ">
@@ -300,10 +326,38 @@
             </a>
         </div>
               </div>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <!-- 专题推荐end -->    
 
 
 
+<<<<<<< HEAD
+
+	<div class="block hot_line mt20">
+	    <h3 class="f16 fb ff-mic">
+	    		    		立刻出发
+	    </h3>
+	    <div class="repair-c">
+	        <ul>
+	        @foreach($data['meme'] as $key => $val)
+	        	<li class="clearfix">
+	            	<div class="pic">
+	                    <a href=""  rel="nofollow"> 
+	                    <img style="display: inline;" src="../home/images/{{$val -> s_img}}">
+	                    </a>
+	                </div>
+	                <div class="des">
+	                    <p class="name"><a href=""  rel="nofollow">{{$val -> s_name}}</a></p>
+	                    <p class="price"><em>¥{{$val -> s_sprice}}</em>起</p>
+	                </div>
+	            </li>
+	        @endforeach
+	        </ul>
+	        <script type="text/javascript" src="../js/ranklist.js"></script>
+	    </div>
+	</div>
+
+=======
 <!-- 热卖线路排行start -->
 	<div class="block hot_line mt20">
 	    <h3 class="f16 fb ff-mic">
@@ -381,6 +435,7 @@
 	    </div>
 	</div>
  <!-- 热卖线路排行end -->  
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
         
 </div>
 

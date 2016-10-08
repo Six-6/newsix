@@ -86,7 +86,19 @@ window.onerror=function(){return true;}
 // --> 
 </script>
 
+<<<<<<< HEAD
+@include('includes.searchtop')
+<div class="dh">
+	<div class="conter">
+   	  <div class="a1"><a href="#">所有目的地分类</a></div>
+        @include('includes.dao')
+        <div class="clear"></div>
+        
+  </div>
+</div>
+=======
 
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <div class="body1">
 <div id="phpurl" pid="http://www.byts.com.cn">
 

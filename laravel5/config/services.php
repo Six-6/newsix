@@ -15,8 +15,8 @@ return [
 	*/
 
 	'mailgun' => [
-		'domain' => '13041203572@163.com',
-		'secret' => 'chuyumi5211314',
+		'domain' => '',
+		'secret' => '',
 	],
 
 	'mandrill' => [

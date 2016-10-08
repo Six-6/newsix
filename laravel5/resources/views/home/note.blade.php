@@ -34,11 +34,19 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
 <link rel="stylesheet" type="text/css" href="../css/slides.css" media="screen">
 <link rel="stylesheet" type="text/css" href="../css/yj_2016.css">
 <link rel="stylesheet" href="../css/pub_mod.css">
+<<<<<<< HEAD
+<div class="top_area">
+            <div class="wrap clearfix" style="background:#fff;">
+                @include('includes.rankLogin')
+            </div>
+        </div> 
+=======
      <div class="top_area">
             <div class="wrap clearfix" style="background:#fff;">
                 @include('includes.rankLogin')
             </div>
         </div>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 <!-- 游记新版轮播 start -->
 <div id="full-screen-slider" class="head">
 
@@ -108,7 +116,11 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
     <div class="yj-left-show">
     	
 <!-- 广告位  -->
+<<<<<<< HEAD
+    <a href="" class="yj-left-show"  rel="nofollow">
+=======
     <a href="http://www.tuniu.com/trips/10104110" class="yj-left-show"  rel="nofollow">
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
         <img src="../image/Cii-TFfPij-IRbuzAAEzXSfoIwsAACJHAP60W8AATN195_w800_h0_c0_t0.jpg" alt="游记首页banner1【PC】">
     </a>
         <div class="yj-left-top">
@@ -190,7 +202,11 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
 </div>
     <!-- 左侧内容 end-->
     <!-- 右侧内容 start-->
+<<<<<<< HEAD
+<!--     <div class="yj-right-show">
+=======
     <div class="yj-right-show">
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
 		<div class="right-traverler">
     <div class="right-commen-tit">
         <p class="right-tit">大玩家</p>
@@ -219,7 +235,11 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
     <ul class="activity-list">
        
                <li>
+<<<<<<< HEAD
+            <a href="{{URL('home/publishs')}}"  rel="nofollow">
+=======
             <a href="http://www.tuniu.com/gt/youji/"  rel="nofollow">
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
                 <div class="activity-img" style="background-image:url(http://m.tuniucdn.com/fb2/t1/G2/M00/26/06/Cii-T1e6_nCIDMvoAAAGNPLmob8AAAvHwP_-bQAAAZM836.png) "></div>
                 <div class="activity-show">
                     <div class="activity-name">游记征文</div>
@@ -231,7 +251,11 @@ function selectTag(showContent,selfObj){ var tag = document.getElementById("tags
             </ul>
   				
      
+<<<<<<< HEAD
+    </div> -->
+=======
     </div>
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
     <!-- 右侧内容 end-->
 </div>
 <!-- 游记内容 end -->

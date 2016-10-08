@@ -12,6 +12,12 @@ class Login extends Model {
             ->get();
         return $re;
     }
+<<<<<<< HEAD
+    /****/
+    /**图片上传**/
+    public static function image(){
+
+=======
     /**
      * 用户名验证
      */
@@ -50,5 +56,6 @@ class Login extends Model {
     {
         $arr=DB::table('login')->where('u_id',$uid)->first();
         return $arr;
+>>>>>>> eb60688d885dc38c09b2ef04a72af515036a4e99
     }
 }
