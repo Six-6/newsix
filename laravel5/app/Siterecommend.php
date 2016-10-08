@@ -41,18 +41,15 @@ class Siterecommend extends Model{
 		{
 			if($value > 4)
 			{
-				$new_id[]=$key;
+				//查询对应的id 发表的评论
+				$data['authority'] = DB::table('travels')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->whereIn('u_id',$key)->orderBy('t_times','desc')->limit(5)->get();
 			}
 			else
 			{
 				$data['authority'] = "";
 			}
 		}
-		
-		//查询对应的id 发表的评论
-		$data['authority'] = DB::table('travels')->join('bination','travels.tt_id','=','bination.tt_id')->where('f_id',0)->whereIn('u_id',$new_id)->orderBy('t_times','desc')->limit(5)->get();
-		
-	
+			
 		/**
 		*@尝鲜人 
 		*/

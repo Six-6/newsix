@@ -41,18 +41,7 @@ function selectTag(showContent,selfObj){
 
 
 <div class="wrapmain">
-		<div class="nav-ind">
-			<div class="navbar">
-				<div class="indlogo"></div>
-				<a href="{{URL('home/siterecommend')}}" class="indsep selected" id="shouye"><div class="shouye">首页</div></a>
-
-                <a href="{{URL('home/ranking')}}" class="indsep" id="list"><div class="list">排行榜</div></a>
-                                
-				
-				<a href="{{URL('home/themes')}}" class="indsep" id="theme"><div class="theme">主题推荐</div></a>
-				
-			</div>
-		</div>
+		
 <!-- body-->
  <link rel="stylesheet" href="../css/gonglue_channel.css">
   <link rel="stylesheet" href="../css/jquery.css">
@@ -381,12 +370,7 @@ function selectTag(showContent,selfObj){
 <link rel="stylesheet" type="text/css" href="../css/common_foot_v3.css"> <div class="trav_sev">
        
 <div class="three_trav">
-    <div class="thr_trav">
-        <a href="http://www.tuniu.com/static/sunshine_ensure/"  style="display:block;width:100%;height:100%;">
-            <em class="tn_text" id="service_phone_head_text">客户服务电话（免长途费）</em>
-            <em class="tn_phone" id="service_phone_head_phone">4007-999-999</em>
-        </a>
-    </div>
+
 </div>
 @include('home/common/footer')
 </body></html>
