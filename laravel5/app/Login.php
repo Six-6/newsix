@@ -51,4 +51,11 @@ class Login extends Model {
         $arr=DB::table('login')->where('u_id',$uid)->first();
         return $arr;
     }
+    /***
+     * 查询邮箱
+     */
+    public static function emails($id){
+        $re=self::where(["u_id"=>$id])->lists("email");
+        return $re;
+    }
 }

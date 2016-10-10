@@ -59,7 +59,7 @@ Route::get('home/exchangeShow',"home\ExchangeController@show");/**兑换页面�
 Route::post('home/detailsShow',"home\ExchangeController@id");/**兑换商品详情**/
 Route::get('home/detailsSel',"home\ExchangeController@details");/**兑换商品详情**/
 Route::match(['get','post'],'home/detailsOrder',"home\ExchangeController@order");/**兑换商品订单**/
-Route::post('home/orderAdd',"home\ExchangeController@orderAdd");/**确认兑换**/
+Route::post('home/orderAdds',"home\ExchangeController@orderAdd");/**确认兑换**/
 Route::get('home/email',"home\ExchangeController@sendEmail");/**订单完成发邮件**/
 /**前台志同道合**/
 Route::post('home/funExchange',"home\FunController@exchange");/**更换页面**/

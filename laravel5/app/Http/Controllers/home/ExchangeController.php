@@ -19,7 +19,7 @@ use App\Exchange;
 use Session;
 use DB;
 use Input;
-
+use App\Login;
 session_start();
 
 class ExchangeController extends BaseController{
@@ -97,7 +97,8 @@ class ExchangeController extends BaseController{
         $num=$i_num-$re['sum'];
         $id=$re['u_id'];
         Integral::upd($num,$id);
-        $email=Session::get('u_email');
+        Integral::upd($num,$id);
+        $email=Login::emails($id);
         Mail::send("home/exchange/mails", ['res' => $res], function($message) use ($email){
             $message->to($email)->subject('welcome to 惠玩！' );
         });

@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="./exchange/autocomplete.css">
 <link rel="stylesheet" type="text/css" href="./exchange/jifen_captchas.css">
 @include("home/common/top")
-<form action="orderAdd" method="post" onsubmit="return check()" >
+<form action="orderAdds" method="post" onsubmit="return check()" >
     <div class="write_addr wrap_box">
         <h4 class="hh_title">填写并核对订单信息</h4>
         <p class="person_tt">收货人信息</p>
