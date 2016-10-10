@@ -8019,15 +8019,15 @@ M.closure(function (b) {
         })
     }
 });
-(function () {
-    var a = document.createElement("script"), b = window.Env && window.Env.CNZZID || 30065558;
-    a.type = "text/javascript";
-    a.async = true;
-    a.charset = "utf-8";
-    a.src = document.location.protocol + "//w.cnzz.com/c.php?id=" + b + "&async=1";
-    var c = document.getElementsByTagName("script")[0];
-    c.parentNode.insertBefore(a, c)
-})();
+// (function () {
+//     var a = document.createElement("script"), b = window.Env && window.Env.CNZZID || 30065558;
+//     a.type = "text/javascript";
+//     a.async = true;
+//     a.charset = "utf-8";
+//     a.src = document.location.protocol + "//w.cnzz.com/c.php?id=" + b + "&async=1";
+//     var c = document.getElementsByTagName("script")[0];
+//     c.parentNode.insertBefore(a, c)
+// })();
 M.closure(function (a) {
     M.log("只要你有梦想，就加入我们\n你即将见证互联网最新趋势的快速成长\n蚂蜂窝的一切资源都会成为你成长路上的最大助力\n你可以和蚂蜂窝一起书写互联网的风云奇迹\n在这里有一群和你一样，疯狂地热爱互联网和旅行的人们\n蚂蜂窝能为你实现梦想提供最广阔的平台");
     M.log("请将简历发送至 %csuperhr@mafengwo.com%c（ 邮件标题请以“_console”结尾）", "color:#4ae;", "color:inherit;");
