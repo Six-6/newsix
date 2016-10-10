@@ -1,4 +1,4 @@
-<script type="text/javascript" async="" charset="utf-8" src="./exchange/core.php"></script><script type="text/javascript" async="" charset="utf-8" src="./exchange/c.php"></script><script type="text/javascript">
+<script type="text/javascript">
     window.Env = {"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengwo.net","P_HOST":"passport.mafengwo.cn","P_HTTP":"https:\/\/passport.mafengwo.cn","UID":51100629,"CSTK":"439d08c10d7f35ca23a32096b524d7fa_08a04b0fbde5d8a6efa48f89a5a5aec8"};
 </script>
 
