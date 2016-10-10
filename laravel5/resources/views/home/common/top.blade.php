@@ -43,23 +43,18 @@
 
         <div class="t_info">
             <ul class="user_info">
-                <li class="ub-item ub-new-msg" id="head-new-msg"><div class="new-msg-tips">
-                        <b class="new-msg-close" onclick="return close_msg_tips();"></b>
-                        <p><a href="http://www.mafengwo.cn/msg/entry/sys" rel="nofollow" data-num="1">1条系统通知</a></p>
-                    </div></li>
+                
                 <li class="account _j_hoverclass" data-hoverclass="on" id="pnl_user_set">
-                    <span class="t"><a class="infoItem" href="http://www.mafengwo.cn/u/51100629.html"><img src="./exchange/pp32.gif" height="32" width="32" align="absmiddle"><b></b></a></span>
+                    <span class="t"><a class="infoItem" href="{{URL('home/uhome')}}"><img src="./exchange/pp32.gif" height="32" width="32" align="absmiddle"><b></b></a></span>
                     <div class="uSet c">
-                        <a href="http://www.mafengwo.cn/rank/lv.php" class="containNum" target="_blank">等级 <span>LV.1</span></a>
-                        <a href="http://www.mafengwo.cn/mall/" class="containNum hasLine" target="_blank">蜂蜜 <span id="_j_header_honey">0</span></a>
-                        <a href="http://www.mafengwo.cn/user/lv.php#coin" class="containNum hasLine" target="_blank">金币 <span id="_j_header_coin">0</span></a>
-                        <a href="http://www.mafengwo.cn/u/51100629.html" target="_blank">我的蚂蜂窝</a>
-                        <a href="http://www.mafengwo.cn/note/create_index.php" target="_blank" class="menu">写游记</a>
-                        <a href="http://www.mafengwo.cn/friend/index/follow" target="_blank" class="menu">我的好友</a>
-                        <a href="http://www.mafengwo.cn/plan/fav_type.php" target="_blank" class="menu">我的收藏</a>
-                        <a href="http://www.mafengwo.cn/home/userinfo.php" target="_blank">设置</a>
-                        <a href="http://www.mafengwo.cn/home/usersync.php" target="_blank">分享设置</a>
-                        <a href="http://www.mafengwo.cn/s/loginout.html">退出</a>
+                        <a href="" class="containNum" target="_blank">等级 <span>LV.1</span></a>
+                        <a href="{{URL('home/uhome')}}" class="containNum hasLine" target="_blank">{{Session::get('name')}} <span id="_j_header_honey">0</span></a>
+                        <a href="" class="containNum hasLine" target="_blank">金币 <span id="_j_header_coin">0</span></a>
+                        <a href="{{URL('home/uhome')}}" target="_blank">我的蚂蜂窝</a>
+                        <a href="{{URL('home/publishs')}}" target="_blank" class="menu">写游记</a>
+                        <a href="{{URL('home/userOrderDetails')}}" target="_blank" class="menu">我的订单</a>
+                        <a href="{{URL('home/userCollection')}}" target="_blank" class="menu">我的收藏</a>
+                        <a href="{{URL('home/personDel')}}">退出</a>
                     </div>
                 </li>
             </ul>
