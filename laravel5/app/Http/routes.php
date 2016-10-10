@@ -18,6 +18,7 @@ Route::any('domestic', 'DomesticController@index');//国内
 
 
 /**前台首页面**/
+//Route::any('/', 'home\IndexController@show');/**首页面展示**/
 Route::any('home/indexShow', 'home\IndexController@show');/**首页面展示**/
 /**前台**/
 Route::get('home/recursion', 'home\RecursionController@recursion');/**首页无限极**/
