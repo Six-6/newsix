@@ -1,3 +1,4 @@
+@include('home.common.top')
 <!DOCTYPE html>
 <!-- saved from url=(0038)http://www.mafengwo.cn/u/43882409.html -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,96 +19,7 @@ window.Env = {"profileSetting":{"banner_cover":"","banner_cover_url":"","banner_
 
 <script async="" src="../home/mafengwo/a.js"></script><style type="text/css">._j_mapmarker_group_hascomment_pointer {z-index:1}</style></head>
 <body style="position: relative;">
-    
-    <div class="topBar">
-        <div class="topBarC">
-            <div class="logo"><a title="蚂蜂窝自由行" href="http://www.mafengwo.cn/">蚂蜂窝自由行</a></div>
-            <div class="t_nav">
-                <ul id="pnl_nav" data-cs-t="headnav_wo">
-                    <li data-cs-p="index">
-                        <strong class="t"><a href="{{URL('/')}}">首页</a></strong>
-                    </li>
-                    <li data-cs-t="wenda" data-cs-p="wenda">
-                        <strong class="t"><a data-cs-p="from_wo_nav" href="http://www.mafengwo.cn/wenda/">问答</a></strong>
-                    </li>
-                    <li data-cs-t="things" data-cs-p="things">
-                        <strong class="t"><a data-cs-p="from_wo_nav" href="http://www.mafengwo.cn/mall/things.php">蚂蜂窝周边</a></strong>
-                    </li>
-                    <li data-cs-p="together">
-                        <strong class="t"><a href="http://www.mafengwo.cn/together/">结伴</a></strong>
-                    </li>
-                    <li data-cs-p="group">
-                        <strong class="t"><a href="http://www.mafengwo.cn/group/">小组</a></strong>
-                    </li>
-                    <li data-cs-p="mall">
-                        <strong class="t"><a href="http://www.mafengwo.cn/mall/">蜂蜜兑换</a></strong>
-                    </li>
-                    <li class="drop" data-cs-p="other">
-                        <strong class="t"><a href="http://www.mafengwo.cn/app/hun.php">更多<b></b></a></strong>
-                        <div class="c">
-                            <a href="http://www.mafengwo.cn/rent/" target="_blank">当地人</a>
-                            <a href="http://www.mafengwo.cn/focus/" target="_blank">真人兽</a>
-                            
-                            <a href="http://www.mafengwo.cn/school/" target="_blank">蚂蜂窝高校</a>
-                            <a href="http://www.mafengwo.cn/photo_pk/pk.php" target="_blank">照片PK</a>
-                            <a href="http://www.mafengwo.cn/auction/" target="_blank">蚂蜂窝拍卖行</a>
-                            <a href="http://www.mafengwo.cn/mall/virtual_goods.php" target="_blank">道具商店</a>
-                            <a href="http://www.mafengwo.cn/radio/" target="_blank">旅行电台</a>
-                            <a href="http://www.mafengwo.cn/club/" target="_blank">蜂首聚乐部</a>
-                            <a href="http://www.mafengwo.cn/home/vip_show.php" target="_blank">VIP</a>
-                            <a href="http://www.mafengwo.cn/game/wager.php" target="_blank">分歧终端机</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="t_search">
-                <form method="GET" action="http://www.mafengwo.cn/group/s.php" name="search">
-                    <input type="text" class="key" value="" name="q" id="word">
-                    <input type="submit" value="" class="btn">
-                </form>
-            </div>
 
-            <div class="t_info">
-                                    <ul class="user_info">
-                        <li class="daka">
-                    <span class="daka_btn daka_complete" id="_j_dakabtn" data-japp="daka">
-                        <a role="button" title="打卡" class="daka_before">打卡</a>
-                        <a role="button" title="打卡推荐" class="daka_after">打卡推荐</a>
-                    </span>
-                        </li>
-                        <li id="pnl_user_msg" data-hoverclass="on" class="msg _j_hoverclass">
-                            <span id="oldmsg" class="oldmsg"><a href="javascript:" class="infoItem">消息<b></b></a></span>
-                            <ul id="head-msg-box" class="drop-bd">										<li class="new-msg-li"><a href="http://www.mafengwo.cn/msg/entry/sys" rel="nofollow">3条系统通知</a></li>
-		<li class="new-msg-line"></li>
-				<li><a href="http://www.mafengwo.cn/msg/sms/index" rel="nofollow">私信</a></li>
-				<li><a href="http://www.mafengwo.cn/msg/entry/article" rel="nofollow">文章消息</a></li>
-					<li><a href="http://www.mafengwo.cn/msg/entry/group" rel="nofollow">小组消息</a></li>
-					<li><a href="http://www.mafengwo.cn/msg/entry/ask" rel="nofollow">问答消息</a></li>
-	</ul>
-                        </li>
-                        <li class="ub-item ub-new-msg" id="head-new-msg"><div class="new-msg-tips">
-    <b class="new-msg-close" onclick="return close_msg_tips();"></b>
-	    <p><a href="http://www.mafengwo.cn/msg/entry/sys" rel="nofollow" data-num="3">3条系统通知</a></p>
-	</div></li>
-                        <li class="account _j_hoverclass" data-hoverclass="on" id="pnl_user_set">
-                            <span class="t"><a class="infoItem" href="http://www.mafengwo.cn/u/43882409.html"><img src="../home/mafengwo/wKgBs1fqN1eAARJhAAVRROtlm7w34.jpeg" width="32" height="32" align="absmiddle"><b></b></a></span>
-                            <div class="uSet c">
-                                <a href="http://www.mafengwo.cn/rank/lv.php" class="containNum" target="_blank">等级 <span>LV.2</span></a>
-                                <a href="http://www.mafengwo.cn/mall/" class="containNum hasLine" target="_blank">蜂蜜 <span id="_j_header_honey">0</span></a>
-                                <a href="http://www.mafengwo.cn/user/lv.php#coin" class="containNum hasLine" target="_blank">金币 <span id="_j_header_coin">501</span></a>
-                                <a href="http://www.mafengwo.cn/u/43882409.html" target="_blank">我的蚂蜂窝</a>
-                                <a href="http://www.mafengwo.cn/note/create_index.php" target="_blank" class="menu">写游记</a>
-                                <a href="http://www.mafengwo.cn/friend/index/follow" target="_blank" class="menu">我的好友</a>
-                                <a href="http://www.mafengwo.cn/plan/fav_type.php" target="_blank" class="menu">我的收藏</a>
-                                <a href="http://www.mafengwo.cn/home/userinfo.php" target="_blank">设置</a>
-                                <a href="http://www.mafengwo.cn/home/usersync.php" target="_blank">分享设置</a>
-                                <a href="http://www.mafengwo.cn/s/loginout.html">退出</a>
-                            </div>
-                        </li>
-                    </ul>
-                            </div>
-        </div>
-    </div>
     
 
 
@@ -573,59 +485,6 @@ M.closure(function() {
                     </div>
     </div>
 </div>
-<link href="../home/mafengwo/mfw-footer.css" rel="stylesheet" type="text/css">
-
-<div id="footer">
-	<div class="ft-content">
-		<div class="ft-copyright">
-    <div class="ft-safety">
-        <a class="s-a" target="_blank" href="https://search.szfw.org/cert/l/CX20140627008255008321" id="___szfw_logo___"></a>
-        <a class="s-b" href="https://ss.knet.cn/verifyseal.dll?sn=e130816110100420286o93000000&amp;ct=df&amp;a=1&amp;pa=787189" target="_blank" rel="nofollow"></a>
-        <a class="s-c" href="http://www.itrust.org.cn/Home/Index/itrust_certifi/wm/1669928206.html" target="_blank" rel="nofollow"></a>
-    </div>
-    <a href="http://www.mafengwo.cn/"><i class="ft-mfw-logo"></i></a>
-    <p>? 2016 Mafengwo.cn <a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">京ICP备11015476号</a>   京公网安备110105013401号   京ICP证110318号</p>
-    <p>新出网证(京)字242号 全国统一客服电话：<span class="highlight">4006-345-678</span><a target="_blank" href="http://www.mafengwo.cn/s/sitemap.html" class="highlight m_l_10">网站地图</a></p>
-</div>
-	</div>
-</div>
-
-
-<link href="../home/mafengwo/mfw-toolbar.css" rel="stylesheet" type="text/css">
-
-<div class="mfw-toolbar" id="_j_mfwtoolbar" style="display: block;">
-    <div class="toolbar-item-top" style="display: none;">
-		<a role="button" class="btn _j_gotop">
-			<i class="icon_top"></i>
-            <em>返回顶部</em>
-		</a>
-	</div>
-	<div class="toolbar-item-feedback">
-		<a role="button" data-japp="feedback" class="btn">
-			<i class="icon_feedback"></i>
-            <em>意见反馈</em>
-		</a>
-	</div>
-	<div class="toolbar-item-code">
-		<a role="button" class="btn">
-			<i class="icon_code"></i>
-		</a>
-		<a role="button" class="mfw-code _j_code">
-            <img src="../home/mafengwo/qrcode-weixin.gif">
-		</a>
-        <!--<div class="wx-official-pop"><img src="http://images.mafengwo.net/images/qrcode-weixin.gif"><i class="_j_closeqrcode"></i></div>-->
-	</div>
-    
-</div>
-
-
-
-<script language="javascript" type="text/javascript">
-if (typeof M !== "undefined" && typeof M.loadResource === "function") {
-M.loadResource("http://js.mafengwo.net/js/cv/js+AHeaderWo:js+home+AIndexTopCover:js+jquery-jvectormap-2.0.1.min:js+jvector-china:js+jvector-world:js+new_mdd_lnglat_map:js+jvmap:js+path+jvmap:js+path+ChinaWorldMap:js+home+ATopMap:js+jquery.tmpl:js+M+module+InputListener:js+M+module+SuggestionXHR:js+M+module+DropList:js+M+module+Suggestion:js+jquery.mousewheel.min:js+M+module+ScrollBar:js+M+module+dialog+Layer:js+M+module+dialog+DialogBase:js+M+module+dialog+Dialog:js+M+module+dialog+confirm:js+path+AAddCityPanel:js+plupload:js+module+uploader+Pluploader:js+M+module+TopTip:js+M+module+Clip:js+M+module+dialog+alert:js+home+AIndexTopCoverSetting:js+home+AIndexProfile:js+M+module+Slider:js+home+APrivilege:js+home+AFollowList:js+M+module+FrequencyVerifyControl:js+M+module+FrequencyAppVerify:js+home+AMsgBoard:js+jquery.jplayer:js+home+AMusicPlayer:js+M+module+Storage:js+jquery.jgrowl.min:js+AMessage:js+M+module+FrequencySystemVerify:js+ALogin:js+M+module+ScrollObserver:js+M+module+QRCode:js+AToolbar:js+ACnzzGaLog:js+ARecruit:js+ALazyLoad^YlVTQw^1469587281.js");
-}
-</script>
-
-
-
 <div class="jvectormap-tip" style="display: none; left: 647px; top: 402px;">四川</div><div class="jvectormap-tip"></div></body></html>
+
+@include('home.common.footer')
