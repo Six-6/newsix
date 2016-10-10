@@ -19,6 +19,7 @@
                 <span class="tags_link" role="button" title="更多" style="cursor:default">更多<i class="MDownMore"></i></span>
                 <div class="tags_more_list">
                     <ul>
+                        <li><a href="{{URL('home/integralAdd')}}" title="我的积分"><i class="ico_order"></i><span>我的积分</span></a></li>
                         <li><a href="{{URL('home/userInformation')}}" title="我的信息"><i class="ico_group"></i><span>我的信息</span></a></li>
                         <li><a href="{{URL('home/userHeadPortrait')}}" title="我的头像"><i class="ico_order"></i><span>我的头像</span></a></li>
                     </ul>

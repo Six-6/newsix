@@ -218,20 +218,14 @@
             <!-- 用户下拉菜单 begin -->
             <div class="dropdown-menu dropdown-user hide" id="_j_user_panel" data-cs-t="user_nav">
                 <div class="user-info">
-                    <a class="coin" href="http://www.mafengwo.cn/mall/" target="_blank" id="head-my-coin" rel="nofollow" data-cs-p="coin">蜂蜜 0</a> / <a class="coin" href="http://www.mafengwo.cn/user/lv.php#coin" target="_blank" id="head-my-coin" rel="nofollow" data-cs-p="coin">金币 0</a>
+                    <a class="coin" href="{{URL('home/uhome')}}" target="_blank" id="head-my-coin" rel="nofollow" data-cs-p="coin">{{Session::get('name')}}</a> / 
+                    <a class="coin" href="{{URL('home/integralAdd')}}" target="_blank" id="head-my-coin" rel="nofollow" data-cs-p="coin">金币 0</a>
                 </div>
                 <ul>
-                    <li><a href="http://www.mafengwo.cn/u/51100629.html" target="_blank" title="我的蚂蜂窝" rel="nofollow" data-cs-p="wo"><i class="icon-wo"></i>我的蚂蜂窝<span class="level">LV.1</span> </a></li>
-                    <li><a href="http://www.mafengwo.cn/note/create_index.php" target="_blank" class="drop-write" title="写游记" rel="nofollow" data-cs-p="writenotes"><i class="icon-writenotes"></i>写游记</a></li>
-                    <li><a href="http://www.mafengwo.cn/note/activity/appointment/" target="_blank" class="drop-write" title="预约游记" rel="nofollow" data-cs-p="appointnotes"><i class="icon-ordernotes"></i>预约游记</a></li>
-                    <li data-cs-t="足迹_首页" data-cs-p="页头_我的足迹"><a href="http://www.mafengwo.cn/path/51100629.html" target="_blank" title="我的足迹" rel="nofollow"><i class="icon-path"></i>我的足迹</a></li>
-                    <li><a href="http://www.mafengwo.cn/wenda/u/51100629.html" target="_blank" title="我的问答" rel="nofollow" data-cs-p="wenda"><i class="icon-wenda"></i>我的问答</a></li>
-                    <li><a href="http://www.mafengwo.cn/friend/index/follow" target="_blank" title="我的好友" rel="nofollow" data-cs-p="friend"><i class="icon-friend"></i>我的好友</a></li>
-                    <li><a href="http://www.mafengwo.cn/plan/fav_type.php" title="我的收藏" target="_blank" rel="nofollow" data-cs-p="collect"><i class="icon-collect"></i>我的收藏</a></li>
-                    <li><a href="http://www.mafengwo.cn/plan/route.php" title="我的路线" target="_blank" rel="nofollow" data-cs-p="route"><i class="icon-route"></i>我的路线</a></li>
-                    <li><a href="http://www.mafengwo.cn/sales/order.php" title="我的订单" target="_blank" rel="nofollow" data-cs-p="order"><i class="icon-order"></i>我的订单</a></li>
-                    <li><a href="http://www.mafengwo.cn/sales/coupon.php" title="我的优惠券" target="_blank" rel="nofollow" data-cs-p="coupon"><i class="icon-coupon"></i>我的优惠券</a></li>
-                    <li><a href="http://www.mafengwo.cn/home/userinfo.php" title="我的设置" target="_blank" relindex.html="nofollow" data-cs-p="settings"><i class="icon-settings"></i>设置</a></li>
+                    <li><a href="{{URL('home/uhome')}}" target="_blank" title="我的蚂蜂窝" rel="nofollow" data-cs-p="wo"><i class="icon-wo"></i>我的蚂蜂窝<span class="level">LV.1</span> </a></li>
+                    <li><a href="{{URL('home/publishs')}}" target="_blank" class="drop-write" title="写游记" rel="nofollow" data-cs-p="writenotes"><i class="icon-writenotes"></i>写游记</a></li>
+                    <li><a href="{{URL('home/userCollection')}}" title="我的收藏" target="_blank" rel="nofollow" data-cs-p="collect"><i class="icon-collect"></i>我的收藏</a></li>
+                    <li><a href="{{URL('home/userOrderDetails')}}" title="我的订单" target="_blank" rel="nofollow" data-cs-p="order"><i class="icon-order"></i>我的订单</a></li>
                     <li><a href="personDel" title="退出登录" rel="nofollow"><i class="icon-logout" data-cs-p="logout"></i>退出</a></li>
                 </ul>
             </div>
